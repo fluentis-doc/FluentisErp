@@ -1,18 +1,18 @@
 ---
-title: Parametri inventurnih razlika 
+title: Parametri inventurnih razlika
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-Uvod u parametre razlika u inventaru sustava Fluentis ključan je za osiguranje učinkovitog usklađivanja između fizičkih i logičkih zaliha unutar skladišta. Ova funkcionalnost omogućuje operaterima da sustavno upravljaju i bilježe uočene nesuglasice, osiguravajući da je svaki pokret u skladištu praćen i točno evidentiran.
+:::important[Čemu služi]
+Uvod u parametre inventurnih razlika u sistemu Fluentis ključan je za efikasno usklađivanje fizičkih i knjigovodstvenih zaliha u skladištu. Ova funkcionalnost omogućava operaterima sistematsko upravljanje utvrđenim odstupanjima i njihovo evidentiranje, čime se obezbeđuje precizno praćenje i knjiženje svakog skladišnog kretanja.
 
-Parametri razlika u inventaru nalaze se u odjeljku konfiguracije i omogućuju postavljanje uzroka skladišta koji će se koristiti tijekom procesa izračuna razlika. Svako skladište može imati prilagođene konfiguracije, u kojima je potrebno postaviti kako uzrok punjenja za pozitivne korekcije inventara, tako i uzrok pražnjenja za negativne korekcije. Osim toga, sustav automatizira generiranje kompenzacijskih evidencija, čime se pojednostavljuje upravljanje eventualnim promjenama u zalihama.
+Parametri inventurnih razlika nalaze se u odeljku za konfiguraciju i omogućavaju definisanje skladišnih šablona koji će se koristiti tokom obračuna razlika. Svako skladište može imati sopstvenu konfiguraciju, pri čemu je potrebno podesiti šablon ulaza za pozitivne inventurne korekcije i šablon izlaza za negativne inventurne korekcije. Osim toga, sistem automatski generiše kompenzaciona knjiženja, čime se pojednostavljuje upravljanje eventualnim promenama stanja zaliha.
 
-U postupku razlika u inventaru, Fluentis nudi opciju izračuna razlika na određeni datum, omogućujući retroaktivno upravljanje i točno bilježenje zaliha.
+Prilikom obračuna inventurnih razlika, Fluentis omogućava izračunavanje razlika na određeni datum, što omogućava retroaktivno upravljanje i precizno evidentiranje stanja zaliha.
 :::
 
-Obrazac vam omogućuje da za svako skladište postavite razloge koje aplikacija mora automatski koristiti u slučaju automatskog kreiranja skladišne ​​evidencije korištenjem procedure *Razlike u Inventurnim listama*. Omogućuje vam izračunavanje razlike između logičke količine i fizičke količine, tj. one koju je otkrio fizički inventar, te automatsko generiranje kompenzacijskih zapisa za razlike između logičke količine i fizičke količine. 
+Obrazac omogućava podešavanje šablona za svako skladište koji će se automatski koristiti prilikom kreiranja skladišnih knjiženja putem postupka *Inventurne razlike*. Omogućava obračun razlike između knjigovodstvene količine i fizičke količine, odnosno količine utvrđene fizičkim inventarom, kao i automatsko generisanje kompenzacionih knjiženja radi usklađivanja knjigovodstvene i fizičke količine.
 
-Skladišni razlozi koji se mogu postaviti u ovoj kartici su isključivo oni koji imaju aktivan flag *Upravljanje fizičkim inventarom* u [Skladišnim razlozima](/docs/configurations/tables/logistics/warehouse-templates). Potrebno je za svako skladište postaviti razlog utovara ispravke zaliha i razlog iskrcaja ispravke zaliha. 
+Na ovoj kartici mogu se podesiti isključivo oni skladišni šabloni kod kojih je aktivirana zastavica *Upravljanje fizičkim inventarom* u odeljku [Skladišni šabloni](/docs/configurations/tables/logistics/warehouse-templates). Za svako skladište potrebno je podesiti šablon ulaza za inventurnu korekciju i šablon izlaza za inventurnu korekciju.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću stranicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

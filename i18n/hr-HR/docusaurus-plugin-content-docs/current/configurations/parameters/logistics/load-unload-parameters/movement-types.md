@@ -13,7 +13,7 @@ Povezana funkcija navedena je u nastavku za svaku vrstu kretanja:
 
 **Proizvodni depozit**: WMS Mobile funkcija koja vam omogućuje prijavu proizvodnje gotovog ili poluproizvoda;
 
-**Komisioniranje proizvodnje**: WMS Mobile funkcija koja omogućuje preuzimanje materijala potrebnih za proizvodnju sa skladišta;
+**Preuzimanje iz proizvodnje**: WMS Mobile funkcija koja omogućuje preuzimanje materijala potrebnih za proizvodnju sa skladišta;
 
 **Povrati iz proizvodnje**: WMS Mobile funkcija koja vam omogućuje deklariranje povrata iz proizvodnje s registracijom utovara u skladište;
 
@@ -41,9 +41,9 @@ Povezana funkcija navedena je u nastavku za svaku vrstu kretanja:
 
 **Ukloni iz transportne jedinice**: WMS Mobil funkcija koja omogućuje uklanjanje članaka iz prethodno kreirane transportne jedinice;
 
-**Prodaja**: WMS Mobile funkcija za stvaranje otpremnice prema narudžbi kupca ili ručnoj narudžbi i povezano istovaranje artikala iz skladišta;
+**Prodaja**: WMS Mobile funkcija za stvaranje otpremnice prema narudžbi kupca ili ručnoj narudžbi i povezani istovar artikala iz skladišta;
 
-**Picking**: funkcija WMS Mobile za kreiranje novog komisioniranja ili potvrdu prethodno kreiranog; 
+**Picking**: funkcija WMS Mobile za kreiranje novog preuzimanja ili potvrdu prethodno kreiranog; 
 
 **Inventar transportne jedinice**: WMS Mobile značajka za stvaranje transportne jedinice inventara;
 

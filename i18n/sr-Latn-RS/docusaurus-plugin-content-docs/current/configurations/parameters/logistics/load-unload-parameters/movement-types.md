@@ -1,52 +1,52 @@
 ---
-title: Vrste kretanja 
+title: Vrste kretanja
 sidebar_position: 2
 ---
 
-Vrste kretanja određuju koja je značajka omogućena. 
+Vrste kretanja određuju koja je funkcionalnost omogućena.
 
-Povezana funkcija navedena je u nastavku za svaku vrstu kretanja: 
+Povezana funkcija navedena je u nastavku za svaku vrstu kretanja:
 
-**Utovar**: WMS Mobile funkcija koja vam omogućuje stvaranje zapisa o utovaru skladišta;
+**Utovar**: funkcija WMS Mobile koja omogućava kreiranje skladišnog zapisa o utovaru;
 
-**Istovar**: WMS Mobile funkcija koja vam omogućuje stvaranje skladišnog zapisa o istovaru;
+**Istovar**: funkcija WMS Mobile koja omogućava kreiranje skladišnog zapisa o istovaru;
 
-**Proizvodni depozit**: WMS Mobile funkcija koja vam omogućuje prijavu proizvodnje gotovog ili poluproizvoda;
+**Prijem iz proizvodnje**: funkcija WMS Mobile koja omogućava prijavu proizvodnje gotovih proizvoda ili poluproizvoda;
 
-**Komisioniranje proizvodnje**: WMS Mobile funkcija koja omogućuje preuzimanje materijala potrebnih za proizvodnju sa skladišta;
+**Preuzimanje iz proizvodnje**: funkcija WMS Mobile koja omogućava preuzimanje materijala potrebnih za proizvodnju iz skladišta;
 
-**Povrati iz proizvodnje**: WMS Mobile funkcija koja vam omogućuje deklariranje povrata iz proizvodnje s registracijom utovara u skladište;
+**Povrat iz proizvodnje**: funkcija WMS Mobile koja omogućava evidentiranje povrata iz proizvodnje uz registraciju utovara u skladište;
 
-**Prilagodba opterećenja**: WMS Mobile funkcija koja vam omogućuje da izvršite pozitivnu prilagodbu skladišta;
+**Korekcija utovara**: funkcija WMS Mobile koja omogućava pozitivnu korekciju zaliha u skladištu;
 
-**Prilagodba istovara**: WMS Mobile funkcija koja vam omogućuje da izvršite negativnu prilagodbu zaliha;
+**Korekcija istovara**: funkcija WMS Mobile koja omogućava negativnu korekciju zaliha;
 
-**Utovar paleta**: WMS Mobile i ERP funkcija koja omogućuje utovar transportne jedinice u skladište;
+**Utovar paleta**: funkcija WMS Mobile i ERP-a koja omogućava utovar transportne jedinice u skladište;
 
-**Istovar paleta**: WMS Mobile i ERP funkcija koja omogućuje istovar transportne jedinice iz skladišta;
+**Istovar paleta**: funkcija WMS Mobile i ERP-a koja omogućava istovar transportne jedinice iz skladišta;
 
-**Povrati**: WMS Mobile funkcija za upravljanje povratima materijala;
+**Povrati**: funkcija WMS Mobile za upravljanje povratima materijala;
 
-**Potvrdi prebacivanje**: WMS Mobile funkcija za potvrdu prijenosa preuzimanja;
+**Potvrda prenosa**: funkcija WMS Mobile za potvrđivanje prenosa preuzetog materijala;
 
-**Dodjeli lokaciju**: WMS Mobile funkcija koja preuzima stavku sa zadane lokacije i učitava stavku na željenu lokaciju;
+**Dodela lokacije**: funkcija WMS Mobile koja preuzima stavku sa podrazumevane lokacije i smešta je na željenu lokaciju;
 
-**Premještanje stavki**: WMS Mobile funkcija koja vam omogućuje premještanje stavki s jedne lokacije na drugu. Skladišni razlog koji se prilaže mora biti istovar uz naknadu;
+**Premeštanje stavki**: funkcija WMS Mobile koja omogućava premeštanje stavki sa jedne lokacije na drugu. Pridruženi skladišni šablon mora biti šablon istovara uz naknadu;
 
-**Kupnja**: WMS Mobile funkcija za kreiranje kupovne otpremnice/primke prema narudžbi kupca i povezanog utovara artikala u skladište;
+**Nabavka**: funkcija WMS Mobile za kreiranje otpremnice/prijemnice prema nalogu kupca i povezani utovar artikala u skladište;
 
-**Premjesti loš lot**: WMS Mobile funkcija koja omogućuje premještanje isteklih lotova;
+**Premeštanje neispravne serije**: funkcija WMS Mobile koja omogućava premeštanje serija kojima je istekao rok trajanja;
 
-**Prihvaćanje materijala koji se upravlja u lotovima**: WMS Mobile funkcija za kreiranje otpremnicu prema narudžbi kupca i povezani utovar artikala kojima se upravlja u serijama u skladište;
+**Prijem materijala kojim se upravlja po serijama**: funkcija WMS Mobile za kreiranje otpremnice prema nalogu kupca i povezani utovar artikala kojima se upravlja po serijama u skladište;
 
-**Ukloni iz transportne jedinice**: WMS Mobil funkcija koja omogućuje uklanjanje članaka iz prethodno kreirane transportne jedinice;
+**Uklanjanje iz transportne jedinice**: funkcija WMS Mobile koja omogućava uklanjanje artikala iz prethodno kreirane transportne jedinice;
 
-**Prodaja**: WMS Mobile funkcija za stvaranje otpremnice prema narudžbi kupca ili ručnoj narudžbi i povezano istovaranje artikala iz skladišta;
+**Prodaja**: funkcija WMS Mobile za kreiranje otpremnice prema nalogu kupca ili ručnom nalogu i povezani istovar artikala iz skladišta;
 
-**Picking**: funkcija WMS Mobile za kreiranje novog komisioniranja ili potvrdu prethodno kreiranog; 
+**Picking**: funkcija WMS Mobile za kreiranje novog preuzimanja ili potvrđivanje prethodno kreiranog;
 
-**Inventar transportne jedinice**: WMS Mobile značajka za stvaranje transportne jedinice inventara;
+**Inventar transportne jedinice**: funkcija WMS Mobile za kreiranje inventara transportne jedinice;
 
-**Prijenos transportne jedinice**: značajka WMS Mobile za stvaranje ili potvrđivanje popisa prijenosa transportne jedinice;
+**Prenos transportne jedinice**: funkcija WMS Mobile za kreiranje ili potvrđivanje liste prenosa transportne jedinice;
 
-**Utovari Transportnu jedinicu iz kreiranja transportne jedinice**: WMS Mobile i ERP funkcija za kreiranje transportnih jedinica i povezano učitavanje u skladište.
+**Utovar transportne jedinice prilikom njenog kreiranja**: funkcija WMS Mobile i ERP-a za kreiranje transportnih jedinica i povezani utovar u skladište.

@@ -29,7 +29,7 @@ Automatski izračun:
 
 >**Prodajna cijena artikla**: ako je omogućeno, automatski ažurira prodajnu cijenu artikla;    
 
->**Nova prodajna cijena**: ako je omogućeno, polje **Nova prodajna cijena** kartice *Troškovi* u *Upravljanju prototipom* bit će izračunato automatski i neće ga biti moguće ručno mijenjati, a ako je onemogućeno polje će se također moći uređivati ​​ručno.       
+>**Nova prodajna cijena**: ako je omogućeno, polje **Nova prodajna cijena** kartice *Troškovi* u *Upravljanju prototipom* bit će izračunano automatski i neće ga biti moguće ručno mijenjati, a ako je onemogućeno polje će se također moći uređivati ​​ručno.       
 
 
 

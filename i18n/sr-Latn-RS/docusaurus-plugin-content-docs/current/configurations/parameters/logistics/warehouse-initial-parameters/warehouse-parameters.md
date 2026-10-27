@@ -1,95 +1,98 @@
 ---
-title: Početni parametri skladišta 
+title: Početni parametri skladišta
 sidebar_position: 2
 ---
 
-:::important Za što se koristi  
-Uvod u inicijalne parametre skladišta u sustavu Fluentis predstavlja temeljnu referentnu točku za upravljanje logističkim operacijama unutar sustava. Ovi parametri, dostupni putem namjenskog obrasca, omogućuju preciznu konfiguraciju načina rada skladišta i definiranje operativnih pravila koja utječu na cijeli lanac opskrbe i distribucije.  
+:::important[Čemu služi]
+Uvod u početne parametre skladišta u sistemu Fluentis predstavlja osnovu za upravljanje logističkim operacijama unutar sistema. Ovi parametri, dostupni putem namenski predviđenog obrasca, omogućavaju precizno podešavanje načina upravljanja skladištem i definisanje operativnih pravila koja utiču na ceo lanac nabavke i distribucije.
 
-U sustavu Fluentis, inicijalni parametri uključuju flagove i postavke koje reguliraju ključne aspekte poput izmjene evidencija, upravljanja popisima materijala i izračuna prosječnih i posljednjih troškova. Na primjer, flag "Izmjena evidencija skladišta povezanih s drugim dokumentima" omogućuje izmjenu kretanja stvarajući izravnu interakciju između različitih dokumenata o kretanju, dok flag "Dopusti negativnu zaliha" pruža dodatnu fleksibilnost u operacijama otpisa. 
+U sistemu Fluentis početni parametri obuhvataju zastavice i podešavanja koja regulišu ključne aspekte, kao što su izmena skladišnih knjiženja, upravljanje sastavnicama i obračun prosečnih i poslednjih troškova. Na primer, zastavica „Izmena skladišnih knjiženja povezanih sa drugim dokumentima” omogućava izmenu robnih kretanja i direktnu interakciju između različitih dokumenata skladišnih kretanja, dok zastavica „Dozvoli negativne zalihe” pruža dodatnu fleksibilnost prilikom izdavanja robe iz skladišta.
 
-Važno je napomenuti da se ovi parametri moraju regenerirati svake godine kako bi se osigurala ispravna uprava i ažuriranje operacija skladišta. Osim toga, moguće je odrediti za svaki pojedinačni skladište hoće li se upravljati prema lokaciji, projektu ili kupcu/dobavljaču, što omogućuje prilagodbu operacija prema specifičnim poslovnim potrebama.  
+Važno je napomenuti da se ovi parametri moraju ponovo generisati svake godine kako bi se obezbedilo pravilno upravljanje skladišnim operacijama i njihovo ažuriranje. Osim toga, za svako pojedinačno skladište moguće je odrediti da li se njime upravlja prema lokaciji, projektu ili kupcu/dobavljaču, što omogućava prilagođavanje operacija specifičnim poslovnim potrebama.
 
-ITakođer, moguće je postaviti specifične periode u kojima se evidencije mogu voditi, čime se dinamički upravlja operacijama skladišta prema poslovnim potrebama. Konfiguracija ovih parametara ne samo da optimizira procese, već igra središnju ulogu u osiguravanju operativne učinkovitosti i praćenja robe, što su ključni elementi za uspjeh u modernom upravljanju logistikom.  
+Takođe je moguće podesiti određene periode tokom kojih je dozvoljeno unositi knjiženja, čime se skladišne operacije dinamički prilagođavaju poslovnim potrebama. Konfiguracija ovih parametara ne samo da optimizuje procese već ima i ključnu ulogu u obezbeđivanju operativne efikasnosti i sledljivosti robe, što su ključni elementi uspešnog upravljanja savremenom logistikom.
 :::
 
-U obrascu *Pretraživanje početnih parametara skladišta* odaberite željeni redak i izvršite dvostruki klik na njega ili kliknite na tipku *Novo*.
+U obrascu *Pretraga početnih parametara skladišta* izaberite željeni red i dvaput kliknite na njega ili kliknite na dugme *Novo*.
 
 ## 1. Podaci
 
-**Godina**: predstavlja godinu za koju želite postaviti parametre. 
+**Godina**: predstavlja godinu za koju se podešavaju parametri.
 
-**Datum zatvaranja zadnje financijske godine**: predstavlja datum kada je izvršeno posljednje zatvaranje skladišta s preuzimanjem stanja (vidi [Valorizacija skladišta](/docs/logistics/physical-inventory/warehouse-valorization)). U većini slučajeva to je 31. prosinca prethodne godine. Sljedeći dan, obično 1. siječnja, unose se skladišne knjige primitka za početni inventar, automatski kreirane postupkom *Valorizacije skladišta*, putem korištenja knjižne oznake primitka *Zalihe*; ta knjižna oznaka mora imati flag *Zalihe* aktiviran.
+**Datum poslednjeg zatvaranja poslovne godine**: predstavlja datum poslednjeg zatvaranja skladišta uz prenos stanja (pogledajte [Vrednovanje skladišta](/docs/logistics/physical-inventory/warehouse-valorization)). U većini slučajeva to je 31. 12. prethodne godine. Sledećeg dana, obično 1. januara, unose se skladišna knjiženja ulaza za početni inventar, koja se automatski kreiraju postupkom *Vrednovanje skladišta* primenom šablona ulaza *Zalihe*. Taj šablon mora imati aktiviranu zastavicu *Zalihe*.
 
-Za svako skladište prisutno u poduzeću mora postojati jedan i samo jedan razlog utovara za početne zalihe. Zalihe opterećene s razlogom na dan “otvorenja” skladišta predstavljaju *početne zalihe* samog skladišta. Sva kretanja koja slijede nakon ove registracije utovara identificirat će se kao ulazi u skladište ili izlazi iz skladišta, ovisno o tome jesu li utovar ili istovar. 
+Za svako skladište u okviru preduzeća mora postojati tačno jedan šablon ulaza za početne zalihe. Količine evidentirane ovim šablonom na dan „otvaranja” skladišta predstavljaju *početne zalihe* tog skladišta. Sva kretanja nakon ovog ulaznog knjiženja identifikuju se kao ulazi ili izlazi iz skladišta, u zavisnosti od toga da li je reč o ulazu ili izlazu robe.
 
-## 2. Općenito 
+## 2. Opšte
 
-**Uređivanje skladišne ​​evidencije povezane s drugim dokumentima**: omogućuje uređivanje skladišne ​​evidencije povezane s otpremnicama, računima o kupnji, otpremnicama, prodajnim fakturama itd. Nedostatak ove oznake znači da se skladišni dokumenti kreirani na temelju nabavnih ili prodajnih dokumenata ne mogu mijenjati. U tom slučaju pojavit će se poruka koja pokazuje da izmjena nije moguća. 
+**Izmena skladišnih knjiženja povezanih sa drugim dokumentima**: omogućava izmenu skladišnih knjiženja povezanih sa nabavnim otpremnicama, ulaznim fakturama, prodajnim otpremnicama, izlaznim fakturama i drugim dokumentima. Ako ova zastavica nije aktivirana, skladišni dokumenti kreirani na osnovu nabavnih ili prodajnih dokumenata ne mogu se menjati. U tom slučaju prikazuje se poruka koja obaveštava da izmena nije moguća.
 
-Što se tiče izmjene skladišne ​​evidencije iz dokumenata, napominjemo da je moguće birati hoće li se mijenjati količina, mijenjati cijena, mijenjati oboje ili nijedno. To znači da kada se modificira dokument koji je već evidentiran u skladištu, npr. otpremnica, aplikacija provjerava jesu li zastavica Izmijeni količinu i Zastavica Izmijeni cijene aktivne ili ne; ako je tako, izmjena napravljena u dokumentu također se prenosi u skladišnu evidenciju s kojom je dokument povezan, inače izmjena dokumenta ne utječe na odgovarajuću skladišnu registraciju. Također je moguće aktivirati samo jednu od dvije zastavice. Nadalje, također je moguće aktivirati mogućnost umetanja ili brisanja prometa izravno iz dokumenta umetanjem ili brisanjem pojedinačnih redaka. 
+Prilikom izmene skladišnih knjiženja iz dokumenata moguće je odabrati da li će se menjati količina, cena, obe vrednosti ili nijedna od njih. To znači da, kada se izmeni dokument koji je već proknjižen u skladištu, na primer nabavna otpremnica, aplikacija proverava da li su aktivirane zastavice za izmenu količine i cene. Ako jesu, izmene dokumenta prenose se i na povezano skladišno knjiženje. U suprotnom, izmene dokumenta ne utiču na odgovarajuće skladišno knjiženje. Moguće je aktivirati samo jednu od ove dve zastavice. Osim toga, moguće je omogućiti direktno dodavanje ili brisanje skladišnih kretanja iz dokumenta, umetanjem ili uklanjanjem pojedinačnih redova.
 
-**Dopustite nepotpuni BOM doprinos**:  ako je aktivno, omogućuje vam izmjenu sastavnice pomaka kontraparta; ako je deaktivirano, protukretanje će se automatski kreirati za cijeli troškovnik bez mogućnosti izmjene.
+**Dozvoli nepotpunu protivstavku sastavnice**: ako je aktivirana, omogućava izmenu protivstavke kretanja sastavnice. Ako nije aktivirana, protivstavka se automatski kreira za celu sastavnicu, bez mogućnosti izmene.
 
-Suprotno kretanje proizlazi iz drugog razloga kretanja povezanog s glavnim, koji djeluje na komponente popisa materijala; na primjer, može se koristiti za upravljanje plaćanjima proizvodnje (istovar komponenti popisa materijala) ili rastavljanje materijala s pokretima skladišta; stoga vam u najjednostavnijoj stvarnosti omogućuje upravljanje utovarom gotovih proizvoda i istovarom komponenti bez korištenja proizvodnog modula. 
+Protivstavka nastaje na osnovu drugog šablona skladišnog kretanja povezanog sa glavnim šablonom, koji se primenjuje na komponente sastavnice. Na primer, može se koristiti za upravljanje proizvodnim prijemnicama putem skladišnih kretanja (izlaz komponenti sastavnice) ili za rastavljanje materijala. U jednostavnijim poslovnim okruženjima to omogućava evidentiranje ulaza gotovih proizvoda i izlaza komponenti bez korišćenja modula proizvodnje.
 
-**Valoriziraj za skladište**: omogućuje vam da odlučite treba li zatvaranje skladišta uzeti u obzir prosječne troškove (ili zadnje, ili standardne, ovisno o tome koju vrstu troška želite koristiti za zatvaranje skladišta) povezane s pokretima izvršenim tijekom godine na jedinstvenom skladištu. To znači da ako je artikl podvrgnut pokretima u 3 skladišta, na primjer, u slučaju aktivne oznake, imat će 3 različita retka u Povijesti skladišta za godinu za koju se provodi zatvaranje, s vjerojatno 3 prosječna troška i 3 konačni troškovi različiti.   
+**Vrednovanje po skladištu**: omogućava određivanje da li će se prilikom zatvaranja skladišta uzimati u obzir prosečni troškovi (ili poslednji, odnosno standardni troškovi, u zavisnosti od izabrane vrste troška za zatvaranje skladišta) povezani sa kretanjima tokom godine u pojedinačnom skladištu. To znači da će artikal koji je imao kretanja u tri skladišta, na primer, ako je ova zastavica aktivirana, imati tri zasebna reda u Istoriji skladišta za godinu za koju se sprovodi zatvaranje, verovatno sa tri različita prosečna i tri različita poslednja troška.
 
-**Omogući uređivanje stavki računa koji su već korišteni**:  omogućuje izmjenu podataka “Nabavni promet” i “Prodajni promet” artikala koji su već prošli skladišna kretanja. Ako je zastavica onemogućena, ova izmjena je očito spriječena.
+**Dozvoli izmenu konta artikala koji su već korišćeni**: omogućava izmenu podataka „Nabavna prodaja” i „Prodajna prodaja” za artikle koji su već imali skladišna kretanja. Ako zastavica nije aktivirana, takva izmena nije dozvoljena.
 
-**Upravljanje statusom radnog ciklusa kroz tijek rada**: ako je aktivno, status radnog ciklusa može se mijenjati samo putem Workflowa.
+**Upravljanje statusom radnog ciklusa putem toka rada (Workflow)**: ako je aktivirano, status radnog ciklusa može se menjati samo putem toka rada (Workflow).
 
-**Kontrola odnosa predmeta / dobavljača kroz tijek rada**: ako je aktivna, oznaka Line lock prisutna na kartici **Preferirani dobavljači** u glavnim podacima o stavci može se mijenjati samo putem tijeka rada. 
+**Kontrola odnosa artikal/dobavljač putem toka rada (Workflow)**: ako je aktivirana, zastavica **Blokiranje reda**, koja se nalazi na kartici **Preferirani dobavljači** u šifarniku artikala, može se menjati samo putem toka rada (Workflow).
 
-**Datum početka i datum završetka razdoblja**: omogućuju korisniku definiranje razdoblja unutar kojeg se skladišna evidencija može unositi i/ili mijenjati i/ili brisati. Obično je početni datum razdoblja postavljen na datum neposredno prije posljednjeg datuma zatvaranja skladišta, a kraj tekuće kalendarske godine kao završni datum razdoblja. 
+**Datum početka perioda i Datum završetka perioda**: omogućavaju korisniku da definiše period u okviru kojeg se skladišna knjiženja mogu unositi, menjati i/ili brisati. Uobičajeno se kao datum početka perioda postavlja datum neposredno pre datuma poslednjeg zatvaranja skladišta, a kao datum završetka perioda kraj tekuće kalendarske godine.
 
-### 2.1 Upravljanje lotovima i serijskim brojevima 
+### 2.1 Upravljanje lotovima i serijskim brojevima
 
-**Upravljanje lotovima i serijskim brojevima**: omogućuje vam da odlučite treba li dopustiti kretanje skladišta u lotovima i/ili serijskim brojevima. Ako je ova oznaka onemogućena, sve druge oznake prisutne u bazi podataka koje upravljaju opcijama koje se odnose na lotove i serijske brojeve su neučinkovite. 
+**Upravljanje lotovima i serijskim brojevima**: omogućava određivanje da li su dozvoljena skladišna kretanja za artikle koji se prate po lotovima i/ili serijskim brojevima. Ako ova zastavica nije aktivirana, sve ostale zastavice u bazi podataka koje upravljaju opcijama povezanim sa lotovima i serijskim brojevima nemaju efekta.
 
-**Obvezni lotovi i SN**: ako je aktiviran, prisiljava korisnika da u sve kupoprodajne dokumente unese lot artikla koji je umetnut u sam dokument, pod uvjetom da se artikl vodi u lotovima ili serijskim brojevima.
+**Obavezni lotovi i serijski brojevi**: ako je aktivirana, korisnik mora da unese lotove artikla u sve nabavne i prodajne dokumente, pod uslovom da se artikal prati po lotovima ili serijskim brojevima.
 
-**Omogućena jedinstvenost serija:**: ako je aktivirano, omogućuje jedinstvenost serije za tvrtku i diviziju tijekom kreiranja same serije, tako da u slučaju više artikala koji koriste isti *tip koda serije*, redni broj kojim će se serija kreirati nastavlja rasti; ako nije aktivirano, jedinstvenost je po artiklu i varijanti, pa kada se kreiraju nove serije za različite artikle koji koriste isti *tip koda serije*, prva predložena serija bit će ista za sve te artikle.
+**Omogućena jedinstvenost lotova**: ako je aktivirana, obezbeđuje jedinstvenost lotova na nivou preduzeća i divizije prilikom njihovog kreiranja. Ako više artikala koristi isti *tip koda lota*, redni broj za kreiranje lota nastavlja da se povećava. Ako nije aktivirana, jedinstvenost se određuje prema artiklu i varijanti. To znači da će se prilikom kreiranja novih lotova za različite artikle koji koriste isti *tip koda lota* svima predlagati isti prvi lot.
 
-**Upravljanje statusom serije kroz tijek rada**: ako je aktivno, oznake **Status lota**, **Prodajna serija** i **Zatvoreno** prisutne u registru lotova mogu se mijenjati samo putem tijeka rada. Ista stvar vrijedi i za oznake **Otkazano**, **Prisilno** **Zatvoreno** i **Rezervirano** prisutne u bazi podataka serijskih brojeva. 
+**Upravljanje statusom lotova putem toka rada (Workflow)**: ako je aktivirano, **Status lotova** i zastavice **Lotovi raspoloživi za prodaju** i **Zatvoreno** u šifarniku lotova mogu se menjati samo putem toka rada (Workflow). Isto važi i za zastavice **Poništeno**, **Prisilno zatvoreno** i **Rezervisano** u šifarniku serijskih brojeva.
 
-**Koristi barkod kretanja**: ako je aktivan, stupac **Barkod** se prikazuje u linijama kretanja skladišta. 
+**Koristi bar-kodove skladišnih kretanja**: ako je aktivirano, u redovima skladišnih kretanja prikazuje se kolona **Bar-kod**.
 
+## 3. Parametri zatvaranja
 
-## 3. Parametri zatvaranja 
+Na ovoj kartici moguće je odrediti za koja će se **skladišta** zatvaranje sprovoditi prema **varijanti**, **lokaciji**, **lotovima i serijskim brojevima**, **prodajnim projektima** i **kupcu/dobavljaču**. Aktiviranjem jedne od ovih zastavica određuje se da skladišno knjiženje ulaza za početni inventar, koje automatski kreira postupak *Vrednovanje skladišta*, mora biti kreirano uz uvažavanje izabrane postavke.
 
-U ovoj kartici moguće je odlučiti za koja se zatvaranja **Skladišta** moraju izvršiti prema **Varijanti**, prema **Lokaciji**, prema  **Serijskom broju serije**, prema **Prodajnim nalozima** i prema **kupcu/dobavljaču**. U praksi, aktiviranjem jedne od ovih zastavica odlučujete da se početna registracija inventarnog opterećenja koju provodi postupak automatske *Valorizacije skladišta* mora kreirati uzimajući u obzir izvršenu postavku. 
+*Za svako skladište moguće je omogućiti sledeće načine upravljanja:*
 
-*Za svako skladište moguće je omogućiti sljedeće upravljanje*:	
+**Varijante**: ako je aktivirano, zatvaranje i prenos stanja uvažavaće varijante.
 
-**Varijante**: ako je aktivna, zatvaranje i ponovno pokretanje zaliha će uzeti u obzir varijante;	
+**Lokacije**: ako je aktivirano, zatvaranje i prenos stanja uvažavaće lokacije.
 
-**Lokacije**: ako je aktivan, zatvaranje i nastavak zaliha će uzeti u obzir loka;	
+**Lotovi i serijski brojevi**: ako je aktivirano, zatvaranje i prenos stanja uvažavaće lotove i serijske brojeve.
 
-**Lotovi i serijski broj**: ako je aktivno, zatvaranje i nastavak zaliha će uzeti u obzir lotove i serijski broj;	
+**Projekat** (*Prodajni projekti* u prethodnim verzijama): ako je aktivirano, zatvaranje i prenos stanja uvažavaće projekat (prodajni projekat).
 
-**Radni nalozi**: ako je aktivan, zatvaranje i nastavak zaliha će uzeti u obzir prodajne naloge (projekte);	
+**Kupac/dobavljač**: ako je aktivirano, zatvaranje i prenos stanja uvažavaće kupca/dobavljača.
 
-**Kupac/dobavljač**: ako je aktivan, zatvaranje i nastavak zaliha će uzeti u obzir kupca/dobavljača.
+*Primer*
 
-*Primjer*
-U *Podizvođačkom skladištu*, zastavica na stupcu *Kupac/Dobavljač* obično se drži aktiviranom, budući da je korisno za postupak stvaranja registracije utovarnog skladišta za početni inventar na podugovornom skladištu za svakog podizvođača; u skladištima u kojima se skladišti i premješta roba koja se vodi u serijama preporuča se aktiviranje zastavice *Lot i Serijski broj*, kao i u skladištima u kojima se skladišti i premješta roba koja se vodi u varijantama preporuča se aktiviranje odgovarajuće oznake. 
+U skladištu *Kooperacija* obično je aktivirana zastavica u koloni *Kupac/dobavljač* jer je korisno da postupak kreira skladišno knjiženje ulaza za početni inventar zasebno za svakog kooperanta. U skladištima u kojima se skladišti i prima roba koja se prati po lotovima preporučuje se aktiviranje zastavice *Lotovi i serijski brojevi*. Isto tako, u skladištima u kojima se skladišti i prima roba koja se prati po varijantama preporučuje se aktiviranje odgovarajuće zastavice.
 
+## 4. Parametri zaliha
 
-## 4. Parametri inventara
+Na ovoj kartici moguće je odrediti način upravljanja *zalihama* za svako skladište.
 
-U ovoj kartici moguće je odlučiti za koja se skladišta mogu voditi *Negativne zalihe*.
+**Dozvoli negativne zalihe**: omogućava da zaliha artikla bude manja od nule. Ako ova zastavica nije aktivirana, sistem uvek onemogućava čuvanje skladišnih knjiženja ili izlaznih transakcija koje bi dovele do toga da zaliha bilo kog artikla padne ispod nule. Važno je napomenuti da aktiviranje ove zastavice ne omogućava negativne zalihe za artikle koji se prate po lotovima ili serijskim brojevima, jer se takav artikal ne može izdati ako ne postoji zaliha lota ili serijskog broja koji se želi izdati.
 
-**Dopusti negativne zalihe**:  omogućuje vam da imate inventar artikla ispod nule. Ako zastavica nije aktivirana, sustav uvijek sprječava spremanje skladišne ​​evidencije ili operacije istovara koje bi poslale zalihu bilo kojeg artikla na nulu. Treba imati na umu da ako se predmetom upravlja u lotovima ili serijskim brojevima, aktiviranje ove zastavice ne znači imati mogućnost slanja ispod nule, budući da se artikl kojim se upravlja u lotovima ili serijskim brojevima nikada ne može istovariti ako zaliha lota ili serijski broj koji želite preuzeti ne postoji.
+*Za svako skladište moguće je omogućiti sledeće načine upravljanja:*
 
-*Za svako skladište moguće je omogućiti sljedeće upravljanje*:	
+**Negativne zalihe**: omogućava negativne zalihe u tom skladištu, ali samo ako je u odeljku *Opšti parametri* aktivirana i zastavica *Dozvoli negativne zalihe*.
 
-**Negativna zaliha**: dopušta negativne zalihe u tom skladištu (samo ako je također aktivna zastavica *Dopusti negativne zalihe* u *Općim parametrima*);
+**Zalihe po lokaciji**: omogućava proveru zaliha i prema lokaciji navedenoj u skladišnom kretanju. Ako zalihe na toj lokaciji nisu dovoljne, kretanje neće biti kreirano.
 
-**Lokacija inventara**: znači provjera inventara i za lokaciju navedenu u kretanju (ako inventar za tu lokaciju nije dovoljan, kretanje se ne kreira);
+**Zalihe po projektu**: omogućava proveru zaliha i prema projektu navedenom u skladišnom kretanju. Ako zalihe za taj projekat nisu dovoljne, kretanje neće biti kreirano.
 
-**Inventura radnih naloga**: podrazumijeva provjeru zaliha i za prodajnu narudžbu (projekt) navedenu u pokretu (ako zaliha za tu narudžbu nije dovoljna, kretanje se ne kreira);
+**Zalihe po kupcu/dobavljaču**: omogućava proveru zaliha i prema kupcu/dobavljaču navedenom u knjiženju. Ako zalihe za tog kupca/dobavljača nisu dovoljne, kretanje neće biti kreirano. Ova opcija može se koristiti za skladišta kooperanata.
 
-**Inventura kupca/dobavljača**: znači provjera zaliha i za kupca/dobavljača navedenog u registraciji (ako zaliha za tog kupca/dobavljača nije dovoljna, kretanje se ne kreira. Može se koristiti za skladišta trećih strana).
+:::important[Pažnja]
+Svaki put kada se menjaju podešavanja na kartici parametara zatvaranja ili na kartici parametara zaliha, važno je proveriti da li su obe kartice konfigurisane na dosledan način. U suprotnom se može dogoditi da se, uprkos upravljanju zalihama prema kontu ili lokaciji, nakon prvog zatvaranja skladišta zalihe prikažu bez dodeljenog konta ili sa praznom lokacijom, jer zatvaranje nije prenelo te podatke.
+:::
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću stranicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

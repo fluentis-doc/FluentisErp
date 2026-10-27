@@ -1,61 +1,58 @@
 ---
-title: Parametri slaganja robe 
+title: Parametri Pickinga (slaganja/preuzimanja robe)
 sidebar_position: 6
 ---
 
-:::important Za što se koristi  
-Kroz ovu funkcionalnost korisnici mogu konfigurirati i prilagoditi sustav prema različitim operativnim potrebama, osiguravajući glatko i usklađeno funkcioniranje logističkih aktivnosti. 
+:::important[Čemu služi]
+Ova funkcionalnost omogućava korisnicima da konfigurišu i prilagode sistem različitim operativnim potrebama, čime se obezbeđuje nesmetano i dosledno odvijanje logističkih aktivnosti.
 
-U ovom odjeljku moguće je dodijeliti unaprijed definirana skladišta i uzroke otpisa, odlučiti hoće li se provjeravati dostupnost artikala te definirati treba li unos informacija poput šifre operatera biti obavezan. Ostale opcije uključuju upravljanje artiklima po lotovima ili serijskim brojevima te kontrolu količina prilikom kreiranja pickinga. Ovaj modul za parametrizaciju ne samo da olakšava operativno poslovanje, već i osigurava da su procedure u skladu s internim pravilima tvrtke i važećim propisima, omogućujući učinkovito i precizno upravljanje skladištem.
+U ovom odeljku moguće je dodeliti podrazumevana skladišta i šablone izlaza, odrediti da li treba proveravati raspoloživost artikala i definisati da li je obavezan unos podataka kao što je šifra operatera. Ostale opcije obuhvataju upravljanje artiklima koji se prate po lotovima ili serijskim brojevima, kao i kontrolu količina prilikom kreiranja Pickinga. Ovaj modul za podešavanje parametara ne samo da olakšava rad već obezbeđuje i usklađenost postupaka sa poslovnim pravilima i važećim propisima, omogućavajući efikasno i precizno upravljanje skladištem.
 :::
 
-Obrazac se otvara preko putanje **Parametri > Logistika > Parametri slaganja robe** e omogućuje provođenje svih parametara u vezi s operacijom komisioniranja ili otpremnih lista. Tek nakon odgovarajuće parametrizacije ove maske moguće je koristiti modul Picking.
+Obrazac se otvara putem menija **Parametri > Logistika > Parametri Pickinga** i omogućava konfigurisanje svih postavki koje se odnose na funkcionisanje Pickinga, odnosno lista za preuzimanje. Modul Pickinga može se koristiti tek nakon odgovarajućeg podešavanja ovog obrasca.
 
-#### Specifična tipka
+#### Posebno dugme
 
-> **Vrati**: tipka za vraćanje parametara na prethodno stanje. 
+> **Vrati na prethodno stanje**: dugme za vraćanje parametara na prethodno stanje.
 
-## Općenito 
+## Opšte
 
-U ovoj kartici možete parametrirati opće informacije o upravljanju komisioniranjem. Moguće je dodijeliti skladište i razlog koji će se prema zadanim postavkama koristiti za istovar robe. Da biste to učinili, jednostavno označite parametre **Prioritet parametara uzimanja sa zaliha** i označite **Skladište** i **Predložak**.  
-Također je moguće odabrati hoće li se u trenutku istovara **Provjeriti raspoloživost**, **Isključiti narudžbe kupaca** iz raspoloživosti i/ili biti blokiran ako raspoloživost ne zadovoljava količinu koja se premješta (**Obavezna raspoloživost**).
+Na ovoj kartici mogu se konfigurisati opšta podešavanja za upravljanje Pickingom. Moguće je dodeliti skladište i šablon koji će se podrazumevano koristiti za izlaz robe prilikom Pickinga. Za to je dovoljno označiti **Prioritet parametara Pickinga** i izabrati **Skladište** i **Šablon**.
 
-Ako odlučite provjeriti dostupnost, možete odrediti kako se potonji treba izračunati na temelju **Podizvođač**, **Planirane proizvodnje**, **Nabave**, **Otpuštene proizvodnje**, **Prodaje** i/ili **Skladišta**.
+Takođe je moguće odabrati da li će se prilikom izlaza robe **Proveravati raspoloživost**, da li će **Nalozi kupaca biti isključeni** iz obračuna raspoloživosti i/ili da li će sistem blokirati operaciju ako raspoloživa količina nije dovoljna za količinu koju treba evidentirati (**Obavezna raspoloživost**).
 
-Kao opće postavke moguće je odabrati da li je kod kreiranja komisioniranja obavezan unos **Šifre korisnika**, da li **Numeracija mora biti progresivna po godinama**, da li je obvezna **Šifra korisnika** koja **potvrđuje picking**.
+Ako je izabrana provera raspoloživosti, moguće je odrediti način njenog obračuna uzimajući u obzir **Kooperaciju**, **Planiranu proizvodnju**, **Nabavku**, **Odobrenu proizvodnju**, **Prodaju** i/ili **Skladište**.
 
-Ako postoji određeno upravljanje artiklima, može se aktivirati **Upravljanje veličinom i bojom**.
+U opštim podešavanjima moguće je odrediti da li je prilikom kreiranja Pickinga obavezan unos **Šifre operatera**, da li **Numerisanje treba da bude uzastopno po godinama** i da li je obavezan unos **Šifre operatera koji potvrđuje Picking**.
 
-U odjeljku **Upravljanje lotovima i serijskim brojevima** moguće je aktivirati sljedeće flagove:  
+Ako je za artikle potrebno posebno upravljanje, moguće je aktivirati opciju **Upravljanje veličinama i bojama**.
 
-**Upravljanje lotovima / serijskim brojevima**: omogućuje upravljanje lotovima i serijskim brojevima putem odgovarajućih mreža.
+U odeljku **Upravljanje lotovima i serijskim brojevima** moguće je aktivirati sledeće zastavice:
 
-**Prijedlog lotova / serijskih brojeva**: ako je aktivan, pri promjeni količine na liniji picking-a, ako je artikl upravljan lotovima s tipom preuzimanja FIFO ili prema datumu isteka, lotovi se automatski predlažu u pripadajućoj mreži.
+**Upravljanje lotovima / serijskim brojevima**: omogućava upravljanje lotovima i serijskim brojevima putem odgovarajućih tabela.
 
-**Automatski kretanje označenog**: ako je aktivan, u obrascima *Upravljanje označavanjem* i *Potvrdite odabir* automatski se vrši otpremanje stavke; u tom slučaju nije potrebno provoditi otpremu putem [Istovareno sa označenih redova](/docs/logistics/picking/unload-check-row-management); ako flag nije aktivan, označavanje će se provesti, ali bez pokreta koji će se tada morati izvršiti pomoću procedure [Istovareno sa označenih redova](/docs/logistics/picking/unload-check-row-management).
+**Predlog lotova / serijskih brojeva**: ako je aktivirano, prilikom promene količine u redu Pickinga automatski se predlažu lotovi u odgovarajućoj tabeli, ako se artikal prati po lotovima uz metod izdavanja FIFO ili prema datumu isteka.
 
-**Prikaz tablice izvršenja**: ako je flag aktivan, omogućuje se prikaz u obliku tablice u obrascu za izvršenje pickinga.  
+**Automatsko skladišno kretanje prilikom potvrde**: ako je aktivirano, u obrascima *Upravljanje proverom* i *Potvrda Pickinga* automatski se evidentira izlaz robe iz reda. U tom slučaju nije potrebno zasebno pokretati postupak [Izlaz robe nakon provere](/docs/logistics/picking/unload-check-row-management). Ako zastavica nije aktivirana, sprovodi se provera, ali se skladišno kretanje ne evidentira. Ono se mora naknadno evidentirati putem postupka [Izlaz robe nakon provere](/docs/logistics/picking/unload-check-row-management).
 
-**Prikaz stabla izvršenja**: ako je flag aktivan, omogućuje se prikaz u obliku stabla u obrascu za izvršenje pickinga.  
+**Prikaz tabele za realizaciju**: ako je aktivirano, omogućava prikaz u obliku tabele u obrascu za realizaciju Pickinga.
+
+**Prikaz stabla za realizaciju**: ako je aktivirano, omogućava prikaz u obliku stabla u obrascu za realizaciju Pickinga.
 
 ## WMS Mobile
 
-U ovoj kartici možete definirati parametre za rad Komisioniranja u WMS Mobile. 
+Na ovoj kartici mogu se definisati parametri za funkcionisanje Pickinga u sistemu WMS Mobile.
 
-**Tip konta prijevoznika**: predstavlja prijevoznika koji će biti uključen u odabire koje kreira WMS Mobile,   
+**Vrsta konta prevoznika**: predstavlja prevoznika koji će biti dodeljen Picking dokumentima kreiranim putem sistema WMS Mobile.
 
-Također možete odabrati različite vrste slaganja.
+Moguće je izabrati i različite vrste Pickinga.
 
-Također je preporučljivo navesti razloge koji će se koristiti za sljedeće pokrete:  
+Takođe je potrebno odrediti šablone koji će se koristiti za sledeća skladišna kretanja:
 
-- preuzimanje transportne jedinice za potvrdu prijenosa; 
+- izlaz UDC-a prilikom potvrde prenosa;
+- šablon koji se predlaže za izlaz prilikom Pickinga;
+- izlaz iz polaznog skladišta;
+- ulaz u odredišno skladište;
+- šablon izlaza iz skladišta kooperacije.
 
-- predloženi razlog za Picking istovar; 
-
-- istovar za otpremno skladište; 
-
-- utovar za odredišno skladište; 
-
-- razlog za istovar proturadnog skladišta. 
-
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću stranicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

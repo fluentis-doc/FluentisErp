@@ -1,11 +1,11 @@
 ---
-title: Pretražite početne parametre skladišta 
+title: Pretraga početnih parametara skladišta
 sidebar_position: 1
 ---
 
-Obrazac se sastoji od dva glavna dijela:  
+Obrazac se sastoji od dva glavna dela:
 
-- **Područje za filtriranje**: omogućuje pretraživanje parametara pomoću filtera za *godinu* i *datum zadnjeg zatvaranja*.  
-- **Rešetka s rezultatima**: prikazuje pronađene parametre na temelju primijenjenih filtera. Dvostrukim klikom na željeni redak moguće je pristupiti detaljnom obrascu*Parametara skladišta*.  
+- **Područje za filtriranje**: omogućava pretragu parametara pomoću filtera za *godinu* i *datum poslednjeg zatvaranja*.
+- **Tabela sa rezultatima**: prikazuje pronađene parametre na osnovu primenjenih filtera. Dvostrukim klikom na željeni red moguće je pristupiti detaljnom obrascu *Parametri skladišta*.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeni rad sa obrascima, pogledajte sledeću stranicu: [Zajedničke funkcije, dugmad i polja](/docs/guide/common).
