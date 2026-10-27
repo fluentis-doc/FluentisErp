@@ -15,7 +15,6 @@ sidebar_position: 1.1
 > -	SCS - Campi giacenza e disponibilità in evasione materiale su DDT: i dati presenti sono riferiti al magazzino da cui i materiali verranno scaricati. Tendenzialmente, il magazzino interno (#TT03693/26).
 > -	SCS - Dettaglio righe ordini conto lavoro, ripristinato il corretto aggiornamento delle date riga della funzione "Modifica consegna"(866/26)
 > -	SCS - Evasione Ordini: corretta un'anomalia nella procedura di selezione massiva e nella selezione delle righe evidenziate che, in determinate circostanze, non includeva correttamente tutti gli elementi previsti. (#TT04544/26)
-> -	SDI Documenti di acquisto in entrata - Creazione fattura di acquisto: Per le righe di spesa, sconto e abbuono (tipologie AC, AB e SC) presenti nel file XML, il sistema crea automaticamente delle righe di tipo 3 - Spese. Tali righe vengono generate utilizzando gli stessi parametri previsti per le righe articolo; in particolare, viene adottato il comportamento delle righe di tipo 2 oppure delle righe di tipo 1 qualora l'articolo risulti codificato e correttamente riconosciuto. (#TT04047/26)
 > -	Solved problem to Create session for BizLink BinaryDocument
 
 ### Patch 804.028 - 23/10/2026
@@ -26,7 +25,7 @@ sidebar_position: 1.1
 > - MS - Eliminazione degli ordini pianificati: correzione di un bug tecnico relativo alla conversione tra oggetti standard e custom. (#TT4505/26, #TT4506/26, #TT4509/26)
 > - MS - Pianificazione generale: se si settavano i giorni di anticipo per i materiali nei parametri di pianificazione, sui pianificati di livello superiore al primo la data fine era errata. (#TT04541/26)
 > - PM - MAUI - nota spese, corrette diverse casistiche relative al layout form (#TT03599/26)
-> - SDI Documenti di acquisto in entrata - Creazione fattura di acquisto: Per le righe di spesa, sconto e abbuono (tipologie AC, AB e SC) presenti nel file XML, il sistema crea automaticamente delle righe di tipo 3 - Spese. Tali righe vengono generate utilizzando gli stessi parametri previsti per le righe articolo; in particolare, viene adottato il comportamento delle righe di tipo 2 oppure delle righe di tipo 1 qualora l'articolo risulti codificato e correttamente riconosciuto.. (#TT04047/26)
+> - SDI Documenti di acquisto in entrata - Creazione fattura di acquisto: Per le righe di spesa, sconto e abbuono (tipologie AC, AB e SC) presenti nel file XML, il sistema crea automaticamente delle righe di tipo 3 - Spese. Tali righe vengono generate utilizzando gli stessi parametri previsti per le righe articolo; in particolare, viene adottato il comportamento delle righe di tipo 2 oppure delle righe di tipo 1 qualora l'articolo risulti codificato e correttamente riconosciuto. (#TT04047/26)
 > - WM - Registrazioni di magazzino: Corretta anomalia che permetteva erroneamente di modificare una variante di un articolo dopo aver effettuato la registrazione di magazzino. (#TT04425/26)
 > - WMS - Gestione Spunta: Corretta sovrapposizione lista lotti a messaggio errore del barcode. (#TT04556/26)
 > - Fixed a bug affecting the opening of Flows and Flow Operations, as well as the updating of Flows.
