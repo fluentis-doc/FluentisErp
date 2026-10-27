@@ -195,7 +195,7 @@
     "message": "Knjigovodstveni zapisi"
   },
   "Partite": {
-    "message": "Dospijeća plaćanja"
+    "message": "Dospeća plaćanja"
   },
   "Percipienti": {
     "message": "Vanjski suradnik"
@@ -237,7 +237,7 @@
     "message": "Trenutačni računi"
   },
   "DocFinance": {
-    "message": "Financijski dokument"
+    "message": "Finansijski dokument"
   },
   "Pagamenti fornitori": {
     "message": "Plaćanja dobavljaču"
@@ -246,7 +246,7 @@
     "message": "Rizik kupca"
   },
   "Cash flow": {
-    "message": "Novčani tijek"
+    "message": "Novčani tok"
   },
   "Portafoglio effetti": {
     "message": "Portfelj računa"
@@ -273,13 +273,13 @@
     "message": "Izračun troška"
   },
   "Acquisti": {
-    "message": "Nabava"
+    "message": "Nabavka"
   },
   "Richieste di acquisto": {
-    "message": "Zahtjev za nabavom"
+    "message": "Zahtev za nabavkom"
   },
   "Richieste di offerta": {
-    "message": "Zahtjev za ponudom"
+    "message": "Upit za ponudom"
   },
   "Ordini fornitori": {
     "message": "Narudžba dobavljačima"
@@ -297,10 +297,10 @@
     "message": "Cjenici dobavljača"
   },
   "Resi fornitori": {
-    "message": "Povratni dobavljači"
+    "message": "Povrat dobavljača"
   },
   "Gestione prezzi": {
-    "message": "Upravljanje cijenama"
+    "message": "Upravljanje cenama"
   },
   "Vendite": {
     "message": "Prodaja"
@@ -315,13 +315,13 @@
     "message": "Izlazni računi"
   },
   "POS": {
-    "message": "Maloprodajno mjesto"
+    "message": "Maloprodajno mesto"
   },
   "Liquidazione agenti": {
     "message": "Obračun trgovačkih predstavnika"
   },
   "Listini di vendita": {
-    "message": "Prodajni cjenici"
+    "message": "Prodajni cenici"
   },
   "Logistica": {
     "message": "Logistika"
@@ -393,7 +393,7 @@
     "message": "Isporuka robe na skladište"
   },
   "Listini di conto lavoro": {
-    "message": "Cjenici radnih naloga"
+    "message": "Cenici radnih naloga"
   },
   "Gestione progetti": {
     "message": "Upravljanje projektima"
@@ -402,7 +402,7 @@
     "message": "Projekti"
   },
   "Richieste di intervento": {
-    "message": "Zahtjevi za intervencijom"
+    "message": "Zahtevi za intervencijom"
   },
   "Interventi pianificati": {
     "message": "Planirane intervencije"
@@ -420,13 +420,13 @@
     "message": "Planiranje resursa prema kalendaru"
   },
   "Qualità": {
-    "message": "Kvaliteta"
+    "message": "Kvalitet"
   },
   "Documenti di origine esterna": {
-    "message": "Dokumenti vanjskog podrijetla"
+    "message": "Dokumenti vanjskog porekla"
   },
   "Documenti di origine interna": {
-    "message": "Dokumenti s unutarnjim podrijetlom"
+    "message": "Dokumenti s unutarnjim poreklom"
   },
   "Controllo articolo": {
     "message": "Kontrola Artikla"
@@ -447,7 +447,7 @@
     "message": "Procedure"
   },
   "Forms e report": {
-    "message": "Obrasci i izvještaji"
+    "message": "Obrasci i izveštaji"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
