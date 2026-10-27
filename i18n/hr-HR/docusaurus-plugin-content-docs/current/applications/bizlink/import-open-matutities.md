@@ -18,7 +18,7 @@ Polja za popunjavanje (ne popunjavaju se automatski)
 
 KUPAC / DOBAVLJAČ    
     
-- Konto / podkonto: unesite kod računa i podračuna kupaca ili dobavljača koji su već prisutni u Fluentisu (OBAVEZNO)  
+- Konto / podkonto: unesite konto i podkonto kupaca ili dobavljača koji su već prisutni u Fluentisu (OBAVEZNO)  
 
 REFERENCE DOKUMENTA    
 - Vrsta dokumenta: npr. FA za račun kupovine, FV za račun prodaje. Koristite već postojeću kodiranu vrijednost u Fluentisu.  
