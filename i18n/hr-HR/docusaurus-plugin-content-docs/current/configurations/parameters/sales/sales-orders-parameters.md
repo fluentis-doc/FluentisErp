@@ -1,85 +1,94 @@
 ---
 title: Parametri narudžbi kupaca
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako želite ručno konfigurirati, pogledajte kontrolni popis na povezanoj stranici.   
+Ako parametre namjeravate konfigurirati ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Parametri faktura prodaje omogućuju osnovnu postavku za ispravno upravljanje, u skladu sa specifičnim zahtjevima svake pojedine tvrtke. Prozor povezan s ovim parametrima sastoji se od 4 različitih kartica: Općenito, Ispunjenje,Otprema  i Analitika. 
+Parametri narudžbi kupaca omogućuju definiranje osnovnih postavki za njihovo pravilno upravljanje u skladu sa zahtjevima pojedine tvrtke. Prozor s ovim parametrima sastoji se od četiri kartice: Općenito, Razduživanje, Izlaz i Analitika.
 
 ### Općenito
 
-**Upravljanje dvostrukom mjernom jedinicom**: ako je aktivno, u redovima narudžbe bit će prikazane dvije kolone Alternativna JM i Alternativna Količina, stoga će biti moguće upravljati dvostrukom jedinicom mjere, uzimajući uvijek u obzir da je to glavna jedinica mjere na kojoj se provode kontrole za ispunjenje.    
+**Upravljanje dvjema mjernim jedinicama**: ako je opcija aktivirana, u redcima narudžbe prikazuju se dva stupca, Alternativna mjerna jedinica i Alternativna količina. Na taj je način moguće upravljati dvjema mjernim jedinicama, pri čemu se provjere razduživanja uvijek provode prema osnovnoj mjernoj jedinici.
 
-**Proposta automatica UM alternativa**: ovaj flag postaje uređiv samo ako je aktiviran flag za upravljanje dvostrukom jedinicom mjere i omogućuje prikaz alternativne jedinice mjere postavljene u kartonu artikla u odgovarajućem stupcu 'UM alternativa'; ako nije aktivno, jedinica mjere se ne predlaže.     
+**Automatski prijedlog alternativne mjerne jedinice**: ovo se polje može uređivati samo ako je aktivirana opcija za upravljanje dvjema mjernim jedinicama. Omogućuje prikaz alternativne mjerne jedinice definirane u šifarniku artikala, u odgovarajućem stupcu *Alternativna mjerna jedinica* na kartici artikala narudžbe. Ako opcija nije aktivirana, mjerna jedinica neće se predlagati.
 
-**Provjerite dostupnost**: ovaj flag i ostali povezani s kontrolom, vizualizacijom i obveznošću s obzirom na područje, u trenutnoj verziji nisu upravljani.     
+**Provjera raspoloživosti**: ova opcija i ostale povezane opcije za provjeru, prikaz i obveznost unosa, uključujući razmatranje prema području, trenutačno nisu podržane.
 
-**Referenca naloga**: ako je ovaj flag postavljen, u projektu kreiranom iz narudžbe bit će umetnut Referenca na narudžbu u naslov projekta; sastav napomene mora biti specificiran u polju *Opis* prema parametrima opisanim u oznaci.
+**Referenca narudžbe**: ako je ova opcija aktivirana, u naslov projekta kreiranog iz narudžbe unosi se referenca narudžbe. Sadržaj napomene potrebno je definirati u polju *Opis*, u skladu s parametrima navedenima u oznaci polja.
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: prilikom traženja cijene i popusta za artikl unutar narudžbe, sustav slijedi pravila temeljena na postavkama u evidenciji kupca, u sekciji *Cjenici*. Ako je za određenu vrstu cjenika aktivirana opcija 'zadano', pretraživanje cijena i popusta vršit će se samo za tu specifičnu vrstu cjenika; ako zastavica "zadano" nije aktivna, sustav će proširiti pretraživanje na sve vrste cjenika, prateći redoslijed prioriteta. U praksi, sa zastavicom 'zadano' aktiviranom, sustav će prvo tražiti cjenik važeći za zadanu vrstu; ako nema rezultata, nastavit će s ostalim vrstama cjenika prema unesenom prioritetu. Međutim, ako u evidenciji kupca ne postoji nijedna vrsta cjenika postavljena kao 'zadano', a postoje samo prioriteti, ovaj parametar neće utjecati na pretraživanje, čak i ako je aktivan.
+**Pretraživanje cijena artikala u svim zadanim cjenicima**: prilikom pretraživanja cijene i popusta za artikl u narudžbi sustav primjenjuje pravila na temelju postavki u šifarniku kupca, u odjeljku *Cjenici*. Ako je opcija *Zadano* aktivirana za određenu vrstu cjenika, cijene i popusti traže se prvenstveno u toj vrsti cjenika. Ako opcija *Zadano* nije aktivirana, sustav proširuje pretraživanje na sve dostupne vrste cjenika prema zadanom redoslijedu prioriteta.
 
-**Proponi provvigione per gli articoli omaggio**: S ovim flagom bit će predložene provizije za agente i za stavke artikala tipa poklon, kao što je slučaj za stavke tipa Katalogizirani artikl.   
+Kada je opcija *Zadano* aktivirana, sustav najprije traži važeći cjenik zadane vrste. Ako ne pronađe odgovarajuću cijenu, provjerava ostale vrste cjenika prema postavljenom redoslijedu prioriteta. Međutim, ako u šifarniku kupca nijedna vrsta cjenika nije označena kao *Zadano* i definirani su samo prioriteti, ovaj parametar neće utjecati na pretraživanje, čak ni kada je aktiviran.
 
-**Dozvoli rabat za stavke promotivnih poklona**: S ovim flag-om bit će uneseni popusti na iznos stavke i za redove artikala tipa poklon.  
+**Predlaganje provizije za besplatne artikle**: ako je opcija aktivirana, provizije agenta predlagat će se i za retke s besplatnim artiklima, jednako kao i za retke s artiklima sa šifrom.
 
-**Obvezni omjer između kutija i količine**: ako je flag postavljen, korisnik je prisiljen unijeti količinu koja odgovara ili je višekratnik broja paketa definiranog u kartici *Težine/Dimenzije* u kartici artikla; ako količina nije broj paketa ili njegov višekratnik, pojavljuje se poruka: “Artikal se ne može prodavati u količini manjoj ili koja nije višekratnik.      
+**Dopusti popuste za besplatne artikle**: ako je opcija aktivirana, popusti na iznos retka primjenjivat će se i na retke s besplatnim artiklima.
 
-**Predloži ekonomski lot**: ako je flag postavljen, kao količina će se predložiti ekonomska serija, a ako je količina manja od ekonomske serije, pojavit će se poruka “Količina ne može biti manja od …”.       
+**Obvezan omjer količine artikla i broja paketa**: ako je opcija aktivirana, korisnik mora unijeti količinu koja odgovara broju paketa definiranom na kartici *Težine/Dimenzije* u šifarniku artikala ili njegovu višekratniku. Ako količina nije jednaka broju paketa niti njegov višekratnik, prikazat će se poruka: „Artikl se ne može prodavati u količini manjoj od ili koja nije višekratnik broja paketa.”
 
-**Provjeri zalihe artikala**: ako je postavljen, ovaj flag će prikazati iskačuću obavijest u slučaju da se u narudžbu unesu artikli koji su u kartonu postavili flag "Na isteku" i datum kada artikal ide u istek; ova provjera sprječava prodaju artikala koji se više neće proizvoditi ili dopunjavati.     
+**Predlaganje ekonomične količine**: ako je opcija aktivirana i u šifarniku artikala definirana je ekonomična količina za kupca iz dokumenta, prilikom unosa retka narudžbe automatski će se predložiti količina jednaka ekonomičnoj količini.
 
-**[Omogući widget pojednostavljenih popusta](/docs/sales/sales-flow/discount-widget)**: aktiviranjem ovog flaga u odjeljku Artikli prikazuju se dvije nove kolone: *Popusti artikla* i *Konačni popusti*. Kolona *Popusti artikla* èje uređiva i prikazuje popuste koji se automatski primjenjuju na temelju postavki vezanih za kupca, artikl, cjenik ili kategoriju popusta. Korisnik može direktno unositi, mijenjati ili brisati popuste u toj koloni. Za korištenje ovog widgeta potrebno je, osim aktiviranja flaga, u tipu narudžbe specificirati koji tip popusta koristiti.  
+Ako opcija nije aktivirana, provjera se provodi prilikom potvrde retka. Ako je unesena količina manja od ekonomične količine, prikazat će se poruka: „Količina ne može biti manja od …”.
 
-**Koristi stavku kupca**: ako je postavljeno, ovaj flag će umetnuti, u mrežu artikala narudžbe, kolone za Kod i Opis kupca unesene u kartonu artikla, na kartici Kupac. 
+**Provjera artikala na izmaku zaliha**: ako je opcija aktivirana, prikazat će se skočno upozorenje kada se u narudžbu unese artikl koji je u šifarniku označen kao artikl na izmaku zaliha i za koji je definiran datum od kojeg je na izmaku zaliha. Ovom se provjerom sprječava prodaja artikala koji se više neće proizvoditi ili nadopunjavati na zalihi.
 
-**Koristi barkod**: ako je aktivirano, ovaj flag će umetnuti, u mrežu artikala narudžbe, kolonu za prikaz barkoda artikla.
+**[Omogući pojednostavljeni widget za popuste](/docs/sales/sales-flow/discount-widget)**: aktiviranjem ove opcije u odjeljku *Artikli* prikazuju se dva nova stupca: *Popusti artikla* i *Konačni popusti artikla*. Stupac *Popusti artikla* može se uređivati i prikazuje popuste koji se automatski primjenjuju na temelju postavki za kupca, artikl, cjenik ili kategoriju popusta. Korisnik može izravno u tom stupcu unositi, mijenjati ili brisati popuste. Za korištenje ovog widgeta, osim aktiviranja ove opcije, potrebno je u vrsti narudžbe odrediti vrstu popusta koja će se koristiti.
 
-**Dozvoli izmjenu proizvodne narudžbe povezane s narudžbom kupca**: ako je aktivno, omogućuje izmjenu povezanog proizvodnog naloga za narudžbu.
+**Upotreba artikla kupca**: ako je opcija aktivirana, u tablicu artikala narudžbe dodaju se stupci za šifru i opis artikla kod kupca, definirani u šifarniku artikala na kartici *Kupac*.
 
-**Obvezna šifra korisnika**: ovaj flag čini obaveznim popunjavanje polja *Operater* u zaglavlju.  
+**Upotreba barkoda**: ako je opcija aktivirana, u tablicu artikala narudžbe dodaje se stupac za prikaz barkoda artikla.
 
-**Blokiraj unos dokumenta na praznike prema tvorničkom kalendaru**: ako je aktivno, sustav ne dopušta unos ponude na praznike (prvo se provjerava Kalendar tvornice tvrtke, a zatim Kalendar proizvodnih kapaciteta); ako nije aktivno, sustav ne provodi nikakvu provjeru i dopušta unos dokumenta.
+**Dopusti izmjenu proizvodnog naloga iz povezane narudžbe**: ako je opcija aktivirana, omogućuje izmjenu proizvodnog naloga povezanog s narudžbom.
 
-**Utilizzo il configuratore matrici**: ovaj parametar aktivira upravljanje matricama.     
+**Obvezna šifra operatera**: ovom se opcijom određuje je li obvezno popuniti polje *Operater* u zaglavlju narudžbe.
 
-**Proširi sastavnicu materijala**: ako je aktivno, u trenutku unosa artikla, on će biti zamijenjen prvim nivoom njegove liste materijala, ako postoji; tako da umjesto artikla “gotov proizvod” narudžba će biti popunjena listom materijala ovog artikla.   
+**Blokiraj unos dokumenta na neradne dane prema tvorničkom kalendaru**: ako je opcija aktivirana, sustav ne dopušta unos narudžbe na neradne dane. Najprije se provjerava tvornički kalendar tvrtke, a zatim kalendar proizvodnih kapaciteta. Ako opcija nije aktivirana, sustav ne provodi provjeru i dopušta unos dokumenta.
 
-**Predloži komercijalne podatke za ručno razdvojenu strukturu proizvoda**: ako je flag aktiviran, označava da će za komponente prvog nivoa unesene pomoću flag-a “Razdvoji strukturu proizvoda” biti ponuđene liste cijena, popusti i provizije kao i za kodirane artikle.     
+**Upotreba konfiguratora matrica**: ovim se parametrom aktivira upravljanje matricama.
 
-**Upravljanje verzijom strukture proizvoda**: ako je flag aktiviran, omogućuje u kartici artikala stupac Verzija strukture proizvoda za izbor verzije različite od one koja se automatski koristi kao zadana.    
+**Rastavljanje sastavnice**: ako je opcija aktivirana, prilikom unosa artikla on će biti zamijenjen komponentama prve razine njegove sastavnice, ako ona postoji. Umjesto artikla „Gotov proizvod”, narudžba će sadržavati komponente njegove sastavnice.
 
-**Ne grupiraj redove prilikom unosa iz strukture proizvoda**: ako je flag aktiviran, omogućuje unošenje komponenti prvog nivoa strukture u različite retke čak i ako imaju isti šifru materijala.        
+**Predlaganje komercijalnih podataka za ručno rastavljenu sastavnicu**: ako je opcija aktivirana, za komponente prve razine unesene pomoću opcije „Rastavljanje sastavnice” predlagat će se cijene iz cjenika, popusti i provizije, kao i za artikle sa šifrom.
 
-### Izuzimanje
+**Upravljanje verzijama sastavnice**: ako je opcija aktivirana, na kartici *Artikli* omogućuje se prikaz stupca *Verzija sastavnice*, u kojem je moguće odabrati verziju različitu od automatski odabrane zadane verzije.
 
-U ovoj kartici su prisutna sljedeća polja:     
+**Ne grupiraj retke prilikom unosa iz sastavnice**: ako je opcija aktivirana, komponente prve razine sastavnice unose se u zasebne retke čak i ako imaju istu šifru materijala.
 
-**Plaćanje**: određuje vrijednost koja se koristi za plaćanje narudžbe kupca u slučaju višestrukog ispunjenja projekata u Narudžbi: *Prva narudžba*, *Šifarnik* ili *Ručni odabir*.
+### Razduživanje
 
-**Primatelj**: određuje vrijednost koja se koristi za primatelja narudžbe kupca u slučaju višestrukog ispunjenja projekata u Narudžbi: *Prva narudžba*, *Šifarnik* ili *Ručni odabir*.
+Na ovoj kartici dostupna su sljedeća polja:
 
-**Grupiranje po vrsti i rješenju plaćanja**: specificira da će narudžbe kupaca biti grupirane po vrsti i rješenju plaćanja prilikom ispunjenja iz obrasca za pretraživanje Narudžbi s tipkama Izvršenje otpremnice/primke ili Izvršenje računa.
+**Plaćanje**: određuje vrijednost koja se koristi za plaćanje narudžbe kupaca prilikom višestrukog razduživanja projekata u narudžbe. Dostupne su opcije: *Prva narudžba*, *Šifarnik* ili *Ručni odabir*.
 
-**Grupiranje po odredištu**: specificira da će narudžbe kupaca biti grupirane prema primatelju i odredištu prilikom ispunjenja iz obrasca za pretraživanje Narudžbi s tipkama Izvršenje otpremnice/primke ili Izvršenje računa.
+**Primatelj**: određuje vrijednost koja se koristi za primatelja narudžbe prilikom višestrukog razduživanja projekata u narudžbe. Dostupne su opcije: *Prva narudžba*, *Šifarnik* ili *Ručni odabir*.
 
-**Prikaz mreže ispunjenja**: ako je aktivno, flag omogućuje način prikaza u mreži u obrascu za ispunjenje prodajnih narudžbi.
+**Grupiranje prema vrsti i načinu plaćanja**: određuje hoće li se narudžbe grupirati prema vrsti i načinu plaćanja prilikom razduživanja putem obrasca za pretraživanje narudžbi, pomoću tipki na alatnoj traci *Razduživanje otpremnicama* ili *Razduživanje računima*.
 
-**Prikaz stabla ispunjenja**: ako je aktivno, flag omogućuje način prikaza u obliku stabla u obrascu za ispunjenje prodajnih narudžbi.
+**Grupiranje prema odredištu**: određuje hoće li se narudžbe grupirati prema primatelju i odredištu prilikom razduživanja putem obrasca za pretraživanje narudžbi, pomoću tipki na alatnoj traci *Razduživanje otpremnicama* ili *Razduživanje računima*.
 
-### Istovar
+**Prikaz rešetke za razduživanje**: ako je opcija aktivirana, u obrascu za razduživanje narudžbi kupaca omogućuje se prikaz u obliku rešetke.
 
-**Prioritet parametara unesenih za svaku liniju narudžbe**: ako je aktivno, skladište i uzrok otpisa čitaju se iz redaka narudžbe, dok ako nije aktivno, koristit će se skladište i uzrok uneseni u sljedećim poljima (*Skladište* i *Razlog skladišta*).
+**Prikaz stabla za razduživanje**: ako je opcija aktivirana, u obrascu za razduživanje narudžbi kupaca omogućuje se prikaz u obliku stabla.
+
+### Izlaz
+
+**Prioritet parametara definiranih za svaki redak narudžbe**: ako je opcija aktivirana, skladište i predložak izlaza preuzimaju se iz redaka narudžbe. Ako opcija nije aktivirana, koriste se skladište i predložak navedeni u sljedećim poljima (*Skladište* i *Skladišni predložak*).
 
 ### Analitika
 
-Ova KARTICA specificira kojim prioritetom se dohvaća Centar troškova (CDC) ili Centar profita (CDP) u retku dokumenta.        
-Prioriteti se mogu mijenjati pomoću tipki **Premjesti gore**![](/img/neutral/common/move-up.png) i **Premjesti dole**![](/img/neutral/common/delete-cc.png).     
-*Zadane vrijednosti*: CDC ili CDP dohvaćaju se iz vrste fakturiranog, ako je prisutna.      
-Za dodatne informacije pogledajte tablicu [Vrsta fakturiranog](/docs/configurations/tables/sales/sales-turnover).      
-Ako nije prisutno u *Vrsti fakturiranog* sustav će ga tražiti u *Podacima kupca*. Ako nije ni tamo, tražit će u kartoteci artikla, a potom na razini skladišta.         
-Flag **Procijeni prioritet za svaku dimenziju** omogućava da se u dokumentima CDC/CDP grupiraju po dimenziji, u kartici Analitika.
+Ova kartica određuje prioritet prema kojem se preuzima centar troška (CDC) ili centar prihoda (CDP) u retku narudžbe.
+
+Prioritete je moguće mijenjati pomoću tipki **Pomakni gore** ![](/img/neutral/common/move-up.png) i **Pomakni dolje** ![](/img/neutral/common/delete-cc.png).
+
+*Zadane vrijednosti*: centar troška (CDC) ili centar prihoda (CDP) preuzima se iz vrste fakturiranja, ako je ondje definiran.
+
+Više informacija potražite u tablici [Vrsta fakturiranja](/docs/configurations/tables/sales/sales-turnover).
+
+Ako centar troška (CDC) ili centar prihoda (CDP) nije definiran u *vrsti fakturiranja*, sustav ga traži u *šifarniku kupca*. Ako ondje nije definiran, traži ga u šifarniku artikala, a zatim na razini skladišta.
+
+Opcija **Uvažavanje prioriteta svake dimenzije** omogućuje grupiranje centara troška (CDC) i centara prihoda (CDP) prema dimenziji na kartici *Analitika* u dokumentima.

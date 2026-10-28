@@ -1,35 +1,41 @@
 ---
-title: Parametri grupiranja otpremnice 
+title: Parametri grupisanja otpremnica
 sidebar_position: 8
 ---
 
 :::tip[Fast Start]
-Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-U slučaju da se želi izvršiti ručna konfiguracija, potrebno je pogledati kontrolni popis na povezanoj stranici.
+Ako parametre nameravate da konfigurišete ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Parametri grupiranja omogućuju definiranje načina na koji će se dokumenti razdvajati tijekom postupaka obrade. U tu svrhu mogu se koristiti određene oznake (flagovi) za grupiranje dokumenata prema različitim svojstvima, poput kategorije, vrste dokumenta ili drugih relevantnih karakteristika.
-Ovi opći parametri grupiranja konfiguriraju se samo jednom i automatski će se primjenjivati na sve postupke, te će vrijediti za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva ponašanje različito od onoga postavljenog u općim parametrima, tada je potrebno prilagoditi parametre grupiranja unutar njihove specifične evidencije.
-Na taj se način osigurava fleksibilno i prilagodljivo upravljanje obradama, omogućujući ispunjavanje specifičnih potreba svakog kupca ili dobavljača, uz održavanje centralizirane i dosljedne konfiguracije za većinu operacija.
+Parametri grupisanja omogućavaju definisanje načina podele dokumenata tokom postupaka razduženja. U tu svrhu koriste se posebne oznake kojima se dokumenti grupišu prema različitim svojstvima, kao što su kategorija, vrsta dokumenta ili druge relevantne karakteristike.
 
-Pomoću ovih parametara odlučuju se pravila grupiranja za postupke:   
-- **Stvaranje otpremnice prema Picking listi**;  
-- **Stvaranje otpremnice iz Picking liste utovarnih jedinica**;   
-- **Stvaranje otpremnice iz liste prijenosa utovarnih jedinica**;   
-- **Stvaranje otpremnice prema POS-u**;  
-- **Izrada otpremnice za prodaju iz narudžbe kupca**.      
+Ove opšte parametre grupisanja potrebno je konfigurisati samo jednom, nakon čega se automatski primenjuju na sve postupke i važe za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahteva drugačije ponašanje od onog definisanog opštim parametrima, potrebno je prilagoditi parametre grupisanja u njegovom šifarniku.
 
-U slučaju obrade (evidencije) više dokumenata, moguće ih je grupirati prema sljedećim svojstvima dodavanjem odgovarajućih oznaka (flagova):  
-- **vrsta dokumenta**: izvorni dokumenti s istom [Vrstom](/docs/configurations/tables/sales/sales-order-types) kreirat će jedinstvenu otpremnicu  
-- **godina**: izvorni dokumenti iz iste godine kreirat će jedinstvenu otpremnicu 
-- **mjesec**: izvorni dokumenti iz istog mjeseca kreirat će jedinstvenu otpremnicu 
-- **tečaj**: izvorni dokumenti s istim tečajem kreirat će jedinstvenu otpremnicu  
-- **projekt**: izvorni dokumenti s istim projektom u [Zaglavlje](/docs/sales/sales-orders/create-new-sales-orders/sales-order) kreirat će jedinstvenu otpremnicu 
-- **vrsta i uvjeti plaćanja**: izvorni dokumenti s istim uvjetima plaćanja kreirat će jedinstvenu otpremnicu  
-- **odredište**: izvorni dokumenti s istim odredištem i prijevoznikom kreirat će jedinstvenu otpremnicu   
-- **suvlasnici**: izvorni dokumenti s istom vrstom operacije za upravljanje osnovnim sredstvima kreirat će jedinstvenu otpremnicu
+Na taj način obezbeđuje se fleksibilno upravljanje razduženjima koje se može prilagoditi posebnim zahtevima svakog kupca ili dobavljača, uz zadržavanje centralizovane i dosledne konfiguracije za većinu postupaka.
 
-Potrebno je označiti stupce (flagirati) koji odgovaraju grupiranjima koja želite primijeniti za te obrade.     
-Oznaka **Sažetak** ključna je za izradu jedinstvene otpremnice na temelju više početnih dokumenata. Ostale oznake odnose se na posebna grupiranja.     
-Stupac **Prioritet** trenutno se ne koristi.
+U ovom obrascu definišu se pravila grupisanja za sledeće postupke:
+
+- **Kreiranje otpremnica iz Pickinga**
+- **Kreiranje otpremnica iz lista za preuzimanje UJ-a**
+- **Kreiranje otpremnica iz lista prenosa UJ-a**
+- **Kreiranje otpremnica iz POS-a**
+- **Kreiranje otpremnica iz narudžbine kupca**
+
+Prilikom razduženja više dokumenata moguće ih je grupisati prema sledećim svojstvima označavanjem odgovarajućih opcija:
+
+- **Vrsta dokumenta**: izvorni dokumenti sa istom [vrstom](/docs/configurations/tables/sales/sales-order-types) kreiraće jednu otpremnicu.
+- **Godina**: izvorni dokumenti iz iste godine kreiraće jednu otpremnicu.
+- **Mesec**: izvorni dokumenti iz istog meseca kreiraće jednu otpremnicu.
+- **Kurs**: izvorni dokumenti sa istim kursom kreiraće jednu otpremnicu.
+- **Projekat**: izvorni dokumenti sa istim projektom u [zaglavlju](/docs/sales/sales-orders/create-new-sales-orders/sales-order) kreiraće jednu otpremnicu.
+- **Vrsta i način plaćanja**: izvorni dokumenti sa istim uslovima plaćanja kreiraće jednu otpremnicu.
+- **Odredište**: izvorni dokumenti sa istim odredištem i prevoznikom kreiraće jednu otpremnicu.
+- **Suvlasnici**: izvorni dokumenti sa istom vrstom operacije za upravljanje osnovnim sredstvima kreiraće jednu otpremnicu.
+
+Potrebno je označiti kolone koje određuju željena pravila grupisanja za navedena razduženja.
+
+Opcija **Zbirno** ključna je za kreiranje jednog dokumenta na osnovu više izvornih dokumenata. Ostale opcije odnose se na posebna pravila grupisanja.
+
+Kolona **Prioritet** trenutno se ne koristi.

@@ -3,52 +3,54 @@ title: Parametri ponuda
 sidebar_position: 2
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-U slučaju ručne konfiguracije, pogledaj kontrolnu listu na povezanom linku.
+Ako parametre namjeravate konfigurirati ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Parametri ponuda omogućuju osnovne postavke za ispravno upravljanje ponudama, u skladu sa specifičnim zahtjevima svake pojedine tvrtke. Prozor je podijeljen na dvije kartice: Općenito i Otpremanje.     
+Parametri ponuda omogućuju definiranje osnovnih postavki za njihovo pravilno upravljanje u skladu sa zahtjevima pojedine tvrtke. Prozor se sastoji od dviju kartica: Općenito i Izlaz.
 
-### Općenito 
+### Općenito
 
-Polja prisutna u ovoj kartici su:
+Polja na ovoj kartici su:
 
-**Upravljanje dvostrukom jedinicom mjere**: ako je aktivirano, u redovima ponude bit će prikazane dvije kolone, Alternativna JM i Alternativna količina, što omogućuje upravljanje dvostrukim jedinicama mjere, uzimajući u obzir da se provjere za ispunjenje vrše prema glavnoj jedinici mjere.       
+**Upravljanje dvjema mjernim jedinicama**: ako je opcija aktivirana, u redcima ponude prikazuju se dva stupca, Alternativna mjerna jedinica i Alternativna količina. Na taj je način moguće upravljati dvjema mjernim jedinicama, pri čemu se provjere razduživanja uvijek provode prema osnovnoj mjernoj jedinici.
 
-**Automatski prijedlog alternativne JM**: ovaj je parametar dostupan za uređivanje samo ako je aktivirano upravljanje dvostrukom jedinicom mjere i omogućuje da se u tabu artikala ponude automatski prijedloži alternativna jedinica mjere definirana u kartici artikla, u koloni Alternativna JM; ako nije aktiviran, alternativna JM se neće predložiti.      
+**Automatski prijedlog alternativne mjerne jedinice**: ovo se polje može uređivati samo ako je aktivirana opcija za upravljanje dvjema mjernim jedinicama. Omogućuje prikaz alternativne mjerne jedinice definirane u šifarniku artikala, u odgovarajućem stupcu *Alternativna mjerna jedinica* na kartici artikala ponude. Ako opcija nije aktivirana, mjerna jedinica neće se predlagati.
 
-**Pretraga cijena artikala u svim unaprijed definiranim cjenicima**: prilikom traženja cijene i popusta za artikl u ponudi, sustav slijedi pravila prema postavkama u kartici kupca, u odjeljku Cjenici. Ako je opcija ‘default’ aktivirana za određenu vrstu cjenika, pretraga će se ograničiti samo na tu vrstu. Ako ‘default’ nije aktivan, sustav će pretražiti sve vrste cjenika prema prioritetnom redu. Konkretno, ako je ‘default’ aktivan, sustav prvo traži valjani cjenik za zadanu vrstu; ako nema rezultata, nastavlja s drugim vrstama po prioritetu. Međutim, ako u kartici kupca nema nijedne vrste cjenika postavljene kao ‘default’ nego samo prioriteti, ovaj parametar neće utjecati na pretragu, čak i ako je aktivan.  
+**Pretraživanje cijena artikala u svim zadanim cjenicima**: prilikom pretraživanja cijene i popusta za artikl u ponudi sustav primjenjuje pravila na temelju postavki u šifarniku kupca, u odjeljku *Cjenici*. Ako je opcija *Zadano* aktivirana za određenu vrstu cjenika, cijene i popusti traže se prvenstveno u toj vrsti cjenika. Ako opcija *Zadano* nije aktivirana, sustav proširuje pretraživanje na sve dostupne vrste cjenika prema zadanom redoslijedu prioriteta.
 
-**Predloži proviziju za artikle na poklon**: ako je aktivno, agent će dobiti proviziju i za redove artikala označenih kao poklon, kao i za redove standardnih artikala.              
+Kada je opcija *Zadano* aktivirana, sustav najprije traži važeći cjenik zadane vrste. Ako ne pronađe odgovarajuću cijenu, provjerava ostale vrste cjenika prema postavljenom redoslijedu prioriteta. Međutim, ako u šifarniku kupca nijedna vrsta cjenika nije označena kao *Zadano* i definirani su samo prioriteti, ovaj parametar neće utjecati na pretraživanje, čak ni kada je aktiviran.
 
-**Dozvoli popuste za artikle na poklon**: ako je aktivno, na redove artikala označenih kao poklon mogu se primijeniti popusti na iznos retka.  
+**Predlaganje provizije za besplatne artikle**: ako je opcija aktivirana, provizije agenta predlagat će se i za retke s besplatnim artiklima, jednako kao i za retke s artiklima sa šifrom.
 
-**Provjera artikala pri kraju zaliha**: ako je aktivirano, pojavit će se skočni prozor upozorenja ako se u ponudu unesu artikli koji u svojoj kartici imaju označeno stanje pri kraju i definirani datum isteka.         
+**Dopusti popuste za besplatne artikle**: ako je opcija aktivirana, popusti na iznos retka primjenjivat će se i na retke s besplatnim artiklima.
 
-**[Omogući widget pojednostavljenih popusta](/docs/sales/sales-flow/discount-widget)**: Omogući pojednostavljeni widget za popuste aktiviranjem ove opcije u sekciji Artikli ne-hijerarhijskih ponuda prikazuju se dvije nove kolone: *Popusti artikla* i *Završni popusti artikla*. Kolona *Popusti artikla* je uređiva i prikazuje automatski primijenjene popuste prema postavkama za kupca, artikl, cjenik ili kategoriju popusta. Korisnik može dodavati, mijenjati ili brisati popuste direktno u ovoj koloni. Za korištenje ovog widgeta potrebno je, osim aktivacije opcije, definirati i vrstu popusta u vrsti ponude.   
+**Provjera artikala na izmaku zaliha**: ako je opcija aktivirana, prikazuje se skočno upozorenje kada se u ponudu unese artikl za koji je u šifarniku artikala aktivirana oznaka *Na izmaku zaliha* i definiran datum od kojeg je artikl na izmaku zaliha.
 
-**Koristi stavku kupca**: ako je aktivno, u tablici artikala ponude prikazuju se dodatne kolone za Šifru i Opis artikla prema kupcu, preuzete iz kartice artikla u kartici Kupac.      
+**[Omogući pojednostavljeni widget za popuste](/docs/sales/sales-flow/discount-widget)**: aktiviranjem ove opcije u odjeljku *Artikli* nehijerarhijskih ponuda prikazuju se dva nova stupca: *Popusti artikla* i *Konačni popusti artikla*. Stupac *Popusti artikla* može se uređivati i prikazuje popuste koji se automatski primjenjuju na temelju postavki za kupca, artikl, cjenik ili kategoriju popusta. Korisnik može izravno u tom stupcu unositi, mijenjati ili brisati popuste. Za korištenje ovog widgeta, osim aktiviranja ove opcije, potrebno je u vrsti ponude odrediti vrstu popusta koja će se koristiti.
 
-**Koristi barkod**: ako je aktivno, u tablici artikala ponude prikazuje se kolona za barkod artikla.  
+**Upotreba artikla kupca**: ako je opcija aktivirana, u tablicu artikala ponude dodaju se stupci za šifru i opis artikla kod kupca, definirani u šifarniku artikala na kartici *Kupac*.
 
-**Obvezna šifra korisnika**: ako je aktivno, polje *Operater* u zaglavlju ponude postaje obavezno za ispunjavanje.  
+**Upotreba barkoda**: ako je opcija aktivirana, u tablicu artikala ponude dodaje se stupac za prikaz barkoda artikla.
 
-**Blokiraj unos dokumenta na praznike prema tvorničkom kalendaru**: ako je aktivno, sustav neće dopustiti unos ponude na neradne dane definirane u kalendaru tvornice (provjera se radi prvo prema tvorničkom kalendaru, a zatim prema kalendaru proizvodnih kapaciteta). Ako nije aktivno, nema provjere i dokument se može unijeti.       
+**Obvezna šifra operatera**: ovom se opcijom određuje je li obvezno popuniti polje *Operater* u zaglavlju ponude.
 
-**Referenca ponude**: ako je aktivno, u naslov projekta stvorenog iz ponude dodaje se referenca ponude; sadržaj bilješke mora biti unesen u polje *Opis* prema pravilima navedenima u opisu.   
+**Blokiraj unos dokumenta na neradne dane prema tvorničkom kalendaru**: ako je opcija aktivirana, sustav ne dopušta unos ponude na neradne dane. Najprije se provjerava tvornički kalendar, a zatim kalendar proizvodnih kapaciteta. Ako opcija nije aktivirana, sustav ne provodi provjeru i dopušta unos dokumenta.
 
-**Zadani trošak materijala ponude**: ovdje se definira *Vrsta izvora troška* koja se koristi kao početna vrijednost za izračun prihoda *Materijala* u [hijerarhijskoj ponudi](/docs/sales/offers/insert-offer).       
+**Reference ponude**: ako je ova opcija aktivirana, u projektu kreiranom iz ponude u naslov projekta unosi se referenca ponude. Sadržaj ove napomene potrebno je definirati u polju *Opis*, u skladu s parametrima navedenima u oznaci polja.
 
-**Artikl narudžbe resursa iz ponude**: ovdje se može odabrati artikl koji će se povezati s resursima iz ponude za kreiranje redova narudžbe iz [hijerarhijske ponude](/docs/sales/offers/insert-offer).      
+**Zadani trošak materijala ponude**: u ovom polju moguće je navesti *vrstu izvornog troška* koja će se koristiti kao početni iznos za izračun prihoda od *materijala* u [hijerarhijskoj ponudi](/docs/sales/offers/insert-offer).
 
-**Reference prototipa**: ovdje se može unijeti bilješka o referenci na prototip povezan s ponudom; bilješka će se prikazati u polju *Prototip* u kartici *Aktivnosti* hijerarhijske ponude.       
+**Artikl za narudžbu resursa iz ponude**: u ovom polju moguće je navesti artikl sa šifrom koji će se povezati s resursima ponude radi kreiranja redaka narudžbe iz [hijerarhijske ponude](/docs/sales/offers/insert-offer).
 
-**Blokiraj potvrdu i konverziju ponude u narudžbu ukoliko postoje nekodificirani prototipi**: ako je aktivno, onemogućava potvrdu i konverziju ponude u narudžbu dok se ne kodificiraju svi povezani prototipovi.   
+**Reference prototipa**: u ovom je odjeljku moguće sastaviti napomenu s referencom na prototip povezan s ponudom. Napomena će se prikazati u polju *Prototip* na kartici *Aktivnosti* hijerarhijske ponude.
 
-### Istovar
+**Blokiraj potvrdu i pretvaranje ponude u narudžbu ako postoje prototipovi bez šifre**: ova opcija onemogućuje potvrdu ponude i njezino pretvaranje u narudžbu ako su povezani prototipovi bez šifre.
 
-Parametri otpremanja koriste se samo za automatski prijedlog skladišta i uzroka otpreme u redovima ne-hijerarhijskih ponuda.  
+### Izlaz
 
-**Prioritet parametara umetnutih za svaku liniju naloga**: ako je aktivno, skladište i uzrok otpreme uzimaju se iz redova narudžbe, inače se koriste skladište i uzrok definirani u poljima (**Skladište** i **Uzrok otpreme**).     
+Parametri izlaza koriste se samo za predlaganje skladišta i predloška izlaza u redcima nehijerarhijskih ponuda.
+
+**Prioritet parametara definiranih za svaki redak narudžbe**: ako je opcija aktivirana, skladište i predložak izlaza preuzimaju se iz redaka narudžbe. Ako opcija nije aktivirana, koriste se skladište i predložak navedeni u sljedećim poljima (**Skladište** i **Skladišni predložak**).

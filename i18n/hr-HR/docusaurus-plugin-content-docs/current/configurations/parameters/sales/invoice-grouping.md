@@ -1,35 +1,41 @@
 ---
-title: Parametri za grupiranje računa  
+title: Parametri grupiranja računa
 sidebar_position: 9
 ---
 
-:::tip[FAst Start]
-Tablica je povezana s procedurom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-U slučaju da želite ručno konfigurirati, pogledajte kontrolni popis na povezanom linku.
+Ako parametre namjeravate konfigurirati ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Parametri za grupiranje omogućuju definiranje načina na koji će se dokumenti dijeliti tijekom procesa izvršenja. Za to je moguće koristiti specifične oznake (flagove) za grupiranje dokumenata prema različitim svojstvima, poput kategorije, vrste dokumenta ili drugih relevantnih karakteristika.
-Ovi opći parametri grupiranja konfiguriraju se jednom i automatski se primjenjuju na sve procedure, važeći za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva drugačije ponašanje od onog definirano općim parametrima, parametri grupiranja moraju se prilagoditi u njihovoj specifičnoj kartoteci.
-Na taj se način osigurava fleksibilno i prilagodljivo upravljanje izvršenjima, omogućujući zadovoljenje posebnih zahtjeva svakog kupca ili dobavljača, a istovremeno se održava centralizirana i konzistentna konfiguracija za većinu operacija.  
+Parametri grupiranja omogućuju definiranje načina podjele dokumenata tijekom postupaka razduživanja. U tu se svrhu koriste posebne oznake kojima se dokumenti grupiraju prema različitim svojstvima, kao što su kategorija, vrsta dokumenta ili druge relevantne karakteristike.
 
-U ovom su prozoru definirana pravila grupiranja za sljedeće procedure:  
--  **Valorizacija otpremnice**;  
--  **Vrednovanje intervencija**;  
--  **Stvaranje izlaznog računa prema Picking listi**;  
--  **Stvaranje izlaznog računa prema picking listi utovarne jedinice**;  
--  **Stvaranje izlaznog računa prema POS-u**.       
+Ove opće parametre grupiranja potrebno je konfigurirati samo jednom, a zatim se automatski primjenjuju na sve postupke te vrijede za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva drukčije ponašanje od onoga definiranog općim parametrima, potrebno je prilagoditi parametre grupiranja u njegovu šifarniku.
 
-U slučaju izvršenja više dokumenata, moguće ih je grupirati prema sljedećim svojstvima, označavanjem odgovarajućih flagova:  
-- **Vrsta dokumenta**: izvorišni dokumenti iste vrste kreirat će jedan račun   
-- **Godina**: izvorišni dokumenti iste godine kreirat će jedan račun   
-- **Mjesec**: izvorišni dokumenti istog mjeseca kreirat će jedan račun  
-- **Tečaj**: izvorišni dokumenti s istim tečajem kreirat će jedan račun   
-- **Projekt**: izvorišni dokumenti s istim projektom u zaglavlju kreirat će jedan račun   
-- **Grupiranje za tip i uvjet plaćanja**: izvorišni dokumenti s istim uvjetima plaćanja kreirat će jedan račun  
-- **Odredište**: izvorišni dokumenti s istim odredištem i prijevoznikom kreirat će jedan račun     
-- **Zajednički nositelj**: izvorišni dokumenti s istom vrstom operacije za upravljanje imovinom kreirat će jedan račun  
+Na taj se način osigurava fleksibilno upravljanje razduživanjima koje se može prilagoditi posebnim zahtjevima svakog kupca ili dobavljača, uz zadržavanje centralizirane i dosljedne konfiguracije za većinu postupaka.
 
-Potrebno je označiti stupce za grupiranja koja želite primijeniti za ove izvršenja.  
-Flag **Sažetak** je ključan za kreiranje jednog dokumenta koji obuhvaća više početnih dokumenata. Ostali flagovi odnose se na posebne vrste grupiranja.     
-Stupac **Prioritet** trenutno nije u upotrebi.  
+U ovom se obrascu definiraju pravila grupiranja za sljedeće postupke:
+
+- **Vrednovanje prodajnih otpremnica**
+- **Vrednovanje servisnih intervencija**
+- **Kreiranje prodajnog računa iz Pickinga**
+- **Kreiranje prodajnog računa iz lista za preuzimanje UDC-a**
+- **Kreiranje prodajnog računa iz POS-a**
+
+Prilikom razduživanja više dokumenata moguće ih je grupirati prema sljedećim svojstvima označavanjem odgovarajućih opcija:
+
+- **Vrsta dokumenta**: izvorni dokumenti iste vrste kreirat će jedan račun.
+- **Godina**: izvorni dokumenti iz iste godine kreirat će jedan račun.
+- **Mjesec**: izvorni dokumenti iz istog mjeseca kreirat će jedan račun.
+- **Tečaj**: izvorni dokumenti s istim tečajem kreirat će jedan račun.
+- **Projekt**: izvorni dokumenti s istim projektom u zaglavlju kreirat će jedan račun.
+- **Vrsta i način plaćanja**: izvorni dokumenti s istim uvjetima plaćanja kreirat će jedan račun.
+- **Odredište**: izvorni dokumenti s istim odredištem i prijevoznikom kreirat će jedan račun.
+- **Suvlasnici**: izvorni dokumenti s istom vrstom operacije za upravljanje osnovnim sredstvima kreirat će jedan račun.
+
+Potrebno je označiti stupce koji određuju željena pravila grupiranja za navedena razduživanja.
+
+Opcija **Zbirna** ključna je za kreiranje jednog dokumenta na temelju više izvornih dokumenata. Ostale se opcije odnose na posebna pravila grupiranja.
+
+Stupac **Prioritet** trenutačno se ne koristi.

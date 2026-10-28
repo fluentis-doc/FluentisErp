@@ -1,6 +1,6 @@
 ---
-title: Općenito 
+title: Općenito
 sidebar_position: 1
 ---
 
-Parametri područja prodaje nalaze se na putu **Parametri > Prodaja** i omogućuju definiranje toka dokumenata nabave prema logikama potrebnim za svaku tvrtku.
+Parametri prodaje nalaze se na putanji **Parametri > Prodaja** i omogućuju definiranje tijeka dokumenata nabave u skladu s poslovnom logikom potrebnom za svaku pojedinu tvrtku.

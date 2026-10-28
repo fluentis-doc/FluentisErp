@@ -1,28 +1,34 @@
 ---
-title: Parametri grupiranja narudžbi  
+title: Parametri grupiranja narudžbi
 sidebar_position: 7
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako želite ručno konfigurirati, pogledajte kontrolni popis na povezanoj stranici.  
+Ako parametre namjeravate konfigurirati ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Parametri grupiranja omogućuju definiranje načina na koji se dokumenti dijele tijekom postupaka izvršenja narudžbi. Za to je moguće koristiti posebne flagove za grupiranje dokumenata prema različitim svojstvima, kao što su kategorija, vrsta dokumenta ili druge relevantne značajke.  
-Ovi opći parametri grupiranja potrebno je postaviti samo jednom, a zatim se automatski primjenjuju na sve postupke, vrijedeći za sve kupce i dobavljače. Međutim, ukoliko neki kupac ili dobavljač zahtijeva drugačiji način rada od onog postavljenog u općim parametrima, moguće je prilagoditi parametre grupiranja unutar njihove specifične kartice.  
-Na taj način osigurava se fleksibilno i prilagodljivo upravljanje izvršenjima, koje zadovoljava posebne potrebe svakog kupca ili dobavljača, a istovremeno održava centraliziranu i usklađenu konfiguraciju za većinu operacija.
+Parametri grupiranja omogućuju definiranje načina podjele dokumenata tijekom postupaka razduživanja. U tu je svrhu moguće koristiti posebne oznake za grupiranje dokumenata prema različitim svojstvima, kao što su kategorija, vrsta dokumenta ili druge relevantne karakteristike.
 
-U ovom se prozoru definiraju pravila grupiranja za postupak:   
-**Kreiranje prodajnog naloga iz ponuda**: prilikom izvršavanja više ponuda u nalogu, moguće je grupirati ponude prema sljedećim svojstvima:  
-- **Vrsta dokumenta**: ponude s istom [Tipom](/docs/configurations/tables/sales/sales-offer-type) kreirat će jedan nalog  
-- **Godina**: ponude iz iste godine kreirat će jedan nalog  
-- **Mjesec**: ponude iz istog mjeseca kreirat će jedan nalog  
-- **Tečaj**: ponude s istim tečajem kreirat će jedan nalog  
-- **Projekt**: ponude s istim projektom u [Zaglavlju](/docs/sales/offers/insert-offer) kreirat će jedan nalog
-- **Grupiranje za tip i uvjet plaćanja**: ponude s istim uvjetima plaćanja kreirat će jedan nalog  
-- **Odredište**: ponude s istim odredištem i prijevoznikom kreirat će jedan nalog  
- 
-Potrebno je označiti stupce koji se odnose na grupiranja koja želite primijeniti za ovu obradu.  
-Flag **Sažetak** je ključno za kreiranje jednog dokumenta iz više izvorišnih dokumenata. Ostali flagovi odnose se na specifična grupiranja.            
-Stupac **Prioritet** trenutno se ne koristi.  
+Ove opće parametre grupiranja potrebno je konfigurirati samo jednom, a automatski će se primjenjivati na sve postupke te će vrijediti za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva drukčije ponašanje od onoga definiranog općim parametrima, potrebno je prilagoditi parametre grupiranja u njegovu pojedinačnom šifarniku.
+
+Na taj se način osigurava fleksibilno upravljanje razduživanjem koje se može prilagoditi specifičnim potrebama svakog kupca ili dobavljača, uz zadržavanje centralizirane i dosljedne konfiguracije za većinu postupaka.
+
+U ovom se prozoru definiraju pravila grupiranja za postupak:
+
+**Kreiranje prodajne narudžbe iz ponuda**: prilikom razduživanja više ponuda u narudžbe moguće je grupirati ponude prema sljedećim svojstvima:
+
+- **Vrsta dokumenta**: ponude s istom [vrstom](/docs/configurations/tables/sales/sales-offer-type) kreirat će jednu narudžbu.
+- **Godina**: ponude iz iste godine kreirat će jednu narudžbu.
+- **Mjesec**: ponude iz istog mjeseca kreirat će jednu narudžbu.
+- **Tečaj**: ponude s istim tečajem kreirat će jednu narudžbu.
+- **Projekt**: ponude s istim projektom u [zaglavlju](/docs/sales/offers/insert-offer) kreirat će jednu narudžbu.
+- **Vrsta i način plaćanja**: ponude s istim uvjetima plaćanja kreirat će jednu narudžbu.
+- **Odredište**: ponude s istim odredištem i prijevoznikom kreirat će jednu narudžbu.
+
+Potrebno je označiti stupce koji odgovaraju pravilima grupiranja koja se žele primijeniti tijekom ovog postupka.
+
+Oznaka **Zbirna** ključna je za kreiranje jednog dokumenta na temelju više izvornih dokumenata. Ostale se oznake odnose na posebna pravila grupiranja.
+
+Stupac **Prioritet** trenutačno se ne koristi.

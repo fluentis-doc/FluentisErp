@@ -1,8 +1,9 @@
 ---
-title: Parametri prodajnih cijena
+title: Parametri prodajnih cjenika
 sidebar_position: 6
 ---
 
-U ovom obrascu postavljaju se parametri za prodajne cjenike. Dostupni su sljedeći flagovi:       
-- **Prikaži stupac Isključi**: ovaj flag omogućuje prikaz zastavice *Ne uzimaj u obzir* u postupku [Kreiranja prodajnih cjenika](/docs/sales/sales-price-list/procedures/price-list-creation).        
-- **Prikaži cijenu i cijenu s PDV-om**: ovaj flag omogućuje prikaz cijene i cijene s PDV-om neovisno o postavci definiranoj u [vrstama cjenika](/docs/configurations/tables/sales/sales-price-lists). 
+U ovom se obrascu postavljaju parametri za prodajne cjenike. Dostupne su sljedeće opcije:
+
+- **Prikaži stupac Isključi**: ovom se opcijom omogućuje prikaz oznake *Ne uzimaj u obzir* u postupku [Kreiranje prodajnih cjenika](/docs/sales/sales-price-list/procedures/price-list-creation).
+- **Prikaži cijenu i cijenu s PDV-om**: ovom se opcijom omogućuje prikaz cijene i cijene s PDV-om, neovisno o postavkama definiranim u [vrstama cjenika](/docs/configurations/tables/sales/sales-price-lists).
