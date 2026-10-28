@@ -3,13 +3,12 @@ title: Vrste razdoblja
 sidebar_position: 5
 ---
 
-Obrazac omogućava unos perioda za svaku godinu. Za svaki period moguće je definisati potrebne nedelje ili detaljnije potperiode (npr. dane). Obrazac se sastoji od dva dela: prvog sa periodima i drugog sa detaljima različitih vrsta perioda koje je korisnik kreirao.
+Obrazac omogućuje unos razdoblja za svaku godinu. Za svako razdoblje mogu se definirati tjedni ili potrebna podrazdoblja s detaljnijim prikazom (npr. dani). Obrazac se sastoji od dva dijela: prvog s razdobljima i drugog s detaljima različitih vrsta razdoblja koje je korisnik definirao.
 
-Tabela se koristi i za određene funkcionalnosti povezane sa prognoziranjem (Forecast), čija je implementacija planirana u budućnosti, pa se zato trenutno ne koriste sva polja.
+Tablica se koristi i za određene funkcionalnosti povezane s prognoziranjem (*Forecast*), čija je implementacija planirana u budućnosti, pa se trenutačno ne koriste sva polja.
 
-Za preduzeća koja koriste modul kontrolinga, da bi se budžet ispravno integrisao sa logikom kontrolinga, potrebno je definisati mesečni period, sa detaljima koji odgovaraju pojedinačnim mesecima u godini. Oznake Moguće brisanje (Eliminabile), U upotrebi (Usato) i Podrazumevano (Default), kao ni polje Redosled (Sequenza), nisu relevantni za modul budžeta.
+Za tvrtke koje koriste Kontroling, ako se želi da proračun bude ispravno integriran s pravilima kontrolinga, potrebno je definirati **mjesečno** razdoblje, pri čemu se detalji u tablici odnose na pojedine mjesece u godini. Oznake *Može se brisati*, *Koristi se* i *Zadano*, kao ni polje *Redoslijed*, nisu relevantni za modul proračuna.
 
-Moguće je definisati i drugačiju periodičnost, pod uslovom da je usklađena sa periodičnošću koja se koristi u sistemu kontrolinga (npr. nedeljnom).
+Moguće je definirati i drugačiju periodičnost, pod uvjetom da je usklađena s učestalošću koja se koristi u sustavu kontrolinga (npr. tjedna).
 
-Čak i ako se ne koristi celokupan sistem kontrolinga, na primer ako se modul budžeta koristi samo za računovodstveni budžet, preporučuje se smislena konfiguracija, kao što je mesečna (najčešći slučaj) ili nedeljna periodičnost. Moguće su i druge periodičnosti, na primer tromesečna.
-
+Čak i ako se ne koristi cjelovit sustav kontrolinga (primjerice, ako se modul proračuna koristi samo za izradu računovodstvenog proračuna), preporučuje se racionalna konfiguracija, primjerice mjesečna (najčešći slučaj) ili tjedna. Mogu biti prikladna i druga razdoblja, primjerice tromjesečna.
