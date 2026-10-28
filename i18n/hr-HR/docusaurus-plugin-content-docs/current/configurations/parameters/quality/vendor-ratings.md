@@ -3,44 +3,55 @@ title: Parametri kvalifikacije dobavljača
 sidebar_position: 5
 ---
 
-Parametri se nalaze na putanji: **Parametri > Kvaliteta > Parametri kvalifikacije dobavljača**.
+Parametri se nalaze na putanji **Parametri > Kvaliteta > Parametri kvalifikacije dobavljača**.
 
-Podaci uneseni u ovom sučelju koriste se za predlaganje informacija u sljedećim funkcionalnostima:     
-- **Početne i periodične evaluacije dobavljača** - u popisu *zaglavnih podataka*;   
-- **Periodične evaluacije dobavljača na temelju nesukladnosti** - u popisu *zaglavnih podataka*;   
-- **Matični podaci kontakata** - u kartici *Računovodstveni podaci > Podaci o kvaliteti*.   
+Podaci iz ove postavke koriste se za predlaganje informacija u sljedećim evidencijama:
 
-#### Posebna tipka
+- **Početne i periodične procjene dobavljača** – na popisu *podataka zaglavlja*;
+- **Periodične procjene dobavljača na temelju nesukladnosti** – na popisu *podataka zaglavlja*;
+- **Šifarnici kontakata** – na kartici *Računovodstveni podaci > Podaci o kvaliteti*.
 
-**Spremi**: omogućuje spremanje unesenih ili izmijenjenih informacija.   
+#### Posebni gumbi
+
+**Spremi**: omogućuje spremanje izmijenjenih podataka.
 
 **Predloži procjene**
 
-Za predlaganje *Evaluacija dobavljača* unutar popisa *Intervali bodova za evaluaciju* pritisnuti tipku **Predloži procjene**.    
-U tablicu će se dodati sve *Evaluacije* koje još nisu evidentirane u popisu; vrijednosti u polju *Bodovi od* kod već postojećih evaluacija neće se mijenjati.  
+Za predlaganje *procjena dobavljača* na popisu *Rasponi bodova za ocjenjivanje* kliknite gumb **Predloži procjene**.
 
-## Početne procjene   
+Prikazuju se sve *ocjene* koje još nisu unesene na popis. Vrijednosti u polju *Bodovi od* za već postojeće *ocjene* ne mijenjaju se.
 
-U ovom proširivom odjeljku moguće je unijeti podatke koji će se predlagati prilikom unosa *početne ili periodične evaluacije*.   
-Unosom su dostupna sljedeća polja:    
-- **Tip predložene procjene**: *Vrsta evaluacije* koja će se automatski predložiti pri unosu *početne ili periodične evaluacije*.   
-- **Predloženi inspektor**: *Inspektor* koji će se predložiti pri unosu *početne ili periodične evaluacije*.   
-- **Automatska obustava**: označava hoće li, u slučaju prepoznavanja *evaluacije dobavljača* kao suspenzijske, dobavljač biti automatski suspendiran.  
+## Početne procjene
 
-## Periodične evaluacije na temelju nesukladnosti       
+U ovom je proširivom odjeljku moguće unijeti podatke koji će se predlagati u evidenciji *Početne i periodične procjene*.
 
-U ovom proširivom odjeljku moguće je unijeti podatke koji će se automatski predlagati prilikom unosa *Periodične evaluacije na temelju nesukladnosti*.   
-Dostupna su sljedeća polja:    
-- **Predložena vrsta evaluacije**: *Vrsta evaluacije* koja će se predložiti pri unosu *periodične evaluacije na temelju nesukladnosti*.     
-- **Automatska obustava**: označava hoće li, u slučaju prepoznavanja *evaluacije dobavljača* kao suspenzijske, dobavljač biti automatski suspendiran.    
->
-- **Intervali bodova za evaluaciju**   
-> U ovom popisu moguće je definirati postotne raspona (fascije) za automatsko dodjeljivanje *periodične evaluacije na temelju nesukladnosti*.     
-> Tablica omogućuje unos novih zapisa, njihovo uređivanje ili brisanje. Sadrži sljedeće podatke:     
->- **Evaluacija**: šifra *evaluacije dobavljača*.   
->- **Opis evaluacije**: opis pripadajuće *evaluacije dobavljača*.   
->- **Bodovi od**: vrijednost izražena u postocima, početna vrijednost intervala kojem se dodjeljuje određena *evaluacija*;   
->> *Evaluacija* koja će se dodijeliti *dobavljaču* izračunava se na temelju postotka ostvarenog evaluacijom;     
->> Postotak mora biti jednak ili veći od početne vrijednosti i manji od postotka sljedećeg višeg intervala.  
+Moguće je unijeti sljedeće podatke:
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom načinu rada formi, pogledajte sljedeću poveznicu:[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).  
+- **Tip predložene procjene**: *vrsta procjene* koja će se predlagati prilikom unosa *početne ili periodične prprocjene*.
+- **Predloženi inspektor**: *inspektor* koji će se predlagati prilikom unosa *početne ili periodične procjene*.
+- **Automatska obustava**: određuje hoće li dobavljač automatski biti *suspendiran* kada se utvrdi *procjena dobavljača* koja podrazumijeva suspenziju.
+
+## Periodične procjene na temelju nesukladnosti
+
+U ovom je proširivom odjeljku moguće unijeti podatke koji će se predlagati u evidenciji *Periodične procjene na temelju nesukladnosti*.
+
+Moguće je unijeti sljedeće podatke:
+
+- **Tip predložene procjene**: *vrsta procjene* koja će se predlagati prilikom unosa *periodične procjene na temelju nesukladnosti*.
+- **Automatska obustava**: određuje hoće li dobavljač automatski biti *suspendiran* kada se utvrdi *ocjena dobavljača* koja podrazumijeva suspenziju.
+
+- **Raspon bodova za ocjenjivanje**
+
+  > Na ovom je popisu moguće definirati postotne raspone za automatsko dodjeljivanje *periodične procjene na temelju nesukladnosti*.
+
+  > Tablica omogućuje unos novih zapisa, njihovu izmjenu ili brisanje. Popis sadrži sljedeće podatke:
+
+  - **Procjena**: šifra *ocjene dobavljača*.
+  - **Opis procjene**: opis *ocjene dobavljača*.
+  - **Bodovi od**: vrijednost izražena u postotku koja predstavlja početnu vrijednost raspona kojem se dodjeljuje *ocjena*.
+
+    > *Ocjena* koja će se dodijeliti *dobavljaču* izračunava se na temelju postotka ostvarenog pri ocjenjivanju.
+    >
+    > Postotak mora biti jednak ili veći od početne vrijednosti raspona i manji od postotne vrijednosti sljedećeg višeg raspona.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

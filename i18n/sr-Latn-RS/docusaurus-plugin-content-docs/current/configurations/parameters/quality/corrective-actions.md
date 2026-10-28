@@ -1,36 +1,41 @@
 ---
-title: Parametri korektivnih mjera
+title: Parametri korektivnih mera
 sidebar_position: 4
 ---
 
-Parametri se nalaze na putanji **Parametri > Kvaliteta > Parametri korektivnih mjera**.
+Parametri se nalaze na putanji **Parametri > Kvalitet > Parametri korektivnih mera**.
 
-Podaci u ovom upravljanju koriste se za predlaganje informacija u modulu: *Korektivne mjere*.   
+Podaci iz ovog podešavanja koriste se za predlaganje informacija u evidenciji *Korektivne mere*.
 
-#### Specifična tipka 
+#### Posebno dugme
 
-**Spremi**: permette di memorizzare le informazioni modificate.
+**Sačuvaj**: omogućava čuvanje izmenjenih podataka.
 
-#### Specifična polja
-      
-- **Predložena vrsta mjere**: *Vrsta mjere* koja se predlaže prilikom unosa nove *Korektivne mjere*.
-- **Predloženi sektor**: *Sektor kvalitete* koji se predlaže prilikom unosa nove *Korektivne mjere*.  
-- **Predloženo područje**: *Područje kvalitete* koje se predlaže prilikom unosa nove *Korektivne mjere*.  
-- **Predložena odgovorna osoba**: *Zaposlenik* koji se predlaže kao odgovorna osoba za kreiranje nove *Korektivne mjere*.  
-- **Predložena odgovorna funkcija**: *Funkcija u tvrtki* koja se predlaže kao odgovorna za kreiranje nove *Korektivne mjere*.
+#### Posebna polja
 
-- **Boje korektivnih mjera**   
-> U ovom popisu moguće je definirati različite boje za prepoznavanje različitih stanja *Korektivne mjere*.
-> Te se boje primjenjuju u *Filtru korektivnih mjera*. Popis sadrži sljedeće informacije:   
->- **Boje korektivnih mjera**: stanje *Korektivne mjere* kojemu se dodjeljuju boje.   
->> Tablica sadrži unaprijed definirane vrijednosti od sustava i nije moguće unositi nove, brisati ili mijenjati postojeće. Zadane vrijednosti su:  
->> - *Odobrene*;   
->> - *Blokirane*;   
->> - *Zatvorene*;   
->> - *Za procjenu*;   
->> - *Provjerene*.   
->>
->- **Pozadina**: boja koja se primjenjuje kao pozadina retka *Korektivne mjere* za određeno stanje. 
->- **Tekst**: boja koja se primjenjuje na tekst retka *Korektivne mjere* za određeno stanje.   
+- **Predložena vrsta mere**: *vrsta mere* koja će se predlagati prilikom unosa nove *korektivne mere*.
+- **Predloženi sektor**: *sektor kvaliteta* koji će se predlagati prilikom unosa nove *korektivne mere*.
+- **Predložena oblast**: *oblast kvaliteta* koja će se predlagati prilikom unosa nove *korektivne mere*.
+- **Predloženo odgovorno lice**: *zaposleni* koji će se predlagati kao odgovorno lice prilikom kreiranja nove *korektivne mere*.
+- **Predložena odgovorna funkcija**: *poslovna funkcija* koja će se predlagati kao odgovorna prilikom kreiranja nove *korektivne mere*.
 
-Za sve ostale funkcionalnosti obrazaca koje nisu detaljno opisane u ovom dokumentu, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).  
+- **Boje korektivnih mera**
+
+  > Na ovom spisku moguće je definisati različite boje za prepoznavanje pojedinih statusa *korektivne mere*.
+
+  > Te boje se primenjuju u *filteru korektivnih mera*. Spisak sadrži sledeće podatke:
+
+  - **Status korektivne mere**: status *korektivne mere* kojem se dodeljuju boje.
+
+    > Tabela sadrži vrednosti koje je sistem unapred definisao. Nije moguće dodavati nove vrednosti, brisati postojeće niti ih menjati. Podrazumevane vrednosti su:
+    >
+    > - *Odobrene*
+    > - *Blokirane*
+    > - *Zatvorene*
+    > - *Čekaju procenu*
+    > - *Proverene*
+
+  - **Pozadina**: boja koja se primenjuje na pozadinu reda *korektivne mere* sa odgovarajućim statusom.
+  - **Tekst**: boja koja se primenjuje na tekst reda *korektivne mere* sa odgovarajućim statusom.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću vezu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

@@ -1,24 +1,24 @@
 ---
-title: Pretraga parametara reklamacija i nesukladnosti
+title: Pretraživanje parametara reklamacija i nesukladnosti
 sidebar_position: 1
 ---
 
-I parametri se nalaze na putu **Parametri > Kvaliteta > Parametri reklamacija i nesukladnosti**.   
+Parametri se nalaze na putanji **Parametri > Kvaliteta > Parametri reklamacija i nesukladnosti**.
 
-Informacije se pohranjuju po *Godini*.  
-Filtriranje podataka omogućuje unos novih parametara ili pretraživanje već postojećih kako bi ih se prikazalo, izmijenilo ili izbrisalo. 
+Podaci se pohranjuju prema *godini*.
 
-**Pretraga parametara**
+Filtar podataka omogućuje unos novih parametara ili pretraživanje postojećih radi njihova prikaza, izmjene ili brisanja.
 
-Obrazac se sastoji od područja za filtriranje i područja za prikaz rezultata.
-Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na tipku **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
+## Pretraživanje parametara
 
-**Inserimento Parametri**
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Pretraži** kako bi se rezultati prikazali u tablici rezultata.
 
-Za unos novih *Godina* potrebno je kliknuti na tipku **Novo**.   
+## Unos parametara
 
-**Izmjena ili pregled parametara**
+Za unos novih *godina* potrebno je kliknuti gumb **Novo**.
 
-Za otvaranje upravljanja iz mreže rezultata potrebno je dvostruko kliknuti na red koji vas zanima ili, nakon odabira jednog ili više redaka, kliknuti na tipke **Izmijeni** ili **Pregledaj**.   
+## Izmjena ili prikaz parametara
 
-Za sve što nije posebno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju obrazaca, pogledajte sljedeću poveznicu:[Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za otvaranje upravljanja iz tablice rezultata potrebno je dvaput kliknuti redak koji nas zanima ili odabrati jedan ili više redaka te kliknuti gumb **Izmijeni** ili **Prikaži**.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

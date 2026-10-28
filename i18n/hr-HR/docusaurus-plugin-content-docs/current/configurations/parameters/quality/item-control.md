@@ -1,145 +1,177 @@
 ---
-title: Parametri za kontrolu artikala
+title: Parametri kontrole artikala
 sidebar_position: 1
 ---
 
-Parametri se nalaze na putu **Parametri > Kvaliteta > Parametri za kontrolu artikala**.
+Parametri se nalaze na putanji **Parametri > Kvaliteta > Parametri kontrole artikala**.
 
-Podaci prisutni u ovom upravljanju koriste se za predlaganje informacija u upravljanjima:  
-- **Tehnička uputstva**;   
-- **Kontrolni planovi**;   
-- **Kontrola artikala**;   
-- **Certifikati analiza**.   
+Podaci iz ove postavke koriste se za predlaganje informacija u sljedećim evidencijama:
 
-#### Specifična tipka
+- **Tehnička uputstva**
+- **Kontrolni planovi**
+- **Kontrola artikala**
+- **Certifikati analize**
 
-**Spremi**: omogućuje spremanje izmijenjenih informacija. 
+#### Poseban gumb
 
-## Općenito   
+**Spremi**: omogućuje spremanje izmijenjenih podataka.
 
-U ovom kartici moguće je unijeti podatke koji se zadano predlažu u dokumentima modula *Kontrola artikala*.   
+## Općenito
 
-### Vrsta testiranja     
+Na ovoj je kartici moguće unijeti podatke koji će se prema zadanim postavkama predlagati u dokumentima modula *Kontrola artikala*.
 
-U ovom ekspanderu moguće je unijeti podatke koje treba predložiti u *Vrsta testiranja*.   
-U expanderu je moguće unijeti:   
-- **Vrsta iznosa**: *Vrsta iznosa* da predloži unos jednog *Vrsta testa*.   
-- **Vrsta limita**: *Vrsta limita* da predloži unos jednog *Vrsta testa*.   
+### Vrste ispitivanja
 
-### Tehnički listovi   
+U ovom je proširivom odjeljku moguće unijeti podatke koji će se predlagati u evidenciji *Vrste ispitivanja*.
 
-U ovom expanderu moguće je unijeti podatke za predlaganje u *Tehničke listove*.   
-U expanderu je moguće unijeti:    
-- **Vrsta podatkovnog lista**: *Vrsta podatkovnog lista* za predlaganje pri unosu *Tehničkog lista*.   
-- **Odgovoran**: *Zaposlenik* koji se predlaže kao odgovorna osoba pri unosu *Tehničkog lista*.   
-- **Vrsta deklaracije u artiklima**: *Vrsta izjave* za predlaganje pri unosu *Povezanog artikla* u *Tehničkom listu*.    
-- **Vrsta izjave za ispis**: *Vrsta izjave* za predlaganje u *Vrsta izjave za ispis u slučaju da artikal nije opremljen* u  *Ispis tehničkog lista*.   
+Moguće je unijeti sljedeće podatke:
 
-### Planovi kontrole      
+- **Vrsta vrijednosti**: vrsta vrijednosti koja će se predlagati prilikom unosa *vrste ispitivanja*.
+- **Vrsta granice**: vrsta granice koja će se predlagati prilikom unosa *vrste ispitivanja*.
 
-U ovom proširivom dijelu moguće je unijeti podatke za predlaganje u *Planove kontrole*.   
-U proširivom dijelu moguće je unijeti:    
-- **Vrsta plana kontrole**: *Vrsta plana kontrole* za predlaganje pri unosu *Plana kontrole*.   
-- **Odgovorna osoba**: *Zaposlenik* za predlaganje kao odgovorna osoba pri unosu *Plana kontrole*.   
+### Tehnička uputstva
 
-### Certifikati analize     
+U ovom je proširivom odjeljku moguće unijeti podatke koji će se predlagati u evidenciji *Tehnička uputstva*.
 
-U ovom proširivom dijelu moguće je unijeti podatke za predlaganje u *Certifikate analize*.   
-U proširivom dijelu moguće je unijeti:    
-- **Vrsta certifikata**: *Vrsta certifikata analize* za predlaganje pri unosu *Certifikata analize*.   
-- **Odgovorna osoba**: *Zaposlenik* za predlaganje kao odgovorna osoba pri unosu *Certifikata analize*.   
+Moguće je unijeti sljedeće podatke:
 
+- **Vrsta tehničkog uputstva**: vrsta tehničkog uputstva koja će se predlagati prilikom unosa *tehničkog uputstva*.
+- **Odgovorna osoba**: *zaposlenik* koji će se predlagati kao odgovorna osoba prilikom unosa *tehničkog uputstva*.
+- **Vrsta izjave u artiklima**: *vrsta izjave* koja će se predlagati prilikom unosa *povezanog artikla* u *tehničko uputstvo*.
+- **Vrsta izjave pri ispisu**: *vrsta izjave* koja će se predlagati u polju *Vrsta izjave za ispis ako je artikl nema* prilikom ispisa *tehničkog uputstva*.
+
+### Kontrolni planovi
+
+U ovom je proširivom odjeljku moguće unijeti podatke koji će se predlagati u evidenciji *Kontrolni planovi*.
+
+Moguće je unijeti sljedeće podatke:
+
+- **Vrsta kontrolnog plana**: vrsta kontrolnog plana koja će se predlagati prilikom unosa *kontrolnog plana*.
+- **Odgovorna osoba**: *zaposlenik* koji će se predlagati kao odgovorna osoba prilikom unosa *kontrolnog plana*.
+
+### Certifikati analize
+
+U ovom je proširivom odjeljku moguće unijeti podatke koji će se predlagati u evidenciji *Certifikati analize*.
+
+Moguće je unijeti sljedeće podatke:
+
+- **Vrsta certifikata**: *vrsta certifikata analize* koja će se predlagati prilikom unosa *certifikata analize*.
+- **Odgovorna osoba**: *zaposlenik* koji će se predlagati kao odgovorna osoba prilikom unosa *certifikata analize*.
 
 ## Kontrola artikala
 
-U ovom tabulatoru moguće je unijeti podatke:  
-> - za predlaganje po defaultu u *Kontroli artikala*;   
-> - za definiranje različitih boja koje se koriste u filteru pretrage za prepoznavanje različitih stanja *Kontrole*;   
-> - za postavljanje upravljačkih parametara;     
-> - za automatsku pretragu i povezivanje *Planova kontrole* koje treba povezati s *Kontrolom artikla*.   
+Na ovoj je kartici moguće unijeti podatke:
 
-- **Omogući višestruko očitavanje vrijednosti**: označava omogućavanje mogućnosti očitavanja više vrijednosti za svaki test, u svim vrstama dokumenata.     
-- **Automatsko odobrenje očitanih vrijednosti**: označava automatsko *Odobrenje* *Testa* aprilikom očitavanja *Vrijednosti* i *Ishoda*.   
-- **Prijedlog negativnog rezultata**: popis unaprijed definiranih vrijednosti koje sustav koristi za određivanje metodologije dodjele nesukladnost *Testu*.    
-> Metodologija se uzima u obzir samo za očitavanje *Testova* tipa *Numerički* u *Višestrukom očitavanju vrijednosti*. Predefinirane vrijednosti su:     
-> - *pri prvoj zabilježenoj nesukladnoj vrijednosti*;   
-> - *na osnovu aritmetičke sredine očitanih vrijednosti (samo numeričke vrijednosti)*.   
->
-- **Vrsta negativnog rezultata**: prijedlog *Vrste ishoda* u slučaju nesukladnih *Testova*.   
-- **Vrsta pozitivnog rezultata**: prijedlog *Vrste ishoda* u slučaju nesukladnih *Testova*.   
+> - koji će se prema zadanim postavkama predlagati u evidenciji *Kontrola artikala*;
+> - za definiranje različitih boja koje se koriste u filtru pretraživanja radi prepoznavanja različitih statusa *kontrole*;
+> - za postavljanje parametara upravljanja;
+> - za automatsko pretraživanje i povezivanje *kontrolnih planova* s *kontrolom artikla*.
 
+- **Omogući višestruko evidentiranje vrijednosti**: određuje je li omogućeno evidentiranje više vrijednosti za svako ispitivanje u svim vrstama dokumenata.
+- **Automatsko odobravanje evidentiranih vrijednosti**: određuje hoće li se *ispitivanje* automatski *odobriti* nakon evidentiranja *vrijednosti* i automatskog dodjeljivanja *rezultata*.
+- **Prijedlog negativnog rezultata**: popis vrijednosti koje je unaprijed definirao sustav, a koje određuju način utvrđivanja nesukladnosti *ispitivanja*.
 
-### Vrste dokumenata za uvoz        
+  > Ova se metoda primjenjuje samo pri evidentiranju *numeričkih* ispitivanja u okviru *višestrukog evidentiranja vrijednosti*. Zadane vrijednosti su:
+  >
+  > - *pri prvoj evidentiranoj nesukladnoj vrijednosti*;
+  > - *na temelju aritmetičke sredine evidentiranih vrijednosti (samo numeričke vrijednosti)*.
 
-U ovom proširivom dijelu/popisu moguće je unijeti podatke koji se uzimaju u obzir tijekom *Uvoza artikala za kontrolu* i predlažu se u *Kontroli artikla*.   
-Tablica sadrži vrste dokumenata kojima upravlja *Kontrola artikala*.   
-Radi se o unaprijed definiranim vrstama u sustavu kojima se ne mogu dodavati nove ili brisati postojeće. Predefinirane vrijednosti su:  
-> - *Prijem robe*;   
-> - *Primka*;   
-> - *Ulazni račun*;   
-> - *Izvješćivanje proizvodnje*;   
-> - *Faza Izrada narudžbe*;   
-> - *Povrat od podizvođača*;   
-> - *Rukovanje teretom*.   
+- **Vrsta negativnog rezultata**: predložena *vrsta rezultata* u slučaju nesukladnih *ispitivanja*.
+- **Vrsta pozitivnog rezultata**: predložena *vrsta rezultata* u slučaju sukladnih *ispitivanja*.
 
-U popisu, za svaku vrstu dokumenta, moguće je unijeti:    
-- **Def.**: označava vrstu dokumenta koja se predlaže u filterima pretrage; može se odabrati samo jedna vrsta ili nijedna.    
-- **Detalj artikla**: popis unaprijed definiranih vrijednosti koje sustav koristi za identifikaciju vrste detalja za kontrolu *Artikla* za određenu vrstu dokumenta. Predefinirane vrijednosti su:    
->- *Nijedan* - redak *Artikla* neće imati dodatne detalje;   
->- *Lot* - redak *Artikla* ima najviše detalje u obliku *Serije*;   
->- *S.N.* - redak *Artikla* ima najviše detalje u obliku *Serijskog broja*;   
->- *Utovarna jedinica* - redak *Artikla* ima najviše detalje u obliku *Jedinice utovara*;   
->
-- **Višestr.**: označava je li omogućeno *Višestruko očitavanje vrijednosti* u *Kontroli artikala* za određenu vrstu dokumenta.  
-> Kako bi se omogućila ova funkcionalnost, potrebno je u općim postavkama označiti parametar *Omogući višestruko očitavanje vrijednosti*.   
-- **Vrsta kontrole**: *Vrsta kontrole* koja se automatski predlaže prilikom unosa nove *Kontrole artikala* za određenu vrstu dokumenta.     
-- **Tip kontrolnog plana**: tijekom *Uvoza artikala za kontrolu*, osim za vrste dokumenata vezane uz proizvodnju (*Izjava o proizvodnji* i *Faza proizvodnog naloga*), ova postavka ima najveći prioritet prilikom traženja *Tip kontrolnog plana* koji se pridružuje *Kontroli artikala*.     
-- **Opis kontrola tipa**: opis odabranog *Tipa kontrole*.   
-- **Opis tipa upravljačkog plana**: opis odabranog *Tipa kontrolnog plana*.   
+### Vrste dokumenata za uvoz
 
-### Boje redaka u Kontroli artikala    
+U ovom je proširivom odjeljku/popisu moguće unijeti podatke koji se uzimaju u obzir tijekom postupka *Uvoz artikala za kontrolu* i predlažu u evidenciji *Kontrola artikla*.
 
-U ovom popisu moguće je definirati različite boje kako bi se lakše prepoznala različita stanja pojedine *Kontrole artikala*.   
-Te se boje primjenjuju unutar *filtera Kontrola artikala*. Popis sadrži sljedeće informacije:  
-- **Tip**: označava stanje *Kontrole artikla* kojem treba pridružiti određene boje.    
-> Tablica sadrži unaprijed definirane vrijednosti koje nije moguće dodavati, brisati niti mijenjati. Predefinirane vrijednosti su:  
-> - *Artikli koji nisu predmet kontrole*;   
-> - *Kontrole bez plana upravljanja*;   
-> - *Kontrola planova kontrole*;   
-> - *Kontrole nisu otkrivene*;   
-> - *Kontrole s nezadovoljnim rezultatom*;   
-> - *Provjerite opet biti potvrđene*;   
-> - *Već validirani Kontrole*.   
->
-- **Pozadina**: boja koja se primjenjuje na pozadinu retka za određeno stanje *Kontrole artikla*.   
-- **Tekst**: boja teksta retka za određeno stanje *Kontrole artikla*.   
+Tablica sadrži vrste dokumenata kojima upravlja modul *Kontrola artikala*.
 
-### Prilagodba podataka po vrsti dokumenta      
+Riječ je o vrstama koje je unaprijed definirao sustav. Nije moguće dodavati nove vrste ni brisati postojeće. Zadane vrijednosti su:
 
-U ovom je popisu moguće dodati *Svojstva* izvornog dokumenta u prikaz podataka unutar *Kontrole artikala*.   
-Tablica sadrži iste vrste dokumenata kao one navedene u odjeljku **Vrste dokumenata za uvoz**.   
-Radi se o vrstama dokumenata koje su unaprijed definirane u sustavu i nije ih moguće dodavati niti brisati.    
-Za svaku vrstu podatka moguće je unijeti do 5 informacija, ovisno o tipu: *Tekst*, *Da/Ne*, *Cijeli broj*, *Decimalni broj*, *Datum*.   
-Dvaput klikom na ćeliju moguće je odabrati željeno *Svojstvo* dokumenta.   
+> - *Prijem robe*;
+> - *Primka*;
+> - *Ulazni račun*;
+> - *Deklaracija proizvodnje*;
+> - *Faze naloga za proizvodnju*;
+> - *Povrat od podizvođača*;
+> - *Skladišno knjiženje ulaza*.
 
-:::tip *Primjer*:   
-Za vrstu dokumenta *Ulazna faktura* moguće je dodati vrijednost iz zaglavlja, npr. *Svojstvo* *Vaša referenca*.   
-Budući da je *Vaša referenca* tekstualna informacija, dvostrukim klikom miša na stupac *Tekst 01* pokreće se pomoć s popisom svojstava redaka dokumenta *Ulazna faktura*.   
-Potrebno je proširiti stavku *Invoice (Faktura)*, odabrati svojstvo *Your reference (Vaša referenca)* i pritisnuti tipku *Odaberi*.   
+Za svaku vrstu dokumenta na popisu moguće je unijeti sljedeće podatke:
+
+- **Zad.**: određuje vrstu dokumenta koja se predlaže u filtrima pretraživanja. Može se odabrati samo jedna vrsta ili nijedna.
+- **Detalj artikla**: popis vrijednosti koje je unaprijed definirao sustav, a koje određuju razinu detalja *artikla* koju treba kontrolirati za određenu vrstu dokumenta. Zadane vrijednosti su:
+  - *Nijedan* – redak *artikla* koji se razmatra neće sadržavati podatke o detaljima;
+  - *Lot* – najviša razina detalja za redak *artikla* koji se razmatra bit će *lot*;
+  - *S.N.* – najviša razina detalja za redak *artikla* koji se razmatra bit će *serijski broj*;
+  - *UJ* – najviša razina detalja za redak *artikla* koji se razmatra bit će *utovarna jedinica*.
+
+- **Višestr.**: određuje hoće li za određenu vrstu dokumenta biti omogućeno *višestruko evidentiranje vrijednosti* u modulu *Kontrola artikala*.
+
+  > Da bi se ova postavka primjenjivala, potrebno je aktivirati opći parametar *Omogući višestruko evidentiranje vrijednosti*.
+
+- **Vrsta kontrole**: *vrsta kontrole* koja će se predlagati prilikom unosa *kontrole artikala* za određenu vrstu dokumenta.
+- **Vrsta kontrolnog plana**: tijekom postupka *Uvoz artikala za kontrolu*, osim za proizvodne vrste dokumenata (*Proizvodna deklaracija* i *Operacija naloga za proizvodnju*), ovo je *vrsta kontrolnog plana* koja ima najviši prioritet pri pretraživanju *kontrolnog plana* koji će se povezati s *kontrolom artikala*.
+- **Opis vrste kontrole**: opis *vrste kontrole*.
+- **Opis vrste kontrolnog plana**: opis *vrste kontrolnog plana*.
+
+### Boje redaka kontrole artikala
+
+Na ovom je popisu moguće definirati različite boje za prepoznavanje pojedinih statusa *kontrole artikla*.
+
+Te se boje primjenjuju u *filtru kontrola artikala*. Popis sadrži sljedeće podatke:
+
+- **Vrsta**: status *kontrole artikla* kojem se dodjeljuju boje.
+
+  > Tablica sadrži vrijednosti koje je unaprijed definirao sustav. Nije moguće dodavati nove vrijednosti, brisati postojeće ni mijenjati ih. Zadane vrijednosti su:
+  >
+  > - *Artikli koji ne podliježu kontroli*
+  > - *Kontrole bez kontrolnog plana*
+  > - *Kontrole s više kontrolnih planova*
+  > - *Kontrole za koje još nije provedeno mjerenje*
+  > - *Kontrole s nesukladnim rezultatima*
+  > - *Kontrole koje još treba validirati*
+  > - *Već validirane kontrole*
+
+- **Pozadina**: boja koja se primjenjuje na pozadinu retka *kontrole artikla* s određenim statusom.
+- **Tekst**: boja koja se primjenjuje na tekst retka *kontrole artikla* s određenim statusom.
+
+### Prilagodba podataka prema vrsti dokumenta
+
+Na ovom je popisu moguće dodati *svojstva* izvornog dokumenta na popis podataka u evidenciji *Kontrola artikla*.
+
+Tablica sadrži iste vrste dokumenata kao i odjeljak **Vrste dokumenata za uvoz**.
+
+Riječ je o vrstama koje je unaprijed definirao sustav. Nije moguće dodavati nove vrste ni brisati postojeće.
+
+Za svaku vrstu podatka predviđeno je pet polja: *Tekst*, *Da/Ne*, *Cijeli broj*, *Decimalni broj* i *Datum*.
+
+Dvostrukim klikom na ćeliju moguće je odabrati željeno *svojstvo* dokumenta.
+
+:::tip **Primjer:**
+Za vrstu dokumenta *Ulazni račun* moguće je dodati vrijednost svojstva zaglavlja *Vaša referenca*.
+
+Budući da je *Vaša referenca* tekstualni podatak, dvostrukim klikom miša na stupac *Tekst 01* otvara se pomoć za odabir svojstava dokumenta *Ulazni račun*.
+
+Proširite stavku *Invoice (Račun)*, odaberite svojstvo *Your reference (Vaša referenca)* i kliknite gumb *Odaberi*.
+
 U ćeliji u kojoj je izvršen odabir prikazat će se svojstvo *YourReference*.
 :::
 
-### Prilagodba zaglavlja stupaca po vrsti dokumenta       
+### Prilagodba zaglavlja stupaca prema vrsti dokumenta
 
-U ovom popisu moguće je unijeti *Naslov svojstva*, koji odgovara prethodno odabranim *Svojstvima* iz popisa **Prilagodba podataka po vrsti dokumenta** i koji će se prikazivati u prikazu podataka unutar *Kontrole artikala*.   
-Tablica sadrži iste vrste dokumenata kao i u odjeljku **Vrste dokumenata za uvoz**.   
-Radi se o vrstama koje su unaprijed definirane u sustavu te ih nije moguće dodavati niti brisati.  
-Moguće je postaviti do 5 informacija po tipu podatka: *Tekst*, *Da/Ne*, *Cijeli broj*, *Decimalni broj*, *Datum*.   
-Dvaput klikom na ćeliju moguće je odabrati željeni unos iz *rječnika* koji će se prikazivati kao naziv stupca.  
- 
-:::tip *Primjer:*   
-Za vrstu dokumenta *Ulazna faktura* moguće je postaviti zaglavlje koje odgovara prethodno navedenom primjeru za svojstvo zaglavlja *Vaša referenca*.    
-Dvaput klikom na stupac *Tekst 01* ili ručnim unosom naziva iz rječnika, unesite *Vaša referenca*.   
+Na ovom je popisu moguće odrediti *naslov svojstva* koji odgovara odabranim *svojstvima* iz odjeljka **Prilagodba podataka prema vrsti dokumenta** i koji će se prikazivati na popisu podataka u evidenciji *Kontrola artikla*.
+
+Tablica sadrži iste vrste dokumenata kao i odjeljak **Vrste dokumenata za uvoz**.
+
+Riječ je o vrstama koje je unaprijed definirao sustav. Nije moguće dodavati nove vrste ni brisati postojeće.
+
+Za svaku vrstu podatka predviđeno je pet polja: *Tekst*, *Da/Ne*, *Cijeli broj*, *Decimalni broj* i *Datum*.
+
+Dvostrukim klikom na ćeliju moguće je odabrati željenu *stavku rječnika* koja će se prikazivati kao zaglavlje.
+
+:::tip **Primjer:**
+Za vrstu dokumenta *Ulazni račun* moguće je odrediti zaglavlje koje odgovara prethodno navedenom primjeru vrijednosti svojstva zaglavlja *Vaša referenca*.
+
+Dvostrukim klikom miša na stupac *Tekst 01* ili ručnim unosom *stavke rječnika* unesite *Vaša referenca*.
 :::
 
-Za sve ostale funkcionalnosti koje nisu posebno objašnjene u ovom dokumentu, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

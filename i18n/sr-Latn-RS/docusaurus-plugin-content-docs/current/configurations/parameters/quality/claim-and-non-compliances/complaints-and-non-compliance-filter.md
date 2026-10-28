@@ -1,24 +1,24 @@
 ---
-title: Pretraga parametara reklamacija i nesukladnosti
+title: Pretraga parametara reklamacija i neusaglašenosti
 sidebar_position: 1
 ---
 
-I parametri se nalaze na putu **Parametri > Kvaliteta > Parametri reklamacija i nesukladnosti**.   
+Parametri se nalaze na putanji **Parametri > Kvalitet > Parametri reklamacija i neusaglašenosti**.
 
-Informacije se pohranjuju po *Godini*.  
-Filtriranje podataka omogućuje unos novih parametara ili pretraživanje već postojećih kako bi ih se prikazalo, izmijenilo ili izbrisalo. 
+Podaci se čuvaju prema *godini*.
 
-**Pretraga parametara**
+Filter podataka omogućava unos novih parametara ili pretragu postojećih radi njihovog prikaza, izmene ili brisanja.
 
-Obrazac se sastoji od područja za filtriranje i područja za prikaz rezultata.
-Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na tipku **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
+## Pretraga parametara
 
-**Inserimento Parametri**
+Obrazac se sastoji od oblasti za filtriranje i oblasti sa rezultatima. Nakon podešavanja željenih filtera dovoljno je kliknuti na dugme **Pretraži** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za unos novih *Godina* potrebno je kliknuti na tipku **Novo**.   
+## Unos parametara
 
-**Izmjena ili pregled parametara**
+Za unos novih *godina* potrebno je kliknuti na dugme **Novo**.
 
-Za otvaranje upravljanja iz mreže rezultata potrebno je dvostruko kliknuti na red koji vas zanima ili, nakon odabira jednog ili više redaka, kliknuti na tipke **Izmijeni** ili **Pregledaj**.   
+## Izmena ili prikaz parametara
 
-Za sve što nije posebno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju obrazaca, pogledajte sljedeću poveznicu:[Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za otvaranje upravljanja iz tabele rezultata potrebno je dvaput kliknuti na željeni red ili izabrati jedan ili više redova, a zatim kliknuti na dugme **Izmeni** ili **Prikaži**.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

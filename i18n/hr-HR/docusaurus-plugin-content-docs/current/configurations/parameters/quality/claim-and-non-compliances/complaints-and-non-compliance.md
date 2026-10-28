@@ -3,51 +3,56 @@ title: Parametri reklamacija i nesukladnosti
 sidebar_position: 2
 ---
 
-Parametri se nalaze putem izbornika **Parametri > Kvaliteta > Parametri reklamacija i nesukladnosti**.   
+Parametri se nalaze na putanji **Parametri > Kvaliteta > Parametri reklamacija i nesukladnosti**.
 
-Podaci uneseni u ovom modulu koriste se za predlaganje informacija u sljedećim modulima:     
-- **Reklamacije**;   
-- **Nesukladnosti**.   
-- **Autorizacija povrata** - pri ispisu *Odobrenja za povrat*.   
+Podaci iz ove postavke koriste se za predlaganje informacija u sljedećim evidencijama:
 
-**Spremanje parametara**
+- **Reklamacije**
+- **Nesukladnosti**
+- **Odobrenje povrata** – prilikom ispisa dokumenta *Odobrenje povrata*.
 
-Za pohranu izmijenjenih podataka potrebno je kliknuti na tipku **Spremi**.   
+#### Poseban gumb
 
-## Parametri reklamacija i nesukladnosti     
+**Spremi**: omogućuje spremanje izmijenjenih podataka.
 
-- **Godina**: *Godina* na koju se odnose *parametri reklamacija i nesukladnosti*.   
-- **Bilješke**: slobodne napomene.   
+## Parametri reklamacija i nesukladnosti
 
-### Reklamacije      
+- **Godina**: referentna *godina* za *parametre reklamacija i nesukladnosti*.
+- **Napomene**: slobodne napomene.
 
-U ovom proširivom odjeljku moguće je unijeti podatke koji će se predložiti prilikom unosa nove *Reklamacije*.   
+### Reklamacije
 
-Moguće je unijeti:   
-- **Vrsta reklamacije**: *Vrsta reklamacije* koja će se predložiti pri unosu.    
-- **Odgovorna osoba**: *Zaposlenik* koji će se predložiti kao odgovorna osoba.     
-- **Odgovorna funkcija**: *Funkcija u poduzeću* koja će se predložiti kao odgovorna.     
-- **Trošak obrade**: iznos koji će se predložiti u polju *Trošak obrade*.   
-- **Automatski preračun ukupnog iznosa**: označava treba li se automatski preračunati ukupni iznosi *Reklamacije* na temelju unesenih nedostataka; u suprotnom se vrijednosti moraju unositi ručno.     
-- **Grupiranje podataka J.J.J.**: ako je aktivirano, sustav automatski dodaje sve *artikle sadržane u istoj J.J.J.* kada se unese artikl koji pripada toj jedinici
+U ovom odjeljku moguće je unijeti podatke koji će se predlagati u evidenciji *Reklamacije*.
 
-**Odobrenje za povrat**   
->- **Odobrenje za povrat**: označava treba li se *Odobrenje za povrat* obrađivati unutar modula *Reklamacija*.   
->- **Zaglavlje dokumenta**: slobodne bilješke na temu, koje se predlažu prilikom ispisa *Odobrenja za povrat*.   
->- **Tijelo dokumenta**: slobodne bilješke na temu, koje se predlažu prilikom ispisa *Odobrenja za povrat*.   
->- **Napomene o odobrenjima**: slobodne bilješke na temu, koje se predlažu prilikom ispisa *Odobrenja za povrat*.   
->- **Upute za povrat**: slobodne bilješke na temu, koje se predlažu prilikom ispisa *Odobrenja za povrat*.  
+Moguće je unijeti sljedeće podatke:
 
-### Nesukladnosti     
+- **Vrsta reklamacije**: vrsta reklamacije koja će se predlagati prilikom unosa nove *reklamacije*.
+- **Odgovorna osoba**: *zaposlenik* koji će se predlagati kao odgovorna osoba prilikom kreiranja nove *reklamacije*.
+- **Odgovorna funkcija**: *poslovna funkcija* koja će se predlagati kao odgovorna prilikom kreiranja nove *reklamacije*.
+- **Trošak obrade**: vrijednost koja će se predlagati u polju *Trošak obrade* nove *reklamacije*.
+- **Automatski ponovni izračun ukupnih vrijednosti**: određuje hoće li se ukupne vrijednosti *reklamacije* automatski ponovno izračunavati na temelju unesenih nedostataka. U suprotnom je vrijednosti potrebno unijeti ručno.
+- **Grupiranje podataka UDC-a**: određuje hoće li se prilikom unosa *jedinice utovara* u odjeljak *Neispravni objekti* grupirati jednaki *artikli* i zbrojiti njihove *količine*.
 
-U ovom proširivom odjeljku moguće je unijeti podatke koji će se predložiti prilikom unosa nove *Nesukladnosti*.   
-Moguće je unijeti:   
-- **Vrsta nesukladnosti**: *Vrsta reklamacije* koja će se predložiti pri unosu *Nesukladnosti*.   
-- **Odgovorna osoba**: *Zaposlenik* koji će se predložiti kao odgovorna osoba prilikom kreiranja *Nesukladnosti*.   
-- **Odgovorna funkcija**: *Funkcija u poduzeću* koja će se predložiti kao odgovorna prilikom kreiranja *Nesukladnosti*.   
-- **Trošak obrade**: vrijednost koja će se predložiti u polju *Trošak obrade* za *Nesukladnosti*.   
-- **Automatski preračun ukupnih iznos**: označava treba li automatski izračunati ukupne iznose *Nesukladnosti* na temelju unesenih nedostataka; u suprotnom se vrijednosti unose ručno.     
-- **Grupiranje podataka J.J.J.**: označava treba li jednake *Artikle* grupirati zbrajanjem njihovih *Količina* durante prilikom unosa *Jedinice tereta* u *Neispravne artikle*.   
-- **Prijedlog alternativne mjere (J.M.)**: označava treba li u *Neispravnim artiklima*, prikazivati informacije o *Količinama* izraženima u alternativnoj jedinici mjere (različitoj od glavne).   
+Odjeljak **Odobrenje povrata**
 
-Za sve funkcionalnosti obrazaca koje nisu posebno objašnjene u ovom dokumentu, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+- **Odobrenje povrata**: određuje hoće li se u evidenciji *Reklamacije* upravljati dokumentom *Odobrenje povrata*.
+- **Uvodni tekst dokumenta**: slobodne napomene o temi koje se predlažu prilikom ispisa dokumenta *Odobrenje povrata*.
+- **Tekst tijela dokumenta**: slobodne napomene o temi koje se predlažu prilikom ispisa dokumenta *Odobrenje povrata*.
+- **Napomene o odobrenjima**: slobodne napomene o temi koje se predlažu prilikom ispisa dokumenta *Odobrenje povrata*.
+- **Upute za povrat**: slobodne napomene o temi koje se predlažu prilikom ispisa dokumenta *Odobrenje povrata*.
+
+### Nesukladnosti
+
+U ovom je proširivom odjeljku moguće unijeti podatke koji će se predlagati u evidenciji *Nesukladnosti*.
+
+Moguće je unijeti sljedeće podatke:
+
+- **Vrsta nesukladnosti**: vrsta reklamacije koja će se predlagati prilikom unosa nove *nesukladnosti*.
+- **Odgovorna osoba**: *zaposlenik* koji će se predlagati kao odgovorna osoba prilikom kreiranja nove *nesukladnosti*.
+- **Odgovorna funkcija**: *poslovna funkcija* koja će se predlagati kao odgovorna prilikom kreiranja nove *nesukladnosti*.
+- **Trošak obrade**: vrijednost koja će se predlagati u polju *Trošak obrade* nove *nesukladnosti*.
+- **Automatski ponovni izračun ukupnih vrijednosti**: određuje hoće li se ukupne vrijednosti *nesukladnosti* automatski ponovno izračunavati na temelju unesenih nedostataka. U suprotnom je vrijednosti potrebno unijeti ručno.
+- **Grupiranje podataka UDC-a**: određuje hoće li se prilikom unosa *jedinice utovara* u odjeljak *Neispravni objekti* grupirati jednaki *artikli* i zbrojiti njihove *količine*.
+- **Prijedlog alternativne mjerne jedinice**: određuje hoće li se u odjeljku *Neispravni objekti* prikazivati podaci o *količinama* izraženima u alternativnoj mjernoj jedinici u odnosu na osnovnu.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).
