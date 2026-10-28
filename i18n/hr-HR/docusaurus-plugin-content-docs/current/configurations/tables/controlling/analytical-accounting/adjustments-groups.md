@@ -9,7 +9,7 @@ Formu možete pronaći na putanji: **Tablice > Kontroling > Analitičko knjigovo
 Ova tablica je isključivo za upotrebu tvrtki koje su postavile *Kontroling*
 :::
 
-Unutar ove tablice moguće je kodirati grupiranja računa koja su korisna za upravljanje izvještavanjem specifičnim za kcontroling.
+Unutar ove tablice moguće je kodirati grupiranja računa koja su korisna za upravljanje izvještavanjem specifičnim za kontroling.
 Neki računi se u početku ne koriste izravno u kontrolingu, već samo neizravno i naknadno: grupe usklađenja služe za identificiranje logičkih grupa kojima se dodjeljuju pojedini troškovi za usklađenja koja ćemo provoditi tijekom godine ili tek na kraju poslovne godine, kako bi se mogli prikladno grupirati u obrascu **Kontrolne vrijednosti** i provjeriti njihova usklađenost s knjigovodstvom na kraju razdoblja.
 
 #### Specifična polja: 
