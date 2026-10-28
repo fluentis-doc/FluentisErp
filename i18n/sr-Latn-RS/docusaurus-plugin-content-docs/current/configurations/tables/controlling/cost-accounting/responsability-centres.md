@@ -1,10 +1,12 @@
 ---
-title: Centri odgovornosti 
+title: Centri odgovornosti
 sidebar_position: 4
 ---
 
-Tablica omogućuje definiranje centara odgovornosti kojima će se dodijeliti troškovni i profitni centri. 
+Tabela omogućava definisanje centara odgovornosti kojima se dodeljuju centri troška i profitni centri.
 
-**Centar odgovornosti**: alfanumerički kod CoR-a. 
+- **CdR**: alfanumerička šifra centra odgovornosti.
 
-**Opis**: opis OR-a
+- **Opis**: opis centra odgovornosti.
+
+- **Resurs**: opciono polje za povezivanje sa **zaposlenim** odgovornim za taj centar.
