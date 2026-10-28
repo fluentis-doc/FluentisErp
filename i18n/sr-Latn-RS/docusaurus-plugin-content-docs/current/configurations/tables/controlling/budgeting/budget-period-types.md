@@ -1,23 +1,30 @@
 ---
-title: Periodi za definiranje budžeta
+title: Vrste budžetskih perioda
 sidebar_position: 2
 ---
 
-Obrazac se sastoji od nekoliko rešetki: definicija **proračunskih razdoblja** provodi se u prvoj rešetki s lijeve strane, gdje su 'šifra', 'opis' i oznaka dodijeljeni za 'više- godišnje' upravljanje istima. Nakon što je šifra spremljena, aktivirat će se mogućnost umetanja detalja razdoblja u rešetku s desne strane: ako je razdoblje višegodišnje, bit će prikazana i referentna godina, a ne samo dan/mjesec. 
+Obrazac se sastoji od više tabela. Definisanje **budžetskih perioda** obavlja se u prvoj tabeli sleva, u kojoj se određuju „šifra”, „opis” i oznaka za upravljanje višegodišnjim periodima. Nakon čuvanja šifre omogućava se unos detalja perioda u desnoj tabeli. Ako je period višegodišnji, prikazivaće se i referentna godina, a ne samo dan i mesec.
 
-Postavljanje ovih detalja može se definirati na dva načina: prvi, preporučeni, zahtijeva da se početni datum svih razdoblja uvijek postavi na prvi dan siječnja, dok će kraj pojedinačnog biti 'zadnji' dan mjesec relativan. Postotak koji treba postaviti, stoga će uvijek biti povećanje vrijednosti prethodnog razdoblja, a posljednje razdoblje će imati 100% godišnje vrijednosti (npr. za tromjesečno razdoblje imat ćemo 4 razdoblja s 25/50/75/100 %). Ova se postavka posebno preporučuje za proračune koji nisu samo ekonomske prirode, već se temelje i na imovinskim podračunima, koji imaju početni oporavak stanja koji se prenosi iz mjeseca u mjesec. 
+Detalji se mogu definisati na dva načina.
 
-Druga vrsta postavke, međutim, uključuje učitavanje zasebnih razdoblja, u kojem će slučaju svako imati svoj specifični opći postotak. Postoci učitani u ovoj točki standardni su postoci koji se koriste kao zadani pri učitavanju podataka, ali korisnik može nastaviti s forsiranjem vrijednosti od slučaja do slučaja prema potrebi. 
+Prvi, preporučeni način, predviđa da početni datum svih perioda uvek bude 1. januar, dok je završni datum pojedinačnog perioda poslednji dan odgovarajućeg meseca. Procenat koji se postavlja predstavlja kumulativni udeo vrednosti u odnosu na prethodni period, a poslednji period ima 100 % godišnje vrednosti. Na primer, za tromesečni period definišu se četiri perioda sa procentima 25/50/75/100 %. Ovakav način posebno se preporučuje za budžete koji se ne odnose samo na prihode i rashode već uključuju i bilansne podkonte, kod kojih se početna stanja prenose iz meseca u mesec.
 
-Ispod ove osnovne postavke nalazi se popis alternativnih razdoblja: nakon što je odabrano gornje 'matično' razdoblje, može se definirati N drugih alternativnih razdoblja koja će biti povezana s određenim podračunima kontnog plana, kako bi se unaprijed definirali specifični postoci koji će se koristiti u određenim slučajevima: pojedinosti o njima bit će predložene s istim postocima kao i početno razdoblje, ali će ih korisnik moći slobodno mijenjati. 
+Drugi način predviđa definisanje međusobno odvojenih perioda, pri čemu svaki period ima sopstveni opšti procenat. Ovde uneti procenti predstavljaju standardne vrednosti koje se predlažu kao podrazumevane prilikom unosa podataka, ali korisnik ih po potrebi može pojedinačno promeniti.
 
+Ispod osnovnih podešavanja nalazi se lista alternativnih perioda. Nakon izbora nadređenog, odnosno „roditeljskog” perioda, moguće je definisati proizvoljan broj njegovih alternativnih perioda i povezati ih sa određenim podkontima kontnog plana. Time se unapred definišu posebni procenti koji će se primenjivati u određenim slučajevima. Detalji alternativnih perioda inicijalno će sadržati iste procente kao i početni period, ali korisnik ih može slobodno izmeniti.
 
-*Specifični gumbi*
+#### Posebna dugmad
 
-**Umetni novo razdoblje**: Postavlja kursor u rešetku u gornjem lijevom kutu proračunskih razdoblja.   
-**Umetni novo proračunsko razdoblje**: Postavlja kursor u rešetku s desne strane za odabrano proračunsko razdoblje.
-**Umetni novi alternativni budžet**: Postavite kursor u rešetku u donjem lijevom kutu alternativnih proračunskih razdoblja.  
-**Izbriši proračunsko razdoblje**: Briše odabrano proračunsko razdoblje.  
-**Izbriši detalje budžeta perioda**: Briše odabrane pojedinosti proračunskog razdoblja.  
-**Izbriši alternativni budžet**: Briše odabrano alternativno proračunsko razdoblje.  
-**Izbriši detalj budžeta perioda**: Briše detalj odabranog alternativnog proračunskog razdoblja.  
+**Umetni novi period**: postavlja pokazivač u gornju levu tabelu budžetskih perioda.
+
+**Umetni novi detalj perioda**: postavlja pokazivač u desnu tabelu za izabrani budžetski period.
+
+**Umetni novi alternativni budžet**: postavlja pokazivač u donju levu tabelu alternativnih budžetskih perioda.
+
+**Izbriši budžetski period**: briše izabrani budžetski period.
+
+**Izbriši detalje budžetskog perioda**: briše detalje izabranog budžetskog perioda.
+
+**Izbriši alternativni budžet**: briše izabrani alternativni budžetski period.
+
+**Izbriši detalje alternativnog budžeta**: briše detalje izabranog alternativnog budžetskog perioda.

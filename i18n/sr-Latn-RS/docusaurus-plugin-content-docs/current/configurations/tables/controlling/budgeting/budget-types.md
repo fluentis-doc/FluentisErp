@@ -3,4 +3,4 @@ title: Vrste budžeta
 sidebar_position: 1
 ---
 
-Tablica se sastavlja nametanjem koda, opisa korisnika i kategorije fiksnog proračuna. Nema posebne važnosti, to je samo kriterij traženja i odabira. 
+Tabela se popunjava unosom šifre, korisničkog opisa i fiksne kategorije budžeta. Nema poseban funkcionalni značaj, već služi samo kao kriterijum za pretragu i izbor.
