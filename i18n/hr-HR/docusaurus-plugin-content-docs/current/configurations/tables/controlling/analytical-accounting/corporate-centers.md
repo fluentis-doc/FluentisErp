@@ -1,95 +1,107 @@
 ---
-title: Korporativni centri
+title: Centri tvrtke
 sidebar_position: 4
 ---
 
-
-Obrazac se nalazi u: **Tablice > Kontroling > Troškovno računovodstvo > Korporativni centri**
+Obrazac se nalazi na putanji: **Tablice > Kontroling > Analitičko knjigovodstvo > Centri tvrtke**
 
 :::tip Napomena
-Ova je tablica relevantna samo za društva kod kojih je aktivirana opcija *Kontroling*.
+Ova je tablica relevantna samo za tvrtke u kojima je aktivna oznaka *Kontroling*.
 :::
 
-Tablica omogućuje definiranje strukture, uključujući više razina, te karakteristika poslovnih centara.
+Tablica omogućuje definiranje strukture centara tvrtke na više razina, kao i definiranje njihovih obilježja.
 
-#### Specifični gumbi
+**#### Posebni gumbi**
 
-**Novi CDC**: omogućuje unos novog centra troška.|
-**Novi podređeni CDC**: omogućuje dodavanje podrazine (podcentra) u odnosu na razinu na kojoj se trenutno nalazite. |
-**Brisanje veze CDC**: omogućuje brisanje podrazine centra troška. |
+**Novi CDC**: omogućuje unos novog centra troška.
 
+**Nova veza CDC-a**: omogućuje unos podrazine u odnosu na trenutačno odabranu razinu.
+
+**Brisanje veze CDC-a**: omogućuje brisanje podrazine centra troška.
 
 :::tip **Način unosa novih centara**
-Struktura stabla koja organizira centre, kao i detalji centara, vidljiva je u središnjoj mreži forme, dok se novi centri unose popunjavanjem polja u donjem dijelu ekrana.
-Upozorenje: pojedina polja moguće je mijenjati izravno u gornjoj mreži nakon što se novi centar unese (npr. polje *Cost driver*).
+Stablo strukture za organizaciju centara i detalji pojedinih centara prikazuju se u središnjoj mreži obrasca, ali se novi centri unose popunjavanjem polja u donjem dijelu obrasca.
+
+**POZOR:** neka se polja mogu mijenjati i izravno u retku gornje mreže nakon unosa novog centra (npr. polje *Pokretač troška*).
 :::
 
-## Opće postavke
+**## Opće postavke**
 
-### Obavezna polja (lijevi stupac)
-- [**Dimenzija**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) kojoj centar pripada
-- **Šifra** alfanumerička, do 15 znakova
-- **Naziv konta** centra
-- **Kategorija** centra
+**### Obvezna polja u lijevom stupcu**
 
-### Neobavezna polja (lijevi stupac) 
-- **Drugi opis**
-- **Tip centra** (direktni/indirektni) – ova postavka ne utječe na izračune.
+- [**DIMENZIJA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) kojoj centar pripada
+- **ŠIFRA** – alfanumerička šifra duljine do 15 znakova
+- **OPIS** centra
+- **KATEGORIJA** centra
 
-### Neobavezna polja (desni stupac) 
-- **DATUM POČETKA/DATUM ZAVRŠETKA VALJANOSTI** omogućuje provjeru je li centar troška valjan na datum knjiženja ili datum dokumenta. Padajući izbornik prikazuje samo one centre koji su važeći u zadanom razdoblju (ili bez zadanog raspona).
-- FLAG **VALORIZIRAJUĆI**: označava može li se centar koristiti u knjiženjima ili dokumentima, ili je samo logička struktura.
-- FLAG **VIDLJIV U PROIZVODNJI**: čini centar vidljivim u tablici [Trošak centri](/docs/configurations/tables/production/cost-center) u proizvodnji.
-- **CENTAR ODGOVORNOSTI**. slobodna tablica u kojoj se može evidentirati odgovorna osoba za centar; nema izravnog utjecaja na analitičko računovodstvo, ali se može koristiti za obavještavanje zaposlenika (npr. u slučaju prekoračenja budžeta).
+**### Neobvezna polja u lijevom stupcu**
 
-## Postavke kontrolinga
+- **DRUGI OPIS**
+- **VRSTA CENTRA** (izravni/neizravni) – odabir koji ne utječe na obradu podataka
 
-- **Računi koji se trebaju dodijeliti**: samo jedan centar u istoj tvrtki može imati ovaj flag. Koristi se kao generički centar (npr. "VRIJEDNOSTI ZA ATRIBUCIJU U KONTROLINGU") u koji se knjiže troškovi koji se ne mogu precizno dodijeliti. Ova opcija se primjenjuje kada: računovodstvo nema dovoljno informacija za pravilnu dodjelu u trenutku knjiženja, ili kada bi detaljna dodjela zahtijevala previše vremena.
+**### Neobvezna polja u desnom stupcu**
+
+- **DATUM POČETKA / DATUM ZAVRŠETKA VALJANOSTI** – postavljanjem ovih datuma provjerava se je li centar troška valjan na datum knjiženja (ili datum dokumenta). Padajući izbornik centara prikazivat će samo centre koji su valjani na taj datum ili nemaju definirano razdoblje valjanosti.
+- Oznaka **MOŽE SE VREDNOVATI** – označava može li se centar vrednovati u računovodstvu ili dokumentima ili je riječ o centru koji služi samo za logičku strukturu.
+- Oznaka **VIDLJIV U PROIZVODNJI** – omogućuje prikaz centra u tablici [Centri troška](/docs/configurations/tables/production/cost-center) u modulu proizvodnje.
+- **CENTAR ODGOVORNOSTI** – slobodno definirana tablica u kojoj se navodi osoba odgovorna za taj centar. Ovo polje ne utječe na logiku upravljanja analitičkim računovodstvom, ali se može koristiti za slanje obavijesti zaposleniku putem modula Supervisor u slučaju prekoračenja proračuna.
+
+**## Postavke kontrole**
+
+- **KONTA KOJIMA TREBA PONOVNO DODIJELITI CENTAR** – ova oznaka može biti postavljena samo na jednom centru unutar iste tvrtke. Koristi se za pomoćne centre, a posebno za generički centar „VRIJEDNOSTI S DODJELOM U KONTROLINGU”.
+
+  Ova oznaka definira svojevrsni zadani centar kojemu financijsko računovodstvo dodjeljuje troškove koje ne može precizno rasporediti. Također, mogu postojati situacije u kojima računovodstvo u trenutku knjiženja nema dovoljno pouzdanih podataka za vrednovanje stavki ili bi njihova obrada zahtijevala previše vremena.
 
 :::tip Napomena
-Primjer: trošak najma može se odmah raspodijeliti po unaprijed definiranim postocima u kontnom planu, no ako se koristi generički centar, može se primijeniti *cost driver* (npr. površina u m²) za fleksibilnije raspoređivanje troškova. Promjenom cost drivera ažuriraju se postotci unutar kontrolinga bez potrebe za izmjenama u povijesnim knjiženjima.
-Drugi primjer: potrošnja kWh strojeva može se privremeno knjižiti u generički centar, a kasnije, kada su dostupni stvarni podaci, izvršiti raspodjela u kontrolingu na temelju *cost drivera*.
+Primjer: troškovi najma mogli bi se obrađivati već u kontnom planu primjenom fiksnih postotaka, ali korištenjem ovog generičkog centra možemo upravljati *pokretačem troška (Cost driver)* u kojem se, primjerice, mogu definirati kvadratni metri pojedinih centara, na temelju kojih se izračunava odgovarajući postotak. Promjenom pokretača troška ažurirat ćemo novi postotak (samo u kontrolingu), bez potrebe za izmjenama povijesnih podataka koji su već proknjiženi u računovodstvu.
+
+Drugi primjer je potrošnja električne energije u kWh pojedinih strojeva, za koju računovodstvo ne zna gdje pronaći podatke. Stoga je praktično privremeno pohraniti te vrijednosti u ovaj generički centar, a zatim na kraju razdoblja, kada saznamo kolika je potrošnja, definirati logiku vrednovanja samo u kontrolingu, pri čemu se izračun prepušta *pokretaču troška (Cost driver)*.
 :::
 
-- **Zadana centar za imovinu**: generički centar kojem se dodjeljuju sva knjiženja vezana uz imovinske stavke. Iako se analitika najčešće primjenjuje samo na ekonomske stavke, tvrtka može odabrati proširenje na imovinske zapise radi potpunijeg pregleda bilance.
+- **ZADANI BILANČNI CENTAR**: označava generički centar kojemu se dodjeljuju sva bilančna knjiženja iz računovodstva. Uobičajeno se analitičko računovodstvo povezuje samo s računima prihoda i rashoda, ali tvrtka može imati potrebu za potpunim usklađenjem bilančnih podataka i u analitičkom računovodstvu. Ovaj centar povezan je s oznakom za vrednovanje bilančnih stavki u kontrolingu, koja je dostupna unutar *Divizije*.
 
-- **Zadani centar za projekte**: generički centar za knjiženje izravnih troškova/prihoda po projektima/narudžbama. Ako je u analitici obavezno popuniti centar, a nema specificirane detaljne veze centara s projektima, koristi se ovaj zadani centar. Detaljna pravila postavljaju se u [TABLICI POVEZIVANJA CENTARA I PROJEKATA](/docs/configurations/tables/controlling/analytical-accounting/projects-centers-association).
+- **ZADANI CENTAR ZA PROJEKTE**: označava generički centar tvrtke kojemu se dodjeljuju izravni troškovi i prihodi projekta/naloga. Kao što je objašnjeno u tablici *Dimenzije*, postoji posebna dimenzija za analizu vrijednosti po projektima. Budući da u analitičkom računovodstvu uvijek mora postojati centar, prilikom vrednovanja izravnog troška ili prihoda projekta/naloga može se koristiti generički centar s ovom oznakom ili se može vrednovati više projektnih centara postavljanjem [TABLICE POVEZIVANJA CENTARA I PROJEKATA](/docs/configurations/tables/controlling/analytical-accounting/projects-centers-association).
 
-- [**Model reklasifikacije**](/docs/controlling/reclassifications/create-reclassification-model): omogućuje povezivanje poslovnog centra s modelom reklasifikacije kako bi se odredio ukupni trošak dodijeljen centru i dobio pokazatelj troška samog centra. To je zato što su neki centri (uglavnom proizvodni) obično vrednovani u fizičkim veličinama (npr. radni sati ili broj korištenih komada) te je potrebno odrediti tarifu vrednovanja za trošak pojedinog radnog sata ili pojedinog komada. Model reklasifikacije obično određuje ukupne troškove centra koji se zatim dijele s ukupnom vrijednošću sati (ili komada) zabilježenih za taj centar.
-:::tip Napomena
-Model reklasifikacije koji se povezuje s poslovnim centrom za određivanje tarife može ovisiti o teorijskom pristupu koji želite primijeniti u svom sustavu kontrolinga, ali u svakom slučaju to će biti model koji teži odrediti ukupni trošak centra, uključujući i raspodjelu dijela neizravnih i zajedničkih troškova. U detaljima modela reklasifikacije predviđeno je označiti odgovarajući čvor (redak) koji prikazuje rezultat reklasifikacije, odnosno ukupni trošak centra, koji će postati brojnik u omjeru (npr. ukupni trošak centra / ukupni broj radnih sati centra) kako bi se odredio, primjerice, satni trošak centra. Na slikama je prikazan primjer specifičnog modela nazvanog Quadro controllo costi. Taj je model konfiguriran tako da kao brojnik koristi redak Ukupni troškovi rada.
-:::
-
-![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/corporate-center-model-connection.png)
-
-![Immagine](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/QCC-model.png)
-
-- **Vrsta mjerenja**: mogu se koristiti tri metode:
-    - *fizička dimenzija*
-    - *postotak*
-    - *postotak i fizička dimenzija*.
-
-Ako odaberemo posljednju opciju, prikazat će se sve dostupne mogućnosti.
-
-- **Filter vrijednosti nazivnika**: ovo polje koristi se u postotnim izračunima za definiranje logike izračuna nazivnika. Dostupne opcije su:
-    - *02 Ukupno dugovno*
-    - *03 Ukupno potražuje*
-    - *04 Marža*
-    - *05 Na odabrani podkonto*
-    - *06 Na odabrani konto*
-    - *07 Isključujući odabrane podkonte*
-    - *08 Isključujući odabrane konte*
-
-Ako, primjerice, odaberemo kod 02 Ukupno dugovno, zbrojit će se samo dugovni iznosi centara navedenih u donjoj lijevoj mreži; s kodom 03 Ukupno potražno, s 04 marže (razlika dugovno-potražno), a ostale opcije omogućuju dodatno filtriranje u desnoj mreži za preciznije podatke centara.
-
-- [**JEDINICA MJERE 1** ](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), [**JEDINICA MJERE 2**], **FIKSNI DIO** i **VARIJABILNI DIO**. Četiri su polja vezana uz izračune temeljem količina, gdje se definira koja je jedinica mjere relevantna za dobivanje ukupne količine koja se koristi kao nazivnik u fizičkom indeksu. Moguće je postaviti dvije jedinice mjere (UM1 i UM2) za izračun dvostrukog indeksa, dok se ista jedinica koristi i za fiksni i za varijabilni dio prvog ili drugog indeksa.
+- [**MODEL REKLASIFIKACIJE**](/docs/controlling/reclassifications/create-reclassification-model): omogućuje povezivanje centra tvrtke s modelom reklasifikacije radi utvrđivanja ukupnih troškova dodijeljenih centru, kako bi se izračunao njegov troškovni pokazatelj. Neki centri, uglavnom proizvodni, u pravilu se vrednuju fizičkim veličinama (npr. radnim satima ili brojem komada), pa je potrebno odrediti jediničnu stopu troška po radnom satu ili komadu. Model reklasifikacije obično određuje ukupne troškove centra, koji se zatim dijele ukupnim brojem sati (primjerice) ili komada evidentiranih za taj centar.
 
 :::tip Napomena
-Izračun prema fizičkim veličinama, tipičan za proizvodne centre, omogućuje dobivanje troškovnih tarifa centara, poput €/sat rada stroja ili €/sat rada čovjeka, što omogućuje izračun i provjeru standardnih troškova korištenih u izračunu troškova proizvoda, bilo za procjene u sastavnici, bilo za ponude.
+Model reklasifikacije koji se povezuje s centrom tvrtke radi određivanja troškovne stope može ovisiti o teorijskom pristupu na kojem se temelji sustav kontrolinga. U svakom slučaju, model će biti usmjeren na utvrđivanje ukupnih troškova centra, uključujući i dodijeljeni udio neizravnih i zajedničkih troškova.
+
+U detaljima modela reklasifikacije posebnom se oznakom određuje čvor (redak) koji prikazuje rezultat reklasifikacije, odnosno ukupne troškove centra. Taj iznos postaje brojnik u izračunu omjera, primjerice ukupni troškovi centra / ukupni radni sati centra, kako bi se odredio trošak po satu.
+
+Na slikama je prikazan primjer posebnog modela pod nazivom „Pregled kontrole troškova”. Taj je model konfiguriran tako da se kao brojnik omjera koristi redak „Ukupni troškovi funkcioniranja”.
 :::
 
-- **REFERENCA MJERENJA CENTRA**: omogućuje definiranje polja iz povijesnih podataka fizičkih kretanja koja će se filtrirati radi identifikacije količina vezanih uz centar. To može biti centar podrijetla, centar odredišta ili, s prioritetom, odredište, a u suprotnom podrijetlo.
+![Slika](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/corporate-center-model-connection.png)
 
-## Lokalizacije
+![Slika](/img/it-it/configurations/tables/controlling/analytical-accounting/corporate-centers/QCC-model.png)
 
-U slučaju instalacije s različitim geografskim lokalizacijama, moguće je koristiti sekciju Lokalizacije za upravljanje opisima na alternativnim jezicima, što se može koristiti, primjerice, u ispisu izvještaja analize centara troška.
+- **VRSTA MJERENJA**: moguće je odabrati jednu od tri metode mjerenja:
+  - *fizičkom veličinom*
+  - *postotkom*
+  - *postotkom i fizičkom veličinom*.
+
+  Ako odaberemo posljednju mogućnost kako bismo prikazali sve dostupne opcije, dostupna su sljedeća polja:
+
+- **FILTAR VRIJEDNOSTI NAZIVNIKA**: za izračune u postocima ovim se poljem određuje način izračuna nazivnika za postotne pokazatelje. Dostupne su sljedeće mogućnosti:
+  - *02 Ukupno duguje*
+  - *03 Ukupno potražuje*
+  - *04 Marže*
+  - *05 Na odabranom podkontu*
+  - *06 Na odabranom kontu*
+  - *07 Isključujući odabrane podkonte*
+  - *08 Isključujući odabrane konte*.
+
+  Primjerice, odabirom šifre 02 „Ukupno duguje” zbrajaju se samo dugovne stavke centara navedenih u donjoj lijevoj mreži. Šifra 03 odnosi se na potražnu stranu, a šifra 04 na marže, odnosno razliku između dugovne i potražne strane. Sljedeće mogućnosti omogućuju i korištenje desne mreže za odgovarajuće filtriranje podataka centara.
+
+- [**MJERNA JEDINICA 1**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), [**MJERNA JEDINICA 2**], **FIKSNI DIO** i **VARIJABILNI DIO**. Riječ je o četiri polja povezana s izračunom prema količini, u kojima se određuje mjerna jedinica na temelju koje se dohvaća ukupna količina koja se koristi kao nazivnik fizičkog pokazatelja. Moguće je navesti dvije mjerne jedinice (MJ1 i MJ2) za izračun dvostrukog pokazatelja, dok se za fiksni i varijabilni dio prvog ili drugog pokazatelja koristi ista mjerna jedinica.
+
+:::tip Napomena
+Izračun na temelju fizičke veličine, karakterističan za proizvodne centre, omogućuje dobivanje troškovnih stopa centara, primjerice u eurima po strojnome satu ili radnom satu. Na taj se način mogu izračunati i provjeriti standardni troškovi koji se koriste u izračunu troška proizvoda, za izradu procjena troškova u sastavnici ili pripremu ponude.
+:::
+
+- **REFERENCA MJERENJA CENTRA**: omogućuje određivanje polja iz povijesti fizičkih kretanja koja treba filtrirati radi utvrđivanja količina za određeni centar. Kao kriterij može se koristiti izvorni centar, odredišni centar ili, uz prioritet odredišta, izvorni centar ako odredište nije dostupno.
+
+**## Lokacije**
+
+U slučaju instalacije s različitim geografskim lokacijama, odjeljak Lokacije može se koristiti za definiranje opisa na drugim jezicima. Ti se opisi, primjerice, mogu koristiti pri ispisu analize centara troška.

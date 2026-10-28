@@ -1,32 +1,29 @@
 ---
-title: Postoci valorizacije
+title: Procenti valorizacije
 sidebar_position: 7
 ---
 
-Obrazac se nalazi na putu: **Tablice > Kontroling > Analitičko računovodstvo > Postotci varijacije**
+Obrazac se nalazi na putanji: **Tabele > Kontroling > Analitičko knjigovodstvo > Procenti vrednovanja**
 
 :::tip Napomena
-Ova je tablica namijenjena isključivo tvrtkama koje imaju aktiviranu funkcionalnost *Kontroling*
+Ova tabela namenjena je isključivo preduzećima koja imaju aktiviran *Kontroling*.
 :::
 
+U ovoj tabeli moguće je definisati kategorije procentualnih promena koje se koriste u različitim postupcima kontrolinga, na primer prilikom izrade planskog budžeta na osnovu ostvarenih vrednosti iz prethodne godine, primenom povećanja ili smanjenja, naročito prilikom dupliranja **istorije upravljačkih knjiženja**.
 
-U ovoj tablici moguće je definirati kategorije postotnih varijacija koje se koriste u raznim procedurama controllinga, primjerice pri izradi predviđenog budžeta na temelju realizacije iz prethodne godine, primjenjujući povećanja ili smanjenja. To je posebno korisno kada se radi duplikacija ***Povijest zapisa upravljanja***. 
+U **[kontnom planu](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)** svakom podkontu dodeljuje se odgovarajuća stavka za automatsku promenu.
 
-U **[planu konta ](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)** svakom podračunu može se dodijeliti pripadajuća stavka za automatsku varijaciju.
-Kada se koristi procedura za kopiranje podataka iz jednog područja analize u drugo (npr. iz *Realizacije* u *Budžet*), moguće je odrediti hoće li se primijeniti zadani postotci ili ne. 
+Kada se koristi postupak kopiranja iz jednog područja analize u drugo (npr. iz *Ostvarenog* u *Budžet*), sistemu se može zadati da li treba primeniti definisane procente promene.
 
-#### Specifična polja  
-- ***Šifra***  
-- ***Opis***  
-- ***Fiksni dio*** – postotak varijacije, pozitivan ili negativan, koji se primjenjuje na fiksni udio  
-- ***Varijbilni dio*** – postotak varijacije, pozitivan ili negativan, koji se primjenjuje na varijabilni udio
+#### Posebna polja
+
+- **ŠIFRA**
+- **OPIS**
+- **FIKSNI DEO** – pozitivan ili negativan procenat promene koji se primenjuje na fiksni deo.
+- **VARIJABILNI DEO** – pozitivan ili negativan procenat promene koji se primenjuje na varijabilni deo.
 
 :::tip Dodatno pojašnjenje
-Primjer: Za fiksne troškove svake godine odredimo povećanje od 5%, za polu-varijabilne troškove povećanje će biti 3% za varijabilni udio i 3% za fiksni udio, a za varijabilne troškove povećanje će iznositi 10%. 
+**PRIMER:** Za fiksne troškove određuje se godišnje povećanje od 5 %. Za poluvarijabilne troškove povećanje iznosi 3 % za varijabilni deo i 3 % za fiksni deo, dok se za varijabilne troškove određuje povećanje od 10 %.
 
-Podjela između varijabilnih i fiksnih troškova u kontrolingu proizlazi iz metodologije prema kojoj se svi troškovi i svi prihodi iz glavnog računovodstva "razdvajaju" na fiksni i varijabilni udio. Nakon toga se ti podaci prenose u *upravljačko računovodstvo*, gdje se iskazuju mjesečno i razdvojeno na fiksni i varijabilni udio.
+Podela na varijabilne i fiksne troškove u kontrolingu proizlazi iz metodologije razdvajanja svih troškova i prihoda knjiženih u finansijskom računovodstvu na fiksni i varijabilni deo. Ti podaci se zatim prenose u *upravljačko računovodstvo*, raspoređuju po mesecima i dele na fiksni i varijabilni deo.
 :::
-
-
-
-

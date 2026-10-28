@@ -1,64 +1,69 @@
 ---
-title: Povezivanje centara / naloga
+title: Povezivanje centara i projekata/naloga
 sidebar_position: 1
 ---
 
-Putanja se nalazi na: **Tablice > Kontroling > Troškovno računovodstvo > Povezivanje centara / naloga**
-
-
-:::tip Napomena
-Ova je tablica namijenjena isključivo društvima koja imaju postavljen *kontroling*.
-:::
-
-Kada poduzeće proizvodi po projektu/narudžbi, analiza stvarnih podataka može imati dva interesa:
-- točan interes, na razini pojedinog projekta/narudžbe, osobito kada oni međusobno nemaju zajedničke karakteristike;
-- interes za grupu projekata/narudžbi proizvedenih u određenom vremenskom razdoblju, kada ti projekti/narudžbe imaju karakteristike koje omogućuju generaliziranje tipologije.
-
-U ovom drugom slučaju ova tablica postaje ključna jer omogućuje povezivanje poslovnih centara *dimenzije* *Projekti/Narudžbe* s nekom njihovom značajkom, kako bi se mogli analizirati ukupni podaci prema tim *centrima projekta/narudžbe* bez potrebe za ulaskom u detalje svakog pojedinog posla.
+Obrazac se nalazi na putanji: **Tablice > Kontroling > Analitičko računovodstvo > Povezivanje centara/projekata**
 
 :::tip Napomena
-Ako poduzeće nije zainteresirano za makro-analizu, može preskočiti konfiguraciju ove tablice i koristiti samo jedan *centar projekta/narudžbe*, označen kao *Zadani centar za projekte*. Detalji se nalaze u tablici [***CENTAR TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
+Ova je tablica namijenjena isključivo tvrtkama koje imaju aktiviran *Kontroling*.
 :::
 
-Dostupna polja za konfiguraciju su:
-- ***Šifra*** poduzeća
+Kada tvrtka proizvodi prema projektu/nalogu, analiza ostvarenih vrijednosti može biti usmjerena na dva načina:
 
-:::tip Bilješka
-***FluentisERP*** će analizirati poveznice prema redoslijedu šifre: kada se odabere projekt X, najprije će se provjeriti omogućuje li prva poveznica određivanje centra koji treba dodijeliti retku. Ako ne, provjerit će se druga poveznica i tako redom, sve dok se ne pronađe prva valjana opcija.
+- pojedinačno, na određeni projekt/nalog, osobito kada projekti/nalozi nemaju zajednička obilježja;
+- na grupu projekata/naloga izrađenih tijekom određenog razdoblja, kada ti projekti/nalozi imaju obilježja na temelju kojih se mogu svrstati u istu kategoriju.
+
+U drugom je slučaju ova tablica ključna jer omogućuje povezivanje centara tvrtke iz dimenzije *Projekti/Nalozi* s određenim obilježjem projekata/naloga. Na taj je način moguće vrednovati ukupne podatke prema tim *centrima projekta/naloga*, bez potrebe za analizom svakog pojedinačnog posla.
+
+:::tip Napomena
+Ako tvrtka nema potrebu za analizom na široj razini, konfiguriranje ove tablice može se preskočiti te se može koristiti samo jedan *centar projekta/naloga*, označen oznakom *Zadani centar za projekte*. Više pojedinosti dostupno je u tablici [**_CENTRI TROŠKA_**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
 :::
 
-- ***Opis*** poduzeća  
-- ***Tip*** poduzeća, tj. objekt unutar kojeg se traži prepoznatljivi element  
-- ***Vlasnik'*** koje se uzima u obzir, a koje ovisi o odabiru u prethodnom polju.  
+Dostupna konfiguracijska polja su:
 
-Za ova posljednja dva polja opcije su:
-    - *Projekt*
-        - *Vrsta projekta*
-        - *Godina projekta*
-        - *Zona projekta*
-        - *Država projekta*
-    - *Klijent*
-        - *Tip konta*
-        - *Kupac račun*
-        - *zona za korisnike*
-        - *Zemlja kupca*
-        - *Administrativna kategorija*
-        - *Komercijalna kategorija*
-        - *Unos izdataka*
-    - *Artikl*
-        - *Klasa*
-        - *Kategorija proizvoda*
-        - *Jedinica mjere*
-        - *Porezna kategorija*
-        - *Karakteristika*
-        - *Vrsta artikla*
+- **_ŠIFRA_** povezivanja
 
-Ovisno o postavci, u donjoj mreži omogućit će se povezivanje centra s odgovarajućim definiranim elementom.
+:::tip Napomena
+**_FluentisERP_** obrađuje povezivanja prema redoslijedu šifri. Kada se odabere projekt X, sustav najprije provjerava omogućuje li prvo povezivanje određivanje centra koji treba dodijeliti retku. Ako se centar ne može odrediti, provjerava se drugo povezivanje i tako dalje, sve do prvog valjanog podudaranja.
+:::
+
+- **_OPIS_** povezivanja
+- **_VRSTA_** povezivanja, odnosno objekt unutar kojeg se traži razlikovno obilježje
+- **_SVOJSTVO_** koje treba uzeti u obzir, a koje ovisi o odabiru u prethodnom polju.
+
+Dostupne opcije za ova posljednja dva polja su:
+
+- *Projekt*
+  - *Vrsta projekta*
+  - *Godina projekta*
+  - *Zona projekta*
+  - *Država projekta*
+
+- *Kupac*
+  - *Vrsta konta*
+  - *Konto kupca*
+  - *Zona kupca*
+  - *Država kupca*
+  - *Administrativna kategorija*
+  - *Komercijalna kategorija*
+  - *Stavka troška*
+
+- *Artikl*
+  - *Klasa*
+  - *Robna kategorija*
+  - *Mjerna jedinica*
+  - *Porezna kategorija*
+  - *Obilježje*
+  - *Vrsta artikla*
+
+Ovisno o odabiru, u donjoj će se mreži omogućiti povezivanje centra s odgovarajućim odabranim elementom.
 
 :::danger UPOZORENJE
-Definiranje poveznice vezane uz *Artikle* zahtijeva da:
-    - unutar svakog projekta postoji barem jedan redak sa šifriranim artiklom
-    - svaka nabavna ili prodajna stavka, odnosno svaka stavka analitike u računovodstvu koja predstavlja izravni trošak/prihod projekta/narudžbe, mora biti povezana s artiklom unutar projekta. U suprotnom, ***FluentisERP*** neće moći dodijeliti vrijednost toj poveznici i tražit će sljedeću moguću poveznicu.
+Definiranje povezivanja koje se odnosi na *artikle* zahtijeva sljedeće:
 
-Ako je, primjerice, svaki projekt obilježen gotovim proizvodom različite klase, vjerojatno je jednostavnije upravljati različitim *vrstama projekata* za svaku klasu nego zahtijevati ručno dodavanje artikla unutar svakog pojedinog projekta i njegovo odabiranje u svim povezanim dokumentima.
+- unutar svakog projekta mora postojati barem jedan redak s artiklom koji ima definiranu šifru;
+- redak nabave ili prodaje, odnosno općenito redak analitičkog računovodstva koji se knjiži kao izravni trošak ili prihod projekta/naloga, mora biti povezan s retkom artikla koji ima definiranu šifru unutar projekta. U suprotnom **_FluentisERP_** neće moći primijeniti ovo povezivanje te će pokušati pronaći sljedeće povezivanje.
+
+Primjerice, ako bi svaki projekt bio obilježen gotovim proizvodom za prodaju koji pripada različitoj *klasi*, vjerojatno bi bilo jednostavnije upravljati različitim *vrstama projekta* za svaku klasu nego zahtijevati unos artikla u pojedinačni projekt i njegov odabir u svakom povezanom dokumentu.
 :::

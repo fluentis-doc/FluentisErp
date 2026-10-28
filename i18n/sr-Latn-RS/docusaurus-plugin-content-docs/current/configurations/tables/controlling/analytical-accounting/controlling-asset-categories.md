@@ -1,52 +1,50 @@
 ---
-title: Kategorija osnovnih sredstava za kontrolu
+title: Kategorije osnovnih sredstava za kontroling
 sidebar_position: 2
 ---
 
-Obrazac se nalazi u: **Tablice > Kontroling > Troškovno računovodstvo > Kategorije osnovnih sredstva za kontrolu**
+Obrazac se nalazi na putanji: **Tabele > Kontroling > Analitičko knjigovodstvo > Kategorije osnovnih sredstava za kontroling**
 
 :::tip Napomena
-Ova je tablica namijenjena tvrtkama koje imaju aktiviranu funkcionalnost *Kontroling*, ali nije obavezna ako se žele primjenjivati računovodstvene logike za vrednovanje amortizacije unutar kontrolinga.
+Ova tabela namenjena je preduzećima koja su aktivirala modul *Kontroling*, ali nije obavezna ako se u kontrolingu žele primenjivati računovodstvene metode obračuna amortizacije.
 :::
 
-U ovoj tablici definiramo različite tipologije izračuna koje želimo koristiti pri obračunu tehničke amortizacije za potrebe controllinga. Logike upravljačkog računovodstva, kada je riječ o dugotrajnoj imovini, razlikuju se od računovodstvenih logika s ciljem primjene metoda vezanih, primjerice, uz količine proizvedene određenim strojem, umjesto uz njegovu nabavnu vrijednost. Na ovaj način izbjegavaju se iskrivljenja koja proizlaze iz računovodstvenih kriterija amortizacije, koji su često snažno pod utjecajem poreznih pravila. 
+U ovoj tabeli definišu se različite vrste obračuna koje će se koristiti pri obračunu tehničke amortizacije za potrebe kontrolinga. Pravila kontrolinga za osnovna sredstva razlikuju se od računovodstvenih pravila kako bi se omogućila primena metoda koje se, na primer, zasnivaju na količini proizvoda koju je proizvela određena mašina, umesto na vrednosti ponovne nabavke. Time se izbegavaju odstupanja uzrokovana računovodstvenim kriterijumima amortizacije, na koje snažno utiču poreska pravila.
 
-#### POLJA TABLICE 
+#### Specifična polja
 
-- **Šifra** kategorije
-
-- **Opis** kategorije
-
-- **PODRAČUN TROŠKA** i **PODRAČUN REZERVE** koji će se koristiti: mogu biti isti podračuni povezani s kategorijama dugotrajne imovine u računovodstvu, kako bi se na kraju godine mogle uskladiti dvije logike obračuna, ili pak posebni podračuni za controlling koji se ne koriste u financijskom računovodstvu.
+- **ŠIFRA** kategorije
+- **OPIS** kategorije
+- **KONTO TROŠKA** i **KONTO ISPRAVKE VREDNOSTI** koji će se koristiti. To mogu biti ista analitička konta koja su povezana sa računovodstvenim kategorijama osnovnih sredstava, kako bi se na kraju godine uskladila dva načina obračuna, ili posebna konta kontrolinga koja se ne koriste u računovodstvu.
 
 :::tip Napomena
-Ako se u kontrolingu, u određenim slučajevima, žele koristiti posebni podračuni odvojeni od onih iz glavnog računovodstva, preporučuje se definirati poseban *Tip konta* s uključenom oznakom *Kontroling*, jer se ti podračuni neće moći koristiti, čak ni greškom, u knjiženjima glavnog računovodstva.
+Ako se u kontrolingu u određenim slučajevima žele koristiti posebna analitička konta odvojena od konta glavne knjige, preporučuje se definisanje posebne *Vrste konta* sa aktiviranom oznakom *Kontroling*. Tako se ta konta neće moći slučajno koristiti ni u knjiženjima glavne knjige.
 :::
 
-- **OSNOVICA ZA IZRAČUN** možemo izabrati između:  
-    - *VRIJEDNOST KAPITALA*, odnosno isti kao u računovodstvu
-    - *OBJEKTIVNA VRIJEDNOST*, izvanračunovodstveni podatak imovine
-    - *PONOVNA VRIJEDNOST*, specifično polje za kontroling
+- **OSNOVA OBRAČUNA**: moguće je odabrati jednu od sledećih vrednosti:
+  - *Vrednost imovine*: ista vrednost koja se koristi u računovodstvu.
+  - *Objektivna vrednost*: vanbilansni podatak.
+  - *Vrednost ponovne nabavke*: polje specifično za kontroling.
 
-- **VRSTA IZRAČUNA** može imati pet različitih tipova:  
-    - *Postotak*: prema postotku za controlling postavljenom na pojedinom sredstvu
-    - *Trajni postotak*: kao prethodni, ali bez provjere preostale vrijednosti za amortizaciju
-    - *Količina*: za sredstva čiji je vijek trajanja vezan uz određenu teoretsku proizvedenu količinu (npr. kalup koji može izvesti određeni broj otkucaja)
-    - *Trajna količina*: kao prethodni tip, ali bez provjere je li ukupna teoretska količina dosegnuta
-    - *Potpuno u godini*: za potpuno amortiziranje sredstva u godini nabave.
+- **VRSTA OBRAČUNA**: moguće je odabrati jednu od pet vrsta:
+  - *Procenat*: prema procentu za kontroling definisanom na pojedinačnom osnovnom sredstvu.
+  - *Trajni procenat*: kao prethodna opcija, ali bez provere preostalog iznosa za amortizaciju.
+  - *Količina*: za osnovna sredstva čiji je korisni vek trajanja povezan sa teorijskom količinom proizvedenih jedinica, na primer, kalup koji može izdržati određeni broj ciklusa.
+  - *Trajna količina*: kao prethodna opcija, ali bez provere da li je dostignuta ukupna teorijska količina.
+  - *Ukupno u godini*: za potpunu amortizaciju osnovnog sredstva u godini nabavke.
 
-- **POSTOTAK** ovdje se može unaprijed postaviti postotak za ovu kategoriju, koji će se automatski prenijeti na pojedino sredstvo, ili se polje može ostaviti praznim kako bi se postotak unosio pojedinačno po sredstvu.
+- **PROCENAT**: moguće je definisati procenat za ovu kategoriju, koji će se preneti na pojedinačno osnovno sredstvo, ili ostaviti polje praznim kako bi se procenat unosio zasebno za svako osnovno sredstvo.
 
-- **KORIŠTENJE AŽURIRANJA POSTOTKA** ako je ova oznaka aktivirana (prisutna i na kartici *Amortizacija za kontroling* unutar kartice sredstva), vrijednost sredstva svake se godine povećava u skladu s vrijednošću zadanom u polju *Faktor* ažuriranja u odjeljku [*Parametri računovodstva*](/docs/configurations/parameters/finance/accounting-parameters).
+- **KORISTI PROCENAT REVALORIZACIJE**: ova oznaka nalazi se i na odgovarajućoj kartici *Amortizacija za kontroling* na kartici osnovnog sredstva. Ako je aktivirana, vrednost osnovnog sredstva povećaće se iz godine u godinu prema vrednosti definisanoj u polju *Faktor revalorizacije* u **[Parametrima računovodstva](/docs/configurations/parameters/finance/accounting-parameters)**.
 
-- **OBNOVA KONTROLNIH VRIJEDNOSTI** koristi se u slučajevima kada nismo sigurni koje izvanknjižne kriterije primijeniti za izračun tehničke amortizacije. Budući da izračun amortizacije započinje od godine YYYY, **FluentisERP** mora prvo izračunati preostale vrijednosti na kraju godine YYYY-1. Ako se promijene postotci ili logike, može biti potrebno resetirati početne podatke kako bi se obračuni mogli ponovno ispravno pokrenuti.
+- **PONOVO KREIRAJ KONTROLNE VREDNOSTI**: ova opcija se obično koristi kada kriterijumi za vanbilansni obračun tehničke amortizacije nisu jasno definisani. Budući da obračun amortizacije počinje od godine YYYY, **FluentisERP** najpre mora da izračuna preostale vrednosti na kraju godine YYYY-1. Ako se promene procenti ili pravila obračuna, možda će biti potrebno resetovati te početne podatke kako bi se obračun pokrenuo iznova.
 
-:::danger UPOZORENJE
-Budite oprezni pri izmjenama ovih kategorija: ako, primjerice, označite opciju i spremite redak kako biste potvrdili promjenu, **FluentisERP** će vas pitati želite li ažurirati sredstva (cespite) unutar te kategorije.
-Ako potvrdite, a riječ je o kategoriji s postotnim izračunom, ali bez unaprijed postavljenog postotka, sustav će resetirati i postotke na pojedinačnim sredstvima.
+:::danger PAŽNJA
+Budite oprezni prilikom izmene ovih kategorija. Na primer, ako aktivirate neku oznaku i sačuvate red, **FluentisERP** će pitati da li želite da ažurirate osnovna sredstva koja pripadaju toj kategoriji.
+
+Ako potvrdite operaciju za kategoriju koja koristi obračun prema procentu, ali **procenat nije definisan**, sistem će resetovati i procente na osnovnim sredstvima.
 :::
 
 :::tip Napomena
-Kategorije unesene u ovu tablicu, zajedno s pripadajućim postavkama, bit će kasnije dostupne unutar [**kartica sredstva**](/docs/finance-area/fixed-assets/fixed-assets-management) na kartici *Amortizacija za kontroling*, gdje se pojedino sredstvo može povezati s odgovarajućom kategorijom.
-
+Kategorije unete u ovu tabelu, zajedno sa pripadajućim podešavanjima, naknadno se biraju na karticama [**osnovnih sredstava**](/docs/finance-area/fixed-assets/fixed-assets-management), na kartici *Amortizacija za kontroling*, kako bi se pojedinačno osnovno sredstvo povezalo sa odgovarajućom kategorijom.
 :::

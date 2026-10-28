@@ -1,34 +1,34 @@
 ---
-title: Mjerne jedinice poslovnih centara za kontrolu
+title: Merne jedinice poslovnih centara za kontroling
 sidebar_position: 8
 ---
 
-Formu možete pronaći na putanji: **Tablice > Kontroling > Analitičko knjigovodstvo > Mjerne jedinice poslovnih centara za kontrolu**
+Obrazac se nalazi na putanji: **Tabele > Kontroling > Analitičko knjigovodstvo > Merne jedinice poslovnih centara za kontroling**
 
-U ovoj tablici možemo, primjerice, odrediti da u području ANALIZA *REALIZACIJA*, stroj *X* čita podatke o proizvodnji, za direktne troškove i troškove po narudžbi, na temelju specificirane jedinice mjere, za svaki proizvodni centar, u vezi s: 
+U ovoj tabeli možemo, na primer, definisati da u području analize *OSTVARENO* mašina *X* preuzima podatke o proizvodnji za direktne troškove i troškove naloga na osnovu merne jedinice određene za svaki poslovni centar, i to za:
 
--	VRIJEME PODEŠAVANJA
--	RADNO VRIJEME 
--	VRIJEME STROJA 
+- VREME PONOVNOG PODEŠAVANJA
+- RADNO VREME
+- MAŠINSKO VREME
 
-Sve tri mjere nisu obavezne, već se, ovisno o centru, može definirati jedna, dvije ili sve tri dimenzije.
+Nije obavezno definisati sve tri merne jedinice. U zavisnosti od centra, moguće je definisati jednu, dve ili sve tri dimenzije.
 
-Također postoji i pokazatelj valjanosti pravila. 
+Dostupno je i podešavanje perioda važenja pravila.
 
-Za drugo područje analize, primjerice *BUDŽET*, moguće je primijeniti druga pravila i druge datume valjanosti.
+Za drugo područje analize, na primer *BUDŽET*, moguće je definisati druga pravila i druge periode važenja.
 
-#### Polja tablice
+#### Polja tabele
 
-**PODRUČJE / OPIS**: Potrebno za definiranje na koje područje analize se odnose logike koje se kodiraju.
+**PODRUČJE / OPIS**: obavezna polja za definisanje područja analize na koje se odnose pravila koja se konfigurišu.
 
-**PROIZVODNI CENTAR / OPIS**: Potrebno za definiranje na koji proizvodni centar se odnose logike koje se kodiraju.
+**POSLOVNI CENTAR / OPIS**: obavezna polja za definisanje poslovnog centra na koji se odnose pravila koja se konfigurišu.
 
-**VRIJEME PODEŠAVANJA**: Padajući izbornik koji omogućava odabir jedinice mjere. Polje je povezano s Općom tablicom Jedinica mjere.
+**VREME PONOVNOG PODEŠAVANJA**: padajući meni koji omogućava izbor merne jedinice koja će se koristiti. Polje je povezano sa opštom tabelom mernih jedinica.
 
-**RADNO VRIJEME**: Padajući izbornik koji omogućava odabir jedinice mjere. Polje je povezano s Općom tablicom Jedinica mjere.
+**RADNO VREME**: padajući meni koji omogućava izbor merne jedinice koja će se koristiti. Polje je povezano sa opštom tabelom mernih jedinica.
 
-**VRIJEME STROJA**: Padajući izbornik koji omogućava odabir jedinice mjere. Polje je povezano s Općom tablicom Jedinica mjere.
+**MAŠINSKO VREME**: padajući meni koji omogućava izbor merne jedinice koja će se koristiti. Polje je povezano sa opštom tabelom mernih jedinica.
 
-**OD DATUMA / DO DATUMA**: Raspon datuma valjanosti pravila koje se postavlja.
+**OD DATUMA / DO DATUMA**: period važenja definisanog pravila.
 
-**FLAG Koristi Podešavanje / Radno vrijeme / Vrijeme stroja u obračunu produktivnosti**: Djeluju kao “prekidači” za omogućavanje ili onemogućavanje logike definirane u odgovarajućem retku u svrhu obračuna produktivnosti centra.
+**Oznake Koristi ponovno podešavanje / Radno vreme / Mašinsko vreme u obračunu produktivnosti**: služe kao prekidači za uključivanje ili isključivanje podešene logike u odgovarajućem redu, za potrebe obračuna produktivnosti centra.
