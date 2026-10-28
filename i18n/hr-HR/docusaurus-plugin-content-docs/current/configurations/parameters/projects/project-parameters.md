@@ -1,142 +1,159 @@
 ---
-title: Parametri projekta
+title: Parametri projekata
 sidebar_position: 1
 ---
 
 ## Općenito
 
-Ovi se parametri koriste prema zadanim postavkama ako za kupca ili za vrstu dokumenta nisu izvršene prethodne konfiguracije.
+Ovi se parametri upotrebljavaju kao zadane vrijednosti ako za klijenta ili vrstu dokumenta nisu definirane unaprijed postavljene konfiguracije.
 
-**Zadana jedinica mjere za uslugu**: zadana JM koja se uzima u obzir za usluge unutar intervencija.
+**Zadana mjerna jedinica za uslugu**: zadana mjerna jedinica koja se uzima u obzir za usluge u intervencijama.
 
-**Jedinica mjere sati**: JM koja označava sate u području projekata. U slučaju konverzije između jedinica mjere bit će jasno da se količina odnosi na radne sate.
+**Mjerna jedinica sati**: mjerna jedinica koja označava sate u području projekata. U slučaju pretvorbe između mjernih jedinica bit će jasno odnosi li se količina na radne sate.
 
-**Jedinica mjere dani**: JM koja označava dane u području projekata. U slučaju konverzije između jedinica mjere bit će jasno da se količina odnosi na radne dane.
+**Mjerna jedinica dana**: mjerna jedinica koja označava dane u području projekata. U slučaju pretvorbe između mjernih jedinica bit će jasno odnosi li se količina na radne dane.
 
-**Dnevni sati**: označava standardno trajanje radnog dana u poduzeću. Može se konfigurirati u tablici [Radno vrijeme](/docs/configurations/tables/employee/working-hours)
+**Dnevni broj sati**: označava standardno trajanje radnog dana u tvrtki. Može se konfigurirati u tablici [Radno vrijeme](/docs/configurations/tables/employee/working-hours).
 
-**Artikl**: artikl koji se koristi kao zadani u dokumentima u odsutnosti drugih postavki.
+**Artikl**: artikl koji se prema zadanim postavkama upotrebljava u dokumentima ako nisu definirane druge postavke.
 
-**Radna smjena**: vrijednosti se konfiguriraju u tablici [Radna smjena](/docs/configurations/tables/employee/working-hours) za svaki dan u tjednu. Ukupan broj sati u danu koristi se za konverziju između Sati – Dani. Na primjer, ako poduzeće ima definirano 7 radnih sati dnevno, 1 Dan = 7 Sati, i na temelju toga će se vršiti konverzije – npr. kod usluga unutar intervencije.  
+**Radna smjena**: označava glavnu radnu smjenu u tvrtki. Vrijednosti se mogu konfigurirati za svaki dan u tjednu u tablici [Radna smjena](/docs/configurations/tables/employee/working-hours). Ukupan broj sati u danu uzima se u obzir pri pretvorbi sati u dane i obrnuto. Ako, primjerice, tvrtka predviđa 7 radnih sati dnevno, tada 1 dan odgovara 7 sati, a ta se osnova upotrebljava za pretvorbe, primjerice u uslugama intervencije.
 
-**Vrsta aktivnosti**: tipologija aktivnosti koja se koristi kao zadana, npr. pri automatskom stvaranju aktivnosti iz intervencije. 
+**Vrsta aktivnosti**: zadana vrsta aktivnosti koja se upotrebljava, primjerice, pri automatskom stvaranju aktivnosti iz intervencije.
 
-**Tip aktivnosti za zahtjev za godišnji odmor/dozvole**: tipologija aktivnosti korištena u fazi potvrde razdoblja godišnjeg odmora, za generiranje pripadajućih izjava aktivnosti resursa.
+**Vrsta aktivnosti za zahtjev za godišnji odmor/odsutnost**: vrsta aktivnosti koja se upotrebljava pri potvrdi razdoblja godišnjeg odmora radi generiranja odgovarajućih prijava aktivnosti za resurs.
 
-**Vrsta zadanog sprinta**: tipologija sprinta koja će se koristiti prema zadanim postavkama ako nije specificirano za vrstu dokumenta.
+**Zadana vrsta sprinta**: vrsta sprinta koja se upotrebljava kao zadana ako nije navedena za vrstu dokumenta.
 
-**Zadani trošak materijala projekta**: moguće je odabrati jednu od vrijednosti: Nijedno, Zadnji trošak, Prosječni trošak, Standardni trošak. Odabrana postavka koristi se kao osnovno pravilo za dohvat troška artikla unesenog u karticu Materijali unutar projekata. 
+**Zadani trošak materijala projekta**: moguće je odabrati jednu od sljedećih vrijednosti: Bez troška, Posljednji trošak, Prosječni trošak ili Standardni trošak. Odabrana postavka upotrebljava se kao osnovno pravilo za određivanje troška artikla unesenog na kartici *Materijali* projekta.
 
-**Zadane tip planirane intervencije**: koji će se koristiti, na primjer, prilikom kreiranja novih planiranih intervencija direktno iz WBS kartice za dodjelu resursa.
+**Zadana vrsta planirane intervencije**: vrsta planirane intervencije koja se upotrebljava kao zadana, primjerice pri stvaranju novih planiranih intervencija izravno iz WBS-a za dodjelu resursa.
 
-**Zadani tip zahtjeva za intervenciju**: tip zahtjeva za intervenciju koji će se koristiti po zadanim postavkama, na primjer prilikom kreiranja novih zahtjeva za intervenciju iz WBS kartice za dodjelu resursa.
+**Zadana vrsta zahtjeva za intervenciju**: vrsta zahtjeva za intervenciju koja se upotrebljava kao zadana, primjerice pri stvaranju novih zahtjeva za intervenciju izravno iz WBS-a za dodjelu resursa.
 
-**Radna smjena**: označava konkretnu radnu smjenu definiranu u tablici **Radna smjena**.
+**Radna smjena**: označava određenu radnu smjenu definiranu u tablici **Radne smjene**.
 
+## Intervencije
 
-## Interventi
+**Vrsta interne intervencije**: vrsta intervencije koja je definirana kao interna intervencija.
 
-**Tip interne intervencije**: tip intervencije koji se identificira kao interna intervencija.
+**Vrsta vanjske intervencije**: vrsta intervencije koja je definirana kao vanjska intervencija.
 
-**Tip vanjske intervencije**: tip intervencije koji se identificira kao vanjska intervencija.
+**Zadana vrsta intervencije**: vrsta intervencije koja se upotrebljava kao zadana, primjerice pri automatskom generiranju intervencije iz aktivnosti označenih kao naplative.
 
-**Tip zadane intervencije**: tip intervencije koji se koristi kao zadani, npr. pri automatskom generiranju intervencije iz aktivnosti označenih kao naplative.
+**Zadani zaposlenik**: zaposlenik koji se upotrebljava kao zadana vrijednost ako nije navedena druga vrijednost.
 
-**Zadani zaposlenik**: zaposlenik koji se koristi kao zadani ako nije prisutna druga vrijednost.
+**Artikl za stavke izvan radnog vremena u planu fakturiranja**: artikl koji se prema zadanim postavkama upotrebljava za unos stavki koje su u izračunima plana fakturiranja intervencije utvrđene kao stavke izvan radnog vremena.
 
-**Artikl redaka izvan radnog vremena u planu fakturiranja**: artikl koji se koristi kao zadani za unos redova koji su izvan radnog vremena u izračunima plana fakturiranja intervencije.  
+**Artikl za storno računa predujma**: artikl koji se prema zadanim postavkama upotrebljava za unos storno stavki računa predujma u račun generiran na temelju vrednovanja intervencija.
 
-**Artikl iz storna računa za predujam**: artikal koji se koristi kao zadani za unos redaka za povratak akontacijskih faktura u fakturi generiranoj valorizacijom intervencija.
+**Opis storno stavke računa predujma**: opis koji se prema zadanim postavkama upotrebljava za unos storno stavki računa predujma u račun generiran na temelju vrednovanja intervencija.
 
-**Opis stavke storna računa za predujam**: opis za zadano korištenje pri unosu stavki storna avansnih računa u račun generiran valorizacijom intervencija.
+**Predlaganje računa predujma u uslugama**: ako je opcija omogućena, pri svakom spremanju intervencije provjerava se postoji li račun predujma povezan s projektom navedenim u dokumentu. Ako je preostali iznos računa predujma dovoljan za pokriće usluge, račun će se automatski povezati s retkom usluge intervencije u odgovarajućem polju.
 
-**Predloži avansni račun za usluge**: ako je omogućeno, pri svakom spremanju intervencije provjerava se postoji li avansni račun vezan uz projekt naveden u dokumentu.
-Ako je preostala vrijednost avansnog računa dovoljna za pokriće usluge, automatski će se povezati s redom usluge intervencije u predviđeno polje.
+**Predlaganje računa predujma u materijalima**: ako je opcija omogućena, pri svakom spremanju intervencije provjerava se postoji li račun predujma povezan s projektom navedenim u dokumentu. Ako je preostali iznos računa predujma dovoljan za pokriće vrijednosti materijala, račun će se automatski povezati s retkom materijala intervencije u odgovarajućem polju.
 
-**Predloži avansni račun za materijale**: ako je omogućeno, pri svakom spremanju intervencije provjerava se postoji li avansni račun vezan uz projekt naveden u dokumentu.
-Ako je preostala vrijednost avansnog računa dovoljna za pokriće vrijednosti materijala, automatski će se povezati s redom materijala intervencije u predviđeno polje.
+**Predlaganje računa predujma u putnim troškovima**: ako je opcija omogućena, pri svakom spremanju intervencije provjerava se postoji li račun predujma povezan s projektom navedenim u dokumentu. Ako je preostali iznos računa predujma dovoljan za pokriće putnog troška, račun će se automatski povezati s retkom putnog troška intervencije u odgovarajućem polju.
 
-**Predloži račun za predujam u troškovima putovanja**: ako je omogućeno, pri svakom spremanju intervencije provjerava se postoji li avansni račun vezan uz projekt naveden u dokumentu.
-Ako je preostala vrijednost avansnog računa dovoljna za pokriće putnih troškova, automatski će se povezati s redom putnih troškova intervencije u predviđeno polje.  
+### Postavke vrednovanja intervencija
 
-### Postavke valorizacije izvješća o radu
+**Upotreba referenci intervencije**: ako je opcija omogućena, u račun generiran na temelju vrednovanja intervencija prije retka intervencije umeće se opisni redak koji sadržava opis konfiguriran od strane korisnika.
 
-**Koristiti reference intervencije**: ako je aktivirano, u fakturi generiranoj valorizacijom intervencija bit će umetnut opisni redak prije reda intervencije, koji sadrži opis konfiguriran od strane korisnika. 
+**Dodavanje datuma intervencije u redak usluge**: ako je opcija omogućena, datum usluge umeće se u polje opisa retka koji se odnosi na uslugu.
 
-**Dodaj datum intervencije u redak usluge** ako je aktivno, unosi datum usluge u polje opis retka vezanog za uslugu.
+**Predlaganje opisa šifre artikla**: ako je opcija omogućena, opis šifre artikla umeće se u polje opisa usluge.
 
-**Predloži opise kodova predmeta**: ako je aktivno, unosi opis koda artikla u polje opis usluge.
+**Grupiranje prema projektu**: ako je opcija omogućena, u računu generiranom na temelju vrednovanja intervencija stavke se grupiraju prema zaglavlju projekta.
 
-**Grupiraj po projektu**: ako je aktivno, izvršava grupiranje po naslovu projekta u fakturi generiranoj valorizacijom intervencija.
+**Grupiranje prema WBS-u**: ako je opcija omogućena, u računu generiranom na temelju vrednovanja intervencija stavke se grupiraju prema WBS-u projekta.
 
-**Grupiraj po WBS-u**: ako je aktivirano, izvrši grupiranje prema WBS projektu u fakturi generiranoj valorizacijom intervencija.
+**Grupiranje usluga i troškova**: ako je opcija omogućena, u računu generiranom na temelju vrednovanja intervencija usluge i troškovi grupiraju se zajedno.
 
-**Grupiraj usluge i troškove**: ako je aktivirano, vrši grupiranje usluga i troškova u fakturi generiranoj valorizacijom intervencija.
+**Uzimanje neradnih dana u obzir kao prekovremenog rada**: ako je opcija omogućena, u planu fakturiranja provjerava se pripada li dan u kojem je usluga izvršena nekom od datuma definiranih kao neradni dani. Neradni dani mogu se konfigurirati u odjeljku *Konfiguracija > Tablice > Upravljanje projektima* > [Kalendar neradnih dana](/docs/configurations/tables/project-management/not-working-days-calendar).
 
-**Razmotri praznike kao dodatno vrijeme**: ako je omogućeno, u planu fakturiranja će se provjeriti pada li dan usluge na neki od datuma koji su konfigurirani kao neradni dani.
-Neradni dani mogu se konfigurirati putem *Konfiguracija > Tablice > Upravljanje Projektima* > [Kalendar neradnih dana](/docs/configurations/tables/project-management/not-working-days-calendar)
+**Prioritet unosa podataka**: određuje redoslijed kojim se podaci unose u račune generirane na temelju vrednovanja intervencija.
 
-**Prioritet za unos podataka**: odredite redoslijed u kojem će se podaci unositi u fakture generirane valorizacijom intervencija.
+### PLAN FAKTURIRANJA
 
-### PLAN FAKTURIRANJA 
+Pravila koja se primjenjuju na plan fakturiranja intervencije mogu se definirati u općim parametrima modula Upravljanje projektima, čime vrijede za sve klijente, ili se mogu definirati zasebno za pojedinog klijenta.
 
-Pravila koja se primjenjuju na plan fakturiranja intervencije mogu se postaviti u općim parametrima Upravljanja projektima i stoga biti valjana za sve klijente, ili specifična za klijenta.  
-Postupak izračuna plana fakturiranja prvo će provjeriti prisutnost specifičnih konfiguracija za klijenta, a ako nisu prisutne, uzet će u obzir one prisutne u općim parametrima.
+Postupak izračuna plana fakturiranja najprije provjerava postoje li posebne konfiguracije za klijenta. Ako ne postoje, primjenjuju se postavke definirane u općim parametrima.
 
-**Mjesto rada** i **Vrsta intervencije**: koristiti kao filtriranje; ako su prazni, smatraju se valjanima za sve radne lokacije i za sve vrste intervencija. Ako su, međutim, konfigurirani, uzimat će se u obzir samo u skladu s radnom lokacijom konfiguriranom u kartonu resursa koji provodi intervenciju, i s vrstom intervencije koja se koristi.
+**Radno mjesto** i **Vrsta intervencije**: upotrebljavaju se kao filtri. Ako nisu navedeni, vrijede za sva radna mjesta i sve vrste intervencija. Ako su konfigurirani, uzimaju se u obzir samo kada odgovaraju radnom mjestu definiranom u šifarniku resursa koji izvršava intervenciju i vrsti intervencije koja se upotrebljava.
 
-**Tip vremenskog okvira**: označava dogovoreni radni vremenski period s klijentom te dnevni fond sati.
-:::note[Napomena] 
-Za pojedinog klijenta može se definirati da je dnevni fond sati 7 sati, dok je za drugog 8 sati.
-Sati navedeni u vremenskom rasponu koristit će se za konverziju između različitih vremenskih jedinica:  
-- npr. ako je obavljeno 7 sati kod klijenta čiji vremenski raspon iznosi 7 sati, pri konverziji u dane količina će biti 1.  
-- ako je obavljeno 7 sati kod klijenta čiji vremenski raspon iznosi 8 sati, pri konverziji u dane količina će biti 0,875.  
+**Vrsta vremenskog raspona**: označava radno vrijeme dogovoreno s klijentom i broj radnih sati dnevno.
 
-Vremenski raspon također će se uzimati u obzir pri izračunu prekovremenih sati koji se naplaćuju po drugačijoj tarifi, bilo da se premaši ukupni fond sati ili dogovoreno radno vrijeme.  
+:::note[Napomena]
+Za jednog klijenta može se definirati dnevno radno vrijeme od 7 sati, a za drugog 8 sati. Broj sati naveden u vremenskom rasponu upotrebljava se pri pretvorbi između različitih vremenskih mjernih jedinica:
+
+- Ako je kod klijenta odrađeno 7 sati, a njegov vremenski raspon iznosi 7 sati, pri pretvorbi u dane količina će biti 1.
+- Ako je kod klijenta odrađeno 7 sati, a njegov vremenski raspon iznosi 8 sati, pri pretvorbi u dane količina će biti 0,875.
+
+Vremenski raspon uzima se u obzir i pri izračunu vremena izvan redovnog radnog vremena, koje se obračunava po drugoj cijeni, kako u slučaju prekoračenja ukupnog broja sati tako i u slučaju rada izvan definiranog rasporeda.
 :::
 
-**Tip noćnog vremenskog okvira**: funkcioniranje je analogno kao za polje "Vrsta vremenskog okvira", ali će se koristiti u slučaju pružanja usluga tijekom dana i noći, kako bi se omogućila različita tarifacija.
+**Vrsta noćnog vremenskog raspona**: funkcionira na isti način kao polje „Vrsta vremenskog raspona”, ali se upotrebljava kada se usluge obavljaju i danju i noću kako bi se omogućio različit obračun cijena.
 
-**Vrsta zaokruživanja**: Označava matematičko pravilo prema kojem će se zaokruživati radni sati. Zaokruživanje će se primijeniti na ukupni broj sati intervencije. Primjer: ukupno 7,45 sati, ako je definirano zaokruživanje na pola sata, fakturirat će se 8 sati.
+**Vrsta zaokruživanja**: određuje matematičko pravilo za zaokruživanje radnih sati. Zaokruživanje se zatim primjenjuje na ukupan broj sati intervencije. Primjerice, ako ukupno trajanje iznosi 7,45 sati, a predviđeno je zaokruživanje na pola sata, fakturirat će se 8 sati.
 
-**Komercijalna kategorija**: daljnji filtar za odabir pravila za plan fakturiranja. Ako je prazan, smatrat će se važećim za sve kategorije komercijalnih kupaca; u slučaju specifične naznake, odabrat će se ona koja odgovara unesenoj u kartonu kupca - kartica Administracija.  
+**Komercijalna kategorija**: dodatni filtar za odabir pravila plana fakturiranja. Ako nije navedena, pravilo vrijedi za sve komercijalne kategorije klijenata. Ako je navedena određena kategorija, odabire se ona koja odgovara kategoriji definiranoj u šifarniku klijenta, na kartici *Administracija*.
 
-**Uključi sate putovanja u usluge**: omogućuje da se sati putovanja unutar intervencije, u kartici "Troškovi za fakturiranje", tretiraju kao radni sati usluge.
-Posljedično, na sate putovanja primjenjivat će se sva pravila fakturiranja (radni raspon, zaokruživanja itd.), kao da se radi o pruženoj usluzi.   
+**Uključi sate putovanja u usluge**: omogućuje da se sati putovanja navedeni u intervenciji na kartici *Troškovi za fakturiranje* uzmu u obzir kao sati usluge. Posljedično se sva pravila fakturiranja (vremenski raspon, zaokruživanje itd.) primjenjuju i na sate putovanja, kao da je riječ o izvršenoj usluzi.
 
-**Isključite zaokruživanje**: ako je omogućeno, zaokruživanja se neće primjenjivati u planu fakturiranja.  
+**Isključi zaokruživanja**: ako je opcija omogućena, u planu fakturiranja neće se primjenjivati zaokruživanja.
 
-**Isključi obračun prekovremenih sati**: ako je omogućeno, prekovremeni sati neće se obračunavati u planu fakturiranja.
-Za konverziju između različitih vremenskih jedinica (npr. iz sati u dane) koristit će se dnevni fond sati definiran u polju "Radna smjena" u općim parametrima Upravljanja Projektima.   
+**Isključi izračun rada izvan radnog vremena**: ako je opcija omogućena, u planu fakturiranja neće se izračunavati rad izvan radnog vremena. Za pretvorbu između različitih vremenskih mjernih jedinica (npr. iz sati u dane) upotrebljavat će se broj sati naveden u polju *Radna smjena* u općim parametrima modula Upravljanje projektima.
 
-**Uključi sve vremenske raspone u obračun prekovremenih sati**: ako je omogućeno, u obračunu prekovremenih sati uzimat će se u obzir i dnevni i noćni radni raspon.
-Prekovremenima će se smatrati samo ono što je izvan oba raspona ili premašuje dnevni fond sati.
-Ako nije omogućeno, uzimat će se u obzir samo jedan vremenski raspon (dnevni ili noćni, ovisno o vremenu početka usluge), i sve što je izvan tog raspona bit će tarifirano kao prekovremeni rad.  
+**Uzmi u obzir sve vremenske raspone pri izračunu rada izvan radnog vremena**: ako je opcija omogućena, pri izračunu rada izvan radnog vremena uzimaju se u obzir i dnevni i noćni vremenski raspon. Radom izvan radnog vremena smatrat će se samo ono vrijeme koje ne pripada nijednom od tih raspona ili koje premašuje dnevni fond sati. Ako je opcija onemogućena, uzima se u obzir samo jedan vremenski raspon (noćni ili dnevni, ovisno o vremenu početka usluge), a sve vrijeme izvan tog raspona obračunava se kao rad izvan radnog vremena.
 
 :::note[Primjer]
-Dnevna smjena 7.00 - 18.00
-Noćna smjena 20.00 - 5.00
+Dnevni vremenski raspon: 7:00 – 18:00  
+Noćni vremenski raspon: 20:00 – 5:00
 
-vrijeme usluge: 3.00 - 8.00
-Ako je opcija omogućena, plan fakturiranja bit će: 
-- redak usluge 3.00 - 5.00 s noćnom tarifom
-- redak usluge05.00 - 07.00 s tarifom izvan radnog vremena
-- redak usluge 07.00 - 08.00 s dnevnom tarifom
-(uzimaju se u obzir obje vremenske smjene, kao izvanredno se računa samo ono što ne ulazi ni u jednu)  
+Vrijeme usluge: 3:00 – 8:00
 
-Ako je opcija onemogućena, plan fakturiranja bit će:  
-- redak usluge 3.00 - 5.00 s noćnom tarifom
-- redak usluge 05.00 - 08.00 s tarifom izvan radnog vremena
-(u obračun se uzima samo noćna smjena jer je usluga započela unutar nje)  
+Ako je opcija omogućena, plan fakturiranja bit će sljedeći:
+
+- Redak usluge od 3:00 do 5:00 s noćnom tarifom
+- Redak usluge od 5:00 do 7:00 s tarifom za rad izvan radnog vremena
+- Redak usluge od 7:00 do 8:00 s dnevnom tarifom
+
+Pri izračunu se uzimaju u obzir oba vremenska raspona. Radom izvan radnog vremena smatra se samo vrijeme koje ne pripada nijednom od njih.
+
+Ako je opcija onemogućena, plan fakturiranja bit će sljedeći:
+
+- Redak usluge od 3:00 do 5:00 s noćnom tarifom
+- Redak usluge od 5:00 do 8:00 s tarifom za rad izvan radnog vremena
+
+Pri izračunu se uzima u obzir samo noćni vremenski raspon jer je on mjerodavan za uslugu koja je započela unutar tog raspona.
 :::
 
 ## Aktivnosti
 
-**Provjeri nedostajuće aktivnosti u zadnjih: broj mjeseci**: Ovdje se navodi broj mjeseci unazad za koje će se prilikom prijave aktivnosti provjeravati eventualne nedostajuće prijave (sati/dani). Nedostajuće će se prijave automatski predložiti pri novom unosu. 
+**Provjera nedostajućih aktivnosti za posljednjih: broj mjeseci**
 
-Zadana vrijednost = 0, kod prijave aktivnosti uvijek će se predložiti današnji datum, bez provjere za prethodne mjesece.
+Vrijednost koja se upotrebljava za određivanje datuma i vremena koji će se predložiti pri prijavi aktivnosti.
 
-Vrijednost "1": provjerava se razdoblje od današnjeg datuma unatrag do prethodnog mjeseca (npr. 05.06. – 05.07.).
-Ako nedostaje prijava za 20.06., sustav će prilikom unosa nove aktivnosti predložiti taj datum.
+Unosi se broj mjeseci za koje će se tijekom prijave aktivnosti provjeravati prethodnih N mjeseci radi pronalaženja nedostajućih prijava aktivnosti (dan i vrijeme). Pronađene prijave automatski će se predložiti pri unosu nove prijave aktivnosti.
 
-Povećavanjem broja mjeseci proširuje se vremenski raspon za provjeru nedostajućih prijava.
+Zadana vrijednost = 0: pri prijavi aktivnosti uvijek će se predlagati današnji datum, bez provjere nedostajućih prijava iz prethodnih mjeseci.
+
+Vrijednost „1”: provjeravat će se razdoblje od današnjeg datuma do istog datuma prethodnog mjeseca, npr. od 5. 6. do 5. 7.
+
+Primjerice, ako nedostaje prijava aktivnosti za 20. 6., pri unosu nove prijave aktivnosti predložit će se datum 20. 6.
+
+Povećanjem broja mjeseci proširuje se razdoblje prethodnih mjeseci koje će se provjeravati.
+
+**Provjera nedostajućih aktivnosti samo prema dnevnom fondu sati, a ne prema satnici smjene resursa**
+
+Opcija koja određuje koji će se datum i vrijeme predložiti pri prijavi aktivnosti.
+
+- **Omogućeno**: provjera nedostajućih prijava aktivnosti provodi se prema dnevnom fondu sati definiranom u smjeni resursa. Ne provjerava se odgovaraju li vremena navedena u prijavama aktivnosti vremenima definiranim u smjeni resursa.
+
+  Nedostajuće prijave aktivnosti uvijek se traže unutar prethodnih N mjeseci, određenih prethodnim parametrom.
+
+  Ako je dnevni fond sati ispunjen, dan se smatra valjanim čak i ako prijavljene aktivnosti ne odgovaraju dogovorenom vremenskom rasponu resursa. Nakon toga provjeravaju se sljedeći dani.
+
+  Ovaj je pristup prikladan kada resursi imaju fleksibilno radno vrijeme: postoji referentna smjena, ali se ne moraju strogo pridržavati navedenih sati. Jedini je uvjet da ukupan broj sati za dan odgovara broju sati definiranom u smjeni.
+
+- **Onemogućeno**: provjera nedostajućih prijava aktivnosti provodi se prema smjeni definiranoj za resurs, neovisno o ukupnom broju prijavljenih sati. Prijavljena vremena moraju se potpuno podudarati s vremenima smjene. U suprotnom će se u prijavi aktivnosti predložiti vremenski raspon koji nedostaje.

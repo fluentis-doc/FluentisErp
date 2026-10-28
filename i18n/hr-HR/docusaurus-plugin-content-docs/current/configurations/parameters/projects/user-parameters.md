@@ -1,19 +1,20 @@
 ---
-title: Parametri za operatera
+title: Parametri po operateru
 sidebar_position: 2
 ---
 
-Ovi parametri nude informacije za svaki pojedinačni resurs:
+Ovi parametri omogućuju definiranje podataka za pojedini resurs:
 
-**Operator**: sadrži operator;
+**Operater**: sadrži operatera.
 
-**Resurs**: sadrži pojedinosti o resursu s pripadajućim **Opisom**;
+**Resurs**: sadrži šifarnik resursa s pripadajućim **opisom**.
 
-**Vrsta intervencije**: označava zadanu [Vrstu intervencije](/docs/configurations/tables/project-management/intervention-type) koja će se predložiti za ovog operatera, s relativnim **Opisom**;
+**Vrsta intervencije**: označava zadanu [vrstu intervencije](/docs/configurations/tables/project-management/intervention-type) koja se predlaže za ovog operatera, s pripadajućim **opisom**.
 
-**Vrsta aktivnosti**: označava zadanu [Vrstu aktivnosti](/docs/configurations/tables/project-management/activity-type) koja se predlaže za ovog operatora, s relativnim **Opisom**;
+**Vrsta aktivnosti**: označava zadanu [vrstu aktivnosti](/docs/configurations/tables/project-management/activity-type) koja se predlaže za ovog operatera, s pripadajućim **opisom**.
 
-**Konto**: moguće je naznačiti zadani registar kao primatelja dokumenata za ovog operatera, s pripadajućim **Podkonto** i pripadajućim **Opisom**;
+**Vrsta putnog naloga**: označava zadanu vrstu putnog naloga koja se predlaže prilikom generiranja novog putnog naloga za ovaj resurs-operatera.
 
-**Projekt**: moguće je označiti [Projekt](/docs/project-management/projects/search-projects-intro) povezan s operaterom. 
+**Konto**: moguće je navesti zadani konto koji će se upotrebljavati u dokumentima za ovog operatera, s pripadajućim **podkontom** i **opisom**.
 
+**Projekt**: moguće je navesti [projekt](/docs/project-management/projects/search-projects-intro) povezan s operaterom.
