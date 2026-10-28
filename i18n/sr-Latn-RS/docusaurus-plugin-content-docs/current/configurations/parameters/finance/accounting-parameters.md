@@ -124,7 +124,7 @@ Posebno izdvajamo dva slučaja:
 
 U ovom odeljku definiše se logički redosled računovodstvenog određivanja mesta troška i profita.
 
-**### 1.3 Predlog mesta troška/profita iz: {#center-proposal}**
+### 1.3 Predlog mesta troška/profita iz: {#center-proposal}
 
 U ovom odeljku definiše se logički redosled određivanja mesta troška i profita u računovodstvu.
 
