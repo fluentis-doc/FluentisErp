@@ -1,16 +1,26 @@
 ---
-title: Parametri plaćanja dobavljača 
+title: Parametri plaćanja dobavljačima
 sidebar_position: 3
 ---
 
-Parametri modula **Plaćanja Dobavljača** nalaze se u **Parametri > Riznica**.
+Parametri modula **Plaćanja dobavljačima** nalaze se na putanji **Parametri > Riznica (Trezor)**.
 
-U parametrima modula Plaćanja dobavljača možete unaprijed postaviti zadane elemente koji će se predložiti u procedurama modula. 
+U parametrima modula Plaćanja dobavljačima moguće je unapred definisati podrazumevane vrednosti koje će se predlagati u postupcima modula.
 
-- **Putanja praćenja doznake u gotovini**: postavka standardne direktorije za kreiranje telematičkog zapisa za bankovne transfere u Italiji. Preporučuje se kreiranje zajedničke mrežne direktorije unutar servera, kako bi se moglo pristupiti sa svih radnih mjesta unutar procedure. PAŽNJA: polje je obavezno, ali ***FluentisERP*** koristi sustav integriranog upravljanja dokumentima za pohranu .xml datoteke telematičkog zapisa za popise plaćanja. Datoteka će se stoga moći preuzeti izravno iz obrasca popisa plaćanja.
-- **HUB aplikacijski centar:**: zastarjelo 
-- **Koristite tečaj iz dokumenta**: ako je ova opcija uključena, kod otvorenih stavki u stranoj valuti protuvrijednost u valuti poduzeća bit će obračunata po povijesnom tečaju iz dokumenta, bez evidentiranja tečajnih razlika.  
-- **Umetnite banku prisutnu u registru dobavljača**: s aktivnim flagom bit će nametnuta upotreba banke podrške unesene u kartonu dobavljača u odnosu na banku podrške definiranu u računovodstvenoj evidenciji, a koja je povezana s otvorenom stavkom, putem mreže Tipovi Plačanja u kartonu. Parametar je vidljiv (i ponovno deaktivabilan svaki put) u postupku Automatsko Kreiranje Plaćanja Dobavljačima. Međutim, nije vidljiv ako se stvara nova isplata (Plaćanja Dobavljačima > Kreiraj Plaćanje Dobavljaču) i stoga se u tom slučaju mora upravljati odavde.    
-- **Knjiženje iz plaćanja dobavljača**: postavljeno kao zadano za knjiženje operacije iz modula Plaćanja dobavljačima i isključivanje zatvaranja stavke prisutne u popisu za knjiženje.  
-- **Upravljanje referencama IBAN-a**: postavka obveze upravljanja IBAN kodovima: u ovom slučaju, trag neće biti kreiran ako nedostaju IBAN-ovi za neka plaćanja u popisu.  
-- **Tipovi plaćanja za primljene obavijesti**: u slučaju da se uvoze obavijesti o pasivnim Riba, potrebno je navesti zadanu vrstu plaćanja koja će se dodijeliti stvorenom popisu.  
+- **Putanja za kreiranje datoteka**: podešavanje podrazumevane fascikle za kreiranje elektronske datoteke za domaće bankarske transfere. Preporučuje se kreiranje zajedničke mrežne fascikle na serveru kako bi joj se moglo pristupiti sa svih radnih stanica koje koriste ovaj postupak.
+
+  **PAŽNJA:** polje je obavezno, ali **FluentisERP** koristi integrisani sistem za upravljanje dokumentacijom za čuvanje XML datoteke sa podacima o platnim nalozima. Datoteka se zato može preuzeti direktno iz obrasca platnog naloga.
+
+- **ABI aplikacionog centra**: zastarelo polje.
+
+- **Upotreba istorijskog kursa**: ako su otvorene stavke u stranoj valuti, ovom opcijom protivvrednost u valuti preduzeća obračunava se prema istorijskom kursu otvorene stavke, bez evidentiranja kursnih razlika.
+
+- **Obavezna upotreba banke navedene u šifarniku dobavljača**: ako je opcija aktivirana, koristi se banka navedena u šifarniku dobavljača (tabela *Banka za plaćanje*) umesto banke definisane u računovodstvenom knjiženju i povezane sa otvorenom stavkom putem tabele *Vrste plaćanja* u šifarniku. Ovaj parametar vidljiv je u postupku *Automatsko kreiranje plaćanja dobavljačima* i može se zasebno deaktivirati pri svakom pokretanju postupka. Nije vidljiv prilikom kreiranja novog platnog naloga putem opcije *Plaćanja dobavljačima > Kreiraj plaćanje dobavljaču*, pa se u tom slučaju podešavanjem mora upravljati iz ovog odeljka.
+
+- **Knjiženje iz modula Plaćanja dobavljačima**: podrazumevano omogućava knjiženje operacije iz modula Plaćanja dobavljačima i isključuje zatvaranje otvorene stavke iz platnog naloga prilikom računovodstvenog knjiženja.
+
+- **Upravljanje IBAN referencama**: određuje da li je unos IBAN-a obavezan. Ako IBAN nedostaje za neko plaćanje u platnom nalogu, datoteka za elektronsko plaćanje neće biti kreirana.
+
+- **Vrste plaćanja za obaveštenja o primljenim nalozima**: prilikom uvoza obaveštenja o dolaznim pasivnim Ri.Ba. nalozima potrebno je navesti podrazumevanu vrstu plaćanja koja će biti dodeljena kreiranom platnom nalogu.
+
+- **Zadati nivo usluge**: padajući meni omogućava izbor vrste usluge za bankarske transfere sa unapred definisanog spiska, na primer *Instantno*, *PagoPA* ili *Hitno*. Izabrana vrednost prenosi se u zaglavlje platnog naloga, gde je naknadno moguće izmeniti.

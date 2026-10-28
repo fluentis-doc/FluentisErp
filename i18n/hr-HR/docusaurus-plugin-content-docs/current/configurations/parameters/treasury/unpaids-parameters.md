@@ -1,60 +1,69 @@
 ---
-title: Parametri neplaćeno
+title: Parametri neplaćenih stavki (neplaćeno)
 sidebar_position: 2
 ---
 
-Parametri modula **Potraživanje** nalaze se u **Parametri > Riznica**.
+Parametri modula **Neplaćene stavke** nalaze se na putanji **Parametri > Riznica**.
 
-U parametrima neplaćenih stavki mogu se unaprijed postaviti zadane stavke koje će se predlagati u procedurama modula.
+U parametrima neplaćenih stavki moguće je unaprijed definirati zadane vrijednosti koje će se predlagati u postupcima modula.
 
-#### Tip zapisa
-- **Privremeni račun + troškovi protestacije**: s ovom postavkom otvorit će se stavka klijenta na privremenom računu za isti iznos kao izvorni efekt te će se troškovi terećiti na bankovni račun.   
-- **Klijent + troškovi protestacije**: preporučuje se postavka ‘Klijent + troškovi protestacije’ kako bi se mogla ponovo otvoriti stavka klijenta za isti iznos kao izvorni efekt i terećiti troškove na bankovni račun.
+#### Vrsta knjiženja
 
-#### Upravljanje dospijećima plaćanja  
-- **Ponovno otvaranje dospjele vrijednosti računa**: preporučuje se postavka ‘Ponovno otvaranje stavke vezane uz fakturu’. Ova opcija otvara novu stavku, ali sa istim referencama na broj i datum izvorne fakture. Ako je efekt sažetak više dokumenata, uzet će se prvi s liste, dok će u bilješkama stavke biti navedeni svi ostali referentni dokumenti.  
-- **Otvaranje nove stavke**: alternativna opcija kreira novu stavku s brojem i datumom dokumenta temeljenim na broju i datumu efekta koji je ostao neplaćen. 
+- **Prijelazni konto + troškovi protesta**: ovom se postavkom ponovno otvara otvorena stavka kupca na prijelaznom kontu, u iznosu izvornog vrijednosnog papira, dok se troškovi terete na bankovni konto.
+- **Kupac + troškovi protesta**: preporučuje se odabrati opciju *Kupac + troškovi protesta* kako bi se otvorena stavka kupca ponovno otvorila u iznosu izvornog vrijednosnog papira, a troškovi teretili na bankovni konto.
+
+#### Upravljanje otvorenim stavkama
+
+- **Ponovno otvaranje stavke povezane s računom**: preporučuje se odabrati ovu opciju. Postupak će otvoriti novu stavku, ali sa zadržanim referencama na broj i datum izvornog računa. Ako se vrijednosni papir odnosi na više dokumenata, unijet će se prvi dokument s popisa, dok će se u napomenama otvorene stavke navesti reference svih dokumenata.
+- **Otvaranje nove stavke**: alternativna opcija kojom se kreira nova otvorena stavka, pri čemu se broj i datum dokumenta određuju na temelju broja i datuma vrijednosnog papira koji nije naplaćen.
 
 #### Troškovi
 
-Ovaj odjeljak treba postaviti ako se želi imati zadana postavka koja će se predlagati prilikom kreiranja fakture klijentu za troškove neplaćenih stavki.
+Ovaj odjeljak potrebno je konfigurirati ako se želi unaprijed definirati zadane vrijednosti za kreiranje računa kupcu za troškove neplaćenih stavki.
 
-- **Vrsta računa**: omogućuje postavljanje tipa fakture koji će se koristiti.  
-- **Vrsta plaćanja**: omogućuje postavljanje tipa plaćanja koji će se koristiti.  
-- **Jedinica mjere**: omogućuje postavljanje jedinice mjere stavke artikla.  
-- **Rok plaćanja**: omogućuje postavljanje rješenja plaćanja za generiranje odgovarajućeg roka plaćanja.  
+- **Vrsta računa**: omogućuje odabir vrste računa koja će se koristiti.
+- **Vrsta plaćanja**: omogućuje odabir vrste plaćanja koja će se koristiti.
+- **Mjerna jedinica**: omogućuje definiranje mjerne jedinice retka artikla.
+- **Način plaćanja**: omogućuje definiranje načina plaćanja za generiranje pripadajućeg datuma dospijeća.
 
-#### Troškovi regresije
-- **Knjiženje troškova regresije**: FluentisERP će knjižiti trošak regresije koji se ponovno tereti kupcu.  
-- **Vrsta fakturiranja**: omogućuje postavljanje prihoda od prodaje ili kontrole prihoda koja će se povezati sa stavkom na fakturi.  
-- **PDV stopa**: omogućuje postavljanje stope PDV-a.   
+#### Troškovi povrata
 
-#### Povrat ovjere 
-- **Tip izdavanja računa**: omogućuje postavljanje prihoda od prodaje, odnosno protivvrijednosti prihoda koja se treba povezati s linijom računa.  
-- **Postotak PDV-a**: omogućuje postavljanje stope PDV-a.
+- **Knjiženje troška povrata**: FluentisERP knjižit će trošak povrata koji je ponovno zaračunat kupcu.
+- **Vrsta fakturiranja**: omogućuje definiranje vrste fakturiranja prodaje, odnosno prihodovne protustavke koja će se povezati s retkom računa.
+- **Stopa PDV-a**: omogućuje definiranje stope PDV-a.
 
-#### Regres naknada
-- **Tip izdavanja računa**: omogućuje postavljanje prihoda od prodaje, odnosno konta prihoda koje treba povezati s linijom računa.
-- **Postotak PDV-a**: može se postaviti stopa PDV-a.
+#### Povrat troškova biljega
+
+- **Vrsta fakturiranja**: omogućuje definiranje vrste fakturiranja prodaje, odnosno prihodovne protustavke koja će se povezati s retkom računa.
+- **Stopa PDV-a**: omogućuje definiranje stope PDV-a.
+
+#### Troškovi povrata
+
+- **Vrsta fakturiranja**: omogućuje definiranje vrste fakturiranja prodaje, odnosno prihodovne protustavke koja će se povezati s retkom računa.
+- **Stopa PDV-a**: omogućuje definiranje stope PDV-a.
 
 #### Parametri
-- **Knjigovodstvena oznaka**: oznaka koja se predlaže u procedurama knjiženja neplaćenih stavki.  
-- **Konto troškova protestacije**: konto koji se koristi za evidentiranje troškova naplaćenih od banke.  
-- **Prijelazni konto**: privremeni konto koji bi se koristio za knjiženje ako je postavljena opcija ‘Privremeni konto + troškovi protestacije’. Preporučuje se ipak popuniti ovo polje (može biti isti kao konto troškova) jer će biti obavezno prilikom izvršenja procedure knjiženja.  
-- **Bankovni prijelazni račun**: privremeni bankovni konto koji se koristi ako se neplaćena stavka odnosi na efekte koji nisu prezentirani procedurom (npr. pri korištenju modula DocFinance).
- 
-:::danger Pažnja
-Ako se ovo polje popuni, postavljeni konto će se koristiti bez obzira na postavke zastavica opisane u odjeljku *Tip knjiženja*, s prioritetom u odnosu na normalno korišteni konto protuvrijednosti (konto efekta ako je efekt *izdan*, konto s.b.f. u zaglavlju stavke ako je efekt *prezentiran*, te bankovni račun C/C ako je efekt *priznat*).
 
-**Stoga se preporučuje da se polje ne popunjava ako nije potrebno.**
+- **Knjigovodstveni predložak**: predložak koji će se predlagati u postupcima knjiženja neplaćenih stavki.
+- **Konto troškova protesta**: konto koji se koristi za evidentiranje troškova koje zaračunava banka.
+- **Prijelazni konto**: prijelazni analitički konto koji se koristi za knjiženje ako je odabrana opcija *Prijelazni konto + troškovi protesta*. Preporučuje se popuniti ovo polje čak i ako se koristi isti konto kao za troškove, jer je obvezno za izvršavanje postupka knjiženja.
+- **Prijelazni konto banke**: prijelazni konto banke koji se koristi kada se neplaćena stavka odnosi na vrijednosne papire koji nisu predani na naplatu putem ovog postupka, primjerice pri korištenju modula DocFinance.
+
+:::danger Pozor
+Ako se ovo polje popuni, postavljeni konto koristit će se neovisno o postavkama prethodno opisanih oznaka u odjeljku *Vrsta knjiženja*. Imat će prednost pred kontom protustavke koji bi se inače koristio:
+- kontom vrijednosnih papira ako je vrijednosni papir *izdan*;
+- kontom SBF-a u zaglavlju popisa ako je vrijednosni papir *predan na naplatu*;
+- kontom bankovnog tekućeg računa ako je vrijednosni papir *odobren*.
+
+**Stoga se preporučuje da se ovo polje ne popunjava ako nije nužno.**
 :::
 
-- **Konto terećenja troškova klijentu**: podkonto prihoda koji se koristi u proceduri knjiženja neplaćenih stavki u slučaju da je odabrana opcija terećenja troškova klijentu.  
-- **Tip kamate**: neplaćenoj stavci može biti pridružen referentni kamatni stopa. U slučaju mjenica može se simulirati početni izračun kamata između predviđenog datuma dospijeća i datuma evidentiranja neplaćene stavke.  
-- **Kreiranje jedne stavke**: ova zastavica omogućuje otvaranje samo jedne stavke za neplaćenu riba kreiranu iz više različitih stavki. 
+- **Konto za zaračunavanje troškova kupcu**: prihodovni analitički konto koji se koristi u postupku knjiženja neplaćenih stavki po cesiji ako je odabrana opcija zaračunavanja troškova kupcu.
+- **Vrsta kamate**: uz neplaćenu stavku moguće je povezati referentnu kamatnu stopu. Kod mjenica je moguće simulirati početni izračun kamata za razdoblje od predviđenog datuma dospijeća mjenice do datuma evidentiranja neplaćene stavke.
+- **Kreiranje jedne otvorene stavke**: ovom se opcijom omogućuje otvaranje jedne otvorene stavke za neplaćenu Ri.Ba potvrdu koja je kreirana iz više različitih otvorenih stavki. Ova se opcija u pravilu ne koristi jer se time ponovno otvaraju izvorne otvorene stavke s njihovim izvornim referencama.
 
-:::danger Pažnja 
-Ne postavljati ako se upravljanje Agentima vrši prema kriteriju izvršenog plaćanja ili ukupnog iznosa.. 
+:::danger Pozor
+Nemojte aktivirati ovu opciju ako se provizije agenata obračunavaju na temelju izvršenog plaćanja ili ukupnog iznosa.
 :::
 
-- **Datum dospijeća jednak datumu dospijeća efekta**: aktiviranjem ovog parametra datum dospijeća ponovno otvorene stavke zbog neplaćene stavke postavlja se jednak datumu dospijeća efekta, umjesto datumu neplaćene stavke.
+- **Datum dospijeća jednak datumu dospijeća vrijednosnog papira**: aktiviranjem ovog parametra datum dospijeća ponovno otvorene stavke nastale zbog neplaćene stavke postavlja se na datum dospijeća vrijednosnog papira, umjesto na datum evidentiranja neplaćene stavke.

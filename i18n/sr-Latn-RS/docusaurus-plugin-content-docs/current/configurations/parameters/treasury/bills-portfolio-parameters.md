@@ -1,37 +1,42 @@
 ---
-title: Parametri popisa vrijednosnih papira
+title: Parametri popisa hartija od vrednosti
 sidebar_position: 4
 ---
-Parametri modula Portfelj efekata nalaze se u **Parametri > Riznica**.
 
-U parametrima modula Portfelj računa mogu se unaprijed postaviti zadane stavke koje će se predlagati u procedurama modula. 
+Parametri modula Popis hartija od vrednosti nalaze se na putanji **Parametri > Rizinica (Trezor)**.
 
-Konkretno:
+U parametrima modula Popis hartija od vrednosti mogu se unapred definisati zadate vrednosti koje će se predlagati u postupcima modula. Konkretno:
 
-#### Prijem računa 
-- **Automatsko knjiženje označenih računa**: omogućuje unaprijed definiranje knjiženja efekata izravno u trenutku preuzimanja efekata iz faktura ili iz stavki.  
-- **Preuzimanje samo s dospijećem nakon određenog broja dana**: ako se unese određeni broj dana, ***FluentisERP*** će blokirati kreiranje efekta čiji je datum dospijeća preblizu i stoga nije podoban za bankarsku obradu.  
-- **Blokiranje kreiranja efekata bez ABI/CAB kodova**: ako je ova opcija uključena, ***FluentisERP*** će onemogućiti kreiranje efekata kojima nije moguće dodijeliti ABI/CAB kodove potrebne za banku.  
-- **Grupiraj odobrenja po datumu isteka**: ako je postavljeno, automatsko poništavanje kreditnih nota, koje se može postaviti za pojedinog kupca, djelovat će samo za datume koji su jednaki datumima dospijeća faktura.
+#### Preuzimanje hartija od vrednosti
 
-#### Knjiženje vrijednosnih papira 
-- **Predložak zapisa knjige**: omogućuje definiranje zadatnog računovodstvenog uzroka koji će se predložiti u istoimenoj proceduri.  
-- **Grupiranje po kontu računa**: omogućuje definiranje parametra grupiranja učinka za registracije izvršene ovom procedurom.
-- **Uključi privremene zapise**: omogućuje definiranje stanja privremenog evidentiranja za evidencije napravljene ovom procedurom. 
+- **Automatsko knjiženje**: omogućava unapred definisanje knjiženja hartija od vrednosti direktno prilikom njihovog preuzimanja iz faktura ili otvorenih stavki.
+- **Preuzimanje samo hartija od vrednosti sa dospećem nakon određenog broja dana**: ako je naveden broj dana, **FluentisERP** će blokirati kreiranje hartije od vrednosti sa ranijim datumom dospeća koja ne može da se preda banci na naplatu.
+- **Blokiraj kreiranje hartija od vrednosti bez ABI/CAB kodova**: ako je opcija aktivirana, **FluentisERP** će blokirati kreiranje hartija od vrednosti kojima nije moguće dodeliti odgovarajuće ABI/CAB kodove banke.
+- **Grupiši odobrenja prema datumu dospeća**: ako je opcija aktivirana, automatsko storniranje odobrenja, koje se može podesiti za pojedinačnog kupca, primenjivaće se samo kada su datumi dospeća usklađeni sa datumima dospeća faktura.
 
-#### Knjiženje popisa
-- **Predložak zapisa knjige**: omogućuje definiranje zadane računovodstvene svrhe koja će se predložiti u istoimenoj proceduri.  
-- **Knjiženje na datum dospijeća**: Prva opcija će razbiti registraciju popisa na različite datume dospijeća efekata s dodatkom dana banke postavljenih u kartici banke za postavljeni uzrok.  
-- **Knjiženje na datum dospijeća uz bankovnu valutu = datum dospijeća (maturacije)**: druga opcija, međutim, registrirat će različite učinke na različite datume dospijeća, ali s datumom valute banke ispravljenim prema danima banke postavljenim u kartonu banke za postavljeni uzrok.  
-- **Zatvaranje kupca prilikom knjiženja zbirnog naloga**: s ovom postavkom neće se izvršiti Knjigovodstvo efekata i stoga se neće koristiti račun za podršku *efekti u portfelju*, već će kupac biti zatvoren izravno s *Knjigovodstvom popisa* s protivračunom tipično *efekti sbf*, tj. račun tranzita unesen u zaglavlje samog popisa.
+#### Knjiženje hartija od vrednosti
 
-#### Knjiženje vrijednosnih papira prema dobavljaču
-- **Knjiženje vrijednosnih papira prema dobavljaču**: omogućuje unaprijed definiranje računovodstvenog uzroka koji će se predložiti u postupku Računovodstva efekata prema dobavljaču, tj. prijenosu potraživanja u plaćanju dobavljačima.
+- **Knjigovodstveni šablon**: omogućava definisanje podrazumevanog knjigovodstvenog šablona koji će se predlagati u istoimenom postupku.
+- **Grupisanje prema kontu hartija od vrednosti**: omogućava definisanje načina grupisanja hartija od vrednosti u knjiženjima koja se izvršavaju ovim postupkom.
+- **Privremena knjiženja**: omogućava određivanje statusa privremenog knjiženja za knjiženja koja se izvršavaju ovim postupkom.
 
-#### Knjiženje odobrenja
-- **Predložak zapisa knjige**: omogućuje definiranje zadane knjigovodstvene šifre koja će se predlagati u istoimenom postupku.  
--  **Provizijske naknade**: omogućuje definiranje podračuna za troškove provizija za knjiženja izvršena tim postupkom.  
-- **Pasivni troškovi**: omogućuje definiranje podračuna za financijske rashode za knjiženja izvršena tim postupkom.  
+#### Knjiženje popisa hartija od vrednosti
 
-#### Parametri Konfiguriranja Grupiranja 
-- **Grupiraj iznose manje od**: ovo polje, ako nije prazno i različito od nule, određuje graničnu vrijednost stavki koje će se grupirati. Ako je, primjerice, postavljeno na ‘1000’, to znači da će se grupirati sve stavke manje od tog iznosa, dakle do 999,99.  
+- **Knjigovodstveni šablon**: omogućava definisanje podrazumevanog knjigovodstvenog šablona koji će se predlagati u istoimenom postupku.
+- **Knjiži na datum dospeća**: ovom opcijom knjiženje popisa deli se na više knjiženja prema datumima dospeća pojedinačnih hartija od vrednosti, uz dodavanje broja bankarskih dana definisanog u šifarniku banke za izabrani šablon.
+- **Knjiži na datum dospeća uz datum valute banke jednak datumu obračuna**: ovom opcijom pojedinačne hartije od vrednosti knjiže se na datume njihovog dospeća, dok se datum valute banke prilagođava prema broju bankarskih dana definisanom u šifarniku banke za izabrani šablon.
+- **Zatvaranje kupca prilikom knjiženja popisa hartija od vrednosti**: aktiviranjem ove opcije neće se obavljati zasebno knjiženje hartija od vrednosti, pa se neće koristiti prelazni konto *hartije od vrednosti u portfelju*. Umesto toga, kupac će se direktno zatvoriti postupkom *Knjiženje popisa hartija od vrednosti*, uz protivstavku koja je najčešće *hartije od vrednosti uz uslov povrata bez naplate (SBF)*, odnosno prelazni konto unet u zaglavlju samog popisa.
+
+#### Knjiženje hartija od vrednosti prema dobavljaču
+
+- **Knjiženje hartija od vrednosti prema dobavljaču**: omogućava unapred definisanje knjigovodstvenog šablona koji će se predlagati u postupku knjiženja hartija od vrednosti prema dobavljaču, odnosno prenosa kreditnih instrumenata kojima se plaćaju dobavljači.
+
+#### Knjiženje priliva
+
+- **Knjigovodstveni šablon**: omogućava definisanje podrazumevanog knjigovodstvenog šablona koji će se predlagati u istoimenom postupku.
+- **Troškovi provizija**: omogućava definisanje analitičkog konta troškova provizija za knjiženja koja se izvršavaju ovim postupkom.
+- **Finansijski rashodi**: omogućava definisanje analitičkog konta finansijskih rashoda za knjiženja koja se izvršavaju ovim postupkom.
+
+#### Grupisanje
+
+- **Grupiši iznose manje od**: ako ovo polje nije prazno i vrednost nije nula, određuje se prag iznosa stavki koje će se grupisati. Na primer, ako se postavi vrednost 1000, grupisaće se stavke čiji su iznosi manji od tog iznosa, odnosno do 999,99.

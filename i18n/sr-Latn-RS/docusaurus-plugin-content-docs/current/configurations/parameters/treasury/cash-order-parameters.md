@@ -1,15 +1,20 @@
 ---
-title: Parametri RIBA
+title: Parametri bankovne potvrde
 sidebar_position: 5
 ---
 
-Parametri modula Doznaka u gotovini nalaze se u **Parametri > Riznica**
+Parametri modula bankarskih potvrda (Ri.Ba) nalaze se na putanji **Parametri > Riznica (Trezor)**.
 
-U pripadajućim parametrima mogu se unaprijed postaviti zadane stavke koje će se predlagati u procedurama ovog modula. Konkretno:
+U odgovarajućim parametrima moguće je unapred definisati podrazumevane vrednosti koje će se predlagati u postupcima modula. Konkretno:
 
-**Putanja za kreiranje Riba datoteka**: Postavka standardnog direktorija za kreiranje telematske datoteke za bankovne priznanice. Preporučuje se kreirati zajednički mrežni direktorij na serveru kako bi mu se moglo pristupiti sa svih radnih stanica u postupku.  
-**Reference kupca**: Naziv pravnog subjekta koji je aktivan.    
-**Standardni opis kredita**: Moguće je kodirati, koristeći kodove navedene u zagradama, tekst koji će biti umetnut u datoteku kao opis referentnog dokumenta za izdavanje riba. To je tekst tipa Ft. Br. (2) od (3).   
-**Umetni znak konačne kontrole**: Za neke programe daljinskog bankarstva potreban je završni prijelaz u novi red u datoteci. Ovu opciju treba uključiti ako je to potrebno.   
-**Bez referenca za neplaćene uvoz**: U nekim programima daljinskog bankarstva predviđeno je automatsko ažuriranje evidencija na temelju podataka iz riba datoteke. Polje koje koristimo za postupak uvoza neplaćenih stavki može uzrokovati stalno ažuriranje evidencija, što se može izbjeći označavanjem ove opcije (što, međutim, onemogućuje korištenje samog postupka uvoza neplaćenih stavki).    
-**Upravljanje drugim opisom**: Ovom opcijom opis klijenta unesen u datoteku sastoji se od prvog opisa + drugog opisa.    
+**Putanja za kreiranje Ri.Ba datoteka**: podešavanje podrazumevane fascikle za kreiranje elektronske datoteke sa podacima o bankarskim potvrdama. Preporučuje se kreiranje zajedničke mrežne fascikle na serveru kako bi joj se moglo pristupiti sa svih radnih stanica koje koriste ovaj postupak.
+
+**Podaci o kupcu**: naziv aktivnog preduzeća koji će se uneti u CBI datoteku za predaju banci.
+
+**Zadati opis potraživanja**: moguće je definisati tekst koji će se uneti u datoteku kao opis dokumenta na osnovu kojeg se izdaje Ri.Ba, koristeći kodove navedene u zagradama. Na primer, tekst može biti u obliku „Fakt. br. (2) od (3)”.
+
+**Dodaj završni kontrolni znak**: neki programi za elektronsko bankarstvo zahtevaju završni prelazak u novi red u datoteci. Aktivirajte ovu opciju ako je to potrebno.
+
+**Bez reference za uvoz neplaćenih stavki**: neki programi za elektronsko bankarstvo omogućavaju automatsko ažuriranje šifarnika na osnovu podataka unetih u Ri.Ba datoteku. Polje koje se koristi u postupku uvoza neplaćenih stavki može da uzrokuje stalno ažuriranje šifarnika. To se može sprečiti aktiviranjem ove opcije, ali tada više neće biti moguće koristiti sam postupak uvoza neplaćenih stavki.
+
+**Upravljanje drugim opisom**: ako je ova opcija aktivirana, opis kupca u datoteci sastojaće se od prvog i drugog opisa.

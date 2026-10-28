@@ -1,24 +1,24 @@
 ---
-title: Općenito
+title: Opšte
 sidebar_position: 1
 ---
 
-Parametri područja **Riznica** odnose se na sljedeće module:  
+Parametri oblasti **Trezor** odnose se na sledeće module:
 
-**Potraživanje**: specifični za ovu funkcionalnost koja se ipak pokazuje kao vrlo korištena u kontekstu aktivnog portfelja;
+**Neplaćene stavke**: parametri specifični za ovu funkcionalnost, koja se često koristi u kontekstu aktivnog portfelja.
 
-**Portfelj računa**: specifični (i potrebni) za korištenje modula koji se široko koristi i povezan je s različitim procedurama automatskog računovodstva;
+**Popis hartija od vrednosti**: parametri specifični i neophodni za korišćenje modula, koji se široko koristi i povezan je sa različitim postupcima automatskog knjiženja.
 
-**Parametri RIBA** specifični i neophodni za kreiranje bankovnih primitaka (za telematički zapis koji treba izvesti i poslati banci);
+**Ri.Ba.**: parametri specifični i neophodni za kreiranje bankarskih potvrda, odnosno elektronske datoteke koja se izvozi i šalje banci.
 
-**Knjiženje plaćanja dobavljača**: parametri specifični modula za postavke detalja;
+**Plaćanja dobavljačima**: parametri specifični za modul, namenjeni detaljnom podešavanju.
 
-**Preračun rizika kupca**: specifični za upravljanje rizikom kupca, ali s nekim posljedicama na kreiranje provizija agenata povezanih s izdavanjem bankovnih potvrda (parametri vezani uz broj dana, sigurnost, iznad roka dospijeća efekata);
+**Rizik kupca**: parametri specifični za upravljanje rizikom kupca, koji utiču i na kreiranje provizija agenata povezanih sa izdavanjem bankarskih potvrda. To se odnosi na parametre koji određuju broj dodatnih sigurnosnih dana nakon dospeća hartija od vrednosti.
 
 :::important[**Fast Start**]
-Parametri područja riznice omogućuju inicijalizaciju [**okruženja *FastStart***](/docs/guide/fast-start) koje je konfigurirano za trenutačnu i jednostavnu upotrebu.  
+Na parametre oblasti Trezor utiče mogućnost inicijalizacije i konfigurisanja okruženja pomoću postupka [**Fast Start**](/docs/guide/fast-start), čime se omogućava njegova neposredna upotreba.
 :::
 
-:::important Vidi također
-[**VIDEO TUTORIJALI ZA MODUL RIZNICE**](/docs/video/treasury/video)
+:::important Vidi takođe
+[**VIDEO TUTORIJALI O TREZORU**](/docs/video/treasury/video)
 :::

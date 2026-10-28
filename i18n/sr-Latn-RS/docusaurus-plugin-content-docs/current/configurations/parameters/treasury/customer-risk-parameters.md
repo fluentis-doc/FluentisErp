@@ -3,42 +3,41 @@ title: Parametri rizika kupca
 sidebar_position: 6
 ---
 
-**UVOD**
+### UVOD
 
-Modul rizičnosti klijenta očitava narudžbe klijenata, otpremnice, fakture, otvorene stavke, dospjele račune (ukratko, sve što zauzima kreditni limit i stvara izloženost).
+Modul Rizik kupca čita narudžbine kupaca, otpremnice, fakture, otvorene stavke i menice sa budućim datumom dospeća (odnosno sve što zauzima kreditni limit i stvara izloženost).
 
-Otvorene stavke i efekti čitaju se u svakom slučaju, dok se dokumenti (NC, DDT, FV) uključuju prema potrebi, označavanjem odgovarajućeg polja u pojedinim tablicama (tip narudžbe klijenta, tipovi otpremnica prodaje, tipovi faktura prodaje).
+Otvorene stavke i menice čitaju se u svakom slučaju, dok se dokumenti (narudžbine kupaca, otpremnice i izlazne fakture) uključuju u skladu sa izborom koji se određuje odgovarajućom oznakom u pojedinačnim tabelama (Vrste narudžbina kupaca, Vrste otpremnica, Vrste izlaznih faktura).
 
-Polje koje treba označiti za uključivanje određenog tipa dokumenta je **Kredit**
+Oznaka koju je potrebno aktivirati da bi se određena vrsta dokumenta uključila u obračun jeste **Kreditni limit**.
 
-Postoji i polje **Isključi blokadu**: čak i ako dokument zauzima kreditni limit, bit će isključen iz blokade (dakle, neće biti blokiran, ali će ipak biti evidentiran i označen).
+Dostupna je i oznaka **Isključi blokadu**: čak i ako dokument zauzima kreditni limit, neće biti blokiran, već će se prikazati samo upozorenje.
 
+### OPŠTA LOGIKA
 
-### OPĆA LOGIKA
+Narudžbine se uzimaju u obzir ako su odštampane i potvrđene i ako je odgovarajuća oznaka aktivirana u vrsti narudžbine. U obzir se uzimaju narudžbine koje nisu razdužene ili su prinudno razdužene.
 
-Narudžbe se uzimaju u obzir ako su otisnute i potvrđene te ako je označeno odgovarajuće polje u tipu (neispunjene ili prisilno ispunjene).
-Prisilno ispunjene = preostali dio neće biti isporučen, a narudžba se smatra zatvorenom iako tehnički možda nije.
+Prinudno razdužene narudžbine: preostala količina neće biti isporučena, a narudžbina se smatra zatvorenom iako inače ne bi bila.
 
-Otpremnice moraju biti otisnute i ne fakturirane.
-Fakture – da li su otisnute ili ne ovisi o parametru, ali ne smiju biti knjižene (u suprotnom se računaju kao otvorena stavka).
+Otpremnice moraju biti odštampane i ne smeju biti fakturisane.
 
+Fakture se uzimaju u obzir u zavisnosti od toga da li su odštampane, što se određuje parametrom, i ne smeju biti proknjižene jer bi se u tom slučaju uzimale kao otvorene stavke.
 
-U **parametrima** modula Rizičnost klijenata mogu se unaprijed postaviti zadane stavke koje će se predlagati u procedurama modula.
+U **parametrima** modula Rizik kupca moguće je unapred definisati podrazumevane vrednosti koje će se predlagati u postupcima modula.
 
-> **Broj dana nakon dospijeća za efekte prezentirane uz uvjet da bude naplaćeno**: ovo polje omogućuje definiranje koliko dana nakon datuma dospijeća treba smatrati efekt prezentiranim S.B.F., a da još nije naplaćen.  
-> **Broj dana nakon dospijeća za efekte prezentirane nakon naplate** | ovo polje omogućuje definiranje koliko dana nakon datuma dospijeća treba smatrati račun prezentiranim nakon naplate, a da još nije naplaćen.  
-> **Od datuma obračuna (knjigovodstveni saldo, fakture, otpremnice)**: datum početka obračuna. Dokumenti s datumom prije ovog datuma neće se uzimati u obzir.  
-> **Pregledaj knjižene neplaćene račune**: uključivanje ove opcije prikazat će u modulu i iznose knjiženih neplaćenih stavki, neovisno o statusu naplate. Ima samo informativnu svrhu.  
+- **Broj dana nakon dospeća za menice predate uz uslov naplate (SBF)**: određuje koliko se dana nakon datuma dospeća menica predata uz uslov naplate smatra nenaplaćenom.
+- **Broj dana nakon dospeća za menice predate na naplatu**: određuje koliko se dana nakon datuma dospeća menica predata na naplatu smatra nenaplaćenom.
+- **Početni datum obračuna (računovodstvena stanja, fakture, otpremnice)**: određuje početni datum obračuna. Dokumenti sa ranijim datumom neće se uzimati u obzir.
+- **Prikaži proknjižene neplaćene stavke**: aktiviranjem ove opcije u modulu će se prikazivati i iznosi proknjiženih neplaćenih stavki, bez obzira na to da li su naplaćene. Ova opcija služi isključivo u informativne svrhe.
 
-**Multiplikator kreditne procjene**: vrijednost koja se koristi u obrascu [**Korištenje kredita**](/docs/treasury/customer-risk/use-credit) za izračun iznosa polja *Procijenjeni kredit*.
+**Množilac procene kreditnog limita**: vrednost koja se koristi u obrascu [**Korišćenje kreditnog limita**](/docs/treasury/customer-risk/use-credit) za određivanje iznosa polja *Procenjeni kreditni limit*.
 
+#### Osnova obračuna rizika kupca
 
-#### Osnovica izračuna za izračun rizika kupca   
-> **Stanje glavne knjige**: s ovom postavkom izračun kredita temelji se na knjigovnom saldu klijenta.   
-> **Otvorene stavke**: s ovom postavkom izračun kredita temelji se na otvorenim stavkama klijenta.    
-> **Razmotrite dospjele vrijednosti iz privremenih zapisa**: ako je prethodno polje aktivno, izračun uzima u obzir i eventualne promjene nastale iz privremenih knjiženja.  
-> **Blokiraj fizički izvještaj**: ako kredit klijenta predviđa blokadu dokumenta, ova opcija sprječava fizički ispis blokiranog dokumenta. Ako nije uključeno, dokument se može ispisati, ali polje ‘otisnuto’ neće biti dodijeljeno dokumentu.    
-> **Razmotri račune za ispis**: uzima u obzir, pri izračunu kredita, fakture koje su kreirane, ali još nisu otisnute. Ako nije uključeno, zadana logika računa fakture samo ako su otisnute (s aktivnim poljem ‘otisnuto’). 
-> **Uzimanje u obzir stavki iz privremenih knjiženja**: pri izračunavanju kreditnog limita uzimaju se u obzir otvorene stavke koje potiču iz računovodstvenih knjiženja postavljenih u status *Privremeno* putem polja **Status knjiženja**, koje se nalazi na kartici **Parametri** u samim knjiženjima.
+- **Računovodstveno stanje**: kreditni limit izračunava se na osnovu računovodstvenog stanja kupca.
+- **Otvorene stavke**: kreditni limit izračunava se na osnovu otvorenih stavki kupca.
+- **Blokiraj fizičko štampanje**: ako je za kreditni limit kupca predviđena blokada dokumenta, ova opcija onemogućava fizičko štampanje blokiranog dokumenta. Ako nije aktivirana, dokument može da se odštampa, ali mu neće biti dodeljena oznaka *Odštampano*.
+- **Uključi fakture za štampanje**: u obračun kreditnog limita uključuju se kreirane, ali neodštampane fakture. Ako opcija nije aktivirana, fakture se podrazumevano uzimaju u obzir samo ako su odštampane, odnosno ako imaju aktiviranu oznaku *Odštampano*.
+- **Uključi otvorene stavke iz privremenih knjiženja**: u obračun kreditnog limita uključuju se otvorene stavke nastale iz računovodstvenih knjiženja koja imaju status *Privremeno*, definisan poljem **Status knjiženja** na kartici **Parametri** u okviru samog knjiženja.
 
-**Detaljan prikaz**: aktiviranjem ove opcije ista opcija će po podrazumevanim podešavanjima biti aktivirana i u obrascu *Izračunavanje rizika kupca*. Aktiviranjem ove opcije u obrascu *Izračunavanje rizika kupca* postaje vidljiva dodatna kartica sa detaljnim prikazom svih dokumenata uzetih u obzir pri izračunavanju (otvorene stavke, otpremnice, računi, menice i nenaplaćene menice).
+**Detaljno**: aktiviranjem ove opcije u obrascu *Obračun rizika kupca* automatski će biti predložena i ista opcija kao aktivirana. Time se u obrascu *Obračun rizika kupca* prikazuje dodatna kartica sa detaljnim pregledom svih dokumenata uključenih u obračun (otvorene stavke, otpremnice, fakture, menice i neplaćene stavke).
