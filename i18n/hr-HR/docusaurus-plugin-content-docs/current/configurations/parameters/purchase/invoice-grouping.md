@@ -1,40 +1,43 @@
 ---
-title: Parametri grupiranja Računa za kupnju
+title: Parametri grupiranja ulaznih računa
 sidebar_position: 7
 ---
 
-Parametri grupiranja omogućuju definiranje načina na koji će se dokumenti razvrstavati tijekom postupaka izvršenja. U tu svrhu moguće je koristiti specifične oznake za grupiranje dokumenata prema različitim svojstvima, kao što su kategorija, vrsta dokumenta ili druge relevantne karakteristike.
-Ovi opći parametri grupiranja moraju se konfigurirati samo jednom i automatski će se primjenjivati na sve postupke, vrijedeći za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva drugačije ponašanje u odnosu na ono postavljeno u općim parametrima, bit će potrebno prilagoditi parametre grupiranja unutar njihovog specifičnog Šifarnika.
-Na taj način osigurava se fleksibilno i prilagodljivo upravljanje izvršenjima, omogućujući zadovoljenje specifičnih potreba svakog kupca ili dobavljača, uz održavanje centralizirane i dosljedne konfiguracije za većinu operacija.
+Parametri grupiranja omogućuju definiranje načina podjele dokumenata tijekom postupaka razduženja. U tu se svrhu mogu upotrebljavati posebne oznake za grupiranje dokumenata prema različitim svojstvima, kao što su kategorija, vrsta dokumenta ili druge relevantne karakteristike.
 
-U ovom prozoru se odlučuju pravila grupiranja za postupke: 
--  [**Valorizacija otpremnice za kupnju**](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization);  
--  [**Valorizacija otpremnice za povrat**](/docs/purchase/purchase-invoices/procedures/return-delivery-notes-valorization).   
+Ove opće parametre grupiranja potrebno je konfigurirati samo jednom, a oni će se automatski primjenjivati na sve postupke te će vrijediti za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva drukčije ponašanje od onoga definiranog općim parametrima, potrebno je prilagoditi parametre grupiranja u njegovu šifarniku.
 
-Potrebno je označiti stupce koji predviđaju grupiranja koja se žele primijeniti za ove izvršenja.
+Na taj se način osigurava fleksibilno upravljanje razduženjima koje se može prilagoditi posebnim zahtjevima svakog kupca ili dobavljača, uz zadržavanje centralizirane i dosljedne konfiguracije za većinu postupaka.
 
-:::note Napomena
-Ako su u Šifarniku dobavljača, u kartici *Parametri grupiranja za kupca/dobavljača*, uneseni drugačiji uvjeti grupiranja, oni će imati prioritet u odnosu na opće parametre.
+U ovom se obrascu definiraju pravila grupiranja za sljedeće postupke:
+
+- [**Vrednovanje primki**](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization)
+- [**Vrednovanje povratnih primki**](/docs/purchase/purchase-invoices/procedures/return-delivery-notes-valorization)
+
+Potrebno je označiti stupce koji odgovaraju željenim načinima grupiranja za ova razduženja.
+
+:::note[Napomena]
+Ako su u šifarniku dobavljača, na kartici *Parametri grupiranja za kupca/dobavljača*, definirani drukčiji uvjeti grupiranja, oni imaju prednost pred općim parametrima.
 :::
 
-Kada se faktura kreira iz jedne jedine otpremnice, prenose se svi zaglavni podaci iz početnog dokumenta. Za fakture kreirane iz više otpremnica, prenose se podaci iz Šifarnika dobavljača.  
+Kada se račun izrađuje na temelju jedne primke, preuzimaju se svi podaci iz zaglavlja izvornog dokumenta. Ako se račun izrađuje na temelju više primki, preuzimaju se podaci iz šifarnika dobavljača.
 
-#### Specifična polja  
+#### Posebna polja
 
-- **Sažetak**: ako je aktivno, prilikom obrade više otpremnica bit će kreirana jedinstvena faktura za svakog dobavljača. Ako nije aktivno, uvijek će biti kreirana jedna faktura za svaku obrađenu otpremnicu. Grupiranje funkcionira samo za *Vrste otpremnica* (kupovne ili prodajne, ovisno o odabranoj operaciji) koje imaju kodificiran isti *Tip fakture* za kreiranje. Svi sljedeći flagovi moraju se koristiti zajedno s ovim flagom.
+- **Sažeto**: ako je opcija omogućena, pri vrednovanju više primki izradit će se jedan račun po dobavljaču. Ako nije omogućena, za svaku vrednovanu primku izradit će se zaseban račun. Grupiranje funkcionira samo za *vrste primki* (nabavne ili prodajne, ovisno o odabranoj operaciji) za koje je definirana ista *vrsta računa* koja se treba izraditi. Sve sljedeće oznake mogu se upotrebljavati samo ako je omogućena ova opcija.
 
-- **Grupiranje po tipu dokumenta**: ako je aktivno, bit će grupirani u jedinstvenu fakturu svi dokumenti koji imaju isti *Tip otpremnice*.      
+- **Grupiranje prema vrsti dokumenta**: ako je opcija omogućena, svi dokumenti koji imaju istu *vrstu primke* grupirat će se u jedan račun.
 
-- **Grupiranje po godini**: aktiviranjem ovog parametra izvršit će se grupiranje prema godini kreiranja otpremnica.    
+- **Grupiranje prema godini**: omogućivanjem ove opcije primke će se grupirati prema godini izrade.
 
-- **Grupiranje po mjesecu**: za mogućnost grupiranja prema mjesecu kreiranja otpremnica potrebno je također aktivirati i prethodni parametar.      
+- **Grupiranje prema mjesecu**: za grupiranje prema mjesecu izrade primki potrebno je omogućiti i prethodnu opciju.
 
-- **Grupiranje po tečaju**: ako je aktivno, dokumenti s istom valutom i istim tečajem bit će grupirani u jedinstvenu fakturu.     
+- **Grupiranje prema tečaju**: ako je opcija omogućena, dokumenti s istom valutom i istim tečajem grupirat će se u jedan račun.
 
-- **Grupiranje po narudžbi**: ovaj parametar se koristi samo za *Kreiranje Otpremnica i faktura za prodaju iz Picking-a* (vidi [Parametre grupiranja otpremnica](/docs/configurations/parameters/sales/dn-grouping) i [fakture](/docs/configurations/parameters/sales/invoice-grouping)).    
+- **Grupiranje prema nalogu**: ova se opcija upotrebljava samo za postupak *Izrada prodajnih otpremnica i računa iz Pickinga* (pogledajte [Parametri grupiranja otpremnica](/docs/configurations/parameters/sales/dn-grouping) i [Parametri grupiranja računa](/docs/configurations/parameters/sales/invoice-grouping)).
 
-- **Gruppiranje po projektu**: aktiviranjem ove oznake bit će izvršeno grupiranje po projektu. Grupiranje također djeluje za projekte unesene na razini stavke artikla; ako neke od stavki artikla nemaju pridružen projekt, bit će kreirana drugačija faktura za sve artikle koji ga nemaju. Kada je projekt unesen u zaglavlje izvornog dokumenta, bit će prikazan i u zaglavlju odredišnog dokumenta, inače će biti zadržan samo na stavkama artikla.      
+- **Grupiranje prema projektu**: omogućivanjem ove opcije dokumenti će se grupirati prema projektu. Grupiranje se primjenjuje i na projekte navedene na razini retka artikla. Ako neki retci artikala nemaju pridružen projekt, izradit će se zaseban račun za sve artikle koji nemaju pridružen projekt. Ako je projekt naveden u zaglavlju izvornog dokumenta, prenijet će se i u zaglavlje odredišnog dokumenta; u suprotnom će ostati naveden samo u recima artikala.
 
-- **Gruppiranje po vrsti i rješenju plaćanja**: aktiviranjem ove oznake bit će izvršeno grupiranje na temelju vrste i rješenja plaćanja unesenog u otpremnicu; ta će informacija biti prikazana u zaglavlju kreirane fakture.  
+- **Grupiranje prema vrsti i načinu plaćanja**: omogućivanjem ove opcije dokumenti će se grupirati prema vrsti i načinu plaćanja navedenima u primci. Ti će se podaci prenijeti u zaglavlje izrađenog računa.
 
-- **Gruppiranje po odredištu**: aktiviranjem ove oznake bit će izvršeno grupiranje na temelju odredišta unesenog unutar otpremnica u kartici  *Prijevoz*; ta će informacija biti prikazana u zaglavlju kreirane fakture, u kartici *Dostava*.     
+- **Grupiranje prema odredištu**: omogućivanjem ove opcije dokumenti će se grupirati prema odredištu navedenom u primkama na kartici *Prijevoz*. Taj će se podatak prenijeti u zaglavlje izrađenog računa, na karticu *Otprema*.

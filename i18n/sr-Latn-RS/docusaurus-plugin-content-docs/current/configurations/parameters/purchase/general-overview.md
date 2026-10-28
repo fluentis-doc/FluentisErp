@@ -1,6 +1,6 @@
 ---
-title: Općenito
+title: Opšte
 sidebar_position: 1
 ---
 
-Parametri vezani uz nabavu nalaze se u **Parametri > Nabava** te omogućuju definiranje toka dokumenata nabave prema poslovnoj logici specifičnoj za svaku tvrtku.
+Parametri vezani uz nabavku nalaze se u **Parametri > Nabavka** te omogućuju definiranje toka dokumenata nabave prema poslovnoj logici specifičnoj za svaku tvrtku.

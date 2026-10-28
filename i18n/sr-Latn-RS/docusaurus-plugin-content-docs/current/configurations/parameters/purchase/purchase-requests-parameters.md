@@ -1,30 +1,30 @@
 ---
-title: Parametri zahtjeva za kupnju
+title: Parametri zahteva za nabavku
 sidebar_position: 5
 ---
 
-Parametri zahtjeva za kupnju omogućuju pravilno upravljanje osnovnom postavkom i prema specifikacijama koje zahtijeva svaka pojedinačna tvrtka.
+Parametri zahteva za nabavku omogućavaju definisanje osnovnih podešavanja za njihovo pravilno upravljanje u skladu sa zahtevima pojedinačnog preduzeća.
 
-*Gumbi*:
+#### Dugmad
 
-> **Spremi**: omogućuje vam spremanje postavljenih parametara.   
-> **Vrati**: omogućuje vraćanje parametara na njihove početne vrijednosti.  
+> **Sačuvaj**: omogućava čuvanje podešenih parametara.
 
-### Općenito
- 
+> **Vrati izvorne vrednosti**: omogućava vraćanje parametara na početne vrednosti.
 
-**Trošak nula ako nedostaje cjenik**: cijena se traži u cjenicima; ako nije pronađena, a ova zastavica je aktivna, cijena se postavlja na 0 u retku zahtjeva. Ako nije aktivna, a ni drugi parametar nije aktivan i ne nalazi cijenu na popisu, traži zadnji trošak u matičnim podacima stavke, a ako nije pronađen stavlja 0.  
+### Opšte
 
-**Zadnja cijena ako cjenik nedostaje**: kada je aktivan, ako ne pronađe cijenu na popisu i ne pronađe zadnji trošak u bazi podataka artikla, uzima maksimalnu među cijenama prisutnim u zahtjevima za kupnju isti dobavljač i artikl.
+**Nulta cena ako ne postoji cenovnik**: cena se traži u cenovnicima. Ako cena nije pronađena, a ova opcija je aktivirana, u redu zahteva za nabavku postavlja se cena 0. Ako opcija nije aktivirana, a nije aktiviran ni drugi parametar, sistem u šifarniku artikala traži poslednju nabavnu cenu. Ako je ne pronađe, postavlja cenu 0.
 
-**Proširi sastavnicu materijala**: sako je aktivno, prilikom umetanja stavke bit će zamijenjeno prvom razinom njegovog popisa materijala, ako postoji. Dakle, umjesto stavke “gotov proizvod”, narudžba će biti popunjena popisom materijala umetnute stavke. 
+**Poslednja nabavna cena ako ne postoji cenovnik**: ako je ova opcija aktivirana, a cena nije pronađena u cenovniku niti je u šifarniku artikala pronađena poslednja nabavna cena, sistem uzima najveću cenu među zahtevima za nabavku istog dobavljača i istog artikla.
+
+**Rastvori sastavnicu**: ako je opcija aktivirana, prilikom unosa artikla on se zamenjuje prvim nivoom svoje sastavnice, ako ona postoji. Umesto artikla „gotov proizvod”, zahtev će biti popunjen stavkama iz sastavnice unetog artikla.
 
 ### Analitika
 
-U ovoj kartici određujete prioritet s kojim želite dohvatiti mjesto troška ili mjesto profita u retku dokumenta.
+Na ovoj kartici određuje se redosled prioriteta za preuzimanje troškovnog mesta (CdC) ili profitnog mesta (CdP) u redu dokumenta.
 
-Možete promijeniti prioritete pomoću gumba:
+Prioriteti se mogu menjati pomoću dugmadi:
 
-> **Premjesti gore** i **Premjesti dolje**
+> **Pomeri nagore** i **Pomeri nadole**
 
-*Zadane vrijednosti*: CDC ili CDP se dohvaćaju iz naplaćene vrste ako postoji. Dodatne informacije potražite u tablici [Vrste prometa kupnje](/docs/configurations/tables/purchase/purchase-invoices-type). Ako nije prisutan u fakturiranoj vrsti, sustav će ga potražiti u *Šifarniku dobavljača*. Ako nije prisutan, tražit će se u *Šifarniku o artiklu*.
+**Podrazumevane vrednosti**: troškovno ili profitno mesto preuzima se iz vrste fakturisanja, ako je tamo definisano. Za više informacija pogledajte tabelu [Vrste nabavnog fakturisanja](/docs/configurations/tables/purchase/purchase-invoices-type). Ako podatak nije definisan u vrsti fakturisanja, sistem ga traži u *šifarniku dobavljača*. Ako ga nema ni tamo, traži ga u *šifarniku artikala*.

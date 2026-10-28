@@ -1,18 +1,21 @@
 ---
-title: Parametri grupiranja Napomene o primitku robe
+title: Parametri grupiranja potvrde o zaprimanju robe (NIR/UK)
 sidebar_position: 9
 ---
 
-Parametri grupiranja omogućuju definiranje kako podijeliti dokumente tijekom postupaka ispunjenja. U tu svrhu, moguće je koristiti specifične flagove za grupiranje dokumenata prema različitim svojstvima, kao što su kategorija, tip dokumenta ili druge relevantne karakteristike.  
-Ovi opći parametri grupiranja trebaju se konfigurirati samo jednom i automatski će se primjenjivati na sve postupke, ostajući valjani za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva drugačije ponašanje od onoga postavljenog u općim parametrima, bit će potrebno prilagoditi parametre grupiranja unutar njihove specifične kartice.  
-Na taj način osigurava se fleksibilno i prilagodljivo upravljanje ispunjenjima, omogućujući zadovoljenje specifičnih potreba svakog kupca ili dobavljača, dok se istovremeno održava centralizirana i dosljedna konfiguracija za većinu operacija.
+Parametri grupiranja omogućuju definiranje načina podjele dokumenata tijekom postupaka razduženja. U tu se svrhu mogu upotrebljavati posebne oznake za grupiranje dokumenata prema različitim svojstvima, kao što su kategorija, vrsta dokumenta ili druge relevantne karakteristike.
 
-Pomoću ovih parametara odlučuju se pravila grupiranja za postupke:
+Ove opće parametre grupiranja potrebno je konfigurirati samo jednom, a oni će se automatski primjenjivati na sve postupke te će vrijediti za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva drukčije ponašanje od onoga definiranog općim parametrima, potrebno je prilagoditi parametre grupiranja u njegovu šifarniku.
 
--  **Stvaranje NIR-a iz fakture za kupnju**;  
--  **Stvaranje NIR-a iz primke**.  
+Na taj se način osigurava fleksibilno upravljanje razduženjima koje se može prilagoditi posebnim zahtjevima svakog kupca ili dobavljača, uz zadržavanje centralizirane i dosljedne konfiguracije za većinu postupaka.
 
-Ovi se postupci koriste samo u slučaju rumunjske lokalizacije. 
+U ovom se obrascu definiraju pravila grupiranja za sljedeće postupke:
 
-Potrebno je označiti stupce koji predviđaju grupiranja koja se žele primijeniti za ova ispunjenja.  
-Flag **Sažetak** je ključan za stvaranje jednog dokumenta s različitim početnim dokumentima. Ostali flagovi se odnose na posebna grupiranja.
+- **Izrada potvrde o zaprimanju robe iz ulaznog računa**
+- **Izrada potvrde o zaprimanju robe iz primke**
+
+Ovi se postupci upotrebljavaju samo za rumunjsku lokalizaciju.
+
+Potrebno je označiti stupce koji odgovaraju željenim načinima grupiranja za navedena razduženja.
+
+Oznaka **Sažeto** ključna je za izradu jednog dokumenta na temelju više izvornih dokumenata. Ostale se oznake odnose na posebne načine grupiranja.

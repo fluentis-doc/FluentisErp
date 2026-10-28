@@ -1,30 +1,30 @@
 ---
-title: Parametri zahtjeva za kupnju
+title: Parametri zahtjeva za nabavu
 sidebar_position: 5
 ---
 
-Parametri zahtjeva za kupnju omogućuju pravilno upravljanje osnovnom postavkom i prema specifikacijama koje zahtijeva svaka pojedinačna tvrtka.
+Parametri zahtjeva za nabavu omogućuju definiranje osnovnih postavki za njihovo pravilno upravljanje u skladu sa zahtjevima pojedine tvrtke.
 
-*Gumbi*:
+#### Gumbi
 
-> **Spremi**: omogućuje vam spremanje postavljenih parametara.   
-> **Vrati**: omogućuje vraćanje parametara na njihove početne vrijednosti.  
+> **Spremi**: omogućuje spremanje postavljenih parametara.
+
+> **Vrati izvorne vrijednosti**: omogućuje vraćanje parametara na početne vrijednosti.
 
 ### Općenito
- 
 
-**Trošak nula ako nedostaje cjenik**: cijena se traži u cjenicima; ako nije pronađena, a ova zastavica je aktivna, cijena se postavlja na 0 u retku zahtjeva. Ako nije aktivna, a ni drugi parametar nije aktivan i ne nalazi cijenu na popisu, traži zadnji trošak u matičnim podacima stavke, a ako nije pronađen stavlja 0.  
+**Nulta cijena ako nema cjenika**: cijena se traži u cjenicima. Ako cijena nije pronađena, a ova je opcija aktivirana, u retku zahtjeva za nabavu postavlja se cijena 0. Ako opcija nije aktivirana, a nije aktiviran ni drugi parametar, sustav u šifarniku artikala traži posljednju nabavnu cijenu. Ako je ne pronađe, postavlja cijenu 0.
 
-**Zadnja cijena ako cjenik nedostaje**: kada je aktivan, ako ne pronađe cijenu na popisu i ne pronađe zadnji trošak u bazi podataka artikla, uzima maksimalnu među cijenama prisutnim u zahtjevima za kupnju isti dobavljač i artikl.
+**Posljednja nabavna cijena ako nema cjenika**: ako je ova opcija aktivirana, a cijena nije pronađena u cjeniku niti je pronađena posljednja nabavna cijena u šifarniku artikala, sustav uzima najveću cijenu među zahtjevima za nabavu istog dobavljača i istog artikla.
 
-**Proširi sastavnicu materijala**: sako je aktivno, prilikom umetanja stavke bit će zamijenjeno prvom razinom njegovog popisa materijala, ako postoji. Dakle, umjesto stavke “gotov proizvod”, narudžba će biti popunjena popisom materijala umetnute stavke. 
+**Rastvori sastavnicu**: ako je opcija aktivirana, prilikom unosa artikla on se zamjenjuje prvim nivoom svoje sastavnice, ako ona postoji. Umjesto artikla „gotov proizvod”, zahtjev će se popuniti stavkama iz sastavnice unesenog artikla.
 
 ### Analitika
 
-U ovoj kartici određujete prioritet s kojim želite dohvatiti mjesto troška ili mjesto profita u retku dokumenta.
+Na ovoj se kartici određuje redoslijed prioriteta za dohvat mjesta troška (CdC) ili mjesta dobiti (CdP) u retku dokumenta.
 
-Možete promijeniti prioritete pomoću gumba:
+Prioriteti se mogu mijenjati pomoću gumba:
 
-> **Premjesti gore** i **Premjesti dolje**
+> **Pomakni gore** i **Pomakni dolje**
 
-*Zadane vrijednosti*: CDC ili CDP se dohvaćaju iz naplaćene vrste ako postoji. Dodatne informacije potražite u tablici [Vrste prometa kupnje](/docs/configurations/tables/purchase/purchase-invoices-type). Ako nije prisutan u fakturiranoj vrsti, sustav će ga potražiti u *Šifarniku dobavljača*. Ako nije prisutan, tražit će se u *Šifarniku o artiklu*.
+**Zadane vrijednosti**: mjesto troška ili mjesto dobiti preuzima se iz vrste fakturiranja, ako je ondje definirano. Za više informacija pogledajte tablicu [Vrste fakturiranja nabave](/docs/configurations/tables/purchase/purchase-invoices-type). Ako nije definirano u vrsti fakturiranja, sustav ga traži u *šifarniku dobavljača*. Ako ga ni ondje nema, traži ga u *šifarniku artikala*.

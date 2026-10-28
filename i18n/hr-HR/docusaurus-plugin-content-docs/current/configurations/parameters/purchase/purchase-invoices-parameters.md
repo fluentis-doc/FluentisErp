@@ -1,60 +1,67 @@
 ---
 title: Parametri ulaznih računa
 sidebar_position: 4
-tags: [fatture di acquisto]
-keywords: [fatture di acquisto]
+tags: [ulazni računi]
+keywords: [ulazni računi]
 ---
 
-Parametri ulaznih računa omogućuju osnovno postavljanje za ispravno upravljanje prema specifičnim zahtjevima svake pojedine tvrtke. 
+Parametri ulaznih računa omogućuju definiranje osnovnih postavki za ispravno upravljanje ulaznim računima, u skladu sa zahtjevima pojedine tvrtke.
 
-Prozor se sastoji od gumba i tri različite kartice: *Općenito*, *Učitavanje* i *Analitika*. 
+Prozor se sastoji od gumba i triju kartica: *Općenito*, *Ulaz* i *Analitika*.
 
 ### Općenito
 
-**Upravljanje duplom mjernom jedinicom**: aktiviranjem ove zastavice moguće je upravljati alternativnim mjernim jedinicama na ulaznim računima. One se moraju unijeti za svaki redak artikla u kartici *Podaci*.
+**Upravljanje dvjema mjernim jedinicama**: omogućivanjem ove opcije moguće je upravljati alternativnim mjernim jedinicama u ulaznim računima. Alternativne mjerne jedinice unose se za svaki redak artikla na kartici *Podaci*.
 
-**Automatski prijedlog alternativne jedinice mjere**: ova provjera se aktivira samo ako je aktivno *Upravljanje dvostrukim mjernim jedinicama*. Kada se unese artikl koji u svom šifarniku ima alternativnu mjernu jedinicu postavljenu kao zadanu, ta se mjera automatski predlaže kao alternativna mjera artikla, a također se izračunava i alternativna količina koristeći faktor konverzije te mjere.  
+**Automatsko predlaganje alternativne mjerne jedinice**: ova se opcija može omogućiti samo ako je uključena opcija *Upravljanje dvjema mjernim jedinicama*. Kada se unese artikl za koji je u šifarniku, na kartici *Alternativne mjerne jedinice*, definirana zadana alternativna mjerna jedinica, ona se automatski predlaže kao alternativna mjerna jedinica artikla. Izračunava se i alternativna količina primjenom pripadajućeg faktora pretvorbe.
 
-**Trošak nula ako nedostaje cjenik**: ako je aktivno, u slučaju da ne postoji važeći cjenik, cijena će se popuniti s vrijednošću nula. Ako ova stavka nije označena, polje će biti popunjeno s posljednjom cijenom artikla, ako je dostupna.
+**Nulta cijena ako nema cjenika**: ako je opcija omogućena, u slučaju da ne postoji važeći cjenik, cijena se postavlja na nulu. Ako opcija nije označena, u polje se upisuje posljednji trošak artikla, ako postoji.
 
-**Vrsta računa**, **Stopa PDV-a**, **Vrsta računa za kupnju**: ovi parametri se koriste kao zadani prilikom izrade računa iz narudžbi.  
+**Vrsta računa**, **Stopa PDV-a**, **Vrsta fakturiranja**: ovdje se definiraju zadane vrijednosti koje se upotrebljavaju pri izradi računa iz narudžbi.
 
-**Lotovi i S. B. (Serijski broj) obavezni**: ako je aktivan, prisiljava korisnika da unese lot i serijski broj na razini retka stavke za sve stavke za koje je ovo upravljanje predviđeno. Ako nisu aktivni, lot i serijski broj nisu obvezni podaci. Preporuča se da se ova zastavica uključi ako koristite upravljanje serijskim stavkama. 
+**Obvezni lotovi i serijski brojevi (S.N.)**: ako je opcija omogućena, korisnik mora na razini retka artikla unijeti lot i serijski broj za sve artikle za koje je predviđeno takvo upravljanje. Ako opcija nije omogućena, lot i serijski broj nisu obvezni podaci pa je dokument moguće spremiti i bez njihova unosa. Preporučuje se omogućiti ovu opciju ako se upotrebljava upravljanje artiklima prema lotovima.
 
-**Traži cijenu stavke u svim zadanim cjenicima**: ovaj parametar se koristi za traženje cijena u popisima dobavljača; pretraga se odvija u cjenicima zadanog tipa u bazi dobavljača čak i ako cjenici nisu važeći (važeći cjenici su oni koji imaju početni datum važenja < = današnjeg datuma i imaju krajnji datum važenja tj. nula ili > = današnji datum). 
+**Pretraživanje cijena artikala u svim zadanim cjenicima**: ovaj se parametar upotrebljava za pretraživanje cijena u dobavljačkim cjenicima. Pretraživanje se provodi u cjenicima vrste definirane kao zadane u šifarniku dobavljača, čak i ako cjenici nisu važeći. Važećima se smatraju cjenici čiji je datum početka valjanosti manji ili jednak današnjem datumu, a datum završetka valjanosti nije naveden ili je veći ili jednak današnjem datumu.
 
-**Dopusti popuste za stavke promotivnih poklona**: ako je aktivno, dopušta umetanje popusta na besplatne artikle;
+**Dopusti popuste za besplatne artikle**: ako je opcija omogućena, dopušta unos popusta na retke s besplatnim artiklima.
 
-**Koristi predmet dobavljača**: ako je aktivno, polje za unos šifre stavke dobavljača također se predlaže u mreži stavke dokumenta. Ako nije aktivirano, ovo polje neće biti vidljivo;
+**Upotreba dobavljačeva artikla**: ako je opcija omogućena, u mreži artikala dokumenta prikazuje se i polje za unos šifre artikla dobavljača. Ako opcija nije omogućena, ovo polje neće biti vidljivo.
 
-**Provjeri zalihe artikala**: ako je aktivirano, sustav provjerava dostupnost artikala unesenih na račun i obavještava ako je artikl u odlasku, odnosno ako je u [Šifarniku artikla](/docs/erp-home/registers/items/create-new-item) zastavica *U odlasku* aktivna.
+**Provjera artikala pri kraju zaliha**: ako je opcija omogućena, sustav provjerava raspoloživost artikala unesenih u račun i upozorava ako je neki artikl pri kraju zaliha, odnosno ako je u [šifarniku artikla](/docs/erp-home/registers/items/create-new-item) omogućena opcija *Pri kraju zaliha*.
 
-**Ambalažno računovodstvo**: omogućuje knjiženje, u općem računovodstvu, i redaka s artiklima od materijala za pakiranje, koji se obično upravljaju kako bi se provjerile zalihe [Pakiranja za napraviti](/docs/configurations/tables/logistics/package-to-be-returned).
+**Knjiženje ambalaže**: omogućuje knjiženje redaka s artiklima vrste ambalaže i u glavnoj knjizi. Takvi se artikli obično vode radi provjere stanja [povratne ambalaže](/docs/configurations/tables/logistics/package-to-be-returned).
 
-**Održavanje cijene narudžbe za zagrade**: koristi se za ispunjavanje narudžbi u dostavnici ako se obrađena količina razlikuje (obično djelomično) od naručene količine za koju je unesen popust za cijenu ili količinski okvir. Ako cijena ili popust ne ovisi o isporučenoj količini, već samo o količini u narudžbi, ova zastavica mora biti aktivirana, ako se umjesto toga cijena ili popust u fazama ne smiju umetnuti u dokument o isporuci u slučaju da ispunjenje ne traje mjesto za ukupnu količinu narudžbe zastavica ne smije biti aktivirana.  
+**Zadrži cijene iz narudžbi za količinske razrede**: ova se opcija upotrebljava pri razduženju narudžbi u račune kada se razdužena količina razlikuje, obično je manja, od naručene količine za koju je definirana cijena ili popust prema količinskom razredu. Ako cijena ili popust ne ovise o isporučenoj količini, već samo o naručenoj količini, ovu opciju treba omogućiti. Ako se cijena ili popust prema količinskom razredu ne smiju prenijeti u dokument isporuke kada narudžba nije razdužena u cijelosti, opciju ne treba omogućiti.
 
-**Aktiviraj Kontrolu Kvalitete**: work in progress.
+**Aktiviranje kontrole kvalitete**: u tijeku izrade.
 
-### Utovar
+### Ulaz
 
-**Kreiraj zapis s datumom dokumenta**: ako je ova zastavica aktivna, knjiženje u skladištu vrši se s istim datumom kao i datum računa. Ako nije aktivna, to će se izvršiti s *Datumom učitavanja* navedenim u zaglavlju računa, ako je prisutan inače s  *Datumom knjiženja u skladištu* navedenim u postupku [Zaduženje skladišta ulaznim računima](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse/). Ako se knjiženje vrši unutar računa putem gumba za *Automatsko učitavanje u skladištu* i *Datum učitavanja* nije unesen, tada će se koristiti današnji datum. 
+**Izrada knjiženja s datumom dokumenta**: ako je ova opcija omogućena, skladišno knjiženje izvršava se s istim datumom kao i račun. Ako opcija nije omogućena, knjiženje se izvršava s datumom navedenim u polju *Datum ulaza* u zaglavlju računa, ako je taj datum unesen; u suprotnom se upotrebljava *Datum skladišnog knjiženja* naveden u postupku [Ulaz ulaznih računa u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse/). Ako se knjiženje pokreće izravno iz računa pomoću gumba *Automatski ulaz u skladište*, a polje *Datum ulaza* nije popunjeno, upotrijebit će se današnji datum.
 
-**Prioritet predloška skladišta i istovara**: ako je aktivno, prilikom knjiženja računa u skladište koriste se vrijednosti postavljene u donjim poljima: **Skladište** i **Predložak skladišta**. Ako zastavica nije aktivna, skladište i predložak učitavanja čitaju se iz redaka računa. Ako nisu navedeni, neće biti moguće izvršiti automatsko učitavanje unutar ulaznog računa, ali se može koristiti postupak [Zaduženje skladišta ulaznim računima](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse/) odabirom zastavice "*Prihvati kao skladište i predložak slijedeće podatke:*" u kartici *Parametri* i navođenjem *Skladišta* i *Predložak* koji se koriste. 
+**Prioritet skladišta i predloška ulaza**: ako je opcija omogućena, pri knjiženju računa u skladište upotrebljavaju se vrijednosti definirane u poljima **Skladište** i **Skladišni predložak** u nastavku. Ako opcija nije omogućena, skladište i predložak ulaza preuzimaju se iz redaka računa. Ako ti podaci nisu navedeni, automatski ulaz izravno iz ulaznog računa neće biti moguć. Umjesto toga može se upotrijebiti postupak [Ulaz ulaznih računa u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse/). Na kartici *Parametri* potrebno je označiti opciju *Prihvaćanje sljedećih podataka kao skladišta i predloška* te navesti *Skladište* i *Predložak* koji će se upotrebljavati.
 
-**Automatski utovar/istovar**: ako je aktivirano, prilikom aktivacije zastavice *Kontrolirana* u zaglavlju dokumenta primit ćete poruku koja podsjeća da je parametar automatskog učitavanja/istovara aktivan i pita želite li nastaviti. Pritiskom na "*Da*" račun će se učitati u skladište, inače će biti moguće učitati ga kasnije pritiskom na gumb *Automatsko učitavanje* u skladištu koji se nalazi u traci s alatima. 
+**Automatski ulaz/izlaz**: ako je opcija omogućena, pri označavanju polja *Kontrolirano* u zaglavlju dokumenta prikazat će se poruka koja podsjeća da je aktivan parametar automatskog ulaza/izlaza i pita želite li nastaviti. Odabirom odgovora *Da* račun će se proknjižiti u skladište. U suprotnom ga je moguće naknadno proknjižiti pritiskom na gumb *Automatski ulaz u skladište* na vrpci.
 
-**Upozorenje fiktivne stavke**: provjerava se jesu li tijekom učitavanja u skladište prisutni fiktivni artikli u redovima računa. U slučaju da su prisutni, bit će zatraženo hoćete li ipak izvršiti učitavanje, naravno bez tih artikala, ili potpuno poništiti skladišni pokret. Fiktivni artikl može biti bez osnovnog popisa prvog nivoa ako je u MRP parametrima deklariran s tipom nabave kao kupovina, inače će knjiženje učitavanja dati poruku o grešci ako postoje fiktivni artikli u dokumentu koji se učitava.
+**Upozorenje za fiktivne artikle**: provjerava sadrže li retci računa fiktivne artikle tijekom ulaza u skladište. Ako ih sadrže, sustav će pitati treba li ipak izvršiti ulaz, izostavljajući te artikle, ili potpuno odustati od skladišnog kretanja.
+
+Fiktivni artikl može biti bez sastavnice prve razine ako je u parametrima MRP-a za njega definirana vrsta nabave *Nabava*. U suprotnom će skladišno knjiženje prikazati poruku o pogrešci ako dokument koji se knjiži sadržava fiktivne artikle.
 
 ### Analitika
 
-U ovoj kartici određujete prioritet s kojim želite dohvatiti mjesto troška (CoC) ili mjesto profita (CdP) u retku dokumenta.
+Na ovoj se kartici određuje prioritet prema kojem se u retku dokumenta dohvaća troškovno mjesto (CdC) ili profitno mjesto (CdP).
 
-Možete promijeniti prioritete pomoću gumba:  
-> **Premjesti gore**       
-> **Premjesti dolje**.
+Prioriteti se mogu mijenjati pomoću sljedećih gumba na vrpci:
 
-*Zadane vrijednosti*: CDC ili CDP se dohvaćaju iz naplaćene vrste ako postoji. Dodatne informacije potražite u tablici [Vrste prometa kupnje](/docs/configurations/tables/purchase/purchase-invoices-type). Ako nije prisutan u fakturiranoj vrsti, sustav će ga potražiti u *Šifarniku dobavljača*. Ako nije prisutan, pretražit će se u *Šifarniku artikla* i potom na razini *Skladišta*.
+- **Pomakni gore**
+- **Pomakni dolje**
 
-**Preračun**: ako je aktivan, ova zastavica ponovno izračunava troškovne/profitne centre prema odabranom prioritetu.
+*Zadane vrijednosti*: troškovno mjesto ili profitno mjesto preuzima se iz vrste fakturiranja, ako je tamo definirano. Dodatne informacije potražite u tablici [Vrste nabavnog fakturiranja](/docs/configurations/tables/purchase/purchase-invoices-type). Ako podatak nije definiran u vrsti fakturiranja, sustav ga traži u *šifarniku dobavljača*. Ako ga ni tamo nema, traži ga u *šifarniku artikala*, a zatim na razini *skladišta*.
 
-**Ocijeni prioritet za svaku dimenziju**: ako je aktivirano, ova oznaka omogućuje procjenu svake prioritetne vrijednosti unesene na vrhu kako bi se utvrdilo postoje li dodatne dimenzije koje još nisu valorizirane. Na primjer, pretpostavimo da imamo u Šifarniku artikla centar troška za dimenziju *Business unit*  i u tipu fakturiranja kupnji dimenziju *Direkcijska*. Ako oznaka nije aktivna, sustav procjenjuje samo CdC prisutan u Šifarniku artikla; ako je oznaka aktivna, nakon što se učita CdC iz Šifarnika artikla, sustav također procjenjuje dimenziju prisutnu u tipu fakturiranja kupnji (u našem primjeru dimenzija *Direkcijska*) i ako se razlikuje od onih koje je već obradio (*Business Unit*), učitava centar i nastavlja s provjerom drugih prioriteta
+**Ponovni izračun**: ako je opcija omogućena, troškovna i profitna mjesta ponovno se izračunavaju prema odabranom redoslijedu prioriteta.
+
+**Provjera prioriteta za svaku dimenziju**: ako je opcija omogućena, sustav provjerava svaki prioritet definiran u gornjem dijelu kako bi utvrdio postoje li dodatne dimenzije kojima još nije dodijeljena vrijednost.
+
+Primjerice, pretpostavimo da je u šifarniku artikla definirano troškovno mjesto za dimenziju *Poslovna jedinica*, a u vrsti nabavnog fakturiranja dimenzija *Uprava*.
+
+Ako opcija nije omogućena, sustav uzima u obzir samo troškovno mjesto definirano u šifarniku artikla. Ako je opcija omogućena, nakon dohvaćanja troškovnog mjesta iz šifarnika artikla sustav provjerava i dimenziju definiranu u vrsti nabavnog fakturiranja (u ovom primjeru dimenziju *Uprava*). Ako se ona razlikuje od već obrađene dimenzije (*Poslovna jedinica*), učitava pripadajuće mjesto i nastavlja provjeravati ostale prioritete.

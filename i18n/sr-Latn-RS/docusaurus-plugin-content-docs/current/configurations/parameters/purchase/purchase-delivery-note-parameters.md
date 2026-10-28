@@ -1,65 +1,71 @@
 ---
-title: Parametri otpremnice za kupnju
+title: Parametri primki
 sidebar_position: 3
 ---
 
-Parametri otpremnica za kupnju omogućuju osnovnu postavku za ispravno upravljanje u skladu sa specifičnim zahtjevima svake pojedine tvrtke.
+Parametri primki omogućavaju definisanje osnovnih podešavanja za pravilno upravljanje primkama, u skladu sa zahtevima pojedinačnog preduzeća.
 
-Prozor se sastoji od gumba i tri različite kartice: *Općenito*, *Utovar* i *Analitika*.
+Prozor se sastoji od dugmadi i tri kartice: *Opšte*, *Ulaz* i *Analitika*.
 
-### Općenito
+### Opšte
 
-**Upravljanje duplom mjernom jedinicom**: samo ako je ova zastavica aktivirana, sustav može upravljati alternativnom mjernom jedinicom u otpremnici.
+**Upravljanje dvema mernim jedinicama**: samo ako je ova opcija omogućena, sistem može da upravlja alternativnom mernom jedinicom u primkama.
 
-**Automatski prijedlog alternativne J.M.**: ako je aktiviran, predlaže se količina koja se odnosi na alternativnu mjernu jedinicu, pod uvjetom da je u matičnim podacima stavke postavljena zadana. Ovu zastavu možete aktivirati samo ako je prethodna zastavica bila aktivirana;
+**Automatsko predlaganje alternativne merne jedinice**: ako je opcija omogućena, predlaže se količina izražena u alternativnoj mernoj jedinici, pod uslovom da je u šifarniku artikla definisana podrazumevana alternativna merna jedinica. Ovu opciju moguće je omogućiti samo ako je omogućena prethodna opcija.
 
-**Trošak nula ako nedostaje cjenik**: ako je aktivan, u nedostatku važećeg cjenika popunjava cijenu s vrijednošću nula. Ako ova stavka nije označena, polje će biti ispunjeno konačnom cijenom stavke, ako postoji;  
+**Nulta cena ako ne postoji cenovnik**: ako je opcija omogućena, u slučaju da ne postoji važeći cenovnik, cena se postavlja na nulu. Ako opcija nije označena, u polje se unosi poslednji trošak artikla, ako postoji.
 
-**Dopusti otpremnice s istim brojem i kupcem**: ako je aktivno, dopušta umetanje dve dostavnice za istog dobavljača s istim brojem. Preporuča se ostaviti ovu zastavu deaktiviranom kako bi sustav mogao izvršiti provjeru jedinstvenosti;
+**Dozvoli primke sa istim brojem i dobavljačem**: ako je opcija omogućena, dozvoljava unos dve primke sa istim brojem za istog dobavljača. Preporučuje se da ova opcija ostane onemogućena kako bi sistem mogao da proverava jedinstvenost broja dokumenta.
 
-**Lotovi i S.B. (Serijski broj) obavezni**: ako je aktivno, prisiljava korisnika da unese lot i serijski broj na razini retka stavke za sve stavke za koje je ovo upravljanje predviđeno. Preporučamo aktiviranje ove oznake ako koristite paketno upravljanje stavkama;
+**Obavezni lotovi i serijski brojevi (S.N.)**: ako je opcija omogućena, korisnik mora na nivou reda artikla da unese lot i serijski broj za sve artikle za koje je predviđeno takvo upravljanje. Ako opcija nije omogućena, lot i serijski broj nisu obavezni podaci, pa je dokument moguće sačuvati i bez njihovog unosa. Preporučuje se omogućavanje ove opcije ako se koristi upravljanje artiklima prema lotovima.
 
-**Traži cijenu stavke u svim zadanim cjenicima**: ako je aktivno, cijena artikla unesenog u redoslijed dobavljača bit će pretražena u svim unaprijed definiranim cjenicima kartice dobavljača, uz zadani cjenik. Ako nije aktivno, cijena artikla bit će pretražena samo u zadnjem cjeniku prisutnom na vrhu narudžbe, ali ne i u drugim cjenicima za istog dobavljača s različitim datumima valjanosti.
+**Pretraživanje cena artikala u svim podrazumevanim cenovnicima**: ako je opcija omogućena, cena artikla unetog u red dobavljačke narudžbine traži se u svim podrazumevanim cenovnicima definisanim u šifarniku dobavljača, pored podrazumevanog cenovnika. Ako opcija nije omogućena, cena artikla traži se samo u podrazumevanom cenovniku navedenom u zaglavlju narudžbine, a ne i u drugim cenovnicima istog dobavljača koji imaju različite periode važenja.
 
-**Dopusti popuste za promotivne poklone**: ako je aktivno, dopušta umetanje popusta na linije besplatnog tipa dostavnice. 
+**Dozvoli popuste za besplatne artikle**: ako je opcija omogućena, dozvoljava unos popusta u redove sa besplatnim artiklima.
 
-**Korištenje artikla dobavljača**: ako je aktivno, u tablici artikala otpremnice također se nudi polje za unos šifre artikla dobavljača.
+**Upotreba dobavljačevog artikla**: ako je opcija omogućena, u tabeli artikala primke prikazuje se i polje za unos šifre dobavljačevog artikla.
 
-**Provjeri zalihe artikala**: ako je aktivirano, sustav provodi provjeru dostupnosti artikala unesenih u otpremnicu i obavještava ako je artikl u odlasku, odnosno ako je u [Šifarniku artikla](/docs/erp-home/registers/items/create-new-item) aktivna oznaka *U odlasku*.
+**Provera artikala pri kraju zaliha**: ako je opcija omogućena, sistem proverava raspoloživost artikala unetih u primku i upozorava ako je neki artikal pri kraju zaliha, odnosno ako je u [šifarniku artikala](/docs/erp-home/registers/items/create-new-item) omogućena opcija *Pri kraju zaliha*.
 
-**Ambalažno računovodstvo**: omogućuje knjiženje, u glavnoj knjizi, i redaka s artiklima prirode ambalaže koji se obično upravljaju kako bi se provjerili inventari [Pakiranja za napraviti](/docs/configurations/tables/logistics/package-to-be-returned).
+**Knjiženje ambalaže**: omogućava knjiženje redova sa artiklima vrste ambalaže i u glavnoj knjizi. Takvi artikli obično se vode radi provere stanja [povratne ambalaže](/docs/configurations/tables/logistics/package-to-be-returned).
 
-**Održavajte cijene narudžbe za zagrade**: koristi se u postupku realizacije narudžbi u otpremnici u slučaju kada je isporučena količina različita (obično djelomična) od naručene količine za koju je unesena cijena ili popust po količinskim razredima. Ako cijena ili popust ne ovise o isporučenoj količini nego samo o naručenoj količini, ova oznaka mora biti aktivirana; međutim, ako cijena ili popust po količinskim razredima ne treba biti uneseni u dokument isporuke u slučaju da isporuka ne bude izvršena za cijelu naručenu količinu, oznaka ne smije biti aktivirana.
+**Zadrži cene iz narudžbina za količinske razrede**: ova opcija koristi se pri postupku razduženja narudžbina u primke kada se razdužena količina razlikuje, obično je manja, od naručene količine za koju je definisana cena ili popust prema količinskom razredu. Ako cena ili popust ne zavise od isporučene količine, već samo od naručene količine, ovu opciju treba omogućiti. Ako cena ili popust prema količinskom razredu ne treba da se prenesu u dokument isporuke kada narudžbina nije razdužena u celosti, opciju ne treba omogućiti.
 
-**Uključi Kontrolu Kvalitete**: work in progress.
+**Aktiviranje kontrole kvaliteta**: u fazi izrade.
 
-**Preračunaj prijevoz**: ako je aktivno, izračunava težinu i volumen iz vrijednosti matičnih podataka stavke na dokumentu, automatski postavljajući vrijednost prijevoza. Ako nije aktivan, trošak prijevoza dostavnice morat će se izračunati ručno jer neće biti ponuđen;  
+**Ponovni obračun prevoza**: ako je opcija omogućena, na osnovu podataka iz šifarnika artikala izračunavaju se težina i zapremina u dokumentu, a trošak prevoza automatski se postavlja. Ako opcija nije omogućena, trošak prevoza za primku potrebno je obračunati ručno jer neće biti automatski predložen.
 
-**DEF U.M. količine**: ako je aktivno, označava zadanu mjernu jedinicu za količinu pri izračunavanju transporta dostavnice;  
+**Podrazumevana merna jedinica zapremine**: označava podrazumevanu mernu jedinicu zapremine koja se koristi pri obračunu prevoza za primku.
 
-**Def. U.M. težine**: ako je aktivno, označava zadanu mjernu jedinicu za težinu pri izračunavanju transporta dostavnice. 
+**Podrazumevana merna jedinica mase**: označava podrazumevanu mernu jedinicu mase koja se koristi pri obračunu prevoza za primku.
 
-### Utovar
+### Ulaz
 
-**Kreirajte registraciju s datumom dokumenta**: Ako je aktivirano, registracija u skladištu se vrši s istim datumom kao otpremnica. Ako nije aktivirano, registracija se vrši s *datumom utovara* navedenim u zaglavlju otpremnice, ako je prisutan; inače, koristi se *datum registracije* u skladištu naveden u postupku [Zaduženje skladišta Primkom](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse). Ako se registracija vrši unutar otpremnice putem gumba *Automatski utovar* u skladištu, a *Datum utovara* nije unesen, koristit će se današnji datum.
+**Kreiranje knjiženja sa datumom dokumenta**: ako je opcija omogućena, skladišno knjiženje izvršava se sa istim datumom kao i primka. Ako opcija nije omogućena, knjiženje se izvršava sa datumom navedenim u polju *Datum ulaza* u zaglavlju primke, ako je taj datum unet; u suprotnom se koristi *Datum skladišnog knjiženja* naveden u postupku [Knjiženje primki u skladište](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse). Ako se knjiženje pokreće direktno iz primke pomoću dugmeta *Automatski ulaz u skladište*, a polje *Datum ulaza* nije popunjeno, koristiće se današnji datum.
 
-**Prioritet predloška skladišta i istovara**: ako je aktivirano, prilikom registracije otpremnice u skladištu koriste se vrijednosti postavljene u donjim poljima: **Skladište** i **Predložak skladišta**. Ako oznaka nije aktivna, skladište i razlog utovara se čitaju iz redaka otpremnice. Ako nisu prisutni u redovima otpremnice, neće biti moguće izvršiti automatski utovar unutar otpremnice za kupnju, ali će biti moguće registrirati otpremnicu putem posebnog postupka (vidi [Zaduženje skladišta Primkom](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse)) odabirom u kartici *Parametri* oznake  "*Prihvatiti kao skladište i predložak sljedeće podatke:*" i označavanjem *Skladišta* i *Predložak* koji se koriste. 
+**Prioritet skladišta i šablona ulaza**: ako je opcija omogućena, pri knjiženju primke u skladište koriste se vrednosti definisane u poljima **Skladište** i **Skladišni šablon** u nastavku. Ako opcija nije omogućena, skladište i šablon ulaza preuzimaju se iz redova primke. Ako ti podaci nisu navedeni u redovima primke, automatski ulaz direktno iz primke neće biti moguć. Knjiženje primke ipak se može izvršiti odgovarajućim postupkom (pogledajte [Knjiženje primki u skladište](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse)). Pritom je na kartici *Parametri* potrebno označiti opciju *Prihvatanje sledećih podataka kao skladišta i šablona* i navesti *Skladište* i *Šablon* koji će se koristiti.
 
-**Automatski utovar/istovar**: Ako je aktivirano, prilikom aktivacije oznake *Kontrolirano* u zaglavlju dokumenta prikazat će se poruka koja podsjeća da je parametar automatskog utovara/istovara aktivan i pita želi li se nastaviti. Ako se pritisne "*Da*" otpremnica će biti učitana u skladište, inače će biti moguće učitati je kasnije pritiskom na gumb *Automatski utovar u skladištu* koji se nalazi u traci s alatima.
+**Automatski ulaz/izlaz**: ako je opcija omogućena, pri označavanju polja *Kontrolisano* u zaglavlju dokumenta prikazaće se poruka koja podseća da je aktiviran parametar automatskog ulaza/izlaza i pita da li želite da nastavite. Izborom odgovora *Da* primka će biti proknjižena u skladište. U suprotnom je moguće naknadno je proknjižiti pritiskom na dugme *Automatski ulaz u skladište* na traci.
 
-**Upozorenje fiktivne stavke**: ako je aktivno, tijekom učitavanja provjerava se postoje li fiktivne stavke. Ako su prisutni, daje se poruka za dovršetak postupka; ako je odgovor potvrdan, cijela dostavnica će biti učitana (osim očito izmišljenih artikala). Ako odgovorite negativno, dostavnica se neće učitati. Fiktivna stavka može biti bez popisa materijala prve razine ako je u MRP parametrima deklarirana s vrstom nabave nabave, inače će registracija utovara dati poruku o pogrešci ako postoje fiktivne stavke u dokumentu koji se učitava.
+**Upozorenje za fiktivne artikle**: ako je opcija omogućena, tokom ulaza primke proverava se da li dokument sadrži fiktivne artikle. Ako ih sadrži, prikazuje se poruka za potvrdu nastavka postupka. Ako korisnik potvrdi nastavak, cela primka biće proknjižena u skladište, osim fiktivnih artikala. Ako korisnik izabere *Ne*, primka neće biti proknjižena.
+
+Fiktivni artikal može biti bez sastavnice prvog nivoa ako je u parametrima MRP-a za njega definisana vrsta nabavke *Nabavka*. U suprotnom će se pri skladišnom knjiženju prikazati poruka o grešci ako dokument koji se knjiži sadrži fiktivne artikle.
 
 ### Analitika
 
-U ovoj kartici određujete prioritet s kojim želite dohvatiti mjesto troška ili mjesto profita u retku dostavnice.
+Na ovoj kartici određuje se prioritet prema kojem se u redu primke preuzima troškovno mesto (CdC) ili profitno mesto (CdP).
 
-Možete promijeniti prioritete pomoću gumba:  
+Prioriteti se mogu menjati pomoću sledećih dugmadi na traci:
 
-> **Premjesti gore**       
-> **Premjesti dolje**.
+- **Pomeri nagore**
+- **Pomeri nadole**
 
-*Zadane vrijednosti*: CDC ili CDP se dohvaćaju iz naplaćene vrste ako postoji. Dodatne informacije potražite u tablici [Vrste prometa kupnje](/docs/configurations/tables/purchase/purchase-invoices-type). Ako nije prisutan u fakturiranoj vrsti, sustav će ga potražiti u *Šifarniku dobavljača*. Ako nije prisutan, pretražit će se u *Šifarniku artikla* i potom na razini *Skladišta*.
+*Podrazumevane vrednosti*: troškovno mesto ili profitno mesto najpre se preuzima iz vrste fakturisanja, ako je tamo definisano. Dodatne informacije potražite u tabeli [Vrste nabavnog fakturisanja](/docs/configurations/tables/purchase/purchase-invoices-type). Ako podatak nije definisan u vrsti fakturisanja, sistem ga traži u *šifarniku dobavljača*. Ako ga nema ni tamo, traži ga u *šifarniku artikala*, a zatim na nivou *skladišta*.
 
-**Preračun**: ako je aktivno, ponovno izračunava troškovne/profitne centre prema odabranom prioritetu.
+**Ponovni obračun**: ako je opcija omogućena, troškovna i profitna mesta ponovo se izračunavaju prema izabranom redosledu prioriteta.
 
-**Ocijeni prioritet za svaku dimenziju**: ako je aktivirano, ova oznaka omogućuje procjenu svake prioritetne vrijednosti unesene na vrhu kako bi se utvrdilo postoje li dodatne dimenzije koje još nisu valorizirane. Na primjer, pretpostavimo da imamo u Šifarniku artikla centar troška za dimenziju *Business unit* i u Tipu fakturiranja kupnji dimenziju *Direkcijska*. Ako oznaka nije aktivna, sustav procjenjuje samo CdC prisutan u Šifarniku artikla; ako je oznaka aktivna, nakon što se učita CdC iz Šifarnika artikla, sustav također procjenjuje dimenziju prisutnu u Tipu fakturiranja kupnji (u našem primjeru dimenzija *Direkcijska*) i ako se razlikuje od onih koje je već obradio (*Business Unit*), učitava centar i nastavlja s provjerom drugih prioriteta.
+**Provera prioriteta za svaku dimenziju**: ako je opcija omogućena, sistem proverava svaki prioritet definisan u gornjem delu kako bi utvrdio postoje li dodatne dimenzije kojima još nije dodeljena vrednost.
+
+Na primer, pretpostavimo da je u šifarniku artikla definisano troškovno mesto za dimenziju *Poslovna jedinica*, a u vrsti nabavnog fakturisanja dimenzija *Uprava*.
+
+Ako opcija nije omogućena, sistem uzima u obzir samo troškovno mesto definisano u šifarniku artikla. Ako je opcija omogućena, nakon preuzimanja troškovnog mesta iz šifarnika artikla sistem proverava i dimenziju definisanu u vrsti nabavnog fakturisanja (u ovom primeru dimenziju *Uprava*). Ako se ona razlikuje od već obrađene dimenzije (*Poslovna jedinica*), učitava odgovarajuće mesto i nastavlja da proverava ostale prioritete.

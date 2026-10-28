@@ -1,18 +1,18 @@
 ---
-title: Parametri narudžbenice
+title: Parametri nabavnih radnih naloga
 sidebar_position: 6
 ---
 
-Parametri narudžbenice omogućuju pravilno upravljanje osnovnim postavkama prema specifikacijama koje zahtijeva svaka pojedinačna tvrtka.
+Parametri nabavnih radnih naloga omogućavaju definisanje osnovnih podešavanja za njihovo ispravno upravljanje, u skladu sa zahtevima pojedinačnog preduzeća.
 
-#### Specifična polja
+#### Posebna polja
 
-- **Obavezna utaja**: ako je aktivno, prilikom unosa nove narudžbe dobavljača otvorit će se obrazac za Ispunjenje narudžbi i neće biti moguće ručno dodavati artikle u narudžbu bez da je prethodno ispunjena barem jedna stavka narudžbe za kupnju. 
+- **Obavezno razduženje**: ako je opcija omogućena, pri unosu nove dobavljačke narudžbine otvara se obrazac za razduženje radnih naloga. Nije moguće ručno dodavati artikle u narudžbinu dok se prethodno ne razduži bar jedan red nabavnog radnog naloga.
 
-- **Bijeg od obveznih naloga**: ako je aktivno, unos artikala u Narudžbe dobavljača može se izvršiti samo putem Ispunjenja iz narudžbe; neće biti moguće dodati druge artikle u narudžbu, osim onih unesenih putem ispunjenja.
+- **Obavezno razduženje artikala iz radnog naloga**: ako je opcija omogućena, artikli se u dobavljačke narudžbine mogu unositi isključivo postupkom razduženja iz radnog naloga. U narudžbinu nije moguće dodavati druge artikle osim onih unetih ovim postupkom.
 
-**Fiksna količina**: kada je postavljena, narudžba se ne može ispuniti za količinu veću od one koja je upisana u narudžbu.
+- **Fiksna količina**: ako je opcija omogućena, radni nalog nije moguće razdužiti za količinu veću od one navedene u radnom nalogu.
 
-#### Specifična tipka  
+#### Posebno dugme
 
-> **Osvježi**: omogućuje vraćanje parametara na početne vrijednosti.
+- **Ažuriraj**: omogućava vraćanje parametara na početne vrednosti.

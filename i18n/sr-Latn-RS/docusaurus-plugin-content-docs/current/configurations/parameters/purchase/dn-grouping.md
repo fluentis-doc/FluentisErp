@@ -1,35 +1,40 @@
 ---
-title: Parametri grupiranja primke
+title: Parametri grupisanja primki
 sidebar_position: 10
 ---
 
-Parametri grupiranja omogućuju definiranje načina na koji se dokumenti dijele tijekom postupaka ispunjenja. U tu svrhu moguće je koristiti specifične flagove za grupiranje dokumenata prema različitim svojstvima, kao što su kategorija, tip dokumenta ili druge relevantne karakteristike.  
-Ovi opći parametri grupiranja trebaju se konfigurirati samo jednom i automatski će se primjenjivati na sve postupke, ostajući valjani za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva drugačije ponašanje od onoga postavljenog u općim parametrima, bit će potrebno prilagoditi parametre grupiranja unutar njihove specifične kartice.  
-Na taj način osigurava se fleksibilno i prilagodljivo upravljanje ispunjenjima, omogućujući zadovoljenje specifičnih potreba svakog kupca ili dobavljača, dok se istovremeno održava centralizirana i dosljedna konfiguracija za većinu operacija.
+Parametri grupisanja omogućavaju definisanje načina podele dokumenata tokom postupaka razduženja. U tu svrhu mogu se koristiti posebne oznake za grupisanje dokumenata prema različitim svojstvima, kao što su kategorija, vrsta dokumenta ili druge relevantne karakteristike.
 
-U ovom obrascu odlučuju se pravila grupiranja za proceduru [**Izvršenje iz narudžbi**](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).  
+Ove opšte parametre grupisanja potrebno je konfigurisati samo jednom, a oni će se automatski primenjivati na sve postupke i važiće za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahteva drugačije ponašanje od onog definisanog opštim parametrima, potrebno je prilagoditi parametre grupisanja u njegovom šifarniku.
 
-Potrebno je označiti stupce koji određuju grupiranja koja se žele primijeniti pri izdavanju ovih otpremnica.
+Na taj način obezbeđuje se fleksibilno upravljanje razduženjima koje se može prilagoditi posebnim zahtevima svakog kupca ili dobavljača, uz zadržavanje centralizovane i dosledne konfiguracije za većinu postupaka.
 
-:::note Nota
-Ako su u šifarniku dobavljača, u kartici *Parametri grupiranja za kupca/dobavljača*, definirani različiti uvjeti grupiranja, oni će imati prednost nad općim parametrima.  
+U ovom obrascu definišu se pravila grupisanja za postupak [**Razduženje iz naloga**](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).
 
-Kada se otpremnica kreira na temelju jedne narudžbe, prenose se svi podaci iz zaglavlja izvornog dokumenta. Ako se otpremnica kreira na temelju više narudžbi, prenose se podaci iz šifrarnika dobavljača. 
+Potrebno je označiti kolone koje odgovaraju željenim načinima grupisanja za ova razduženja.
 
-#### Specifična polja
+:::note[Napomena]
+Ako su u šifarniku dobavljača, na kartici *Parametri grupisanja za kupca/dobavljača*, definisani drugačiji uslovi grupisanja, oni imaju prednost u odnosu na opšte parametre.
+:::
 
-- **Sažetak**: ako je aktivno, u trenutku ispunjenja narudžbi bit će kreiran jedinstveni DDT za dobavljača. Ako nije aktivno, uvijek će biti kreiran jedan DDT za svaku ispunjenu narudžbu. Grupiranje funkcionira samo za *Tip naloga* (Nabave ili Prodaje, ovisno o odabranoj operaciji) koji su kodificirali isti *Tip DDT* koji treba stvoriti. Svi sljedeći flagovi moraju se koristiti u skladu s ovim flagom.
+Kada se primka kreira na osnovu jednog naloga, preuzimaju se svi podaci iz zaglavlja izvornog dokumenta. Ako se primka kreira na osnovu više naloga, preuzimaju se podaci iz šifarnika dobavljača.
 
-- **Grupiranje po godini**: aktiviranjem ove opcije narudžbe će se grupirati prema godini njihovog kreiranja.    
+#### Posebna polja
 
-- **Grupiranje po mjesecu**: za omogućavanje grupiranja narudžbi po mjesecu kreiranja, potrebno je prethodno aktivirati i opciju za grupiranje po godini.      
+- **Sažeto**: ako je opcija omogućena, pri razduženju naloga kreiraće se jedna primka po dobavljaču. Ako nije omogućena, za svaki razduženi nalog kreiraće se zasebna primka. Grupisanje funkcioniše samo za *vrste naloga* (nabavne ili prodajne, u zavisnosti od izabrane operacije) za koje je definisana ista *vrsta primke* koju treba kreirati. Sve sledeće oznake mogu se koristiti samo ako je ova opcija omogućena.
 
-- **Grupiranje po tečaju**: ako je opcija aktivirana, dokumenti s istom valutom i istim tečajem bit će grupirani u jedan jedinstveni DDT.    
+- **Grupisanje prema vrsti dokumenta**: ako je opcija omogućena, svi dokumenti koji imaju istu *vrstu naloga* grupisaće se u jednu primku.
 
-- **Grupiranje po narudžbi**: ovaj parametar koristi se isključivo za *Kreiranje DDT-a i prodajnih računa iz Pickinga* (vidi [Parametri grupiranja DDT-a](/docs/configurations/parameters/sales/dn-grouping) i [računi](/docs/configurations/parameters/sales/invoice-grouping)).    
+- **Grupisanje prema godini**: omogućavanjem ove opcije nalozi će se grupisati prema godini kreiranja.
 
-- **Grupiranje po projektu**: aktiviranjem ovog parametra omogućuje se grupiranje prema projektu. Grupiranje funkcionira i za projekte unesene na razini stavki artikala; ako neke stavke nemaju pridružen projekt, za njih će se kreirati poseban DDT. Kada je projekt unesen u zaglavlje izvornog dokumenta, on će biti prenesen i u zaglavlje odredišnog dokumenta; u suprotnom, projekt će ostati samo na razini stavki artikala.
+- **Grupisanje prema mesecu**: za grupisanje prema mesecu kreiranja naloga potrebno je omogućiti i prethodnu opciju.
 
-- **Grupiranje po vrsti i rješenju plaćanja**: ako je aktivirano, DDT-ovi će se grupirati na temelju vrste i rješenja plaćanja navedenog u narudžbi; ti će se podaci prenijeti u zaglavlje kreiranog DDT-a.   
+- **Grupisanje prema kursu**: ako je opcija omogućena, dokumenti sa istom valutom i istim kursom grupisaće se u jednu primku.
 
-- **Grupiranje po odredištu**: aktiviranjem ove opcije omogućuje se grupiranje prema odredištu navedenom u narudžbama; odredište će biti prikazano u zaglavlju kreiranog DDT-a, na kartici *Prijevoz*.     
+- **Grupisanje prema nalogu**: ova opcija koristi se samo za postupak *Kreiranje prodajnih otpremnica i faktura iz Pickinga* (pogledajte [Parametri grupisanja otpremnica](/docs/configurations/parameters/sales/dn-grouping) i [Parametri grupisanja faktura](/docs/configurations/parameters/sales/invoice-grouping)).
+
+- **Grupisanje prema projektu**: omogućavanjem ove opcije dokumenti će se grupisati prema projektu. Grupisanje se primenjuje i na projekte navedene na nivou reda artikla. Ako neki redovi artikala nemaju pridružen projekat, kreiraće se zasebna primka za sve artikle koji nemaju pridružen projekat. Ako je projekat naveden u zaglavlju izvornog dokumenta, preneće se i u zaglavlje odredišnog dokumenta; u suprotnom će ostati naveden samo u redovima artikala.
+
+- **Grupisanje prema vrsti i načinu plaćanja**: omogućavanjem ove opcije dokumenti će se grupisati prema vrsti i načinu plaćanja navedenim u nalogu. Ti podaci biće preneti u zaglavlje kreirane primke.
+
+- **Grupisanje prema odredištu**: omogućavanjem ove opcije dokumenti će se grupisati prema odredištu navedenom u nalozima. Taj podatak biće prenet u zaglavlje kreirane primke, na karticu *Prevoz*.
