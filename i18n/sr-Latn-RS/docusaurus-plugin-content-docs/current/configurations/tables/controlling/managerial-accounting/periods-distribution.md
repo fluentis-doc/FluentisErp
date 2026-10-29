@@ -1,44 +1,40 @@
 ---
-title: Distribucija razdoblja
+title: Raspodela perioda
 sidebar_position: 1
 ---
 
-Obrazac se nalazi na: **Tablice > Kontroling > Računovodstvo upravljanja > Distribucija razdoblja**
+Obrazac se nalazi na putanji: **Tabele > Kontroling > Upravljačko računovodstvo > Raspodela perioda**
 
 :::tip Napomena
-Ova je tablica namijenjena isključivo tvrtkama koje imaju aktiviranu funkcionalnost *Kontroling*
+Ova tabela namenjena je isključivo preduzećima koja koriste *Kontroling*.
 :::
 
-U raspodjeli perioda možemo, za svako područje i za svaku godinu, definirati kako će se raspodijeliti naši mjeseci. Dostupna polja su:
+U raspodeli perioda možemo odrediti kako ćemo raspodeliti mesece za svako područje i svaku godinu. Dostupna su sledeća polja:
 
-- **Šifra**
-- **Opis**
-- Oznaka **Zadano**
+- **ŠIFRA**
+- **OPIS**
+- oznaka **PODRAZUMEVANO**
 
-:::danger UPOZORENJE
-Obavezno je unijeti barem jedan zapis s ovom oznakom, inače će pri obračunu perioda u controllingu sustav zatražiti unos takvog zapisa.
+:::danger PAŽNJA
+U ovu tabelu obavezno je uneti zapis sa ovom oznakom. U suprotnom će ga obrada perioda kontrolinga zahtevati.
 :::
 
-Ispod se prikazuje popis zapisa za svaki uneseni kod, gdje se nalaze sljedeća polja:
-- [**PODRUČJE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) di riferimento
-- **GODINA** 
+Ispod se nalazi lista zapisa za svaku unetu šifru, sa sledećim poljima:
+
+- referentno [**PODRUČJE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- **GODINA**
 - **PERIOD**
-- **VRIJEDNOST**, odnosno težina pojedinog perioda unutar godine.
+- **VREDNOST**, odnosno težina pojedinačnog perioda u okviru godine
 
-:::tip Primjeri  
-Godinu možemo podijeliti na dvanaestina, ili na jedanaestina uz prilagodbu težina za kolovoz/prosinac i siječanj, ili pak svake godine unijeti stvarne planirane dane proizvodnje za svaki mjesec.
+:::tip Primeri
+Godinu možemo podeliti na dvanaest jednakih delova ili na jedanaest delova, uz odgovarajuće ponderisanje avgusta, decembra i januara. Umesto toga, za svaku godinu možemo dodeliti stvarni broj planiranih proizvodnih dana u pojedinačnom mesecu.
 :::
 
-*Distribucija perioda* povezuje se na dva mjesta: 
-- U [*Planu konta*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts): možemo odrediti da se određeni podračun, za koji se evidentira raspon datuma, raspodjeljuje prema određenoj distribuciji perioda umjesto po stvarnim danima u zadanom rasponu, što je zadana logika kada distribucija nije definirana.
-- U *Knjizi fizičkih kretanja*, obavezno za *Jedinice mjere* koje su definirane kao *tok*, a ne kao *stanje*.
+*Raspodela perioda* povezuje se na dva mesta:
 
+- U [*Kontnom planu*](/docs/erp-home/registers/accounting/analytic-chart-of-accounts): možemo odrediti da se analitički konto X, za koji je definisan raspon datuma perioda na koji se knjiženje odnosi, raspodeli prema određenoj raspodeli perioda, umesto prema tačnim danima zadatog raspona datuma. To je podrazumevana logika kada raspodela perioda nije definisana.
+- U *Knjiženju fizičkih kretanja*, obavezno za *merne jedinice* definisane kao *Tok*, a ne kao *Stanje*.
 
 :::tip Napomena
-U obrascu postoji gumb za dupliciranje odabrane distribucije, što je praktično na početku godine za pripremu nove liste koja će vrijediti za novu poslovnu godinu.
+Obrazac sadrži dugme za dupliranje izabrane raspodele. Ova opcija je korisna na početku godine za pripremu nove liste koja će važiti za svaki novi obračunski period.
 :::
-
-
-
-
-

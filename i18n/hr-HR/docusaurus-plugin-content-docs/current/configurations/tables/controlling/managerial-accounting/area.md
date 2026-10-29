@@ -1,36 +1,33 @@
 ---
-title: Područje
-sidebar position: 2
+title: Područja
+sidebar_position: 2
 ---
 
-
 :::tip Napomena
-Tablica je relevantna samo za tvrtke koje imaju aktiviran *Kontroling*.
+Ova je tablica relevantna samo za tvrtke u kojima je aktivna oznaka *Kontroling*.
 :::
 
-Podatke za Kontroling uvijek upravljamo kroz područje analize koje identificira vrstu podataka koja se u njemu nalazi: možemo ga zamišljati kao fizičku kutiju, u koju se unose knjigovodstvene vrijednosti i kvantitativni podaci, a svaka kutija može imati svoj vlastiti model obračuna. Jedno područje obuhvaća podatke svih *dimenzija* centara.
+Podaci kontrolinga uvijek se obrađuju unutar povezanog područja analize, koje određuje vrstu podataka sadržanih u njemu. Područje možemo zamisliti kao fizičku kutiju u koju se unose računovodstvene vrijednosti i količinski podaci. Svako područje može imati vlastiti, zaseban model izračuna. Područje obuhvaća podatke svih *dimenzija* centara.
 
-#### Specifična polja  
+**#### Posebna polja**
+
 - **Šifra**
 - **Opis**
 - [**Tip područja**](/docs/configurations/tables/controlling/managerial-accounting/area-type)
-- **Narudžba za usklađenje**, nije upravljano
+- **Projekt balansiranja** – ne koristi se.
 
+**#### VRSTE PODRUČJA**
 
-#### TIPOVI PODRUČJA
-Tipično ćemo imati 3 područja:  
-- *BUDŽET*: područje za budžet za sljedeću godinu;
+Uobičajeno postoje tri područja:
 
-- *REALIZACIJA*: područje za obračun međugodišnjih zatvaranja;
+- *PRORAČUN*: sadrži proračun za sljedeću godinu.
 
-- *SET PRAVILA*: područje koje ne sadrži vrijednosti, osim eventualno nekih fizičkih mjera. Ovo je područje u kojem su pohranjena *standardna* pravila za cost drivere: ako, primjerice, obrađujem područje realizacije i pokušavam raspodijeliti trošak najma putem cost drivera, Fluentis će koristiti specifični cost driver za realizaciju, a ako ga nema, tražit će vrijednosti iz općih pravila po defaultu, povezanih s područjem *set pravila*.
+- *OSTVARENO*: koristi se pri obradi međurazdobnih zaključivanja.
+
+- *SKUP PRAVILA*: područje koje ne sadrži vrijednosti, osim eventualno pojedinih fizičkih mjera. U njemu se pohranjuju standardna pravila pokretača troška (*Cost driver*). Primjerice, ako obrađujemo područje ostvarenih vrijednosti i želimo raspodijeliti trošak najma pomoću pokretača troška, Fluentis će upotrijebiti pokretač posebno definiran za ostvarene vrijednosti, ako postoji. U suprotnom će potražiti opća pravila koja vrijede kao zadana, povezana s područjem *Skup pravila*.
 
 :::tip Napomena
-Možemo slobodno definirati koliko god područja analize želimo. Tipični cilj je simulirati *što se događa* ako promijenim pravila za cost drivere, ili primijeniti različite konfiguracije troškova.
+Moguće je slobodno definirati proizvoljan broj područja analize. Uobičajeni je cilj simulirati *što ako* scenarije, odnosno provjeriti što se događa ako se promijene pravila pokretača troška u tvrtki, ili primijeniti različite konfiguracije troškova.
 
-Druga svrha je 'fiksiranje' obračuna Kontrolinga: kao što ćemo objasniti u dijelu o cost driverima, obračuni Kontrolinga brišu i ponovno kreiraju podatke za godinu koja se obrađuje. Ako želimo zadržati povijest, primjerice, prvog *trimestra* kako bismo ga kasnije usporedili s prva tri mjeseca obračuna prvog *polugodišta*, to možemo postići kreiranjem različitih realizacijskih područja.
+Druga je mogućnost „zamrznuti” rezultate obrade kontrolinga. Kao što će biti objašnjeno u dijelu o pokretačima troška, obrade kontrolinga brišu i ponovno stvaraju podatke za godinu koja se obrađuje. Ako, primjerice, želimo sačuvati rezultate prvog *tromjesečja* kako bismo ih poslije usporedili s prva tri mjeseca rezultata obrade prvog *polugodišta*, to možemo postići stvaranjem zasebnih područja ostvarenih vrijednosti.
 :::
-
-
-
-

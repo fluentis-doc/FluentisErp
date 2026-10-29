@@ -1,55 +1,44 @@
 ---
 title: Protok fizičkog kretanja
-sidebar position: 4
+sidebar_position: 4
 ---
 
 :::tip Napomena
-Tablica je relevantna samo za tvrtke koje imaju aktiviran *Kontroling*.
+Ova je tablica namijenjena isključivo tvrtkama koje imaju aktiviran *Kontroling*.
 :::
 
-Tijek fizičkih kretanja omogućava interakciju s kretanjima unesenim u početnu bilješku fizičkih kretanja, omogućavajući njihovu replikaciju ili konverziju primjenom multiplikatora ili postotka.
+Tijek fizičkih kretanja omogućuje rad s kretanjima unesenima u početnu evidenciju fizičkih kretanja, pri čemu se ona mogu duplicirati ili pretvarati primjenom množitelja ili postotka.
 
-#### Specifična polja
+**#### Posebna polja**
 
 - **ŠIFRA** tijeka
-
 - **OPIS** tijeka
-
 - [**PODRUČJE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) na koje se odnosi
-
-- [**PROIZVODNI CENTAR**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) za koji se traže kvantitativni podaci
-
-- [**DIMENZIJA ODREDIŠNIH CENTARA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) za definiranje dimenzije centara koje treba valorizirati
-
+- [**CENTAR TVRTKE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) za koji se dohvaćaju količinski podaci koje treba obraditi
+- [**DIMENZIJA ODREDIŠNIH CENTARA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) za definiranje dimenzije centara koje treba vrednovati
 - **DATUM POČETKA** i **DATUM ZAVRŠETKA** valjanosti pravila
+- **VRSTA RASPODJELE** koja se primjenjuje; jedina dostupna mogućnost je *01 Postotak*
+- [**IZVORNA MJERNA JEDINICA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) i [**ODREDIŠNA MJERNA JEDINICA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), za eventualne pretvorbe između mjernih jedinica
+- **MNOŽITELJ** koji se primjenjuje na izvorne količine
 
-- **TIP RASPODJELE** koji se primjenjuje, može biti samo *01 Postotak*
+U donju tablicu unosi se popis odredišnih centara koje treba vrednovati, uz popunjavanje sljedećih polja:
 
-- [**JEDINICA MJERE IZVORA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) i[**JEDINICA MJERE ODREDIŠTA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), za eventualne konverzije između JM
-
-- **MULTIPLIKATOR** koji se primjenjuje na količine izvora
-
-U donjoj mreži unosimo listu odredišnih centara za valorizaciju, popunjavajući sljedeća polja:
-- [**PROIZVODNI CENTAR**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)  odredišnog centra
-
+- [**CENTAR TVRTKE**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) – odredišni centar
 - **POSTOTAK** koji se primjenjuje
-
 - **VRIJEDNOST** koja se koristi
-
-- **POSTOTAK / VRIJEDNOST**: ako je označeno, postotak se unosi izravno, inače se može unijeti količina (prethodno polje) koju **FluentisERP** koristi za izračun relativnog postotka
-
-- eventualni **PROJEKT** koji se valorizira
+- Oznaka **POSTOTAK / VRIJEDNOST**: ako je uključena, postotak se unosi izravno; u suprotnom se može unijeti količina retka u prethodnom polju, na temelju koje će **FluentisERP** izračunati odgovarajući postotak.
+- Eventualni **PROJEKT** koji treba vrednovati
 
 :::tip Primjeri
- Prva potreba može biti dodjeljivanje fizičkih količina centru za koji se ne evidentiraju sati, kako bi se mogla izračunati njegova tarifa troška derivirana iz ukupnih sati repliciranih od drugih centara. Primjerice, pomoćni proizvodni centar može primiti ukupne sate drugih centara korištenih u proizvodnji za izračun svoje tarife.
- 
- Druga potreba može biti repliciranje fizičkih kretanja dimenzije upravljanja u druge dimenzije, radi primjene specifičnih cost drivera.
- 
- Treća potreba može biti konverzija sati iz proizvodnje u minute za izračun tarife u drugoj jedinici mjere, bez ručnog vanjskog preračunavanja.
- 
- Ako iz jednog izvora trebamo duplicirati količinu u dva druga centra, može se primijeniti pravilo koje množi početnu vrijednost i zatim raspoređuje polovicu u jedan, a polovicu u drugi centar.
+Jedna od mogućih potreba jest dodjela fizičkih količina centru za koji se ne evidentira vrijeme, kako bi se mogla izračunati njegova troškovna stopa na temelju ukupnog broja sati prenesenih iz drugih centara. Primjerice, pomoćni proizvodni centar može primiti ukupne sate drugih centara koji sudjeluju u proizvodnji te na temelju njih odrediti količinu koju će koristiti za izračun vlastite troškovne stope.
+
+Druga je mogućnost dupliciranje fizičkih kretanja iz upravljačke dimenzije u druge dimenzije, kako bi se ti podaci mogli koristiti za primjenu posebnih nositelja troškova.
+
+Treća je mogućnost pretvorba sati zaprimljenih iz proizvodnje u minute, kako bi se izračunala troškovna stopa za drugu mjernu jedinicu bez potrebe za vanjskim ručnim izračunom.
+
+Ako je potrebno duplicirati količinu iz jednog izvornog podatka u dva druga centra, može se primijeniti pravilo koje umnožava izvornu vrijednost, a zatim je raspodjeljuje, primjerice, napola na jedan, a napola na drugi centar.
 :::
 
 :::tip Napomena
-U obrascu postoji gumb za dupliciranje odabranog tijeka.
+Obrazac sadrži gumb za dupliciranje odabranog tijeka.
 :::

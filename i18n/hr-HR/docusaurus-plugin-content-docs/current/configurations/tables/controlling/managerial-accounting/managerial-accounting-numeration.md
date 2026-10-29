@@ -1,33 +1,34 @@
 ---
-title: Numeriranje računovodstvenih zapisa
+title: Numeriranje računovodstvenih knjiženja
 sidebar_position: 7
 ---
 
 
 :::note Putanja
-**Konfiguriranje > Kontroling > Računovodstvo upravljanja**
+**Konfiguracija > Kontroling > Računovodstvo upravljanja**
 
 Napomena:
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu obrazaca, pogledajte sljedeći link: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničko funkcioniranje obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).
 
 :::
 
 
-:::tip[Fast Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Brzi početak]
+Na ovu tablicu utječe postupak [**Fast start**](/docs/guide/fast-start).
 
-Ako se planira ručna konfiguracija, potrebno je slijediti kontrolnu listu na poveznici.
+Ako se konfiguracija obavlja ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
+
 ---
 
-U ovoj tablici definira se, preko ** [*Standardni numerator Fluentis* ](/docs/configurations/tables/fluentis-numerations) ** , politika za privremene i konačne knjigovodstvene zapise.
+U ovoj se tablici, pomoću **[standardne Fluentis numeracije](/docs/configurations/tables/fluentis-numerations)**, definira način numeriranja konačnih i privremenih računovodstvenih knjiženja.
 
-**<u>Preporučuje se slijediti postavke prikazane na slikama</u>** radi optimalnog upravljanja numeracijom.
-Moguće je odabrati drugačiju periodicitetu, primjerice godišnju, ili ne koristiti povrat slobodnih brojeva, ili vezati numeraciju uz kriterij konzistentnosti između datuma i broja (primjerice, ne mogu imati broj 2 danas, a broj 1 sutra).
+**Preporučuje se primijeniti postavke prikazane na slikama** radi optimalnog upravljanja numeriranjem.
 
-Također je moguće, u posebnim ili specifičnim slučajevima, započeti numeraciju s brojem različitim od 1.
+Moguće je odabrati drukčiju učestalost numeriranja, primjerice godišnju, ne koristiti ponovno dodjeljivanje slobodnih brojeva ili numeriranje vezati uz pravilo usklađenosti datuma i broja (primjerice, nije moguće imati broj 2 danas, a broj 1 sutra).
 
-**NAPOMENA:** za privremenu numeraciju potrebno je da numeracija bude negativna.
+U posebnim slučajevima ili kada postoji posebna potreba, numeriranje može započeti i brojem različitim od 1.
+
+**NAPOMENA:** za privremeno numeriranje potrebno je koristiti negativne brojeve.
 
 ![](/img/it-it/configurations/tables/finance/posting-ledger-numerations/posting-ledger-numerations-detail.png)
-

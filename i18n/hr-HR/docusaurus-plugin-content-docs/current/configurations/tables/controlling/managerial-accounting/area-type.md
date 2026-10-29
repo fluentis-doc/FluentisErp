@@ -1,19 +1,20 @@
 ---
-title: Tipovi područja
-sidebar position: 1
---- 
-
+title: Tip područja
+sidebar_position: 1
+---
 
 :::tip Napomena
-Tablica je relevantna samo za tvrtke koje imaju aktiviran Kontroling.
+Ova je tablica relevantna samo za tvrtke u kojima je aktivna oznaka *Kontroling*.
 :::
 
-U ovoj tablici definiramo tipove **Područja** analize, koje razlikujemo u 3 kategorije:
-- tip *Budžet*, s odgovarajućim flagom postavljenim 
-- *tip seta općih pravila*, s odgovarajućim flagom postavljenim  
-- treća kategorija je ona koja nije ni jedno od prethodna dva, bez postavljenih flagova
+U ovoj tablici definiraju se vrste **područja** analize, koje se dijele na tri kategorije:
+
+- *šifra proračuna*, s uključenom istoimenom oznakom
+- *vrsta skupa općih pravila*, s uključenom istoimenom oznakom
+- treća kategorija obuhvaća područja koja ne pripadaju nijednoj od prethodne dvije vrste, bez uključenih oznaka.
 
 ![](/img/it-it/controlling/type-area.png)
 
-Obavezno je definirati područje tipa **Set pravila** i generičko područje koje će se koristiti za podatke o **Realizaciji** razdoblja.
-Opcionalno je definirati područje tipa **Budžet**, ako tvrtka želi unijeti Budžet po centru troškova.
+Obvezno je definirati područje vrste **Skup pravila** i generičko područje u koje će se unositi podaci o **ostvarenim vrijednostima** za određeno razdoblje.
+
+Definiranje područja vrste **Proračun** nije obvezno, već ovisi o tome želi li tvrtka unositi proračun po centrima troška.
