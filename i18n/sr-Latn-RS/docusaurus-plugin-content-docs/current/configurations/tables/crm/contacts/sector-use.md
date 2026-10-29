@@ -1,7 +1,8 @@
 ---
-title: Sektor upotrebe
+title: Sektor primene
 sidebar_position: 6
 ---
 
-To je opisna tablica za kategorizaciju **Sektora upotrebe** u koje se smještaju kontakti u CRM-u i može se koristiti u modulu *Kontakata* CRM-a. Zajednička je za sve tvrtke u bazi podataka i sastoji se od jednostavne tablice s kodom/opisom.
-Uključuje dio za filtriranje prema kodu ili opisu sektora te mrežu u kojoj će biti navedeni svi uneseni sektori.
+Ovo je opisna tabela za kategorizaciju **sektora primene** u koje se svrstavaju kontakti u CRM-u i može se koristiti u modulu *Kontakti* u CRM-u. Zajednička je za sva preduzeća u bazi podataka i sastoji se od jednostavne tabele sa šifrom i opisom.
+
+Uključuje deo za filtriranje prema šifri ili opisu sektora, kao i mrežu u kojoj su navedeni svi uneti sektori.

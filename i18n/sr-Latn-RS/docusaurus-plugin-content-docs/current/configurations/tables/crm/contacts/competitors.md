@@ -1,8 +1,6 @@
 ---
-title: Konkurencija
+title: Konkurencija (natjecatelji)
 sidebar_position: 3
 ---
 
-Ovo je opisna tablica za katalogiziranje **Konkurencije** tvrtke i može se koristiti u CRM-u za *Kontakte*. Zajednička je za sve tvrtke u bazi podataka i sastoji se od jednostavne tablice s kodom/opisom. Sadrži dio za filtriranje prema kodu ili opisu konkurenta te mrežu u kojoj će biti navedeni svi uneseni konkurenti.
-
-
+Ovo je opisna tabela za katalogizaciju **konkurencije** preduzeća i može se koristiti u CRM-u za *kontakte*. Zajednička je za sva preduzeća u bazi podataka i sastoji se od jednostavne tabele sa šifrom i opisom. Sadrži deo za filtriranje prema šifri ili opisu konkurenta, kao i mrežu u kojoj su navedeni svi uneti konkurenti.

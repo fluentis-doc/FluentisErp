@@ -1,9 +1,8 @@
 ---
-title: Podrijetlo kontakta
+title: Poreklo kontakta
 sidebar_position: 4
 ---
 
-To je opisna tablica za označavanje **Podrijetla kontakta** u CRM-u i može se koristiti u modulu *Kontakata* CRM-a. Zajednička je za sve tvrtke u bazi podataka i sastoji se od jednostavne tablice s kodom/opisom. 
-Sadrži dio za filtriranje prema kodu ili opisu izvora te mrežu u kojoj će biti navedeni svi uneseni izvori. 
+Ovo je opisna tabela za označavanje **porekla kontakta** u CRM-u i može se koristiti u modulu *Kontakti* u CRM-u. Zajednička je za sva preduzeća u bazi podataka i sastoji se od jednostavne tabele sa šifrom i opisom.
 
-
+Sadrži deo za filtriranje prema šifri ili opisu izvora, kao i mrežu u kojoj su navedeni svi uneti izvori.

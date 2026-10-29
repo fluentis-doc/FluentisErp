@@ -1,5 +1,5 @@
 ---
-title: Konkurencija
+title: Konkurencija (natjecatelji)
 sidebar_position: 3
 ---
 

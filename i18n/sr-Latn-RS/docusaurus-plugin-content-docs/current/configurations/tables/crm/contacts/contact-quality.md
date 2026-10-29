@@ -1,8 +1,8 @@
 ---
-title: Kvaliteta kontakta 
+title: Kvalitet kontakta
 sidebar_position: 5
 ---
 
-To je opisna tablica za označavanje komercijalne **Kvalitete** kontakta u CRM-u za tvrtku i može se koristiti u modulu *Kontakta* CRM-a i [Prilika](/docs/crm/chance/search-chances/). 
+Ovo je opisna tabela za označavanje komercijalnog **kvaliteta** kontakta u CRM-u preduzeća i može se koristiti u modulu *Kontakti* u CRM-u i [Prilikama](/docs/crm/chance/search-chances/).
 
-Zajednička je za sve tvrtke u bazi podataka i sastoji se od jednostavne tablice s kodom/opisom, uz dodatno polje gdje se može grafički prikazati razina kvalitete postavljanjem od 1 (slaba kvaliteta) do 5 (visoka kvaliteta) **zvjezdica**. Tablica uključuje dio za filtriranje prema kodu ili opisu kvalitete te mrežu u kojoj će biti navedene sve unesene kategorije kvalitete.
+Zajednička je za sva preduzeća u bazi podataka i sastoji se od jednostavne tabele sa šifrom i opisom, uz dodatno polje u kojem se nivo kvaliteta može grafički prikazati ocenom od 1 (nizak kvalitet) do 5 (visok kvalitet) **zvezdica**. Tabela uključuje deo za filtriranje prema šifri ili opisu kvaliteta, kao i mrežu u kojoj su navedene sve unete kategorije kvaliteta.
