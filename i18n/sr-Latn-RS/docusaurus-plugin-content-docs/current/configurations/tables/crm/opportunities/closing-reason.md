@@ -1,11 +1,8 @@
 ---
-title: Razlog zatvaranja 
+title: Razlog zatvaranja
 sidebar_position: 1
 ---
 
-Tablica je deskriptivna i koristi se za katalogizaciju **razloga zatvaranja** koji se mogu naznačiti u CRM [Prilikama](/docs/crm/chance/new-chance/). Zajednička je za sve tvrtke prisutne u bazi podataka i sastoji se od jednostavne tablice s kodom/opisom, osim znaka Pozitivno/Negativno razloga. 
-Sastoji se od dijela s filtrom u kojem se može pretraživati ​​prema kodu ili opisu razloga zatvaranja i znaku operacije (Pozitivno/Negativno), te mreže u kojoj će biti navedeni svi uneseni razlozi.
+Ovo je opisna tabela za katalogizaciju **razloga zatvaranja** koji se mogu navesti u CRM [prodajnim prilikama](/docs/crm/chance/new-chance/). Tabela je zajednička za sva preduzeća u bazi podataka i sastoji se od jednostavne tabele sa šifrom i opisom, uz oznaku pozitivnog ili negativnog razloga.
 
-
-
-
+Sastoji se od dela za filtriranje, u kojem je moguće pretraživati prema šifri ili opisu razloga zatvaranja i predznaku operacije (pozitivan/negativan), kao i tabele u kojoj su navedeni svi uneti razlozi zatvaranja.

@@ -1,32 +1,32 @@
 ---
-title: Tip prodajne ponude 
+title: Tipovi ponuda
 sidebar_position: 1
 ---
 
-Tablica se koristi za određivanje svojstava prodajne ponude.  
+Tablica se koristi za definiranje svojstava prodajne ponude.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što su postavljeni svi željeni filtri, dovoljno je kliknuti na gumb **Pretraži** kako bi se rezultati prikazali unutar mreže s rezultatima.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
-Za unos novih zapisa potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti gumb **Novo**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-**Šifra/Opis:** polja u koja se unosi šifra i opis tipologije dokumenta (šifra mora biti jedinstvena).
+**Šifra/Opis:** polja u koja se unose šifra i opis vrste dokumenta (unesena šifra mora biti jedinstvena).
 
-**Upravljanje verzijama**: ova oznaka (flag) označava tipologije ponude za koje se vode verzije.
+**Upravljanje verzijama:** ova oznaka određuje vrste ponuda za koje se upravlja verzijama.
 
-**Cijena s PDV-om**: omogućuje sustavu dohvat prodajne cijene iz cjenika ili iz šifrarnika artikla i prikazuje je s uključenim PDV-om. Ako cjenik nije pronađen, primjerice u slučaju isteka cjenika ili valute koja nije kompatibilna, sustav preuzima troškove ili cijene iz šifrarnika artikla i prikazuje ih s PDV-om. Troškovi i cijene u šifrarniku izraženi su u EUR, pa će ih sustav automatski konvertirati u valutu kupca.
+**Cijena s PDV-om:** omogućuje sustavu dohvat prodajne cijene iz cjenika ili šifarnika artikala te njezin prikaz s uključenim PDV-om. Ako cjenik nije pronađen, primjerice zato što je istekao ili je izražen u nekompatibilnoj valuti, sustav dohvaća troškove ili cijene iz šifarnika artikala i prikazuje ih s uključenim PDV-om. Troškovi i cijene u šifarniku izraženi su u EUR-ima, pa će ih sustav također preračunati u valutu kupca.
 
-**Numeracija**: u ovo polje unosi se odgovarajuća šifra numeracije. Za detalje o numeraciji dokumenata pogledajte članak [Numeracije Fluentis](/docs/configurations/tables/fluentis-numerations).
+**Numeriranje:** u ovo polje unosi se odgovarajuća šifra numeriranja. Za više informacija o numeriranju dokumenata pogledajte članak [Fluentis numeracija](/docs/configurations/tables/fluentis-numerations).
 
-**Vrsta narudžbe kupca**: u ovom se polju navodi tip narudžbe prodaje koji će se kreirati prilikom konverzije ponude kroz predviđenu proceduru.    
+**Vrsta narudžbe kupca:** u ovom se polju navodi vrsta prodajne narudžbe koja će se izraditi prilikom pretvaranja ponude odgovarajućim postupkom.
 
-**Prodajni cjenik**: ovaj generički tip cjenika koristi se za pretraživanje cijena u slučaju kada u tabu Cjenici u šifrarniku kupca ili kontakta nije unesena nijedna vrsta cjenika. Uglavnom se koristi prilikom izrade ponuda kontaktima iz CRM-a koji još nisu evidentirani kao kupci i za koje nisu upisani tipovi cjenika u tabu Cjenici šifrarnika.
+**Prodajni cjenik:** ova opća vrsta cjenika koristi se za dohvat cijena ako na kartici Cjenici u šifarniku kupca ili kontakta nije definirana nijedna vrsta cjenika. Obično se koristi pri izradi ponuda za CRM kontakte koji još nisu postali kupci i za koje na kartici Cjenici u šifarniku nisu definirane vrste cjenika.
 
-**Ispis i broj kopija**: ovim poljima definira se zadani ispis i broj kopija za ispisivanje; podsjećamo da je za ispis zadanog ispisa potrebno označiti *Višestruki ispisi* u trenutku ispisa.
+**Ispis i broj primjeraka:** ovim se poljima definiraju zadani ispis i broj primjeraka za ispis. Napominjemo da je za ispis zadanog obrasca potrebno odabrati opciju *Višestruki ispisi* prilikom ispisa.
 
-**Vrsta prototipa artikla**: ovo polje sadrži tip prototipa artikla koji će se kreirati u proceduri stvaranja prototipa unutar ponude. 
+**Vrsta prototipa artikla:** ovo polje sadrži vrstu prototipa artikla koji će se izraditi postupkom izrade prototipa unutar ponude.
 
-**Vrsta prilike**: ako je uz Tip ponude povezana Vrsta prilike, prilikom spremanja Ponude kreira se Nova prilika ako u zaglavlju Ponude nije već unesena postojeća; ako je unesena, postojeća Prilika se ažurira.
+**Vrsta prodajne prilike:** ako se uz vrstu ponude poveže vrsta prodajne prilike, prilikom spremanja ponude stvara se nova prodajna prilika ako u zaglavlju ponude nije navedena postojeća. Ako je postojeća prodajna prilika navedena, ona će se ažurirati.
 
-**Upravljanje osnovnim sredstvima i Vrsta operacije**: oznaka omogućuje vođenje osnovnih sredstava za ovu tipologiju dokumenta. U sljedećem polju navodi se tip operacije nad osnovnim sredstvima, koji u slučaju prodaje može biti potpuna ili djelomična prodaja (otuđenje) ili uništenje.      
+**Upravljanje osnovnim sredstvima i vrsta operacije:** ova oznaka omogućuje upravljanje osnovnim sredstvima za navedenu vrstu dokumenta. U sljedećem se polju navodi vrsta operacije nad osnovnim sredstvima koja u slučaju prodaje može biti potpuno ili djelomično otuđenje ili uništenje.
 
-**Vrsta popusta/Opis**: u ovom se stupcu može povezati tip popusta koji će se predložiti kada se popusti unose izravno u stupac *Popusti artikla* u mreži artikala dokumenata (za detalje pogledajte članak [Upravljanje widgetom popusta – pojednostavljena verzija](/docs/sales/sales-flow/discount-widget)).
+**Vrsta popusta/Opis:** u ovom se stupcu može povezati vrsta popusta koja će se predložiti kada se popusti unose izravno u stupac *Popusti artikla* u tablici artikala dokumenta. Za više pojedinosti pogledajte članak [Upravljanje pojednostavljenim widgetom za popuste](/docs/sales/sales-flow/discount-widget).

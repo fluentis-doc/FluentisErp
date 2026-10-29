@@ -1,11 +1,16 @@
 ---
-title: Vrsta troška 
+title: Tip troška
 sidebar_position: 4
 ---
 
-U ovoj tablici možete definirati vrste troškova koje je moguće uključiti u [Budžet](/docs/crm/sales-forecast-crm/marketing-budget). Potrebno je unijeti sljedeće podatke:      
-**Kod**: sadrži jedinstveni kod i odgovarajući **Opis**;     
-**Vrsta mjerenja**: sadrži Jedinicu Mjere koja se koristi za ovu vrstu.     
-**Opisani**: ova oznaka označava da će trošak biti opisan, pa će stoga u Budžetu biti moguće unijeti Opis.      
-**Račun**: ova oznaka ukazuje da će trošak biti pridružen određenom Računu, omogućujući tako unos računa u Budžet.     
-**Artikl**: ova oznaka ukazuje da će trošak biti povezan s određenim Artiklom, omogućujući unos Artikla u Budžet.     
+Ova tabela sadrži tipove troškova koje je moguće uneti u [Budžet](/docs/crm/sales-forecast-crm/marketing-budget). Potrebno je uneti sledeće podatke:
+
+**Šifra**: sadrži jedinstvenu šifru i odgovarajući **Opis**.
+
+**Tip merenja**: sadrži mernu jedinicu koja će se koristiti za ovaj tip troška.
+
+**Opisni**: ova oznaka označava da je trošak opisni, pa će u budžet biti moguće uneti opis.
+
+**Konto**: ova oznaka označava da će se trošak knjižiti na konto, pa će u budžet biti moguće uneti konto.
+
+**Artikal**: ova oznaka označava da će se trošak odnositi na artikal, pa će u budžet biti moguće uneti artikal.

@@ -1,9 +1,10 @@
 ---
-title: Vjerojatnost uspjeha 
+title: Verovatnoća uspeha
 sidebar_position: 2
 ---
 
-Tablica je deskriptivna i koristi se za katalogizaciju **Vjerojatnosti uspjeha** u postotcima koje je moguće naznačiti u CRM [Prilikama](/docs/crm/chance/search-chances/). Zajednička je za sve tvrtke prisutne u bazi podataka i sastoji se od tablice s kodom/opisom, uz poredak zapisa i postotak uspjeha koji odgovara svakom zapisu. 
-Sastoji se od dijela s filtrom u kojem se može pretraživati prema kodu ili opisu vjerojatnosti, te mreže u kojoj će biti navedene sve unesene vjerojatnosti.
+Tabela je deskriptivna i koristi se za katalogizaciju **verovatnoća uspeha** izraženih u procentima, koje je moguće navesti u CRM [prilikama](/docs/crm/chance/search-chances/). Zajednička je za sva preduzeća prisutna u bazi podataka i sastoji se od tabele sa šifrom i opisom, uz redosled zapisa i procenat uspeha koji odgovara svakom zapisu.
 
- 
+Sastoji se od dela za filtriranje, u kojem je moguće pretraživati prema šifri ili opisu verovatnoće, i mreže u kojoj su navedene sve unete verovatnoće.
+
+

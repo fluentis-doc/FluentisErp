@@ -1,12 +1,12 @@
 ---
-title: Period budžeta 
+title: Periodi (budžeta)
 sidebar_position: 3
 ---
 
-U ovoj tablici potrebno je definirati vrste perioda koje će se koristiti prilikom kreiranja [Marketinških Proračuna](/docs/crm/sales-forecast-crm/marketing-budget).     
-Svaka vrsta može biti povezana s jedinstvenim kodom i opisom. Također, potrebno je odlučiti putem odgovarajuće oznake da li će se proračunski period za svaku vrstu definirati kao godišnji, polugodišnji, kvartalni, mjesečni ili tjedni. 
-Na temelju odabrane oznake, prilikom kreiranja proračuna godina će se automatski podijeliti u odgovarajuće periode, a iznosi će biti raspoređeni između tih perioda. Na primjer, ako je odabrana oznaka mjesečno, iznos proračuna bit će raspodijeljen u 12 mjeseci unutar odgovarajuće tablice. 
+U ovoj tabeli potrebno je definisati tipove perioda koji će se koristiti prilikom kreiranja [Marketinških budžeta](/docs/crm/sales-forecast-crm/marketing-budget).
 
+Svaki tip može biti povezan sa jedinstvenom šifrom i opisom. Takođe, potrebno je pomoću odgovarajuće oznake odrediti da li će se budžetski period za svaki tip definisati kao godišnji, polugodišnji, kvartalni, mesečni ili nedeljni.
 
+Na osnovu izabrane oznake, prilikom kreiranja budžeta godina će se automatski podeliti na odgovarajuće periode, a iznosi će biti raspoređeni između tih perioda. Na primer, ako je izabrana oznaka za mesečni period, iznos budžeta biće raspoređen na 12 meseci u odgovarajućoj tabeli.
 
 

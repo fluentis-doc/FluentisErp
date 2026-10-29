@@ -1,6 +1,6 @@
 ---
-title: Vrsta predviđanja prodaje 
+title: Vrsta prodajne prognoze
 sidebar_position: 2
 ---
 
-U ovoj tablici mogu se definirati različite vrste prodajnih prognoza koje želite kreirati. One će imati jedinstveni **Kod** i **Opis** te će biti povezane s [Vrstom perioda](/docs/configurations/tables/crm/sales-forecast/period-type). Na taj način, prilikom kreiranja nove prognoze, Fluentis će znati u koje periode podijeliti samu prognozu.  
+U ovoj tabeli mogu se definisati različiti tipovi prodajnih prognoza koje želite da kreirate. Oni će imati jedinstvenu **Šifru** i **Opis** i biće povezani sa [Tipom perioda](/docs/configurations/tables/crm/sales-forecast/period-type). Na taj način, prilikom kreiranja nove prognoze, Fluentis će znati na koje periode treba podeliti samu prognozu.

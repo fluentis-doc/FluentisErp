@@ -1,7 +1,8 @@
 ---
-title: Vrsta Prilike  
+title: Vrsta prilike (mogućnosti)
 sidebar_position: 3
 ---
 
-To je opisna tablica za katalogiziranje **vrsta prilika** u CRM-u. Zajednička je za sve tvrtke prisutne u bazi podataka i sastoji se od tablice s kodom/opisom, uz mogućnost označavanja Pipeline fluxa koji će se automatski predložiti prilikom unosa prilike. 
-Sastoji se od dijela s filtrom u kojem se može pretraživati prema kodu ili opisu vjerojatnosti, te mreže u kojoj će biti navedene sve unesene vrste. 
+Ovo je opisna tabela za katalogizaciju **tipova prilika** u CRM-u. Zajednička je za sva preduzeća prisutna u bazi podataka i sastoji se od tabele sa šifrom i opisom, uz mogućnost označavanja *Pipeline* toka koji će automatski biti predložen prilikom unosa prilike.
+
+Sastoji se od dela za filtriranje, u kojem je moguće pretraživati prema šifri ili opisu verovatnoće, i tabele u kojoj su navedeni svi uneti tipovi.

@@ -1,5 +1,5 @@
 ---
-title: Period budžeta 
+title: Periodi (budžeta)
 sidebar_position: 3
 ---
 

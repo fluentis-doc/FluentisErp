@@ -1,80 +1,80 @@
 ---
-title: Tipo Ticket
+title: Tip tiketa
 sidebar_position: 1
 ---
 
-Tablica omogućuje definiranje Tip tiketa koje će se moći koristiti prilikom unosa novog tiketa, postavljajući unaprijed određene karakteristike tiketa koji će biti registrirani s tom vrstom. Sastoji se od dijela za filtriranje u kojem se može pretraživati prema kodu ili opisu vrste tiketa te rešetke u kojoj su navedene sve unesene vrste. 
+Tabela omogućava definisanje tipova tiketa koji se mogu koristiti prilikom unosa novog tiketa, pri čemu se unapred određuju određena svojstva tiketa koji će biti evidentirani sa tim tipom.
 
-U okviru ovog obrasca moguće je dodavati nove vrste tiketa u rešetku klikom na gumb **Novo**: Na taj način će se dodati nova linija u rešetku gdje će se definirati sljedeći parametri:
+Sastoji se od dela za filtriranje, u kojem je moguće pretraživati prema šifri ili opisu tipa, i tabele u kojoj su navedeni svi uneti tipovi.
 
-**Kod**: ovo je kod vrste tiketa;
+U istom obrascu moguće je dodati nove tipove u tabelu klikom na dugme **Novo**. Time se dodaje novi red u tabelu, u kojem je potrebno definisati sledeće parametre:
 
-**Opis**: ovo je opis vrste tiketa;
+**Šifra**: šifra tipa tiketa.
 
-**Numeracija**: ovo je numeracija vrste tiketa i odnosi se na tablicu *Numeracija Vrsta*;
+**Opis**: opis tipa tiketa.
 
-**Tip ponude**: sadrži [Tip ponude](/docs/configurations/tables/sales/sales-offer-type) koji se predlaže za ovu vrstu tiketa; 
+**Numerisanje**: numerisanje tipa tiketa koje se odnosi na tabelu *Numerisanje tipa*.
 
-**Klasa i kod artikla**: 
+**Tip ponude**: sadrži [tip ponude](/docs/configurations/tables/sales/sales-offer-type) koji će biti kreiran postupkom *Kreiranje ponude iz tiketa*.
 
-**Predložak ticketa**: sadrži [Predložak](/docs/configurations/tables/crm/tickets/template-ticket) koji se predlaže za ovu vrstu ticketa;   
+**Klasa i šifra artikla**:
 
+**Šablon tiketa**: sadrži [šablon](/docs/configurations/tables/crm/tickets/template-ticket) koji će biti predložen za ovaj tip tiketa.
 
-Oznake za postavljanje obaveznih polja
+Oznake za određivanje obaveznih polja:
 
-**Klijent**: ako je omogućeno, označava obaveznost popunjavanja polja Klijent u ticketu
+**Kupac**: ako je aktivirana, označava da je obavezno popuniti polje Kupac u tiketu.
 
-**Predmet**: 
+**Subjekat**:
 
-**Referentni subjekt**: ako je omogućeno, označava obaveznost popunjavanja polja Referentni subjekt u ticketu
+**Kontaktni subjekat**: ako je aktivirana, označava da je obavezno popuniti polje Kontaktni subjekat u tiketu.
 
-**Email referentnog subjekta**: ako je omogućeno, označava obaveznost popunjavanja polja Email referentnog subjekta u ticketu
+**E-pošta kontaktnog subjekta**: ako je aktivirana, označava da je obavezno popuniti polje E-pošta kontaktnog subjekta u tiketu.
 
-**Projekt**: ako je omogućeno, označava obaveznost popunjavanja polja Projekt u ticketu
- 
-**Razina usluge**: ako je omogućeno, označava obaveznost popunjavanja polja Razina usluge u ticketu
+**Projekat**: ako je aktivirana, označava da je obavezno popuniti polje Projekat u tiketu.
 
-**Važnost**: ako je omogućeno, označava obaveznost popunjavanja polja Važnost u ticketu
+**Nivo usluge**: ako je aktivirana, označava da je obavezno popuniti polje Nivo usluge u tiketu.
 
-**Prvi dodijeljeni korisnik**: korisnik predložen po zadanim postavkama 
+**Ozbiljnost**: ako je aktivirana, označava da je obavezno popuniti polje Ozbiljnost u tiketu.
 
-Za svaku tipologiju moguće je navesti jedan ili više **Statusa ticketa** u donjoj tablici. Ti statusi mogu biti različiti za svaku vrstu ticketa i bit će predloženi kao mogući statusi pri kreiranju Novog ticketa s tom tipologijom.   
+**Prvi dodeljeni korisnik**: korisnik koji se predlaže kao podrazumevani.
 
-Za svaki status ticketa moguće je definirati sljedeće parametre:
+Za svaki tip moguće je u donjoj tabeli navesti jedno ili više **stanja tiketa**. Ta stanja mogu se razlikovati u zavisnosti od tipa tiketa i biće ponuđena kao moguća stanja prilikom kreiranja novog tiketa tog tipa.
 
-**Šifra**: šifra statusa ticketa;
+Za svako stanje tiketa moguće je definisati sledeće parametre:
 
-**Opis**: opis statusa ticketa;
+**Šifra**: šifra stanja tiketa.
 
-**Datum završetka**: datum završetka statusa ticketa;
+**Opis**: opis stanja tiketa.
 
-**Bilješka**: u ovom polju moguće je dodati dodatne bilješke na ticket.
+**Datum završetka**: datum završetka važenja stanja tiketa.
 
+**Napomena**: u ovo polje moguće je uneti dodatne napomene uz tiket.
 
-Za svaku tipologiju moguće je navesti jednog ili više **Korisnika** u donjoj tablici. Ova konfiguracija je obavezna ako se želi omogućiti sve kartice/sekcije koje se mogu upravljati u ticketu. Može se konfigurirati za pojedinog korisnika ili za ulogu. 
+Za svaki tip moguće je u donjoj tabeli navesti jednog ili više **korisnika**. Ova konfiguracija je obavezna ako želite da omogućite pristup svim karticama koje se mogu koristiti u tiketu. Može se konfigurisati za pojedinačnog korisnika ili za ulogu.
 
-**Uloga**: označava ulogu za koju vrijedi postavljena konfiguracija
+**Uloga**: označava ulogu za koju važi podešena konfiguracija.
 
-**Korisnik** kao alternativa ulozi, označava korisnika za kojeg vrijedi postavljena konfiguracija
+**Korisnik**: navodi se umesto uloge i označava korisnika za kojeg važi podešena konfiguracija.
 
-**Detalj ticketa**: omogućiti za prikaz sekcije/kartice Detalj ticketa u ticketu
+**Detalji tiketa**: aktivirati za prikaz odeljka/kartice Detalji tiketa u tiketu.
 
-**Korisnici** omogućiti za prikaz sekcije/kartice Korisnici u ticketu
+**Korisnici**: aktivirati za prikaz odeljka/kartice Korisnici u tiketu.
 
-**Procjena/Uloženi trud** omogućiti za prikaz sekcije/kartice Procjena/Uloženi trud u ticketu
+**Procena/Napor**: aktivirati za prikaz odeljka/kartice Procena/Napor u tiketu.
 
-**Komercijalna procjena** omogućiti za prikaz sekcije/kartice Komercijalna procjena u ticketu
+**Komercijalna procena**: aktivirati za prikaz odeljka/kartice Komercijalna procena u tiketu.
 
-**Informacije o zatvaranju** omogućiti za prikaz sekcije/kartice Informacije o zatvaranju u ticketu
+**Informacije o zatvaranju**: aktivirati za prikaz odeljka/kartice Informacije o zatvaranju u tiketu.
 
-**Povezani ticketi** omogućiti za prikaz sekcije/kartice Povezani ticketi u ticketu
+**Povezani tiketi**: aktivirati za prikaz odeljka/kartice Povezani tiketi u tiketu.
 
-**Bilješka** omogućiti za prikaz sekcije/kartice Bilješka u ticketu
+**Napomena**: aktivirati za prikaz odeljka/kartice Napomena u tiketu.
 
-**Proizvod** omogućiti za prikaz sekcije/kartice Proizvod u ticketu
+**Proizvod**: aktivirati za prikaz odeljka/kartice Proizvod u tiketu.
 
-**Extra data** omogućiti za prikaz sekcije/kartice Dodatni podaci u ticketu
- 
-**Upravljanje dokumentima** omogućiti za prikaz sekcije/kartice Upravljanje dokumentima u ticketu
+**Dodatni podaci**: aktivirati za prikaz odeljka/kartice Dodatni podaci u tiketu.
 
-**Ponude** omogućiti za prikaz sekcije/kartice Ponude u ticketu
+**Upravljanje dokumentacijom**: aktivirati za prikaz odeljka/kartice Upravljanje dokumentacijom u tiketu.
+
+**Ponude**: aktivirati za prikaz odeljka/kartice Ponude u tiketu.

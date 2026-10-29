@@ -1,9 +1,10 @@
 ---
-title: Vrsta razdoblja  
+title: Tip perioda
 sidebar_position: 1
 ---
 
+U ovoj tabeli važno je definisati specifikacije za Fluentis o tipovima perioda koji će se koristiti u prodajnim prognozama. U prvoj tabeli moguće je svakom tipu dodeliti jedinstvenu **Šifru** i **Opis**, kao i pomoću oznake odrediti koji će se tip predlagati kao podrazumevani.
 
-U ovoj tablici važno je Fluentisu pružiti specifikacije o vrstama razdoblja koja će se koristiti u Prognozama prodaje. U prvom retku možete dodijeliti jedinstveni **Kod** i **Opis** za svaku Vrstu, te naznačiti koju Vrstu predložiti kao zadanu pomoću odgovarajuće oznake.
+Za svaki red u prvoj tabeli potrebno je popuniti drugu tabelu kako bi se softveru definisalo trajanje pojedinačnih perioda. Na primer, ako je u prvoj tabeli izabran tip perioda *Godišnji*, u drugoj tabeli potrebno je definisati trajanje pojedinačnih meseci tokom godine (npr. januar od 01.01. do 31.01, februar od 01.02. do 28.02. ili 29.02. u prestupnoj godini itd.).
 
-Za svaki redak prve tablice, potrebno je ispuniti drugu tablicu kako bi se softveru dali podaci o trajanju različitih razdoblja. Na primjer, za Vrstu razdoblja Godišnje navedenu u prvom retku, bit će potrebno specificirati u drugoj tablici trajanje pojedinih mjeseci tijekom godine (primjerice, Siječanj od 01/01 do 31/01, Veljača od 01/02 do 29/02, itd.). Na taj način, Fluentis će moći raspodijeliti iznose prodajnih prognoza po različitim naznačenim mjesecima. Za svaku vrstu navedenu u prvom retku, stoga, moguće je predvidjeti razdoblja različitog trajanja prema potrebama tvrtke. 
+Na taj način Fluentis će moći da raspodeli iznose prodajnih prognoza po navedenim mesecima. Zato je za svaki tip definisan u prvoj tabeli moguće predvideti periode promenljivog trajanja, u zavisnosti od potreba preduzeća.

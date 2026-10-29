@@ -1,8 +1,8 @@
 ---
-title: Numeracija ponuda 
+title: Numerisanje ponuda
 sidebar_position: 2
 ---
 
-Tablica omogućuje definiranje različitih progresivnih numeracija unutar iste godine koje se mogu dodijeliti jednoj ili više vrsta ponuda.  
+Tabela omogućava definisanje različitih sekvencijalnih numerisanja unutar iste godine, koja se mogu dodeliti jednom ili više tipova ponuda.
 
-Za način unosa numeracija, pogledajte članak [Numeracije Fluentis](/docs/configurations/tables/fluentis-numerations).
+Za način unosa numerisanja pogledajte članak [Fluentis numerisanje](/docs/configurations/tables/fluentis-numerations).
