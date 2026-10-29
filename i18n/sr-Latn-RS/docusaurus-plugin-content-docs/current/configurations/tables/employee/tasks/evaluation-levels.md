@@ -1,32 +1,38 @@
 ---
-title: Nivoi ocenjivanja kompetencija
+title: Nivoi evaluacije
 sidebar_position: 5
 ---
 
-Tabela se nalazi na putanji **Tabele > Zaposleni > Radna mesta > Nivoi ocenjivanja kompetencija**.
+Tabela se nalazi na putanji **Tabele > Zaposleni > Zadaci > Nivoi evaluacije**.
 
 :::important Čemu služi
-U ovoj tabeli moguće je evidentirati *nivoe ocenjivanja kompetencija*, koji se koriste za procenu *kompetencija prema radnom mestu*.  
-Primer primene vidljiv je u funkcionalnosti **Kompetencije**.
+U ovoj tabeli moguće je definisati *nivoe evaluacije kompetencija*, koji se koriste za procenu *kompetencija po radnom mestu*.
+
+Primer primene vidljiv je u upravljanju **kompetencijama**.
 :::
 
-Tabela omogućava unos novih *nivoa ocenjivanja kompetencija* ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
+Tabela omogućava unos novih *nivoa ocenjivanja kompetencija* ili pretraživanje postojećih kako bi se mogli pregledati, izmeniti ili obrisati.
 
-**#### Pretraživanje nivoa ocenjivanja kompetencija**
+#### Pretraživanje nivoa ocenjivanja kompetencija
 
-Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Pretraživanje** kako bi se rezultati prikazali u tabeli rezultata.
 
-**#### Unos nivoa ocenjivanja kompetencija**
+#### Unos nivoa ocenjivanja kompetencija
 
-Za unos novih *nivoa ocenjivanja kompetencija* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.  
-Za novi zapis potrebno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
+Za unos novih *nivoa ocenjivanja kompetencija* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-**#### Specifična polja**
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
-> **Šifra**: šifra *nivoa ocenjivanja kompetencija*.  
-> **Opis**: opis *nivoa ocenjivanja kompetencija*.  
-> **Nivo**: bodovna vrednost dodeljena nivou ocenjivanja kompetencije.  
-> **Redosled**: redosled prikaza u listama *nivoa ocenjivanja kompetencija*.  
-> **Napomene**: slobodne beleške.
+#### Specifična polja
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
+> **Šifra**: šifra *nivoa ocenjivanja kompetencija*.
+
+> **Opis**: opis *nivoa ocenjivanja kompetencija*.
+
+> **Nivo**: bodovna vrednost dodeljena nivou ocenjivanja kompetencije.
+
+> **Sekvenca**: redosled prikaza u listama *nivoa ocenjivanja kompetencija*.
+
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajen rad sa obrascima, pogledajte sledeću vezu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

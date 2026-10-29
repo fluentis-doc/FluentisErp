@@ -3,57 +3,86 @@ title: Zadaci
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putanji: **Tablice > Zaposlenici > Zadaci > Zadaci**.   
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Zadaci > Zadaci**.
 
-U ovoj tablici moguće je kodirati *Zadaci* u tvrtki.   
-Primjeri korištenja *Zadaci* vidljivi su u sljedećim modulima:   
-> **Zaposlenici** - u kartici *Radna mjesta*;   
-> **Osnovni tečajevi** - u kartici *Pogođena radna mjesta*;   
-> **Tečajevi osposobljavanja** - u kartici *Uključena radna mjesta*;   
-> **D.P.I.** - u popisu *Zaštićena oprema korištena na radnim mjestima*;   
-> **Kompetencije** - u popisu *Kompetencije povezane s radnim mjestima*.   
+U ovoj je tablici moguće definirati šifre *zadataka* u tvrtki.
 
-Tablica omogućuje unos novih *Radnih mjesta* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.   
+Primjeri korištenja *zadataka (radnih mjesta)* nalaze se u sljedećim evidencijama:
 
-## Pretraživanje radnih mjesta  
+> **Zaposlenici** – na kartici *Zadaci*;
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u tablici rezultata.   
+> **Osnovni tečajevi** – na kartici *Obuhvaćeni zadaci*;
 
-## Unos radnih mjesta 
+> **Tečajevi osposobljavanja** – na kartici *Uključeni zadaci*;
 
-Za unos novih *Radnih mjesta* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: ***Šifra*** i **Opis**.      
+> **Osobna zaštitna oprema** – na popisu *Osobna zaštitna oprema koja se koristi za zadatke*;
 
-### Radna mjesta  
+> **Kompetencije** – na popisu *Kompetencije povezane sa zadacima*.
 
-To je popis u koji se unose osnovne informacije o *Radnom mjestu*.
-Popis se sastoji od sljedećih podataka:   
-> **Šifra**: šifra *Radnog mjesta*.   
-> **Opis**: opis *Radnog mjesta*.   
-> **Poslovni centar**: šifra *Poslovnog centra*.   
-> **Stavka troška**: šifra *Stavke troška*.   
-> **Opis stavke troška**: opis *Stavke troška*.   
+Tablica omogućuje unos novih *zadataka* i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-### Zaštitna oprema za dodjelu
+## Pretraživanje zadataka
 
-To je popis u koji se unosi *Zaštitna oprema (D.P.I.)* potrebna za odabrano *Radno mjesto*.
-Ove informacije koriste se u upravljanju *Isporučenom/Vraćenom zaštitnom opremom*.   
-Popis se sastoji od sljedećih podataka:   
-> **Šifra D.P.I**.: šifra *Zaštitne opreme*  
-> **Opis D.P.I.**: opis *Zaštitne opreme*   
-> **Mjeseci valjanosti**: razdoblje valjanosti Zaštitne opreme za odabrano *Radno mjesto* (u mjesecima).   
-> **Upotreba**:slobodne bilješke o upotrebi   
-> **Upute ili preporuke za uporabu**: slobodne bilješke s preporukama ili uputama.   
-> **Napomene**: slobodne bilješke
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Pretraživanje** kako bi se rezultati prikazali u tablici rezultata.
 
-### Kompetencije   
+## Unos zadataka
 
-To je popis u koji se unose *Kompetencije* potrebne za obavljanje odabranog *Radnog mjesta*.
-Ove informacije koriste se u upravljanju *Procjenama kompetencija*.  
-Popis se sastoji od sljedećih podataka:   
-> **Šifra kompetencije**: šifra *Kompetencije*.   
-> **Opis kompetencije**: opis *Kompetencije*.   
-> **Šifra razine**: šifra *Razine procjene kompetencije* potrebne za odabrano *Radno mjesto*.   
-> **Opis razine**: opis *Razine procjene kompetencije*.   
-> **Kriteriji procjene**: bilješke za definiranje *Kriterija procjene* koji se koriste pri procjeni kompetencije za određeno *Radno mjesto*.   
-> **Napomene**: slobodne bilješke.   
+Za unos novih *zadataka* potrebno je kliknuti na prvi prazni redak u tablici ili pritisnuti gumb **Novo**.
+
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
+
+### Zadaci
+
+Ovo je popis u koji se unose osnovni podaci o *zadatku*.
+
+Popis sadrži sljedeće podatke:
+
+> **Šifra**: šifra *zadatka*.
+
+> **Opis**: opis *zadatka*.
+
+> **Centar tvrtke**: šifra *centra tvrtke*.
+
+> **Stavka troška**: šifra *stavke troška*.
+
+> **Opis stavke troška**: opis *stavke troška*.
+
+### OZO za dodjelu
+
+Ovo je popis u koji se unosi *osobna zaštitna oprema (OZO)* potrebna za odabrani *zadatak*.
+
+Ti se podaci koriste u evidenciji *Dodjela/povrat OZO-a*.
+
+Popis sadrži sljedeće podatke:
+
+> **Šifra OZO-a**: šifra *OZO-a*.
+
+> **Opis OZO-a**: opis *OZO-a*.
+
+> **Mjeseci valjanosti**: broj mjeseci valjanosti *OZO-a* za odabrani *zadatak*.
+
+> **Uporaba**: slobodne napomene o uporabi.
+
+> **Upute ili preporuke za uporabu**: slobodne napomene o uporabi.
+
+> **Napomene**: slobodne napomene.
+
+### Kompetencije
+
+Ovo je popis u koji se unose *kompetencije* potrebne za obavljanje odabranog *zadatka*.
+
+Ti se podaci koriste u evidenciji *Procjene kompetencija*.
+
+Popis sadrži sljedeće podatke:
+
+> **Šifra kompetencije**: šifra *kompetencije*.
+
+> **Opis kompetencije**: opis *kompetencije*.
+
+> **Šifra razine**: šifra *razine procjene kompetencije* potrebne za obavljanje odabranog *zadatka*.
+
+> **Opis razine**: opis *razine procjene kompetencije*.
+
+> **Kriteriji procjene**: napomene kojima se definiraju *kriteriji procjene* za vrednovanje *kompetencije* za određeni *zadatak*.
+
+> **Napomene**: slobodne napomene.

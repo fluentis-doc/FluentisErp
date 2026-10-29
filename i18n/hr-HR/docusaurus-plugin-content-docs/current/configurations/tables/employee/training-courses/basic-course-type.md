@@ -3,7 +3,7 @@ title: Tipovi osnovnih tečaja
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Tečajevi osposobljavanja > Osnovne vrste tečajeva**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Tečajevi osposobljavanja > Tipovi osnovnih tečaja**.
 
 U ovoj tablici moguće je kodificirati *Tipovi osnovnih tečaja*.   
 Neki primjeri korištenja *Tipovi osnovnih tečaja* nalazimo u modulima:

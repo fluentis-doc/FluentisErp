@@ -1,29 +1,32 @@
 ---
-title: Kategorija zadatka
+title: Kategorije zadatka
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji: **Tablice > Zaposlenici > Radna mjesta > Kategorije radnih mjesta**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Zadaci > Kategorije zadataka**.
 
-:::important Čemu služi
-U ovoj tablici moguće je kodirati *Kategorije radnih mjesta*, koje se koriste za kategorizaciju *Radnih mjesta*.
-Primjer primjene vidljiv je u upravljanju **Radnim mjestima**.
+:::important Namjena
+U ovoj je tablici moguće definirati šifre *kategorija zadataka* koje se koriste za kategorizaciju *radnih mjesta (zadataka)*.
+
+Primjer korištenja nalazi se u evidenciji **Radna mjesta (zadataka)**.
 :::
 
-Tablica omogućuje unos novih *Kategorija radnih mjesta* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
+Tablica omogućuje unos novih *kategorija radnih mjesta (zadataka)* i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-#### Pretraživanje kategorija radnih mjesta
+#### Pretraživanje kategorija zadataka
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u tablici rezultata.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Pretraživanje** kako bi se rezultati prikazali u tablici rezultata.
 
-#### Unos kategorija radnih mjesta 
+#### Unos kategorija zadataka
 
-Za unos novih *Kategorija radnih mjesta* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Za unos novih *kategorija zadataka* potrebno je kliknuti na prvi prazni redak u tablici ili pritisnuti tipku **Novo**.
 
-#### Specifična polja 
-    
-> **Šifra**: šifra *Kategorije radnih mjesta*.   
-> **Opis**: opis *Kategorije radnih mjesta*.   
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link:[Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+#### Posebna polja
+
+> **Šifra**: šifra *kategorije radnog mjesta*.
+
+> **Opis**: opis *kategorije radnog mjesta*.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničko funkcioniranje obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

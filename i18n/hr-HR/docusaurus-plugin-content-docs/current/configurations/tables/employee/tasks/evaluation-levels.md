@@ -1,16 +1,16 @@
 ---
-title: Razine ocjena kompetencije
+title: Razine evaluacije
 sidebar_position: 5
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Radna mjesta > Razine ocjene kompetencija**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Zadaci > Razine evaluacije**.
 
 :::important Čemu služi
-U ovoj tablici moguće je kodirati *Razine ocjene kompetencija*, koje se koriste za procjenu *Kompetencija po radnom mjestu*.   
+U ovoj tablici moguće je kodirati *Razine (evaluacije) kompetencija*, koje se koriste za procjenu *Kompetencija po radnom mjestu*.   
 Primjer primjene vidljiv je u upravljanju **Kompetencijama**.
 :::
 
-Tablica omogućuje unos novih *Razine ocjene kompetencija* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
+Tablica omogućuje unos novih *Razine ocjene (evaluacije) kompetencija* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
 
 #### Pretraživanje razina ocjene kompetencija
 

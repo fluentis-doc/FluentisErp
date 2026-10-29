@@ -1,55 +1,80 @@
 ---
-title: Oprema zaštite na radu
+title: Osobna zaštitna oprema (OZO)
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putu **Tabele > Zaposlenici > Oprema zaštite na radu > Oprema zaštite na radu**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Osobna zaštitna oprema > Osobna zaštitna oprema**.
 
-U ovoj tablici moguće je kodirati Oprema zaštite na radu, skraćeno O.Z.R., koju operateri trebaju posjedovati za obavljanje određenih zadataka.  
-Neki primjeri korištenja *O.Z.R.* nalazimo u upravljanjima:
-> **Zadaci** - u kartici *O.Z.R. za dodijeliti*;
-> **Dodjela/Povrat O.Z.R.**;   
-> **Povijest dodjele/povrata O.Z.R.**.
+U ovoj je tablici moguće definirati šifre osobne zaštitne opreme (OZO) koju radnici moraju imati kako bi obavljali određene poslove.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Primjeri korištenja *OZO-a* nalaze se u sljedećim evidencijama:
 
-#### Pretraživanje O.Z.R.
+> **Radna mjesta** – na kartici *OZO za dodjelu*;
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na gumb **Traži** kako bi se prikazali rezultati unutar tablice rezultata.
+> **Dodjela/povrat OZO-a**;
 
-#### Unos O.Z.R.
+> **Povijest dodjele/povrata OZO-a**.
 
-Za unos novih O.Z.R. potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti gumb **Novo**.   
-Za novi zapis moraju se unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Tablica omogućuje unos novih zapisa i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-## Oprema zaštite na radu
+#### Pretraživanje OZO-a
 
-Ovo je popis u koji se unose osnovne informacije o *O.Z.R.*.   
-Popis se sastoji od sljedećih informacija:   
-> **Šifra**: šifra Kategorije *O.Z.R.*   
-> **Opis**: opis Kategorije *O.Z.R.*   
-> **Šifra kategorije**: šifra *Kategorije O.Z.R.*  
-> **Opis kategorije**: opis *Kategorije O.Z.R.*   
-> **Šifra kategorije rizika**: šifra *Kategorije rizika O.Z.R.*  
-> **Opis kategorije rizika**: opis *Kategorije rizika O.Z.R.*   
-> **Mjeseci valjanosti**: broj mjeseci valjanosti *O.Z.R.* u normalnim uvjetima korištenja   
-> **CE**: označava je li *O.Z.R.* označen CE znakom (Certifikacija Europske unije)   
-> **Aktivno**: označava je li *O.Z.R.* još uvijek valjan i upotrebljiv   
-> **Uporaba**: slobodne napomene o korištenju   
-> **Preporuke ili upute za uporabu**: slobodne napomene   
-> **Dostupna dokumentacija**: slobodne napomene  
-> **Bilješka**: slobodne napomene
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Pretraživanje** kako bi se rezultati prikazali u tablici rezultata.
 
-### Oprema zaštite na radu korištena u Zadacima
+#### Unos OZO-a
 
-Ovo je popis samo za pregled, u kojem se prikazuju svi *Zadaci* koji koriste odabrani *O.Z.R.*.
-Informacije se unose i upravljaju u upravljanju *Zadacima*.
-Popis se sastoji od sljedećih informacija:  
-> **Šifra zadatka**: šifra *Zadatka*.   
-> **Opis zadatka**:  opis *Zadatka*.   
-> **Uporaba**: napomene unesene za specifičnu *Uporabu* O.Z.R. u okviru odabranog *Zadatka*.   
-> **Preporuke ili upute za uporabu**: napomene unesene za *Preporuke* ili upute za uporabu *O.Z.R.* specifične za taj *Zadatak*.  
-> **Bilješke**: slobodne napomene.
+Za unos nove *OZO* potrebno je kliknuti na prvi prazni redak u tablici ili pritisnuti gumb **Novo**.
 
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+## Osobna zaštitna oprema
+
+Ovo je popis u koji se unose osnovni podaci o *OZO-u*.
+
+Popis sadrži sljedeće podatke:
+
+> **Šifra**: šifra *OZO-a*.
+
+> **Opis**: opis *OZO-a*.
+
+> **Šifra kategorije**: šifra *kategorije OZO-a*.
+
+> **Opis kategorije**: opis *kategorije OZO-a*.
+
+> **Šifra kategorije rizika**: šifra *kategorije rizika OZO-a*.
+
+> **Opis kategorije rizika**: opis *kategorije rizika OZO-a*.
+
+> **Mjeseci valjanosti**: broj mjeseci tijekom kojih je *OZO* valjana pri uobičajenim uvjetima uporabe.
+
+> **CE**: označava ima li *OZO* oznaku CE (oznaku europske sukladnosti).
+
+> **Aktivno**: označava je li *OZO* još valjana i može li se koristiti.
+
+> **Uporaba**: slobodne napomene o uporabi.
+
+> **Upute ili preporuke za uporabu**: slobodne napomene o uporabi.
+
+> **Dostupna dokumentacija**: slobodne napomene o dostupnoj dokumentaciji.
+
+> **Napomene**: slobodne napomene.
+
+### Osobna zaštitna oprema koja se koristi na radnim mjestima
+
+Ovo je popis samo za čitanje u kojem se prikazuju sva *radna mjesta* na kojima se koristi odabrana *OZO*.
+
+Prikazani podaci unose se i održavaju u evidenciji *Radna mjesta*.
+
+Popis sadrži sljedeće podatke:
+
+> **Šifra radnog mjesta**: šifra *radnog mjesta*.
+
+> **Opis radnog mjesta**: opis *radnog mjesta*.
+
+> **Uporaba**: napomene o specifičnoj uporabi *OZO-a* na određenom *radnom mjestu*.
+
+> **Upute ili preporuke za uporabu**: napomene o posebnim uputama ili preporukama za uporabu *OZO-a* na određenom *radnom mjestu*.
+
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničko funkcioniranje obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

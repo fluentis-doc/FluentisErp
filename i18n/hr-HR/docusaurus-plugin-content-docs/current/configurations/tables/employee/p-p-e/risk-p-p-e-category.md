@@ -1,5 +1,5 @@
 ---
-title: O.Z.O. Kategorija rizika
+title: Kategorija rizika O.Z.O.
 sidebar_position: 2
 ---
 

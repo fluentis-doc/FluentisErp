@@ -14,7 +14,7 @@ Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda
 
 ### Pretraživanje tipova obuke
 
-Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, potrebno je kliknuti na dugme **Pretraži** kako bi se rezultati prikazali u tabeli sa rezultatima.
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
 ### Unos tipova obuke
 

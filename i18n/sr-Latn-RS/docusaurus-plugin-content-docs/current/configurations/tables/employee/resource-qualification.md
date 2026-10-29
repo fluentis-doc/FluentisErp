@@ -3,7 +3,7 @@ title: Kvalifikacije
 sidebar_position: 10
 ---
 
-Tabela se nalazi na putanji **Tabele > Zaposleni > Kvalifikacije**.
+Tabela se nalazi na putanji **Tabele > Zaposlenici > Kvalifikacije**.
 
 Ovaj obrazac definiše kvalifikacije za obradu koje se zatim koriste u radnim centrima za aktivnosti podešavanja i obrade. Svaki radnik može imati jednu ili više kvalifikacija, uz određivanje nivoa prioriteta (A, B,...). Kvalifikacije se definišu u kartonu radnika.
 

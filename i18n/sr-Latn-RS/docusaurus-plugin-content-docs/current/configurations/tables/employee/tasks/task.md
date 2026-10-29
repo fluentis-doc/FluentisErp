@@ -3,62 +3,86 @@ title: Zadaci
 sidebar_position: 2
 ---
 
-Tabela se nalazi na putanji: **Tabele > Zaposleni > Zadaci > Zadaci**.
+Tabela se nalazi na putanji **Tabele > Zaposleni > Zadaci > Zadaci**.
 
-U ovoj tabeli moguće je evidentirati *zadatke* u preduzeću.  
-Primeri korišćenja *zadataka* vidljivi su u sledećim modulima:  
-> **Zaposleni** – na kartici *Radna mesta*;  
-> **Osnovni kursevi** – na kartici *Obuhvaćena radna mesta*;  
-> **Kursevi obuke** – na kartici *Uključena radna mesta*;  
-> **O.Z.O.** – u listi *Oprema za zaštitu na radu koja se koristi na radnim mestima*;  
-> **Kompetencije** – u listi *Kompetencije povezane sa radnim mestima*.
+U ovoj tabeli moguće je definisati šifre *zadataka* u preduzeću.
 
-Tabela omogućava unos novih *radnih mesta* ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
+Primeri upotrebe *zadataka (radnih mesta)* nalaze se u sledećim evidencijama:
 
-**## Pretraživanje radnih mesta**
+> **Zaposleni** – na kartici *Zadaci*;
 
-Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
+> **Osnovni kursevi** – na kartici *Obuhvaćeni zadaci*;
 
-**## Unos radnih mesta**
+> **Kursevi osposobljavanja** – na kartici *Uključeni zadaci*;
 
-Za unos novih *radnih mesta* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.  
-Za novi zapis potrebno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
+> **Lična zaštitna oprema** – na listi *Lična zaštitna oprema koja se koristi za zadatke*;
 
-**### Radna mesta**
+> **Kompetencije** – na listi *Kompetencije povezane sa zadacima*.
 
-Ovo je lista u koju se unose osnovne informacije o *radnom mestu*.
+Tabela omogućava unos novih *zadataka* i pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Lista se sastoji od sledećih podataka:  
-> **Šifra**: šifra *radnog mesta*.  
-> **Opis**: opis *radnog mesta*.  
-> **Poslovni centar**: šifra *poslovnog centra*.  
-> **Stavka troška**: šifra *stavke troška*.  
+## Pretraživanje zadataka
+
+Obrazac se sastoji od oblasti za filtriranje i oblasti sa rezultatima. Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Pretraživanje** kako bi se rezultati prikazali u tabeli rezultata.
+
+## Unos zadataka
+
+Za unos novih *zadataka* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifra** i **Opis**.
+
+### Zadaci
+
+Ovo je lista u koju se unose osnovni podaci o *zadatku*.
+
+Lista sadrži sledeće podatke:
+
+> **Šifra**: šifra *zadatka*.
+
+> **Opis**: opis *zadatka*.
+
+> **Centar preduzeća**: šifra *centra preduzeća*.
+
+> **Stavka troška**: šifra *stavke troška*.
+
 > **Opis stavke troška**: opis *stavke troška*.
 
-**### Zaštitna oprema za dodelu**
+### LZO za dodelu
 
-Ovo je lista u koju se unosi *oprema za zaštitu na radu (O.Z.O.)* potrebna za izabrano *radno mesto*.
+Ovo je lista u koju se unosi *lična zaštitna oprema (LZO)* potrebna za odabrani *zadatak*.
 
-Ove informacije koriste se u funkcionalnosti *Dodela/Povrat opreme za zaštitu na radu*.
+Ti podaci koriste se u evidenciji *Dodela/povraćaj LZO-a*.
 
-Lista se sastoji od sledećih podataka:  
-> **Šifra O.Z.O.**: šifra *opreme za zaštitu na radu*.  
-> **Opis O.Z.O.**: opis *opreme za zaštitu na radu*.  
-> **Meseci važenja**: period važenja opreme za zaštitu na radu za izabrano *radno mesto* (u mesecima).  
-> **Upotreba**: slobodne beleške o upotrebi.  
-> **Uputstva ili preporuke za upotrebu**: slobodne beleške sa preporukama ili uputstvima.  
-> **Napomene**: slobodne beleške.
+Lista sadrži sledeće podatke:
 
-**### Kompetencije**
+> **Šifra LZO-a**: šifra *LZO-a*.
 
-Ovo je lista u koju se unose *kompetencije* potrebne za obavljanje izabranog *radnog mesta*.
+> **Opis LZO-a**: opis *LZO-a*.
 
-Ove informacije koriste se u funkcionalnosti *Procena kompetencija*.
+> **Meseci važenja**: broj meseci važenja *LZO-a* za odabrani *zadatak*.
 
-Lista se sastoji od sledećih podataka:  
-> **Šifra kompetencije**: šifra *kompetencije*.  
-> **Opis kompetencije**: opis *kompetencije*.  
-> **Šifra nivoa**: šifra *nivoa ocenjivanja kompetencije* potrebnog za izabrano *radno mesto*.  
-> **Opis nivoa**: opis *nivoa ocenjivanja kompetencije*.  
-> **Kriterijumi procene**: beleške za definisanje *kriterijuma procene* koji se koriste pri proceni kompetencije za određeno *radno mesto*.  
-> **Napomene**: slobodne beleške.
+> **Upotreba**: slobodne napomene o upotrebi.
+
+> **Uputstva ili preporuke za upotrebu**: slobodne napomene o upotrebi.
+
+> **Napomene**: slobodne napomene.
+
+### Kompetencije
+
+Ovo je lista u koju se unose *kompetencije* potrebne za obavljanje odabranog *zadatka*.
+
+Ti podaci koriste se u evidenciji *Procena kompetencija*.
+
+Lista sadrži sledeće podatke:
+
+> **Šifra kompetencije**: šifra *kompetencije*.
+
+> **Opis kompetencije**: opis *kompetencije*.
+
+> **Šifra nivoa**: šifra *nivoa ocenjivanja kompetencije* potrebnog za obavljanje odabranog *zadatka*.
+
+> **Opis nivoa**: opis *nivoa ocenjivanja kompetencije*.
+
+> **Kriterijumi procene**: napomene kojima se definišu *kriterijumi procene* za vrednovanje *kompetencije* za određeni *zadatak*.
+
+> **Napomene**: slobodne napomene.
