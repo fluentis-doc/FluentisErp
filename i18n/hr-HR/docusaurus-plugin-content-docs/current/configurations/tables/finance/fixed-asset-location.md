@@ -1,9 +1,10 @@
 ---
-title: Lokacija imovine
+title: Lokacija osnovnih sredstava
 sidebar_position: 35
 ---
 
-U ovoj tablici možemo kodificirati lokacije koje će se dodijeliti imovini.
-Tablica se sastoji samo od polja:
-- *Šifra*  
+U ovoj tablici možemo definirati lokacije koje se dodjeljuju osnovnim sredstvima.
+
+Tablica sadrži samo sljedeća polja:
+- *Šifra*
 - *Opis*

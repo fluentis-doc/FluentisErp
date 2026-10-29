@@ -7,7 +7,7 @@ Tablica omogućuje definiranje, putem standardnog Fluentis brojača, numeraciju 
 
 Za definiciju polja brojača pogledati [**ovdje**](/docs/configurations/tables/fluentis-numerations).
 
-:::tip[FAst Start]
+:::tip[Fast Start]
 Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
 :::
 

@@ -1,6 +1,6 @@
 ---
-title: Predlošci doprinosa
+title: Šabloni doprinosa
 sidebar_position: 8
 ---
 
-Tablica omogućuje korisniku definiranje uzroka doprinosa INPS koji se povezuju s vrstama zadržavanja: **kao što je navedeno u dokumentaciji o vrstama zadržavanja, upravljanje ovom sekcijom više nije potrebno.**
+Ova tabela omogućava korisniku definisanje šablona doprinosa INPS-u koji se povezuju sa vrstama poreza po odbitku. **Kao što je navedeno u dokumentaciji o vrstama poreza po odbitku, upravljanje ovim odeljkom više nije potrebno.**

@@ -1,14 +1,14 @@
 ---
-title: Modalitet uplate
+title: Načini uplate
 sidebar_position: 13
 ---
 
-Tablica omogućuje definiranje i upravljanje načinima uplate poreza u modulu Primatelji.
+Ova tabela omogućava definisanje i upravljanje načinima plaćanja poreza u modulu Primaoci.
 
-#### Specifična polja
+#### Posebna polja
 
-**Šifra**: šifra načina uplate.
+**Šifra**: šifra načina plaćanja.
 
-**Opis**: opis načina uplate.
+**Opis**: opis načina plaćanja.
 
-Primjer: tipičan zapis koji se unosi u ovu tablicu, a zatim koristi za ažuriranje podataka o uplati poreznih predujmova primatelja, jest ***F24*** (obrazac za uplatu poreza).
+Primer: tipičan zapis koji se unosi u ovu tabelu i zatim koristi za ažuriranje podataka o plaćanju akontacije poreza po odbitku za primaoce jeste **F24** (obrazac za plaćanje poreza).

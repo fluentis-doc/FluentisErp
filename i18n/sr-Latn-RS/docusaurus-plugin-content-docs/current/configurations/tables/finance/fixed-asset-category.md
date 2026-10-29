@@ -3,106 +3,114 @@ title: Kategorija osnovnog sredstva
 sidebar_position: 5
 ---
 
-:::tip[FAst Start]
-Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu odnosi se postupak [**Fast Start**](/docs/guide/fast-start).
 
-NU slučaju da se želi konfigurirati ručno, potrebno je pratiti kontrolni popis na poveznici.
+Ako nameravate ručno da konfigurišete tabelu, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Unutar ove tablice kodificiraju se kategorije dugotrajne imovine kojima upravlja poduzeće. 
+U ovoj tabeli definišu se kategorije osnovnih sredstava kojima se upravlja u preduzeću.
 
-### Gornja tablica 
+### Gornja tabela
 
-**Kategorija**: alfanumerička šifra.
+**Kategorija**: alfanumerička šifra kategorije.
 
-**Opis kategorije**: opis kategorije.
+**Opis kategorije**: opis kategorije.
 
-**Konto**: bilancni konto dugotrajne imovine.
+**Konto**: bilansni konto osnovnog sredstva.
 
-**Podkonto**: bilancni podkonto dugotrajne imovine.
+**Analitički konto**: bilansni analitički konto osnovnog sredstva.
 
-**Opis**: opis bilancnog podkonta dugotrajne imovine.
+**Opis**: opis bilansnog analitičkog konta osnovnog sredstva.
 
-**Mat/Nem.**: oznaka tipologije – materijalna ili nematerijalna imovina.
+**Materijalno/nematerijalno**: oznaka vrste imovine, materijalne ili nematerijalne.
 
-**Maksimalna amortizacija**: maksimalni iznos amortizacije koji se može ostvariti za svaku imovinu u kategoriji.
+**Maksimalni iznos amortizacije**: najveći iznos amortizacije koji se može obračunati za svako osnovno sredstvo u kategoriji.
 
-**Post. amort.**: maksimalni postotak vrijednosti imovine koji se može amortizirati.
+**Procenat amortizacije**: najveći procenat vrednosti osnovnog sredstva koji se može amortizovati.
 
-**Inkrementalne operacije**: ako zastavica nije postavljena (zadano stanje), svaka stavka povećanja vrijednosti imovine vodit će se kao zaseban i autonoman detalj amortizacije. Ako je zastavica postavljena, svako povećanje će se pridružiti početnoj stavci kupnje, povećavajući uvijek početnu vrijednost na njezin datum nastanka.
+**Povećanja vrednosti**: ako oznaka nije aktivirana, što je podrazumevana postavka, svaki red povećanja vrednosti osnovnog sredstva obrađuje se zasebno, sa sopstvenim detaljima amortizacije. Ako je oznaka aktivirana, svako povećanje pripisuje se izvornom redu nabavke, čime se početna vrednost povećava uz zadržavanje izvornog datuma nabavke.
 
-**Ukupni limit amortizacije**: granica za primjenu ukupne amortizacije od 100% u godini kupnje.
+**Ograničenje ukupne amortizacije**: granični iznos za primenu ukupne amortizacije od 100% u godini nabavke.
 
-**Revalorizacije**: oznaka za upravljanje detaljima revalorizacija.
+**Revalorizacije**: oznaka za upravljanje detaljima revalorizacije.
 
-**Šifra bilance**: šifra bilance za ispis pregleda revalorizacija.
+**Šifra bilansa**: šifra bilansa koja se koristi za štampanje izveštaja o revalorizacijama.
 
-**Upravljanje izvan knjigovodstva**: aktivira upravljanje izvanknjigovodstvenim podacima imovine; to podrazumijeva dupliciranje bilancnih vrijednosti radi primjene posebne logike izvanknjigovodstvene amortizacije.
+**Vanbilansno upravljanje**: aktivira upravljanje vanbilansnim podacima osnovnog sredstva. To uključuje dupliranje računovodstvenih bilansnih vrednosti kako bi se omogućio zaseban vanbilansni obračun amortizacije.
 
-**Dani**: aktiviranjem ove oznake izračun amortizacijskog dijela uzima u obzir točan broj dana posjedovanja imovine u tekućoj godini, umjesto standardne logike koja izračunava cjelokupni dio neovisno o datumu kupnje, eventualno ga prepolovljujući u prvoj godini ako je zastavica *Prva godina amortizacije* aktivirana (vidi dolje).
+**Dani**: aktiviranjem ove oznake pri obračunu amortizacije uzima se u obzir tačan broj dana posedovanja sredstva u tekućoj godini. Time se zamenjuje standardna logika prema kojoj se obračunava puni iznos amortizacije nezavisno od datuma nabavke, uz mogućnost prepolovljavanja amortizacije u prvoj godini ako je u drugoj tabeli aktivirana oznaka *Amortizacija u prvoj godini* (videti u nastavku).
 
-**Numeracija**: (Opcionalno) Omogućuje definiranje numeracije kartica imovine specifične za svaku kategoriju. Polje se povezuje s [**odgovarajućom tablicom**](/docs/configurations/tables/fluentis-numerations) za definiranje numeratora. Ako nije definirano, zadano se koristi opća numeracija imovine povezana s predšifrom (ili jedinstvena).
+**Numerisanje**: (opciono) omogućava definisanje posebnog numerisanja kartica osnovnih sredstava za svaku pojedinačnu kategoriju. Polje je povezano sa [**odgovarajućom tabelom**](/docs/configurations/tables/fluentis-numerations), u kojoj se definiše brojač. Ako brojač nije definisan, podrazumevano se nastavlja korišćenje opšteg numerisanja osnovnih sredstava, eventualno povezanog sa prefiksom ili jedinstvenim numerisanjem.
 
-### Druga tablica
+### Druga tabela
 
-Druga sekcija posvećena je postavljanju detalja amortizacije primjenjivih na odabranu nadređenu kategoriju.
+Drugi odeljak namenjen je podešavanju detalja amortizacije koji se primenjuju na odabranu kategoriju osnovnih sredstava iz gornje tabele.
 
-**Tip amortizacije**: odabrati tip amortizacije između redovne amortizacije, ubrzane amortizacije i usporene amortizacije (posljednja se obično ne koristi).
+**Vrsta amortizacije**: bira se vrsta amortizacije između redovne, ubrzane i usporene amortizacije. Usporena amortizacija se po pravilu ne koristi.
 
-**Konto**: troškovni konto na kojem se evidentira periodična amortizacija.
+**Konto**: konto troška na kojem se evidentira periodična amortizacija.
 
-**Podkonto**: troškovni podkonto na kojem se evidentira periodična amortizacija.
+**Analitički konto**: analitički konto troška na kojem se evidentira periodična amortizacija.
 
-**Opis konta**: opis troškovnog podkonta.
+**Opis konta**: opis analitičkog konta troška.
 
-**Konto rezerve**: rezerni konto na kojem se knjiži periodična amortizacija.
+**Konto ispravke vrednosti**: konto ispravke vrednosti na kojem se akumulira periodična amortizacija.
 
-**Podkonto rezerve**: rezerni podkonto na kojem se knjiži periodična amortizacija, koji može biti i ista aktivna bilancna vrijednost za izravno smanjenje te vrijednosti.
+**Analitički konto ispravke vrednosti**: analitički konto ispravke vrednosti na kojem se akumulira periodična amortizacija. To može biti i isti konto na kojem se evidentira vrednost imovine, kako bi se vrednost direktno umanjivala na tom kontu.
 
-**Opis konta**: opis rezernog podkonta.
+**Opis konta**: opis analitičkog konta ispravke vrednosti.
 
-**Isključi**: oznaka koja omogućuje isključenje odabranog tipa amortizacije iz automatskog izračuna amortizacije.
+**Isključi**: ovom oznakom odabrana vrsta amortizacije isključuje se iz automatskog obračuna amortizacije.
 
-**Postotak**: postotak amortizacije koji se primjenjuje za odabrani tip amortizacije.
+**Procenat**: procenat amortizacije koji se primenjuje za odabranu vrstu amortizacije.
 
-**Broj godina**: aktivira se samo za ubrzanu amortizaciju, gdje se unose 3 godine primjene. Za rabljenu imovinu broj godina primjene automatski se postavlja samo na godinu kupnje.
+**Broj godina**: polje je aktivno samo za ubrzanu amortizaciju, a u njega se unose tri godine tokom kojih se ona primenjuje. Za korišćena osnovna sredstva broj godina primene automatski se postavlja samo na godinu nabavke.
 
-**Amortizacija prve godine**: automatski se predlaže za sve materijalne kategorije; prepolovljuje postotak amortizacije u godini početka korištenja imovine.
+**Amortizacija u prvoj godini**: automatski se predlaže za sve kategorije materijalnih osnovnih sredstava. Prepolovljava procenat amortizacije u godini početka korišćenja osnovnog sredstva.
 
-**Porezna**: može se postaviti za stavke ubrzane amortizacije kako bi se tretirala kao porezna amortizacija koja se ne knjiži.
+**Poreska**: može se aktivirati za redove ubrzane amortizacije kako bi se njome upravljalo kao poreskom amortizacijom koja se ne knjiži u računovodstvu.
 
-**Tip odbitnosti**: omogućuje dodjelu šifre odbitnosti za porezne svrhe određenom tipu amortizacije.
+**Vrsta poreske priznatosti**: omogućava dodeljivanje šifre poreske priznatosti odabranoj vrsti amortizacije.
 
-**Opis odbitnosti**: opis tipa odbitnosti.
+**Opis poreske priznatosti**: opis vrste poreske priznatosti.
 
-**Konto / podkonto / opis Neodbitno**: u ovom polju moguće je unijeti računovodstveni podkonto na kojem se automatski knjiži fiskalno neodbitni dio amortizacijskog dijela. Konto se prikazuje u kartici imovine uz redak koji se odnosi na amortizacijski dio. Da bi se knjižio, i prilikom godišnje amortizacije i prilikom ponovnog obračuna amortizacije u zatvaranju polugodišnjih konta, potrebno je aktivirati odgovarajuću oznaku (flag). Zastavica se može unaprijed definirati unutar [**parametara imovine**](/docs/configurations/parameters/finance/fixed-assets-parameters).
+**Konto / analitički konto / opis poreski nepriznatog iznosa**: u ovo polje može se uneti računovodstveni analitički konto na kojem će se automatski knjižiti poreski nepriznati deo amortizacije. Konto se prenosi u karticu osnovnog sredstva, u red koji odgovara pripadajućem iznosu amortizacije. Da bi se iznos knjižio, i tokom knjiženja godišnje amortizacije i tokom ponovnog obračuna amortizacije pri zatvaranju privremenih konta, potrebno je aktivirati odgovarajuću oznaku. Ta oznaka može se unapred podesiti u [**parametrima osnovnih sredstava**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
-#### Specifični gumbi
+#### Posebna dugmad
 
-**Pretraži u gornjoj tablici**: omogućuje pretraživanje u gornjoj tablici putem polja za filtriranje kategorije i opisa.  
-**Unesi u gornju tablicu**: omogućuje unos nove kategorije imovine.  
-**Unesi u tablicu detalja**: omogućuje unos detalja za odabranu gornju tablicu.  
-**Unesi u tablicu Cdc**: omogućuje unos centara troškova za odabranu gornju tablicu. ZASTARJELO  
-**Izbriši odabrane retke**: omogućuje brisanje odabranih redaka (kategorija imovine).  
-**Izbriši odabrane retke iz donje tablice**: omogućuje brisanje odabranih redaka donje tablice (detalj vrste amortizacije).  
-**Izbriši odabrane retke iz tablice Cdc**: omogućuje brisanje odabranih redaka tablice centara troškova. ZASTARJELO  
-**Spremi**: omogućuje spremanje izmjena.  
+**Pretraži gornju tabelu**: omogućava pretraživanje gornje tabele prema kategoriji i opisu.
 
-### MREŽA CENTARA TROŠKOVA (UKLONJENA AKO JE AKTIVAN MODUL PUNOG KONTROLINGA U TABLICI TVRTKE, BEZ PARAMETRA ZA UPORABU KNJIGOVODSTVENIH CENTARA)
+**Unesi u gornju tabelu**: omogućava unos nove kategorije osnovnih sredstava.
 
-:::note NAPOMENA
-Iako se upravljanje centrima troškova za imovinu može obrađivati složenijim logikama upravljanja objektivnom amortizacijom, korisnim za potrebe detaljne kontrole upravljanja, ipak je moguće povezati specifični centar troškova za pojedinu imovinu, **u kartici Detalji**, (ili izravno na kategoriji imovine, no u tom slučaju potrebno je deaktivirati zastavicu Upravljanje controllingom u kartici tvrtke u upotrebi) kako bi se valorizirala godišnja amortizacija za porezne i računovodstvene svrhe.
+**Unesi u tabelu detalja**: omogućava unos detalja za odabranu kategoriju iz gornje tabele.
+
+**Unesi u tabelu centara troška**: omogućava unos centara troška za odabranu kategoriju iz gornje tabele. ZASTARELO.
+
+**Izbriši odabrane redove**: omogućava brisanje odabranih redova kategorija osnovnih sredstava.
+
+**Izbriši odabrane redove iz donje tabele**: omogućava brisanje odabranih redova iz donje tabele, odnosno detalja vrste amortizacije.
+
+**Izbriši odabrane redove iz tabele centara troška**: omogućava brisanje odabranih redova iz tabele centara troška. ZASTARELO.
+
+**Sačuvaj**: omogućava čuvanje promena.
+
+### TABELA CENTARA TROŠKA (UKLONJENA AKO JE U TABELI PREDUZEĆA AKTIVIRAN POTPUNI MODUL CONTROLLING, BEZ PARAMETRA ZA KORIŠĆENJE RAČUNOVODSTVENIH CENTARA)
+
+:::note Napomena
+Iako se upravljanje centrima troška za osnovna sredstva može sprovoditi primenom složenijih pravila amortizacije, korisnih za detaljnu kontrolu poslovanja, moguće je i dodeliti pojedinačni centar troška svakom osnovnom sredstvu na kartici **Detalji**. Centar troška može se dodeliti i direktno kategoriji osnovnog sredstva, ali je u tom slučaju potrebno deaktivirati oznaku za upravljanje kontrolingom u šifarniku aktivnog preduzeća. Dodeljeni centar troška vrednuje se godišnjim iznosom amortizacije obračunatim za poreske i računovodstvene potrebe.
 :::
 
-U kartici imovine, u mreži centara troškova unutar taba **Operacije imovine** moguće je dodijeliti, u odnosu na **pojedini redak amortizacije**, zadanu postotnu valorizaciju po centru troškova za imovinu povezanu s kategorijom. Ova postavka ima sekundarnu važnost u odnosu na dodjelu centara troškova unutar pojedinačne kartice imovine (u tabu Detalji).
+Na kartici osnovnog sredstva, u tabeli centara troška na kartici **Transakcije imovine**, moguće je za **pojedinačni red amortizacije** definisati podrazumevani procenat raspodele na centar troška za osnovna sredstva koja pripadaju toj kategoriji. Ova postavka podređena je dodeli centara troška direktno na kartici pojedinačnog osnovnog sredstva, u odeljku Detalji.
 
-**CDC**: centar troškova kojem se dodjeljuje valorizacija imovine pripadajuće kategoriji.
+**Centar troška**: centar troška kojem se dodeljuje vrednost osnovnih sredstava iz odabrane kategorije.
 
-**Opis**: opis centra troškova.
+**Opis**: opis centra troška.
 
-**Postotak**: postavka postotka valorizacije centra troškova.
+**Procenat**: procenat vrednosti koji se dodeljuje centru troška.
 
-### **VIDEO TUTORIALI**
-:::important Pogledajte također
-[**VIDEO TUTORIALI O TABLICAMA IMOVINE**](/docs/video/finance/intro)
+### VIDEO-UPUTSTVA
+
+:::important Pogledajte i
+[**VIDEO-UPUTSTVA O TABELAMA OSNOVNIH SREDSTAVA**](/docs/video/finance/intro)
 :::

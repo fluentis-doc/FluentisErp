@@ -1,14 +1,14 @@
 ---
-title: Numeriranje dospijeća plaćanja
+title: Numeriranje otvorenih stavki
 sidebar_position: 17
 ---
 
-:::tip[FAst Start]
-Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu se tablicu odnosi postupak [**Fast Start**](/docs/guide/fast-start).
 :::
 
-Definira numeraciju važeću za knjižene stavke, koja **mora** biti godišnja i **bez** nadoknade eventualnih praznina u numeraciji.
+Definira numeriranje koje se koristi za računovodstvene stavke. Numeriranje **mora** biti godišnje i **ne smije** omogućivati popunjavanje eventualnih praznina u numeriranju.
 
-:::tip Alert
-u fazi pokretanja poduzeća, u slučaju uvoza otvorenih stavki iz Excela, preporučuje se omogućiti brojač s datumom koji prethodi minimalnom datumu dokumenta, budući da će ***FluentisERP*** dodijeliti broj stavke na temelju godine dokumenta i stoga brojač mora biti važeći kako bi se mogao izvršiti uvoz
+:::tip Upozorenje
+Prilikom početnog pokretanja sustava, ako se otvorene stavke uvoze iz Excela, preporučuje se omogućiti brojač s datumom početka koji prethodi najranijem datumu dokumenta. Naime, **FluentisERP** dodjeljuje broj stavke na temelju godine dokumenta, pa brojač mora biti valjan kako bi se uvoz mogao izvršiti.
 :::

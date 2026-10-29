@@ -1,22 +1,22 @@
 ---
-title: Identifikacijska šifra natječaja / Jedinstvena šifra projekta
+title: Identifikaciona šifra tendera / Jedinstvena šifra projekta
 sidebar_position: 8
 ---
 
-Dvije tablice, u osnovi identične, omogućuju unos identifikacijskih kodova javne nabave i projektnih kodova koji se zatim mogu koristiti u dokumentima aktivnog ciklusa.
+Dve tabele, u osnovi identične, omogućavaju unos identifikacionih šifara javnih nabavki i šifara projekata koje se zatim mogu koristiti u dokumentima aktivnog ciklusa.
 
-Podsjeća se da postoje dvije oznake u [**karticama klijenata**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) kako bi polja bila vidljiva u zaglavlju dokumenata (narudžba, otpremnica, račun).
+Podsećamo da postoje dve oznake u [**karticama klijenata**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) koje omogućavaju prikaz polja u zaglavlju dokumenata (narudžbina, otpremnica, faktura).
 
-**Šifra:** sadrži šifru natječaja ili projektnu šifru, koja će se, primjerice, prenijeti u SDI datoteke.
+**Šifra:** sadrži šifru tendera ili šifru projekta, koja će se, na primer, preneti u SDI datoteke.
 
-**Datum / Datum zahtjeva:** sadrži datum početka valjanosti šifre.
+**Datum / Datum zahteva:** sadrži datum početka važenja šifre.
 
-**Aktivna šifra:** omogućuje aktiviranje ili deaktiviranje šifre.
+**Aktivna šifra:** omogućava aktiviranje ili deaktiviranje šifre.
 
-**Opis:** detaljan opis povezan sa šifrom, kako bi se identificiralo na koji se natječaj ili projekt odnosi.
+**Opis:** detaljan opis povezan sa šifrom, kako bi se utvrdilo na koji se tender ili projekat odnosi.
 
-**IBAN:** omogućuje unos IBAN koda bankovnog računa koji je, u pravilu, posebno povezan s natječajem ili projektom radi usmjeravanja pripadajućih uplata.
+**IBAN:** omogućava unos IBAN-a bankovnog računa koji je, po pravilu, posebno povezan sa tenderom ili projektom radi usmeravanja pripadajućih uplata.
 
 :::tip[Napomena]
-Za ispravno upravljanje CIG i CUP kodovima u elektroničkom računu, budući da je odgovarajući tag podređen podacima narudžbe, pogledati [**ovdje**](/docs/finance-area/e-invoice/configuration_einvoice)
+Za pravilno upravljanje CIG i CUP šiframa u elektronskoj fakturi, budući da je odgovarajuća oznaka podređena podacima narudžbine, pogledajte [**ovde**](/docs/finance-area/e-invoice/configuration_einvoice).
 :::

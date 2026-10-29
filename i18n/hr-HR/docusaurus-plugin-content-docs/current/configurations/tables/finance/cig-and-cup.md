@@ -1,5 +1,5 @@
 ---
-title: Identifikacijska šifra natječaja / Jedinstvena šifra projekta
+title: Identifikacijska kod natječaja / Jedinstvena šifra projekta
 sidebar_position: 8
 ---
 

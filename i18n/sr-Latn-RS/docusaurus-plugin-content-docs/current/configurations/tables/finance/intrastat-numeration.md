@@ -1,13 +1,12 @@
 ---
-title: Numeriranje Intrastat
+title: Numerisanje Intrastat obrazaca
 sidebar_position: 15
 ---
 
-Tablica omogućuje definiranje, putem standardnog Fluentis brojača, numeraciju Intrastat obrazaca.
+Tabela omogućava definisanje numerisanja Intrastat obrazaca pomoću standardnog Fluentis brojača.
 
-Za definiciju polja brojača pogledati [**ovdje**](/docs/configurations/tables/fluentis-numerations).
+Za definiciju polja brojača pogledajte [**ovde**](/docs/configurations/tables/fluentis-numerations).
 
-:::tip[FAst Start]
-Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Tabela je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start).
 :::
-

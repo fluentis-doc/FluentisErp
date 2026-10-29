@@ -1,17 +1,16 @@
 ---
-title: Status dospijeća plaćanja
+title: Statusi otvorenih stavki
 sidebar_position: 17
 ---
 
-Ova tablica omogućuje slobodno definiranje stavki koje se mogu dodijeliti knjiženim stavkama kako bi se, na primjer, označila određena situacija ili posebno stanje.
+Ova tabela omogućava slobodno definisanje oznaka koje se dodeljuju otvorenim stavkama kako bi se, na primer, označilo njihovo posebno stanje ili status.
 
-Primjerice: osporena, obustavljena, za provjeru itd.
+Primeri: osporeno, obustavljeno, potrebno proveriti itd.
 
-Pozicija se dodjeljuje stavkama (čak i masovno) iz forme *Stavke* putem gumba (u traci izbornika) Promijeni *poziciju stavki*.
+Status se dodeljuje otvorenim stavkama, pojedinačno ili grupno, putem obrasca *Otvorene stavke*, pomoću dugmeta *Promeni status otvorenih stavki* na traci sa alatkama.
 
-#### Specifična polja
+#### Posebna polja
 
-**Šifra**: šifra pozicije stavki.
+**Šifra**: šifra statusa otvorenih stavki.
 
-**Opis**: opis pozicije stavki.
-
+**Opis**: opis statusa otvorenih stavki.

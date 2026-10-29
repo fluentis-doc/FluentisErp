@@ -1,63 +1,60 @@
 ---
-title: Tipovi konta
+title: Vrste konta
 sidebar_position: 30
 ---
 
 :::tip[Fast Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+Na ovu se tablicu odnosi postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se planira ručna konfiguracija, potrebno je slijediti kontrolni popis na poveznici.
+Ako tablicu namjeravate konfigurirati ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-
-Putanja: **Konfiguracija > Tablice > Administracija > Tipovi računa**
+Putanja: **Konfiguracija > Tablice > Administracija > Vrste konta**
 
 ### Upravljanje tablicom
 
-Definicija tablice tipa računa predstavlja ‘kvalifikaciju’ koja proceduri govori kako upravljati šifrom podračuna kojem je dodijeljena:
+Definicija tablice vrsta konta predstavlja svojevrsnu „kvalifikaciju” koja određuje kako će postupak upravljati šifrom analitičkog konta kojoj je dodijeljena:
 
-- Prvenstveno identificira način vrednovanja detalja upravljanja za 4 predviđene vrste kartica (anagrafika).
+- prije svega, određuje kako će se popunjavati detalji upravljanja za četiri predviđene vrste subjekata;
+- zatim određuje kojoj skupini financijskih izvještaja konto pripada (aktiva, pasiva, troškovi ili prihodi);
+- naposljetku, može služiti kao kriterij filtriranja, najčešće unutar pomoći za odabir konta.
 
-- Zatim određuje sekcije pripadnosti u bilanci (aktiva/pasiva/troškovi/prihodi).
+#### Posebna polja
 
-- Može se koristiti i kao kriterij filtriranja, tipično unutar pomoćnog sustava za račune.
+**Šifra**: šifra vrste konta.
 
-#### Specifična polja
+**Opis**: opis vrste konta.
 
-**Šifra**: šifra tipa računa.
+**Aktiva**: označava konta koja pripadaju aktivi.
 
-**Opis**: opis tipa računa.
+**Pasiva**: označava konta koja pripadaju pasivi.
 
-**P. Aktiva**: označeno ako pripada aktivi.
+**Rashodi**: označava konta troškova.
 
-**P. Pasiva**: označeno ako pripada pasivi.
+**Prihodi**: označava konta prihoda.
 
-**E. Troškovi**: označeno ako pripada troškovima.
+**Izvanbilančni računi**: označava konta koja pripadaju izvanbilančnim računima.
 
-**E. Prihodi**: označeno ako pripada prihodima.
+**Kupac**: označava konta kupaca i aktivu.
 
-**C. Nalog**: označeno ako pripada nalog-računima.
+**Dobavljač**: označava konta dobavljača i pasivu.
 
-**Klijent**: označeno za klijente + aktiva.
+**Banka**: označava bankovna konta koja pripadaju aktivi ili pasivi.
 
-**Dobavljač**: označeno za dobavljače + pasiva.
+**Agent**: označava konta agenata i pasivu.
 
-**Banka**: označeno za aktivu ili pasivu + banka.
+**Usluga**: označava konta usluga. Za konta s aktiviranom ovom oznakom postupak automatski upravlja knjiženjima ispravaka i dopuna u okviru međurazdobnih financijskih izvještaja, kao i obračunskim knjiženjima glavne knjige.
 
-**Agent**: označeno za agenta + pasiva.
-
-**Usluga**: označeno za uslugu. Računi s ovom oznakom su podračuni za koje procedura automatski upravlja knjiženjima korekcija i dopuna na razini polugodišnjih bilanci, ali i knjiženjima usklađenja glavne knjige.
-
-**Kontroling**: računi ovog tipa mogu se koristiti samo u području kontrolinga, a ne u knjiženjima glavne knjige.
+**Kontroling**: konta ove vrste mogu se koristiti samo u području kontrolinga, a ne u knjiženjima glavne knjige.
 
 ---
 
-#### Sljedeće oznake (od *Sve* do *Conai postavke*)**
+#### Dodatne oznake (od **Svih** do **Postavki Conai**)
 
-Ovim oznakama omogućuje se vidljivost odgovarajućih kartica unutar kartica knjigovodstvenih zapisa klijenata/dobavljača. Aktiviranjem Sve sve kartice će biti vidljive.
+Ovim se oznakama omogućuje prikaz odgovarajućih kartica unutar računovodstvenih šifarnika kupaca i dobavljača. Aktiviranjem opcije *Svi* prikazat će se sve kartice.
 
-### Video tutorijali
+### Video upute
 
-:::important Pogledajte također
-[**VIDEO TUTORIJALI O ADMINISTRATIVNIM TABLICAMA**](/docs/video/finance/intro)
+:::important Vidi također
+[**VIDEOUPUTE O ADMINISTRATIVNIM TABLICAMA**](/docs/video/finance/intro)
 :::

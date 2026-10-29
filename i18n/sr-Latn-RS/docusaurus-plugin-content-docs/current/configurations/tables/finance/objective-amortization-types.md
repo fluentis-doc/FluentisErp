@@ -1,24 +1,24 @@
 ---
-title: Vrste poreznih/objektivnih amortizacija
+title: Vrste poreske amortizacije
 sidebar_position: 26
 ---
 
-Tablica omogućuje definiranje vrsta poreznih (ili izvanknjigovodstvenih) amortizacija s ciljem da se omogući fleksibilnost pri izračunu izvanknjigovodstvenih amortizacija za alternativne svrhe. 
+Ova tabela omogućava definisanje vrsta poreske amortizacije (ili vanbilansne amortizacije) kako bi se omogućio fleksibilan obračun amortizacije van računovodstva za druge namene.
 
-:::note Pažnja
-Za modul *kontroling* razvijena je nova posebna funkcionalnost (stvaranjem posebne kartice unutar evidencije osnovnog sredstva).
-::: 
+:::note Važno
+Za modul *kontroling* razvijena je nova namenski predviđena funkcionalnost, koja se nalazi na zasebnoj kartici unutar kartice osnovnog sredstva.
+:::
 
-Ova funkcionalnost ostaje aktivna (također radi unatrag kompatibilnosti) u modulu administracije i u budućnosti bi mogla biti obogaćena dodatnim funkcionalnostima korisnim u porezne svrhe.
+Ova funkcionalnost ostaje aktivna u administrativnom modulu, između ostalog i radi kompatibilnosti sa starijim verzijama, a u budućnosti bi mogla biti proširena dodatnim funkcionalnostima korisnim za poreske potrebe.
 
-**Vrsta**: identifikacijska šifra vrste objektivne amortizacije.
+**Tip**: identifikaciona šifra tipa vanbilansne amortizacije.
 
-**Opis**: opis vrste objektivne amortizacije.
+**Opis**: opis tipa vanbilansne amortizacije.
 
-**Inkrementalne operacije**: oznaka za upravljanje kao „inkrementalne“ također za objektivne podatke (vidi istoimenu oznaku u kategoriji osnovnog sredstva).
+**Inkrementalne operacije**: oznaka koja omogućava upravljanje vanbilansnim podacima tako da se tretiraju kao povećanja vrednosti. Pogledajte istoimenu oznaku u kategoriji osnovnih sredstava.
 
-**Izračun po danima korištenja**: oznaka za izračun prema danima korištenja koja omogućuje stvarni obračun dana upotrebe osnovnog sredstva tijekom godine, umjesto korištenja cijele poslovne godine kao kod uobičajenog izračuna.
+**Obračun dana korišćenja**: oznaka koja omogućava obračun stvarnog broja dana korišćenja osnovnog sredstva tokom godine, umesto korišćenja celog obračunskog perioda kao kod uobičajenog obračuna.
 
-**Post.**.: standardna postotna stopa za primjenu.
+**Procenat**: standardni procenat koji se primenjuje.
 
-**Fiksni postotak**: ako je ova oznaka aktivna, postotna stopa bit će fiksna bez mogućnosti prilagodbe za svako osnovno sredstvo zasebno.
+**Fiksni procenat**: ako je ova oznaka aktivirana, procenat je fiksan i ne može se prilagođavati za svako osnovno sredstvo pojedinačno.

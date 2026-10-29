@@ -1,18 +1,18 @@
 ---
-title: Vrsta Intrastat transakcije
+title: Vrsta Intrastat transakcije 
 sidebar_position: 14
 ---
 
-Tablica, unaprijed učitana, definira prirodu transakcija za Intrastat prijave (prema službenim uputama).
+Ova unaprijed popunjena tablica definira prirodu transakcija za Intrastat izvješća, u skladu sa službenim uputama.
 
-Postoji *fiktivna* tipologija **„S – Usluge“** koja služi za označavanje dokumenata (ako su uneseni kao dokumenti iz područja nabave/prodaje) koji će se prikazati u sekcijama quater/quinquies vezanim uz pružanje usluga, kao i **„Z – Call of stock“** za prijenos iz prodaje u odgovarajuću sekciju intra prodaje.
+Postoji i **fiktivna** vrsta **„S – Usluge”**, koja služi za prepoznavanje dokumenata unesenih u područjima nabave i prodaje koji se trebaju prikazati u odjeljcima *Quater/Quinquies*, koji se odnose na pružanje usluga. Slično tome, vrsta **„Z – Call of stock”** služi za prijenos prodajnih transakcija u odgovarajući odjeljak Intrastat izvješća za prodaju.
 
-#### Specifična polja
+#### Posebna polja
 
-**Šifra**: šifra prirode transakcije.
+**Šifra**: šifra prirode transakcije.
 
-**Opis**: opis prirode transakcije.
+**Opis**: opis prirode transakcije.
 
-**Trokut**: oznaka trokutaste operacije omogućuje učitavanje popisa posljednjeg stupca tablice.
+**Trokutasta transakcija**: oznaka „Triangulacija” omogućuje učitavanje popisa iz posljednjeg stupca tablice.
 
-U donjoj mreži prikazane su detaljne prirode navedenih transakcija.
+U donjoj tablici prikazuju se detaljne prirode prethodno navedenih transakcija.

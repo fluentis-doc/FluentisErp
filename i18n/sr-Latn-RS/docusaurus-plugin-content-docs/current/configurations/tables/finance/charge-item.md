@@ -3,10 +3,10 @@ title: Elementi potrošnje
 sidebar_position: 31
 ---
 
-Definicija tablice stavki troška omogućuje kodificiranje stavki koje se povezuju s planom konta u statističke svrhe.
+Definicija tabele stavki troškova omogućava šifriranje stavki koje se povezuju sa kontnim planom u statističke svrhe.
 
 #### Specifična polja
 
-**Šifra**: šifra stavki troška.
+**Šifra**: šifra stavke troška.
 
-**Opis**: opis stavki troška.
+**Opis**: opis stavke troška.

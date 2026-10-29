@@ -1,5 +1,5 @@
 ---
-title: Vrste odbitaka
+title: Tipovi odbitaka poreza
 sidebar_position: 25
 ---
 

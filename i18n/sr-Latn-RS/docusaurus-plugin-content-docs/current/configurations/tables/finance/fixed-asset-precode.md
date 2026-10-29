@@ -1,22 +1,22 @@
 ---
-title: Kategorija osnovnog sredstva
+title: Predšifre osnovnih sredstava
 sidebar_position: 18
 ---
-:::tip[FAst Start]
-Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
 
-Ako se želi konfigurirati ručno, potrebno je pratiti kontrolni popis na poveznici.
+:::tip[Fast Start]
+Na ovu tabelu odnosi se postupak [**Fast Start**](/docs/guide/fast-start).
+
+Ako nameravate ručno da konfigurišete tabelu, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-U ovoj tablici kodificiraju se prethodne šifre (precodici), važeće za pojedinu tvrtku ili za sve, ovisno o postavkama u **Parametrima imovine**. Te šifre mogu se koristiti pri definiranju numeracije kartica imovine, ako je aktiviran flag upravljanje precodicima u [**parametrima imovine**](/docs/configurations/parameters/finance/fixed-assets-parameters).
+U ovoj tabeli definišu se predšifre koje važe za pojedinačno preduzeće ili za sva preduzeća, u zavisnosti od podešenih **parametara osnovnih sredstava**. Predšifre se mogu koristiti pri definisanju numerisanja kartica osnovnih sredstava ako je u [**parametrima osnovnih sredstava**](/docs/configurations/parameters/finance/fixed-assets-parameters) aktivirana opcija *Upravljanje predšiframa*.
 
-Upravljanje prethodnim šiframa korisno je kada je potrebno imati numeraciju koja nije jedinstvena ili unikatna. Na primjer, inače nije moguće imati dvije kartice s brojem 1. Ako postoje, primjerice, dvije prethodne šifre A i B, moguće je imati karticu broj 1 za precodice A i karticu broj 1 za precodice B.
+Upravljanje predšiframa posebno je korisno kada je potrebno omogućiti numerisanje koje nije jedinstveno. Bez predšifri, na primer, nije moguće imati dve kartice sa brojem 1. Ako postoje predšifre A i B, moguće je imati karticu broj 1 sa predšifrom A i karticu broj 1 sa predšifrom B.
 
-Drugi primjer uporabe je grupiranje imovine po godini (gdje različite prethodne šifre odgovaraju godini kupnje) ili po vrsti imovine itd.
+Predšifre se mogu koristiti i za grupisanje osnovnih sredstava prema godini, pri čemu svaka predšifra odgovara godini nabavke, ili prema vrsti osnovnog sredstva i drugim kriterijumima.
 
+#### Posebna polja
 
-#### Specifična polja
+**Šifra**: alfanumerička šifra predšifre.
 
-**Šifra**: alfanumerička šifra prethodne šifre.
-
-**Opis**: opis prethodne šifre.
+**Opis**: opis predšifre.

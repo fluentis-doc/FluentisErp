@@ -1,31 +1,30 @@
 ---
-title: Devizni tečajevi
+title: Devizni kursevi
 sidebar_position: 4
 ---
 
-Tablica Tečajevi valuta, zajednička za sve tvrtke iste baze podataka, omogućuje postavljanje službenih tečajeva za svaki dan koji će se koristiti u različitim procedurama u sustavu. Posebno se ističe da program preuzima iz ove tablice posljednji važeći tečaj unatrag od datuma dokumenta/knjiženja koji se unosi.
+Tabela deviznih kurseva, zajednička za sva preduzeća u istoj bazi podataka, omogućava podešavanje zvaničnih kurseva za svaki dan, koji će se koristiti u različitim procedurama sistema. Posebno se ističe da program iz ove tabele preuzima poslednji važeći kurs unazad od datuma dokumenta/knjiženja koji se unosi.
 
 :::note Napomena
-Tablica se može popuniti ručno unosom tečaja za određenu valutu i datum, ili se može izvršiti automatsko ažuriranje preuzimanjem tečajeva putem gumba ***Preuzmi tečajeve*** u traci izbornika.
+Tabela se može popuniti ručnim unosom kursa za određenu valutu i datum ili se može izvršiti automatsko ažuriranje preuzimanjem kurseva pomoću dugmeta **_Preuzmi kursne liste_** na traci menija.
 
- Klikom na gumb pojavit će se **popup** u kojem se unose **datumi Od / Do** za pretraživanje tečajeva te se može aktivirati **označavanje Automatski unos**, koje izravno popunjava tablicu (preporučuje se da ostane aktivirano).
+Klikom na dugme pojavljuje se **iskačući prozor** u kojem se unose **datumi Od / Do** za pretraživanje kurseva. Takođe se može aktivirati opcija **Automatski unos**, koja direktno popunjava tabelu (preporučuje se da ostane aktivirana).
 
-**PAŽNJA:** preuzimaju se tečajevi samo za valute koje imaju označen gumb Preuzmi tečajeve u tablici [**Valuta**](/docs/configurations/tables/general-settings/currencies).
+**PAŽNJA:** Preuzimaju se kursevi samo za valute za koje je označeno dugme Preuzmi kurseve u tabeli [**Valute**](/docs/configurations/tables/general-settings/currencies).
 :::
-
 
 ##### Specifična polja
 
-**Tečaj**: obično se unosi valuta tvrtke (npr. euro).
+**Kurs**: obično se unosi valuta preduzeća (npr. evro).
 
-**Opis**: opis valute.
+**Opis**: opis valute.
 
-**U**: referentna valuta.
+**Prema**: referentna valuta.
 
-**Opis**: opis referentne valute.
+**Opis**: opis referentne valute.
 
-**Datum tečaja**: datum na koji se tečaj odnosi.
+**Datum valute**: datum na koji se kurs odnosi.
 
-**Vrijednost tečaja**: to je tečaj 'neizvjesno za sigurno', koji program koristi za izračun protuvrijednosti. Za euro, to je vrijednost obrnuta od službenog tečaja za taj dan.
+**Direktna vrednost**: reč je o kursu izraženom „direktnom kotacijom” (izvesno za neizvesno). U slučaju evra, to je zvanični kurs na određeni dan.
 
-**Vrijednost izravno**: to je tečaj 'sigurno za neizvjesno'. Za euro, to je vrijednost službenog tečaja za taj dan.
+**Vrednost kursa**: reč je o kursu izraženom „indirektnom kotacijom” (neizvesno za izvesno), koji program stvarno koristi pri izračunavanju protivvrednosti. U slučaju evra, to je recipročna vrednost zvaničnog kursa na određeni dan.

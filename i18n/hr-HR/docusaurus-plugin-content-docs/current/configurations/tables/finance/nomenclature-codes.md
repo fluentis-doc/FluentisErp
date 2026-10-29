@@ -13,7 +13,7 @@ Tablica omogućuje definiranje i upravljanje popisom kodova kombinirane nomenkla
 
 **Dodatna JM**: predstavlja dodatnu jedinicu mjere (vidi službene upute za obrasce Intrastat na web stranici Carinske uprave).
 
-**Datum završetka valjanosti**: služi za blokiranje korištenja odgovarajuće šifre.
+**Datum kraja valjanosti**: služi za blokiranje korištenja odgovarajuće šifre.
 
 **Usluga**: označava šifru nomenklature usluga, od 5 znakova, koju treba koristiti za popunjavanje odjeljaka o uslugama u obrascima.
 

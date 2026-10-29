@@ -3,38 +3,41 @@ title: Tipovi dokumenta
 sidebar_position: 25
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu se tablicu odnosi postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se planira ručna konfiguracija, potrebno je slijediti kontrolni popis na poveznici.
+Ako tablicu namjeravate konfigurirati ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Ova tablica upravlja vrstama dokumenata povezanim s uzrocima glavne knjige, a time i s računovodstvenim ili polugodišnjim knjiženjima koja pozivaju te uzroke.
+Ova tablica služi za upravljanje vrstama dokumenata povezanima s računovodstvenim predlošcima glavne knjige, a time i s računovodstvenim knjiženjima, međurazdobnim knjiženjima ili upravljačkim knjiženjima koja koriste te predloške.
 
 :::tip Napomena
-**Fast Start** stvara vrste dokumenata povezujući ih s odgovarajućom geografskom lokacijom, tako da postoji popis dokumenata za Italiju, Rumunjsku itd.
-Objekt, naime, sadrži polje za državu, koje se može prikazati u mreži kroz Object Navigator. Za unatrag kompatibilnost moguće je imati i vrste dokumenata *bez* veze s državom, tako da budu vidljive u svim tvrtkama baze podataka.
-Svaki novi unos, u svakom slučaju, preuzet će državu aktivne tvrtke.
+Postupak **Fast Start** stvara vrste dokumenata i povezuje ih s odgovarajućom geografskom lokalizacijom, kako bi popis dokumenata bio prilagođen pojedinoj državi, primjerice Italiji, Rumunjskoj itd.
+
+Objekt sadrži i polje Država, koje se može prikazati u tablici putem preglednika objekata. Radi kompatibilnosti sa starijim verzijama moguće je imati i vrste dokumenata **bez** povezane države, tako da budu vidljive u svim tvrtkama u bazi podataka, neovisno o državi.
+
+Pri svakom novom unosu automatski se preuzima država aktivne tvrtke.
 :::
 
-Dostupna polja:
-- *Šifra vrste* šifra vrste dokumenta
-- *Opis vrste*, opis
+Dostupna su sljedeća polja:
+
+- *Tip šifre* – šifra vrste dokumenta.
+- *Opis tipa* – opis vrste dokumenta.
 - *Račun*
 - *Fiskalni račun*
-- *Račun za usluge*
-- *Polog / isplata*
-- *Prijenos konta*
+- *Obračun (primatelja plaćanja)*
+- *Zatvaranje računa*
+- *Prijenos između konta (preknjiženje)*
 - *Općenito*
-- *Kreditna nota*: za ovu vrstu dokumenta, ***FluentisERP*** provjerava da računovodstveno knjiženje sadrži negativne stavke u sekciji PDV-a
-- *Debitna nota*
-- *Izmjena računa*: za ***pojednostavljene*** kreditne napomene samo za PDV (TD08)
-- *Sažetak*
-- *Samoobračun*
-- *Primljeno*
+- *Knjižno odobrenje* – za ovu vrstu dokumenta **FluentisERP** provjerava sadrži li računovodstveno knjiženje negativne retke u odjeljku PDV-a.
+- *Knjižno terećenje*
+- *Bilješka varijacije* – za pojednostavljene dokumente koji predstavljaju isključivo odobrenje PDV-a (**pojednostavljeni** TD08).
+- *Zbirni (sažetak) dokument*
+- *Automatsko fakturiranje*
+- *Naplata (primljeno)*
 - *Plaćanje*
-- *Šifra za e-račune*: šifra koja se koristi za popunjavanje SDI datoteke (TD01, TD04 itd.)
+- *Kod za elektronski oblik dokumenta* – šifra koja se koristi za popunjavanje SDI datoteke (TD01, TD04 itd.).
 
 :::tip Napomena
-U donjoj mreži moguće je povezati specifičan numerator za vrstu dokumenta; koristi se za interni, neslužbeni numerator knjiženja i nije izravno vidljiv u sučelju.
+U donjoj tablici moguće je povezati određeni brojač s pojedinom vrstom dokumenta. Taj se brojač koristi za interno, neslužbeno numeriranje računovodstvenih knjiženja i nije izravno vidljiv u korisničkom sučelju.
 :::

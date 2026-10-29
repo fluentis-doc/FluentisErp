@@ -3,20 +3,20 @@ title: Šifre nomenklature
 sidebar_position: 12
 ---
 
-Tablica omogućuje definiranje i upravljanje popisom kodova kombinirane nomenklature Intrastat koji se koriste u poduzeću. Stoga je moguće brisati, dodavati i mijenjati postojeći popis.
+Tabela omogućava definisanje i upravljanje spiskom šifara kombinovane nomenklature Intrastat koje se koriste u preduzeću. Zato je moguće brisati, dodavati i menjati postojeći spisak.
 
 **Šifra nomenklature**: predstavlja šifru nomenklature.
 
-**Kratki opis**: neobavezno polje korisno za unos drugog opisa ili skraćenog opisa.
+**Kratak opis**: opciono polje korisno za unos drugog ili skraćenog opisa.
 
 **Opis**: predstavlja opis šifre nomenklature.
 
-**Dodatna JM**: predstavlja dodatnu jedinicu mjere (vidi službene upute za obrasce Intrastat na web stranici Carinske uprave).
+**Dodatna JM**: predstavlja dodatnu jedinicu mere (pogledajte zvanična uputstva za Intrastat obrasce na veb-stranici Carinske uprave).
 
-**Datum završetka valjanosti**: služi za blokiranje korištenja odgovarajuće šifre.
+**Datum isteka važenja**: služi za blokiranje korišćenja odgovarajuće šifre.
 
-**Usluga**: označava šifru nomenklature usluga, od 5 znakova, koju treba koristiti za popunjavanje odjeljaka o uslugama u obrascima.
+**Usluga**: označava šifru nomenklature usluga, od 5 znakova, koju treba koristiti za popunjavanje odeljaka o uslugama u obrascima.
 
 :::tip Napomena
-Unutar Bizlink-a predviđen je postupak uvoza iz proračunske tablice radi masovnog godišnjeg ažuriranja nomenklatura.
+U okviru Bizlink-a predviđen je postupak uvoza iz proračunske tabele radi masovnog godišnjeg ažuriranja nomenklatura.
 :::

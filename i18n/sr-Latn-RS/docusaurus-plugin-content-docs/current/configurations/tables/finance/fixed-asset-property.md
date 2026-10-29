@@ -1,12 +1,12 @@
 ---
-title: Svojstva imovine
+title: Svojstva osnovnih sredstava
 sidebar_position: 19
 ---
 
-Ova tablica omogućuje definiranje jednostavne šifre i opisa svojstva koje se dodjeljuje različitoj imovini. Može se koristiti kao filter za pretraživanje/ispis kako bi se dobio popis imovine koja ima određeno svojstvo ili karakteristiku.
+Ova tabela omogućava definisanje jednostavne šifre i opisa svojstva koje se dodeljuje pojedinačnim osnovnim sredstvima. Svojstvo se može koristiti kao kriterijum za filtriranje prilikom pretraživanja ili štampanja, kako bi se dobio spisak osnovnih sredstava sa određenim svojstvom ili karakteristikom.
 
-#### Specifična polja
+#### Posebna polja
 
-**Tip**: tip svojstva imovine.
+**Tip**: tip svojstva osnovnog sredstva.
 
-**Opis**: opis svojstva imovine.
+**Opis**: opis svojstva osnovnog sredstva.

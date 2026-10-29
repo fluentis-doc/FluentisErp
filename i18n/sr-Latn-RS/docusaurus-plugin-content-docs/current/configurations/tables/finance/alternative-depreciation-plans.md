@@ -3,22 +3,20 @@ title: Alternativni plan amortizacije
 sidebar_position: 16
 ---
 
-Definicija ove tablice omogućuje definiranje planova amortizacije koji će se koristiti u višegodišnjoj simulaciji amortizacije.
-
+Definicija ove tabele omogućava definisanje planova amortizacije koji će se koristiti u višegodišnjoj simulaciji amortizacije.
 
 Polja prve sekcije:
 
-**Šifra**:  šifra plana amortizacije.
+**Šifra**: šifra plana amortizacije.
 
-**Opis**: opis plana amortizacije.
+**Opis**: opis plana amortizacije.
 
-**Divizija**: oznaka koja upravlja primjenom samo na aktivnu diviziju.
-
+**Divizija**: oznaka koja određuje primenu samo na aktivnu diviziju.
 
 Polja druge sekcije:
 
-**Kategorija**: kategorija na koju se primjenjuje plan amortizacije.
+**Kategorija**: kategorija na koju se primenjuje plan amortizacije.
 
-**Opis**: opis kategorije na koju se primjenjuje plan amortizacije.
+**Opis**: opis kategorije na koju se primenjuje plan amortizacije.
 
-**Postotak primjene**: postotak koji se primjenjuje.
+**Procenat primene**: procenat koji se primenjuje.

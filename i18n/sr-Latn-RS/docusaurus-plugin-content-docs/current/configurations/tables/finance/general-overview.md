@@ -3,26 +3,26 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Tablice u području Administracije odnose se na različite module navedenog područja. 
+Tabele administrativnog područja odnose se na različite module navedenog područja.
 
-**One sadrže osnovne podatke i konfiguracije koje će se koristiti u svim operativnim postupcima.**. 
+**Sadrže osnovne podatke i konfiguracije koji se koriste u svim operativnim postupcima.**
 
-:::danger[Pažnja]
-Ako se ti osnovni podaci ne unesu, moglo bi se onemogućiti konkretno korištenje ERP-a u dotičnom području.
+:::danger[Upozorenje]
+Ako se ovim osnovnim podacima ne upravlja na odgovarajući način, može biti onemogućeno stvarno korišćenje ERP-a u odgovarajućoj oblasti.
 :::
 
-:::note[Primjer]
-Primjer osnovnih podataka su vrste računa, tj. tipologije računovodstvenih računa potrebne za definiranje kontnog plana i svih njegovih poveznica, ili pak stope PDV-a, nužne za upravljanje računovodstvenim knjiženjima, ali i za dokumente kupnje i prodaje.
+:::note[Primer]
+Primer osnovnih podataka predstavljaju vrste konta, odnosno vrste računovodstvenih konta potrebne za definisanje kontnog plana i svih njegovih veza. Drugi primer su stope PDV-a, potrebne za upravljanje računovodstvenim knjiženjima, ali i nabavnim i prodajnim dokumentima.
 :::
 
-Odgovarajuća i nužna parametrija omogućit će i definiranje upravljanja odgovarajućim modulom i korištenje određenih automatizama.
+Odgovarajuća i neophodna parametrizacija omogućava definisanje načina upravljanja pojedinačnim modulom, kao i korišćenje određenih automatizovanih postupaka.
 
-Tablice računovodstva nalaze se u **Konfiguriranje > Tablice > Administracija**.
+Tabele računovodstva nalaze se na putanji **Konfiguracija > Tabele > Administracija**.
 
-Administrativno područje uvelike koristi pogodnosti koje proizlaze iz aktiviranja postupka [**Fast Start**](/docs/guide/fast-start).
+Na administrativno područje u velikoj meri utiču prednosti koje donosi aktiviranje postupka [**Fast Start**](/docs/guide/fast-start).
 
-Počevši od kontnog plana, koji se inicijalizira prema standardnoj shemi, na njega se povezuje više tablica različitih hijerarhijskih razina, od računovodstvenih temeljnica do stopa PDV-a itd.
+Polazi se od kontnog plana koji se inicijalizuje prema standardnoj strukturi, a zatim se sa njim povezuju različite tabele na više hijerarhijskih nivoa, od računovodstvenih šablona za knjiženje do stopa PDV-a i drugih tabela.
 
-Preporučuje se pogledati gornju poveznicu za dodatne pojedinosti.
+Za dodatne pojedinosti pogledajte prethodno navedenu vezu.
 
-Posebno se u povezanoj stranici navodi detalj tablica na koje se odnosi te, u slučaju da se želi nastaviti s ručnom konfiguracijom, pruža popis za provjeru (check list) za konfiguraciju.
+Navedena stranica posebno opisuje tabele obuhvaćene postupkom i, u slučaju ručne konfiguracije, sadrži kontrolnu listu za konfigurisanje.

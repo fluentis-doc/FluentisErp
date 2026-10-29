@@ -1,18 +1,18 @@
 ---
-title: Vrste knjiženja imovine
+title: Vrste knjiženja osnovnih sredstava
 sidebar_position: 28
 ---
 
-Tablica Vrste knjiženja imovine koristi se za nadjačavanje logike konta povezanih s kategorijama imovine:
+Tabela vrsta knjiženja osnovnih sredstava služi za nadjačavanje logike konta povezanih sa kategorijama osnovnih sredstava.
 
-Bilancni konto, kao i konto amortizacije i rezerve, bit će uzeti iz vrste knjiženja povezane s imovinom, umjesto iz njezine kategorije.
+Bilansni konto, kao i konto troška amortizacije i konto ispravke vrednosti, preuzimaju se iz vrste knjiženja povezane sa osnovnim sredstvom, a ne iz njegove kategorije.
 
-Cilj je izbjeći višestruko dupliciranje kategorije, npr. „postrojenja i strojevi“, u slučaju kada se želi imati različite kontove u planu konta za „usisno postrojenje“ ili „nadzorno postrojenje“ itd.
+Cilj je izbeći višestruko kreiranje iste kategorije, na primer „Postrojenja i mašine”, kada se na nivou kontnog plana žele koristiti zasebni konti za „postrojenje”, „nadzorni sistem” i slično.
 
-Dakle, moguće je kreirati jednu kategoriju imovine (i time jednu jedinstvenu stopu amortizacije koja slijedi propise iz odgovarajućeg ministarstva) te potom kreirati vrste knjiženja kako bi se povezali detaljni konti koje želite koristiti.
+Zato je moguće kreirati jednu kategoriju osnovnih sredstava sa jedinstvenim procentom amortizacije koji prati stope propisane odgovarajućim ministarskim dekretom, a zatim definisati različite vrste knjiženja kojima se dodeljuju željeni analitički konti.
 
-Detalji forme su intuitivni kada se usporede s tablicama kategorija imovine.
+Obrazac je jednostavan za razumevanje ako se uporedi sa tabelom kategorija osnovnih sredstava.
 
-Unosi se šifra i opis za definiranje vrste knjiženja, a zatim se unose specifični konti za aktivnu imovinu (gornja mreža) i za amortizaciju i rezervu (donja mreža), uključujući tip amortizacije.
+Najpre se unose šifra i opis kojima se određuje vrsta knjiženja. Zatim se unose odgovarajući konti za aktivu (gornja tabela), kao i za trošak amortizacije i ispravku vrednosti (donja tabela), zajedno sa vrstom amortizacije.
 
-Nakon toga, u svakoj kartici imovine moguće je, putem padajućeg izbornika, pozvati prethodno kodificirane vrste knjiženja imovine.
+Nakon toga, na kartici svakog osnovnog sredstva moguće je putem odgovarajućeg padajućeg menija odabrati jednu od prethodno definisanih vrsta knjiženja osnovnih sredstava.

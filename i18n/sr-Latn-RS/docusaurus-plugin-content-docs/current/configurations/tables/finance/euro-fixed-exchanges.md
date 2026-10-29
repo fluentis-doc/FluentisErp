@@ -1,14 +1,14 @@
 ---
-title: Fiksni tečaj za EURO
+title: Fiksni kurs za EURO
 sidebar_position: 3
 ---
 
-Tablica prikazuje popis fiksnih tečajeva za konverziju u euro: postavljanjem vrijednosti eura program će automatski izračunati inverzni tečaj koji će se zatim koristiti u izračunima protuvrijednosti u sustavu.
+Tabela prikazuje spisak fiksnih kurseva za konverziju u evro: unosom vrednosti evra program će automatski izračunati inverzni kurs, koji će se zatim koristiti za izračunavanje protivvrednosti u sistemu.
 
 #### Specifična polja
 
-**Valuta**: predstavlja šifru valute (referentna tablica: ) 
+**Valuta**: predstavlja šifru valute (referentna tabela: ).
 
-**1 EURO**: vrijednost 1 EUR = referentna valuta.
+**1 EURO**: vrednost 1 EUR izražena u referentnoj valuti.
 
-**Inverzni tečaj**: izračun inverznog tečaja.
+**Inverzni kurs**: izračunati inverzni kurs.

@@ -3,29 +3,29 @@ title: Razine odobrenja
 sidebar_position: 23
 ---
 
-Ova tablica omogućuje proširenje upravljanja blokadom pasivnih stavki prema složenijoj logici.
+Ova tablica omogućuje proširenje upravljanja blokadom obveza prema dobavljačima primjenom složenijeg sustava odobravanja.
 
-Pretpostavimo da postoji:
-- administrativna kontrola računa,  
-- naknadna kontrola od strane nabavnog odjela, 
-- konačna autorizacija od strane vlasnika. 
+Pretpostavimo da postoje:
+- administrativna kontrola računa
+- naknadna kontrola računa koju provodi odjel nabave
+- završno odobrenje odgovorne osobe
 
-Moguća kodifikacija razina autorizacije mogla bi biti sljedeća:
+Razine odobrenja mogle bi se definirati na sljedeći način:
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels.png)
 
-Razina *00 – Početna blokada* mora biti unaprijed postavljena u svakoj **kartici dobavljača**, u kartici [**Plaćanja**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/), kako bi stavke bile kreirane blokirane s ovom početnom razinom.
+Razinu *00 – Početna blokada* potrebno je unaprijed postaviti u svakom **šifarniku dobavljača**, na kartici [**Plaćanja**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/). Time se osigurava da se njegove otvorene stavke stvaraju blokirane, s tom početnom razinom odobrenja.
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels-combo.png)
 
-Stavka se potom može podići na razinu *01* od strane korisnika u ulozi *Administracija* (na slici *Fluentis Users*, usp. upravljanje korisnicima i ulogama u odjeljku ARM): to je moguće jer ima roditeljsku *razinu* 0 i podiže je na razinu 1.
+Korisnici s ulogom *Administracija* (na slici *Fluentis Users*; pogledajte upravljanje korisnicima i korisničkim ulogama u odjeljku ARM) mogu zatim podići stavku na razinu *01*. To je moguće jer je njezina *nadređena razina* 0, a prelaskom na ovu razinu stavka dolazi na razinu 1.
 
-Zatim stavka može biti podignuta na razinu *02* od strane korisnika u ulozi *Nabava* (na slici *Fluentis Admins*): ovo je moguće jer ima *roditeljsku* razinu 1 i podiže je na razinu 2.
+Nakon toga korisnici s ulogom *Nabava* (na slici *Fluentis Admins*) mogu podići stavku na razinu *02*. Njezina je *nadređena razina* 1, a prelaskom na ovu razinu stavka dolazi na razinu 2.
 
-Na kraju, stavka može doći do konačne razine *03* samo od strane korisnika XXXXXXX (vlasnika), koji daje stvarnu autorizaciju za plaćanje (tek tada se blokada stavke uklanja i stavka postaje plaćiva).
+Naposljetku, stavku na završnu razinu *03* može podići isključivo korisnik XXXXXXX (odgovorna osoba), koji time daje konačno odobrenje za plaćanje. Tek se u tom trenutku uklanja blokada stavke, čime ona postaje raspoloživa za plaćanje.
 
-Svaki korak može zahtijevati unos napomene o autorizaciji ako je na razini postavljena odgovarajuća oznaka (flag).
+Na svakom koraku može biti obvezan unos napomene o odobrenju, ako je za odgovarajuću razinu aktivirana ta oznaka.
 
-Promjene stanja mogu se izvršavati kroz sučelje [**Upravljanje likvidnošću**](/docs/finance-area/maturity-values/procedures/cash-management/), putem gumba *Autoriziraj stavku*. 
+Promjene statusa mogu se provoditi putem obrasca [**Upravljanje likvidnošću**](/docs/finance-area/maturity-values/procedures/cash-management/), pomoću gumba *Odobri stavku*.
 
-Nakon davanja autorizacije, također iz sučelja *Upravljanje likvidnošću*, moguće je pripremiti izravno liste plaćanja iz modula *Plaćanja dobavljača* za autorizirane stavke (ili one koje nisu blokirane), kao alternativa klasičnoj proceduri kreiranja liste plaćanja i naknadnog pretraživanja pasivnih stavki za uključivanje u listu.
+Nakon izdavanja odobrenja, iz istog obrasca *Upravljanje likvidnošću* moguće je izravno pripremiti i naloge za plaćanje u modulu *Plaćanja dobavljačima* za odobrene stavke, odnosno za sve stavke koje nisu blokirane. To je alternativa uobičajenom postupku izrade naloga za plaćanje, unutar kojeg se zatim pretražuju i odabiru obveze prema dobavljačima koje treba uključiti.

@@ -8,7 +8,7 @@ Definicija ove tablice omogućuje definiranje planova amortizacije koji će se k
 
 Polja prve sekcije:
 
-**Šifra**:  šifra plana amortizacije.
+**Šifra**: šifra plana amortizacije.
 
 **Opis**: opis plana amortizacije.
 
