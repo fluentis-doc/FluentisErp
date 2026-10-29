@@ -1,8 +1,25 @@
 ---
-title: Tipovi reklasifikacije 
+title: Tipovi reklasifikacije
 sidebar_position: 1
 ---
 
-Priložena polja su ona za alfanumerički kod od 5 znakova, relativni opis i dvije zastavice: zastavica zastavica **Filter narudžbe** učinit će dostupnim, za ponovne klasifikacije na temelju modela ove vrste, filtar podataka prema prodajnom nalogu, kako bi se dobila ponovna klasifikacija samo podataka koji se odnose na filtar; slično će **cdc/cdp filtar** aktivirati mogućnost filtriranja reklasificiranih podataka za određeno troškovno/profitno mjesto.
+Tablica **Tipovi reklasifikacije** već je unaprijed popunjena postupkom [**Fast start**](/docs/guide/fast-start) sljedećim vrstama:
 
-Postoje 3 standardna tipa: generički '01 - Economic', 'BEP - Break Even Point' i 'IV - Directive VAT' za model reklasifikacije postavljen u skladu s odredbama IV EEC direktive.
+- *IV - Reklasifikacija prema IV. direktivi EU-a*
+- *EC - Ekonomska reklasifikacija*
+- *BEP - Točka pokrića*
+
+Te se vrste koriste za računovodstvene modele koje postupak **Brzi početak** unaprijed učitava, a posebno za model *Bilanca prema IV. direktivi*.
+
+Ako je u tvrtki aktivno upravljanje *Kontrolingom*, preporučujemo postavljanje sljedećih vrsta:
+
+- *COGE - Upravljačko računovodstvo*, s aktivnom oznakom *Kontroling*, koja se koristi za modele koji popunjavaju **Povijest upravljačkih knjiženja** putem **Usporedbe** u kontrolingu.
+- *PRO - Reklasifikacija projekta/naloga*, s oznakom *Konsolidacija naloga*, koja se koristi ako je tvrtka postavila *dimenziju* za upravljanje projektima i želi obraditi *Konsolidaciju projekta*.
+
+:::tip Napomena
+Vrsta reklasifikacije s oznakom **Trošak proizvoda** ima posebne značajke unutar modela reklasifikacije, ali trenutačno se mora popunjavati prilagođenim postupcima.
+:::
+
+:::tip Napomena
+Putem alata *Object Navigator* moguće je u tablici prikazati svojstvo *Država*, koje nije obvezno za vrste reklasifikacije. Ako se za neku vrstu reklasifikacije postavi država, povezani **Modeli reklasifikacije** bit će vidljivi samo u tvrtkama koje pripadaju postavljenoj geografskoj lokaciji.
+:::

@@ -1,4 +1,4 @@
 ---
-title: Postavka troška / marže narudžbe
+title: Postavka cijene / marže
 sidebar_position: 2
 ---
