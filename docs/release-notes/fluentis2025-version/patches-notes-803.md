@@ -4,6 +4,32 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0039 - 29/10/2026
+
+> -	CO - Corretta la visualizzazione dei DDT di acquisto forzatamente valorizzati nella procedura “Valorizzazione area acquisti e vendite” (#TT03933/26)
+> -	CO - Ripresa dati da produzione, algoritmo di ripresa costi di progetto, revisione priorità di assegnazione conto e centro di costo (#TT04665/26)
+> -	CO - Risolto un problema durante la creazione del bilancio infrannuale che causava la visualizzazione del messaggio di errore "L'operazione è stata annullata dall'utente". (#TT04479/26)
+> -	FI - contabilizzazione accrediti, revisione rollback con pulsante ‘rollback registrazione’ (#TT04068/26)
+> -	FI - revisione Visualizzazione bilancio (F2023)/Visualizzazione bilancio di verifica (F2025) per conti sintetici mancanti e totalizzazioni di gruppo. Modifications inside Visualizzazione bilancio form can have impact on profiles. (#TT04535/26)
+> -	FI - Stampa schede cespiti: corretta la stampa in presenza del filtro “Ubicazione” (#TT04471/26).
+> -	FI - export intrastat, risolto caso di errore per importo null (notification 289652/2026, TT04688/26)
+> -	FI - Corretta un’anomalia nel filtro Anno Report della stampa Schede Cespiti. La stampa riporta ora esclusivamente le operazioni patrimoniali relative all’anno selezionato e agli anni precedenti (#TT04427/26)
+> -	MES - Manufacturing Execution System: Corretta anomalia che non permetteva, in dichiarazione di produzione, la selezione multipla di lotti e serial number all’interno del tab materiali. (#TT03999/26 )
+> -	PR - importazione movimenti conto corrente da xml Sepa, gestione del tag ValDt mancante. (#TT04491/26)
+> -	SCM - Stato evasione ordine fornitore: ottimizzata gestione di un ordine forzatamente evaso che viene annullato (#TT04415/26).
+> -	SCM - Supply Chain Management: corretta anomalia che permetteva di cancellare una riga lotto da un ricevimento merci già caricato a magazzino. (#TT04295/26)
+> -	SCM - Valorizzazione DDT di acquisto e di rientro: estesa possibilità di inserimento dei riferimenti a numero e data fattura (#TT04205/26).
+> -	SCM - Valorizzazione DDT di acquisto: ottimizzato calcolo del totale valorizzazione sulla base delle righe documento selezionate (#TT03788/26).
+> -	SCS - Campi giacenza e disponibilità in evasione materiale su DDT: i dati presenti sono riferiti al magazzino da cui i materiali verranno scaricati. Tendenzialmente, il magazzino interno (#TT03693/26).
+> -	SD - Fatture di vendita: Nel diagramma di evasione viene riportato anche il riferimento all’oggetto Intervento se la fattura nasce da una valorizzazione interventi. (#TT02524/25)
+> -	SD - Stampa ordine cliente: ottimizzato calcolo calcolato Totale merce (#TT04449/26)
+> -	SD - Duplica offerta - resa possibile variazione intestazione prima del salvataggio, i campi cliente e contatto crm saranno abilitati fino al salvataggio. (#TT03140/26)
+> -	SD - WEB - inserimenti righe non codificate nelle offerte, risolto caso per cui nella modalità popup form non sempre si abilitava il campo UM (#TT04232/26)
+> -	SDI - Gestione degli allegati per le fatture elettroniche per le nazioni HR e RO.(#TT04410/26)
+> -	SH - incrementato a 100 caratteri il campo Descrizione nella tabella Aliquote/ Modalità IVA. (#TT04528/26)
+> -	Solved problem to Create session for BizLink BinaryDocument
+> -	Workflow - activation conditions on extended (Custom) objects (TT04324/26)
+
 ### Patch 803.0038 - 13/10/2026
 
 > -	FI - contabilizzazione assestamenti con singola registrazione impostata, revisione gestione link tra movimenti analitica e giornale (#TT02507/26, #TT04169/26)
