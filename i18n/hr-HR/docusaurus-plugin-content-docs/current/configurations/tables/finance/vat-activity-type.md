@@ -3,16 +3,16 @@ title: Vrsta aktivnosti PDV-a
 sidebar_position: 22
 ---
 
-U ovoj tablici moguće je definirati vrste PDV aktivnosti koje provodi poduzeće (ako je primjenjivo) i svakom tipu aktivnosti eventualno pridružiti pro-rata za odbitak PDV-a.
+U ovoj je tablici moguće definirati vrste (aktivnosti) djelatnosti koje tvrtka obavlja za potrebe PDV-a, ako je to primjenjivo, te svakoj vrsti djelatnosti po potrebi dodijeliti razmjerni odbitak pretporeza (*pro-rata*).
 
-Konfigurirane vrste aktivnosti zatim se povezuju s različitim [**PDV knjigama**](/docs/configurations/tables/finance/vat-books).
+Tako konfigurirane vrste djelatnosti povezuju se s odgovarajućim [**PDV knjigama**](/docs/configurations/tables/finance/vat-books).
 
-Moguće je označiti glavnu aktivnost koja će u ispisima periodičnih PDV obračuna grupirati PDV dugovanja ili potraživanja.
+Moguće je označiti glavnu djelatnost, u koju će se pri ispisu periodičnih obračuna PDV-a objediniti potraživanje ili obveza za PDV.
 
-Prilikom ispisa obračuna automatski će se prikazati detalji za svaku pojedinu aktivnost i konačni sažetak.
+Ispis obračuna PDV-a automatski će prikazati detalje za svaku pojedinu djelatnost, kao i završni zbirni pregled.
 
-**Šifra / Opis:** slobodno konfigurabilni za imenovanje unesenog tipa aktivnosti (npr. Proizvodnja, Nekretnine…).
+**Šifra / Opis:** slobodno se definiraju radi imenovanja unesene vrste djelatnosti (npr. Proizvodnja, Nekretnine itd.).
 
-**Pro-rata:** polje za unos postotka odbitka (100% puni odbitak ili niži postotci do 0% ako je odbitak ograničen). Polje ima istu logiku kao opći pro-rata definiran u [**računovodstvenim parametrima**](/docs/configurations/parameters/finance/accounting-parameters) i omogućuje detaljnije podešavanje za svaki pojedini tip aktivnosti.
+**Pro-rata:** polje za unos postotka odbitka pretporeza (100 % označava puni odbitak, dok niži postotci, sve do 0 %, označavaju ograničeni odbitak). Polje funkcionira prema istoj logici kao opći *pro-rata* koji se definira u [**računovodstvenim parametrima**](/docs/configurations/parameters/finance/accounting-parameters), ali omogućuje detaljnije postavljanje zasebnog postotka za svaku pojedinu vrstu djelatnosti.
 
-**Glavna aktivnost:** oznaka koja se postavlja na tip aktivnosti koja se provodi primarno (u smislu prihoda, prema poreznim propisima).
+**Glavna aktivnost:** oznaka koja se dodjeljuje djelatnosti kojom se tvrtka pretežno bavi, odnosno glavnoj djelatnosti prema ostvarenom prometu, u skladu s poreznim propisima.

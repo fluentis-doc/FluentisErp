@@ -3,40 +3,38 @@ title: Tipovi kamatnih stopa
 sidebar_position: 28
 ---
 
-Definicija ove tablice omogućuje kodificiranje i postavljanje različitih vrsta kamatnih stopa koje se upravljaju u aktivnom poduzeću.
+Definicija ove tabele omogućava unos i podešavanje različitih tipova kamatnih stopa kojima se upravlja u aktivnom preduzeću.
 
- 
+### Gornja tabela
 
-### Gornja mreža
+**Šifra**: identifikaciona šifra kamatne stope.
 
-**Šifra**: identifikacijska šifra kamatne stope.
+**Opis**: opis kamatne stope.
 
-**Opis**: opis kamatne stope.
+**Od datuma dokumenta**: datum od kojeg se primenjuje obračun kamate, u skladu sa Zakonodavnom uredbom br. 231 od 9. oktobra 2002. Svrha ovog polja je da spreči obračun kamate na dokumente čiji je datum pre datuma stupanja zakona na snagu.
 
-**Od datuma dokumenta**: datum dokumenta od kojeg se obračun kamata treba upravljati (referenca: Zakonodavni dekret 9. listopada 2002., br. 231). Svrha ovog polja je spriječiti obračun kamata na dokumente s datumom prije stupanja zakona na snagu.
+**Od datuma dospeća**: datum dospeća od kojeg se primenjuje obračun kamate, u skladu sa Zakonodavnom uredbom br. 231 od 9. oktobra 2002. Svrha ovog polja je da spreči obračun kamate na dokumente čiji je datum dospeća pre datuma stupanja zakona na snagu.
 
-**Od datuma dospijeća**: datum dospijeća od kojeg se obračun kamata treba upravljati (referenca: Zakonodavni dekret 9. listopada 2002., br. 231). Svrha ovog polja je spriječiti obračun kamata na dokumente čije je dospijeće bilo prije stupanja zakona na snagu.
+**Minimalna kamata**: minimalni iznos kamate ispod kojeg se kamata neće obračunavati.
 
-**Minimalna kamata**: minimalni iznos kamate ispod kojeg se neće obračunavati nikakav iznos.
+**Dani odbitka**: broj dana počeka koji se oduzimaju od broja dana kašnjenja.
 
-**Broj dana bez kamata**: broj dana „gracije“ koji će se odbiti od obračuna dana zakašnjenja.
-
-**Obračun i za popust**: oznaka koja omogućuje obračun i u slučaju ranije uplate (popusta).
+**Uključi i popust**: oznaka koja omogućava obračun popusta u slučaju prevremenog plaćanja.
 
 :::tip Napomena
-PRIMJER: u slučaju ranije uplate od strane klijenta i kasnijeg kašnjenja plaćanja, ako je iznos kamate obračunate na kašnjenje veći od vrijednosti postavljene u polju Minimalna kamata, od obračunate kamate će se odbiti iznos (negativan) izračunat na temelju dana između datuma plaćanja i datuma dospijeća. U svakom slučaju, rezultat obračuna nikada ne može biti negativna kamata.
+PRIMER: ako kupac plati pre dospeća, a zatim dođe do kašnjenja sa plaćanjem, obračunava se kamata na kašnjenje. Ako je taj iznos veći od vrednosti podešene u polju Minimalna kamata, od obračunate kamate oduzima se negativni iznos izračunat na osnovu broja dana između datuma plaćanja i datuma dospeća. Rezultat obračuna ni u kom slučaju ne može biti negativna kamata.
 :::
 
-### Donja mreža  
+### Donja tabela
 
-**Šifra**: identifikacijska šifra stope.
+**Šifra**: identifikaciona šifra kamatne stope.
 
-**Od datuma**: datum od kojeg se upravlja stopom navedenu u retku.
+**Od datuma**: datum od kojeg se primenjuje kamatna stopa navedena u redu.
 
-**Do datuma**: datum do kojeg se upravlja stopom navedenu u retku.
+**Do datuma**: datum do kojeg se primenjuje kamatna stopa navedena u redu.
 
-**Postotak**: primjenjivi postotak kamatne stope.
+**Procenat**: primenljiva kamatna stopa izražena u procentima.
 
-Polja vezana uz datume valjanosti postotka omogućuju definiranje kretanja politike kamatne stope koja, kao što je poznato, podliježe periodičnim revizijama u skladu s zakonskom kamatnom stopom.
+Polja sa datumima važenja omogućavaju definisanje promena kamatne stope tokom vremena. Kao što je poznato, zakonska kamatna stopa podložna je periodičnim izmenama.
 
 ![](/img/it-it/configurations/tables/finance/rate-types/image01.png)

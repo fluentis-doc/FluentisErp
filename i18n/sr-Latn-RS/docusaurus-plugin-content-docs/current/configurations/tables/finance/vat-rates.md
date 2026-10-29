@@ -1,126 +1,135 @@
 ---
-title: PDV stope
+title: Stopa PDV-a
 sidebar_position: 1
 ---
 
-:::tip[FAst Start]
-Na ovu tablicu utječe procedura [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu odnosi se postupak [**Fast Start**](/docs/guide/fast-start).
 
-U slučaju ručne konfiguracije potrebno je slijediti kontrolni popis na poveznici.
+Ako nameravate ručno da konfigurišete tabelu, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Ova tablica je zajednička za sve tvrtke u bazi podataka i prikazuje popis PDV stopa primjenjivih u cijelom sustavu.
+Ova tabela je zajednička za sva preduzeća u bazi podataka i sadrži spisak stopa PDV-a koje se mogu primenjivati u celom sistemu.
 
-Radi se o unaprijed učitanoj tablici na kojoj ovlašteni korisnik može izvršavati izmjene ili dodavanja prema potrebama poslovanja tvrtke.
+Reč je o unapred popunjenoj tabeli u kojoj ovlašćeni korisnik može da menja postojeće podatke ili dodaje nove, u skladu sa poslovnim potrebama preduzeća.
 
-### Glavna mreža
+### Glavna tabela
 
-**Šifra / Opis**: šifra i odgovarajući opis za pozivanje PDV stope koju se parametrizira; numerički identifikator stope.
+**Šifra / Opis**: numerička identifikaciona šifra stope PDV-a i pripadajući opis.
 
-**Sekundarni opis**: dodatni opis koji se može koristiti za prilagođene izvještaje i ispise (obično nije nužan).
+**Dodatni opis**: dodatni opis koji se može koristiti u prilagođenim izveštajima i ispisima. Po pravilu nije potreban.
 
-**Postotak**: definira postotak PDV-a koji se primjenjuje. Za kodove oslobađanja, izuzeća i neoporezivosti potrebno je postaviti 0.
+**Procenat**: određuje primenjivu stopu PDV-a. Za šifre oslobođenja, izuzeća i neoporezivih isporuka potrebno je postaviti vrednost 0.
 
-**Kategorija PDV-a**: poziva unaprijed definirane tipove PDV-a predviđene u sustavu. Tip je vrlo važan, primjerice, za totalizaciju različitih transakcija u tromjesečnom izvještaju PDV-a i, općenito, za sve PDV deklaracije. Opcije dostupne za talijansku lokalizaciju su:
-    - *Stopa*
-    - *Neoporezivo*
-    - *Oslobođeno*
-    - *Isključeno*
-    - *74 ter CEE*, za putničke agencije
-    - *74 ter FUORI CEE*, za putničke agencije
-    - *74 ter PARTE CEE*, za putničke agencije
-    - *74 ter PARTE FUORI CEE*, za putničke agencije
+**Kategorija PDV-a**: omogućava izbor unapred definisanih vrsta PDV-a u sistemu. Ova klasifikacija je veoma važna, na primer, za sabiranje različitih knjiženja u tromesečnoj prijavi obračuna PDV-a, kao i u svim poreskim prijavama povezanim sa PDV-om. Dostupne opcije za italijansku lokalizaciju su:
 
-**Postotak nedopustivosti odbitka**: definira postotak PDV-a koji se ne može odbiti. Ova vrijednost se prikazuje unutar knjiženja u sekciji PDV-a za izračun stvarnog dijela koji se ne može odbiti i može se promijeniti ili prisilno postaviti izravno u knjiženju. 
+- *Stopa*
+- *Neoporezivo*
+- *Oslobođeno*
+- *Izuzeto*
+- *74 ter CEE* – za turističke agencije
+- *74 ter izvan CEE-a* – za turističke agencije
+- *74 ter deo CEE-a* – za turističke agencije
+- *74 ter deo izvan CEE-a* – za turističke agencije
 
-**Plafond**: ova opcija definira koje su PDV stope povezane s izjavama o namjeri (dichiarazioni d’intento). Samo stope s uključenim ovim označivačem omogućuju prikaz padajućeg izbornika za povezivanje s izjavama o namjeri u mreži PDV-a knjiženja.
+**Procenat neodbitnog PDV-a**: određuje procenat PDV-a koji se ne može odbiti. Ova vrednost prenosi se u odeljak PDV-a računovodstvenog knjiženja radi obračuna stvarnog neodbitnog iznosa. Može se promeniti ili ručno uneti direktno u knjiženju.
 
-PAŽNJA: opcija je nevažna za upravljanje izjavama o namjeri u dokumentnom ciklusu kupnje/prodaje; tamo je relevantno isključivo ono što je postavljeno unutar odgovarajuće knjige izdanih/prihvaćenih izjava o namjeri.
+**Plafon**: ovom oznakom određuju se stope povezane sa izjavama o nameri (*dichiarazioni di intento*). Samo za stope kod kojih je ova oznaka aktivirana u tabeli PDV-a računovodstvenog knjiženja prikazuje se padajući meni za povezivanje sa izjavama o nameri.
 
-Za izračun ukupnog plafonda, ovaj označivač također identificira stopu koja **"troši"** mjesečno naš ukupni raspoloživi plafon kao redovni izvoznici (u okviru procedure upravljanja plafonom), posebno s aspekta kupnji.
+PAŽNJA: ova oznaka nije važna za upravljanje izjavama o nameri u nabavnom i prodajnom ciklusu dokumenata. U tom slučaju relevantna je samo oznaka postavljena u odgovarajućem registru izdatih ili primljenih izjava o nameri.
 
-**Strana prodaja za Plafond**: s ovim označivačem identificiraju se PDV stope u knjigama prodaje godine yyyy koje **povećavaju** raspoloživi plafon za godinu yyyy+1 kao redovni izvoznici.
+Za obračun opšteg plafona ova oznaka određuje i stopu koja iz meseca u mesec **troši** raspoloživi opšti plafon izvoznika sa statusom redovnog izvoznika, u postupku upravljanja plafonom, odnosno na strani nabavke.
 
-**U PDV prijavi**: označava koje PDV stope treba uključiti u tromjesečne PDV prijave i, općenito, u sve PDV deklaracije. Primjer: kodovi u kategoriji PDV-a *Isključeno* obično <u>nemaju</u> aktiviran ovaj označivač, dok *stope*, *oslobođeno* i *neoporezivo* imaju označivač aktiviran jer moraju biti uključene u PDV deklaracije (usp. upute ministarstva za godišnju PDV prijavu ili tromjesečnu komunikaciju obračuna PDV-a).
+**Inostrana prodaja za plafon**: ovom oznakom određuju se stope PDV-a koje se pojavljuju u prodajnim knjiženjima za godinu yyyy i koje **povećavaju** raspoloživi plafon za godinu yyyy+1 za izvoznike sa statusom redovnog izvoznika.
 
-**Ne Intra**: označava PDV stope koje, iako se koriste u dokumentima (u modulima faktura kupnje/prodaje) ili u intra-CEE knjiženjima, ne trebaju biti smatrane intra-CEE stopama. Koristi se prilikom automatskog generiranja Intrastat sažetaka.
+**U poreskoj prijavi PDV-a**: određuje koje se stope uključuju u prijavu PDV-a, tromesečnu prijavu obračuna PDV-a i ostale poreske prijave povezane sa PDV-om. Na primer, za šifre kategorije PDV-a *Izuzeto* ova oznaka po pravilu nije aktivirana, dok je za kategorije *Stope*, *Oslobođeno* i *Neoporezivo* aktivirana jer ti podaci moraju biti uključeni u poreske prijave PDV-a. Pogledajte zvanična uputstva za godišnju prijavu PDV-a ili tromesečnu prijavu obračuna PDV-a.
 
-**Rep. San Marino**: označava PDV stope korištene u transakcijama sa San Marinom (zastarjelo, obavijest ukinuta).
+**Nije Intrastat**: ovom oznakom određuju se stope koje se, iako se koriste u dokumentima nabavke/prodaje ili knjiženjima transakcija unutar EU, ne smatraju transakcijama unutar EU. Oznaka se proverava prilikom automatskog generisanja zbirnih Intrastat izveštaja.
 
-**% PDV poljoprivredne nedopustivosti**: polje definira fiksni postotak odbitka PDV-a za poljoprivredni režim u slučaju knjiženja u skladu s poljoprivrednim režimom.
+**Rep. San Marino**: određuje stope koje se koriste u transakcijama sa San Marinom. Zastarelo – izveštavanje je ukinuto.
 
-**Omogući PDV 0 u Dnevniku**: ovaj označivač zahtijeva knjiženje PDV stavki s iznosom 0, i na dugu i na potražnoj strani, u Dnevniku. Ipak, [**računovodstvena šifra**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) koja se koristi mora također omogućavati stavke s iznosom 0.
+**% poljoprivrednog odbitnog PDV-a**: određuje fiksni kompenzacioni procenat neodbitnog PDV-a koji se primenjuje na stopu u slučaju knjiženja u okviru poljoprivrednog režima.
 
-**Uvoz zlato/srebro**: označava koje PDV stope se sažimaju u polja predviđena za Godišnju PDV prijavu. (Trenutno zastarjelo)
+**Dozvoli PDV 0 u dnevniku knjiženja**: omogućava knjiženje redova PDV-a sa iznosom 0 na dugovnoj i potražnoj strani dnevnika knjiženja. Međutim, računovodstveni [**šablon knjiženja**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) koji se koristi takođe mora da dozvoljava takve redove sa nultim iznosom.
 
-**Uvoz otpadaka**: označava koje PDV stope se sažimaju u polja predviđena za Godišnju PDV prijavu. (Trenutno zastarjelo)
+**Uvoz zlata i srebra**: određuje koje se stope prikazuju u odgovarajućim poljima godišnje prijave PDV-a. Trenutno se smatra zastarelim.
 
-**Ne u spesometro**: označava isključivanje PDV transakcija povezanim s ovom stopom iz *spesometra*. (Trenutno zastarjelo)
+**Uvoz otpadnog materijala**: određuje koje se stope prikazuju u odgovarajućim poljima godišnje prijave PDV-a. Trenutno se smatra zastarelim.
 
-**Šifra PA**: u ovo polje unosi se šifra predviđena za elektroničko fakturiranje između privatnih subjekata i prema javnoj upravi u slučajevima kada nema PDV-a (oslobođenje, izuzeće, neoporezivo). Za detalje šifri pogledajte tehničke specifikacije elektroničkih faktura objavljene na webu Porezne uprave.
+**Ne uključuj u spesometro**: omogućava isključivanje knjiženja PDV-a povezanih sa ovom stopom iz postupka *spesometro*. Trenutno se smatra zastarelim.
 
-**Isključi iz Izjave o namjeri**: opcija trenutno nije aktivno korištena u nijednoj proceduri. Razvijena je da, eventualno, spriječi da PDV stopa s aktiviranim označivačem bude prepisana šifrom PDV-a postavljenom u knjizi izjava o namjeri za transakcije u oslobođenju prema toj izjavi.
+**Šifra PA**: u ovo polje unosi se šifra predviđena za elektronsko fakturisanje između privatnih subjekata i prema javnoj upravi u slučajevima kada PDV nije iskazan (oslobođenje, izuzeće ili neoporeziva isporuka). Za detalje o predviđenim šiframa pogledajte tehničke specifikacije elektronske fakture koje objavljuje italijanska Poreska uprava.
 
-**Isključi iz automatske šifre**: aktiviranjem ovog označivača odgovarajuća šifra PDV-a ne se prenosi u automatski generirane knjiženja jer je povezana s glavnom računovodstvenom šifrom preko polja *Automatska šifra*.
+**Isključi iz izjave o nameri**: oznaka koju trenutno ne koristi nijedan postupak. Razvijena je kako bi se, po potrebi, sprečilo da odgovarajuća šifra PDV-a sa aktiviranom oznakom bude zamenjena šifrom PDV-a postavljenom u registru izjava o nameri kao šifrom za transakcije oslobođene PDV-a na osnovu izjave o nameri.
 
-:::note  Napomena
-Korištenje ovog označivača postaje **ključno** u određenim situacijama, primjerice kod primitka **“mješovite” fakture kupnje**, gdje je dobavljač fakturirao dio u **reverse charge** režimu, a dio u redovnom režimu. Za dio u redovnom režimu PDV se može odbiti pri kupnji, dok će dio u reverse charge biti neutralan jer se knjiži i u knjizi kupnji i u knjizi prodaja. Pravilnim razlikovanjem PDV šifri, primjerice kreiranjem šifre "Reverse charge mješoviti – odbitni dio" i aktiviranjem ovog označivača na toj šifri, u automatski kreiranom prijebojnom knjiženju bit će prikazana samo šifra 22, čime se automatski priznaje odbitak samo na dijelu koji nije uključen u reverse charge mehanizam.
-:::
-
-**PDV za automatske šifre**: ovo polje služi za prisilno postavljanje određene PDV šifre u automatski generiranom knjiženju (npr. prijeboj za reverse charge) u odnosu na šifru korištenu u glavnom knjiženju (npr. s kupovne strane u reverse charge-u).
+**Isključi iz automatskog šablona knjiženja**: aktiviranjem ove oznake odgovarajuća šifra PDV-a neće biti preneta u računovodstvena knjiženja koja se automatski generišu na osnovu glavnog računovodstvenog šablona putem polja *Automatski šablon knjiženja*.
 
 :::note Napomena
-Korištenje ovog polja postaje **ključno** u slučaju primitka **fakture kupnje u reverse charge-u s djelomično ili potpuno neodbitnim PDV-om**. Po zadanim postavkama softver bi primijenio istu PDV šifru i u prijebojnom knjiženju s prodajne strane, a postotak neodbitnosti bi efektivno značio "neoporezivo" za taj dio. Dakle, efekt bi bio neutralan.
-Za ostvarivanje ograničenog odbitka potrebno je da PDV s prodajne strane bude u potpunosti oporeziv, dok neodbitni dio ostaje trošak s kupovne strane. Kako bi se izbjeglo ručno mijenjanje PDV šifre u automatski generiranom prijebojnom knjiženju (npr. šifra 2250 s 50% ograničenog odbitka koja bi se trebala promijeniti u šifru 22), moguće je koristiti ovo polje, koje automatski vrši korekciju.
+Upotreba ove oznake **posebno je važna** u slučaju prijema **mešovite ulazne fakture**, kod koje je dobavljač jedan deo obračunao prema načelu **prenosa poreske obaveze (Reverse Charge)**, a drugi deo prema redovnom režimu. Za redovni deo moguće je odbiti prethodni porez, dok je deo koji se odnosi na Reverse Charge neutralan jer se evidentira i u registru nabavke i u registru prodaje.
+
+Ako se koriste odgovarajuće razdvojene šifre PDV-a, na primer šifra „Mešoviti Reverse Charge – odbitni deo“, i ako je na njoj aktivirana ova oznaka, prilikom unosa iznosa sa obe šifre u glavno nabavno knjiženje (na primer, šifra 22 za deo koji podleže *Reverse Charge-u* i šifra „Mešoviti Reverse Charge...“), u automatski generisanom prenosnom knjiženju biće preneta samo šifra 22. Time se automatski ostvaruje odbitak samo za deo koji nije obuhvaćen mehanizmom Reverse Charge.
 :::
 
-**Datum isteka valjanosti**: nakon postavljenog datuma šifra više neće biti dostupna, što je korisno za blokiranje korištenja zastarjelih PDV šifri.
+**PDV za automatske šablone knjiženja**: ovo polje služi za nametanje posebne šifre PDV-a u automatski generisanom računovodstvenom knjiženju, na primer u prenosnom knjiženju za Reverse Charge, umesto šifre korišćene u glavnom knjiženju, kao što je nabavno knjiženje.
 
-**Osnova za obračun pečata**: budući da se pečat na fakturi unosi automatski samo kada postoje PDV šifre oslobođene, isključene ili neoporezive (prepoznaje se Kategorija PDV-a same šifre) i kada faktura prelazi određeni iznos (postavljeno u tablici osnovnih podataka tvrtke), funkcija ovog označivača je upravljanje posebnim slučajevima koji, iako oslobođeni, neoporezivi ili isključeni, predstavljaju iznimku i ne podliježu primjeni pečata. U tim slučajevima označivač treba biti isključen.
+:::note Napomena
+Upotreba ovog polja **posebno je važna** u slučaju prijema **ulazne fakture sa prenosom poreske obaveze (Reverse Charge) kod koje je prethodni porez delimično ili potpuno neodbitan**.
 
-NAPOMENA: u slučaju pogrešnog aktiviranja označivača na šiframa tipa Stopa, prevladava čitanje kategorije PDV-a i pečat NE se unosi.
+Softver bi podrazumevano primenio istu šifru PDV-a i u prenosnom knjiženju na strani prodaje. Procenat neodbitnog PDV-a tada bi odgovarajući deo tretirao kao neoporeziv, pa bi efekat u praksi uvek bio neutralan.
 
-**Reverse charge**: vidi [**ovdje**](/docs/finance-area/particular-cases/mixed-reverse-charge)
-
-**PDV na maržu / Referentni PDV na maržu**: vidi [**ovdje**](/docs/finance-area/particular-cases/VAT_regime-del-maine)
-
-###  Vrsta PDV knjiženja  
-
-U ovom odjeljku moguće je definirati za svaku PDV stopu jedan ili više podračuna za PDV kupnji/prodaja (obično relevantno za lokalizacije izvan Italije, npr. zemlje Istočne Europe, gdje je obavezno knjiženje smanjenog, normalnog ili povećanog PDV-a na zasebne podračune).
-Također je moguće povezati te račune s *Vrsta PDV knjiženja* koja se kodira u odgovarajućoj [**tablici**](/docs/configurations/tables/finance/vat-accounting-types) , dodjeljuje klijentu/dobavljaču unutar osnovnih podataka ili se definira kao zadana u [**općim računovodstvenim parametrima**](/docs/configurations/parameters/finance/accounting-parameters)
-
-**Vrsta / Opis PDV knjiženja**: šifra / opis vrste PDV knjiženja (polje nije obavezno).
-
- **Račun kupnji**: račun kupnje predložen za ovu vrstu PDV knjiženja.
-
-**Podračun kupnji**: podračun kupnje predložen za ovu vrstu PDV knjiženja.
-
-**Opis**: opis podračuna kupnje predložen za ovu vrstu PDV knjiženja.
-
-**Račun prodaje**: račun prodaje predložen za ovu vrstu PDV knjiženja.
-
-**Podračun prodaje**: podračun prodaje predložen za ovu vrstu PDV knjiženja.
-
-**Opis**: opis podračuna prodaje predložen za ovu vrstu PDV knjiženja.
-
-### Napomene 
-
-**Šifra**: numerička šifra koja identificira PDV stopu.
-
-**Napomene**: eventualne dodatne napomene.
-
-### Specifikacije za prijavu
-
-U ovom odjeljku moguće je parametizirati različite PDV šifre korištene u knjiženjima kako bi se generirao ispisni izvještaj (po potrebi kreiran putem integriranog report designera u Fluentisu) koji predstavlja primjer godišnje PDV prijave.
-Izvještaj će agregirati sve PDV šifre korištene tijekom godine kako bi prikazao ukupne iznose koje treba unijeti u redove porezne prijave. Stoga je potrebno povezati svaku PDV šifru s odgovarajućim redom prijave prema uputama ministarstva i specifičnim pravilima relevantne prijave.
-
-**Operacije**: pomoću padajućeg izbornika odabrati tip operacije: Aktivna, Pasivna ili Reverse charge, kako bi se razlikovali dijelovi transakcija koje se knjiže s odgovarajućom PDV šifrom u redove prijave za kupnje, prodaje ili reverse charge.
-
-**Redak prijave / Opis**: pomoću padajućeg izbornika odabrati redak (šifra i opis) PDV prijave kojem će PDV šifra biti pridružena (popis je unaprijed učitan i korisnik ga ne može mijenjati).
-  
-### VIDEO TUTORIJALI
-
-:::important Vidi također
-[**VIDEO TUTORIJALI PDV STOPA**](/docs/video/finance/intro)
+Da bi se primenio ograničeni odbitak, celokupan PDV na strani prodaje mora biti oporeziv, dok neodbitni deo na strani nabavke ostaje trošak. Kako bi se izbegao ručni pristup automatski generisanom prenosnom knjiženju i promena šifre PDV-a (na primer, promena šifre 2250, koja omogućava samo 50 % odbitka, u šifru 22), ovo polje može se unapred podesiti tako da se šifra automatski ispravi.
 :::
- 
+
+**Datum isteka važenja**: nakon navedenog datuma šifra više neće moći da se koristi. Polje je korisno za blokiranje šifara koje više nisu na snazi.
+
+**Osnovica za obračun takse**: taksa se na fakturi automatski dodaje samo kada se koriste šifre PDV-a kategorije *Oslobođeno*, *Izuzeto* ili *Neoporezivo* i kada faktura premašuje određeni iznos definisan u tabeli šifarnika preduzeća. Ova oznaka služi za upravljanje izuzecima koji, iako pripadaju tim kategorijama, ne podležu obračunu takse. U takvim slučajevima oznaka mora biti deaktivirana.
+
+NAPOMENA: ako je oznaka pogrešno aktivirana na šifri kategorije *Stopa*, prednost ipak ima kategorija PDV-a, pa se taksa **neće** dodati.
+
+**Reverse Charge (prenos poreske obaveze)**: pogledajte [**ovde**](/docs/finance-area/particular-cases/mixed-reverse-charge).
+
+**PDV na maržu / Referentni PDV na maržu**: pogledajte [**ovde**](/docs/finance-area/particular-cases/VAT_regime-del-maine).
+
+### Tip knjiženja PDV-a
+
+U ovom odeljku moguće je definisati jedan ili više analitičkih konta za PDV na nabavku/prodaju za svaku stopu PDV-a. Ovo je posebno korisno u lokalizacijama izvan Italije, na primer u zemljama istočne Evrope, gde postoji obaveza zasebnog računovodstvenog evidentiranja sniženih, redovnih ili povišenih stopa PDV-a na različitim analitičkim kontima.
+
+Ta konta mogu se povezati i sa *tipom knjiženja PDV-a*, koji se definiše u odgovarajućoj [**tabeli**](/docs/configurations/tables/finance/vat-accounting-types), dodeljuje kupcu ili dobavljaču u njegovom šifarniku ili postavlja kao podrazumevana vrednost u [**opštim računovodstvenim parametrima**](/docs/configurations/parameters/finance/accounting-parameters).
+
+**Tip / Opis knjiženja PDV-a**: šifra i opis tipa knjiženja PDV-a. Polje nije obavezno.
+
+**Konto nabavke**: konto nabavke koji se predlaže za ovaj tip knjiženja PDV-a.
+
+**Analitički konto nabavke**: analitički konto nabavke koji se predlaže za ovaj tip knjiženja PDV-a.
+
+**Opis**: opis analitičkog konta nabavke koji se predlaže za ovaj tip knjiženja PDV-a.
+
+**Konto prodaje**: konto prodaje koji se predlaže za ovaj tip knjiženja PDV-a.
+
+**Analitički konto prodaje**: analitički konto prodaje koji se predlaže za ovaj tip knjiženja PDV-a.
+
+**Opis**: opis analitičkog konta prodaje koji se predlaže za ovaj tip knjiženja PDV-a.
+
+### Napomene
+
+**Šifra**: numerička identifikaciona šifra stope PDV-a.
+
+**Napomene**: dodatne napomene po potrebi.
+
+### Podešavanja poreske prijave
+
+U ovom odeljku moguće je konfigurisati pojedinačne šifre PDV-a koje se koriste u računovodstvenim knjiženjima kako bi se dobio izveštaj koji predstavlja šablon godišnje prijave PDV-a. Izveštaj se po potrebi izrađuje pomoću integrisanog alata Report Designer u Fluentisu.
+
+Izveštaj objedinjuje različite šifre PDV-a korišćene tokom godine i prikazuje ukupne iznose koji se prenose u odgovarajuće redove poreske prijave.
+
+Zato je svakoj šifri PDV-a potrebno dodeliti odgovarajući red prijave, u skladu sa zvaničnim uputstvima i pravilima konkretne poreske prijave.
+
+**Transakcije**: putem padajućeg menija bira se tip transakcije – aktivna, pasivna ili Reverse Charge – kako bi se razlikovali iznosi evidentirani odgovarajućom šifrom PDV-a koji se prenose u redove prijave za nabavku, prodaju ili Reverse Charge.
+
+**Red poreske prijave / Opis**: putem padajućeg menija bira se red prijave PDV-a kojem se dodeljuju šifra i opis. Spisak je unapred popunjen i korisnik ne može da ga menja.
+
+### VIDEO-UPUTSTVA
+
+:::important Pogledajte i
+[**VIDEO-UPUTSTVA O STOPAMA PDV-a**](/docs/video/finance/intro)
+:::

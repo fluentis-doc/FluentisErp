@@ -6,7 +6,7 @@ sidebar_position: 19
 
 Putanja u formi: **Konfiguracija > Administracija > Numeriranje računovodstvenih zapisa**
 
-:::tip[FAst Start]
+:::tip[Fast Start]
 Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
 Ako se planira ručna konfiguracija, potrebno je konzultirati kontrolni popis na poveznici.

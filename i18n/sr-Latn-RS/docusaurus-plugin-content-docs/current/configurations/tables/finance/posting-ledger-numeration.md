@@ -1,26 +1,27 @@
 ---
-title: Numeriranje računovodstvenih zapisa
+title: Numerisanje računovodstvenih knjiženja
 sidebar_position: 19
 ---
 
+Putanja u obrascu: **Konfiguracija > Administracija > Numerisanje računovodstvenih knjiženja**
 
-Putanja u formi: **Konfiguracija > Administracija > Numeriranje računovodstvenih zapisa**
+:::tip[Fast Start]
+Tabela je uključena u postupak [**Fast Start**](/docs/guide/fast-start).
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
-
-Ako se planira ručna konfiguracija, potrebno je konzultirati kontrolni popis na poveznici.
+Ako se planira ručna konfiguracija, potrebno je pogledati kontrolnu listu na povezanoj stranici.
 :::
+
 ---
 
-U ovoj tablici se, preko ** [*Standardnog brojača Fluentis* ](/docs/configurations/tables/fluentis-numerations) ** , definira politika za konačna i privremena knjiženja.
+U ovoj tabeli se, pomoću **[standardnog Fluentis brojača](/docs/configurations/tables/fluentis-numerations)**, definiše politika numerisanja konačnih i privremenih knjiženja.
 
-**<u>Preporučuje se slijediti postavke vidljive na slikama</u>** radi optimalnog upravljanja numeracijom.
-Moguće je odabrati drugačiju periodičnost, npr. godišnju, ili ne koristiti automatsko dodjeljivanje slobodnih brojeva, ili ograničiti numeraciju kriterijem konzistentnosti između datuma i broja (npr. ne može broj 2 biti danas, a broj 1 sutra).
+**<u>Preporučuje se da se prate postavke prikazane na slikama</u>** radi optimalnog upravljanja numerisanjem.
 
-Također je moguće, u posebnim slučajevima ili po potrebi, započeti numeraciju od broja različitog od 1.
+Moguće je odabrati drugačiju periodičnost, na primer godišnju, ne koristiti automatsko dodeljivanje slobodnih brojeva ili ograničiti numerisanje kriterijumom usklađenosti datuma i broja (npr. broj 2 ne može biti dodeljen danas, a broj 1 sutra).
 
-**NAPOMENA:** za privremenu numeraciju potrebno je da numeracija bude negativna.
+Takođe je moguće, u posebnim slučajevima ili po potrebi, započeti numerisanje brojem različitim od 1.
+
+**NAPOMENA:** za privremeno numerisanje potrebno je koristiti negativne brojeve.
 
 ![](/img/it-it/configurations/tables/finance/posting-ledger-numerations/posting-ledger-numerations.png)
 
@@ -29,10 +30,11 @@ Također je moguće, u posebnim slučajevima ili po potrebi, započeti numeracij
 ![](/img/it-it/configurations/tables/finance/posting-ledger-numerations/posting-ledger-numerations-detail-provisory.png)
 
 :::danger PAŽNJA
-U normalnim situacijama se ne preporučuje postavljanje više od jednog brojača istovremeno, za konačna i privremena knjiženja. Ako postoji stvarna potreba, pogledajte ** [*zaglavlje knjiženja polje *Numeracija*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) **.
-Također se ne preporučuje postavljanje datuma završetka valjanosti trenutne numeracije ako to nije motivirano stvarnom promjenom u politici numeracije. Odabrana periodičnost numeracije osigurava da se broj resetira svake godine, ili svakog dana itd. Za dodatne detalje o obnovi brojača na početku godine pogledajte [**ovdje**](/docs/configurations/utility/new-year-counter-generation).
+U uobičajenim okolnostima ne preporučuje se istovremeno podešavanje više od jednog brojača za konačna i privremena knjiženja. Ako postoji stvarna potreba za tim, pogledajte polje *Numerisanje* u zaglavlju knjiženja u [**šablonima za knjiženje**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates).
+
+Takođe se ne preporučuje podešavanje datuma isteka važenja trenutnog numerisanja ako za to ne postoji stvarna potreba usled promene politike numerisanja. Izabrana periodičnost obezbeđuje da se broj resetuje svake godine, svakog dana itd. Za dodatne detalje o obnavljanju brojača na početku godine pogledajte [**ovde**](/docs/configurations/utility/new-year-counter-generation).
 :::
 
-:::important Vidi također
-[**VIDEO TUTORIALI O ADMINISTRATIVNIM TABLICAMA**](/docs/video/finance/intro)
+:::important Pogledajte i
+[**VIDEO-TUTORIJALI O ADMINISTRATIVNIM TABELAMA**](/docs/video/finance/intro)
 :::

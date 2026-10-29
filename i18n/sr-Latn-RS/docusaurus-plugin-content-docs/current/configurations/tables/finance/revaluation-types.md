@@ -3,10 +3,10 @@ title: Tipovi revalorizacije
 sidebar_position: 29
 ---
 
-Definicija ove tablice omogućuje kodificiranje referenci na zakone o preraspodjeli (rivalutaciji) koji se koriste za upravljanje detaljima preraspodjela unutar pojedinačnih kartica osnovnog sredstva. Posebno, upravljanje detaljima omogućeno je samo za kategorije osnovnih sredstava koje imaju označeno polje **Preraspodjele**.
+Definicija ove tabele omogućava evidentiranje referenci na zakone o revalorizaciji koji se koriste za upravljanje detaljima revalorizacije na pojedinačnim karticama osnovnih sredstava. Upravljanje detaljima revalorizacije omogućeno je samo za kategorije osnovnih sredstava za koje je aktivirana oznaka **Revalorizacije**.
 
-### Specifična polja
+### Posebna polja
 
-**Šifra**: identifikacijska šifra vrste preraspodjele.
+**Šifra**: identifikaciona šifra tipa revalorizacije.
 
-**Opis**: opis vrste preraspodjele.
+**Opis**: opis tipa revalorizacije.

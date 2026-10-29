@@ -3,61 +3,60 @@ title: Tipovi odbitka poreza
 sidebar_position: 34
 ---
 
-:::tip[FAst Start]
-Na ovu tablicu utječe procedura [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu odnosi se postupak [**Fast Start**](/docs/guide/fast-start).
 
-U slučaju ručne konfiguracije potrebno je slijediti kontrolni popis na poveznici.
+Ako želite ručno da konfigurišete tabelu, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-U ovoj se tablici pretražuju i unose vrste poreza po odbitku koje se dodjeljuju primateljima naknada (trgovački agenti također spadaju u primatelje) radi pravilnog upravljanja knjiženjima i ostalim povezanim poreznim obvezama.
+U ovoj tabeli pretražuju se i unose tipovi poreza po odbitku (*ritenuta d'acconto*) koji se povezuju sa primaocima naknada (trgovački agenti takođe su primaoci naknada), radi pravilnog vođenja računovodstvenih knjiženja i drugih povezanih poreskih obaveza.
 
 #### Specifična polja
 
-**Šifra poreza**: alfanumerička šifra od 5 znakova koja identificira porez; obično se koristi šifra ministarstva.
+**Šifra poreza po odbitku**: alfanumerička šifra od 5 znakova kojom se identifikuje porez po odbitku; uobičajeno se koristi zvanična šifra poreza koju je odredilo nadležno ministarstvo.
 
-**Opis poreza**: opis šifre poreza.
+**Opis poreza po odbitku**: opis šifre poreza po odbitku.
 
-**[Šifra poreza prema zakonu](/docs/configurations/tables/finance/tax-code)**: poziva tablicu šifri poreza; unaprijed je popunjena prilikom instalacije i sadrži cjelokupan popis šifri poreza predviđenih za obrazac F24.
+**[Poreska šifra](/docs/configurations/tables/finance/tax-code)**: otvara tabelu poreskih šifara. Tabela je unapred popunjena prilikom instalacije i sadrži kompletnu listu poreskih šifara predviđenih za obrazac F24.
 
-**Računovodstvena šifra**: questo campo prevede l'impostazione obbligatoria per registrare il compenso in contabilità: si tratta normalmente di una causale iva, tipo un normale acquisto Italia. E' comunque prevista anche la valorizzazione di causali non Iva per gestire i casi di gestione ritenute a collaboratori saltuari non titolari di partita IVA.
+**Računovodstveni šablon glavne knjige**: ovo je obavezno polje za knjiženje naknade u računovodstvu. Po pravilu je reč o šablonu za PDV, na primer za uobičajenu domaću nabavku u Italiji. Moguće je uneti i šablone bez PDV-a radi obrade poreza po odbitku za povremene saradnike koji nemaju identifikacioni broj za PDV.
 
-**Vrste poreza za elektroničko fakturiranje**: u ovom polju moguće je unijeti šifru vrste poreza koja vrijedi za elektroničko fakturiranje (kada tvrtka podliježe odbitku poreza od strane svog klijenta / primatelja / naručitelja). Za važeće šifre pogledajte tehničke specifikacije elektroničkog fakturiranja na webu Porezne uprave.
+**Tipovi poreza po odbitku za elektronsko fakturisanje**: u ovo polje moguće je uneti posebnu šifru tipa poreza po odbitku koja se koristi za izlazno elektronsko fakturisanje, odnosno kada je preduzeće koje koristi sistem obveznik poreza po odbitku koji zadržava njegov kupac, primalac robe ili naručilac usluge. Za važeće šifre pogledajte ažurirane tehničke specifikacije za elektronsko fakturisanje koje se mogu preuzeti sa veb-stranice italijanske Poreske uprave.
 
-**Odjeljak u obrascu 770**: obavezno polje; napomena: obrazac 770 se ipak ne obrađuje u ovoj proceduri.
+**Obrazac u obrascu 770**: obavezno polje. Obrazac 770 nije podržan u ovom postupku.
 
-**Šifra plaćanja u obrascu 770**: šifra plaćanja u 770 nije obavezna i trenutno se ne koristi.
+**Šifra plaćanja u obrascu 770**: šifra plaćanja u obrascu 770. Ovo polje nije obavezno i ne koristi se.
 
-**Vrste stavki**: izbor je između neto stavki i bruto stavki. Razlika se odnosi na kreiranje dospijeća neto ili bruto svih poreza i obaveza koje snosi primatelj. Standardna postavka su neto stavke kako bi se dobio raspored dospijeća s stvarnim iznosom za isplatu profesionalcu. U tom slučaju računovodstvena šifra ne smije imati blokadu za knjiženje neuravnoteženih stavki.
+**Tipovi stavki**: moguće je izabrati neto ili bruto stavke. Razlika se odnosi na kreiranje rokova dospeća u neto ili bruto iznosu, nakon uključivanja svih poreza na teret primaoca naknade. Standardno podešavanje predviđa neto stavke kako bi se u evidenciji dospeća prikazao stvarni iznos koji treba platiti stručnjaku. U tom slučaju računovodstveni šablon ne sme da sadrži zabranu knjiženja neuravnoteženih stavki.
 
-**Vrsta poreza**: opcija predujam ili porez po odbitku. Trenutno ovo nema utjecaja na rad modula, ali je važno za CU (Certificazione Unica / Jedinstvenu potvrdu) za popunjavanje polja Predujam ili *Porez po odbitku*.
+**Tip poreza po odbitku**: moguće je izabrati porez koji se obračunava kao akontacioni ili kao konačni porez. Ova razlika trenutno ne utiče na rad modula, ali je važna za obrazac CU (jedinstvena potvrda), u kojem se popunjava jedno od dva polja: *Porez po odbitku kao akontacija* ili *Porez po odbitku kao konačni porez*.
 
-**Šifra plaćanja**:šifra plaćanja poreza. Ovaj podatak koristi se u postupku pripreme CU i za njegovo pravilno vođenje preporučuje se konzultirati službene upute Porezne uprave.
+**Šifra plaćanja**: šifra plaćanja poreza po odbitku. Ovaj podatak preuzima se prilikom obrade obrasca CU (jedinstvena potvrda). Za njeno podešavanje preporučuje se konsultovanje odgovarajućih zvaničnih uputstava koja se mogu preuzeti sa veb-stranice italijanske Poreske uprave.
 
-**Šifra za ostale iznose koji nisu podložni porezu**: omogućuje specifično označavanje, za svaku vrstu poreza, šifre (obično numeričke prema uputama Porezne uprave) za iznose koji nisu predmet poreza po odbitku. Ako polje nije popunjeno, prilikom pripreme CU u [**odgovarajućem modulu**](/docs/finance-area/declarations/declarations/withholding-tax-certification), automatski će se koristiti *šifra 21* za stavke naknada primatelja unesene u dokumentima s **vrsta stavke 4** (*Ostalo*) npr. za unaprijed plaćene troškove primatelja u ime klijenta koje se naknadno tereće. 
+**Šifra ostalih iznosa koji ne podležu porezu po odbitku**: polje omogućava određivanje šifre za iznose koji ne podležu porezu po odbitku za svaki pojedinačni tip poreza. Šifra je po pravilu numerička i definisana je zvaničnim uputstvima italijanske Poreske uprave. Ako polje nije popunjeno, prilikom obrade obrasca CU u [**odgovarajućem modulu**](/docs/finance-area/declarations/declarations/withholding-tax-certification) automatski će se postaviti *šifra 21* za redove naknada primaocima unete u dokumente sa **tipom reda 4** (*Ostalo*). Ovaj tip reda može se koristiti, na primer, za troškove koje je primalac naknade unapred platio u ime klijenta, a zatim ih ponovo fakturisao klijentu.
 
-**Dug prema državnom proračunu**: ovaj podračun pohranjuje podračun obaveze za porez po odbitku. Koristi se u postupku knjiženja plaćanja: prilikom plaćanja naknada primateljima potrebno je integrirati knjiženje s poreznim stavkama i upravljati tablicama modula kako bi se omogućio ispis potvrda o porezu po odbitku.
+**Obaveze prema državi**: ovo analitičko konto čuva konto obaveze koje se koristi za evidentiranje obaveze po osnovu poreza po odbitku. Konto se koristi u postupku knjiženja plaćanja. Tim knjiženjem evidentira se obaveza za porez po odbitku koju je potrebno uplatiti, jer se taj porez obračunava prema načelu blagajne. Kada se plaćanje odnosi na naknade primaocima, knjiženje je potrebno dopuniti stavkama koje se odnose na porez po odbitku i pravilno podesiti tabele modula kako bi se omogućilo štampanje potvrda o porezu po odbitku.
 
-**Kategorija agenta** tip agenta koji određuje postotke doprinosa za Enasarco (talijanski fond za agente). Ako je kategorija postavljena, potrebno je unijeti i prethodni podračun obaveze prema Enasarcu. Polje je obavezno ako se vodi upravljanje Enasarco doprinosima na teret tvrtke.
+**Kategorija agenta**: tip agenta na osnovu kojeg se određuju procenti doprinosa instituciji Enasarco. Ako je kategorija postavljena, potrebno je uneti i prethodno navedeno analitičko konto obaveze prema instituciji Enasarco. Polje je obavezno ako je omogućeno upravljanje doprinosima Enasarco na teret preduzeća.
 
-**Enasarco doprinos na teret tvrtke**: ovaj označivač aktivira postavljanje dva sljedeća podračuna i čini obaveznim dodjelu kategorije agenta i podračuna obaveze za dio koji snosi agent. Aktivacija ovog označivača omogućuje knjiženje Enasarco doprinosa pomoću odgovarajuće procedure. Opcija je preporučena kako bi se omogućilo autonomno knjiženje, budući da se Enasarco doprinos obračunava po razdoblju (competenza), a ne po naplati kao porez po odbitku.
+**Doprinos Enasarco na teret preduzeća**: ova oznaka aktivira podešavanja sledeća dva analitička konta i zahteva dodeljivanje kategorije agenta i analitičkog konta obaveze za deo doprinosa na teret agenta. Aktiviranjem ove oznake omogućava se računovodstveno evidentiranje doprinosa Enasarco putem istoimenog postupka knjiženja. Preporučuje se aktiviranje ove opcije kako bi se doprinosi evidentirali zasebno, jer se doprinos Enasarco obračunava prema načelu nastanka poslovnog događaja, a ne prema načelu blagajne kao porez po odbitku. U okviru ovog podešavanja nalaze se i sledeća polja:
 
-**Dug Enasarco na teret agenta**: polje za postavljanje podračuna obaveze na kojem će se evidentirati iznos koji snosi agent. Ovaj podračun koristi se pri knjiženju plaćanja ili pri knjiženju Enasarco doprinosa, ovisno o tome je li aktivirana opcija upravljanja Enasarco doprinosima na teret tvrtke. Polje je obavezno ako je definirana kategorija agenta.
+**Obaveza Enasarco na teret agenta**: polje služi za podešavanje analitičkog konta obaveze na kojem će se evidentirati iznos na teret agenta. Ovo konto koristi se prilikom knjiženja plaćanja ili knjiženja doprinosa Enasarco, u zavisnosti od toga da li je omogućeno upravljanje doprinosima Enasarco na teret preduzeća. Polje je obavezno ako je postavljeno sledeće polje kategorije agenta.
 
-**Trošak na teret tvrtke**: podračun koji se koristi za knjiženje Enasarco troška na teret tvrtke.
+**Trošak na teret preduzeća**: analitičko konto koje se koristi za računovodstveno evidentiranje troška doprinosa Enasarco na teret preduzeća.
 
-**Dug na teret tvrtke**: podračun koji se koristi za knjiženje Enasarco obaveze na teret tvrtke.
+**Obaveza na teret preduzeća**: analitičko konto koje se koristi za računovodstveno evidentiranje obaveze za doprinose Enasarco na teret preduzeća.
 
+### Procenti
 
-### Postotci
+Odeljak sadrži sledeća polja (kliknite na strelicu sa desne strane odeljka):
 
-Ovaj odjeljak sadrži sljedeća polja (klikom na strelicu desno):
+% **Porez po odbitku**: procenat poreza po odbitku.
 
-% **Porez po odbitku**: postotak primjene poreza po odbitku.
+% **Oporezivi iznos**: procenat koji se primenjuje na osnovicu za obračun poreza po odbitku.
 
-% **Osnova**: osnovica za obračun poreza po odbitku.
+% **Penzijski fond**: procenat doprinosa za penzijski fond.
 
-% **Doprinos za mirovinsku štednju**:  postotak doprinosa za mirovinsku štednju.
+% **Paušalno umanjenje naknade**: polje se ne koristi.
 
-% **Smanjenje paušalne naknade**: polje trenutno nije u upotrebi.
-
-Odjeljak INPS omogućuje aktiviranje dodatnog odjeljka za poreze unutar naknade primatelja, kako bi se upravljalo INPS doprinosima koje, primjerice, plaćaju projektni suradnici i slični vanjski suradnici.
+Odeljak **INPS** omogućava aktiviranje dodatnog odeljka za poreze u okviru naknade primaocu, radi upravljanja doprinosima INPS koji se, na primer, plaćaju za projektne saradnike i slične kategorije.

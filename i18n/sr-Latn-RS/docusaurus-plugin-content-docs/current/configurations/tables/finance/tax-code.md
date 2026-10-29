@@ -1,36 +1,35 @@
 ---
-title: Šifra poreza
+title: Poreske šifre
 sidebar_position: 10
 ---
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Tabela je uključena u postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se planira ručna konfiguracija, potrebno je konzultirati kontrolni popis na poveznici.
+Ako se planira ručna konfiguracija, potrebno je pogledati kontrolnu listu na povezanoj stranici.
 :::
 
-Tablica ‘Šifra poreza’, unaprijed postavljena, pohranjuje sve šifre poreza predviđene za F24 obrazac koji se upravlja unutar modula Primatelji; radi se o službenim ministarskim šiframa.
+Unapred popunjena tabela „Poreske šifre” sadrži sve poreske šifre predviđene za obrazac F24, kojim se upravlja u okviru modula Primaoci; reč je o zvaničnim ministarskim šiframa.
 
-Polja ‘Upotreba’, ‘Vrsta’, ‘Rata’, ‘Godina’, ‘Ured’ i ‘Akt’ relevantna su za upravljanje F24 obrascem.
+Polja „Upotreba”, „Tip”, „Rata”, „Godina”, „Kancelarija” i „Akt” relevantna su za upravljanje obrascem F24.
 
-**Šifra**: šifra ministarskog poreza;
+**Šifra**: šifra ministarskog poreza.
 
-**Opis**: opis šifre poreza;
+**Opis**: opis poreske šifre.
 
-**Upotreba**: šifra upotrebe;
+**Upotreba**: šifra upotrebe.
 
-**Vrsta**: vrsta poreza (npr. Sekcija Država, sekcija Lokalna samouprava itd.);
+**Tip**: tip poreza (npr. odeljak Država, odeljak Lokalna samouprava itd.).
 
-**Rata**: rata poreza (vidi upute F24 obrasca);
+**Rata**: rata poreza (pogledajte uputstva za obrazac F24).
 
-**Godina**: godina poreza;
+**Godina**: poreska godina.
 
-**Ured**: ured;
+**Kancelarija**: kancelarija.
 
-**Akt**: akt;
+**Aktivan**: oznaka aktivnog statusa.
 
-**Datum završetka valjanosti**: omogućuje blokiranje korištenja odgovarajuće šifre;
+**Datum isteka važenja**: omogućava blokiranje korišćenja odgovarajuće šifre.
 
-**PDV**: označava šifre poreza koje se koriste u upravljanju uplatom PDV-a.
+**PDV**: označava poreske šifre koje se koriste za upravljanje plaćanjem PDV-a.
 
-
-Sekcija KONTO omogućuje dodjelu podračuna za šifru poreza, koji će imati prednost u odnosu na račune postavljene u općim računovodstvenim parametrima unutar knjiženja F24 obrasca.
+Odeljak KONTO omogućava dodeljivanje konta poreskoj šifri, koje će imati prednost u odnosu na konta podešena u opštim parametrima knjiženja prilikom knjiženja obrasca F24.

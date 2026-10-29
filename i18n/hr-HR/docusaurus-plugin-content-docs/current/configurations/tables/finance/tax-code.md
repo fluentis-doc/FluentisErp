@@ -2,7 +2,7 @@
 title: Šifra poreza
 sidebar_position: 10
 ---
-:::tip[FAst Start]
+:::tip[Fast Start]
 Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
 Ako se planira ručna konfiguracija, potrebno je konzultirati kontrolni popis na poveznici.
@@ -16,9 +16,9 @@ Polja ‘Upotreba’, ‘Vrsta’, ‘Rata’, ‘Godina’, ‘Ured’ i ‘Akt
 
 **Opis**: opis šifre poreza;
 
-**Upotreba**: šifra upotrebe;
+**Korištenje**: šifra upotrebe;
 
-**Vrsta**: vrsta poreza (npr. Sekcija Država, sekcija Lokalna samouprava itd.);
+**Tip**: vrsta poreza (npr. Sekcija Država, sekcija Lokalna samouprava itd.);
 
 **Rata**: rata poreza (vidi upute F24 obrasca);
 
@@ -26,11 +26,11 @@ Polja ‘Upotreba’, ‘Vrsta’, ‘Rata’, ‘Godina’, ‘Ured’ i ‘Akt
 
 **Ured**: ured;
 
-**Akt**: akt;
+**Aktivan**: aktivan oznaka;
 
 **Datum završetka valjanosti**: omogućuje blokiranje korištenja odgovarajuće šifre;
 
 **PDV**: označava šifre poreza koje se koriste u upravljanju uplatom PDV-a.
 
 
-Sekcija KONTO omogućuje dodjelu podračuna za šifru poreza, koji će imati prednost u odnosu na račune postavljene u općim računovodstvenim parametrima unutar knjiženja F24 obrasca.
+Sekcija KONTO omogućuje dodjelu konta za šifru poreza, koji će imati prednost u odnosu na konta postavljene u općim parametrima knjiženja unutar knjiženja F24 obrasca.

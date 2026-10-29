@@ -3,79 +3,81 @@ title: Knjige PDV-a
 sidebar_position: 20
 ---
 
-Putanja forme: **Konfiguracija > Tablice > Administracija > Knjige PDV-a**
+Putanja obrasca: **Konfiguracija > Tabele > Administracija > PDV knjige**
 
+:::tip[Fast Start]
+Na ovu tabelu odnosi se postupak [**Fast Start**](/docs/guide/fast-start).
 
-:::tip[FAst Start]
-Na ovu tablicu utječe procedura [**Fast Start**](/docs/guide/fast-start)
+Ako nameravate ručno da konfigurišete tabelu, pogledajte kontrolnu listu na povezanoj stranici.
 
-slučaju ručne konfiguracije potrebno je slijediti kontrolni popis na poveznici.
+Registri koje kreira Fast Start već su pripremljeni za upravljanje sledećim vrstama dokumenata:
 
-Knjige PDV-a kreirane pomoću Fast Start-a već su spremne za upravljanje:
-
-- Kupnje i prodaje u Italiji
-- Kupnje i prodaje s Reverse Charge-om, uz dodatnu pomoćnu knjigu za prijeboj kupnji
-- Kupnje i prodaje unutar EU, uz dodatnu pomoćnu knjigu za prijeboj kupnji
-- Kupnje i prodaje izvan EU
-- Gotovinske prometne račune (corrispettivi)
-- Sažetak za ispis obračuna PDV-a
+- domaća nabavka i prodaja
+- nabavka i prodaja sa prenosom poreske obaveze (Reverse Charge), uključujući zaseban registar za prenos knjiženja nabavke
+- nabavka i prodaja unutar EU, uključujući zaseban registar za prenos knjiženja nabavke
+- nabavka i prodaja izvan EU
+- primici od prodaje
+- zbirni registar za štampanje obračuna PDV-a
 :::
 
-### Specifične tipke
+### Posebna dugmad
 
-**Novi**: omogućuje unos nove knjige PDV-a.  
-**Unos godine**: omogućuje unos nove godine za knjigu PDV-a na kojoj se trenutno nalazite.  
-**Obriši**: omogućuje brisanje knjige PDV-a na kojoj se trenutno nalazite.  
-**Obriši godinu**: omogućuje brisanje godine knjige PDV-a na kojoj se trenutno nalazite.  
-**Pregled**: omogućuje pregled ispisa.  
-**Ispis**: omogućuje ispis.  
-**Poništi konačne ispise**: omogućuje poništavanje konačnih ispisa knjiga PDV-a. Otvara se dijalog u kojem se odabire knjiga i razdoblje koje želite poništiti.  
-:::
+**Novo**: omogućava unos novog PDV registra (knjige).
 
-### Prvi odjeljak 
+**Unesi godinu**: omogućava unos nove godine za trenutno odabrani PDV registar.
 
-**Šifra**: alfanumerička šifra koja identificira knjigu PDV-a.
+**Otkaži**: omogućava brisanje trenutno odabranog PDV registra.
 
-**Opis**: opis knjige PDV-a koji se obično ispisuje u službenim izvještajima.
+**Pregled pre štampanja**: omogućava pregled ispisa.
 
-**Vrsta knjige**: unaprijed definirana tipologija knjige PDV-a. Potrebno je obratiti pažnju na ispravno postavljanje, primjerice kod knjiga koje primaju prijeboj za unutarzajamne kupnje (intra) ili reverse charge, koje će biti postavljene na Prodaje, te ispravno razlikovati slučajeve kupnji/prodaja u suspenziji poreza i posebne režime prema čl. 74-ter DPR 633/72.
+**Štampaj**: omogućava štampanje.
 
-**Kontrola protokola**: postavljanje ove opcije blokira mogućnost konačnog ispisa knjige PDV-a koja ima praznine u protokolima ili nedosljednosti u njihovom redoslijedu.
+**Poništi završni izveštaj**: omogućava poništavanje konačnih ispisa registara. Otvara se dijaloški okvir u kojem je potrebno odabrati registar i period za koji se ispis poništava.
 
-**Za ventilaciju**: ova opcija zahtijeva da se knjiga PDV-a uključi u postupak ventilacije gotovinskih računa.
+### Prvi odeljak
 
-**Za obračun**: omogućuje određivanje koje će se knjige PDV-a koristiti u ispisu periodičnog obračuna PDV-a.
+**Šifra**: alfanumerička identifikaciona šifra registra.
 
-**Ref. knjige kupnji**: polje je aktivno samo za knjige prodaje/gotovinskih računa, kako bi se mogla naznačiti knjiga PDV-a kupnji iz koje potječe ventilacija gotovinskih računa.
+**Opis**: opis registra koji se po pravilu prikazuje u zvaničnim izveštajima.
 
-**Opis**: opis referentne knjige kupnji.
+**Tip registra**: unapred definisan tip registra. Posebnu pažnju treba posvetiti pravilnom podešavanju registara koji obuhvataju prenos knjiženja nabavke unutar EU ili knjiženja sa prenosom poreske obaveze (Reverse Charge). Ti registri podešavaju se kao *Prodaja*. Takođe je potrebno pravilno razlikovati nabavku i prodaju sa odloženim PDV-om i poseban režim prema članu 74 ter Uredbe predsednika Republike br. 633/72.
 
-**Numeracija**: omogućuje postavljanje brojača za svaku knjigu PDV-a s uobičajenim standardnim opcijama koje su zajedničke ostalim brojačima u sustavu, umjesto standardne numeracije predviđene za knjige PDV-a. U talijanskoj lokalizaciji ovo se polje ne koristi.
+**Provera protokola**: aktiviranjem ove oznake blokira se konačno štampanje registra ako postoje praznine u numerisanju protokola ili nepravilnosti u njihovom redosledu.
 
-**Opis**: opis povezan s brojačem.
+**Za raspodelu**: ovom oznakom određuje se da registar treba da obuhvati postupak raspodele ukupnih primitaka od prodaje (*ventilacija corrispettivi*).
 
-**Vrsta PDV aktivnosti**: padajući izbornik povezan je s tablicom Vrste PDV aktivnosti, gdje je moguće slobodno definirati različite tipove aktivnosti u svrhu PDV-a (npr. "Proizvodnja" ili "Nekretnine"), kojima se može pridružiti postotak Pro Rata odbitka PDV-a. Dostupna je i opcija za označavanje glavne aktivnosti, na kojoj će se totalizirati vrijednosti u obračunu PDV-a.
+**Uključi u obračun (poravnanje)**: određuje koji se PDV registri uključuju u štampanje periodičnog obračuna PDV-a.
 
-**Opis**: opis vrste PDV aktivnosti
+**Referentni registar nabavke**: polje je aktivno samo za registre prodaje i primitaka od prodaje. Služi za određivanje izvornog PDV registra nabavke iz kojeg potiču podaci za raspodelu ukupnih primitaka od prodaje.
 
-### Drugi odjeljak
+**Opis**: opis referentnog registra nabavke.
 
-Omogućuje postavljanje brojača protokola za svaku poslovnu godinu u polju Početni PDV protokol.
+**Numerisanje**: omogućava podešavanje zasebnog brojača za svaki registar, uz uobičajene standardne opcije dostupne i za ostale brojače u sistemu. Time se zamenjuje standardno numerisanje predviđeno za PDV registre. U italijanskoj lokalizaciji ovo polje se ne koristi.
 
-**Godina**: referentna godina.
+**Opis**: opis povezanog brojača.
 
-**Početni PDV protokol**: početni PDV protokol za referentnu godinu.
+**Tip aktivnosti PDV-a**: padajući meni povezan sa tabelom Tip aktivnosti PDV-a, u kojoj je moguće slobodno definisati različite tipove delatnosti za potrebe PDV-a, na primer „Proizvodnja” i „Nekretnine”, i dodeliti im procenat odbitka prethodnog poreza (*pro-rata*). Dostupna je i oznaka kojom se određuje glavna delatnost, čije se vrednosti sabiraju u obračunu PDV-a.
 
-**Zadnji PDV protokol**: omogućuje pregled koji je zadnji PDV protokol ispisan kao konačan u samoj knjizi.
+**Opis**: opis tipa aktivnosti PDV-a.
 
-**Datum zadnjeg ispisa**: datum izvršenja zadnjeg konačnog ispisa.
+### Drugi odeljak
 
-**Zadnja ispisana stranica**: zadnji broj stranice ispisane u konačnoj verziji.
+Omogućava podešavanje brojača PDV protokola za svaku računovodstvenu godinu u polju „Početni PDV protokol”.
+
+**Godina**: godina na koju se podaci odnose.
+
+**Prva PDV referenca**: početni broj PDV protokola za odabranu godinu.
+
+**Poslednja PDV referenca**: prikazuje poslednji broj PDV protokola koji je konačno odštampan u tom registru.
+
+**Datum poslednjeg štampanja**: datum izvršenja poslednjeg konačnog štampanja.
+
+**Broj poslednje odštampane stranice**: poslednji broj stranice obuhvaćen konačnim štampanjem.
 
 :::tip Napomena
-Ispis ove tablice omogućuje pregled zadnjeg razdoblja koje je u cijelosti ispisano kao konačno za svaku knjigu PDV-a i godinu.
+Štampanje ove tabele omogućava pregled poslednjeg perioda koji je konačno odštampan za svaki registar i godinu.
 :::
 
-:::important Vidi također
-[**VIDEO TUTORIJALI O ADMINISTRATIVNIM TABLICAMA**](/docs/video/finance/intro)
+:::important Pogledajte i
+[**VIDEO-UPUTSTVA O ADMINISTRATIVNIM TABELAMA**](/docs/video/finance/intro)
 :::

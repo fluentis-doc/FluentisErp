@@ -1,15 +1,16 @@
 ---
-title: Numeriranje zapisa PDV-a
+title: Numerisanje zapisa PDV-a
 sidebar_position: 22
 ---
 
-Omogućuje postavljanje za svaki registar brojača PDV protokola s uobičajenim standardnim opcijama koje su zajedničke s drugim brojačima prisutnim u sustavu (osim za formulu alfanumeričkog upravljanja: PDV protokol je **UVJEK** broj), umjesto standardne numeracije predviđene za PDV registre.
+Omogućava podešavanje zasebnog brojača PDV protokola za svaki registar (knjigu), uz uobičajene standardne opcije dostupne i za ostale brojače u sistemu. Jedini izuzetak je formula za alfanumeričko upravljanje, jer je broj PDV protokola **UVEK** numerički. Time se zamenjuje standardno numerisanje predviđeno za PDV registre (knjige).
 
-Postavke brojača iste su kao i kod ostalih standardnih brojača.
+Postavke brojača iste su kao kod ostalih standardnih brojača.
 
-Numeracija postavljena u ovoj tablici poziva se unutar [**tablice PDV registara**](/docs/configurations/tables/finance/vat-books/)
+Numerisanje definisano u ovoj tabeli koristi se u okviru [**tabele PDV registara (knjiga)**](/docs/configurations/tables/finance/vat-books/).
 
 :::tip Napomena
-U talijanskoj praksi **nije** potrebno definirati nikakav brojač u ovoj tablici, budući da protokoliranje **uvijek** prati kalendarsku godinu, neovisno o tome poklapa li se s računovodstvenom godinom ili ne, pa je standardna numeracija predviđena u tablici PDV registara dovoljna za upravljanje.
-Ova opcija unesena je za strane slučajeve u kojima protokoliranje ne prati kalendarsku godinu.
+U italijanskom sistemu **nije** potrebno definisati brojače u ovoj tabeli jer se numerisanje protokola **uvek** vrši prema kalendarskoj godini, nezavisno od toga da li se računovodstvena godina poklapa sa kalendarskom godinom ili prelazi njene granice. Zato je za upravljanje numerisanjem dovoljan standardni brojač koji je već predviđen u tabeli PDV registara.
+
+Ova mogućnost uvedena je za strane lokalizacije u kojima numerisanje protokola ne prati kalendarsku godinu.
 :::

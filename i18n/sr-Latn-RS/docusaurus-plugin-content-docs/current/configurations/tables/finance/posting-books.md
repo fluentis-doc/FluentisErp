@@ -1,12 +1,12 @@
 ---
-title: Knjigovodstvene knjige
+title: Knjige knjiženja
 sidebar_position: 12
 ---
 
-Tablica podrške za odgovarajući combo box koji se nalazi u [**knjigovodstvenim temeljnicama**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+Pomoćna tabela za padajući meni koji se nalazi u [**računovodstvenim šablonima za knjiženje**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates).
 
-U osnovi, svaka temeljnica može se povezati s vlastitom teorijskom knjigom u kojoj se evidentira/ispisuje; u kombinaciji s definicijama različitih brojača može se tako dobiti različita numeracija knjiženja ovisno o pripadajućoj knjizi.
+Svaki računovodstveni šablon može biti povezan sa određenom računovodstvenom knjigom u koju se knjiženje evidentira i štampa. U kombinaciji sa definisanjem zasebnih brojača, to omogućava dodeljivanje različitih brojeva knjiženja u zavisnosti od pripadajuće knjige.
 
-:::tip Nota
-Odnosi se na numeraciju knjiženja za FEC datoteku u francuskoj lokalizaciji.
+:::tip Napomena
+Ovo se odnosi na numerisanje knjiženja za datoteku FEC u francuskoj lokalizaciji.
 :::
