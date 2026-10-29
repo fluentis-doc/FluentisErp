@@ -1,346 +1,368 @@
 ---
-title: Unos predložaka općeg knjigovodstva
+title: Unos šablona za knjiženje glavne knjige
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-Ova je tablica obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast start]
 
-U slučaju ručne konfiguracije, preporučujemo koristiti kontrolnu listu dostupnu na poveznici iznad.
+Na ovu tabelu utiče postupak [**Fast start**](/docs/guide/fast-start).
 
-Predlošci kreirani putem Fast Start postupka omogućuju izvođenje sljedećih knjiženja:
+Ako konfiguraciju nameravate da obavite ručno, pogledajte kontrolnu listu na povezanoj stranici.
 
-- Knjiženja kupnje i prodaje na području **Hrvatske**
-- Kupnja i prodaja s **Reverse charge** u Hrvatskoj, interno preknjiženje i pripadajuće samofakturiranje
-- Knjiženja kupnje i prodaje unutar **EU**, interno preknjiženje i pripadajuće samofakturiranje
-- Knjiženja kupnje i prodaje iz **zemalja izvan EU** pripadajuće samofakturiranje i preknjiženje
-- Odobrenja kao storna prethodnih knjiženja
-- Kupnja i prodaja **osnovnih sredstava**
-- Gotovinski promet
+Šabloni za knjiženje kreirani postupkom Fast start omogućavaju sledeće:
+
+- Knjiženja nabavke i prodaje
+- Nabavku i prodaju po principu **prenosa poreske obaveze (Reverse charge)**, prenos na drugi konto za nabavku i odgovarajuće samoizdavanje faktura
+- Knjiženja nabavke i prodaje **unutar EU**, prenos na drugi konto za nabavku i odgovarajuće samoizdavanje faktura
+- Knjiženja nabavke i prodaje **izvan EU** i odgovarajuće samoizdavanje faktura sa prenosom na drugi konto
+- Knjižna odobrenja za storniranje prethodnih knjiženja
+- Nabavku i prodaju **osnovnih sredstava**
+- Evidentiranje prihoda od prodaje
 - **Naplate i plaćanja**
-- Aktivni portfelj (izdavanje i slanje Ri.Ba dokumenata, naplata i evidencija neplaćenih stavki)
-- Slobodna knjiženja u dnevniku (prva nota)
-- Ostala knjiženja u dnevniku kao što su obračun plaća i slično
-- Preknjiženje PDV-a
+- Aktivni portfolio (izdavanje i predaja bankarskih potvrda Ri.Ba., naplata i neplaćene stavke)
+- Slobodna knjiženja u dnevniku
+- Ostala knjiženja u dnevniku, kao što su obračuni zarada i slično
+- Prenos PDV-a na drugi konto
 - Uplate poreza i doprinosa
-- Ispravna knjiženja kao što su obračunani i plaćeni troškovi unaprijed ili unatrag (prijelazna razdoblja)
-- Amortizacija
-- Završna i početna knjiženja pri zatvaranju i otvaranju poslovnih knjiga
+- Korektivna knjiženja, kao što su vremenska razgraničenja unapred plaćenih troškova i unapred naplaćenih prihoda, kao i obračunati troškovi i prihodi
+- Amortizaciju
+- Završna knjiženja i ponovno otvaranje konta
+
 :::
 
-## **1. Zaglavlje**
+## 1. Zaglavlje
 
 #### Specifična polja
 
-**Predložak**: predstavlja alfanumerički kod od 5 znakova koji mora biti jedinstven.
+**Šablon za knjiženje**: predstavlja jedinstvenu alfanumeričku šifru od 5 znakova.
 
-**Opis predloška**: predstavlja opis predloška.
+**Opis šablona za knjiženje**: opis šablona za knjiženje.
 
-**Vrsta knjiženja**: označava vrstu knjiženja. Riječ je o fiksnoj internoj tablici koja nije dostupna za izmjenu od strane korisnika, a služi za razgraničavanje predložaka koji se odnose na ne-PDV knjiženja od onih koji se odnose na različite vrste PDV knjiženja.
+**Vrsta kretanja**: označava vrstu kretanja računovodstvenog knjiženja. Reč je o fiksnoj internoj tabeli koju korisnik ne može da menja, a koja razdvaja šablone za knjiženje bez PDV-a od različitih vrsta kretanja povezanih sa PDV-om.
 
-**Vrsta dokumenta**: tablica je unaprijed popunjena, ali ju korisnik može mijenjati ili dopunjavati. U ovoj tablici posebnu pažnju treba obratiti na retke koji sadrže flag **‘Nota odobrenja'** i **‘Ispravna nota'**: Kod note odobrenja sustav provjerava je li PDV odjeljak popunjen s negativnim iznosima (radi se o provjeri ispravnosti znakova – također se provodi kontrola pri knjiženju storno dokumenata iz područja prodaje/kupnje: nije dopušteno imati retke s pozitivnim iznosima i istovremeno druge s negativnim iznosima za različite konta).
-Za ispravnu notu, sustav će automatski, unutar PDV odjeljka knjiženja, aktivirati flag koji označava retke povezane s ispravnim notama, te će dodijeliti referentni datum dokumenta koji se ispravlja za potrebe PDV-a. Taj se datum ne smije miješati s poljem **Razdoblje PDV-a**: ota odobrenja (ili ispravna nota) ispravit će PDV za razdoblje navedeno u ovom drugom polju.
+**Vrsta dokumenta**: tabela je unapred popunjena, ali korisnik može da je menja i dopunjuje. Posebno su važne stavke sa oznakama **Knjižno odobrenje** i **Dokument o izmeni**.
+
+Kod knjižnih odobrenja postupak proverava da li su iznosi u odeljku PDV-a negativni. Proverava se i usklađenost predznaka prilikom knjiženja knjižnih odobrenja iz oblasti prodaje ili nabavke. To znači da nije dozvoljeno istovremeno imati redove sa pozitivnim iznosima i druge redove sa negativnim iznosima na drugom analitičkom kontu.
+
+Za dokumente označene kao **Dokument o izmeni**, postupak u odeljku PDV-a knjiženja aktivira oznaku kojom se identifikuju redovi povezani sa dokumentima o izmeni, kao i datum dokumenta koji se ispravlja za potrebe PDV-a. Taj datum ne treba mešati sa poljem **Period PDV-a**: knjižno odobrenje ili drugi dokument o izmeni ispraviće PDV za period naveden u tom polju.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header/image02.png)
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/header/image03.png)
- 
-**Numeracija**: padajući izbornici omogućuju povezivanje svakog predloška s određenom numeracijom – zasebno za konačna i privremena knjiženja. Ova je funkcionalnost potrebna u nekim inozemnim lokalizacijama. Vidi više u **[Tablica numeracije računovodstvenih zapisa](/docs/configurations/tables/fluentis-numerations)**. Ako za predložak nije definirana posebna numeracija, sustav će prema zadanim postavkama pokušati dohvatiti numeraciju definiranu u **[Općim parametrima računovodstva](/docs/configurations/parameters/finance/accounting-parameters/)** Ako ni tamo nije definirana, koristit će se opća tablica *Numeriranje računovodstvenih zapisa*.
 
-**Knjigovodstvene knjige**: padajući izbornik koji se povezuje s posebnom tablicom u kojoj se definiraju kod i opis, a koji se zatim mogu povezati s predloškom, radi grupiranja i kategorizacije. Te se kategorije mogu povezati i s različitim numeracijama iz prethodnog polja (korisno za strane lokalizacije gdje se knjige dnevnika vode odvojeno ovisno o vrsti knjiženja). Primjer: kupnje mogu imati numeraciju a) povezanu s knjigom "Kupnje", prodaje numeraciju b) povezanu s knjigom "Prodaje", a bankovna knjiženja (naplate/plaćanja) numeraciju c) povezanu s knjigom "Bankovna knjiženja" itd.
+**Numerisanje**: padajuće liste omogućavaju povezivanje svakog računovodstvenog šablona sa određenim numerisanjem za konačna, odnosno privremena knjiženja. Takav način upravljanja potreban je u nekim stranim lokalizacijama. Pogledajte [*Tabelu numerisanja računovodstvenih knjiženja*](/docs/configurations/tables/fluentis-numerations).
 
-**Krajni rok valjanosti**: omogućuje blokadu korištenja određenog predloška od navedenog datuma nadalje. Predložak neće biti vidljiv na popisu predložaka nakon tog datuma.
+Ako za šablon za knjiženje nije definisano posebno numerisanje, sistem će najpre potražiti numerisanje eventualno postavljeno u **[Opštim računovodstvenim parametrima](/docs/configurations/parameters/finance/accounting-parameters/)**. Ako ni tamo nije definisano, koristiće se opšta tabela *Numerisanje računovodstvenih knjiženja*.
 
-**Registro incassi e pagamenti**: NIJE AKTIVNO (označava predloške koji se odnose na registar naplate/plaćanja unutar pojednostavljenog knjigovodstva za obrtnike/profesionalce).
+**Računovodstvene knjige**: padajuća lista povezana sa posebnom tabelom u kojoj se definišu šifra i opis, koji se zatim povezuju sa šablonom za knjiženje radi grupisanja i kategorizacije šablona. Te kategorije mogu se povezati i sa različitim numerisanjima iz prethodnog polja. To je korisno u stranim lokalizacijama u kojima se vode odvojeni zapisi u dnevniku, u zavisnosti od vrste računovodstvenog knjiženja.
 
-**Professionisti**: NIJE AKTIVNO (označava predložak namijenjen za knjigovodstvo profesionalaca).
+Na primer, nabavka može da koristi numerisanje a), povezano sa računovodstvenom knjigom „Nabavka”, prodaja numerisanje b), povezano sa knjigom „Prodaja”, a bankarska knjiženja (naplate i plaćanja) numerisanje c), povezano sa knjigom „Bankarska knjiženja” itd.
 
-### 1.1 Detalji karakteristike
+**Datum završetka važenja**: omogućava onemogućavanje korišćenja računovodstvenog šablona od navedenog datuma. Od sledećeg dana šablon više neće biti vidljiv na listi šablona za knjiženje.
+
+**Registar naplata i plaćanja**: NIJE AKTIVNO (označava šablone koji se prikazuju u registru naplata i obračuna u pojednostavljenom računovodstvu za samostalne delatnosti).
+
+**Samostalne delatnosti**: NIJE AKTIVNO (označava šablon za računovodstvo samostalnih delatnosti).
+
+### 1.1 Detalji atributa
 
 #### Specifična polja
 
-**Automatski predložak**: Prilikom spremanja knjiženja temeljenog na predlošku koji je trenutno u uređivanju, program će automatski generirati drugo knjiženje temeljeno na predlošku navedenom u ovom polju.
-Da bi drugo knjiženje bilo ispravno popunjeno, potrebno je poštivati sljedeće logike odnosa između dvaju knjiženja:
+**Automatski šablon za knjiženje**: prilikom čuvanja knjiženja koje se zasniva na šablonu koji se uređuje, program će automatski kreirati drugo knjiženje na osnovu šablona navedenog u ovom polju. Da bi drugo knjiženje bilo ispravno popunjeno, potrebno je poštovati sledeće odnose između dva knjiženja:
 
-a) prvi slučaj odnosi se na situaciju kada je prvo knjiženje tipa PDV-a „Kupnje unutar EU”, a drugo knjiženje je „PDV preknjiženje za kupnje unutar EU”. Ovdje je veza određena obvezom iskazivanja ulaznog PDV-a i u knjizi izlaznih računa; (isto vrijedi i za slučaj reverse charge-a, koristeći tipove PDV-a za kupnje u reverse charge-u i odgovarajuće PDV preknjiženje za te kupnje);
+a) Prvi slučaj je kada prvo knjiženje ima vrstu kretanja *PDV na nabavku unutar EU*, a drugo *Prenos PDV-a na nabavku unutar EU*. Povezanost se zasniva na evidentiranju PDV-a na nabavku i u registru prodaje. Isto važi i za prenos poreske obaveze (*reverse charge*), pri čemu se koriste vrste kretanja *PDV na nabavku po principu reverse charge* i *Prenos PDV-a na nabavku po principu reverse charge*.
 
-b) drugi slučaj: prvo knjiženje otvara stavku, dok drugo knjiženje odmah zatvara tu stavku;
+b) Drugi slučaj je kada se prvim knjiženjem otvara stavka, a drugim se ona odmah zatvara.
 
-c) treći slučaj odnosi se na zatvaranje stavke nastale knjiženjem s vrstom pokreta „PDV prodaja prema javnim tijelima” gdje je PDV bio u odgodi. U tom slučaju se povezuje s knjiženjem PDV preknjiženja za odgođeni PDV;
+c) Treći slučaj odnosi se na knjiženje zatvaranja stavke nastale knjiženjem sa vrstom kretanja „PDV na prodaju javnim organima”, kod kojeg je PDV odložen. U tom slučaju povezuje se knjiženje *Prenos odloženog PDV-a*.
 
-d) četvrti slučaj je kupnja s odgođenim PDV-om, suprotno od prethodnog slučaja;
+d) Četvrti slučaj je nabavka sa odloženim PDV-om, suprotna prethodnom slučaju.
 
-e) peti slučaj: prvo knjiženje uključuje PDV, dok se drugo knjiženje temelji na automatskim podračunima definiranim u kontnom planu;
+e) Peti slučaj je kada prvo knjiženje sadrži PDV, dok se drugo popunjava prema logici automatskih analitičkih konta definisanih u kontnom planu.
 
-f) u svim drugim slučajevima program će pokušati generirati drugo knjiženje na temelju PDV podataka iz prvog knjiženja; ako to nije moguće, drugo će se knjiženje generirati s pripadajućim podračunima, ali bez dodijeljenih vrijednosti.
+f) Ako nijedan od prethodnih slučajeva nije primenljiv, program će pokušati da postavi podatke drugog knjiženja na osnovu podataka o PDV-u iz prvog knjiženja. U suprotnom će drugo knjiženje biti kreirano sa predviđenim analitičkim kontima, ali bez dodeljenih vrednosti.
 
-**Vrsta automatskog fakturiranja**: Vidi posebno poglavlje o [**konfiguraciji automatskih samofaktura**](/docs/finance-area/e-invoice/auto-invoice/ledger-templates)
+**Vrsta automatskog samoizdavanja fakture**: pogledajte poseban odeljak o [**konfiguraciji automatskog samoizdavanja faktura**](/docs/finance-area/e-invoice/auto-invoice/ledger-templates).
 
-**Zamjena kolona ako je iznos manji od nule**: Omogućuje sustavu da automatski zamijeni kolone Duguje/Potražuje u knjiženju na temelju znaka PDV iznosa, što je korisno npr. kod knjiženja nota odobrenja. Preporučuje se aktivacija ovog polja za sva PDV knjiženja.
+**Zamena kolona ako je iznos manji od nule**: omogućava programu da zameni kolone duguje/potražuje na osnovu predznaka kretanja PDV-a. To se najčešće koristi pri knjiženju knjižnih odobrenja. Preporučuje se aktiviranje ovog polja za sva knjiženja koja uključuju PDV.
 
-**Upozorenje**: Ovo je polje aktivno samo ako je prethodno uključeno. Kada je aktivirano, korisniku će se prikazati upozorenje o zamjeni znakova.
-Flag nema utjecaja na predloške koji se koriste u automatskim postupcima knjiženja.
+**Upozorenje**: ovo polje je aktivno samo ako je prethodna opcija aktivirana. Omogućava prikaz poruke upozorenja korisniku o promeni predznaka. Ova oznaka nema uticaja na šablone koji se koriste u automatskim postupcima knjiženja.
 
-**Dopusti podračune s iznosom nula**: ovim flagom omogućuju se sljedeće radnje:
+**Dozvoli analitička konta sa nultim vrednostima**: aktiviranjem ove oznake postupak će:
 
-a) korisnik može ručno unijeti retke s iznosom nula na obje strane (Duguje i Potražuje)
+a) omogućiti ručni unos redova u kojima su iznosi na duguje i potražuje jednaki nuli;
 
-b) prilikom spremanja knjiženja, retci koji su preneseni iz predloška, ali ih korisnik nije popunio, neće biti automatski izbrisani;  
+b) prilikom čuvanja knjiženja **NEĆE** brisati redove preuzete iz šablona koje korisnik nije popunio;
 
-c) za retke koji u glavnoj knjizi prikazuju PDV obvezu/potraživanje, iznos nula će i dalje biti izbrisan — osim ako nije aktiviran i flag „Dopusti PDV 0 u GL” u tablici [Reference na objekt stopa PDV-a ](/docs/configurations/tables/finance/vat-rates).
+c) za redove kojima se u dnevniku knjiženja evidentira obaveza ili potraživanje PDV-a iznos nula ipak će biti obrisan, ali samo ako u tabeli [Stope PDV-a i načini obračuna PDV-a](/docs/configurations/tables/finance/vat-rates) nije aktivirana ni oznaka „Dozvoli PDV 0 u dnevniku knjiženja”.
 
-#### PRIMJERI:
+#### PRIMERI
 
 <details>
- 
-<summary>Clicca per l'esempio</summary>
 
-- birajući da postavite flag na neaktivno, možete iskoristiti funkcionalnost za unos u model registracije predloženog od strane uzroka svih potencijalno korisnih računa koji, ako ne budu korišteni, neće biti sačuvani prilikom spremanja registracije. Na primjer, razmislite o knjiženjima zaposlenika, plaćama itd., za koje se ne koriste uvijek isti računi svaki mjesec, iako su mogući računi raznoliki.
+<summary>Kliknite za primer</summary>
 
-- birajući da zadržite aktivni flag, mogu se unijeti podračuni s nultim kretanjem, što se često događa prilikom registracije telefonskih ili električnih usluga, na primjer. 
+- Ako oznaka nije aktivirana, u šablon za knjiženje moguće je uključiti sva potencijalno potrebna konta. Konta koja se ne koriste neće biti zadržana prilikom čuvanja knjiženja. To je korisno, na primer, kod knjiženja zarada zaposlenih, jer se ne koriste uvek ista konta svakog meseca, iako postoji više mogućih konta.
 
-**Predmet koji identificira prototip analitičkog zapisa**: ova je osnovna (ali neobavezna) sekcija uzroka računovodstva, u koju se učitava tipična shema vrste računovodstvene evidencije koju treba upravljati. Moguće je unijeti i generičke kodove računa (npr. račun dobavljača), koji će se automatski ažurirati od strane programa na temelju popisa računa kupaca/dobavljača unesenih u Parametre općeg računovodstva. Ovi podračuni, kao i sekcije dugovanja/ potraživanja, usmjeravat će računovodstvene valorizacije, koje će se ipak moći mijenjati tijekom ručnog unosa evidencije.
+- Ako je oznaka aktivirana, moguće je uneti analitička konta sa nultim iznosom. Takva situacija se često javlja, na primer, pri knjiženju telefonskih ili računa za električnu energiju.
+
+**Šablon za knjiženje**: ovo je ključan, ali neobavezan odeljak računovodstvenog šablona, u koji se unosi tipična šema računovodstvenog knjiženja koje treba obraditi. Moguće je uneti i opšte šifre konta (npr. konto dobavljača), koje će program automatski ažurirati na osnovu liste konta kupaca i dobavljača unetih u opšte računovodstvene parametre.
+
+Ta analitička konta, zajedno sa odeljcima duguje/potražuje, određuju računovodstvene vrednosti, koje je ipak moguće menjati tokom ručnog unosa knjiženja.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image02.png)
- 
+
 </details>
 
 #### [Vrsta iznosa]{#amount-type}
 
-Zaslužuju posebna objašnjenja kodovi Vrste iznosa, koji su ključni za automatsko vrednovanje dnevnika na temelju podataka o PDV-u i knjiženju koji se obrađuju u registraciji. Konkretno:
+Kodovi vrste iznosa zahtevaju posebno objašnjenje jer su ključni za automatsko popunjavanje dnevnika knjiženja na osnovu podataka o PDV-u i analitičkim kontima obuhvaćenim knjiženjem. Konkretno:
 
-**Priručnik**: označava da će redak biti ručno popunjen od strane korisnika prilikom knjiženja;
+**Ručno**: označava da će korisnik ručno uneti vrednost reda prilikom knjiženja.
 
-**Oporezivi podkonto**: označava da će redak biti ažuriran za svaki šifrirani podračun unesen u PDV sekciji, s iznosom koji odgovara oporezivom iznosu (osnovici) iz pripadajućih redaka. Ova se vrsta iznosa **preporučuje za sve prihode unesene u predloške za prodaju**;
+**Oporezivi iznos analitičkog konta**: označava da će se red ažurirati za svaku šifru analitičkog konta unetu u odeljak PDV-a, i to iznosom dobijenim iz oporezivog iznosa odgovarajućeg reda ili redova. **Ova vrsta iznosa se po pravilu preporučuje za sve prihode unete u šablone prodajnih knjiženja.**
 
-**Ukupni oporezivi iznos**: redak će biti ažuriran s ukupnim iznosom osnovice iz cijelog knjiženja. Program neće uzimati u obzir šifru konta ili podračuna unesenog u retku. Primjeri: prodaja u režimu split payment ili unutar EU.
+**Ukupni oporezivi iznos**: označava da će se red ažurirati ukupnim oporezivim iznosom knjiženja, bez obzira na unetu šifru konta ili analitičkog konta. PRIMERI: prodaja u sistemu podeljenog plaćanja PDV-a (*split payment*) ili prodaja unutar EU.
 
-**Ukupni porez**: redak će biti ažuriran s ukupnim iznosom PDV-a iz knjiženja, neovisno o unesenom kontu/podračunu;
+**Ukupni iznos poreza**: označava da će se red ažurirati ukupnim iznosom poreza knjiženja, bez obzira na unetu šifru konta ili analitičkog konta.
 
-**Odbitni porez**: redak će biti ažuriran s ukupnim iznosom odbitnog PDV-a iz knjiženja, neovisno o kontu/podračunu;
+**Odbitni porez**: označava da će se red ažurirati ukupnim odbitnim iznosom poreza knjiženja, bez obzira na unetu šifru konta ili analitičkog konta.
 
-**Ukupno – dokument/knjiženje**: redak će biti ažuriran s ukupnim iznosom dokumenta/knjiženja, uz uvjet da je podračun glavnog nositelja knjiženja u skladu s kombinacijama definiranima u parametrima kontnog plana;
+**Ukupni iznos dokumenta/knjiženja**: označava da će se red ažurirati ukupnim iznosom dokumenta/knjiženja na analitičkom kontu navedenom kao nosilac knjiženja, ako je to u skladu sa kombinacijama definisanim u računovodstvenim parametrima.
 
-**Oporezivo+porez koji se NE može odbiti**: Označava da će redak biti ažuriran zbrojem ukupne osnovice i ukupnog iznosa neodbitnog PDV-a iz knjiženja. Pritom se ne uzima u obzir koji je konto ili podračun unesen u retku.; Ova vrsta knjiženja rijetko se koristi – preporučuje se koristiti opciju **Osnovica po podračunu + neodbitni PDV po podračunu**.
+**Oporezivi iznos + neodbitni porez**: označava da će se red ažurirati ukupnim oporezivim iznosom uvećanim za ukupni neodbitni iznos poreza knjiženja, bez obzira na unetu šifru konta ili analitičkog konta. Ova vrsta kretanja se retko koristi; preporučuje se upotreba opcije **Oporezivi iznos analitičkog konta + neodbitni porez analitičkog konta**.
 
-**50% osnovice**: Redak će biti ažuriran s 50% ukupne osnovice iz knjiženja. Uneseni konto ili podračun neće biti uzeti u obzir;
+**50 % oporezivog iznosa**: označava da će se red ažurirati sa 50 % ukupnog oporezivog iznosa knjiženja, bez obzira na unetu šifru konta ili analitičkog konta.
 
-**50% osnovice + neodbitni PDV**: Redak će biti ažuriran sa zbrojem 50% ukupne osnovice i cjelokupnog iznosa neodbitnog PDV-a iz knjiženja. Konto/podračun unesen u retku nema utjecaja;
+**50 % oporezivog iznosa + neodbitni PDV**: označava da će se red ažurirati sa 50 % ukupnog oporezivog iznosa knjiženja, uvećanim za ukupni neodbitni iznos PDV-a, bez obzira na unetu šifru konta ili analitičkog konta.
 
-**50% osnovice + 50% neodbitnog PDV-a**: Redak će biti ažuriran sa zbrojem 50% ukupne osnovice i 50% iznosa neodbitnog PDV-a iz knjiženja. Konto ili podračun se ne uzima u obzir.
+**50 % oporezivog iznosa + 50 % neodbitnog PDV-a**: označava da će se red ažurirati sa 50 % ukupnog oporezivog iznosa knjiženja, uvećanim za 50 % neodbitnog iznosa PDV-a, bez obzira na unetu šifru konta ili analitičkog konta.
 
-KREIRANI IZ POREZNIH RAZLOGA I SMATRAJU SE ZASTARJELIMA
+**Ove vrste su uvedene zbog poreskih zahteva i treba ih smatrati zastarelim.**
 
-**Osnovica po podračunu + neodbitni PDV po podračunu**: Označava da će redak biti ažuriran za svaki kod podračuna unesen u odjeljak PDV-a s iznosom koji predstavlja zbroj osnovice redaka i pripadajućeg neodbitnog PDV-a; **korištenje ove vrste iznosa preporučuje se uglavnom za sve troškove unesene u predlošcima knjiženja troškova**;
+**Oporezivi iznos analitičkog konta + neodbitni porez analitičkog konta**: označava da će se red ažurirati za svaku šifru analitičkog konta unetu u odeljak PDV-a, i to zbirom oporezivog iznosa odgovarajućeg reda ili redova i pripadajućeg neodbitnog poreza. **Ova vrsta iznosa se po pravilu preporučuje za sve troškove unete u šablone nabavnih knjiženja.**
 
-**Zaokruživanje aktive**: označava da će redak biti ažuriran iznosom aktivnih zaokruživanja; koristi se u predlošcima za zatvaranje računa;
+**Pozitivna zaokruživanja**: označava da će se red ažurirati iznosom pozitivnih zaokruživanja. Koristi se uz šablone za zatvaranje stavki.
 
-**Zaokruživanje pasive**: označava da će redak biti ažuriran iznosom pasivnih zaokruživanja; koristi se u predlošcima za zatvaranje računa;
+**Negativna zaokruživanja**: označava da će se red ažurirati iznosom negativnih zaokruživanja. Koristi se uz šablone za zatvaranje stavki.
 
-**Iznos podračuna**: označava da će redak biti ažuriran iznosom uplata na račune unesene u knjiženje, prema znaku same uplate;  
+**Iznos analitičkog konta**: označava da će se red ažurirati iznosima plaćanja stavki unetih u knjiženje, u skladu sa predznakom pojedinačnog plaćanja.
 
-**Dobitak na tečajnim razlikama**: označava da će redak biti ažuriran podračunom dobiti za valutu referentne razlike tečaja, s iznosom dobivenim razlikom valorizacije između povijesnog i završnog tečaja računa; ako je označena opcija zatvaranja po povijesnom tečaju, redak neće biti valoriziran;  
+**Dobit od kursnih razlika**: označava da će se red ažurirati analitičkim kontom dobiti za valutu na koju se odnosi kursna razlika, u iznosu izračunatom na osnovu razlike između istorijskog kursa i kursa pri zatvaranju stavke. Ako je aktivirana oznaka zatvaranja po istorijskom kursu, red neće dobiti vrednost.
 
-**Gubitak od valutnih razlika**: označava da će redak biti ažuriran podračunom gubitka za valutu referentne razlike tečaja, s iznosom dobivenim razlikom valorizacije između povijesnog i završnog tečaja računa; ako je označena opcija zatvaranja po povijesnom tečaju, redak neće biti valoriziran;
+**Gubitak od kursnih razlika**: označava da će se red ažurirati analitičkim kontom gubitka za valutu na koju se odnosi kursna razlika, u iznosu izračunatom na osnovu razlike između istorijskog kursa i kursa pri zatvaranju stavke. Ako je aktivirana oznaka zatvaranja po istorijskom kursu, red neće dobiti vrednost.
 
-**Automatski**: vrsta iznosa koja se koristi u određenim procedurama automatskog knjiženja.
+**Automatski**: vrsta iznosa koja se koristi u određenim postupcima automatskog knjiženja.
 
-*PRIMJER*: koristi se u predlošcima za prodaju osnovnih sredstava za upravljanje plus-minus vrijednošću, inače je postavljena sustavom u procedurama automatskog knjiženja.  
+*PRIMER*: koristi se u šablonima prodajnih knjiženja osnovnih sredstava za obračun dobiti ili gubitka od otuđenja. U ostalim slučajevima vrednost postavlja sistem tokom postupaka automatskog knjiženja.
 
+Tabela se dopunjuje sledećim poljima:
 
-Mreža se završava s: 
-
-- un polje za kodiranje konta (nije preporučena upotreba: u računovodstvu već postoji ispis - "Izvještaj o stanju s kontima" - koji prikazuje konta neovisno o ovoj postavci). Osim toga, aktiviranjem flag-a koji omogućuje prikaz podračuna konta (tab Detalji knjiženja)
+- Polje za definisanje protivkonta (ne preporučuje se njegova upotreba jer u računovodstvu već postoji izveštaj „Izvod konta sa protivkontima”, koji prikazuje protivkonta nezavisno od ove postavke). Osim toga, aktiviranjem oznake za prikaz analitičkih protivkonta (kartica Detalji knjiženja) ta polja će se popunjavati automatski. Zbog toga se ne preporučuje ručno definisanje protivkonta u šablonu za knjiženje.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image03.png)
 
-Ova polja će se upravljati automatski; iz tog razloga nije preporučljivo ručno ih postavljati u predlošku.  
+Na primer, uz konta prethodnog poreza (ili obaveze za PDV) i troška (ili prihoda) prikazuju se podaci o dobavljaču (ili kupcu), dok se uz dobavljača (ili kupca) prikazuje konto protivstavke troška ili prihoda. Ako postoji više protivstavki, prikazuje se ona sa najvećim iznosom, dok se ostale zanemaruju.
 
-U odgovarajućim računima PDV-a na odbitak (ili obvezu) i troška (ili prihoda), primjerice, unose se podaci o dobavljaču (ili kupcu), dok se na dobavljaču (ili kupcu) evidentira proturačun troška ili prihoda. U slučaju da postoji više proturačuna, odabire se onaj s najvećim iznosom (ostali se zanemaruju).  
+- Polje za detaljne napomene: u ovom polju moguće je koristiti sve kodove navedene u legendi na dnu obrasca.
 
-- polje za detaljne bilješke: u ovom polju moguće je koristiti sve kodove prikazane na dnu obrasca.  
+**Za šablone za zatvaranje stavki**, uz opšti konto kupaca/dobavljača unesite **kodove (8) ili (9)** zajedno sa oznakom **„Ref. dok. stavke u plaćanju”** (na kartici Detalji knjiženja) kako bi se u računovodstvu zabeležile reference plaćenih ili naplaćenih dokumenata.
 
-**Za predloške zatvaranja računa** upisati uz generički račun kupaca/dobavljača **kodove (8) ili (9)** zajedno s **flagom ‘Rif. doc. partita in pag.''** (nalazi se na kartici Detalji knjiženja) kako bi se u knjigovodstvu evidentirali podaci o plaćenim/primljenim dokumentima.  
-
-Obratite pažnju da se generički račun prisutan u predlošku (npr. "Dobavljači Italija") zapravo upravlja u [Parametrima računovodstva](/docs/configurations/parameters/finance/accounting-parameters)  u skladu s ispravnim tipom računa (npr. FIT u standardnoj Fluentis bazi podataka). Također provjerite je li tip iznosa na odgovarajućem retku kupca ili dobavljača ispravno postavljen na Iznos podračuna.  
+Obratite pažnju na to da se opšti konto u šablonu (na primer „Dobavljači u Italiji”) zaista koristi u [Računovodstvenim parametrima](/docs/configurations/parameters/finance/accounting-parameters) i da je povezan sa odgovarajućom vrstom konta (npr. FIT u standardnoj Fluentis bazi podataka). Takođe proverite da li je vrsta iznosa uz red kupca ili dobavljača ispravno postavljena na **Iznos analitičkog konta**.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image04.png)
 
-**Imposta detr. e sottoconto IVA**: tipo importo utilizzato per valorizzare la riga relativa all'IVA con l'importo detraibile dell'IVA e con il sottoconto individuato secondo il ‘Tipo contabilizzazione IVA' associato in via prioritaria all'anagrafica intestataria della registrazione o di default nei ‘Parametri di contabilità generale'.
+**Odbitni PDV i analitički konto PDV-a**: vrsta iznosa koja se koristi za popunjavanje reda PDV-a odbitnim iznosom PDV-a i analitičkim kontom određenim prema vrsti knjiženja PDV-a koja je prioritetno povezana sa šifarnikom subjekta na kojeg glasi knjiženje ili je podrazumevano određena u Opštim računovodstvenim parametrima.
 
-Impostazione non utilizzata in Italia, utile per localizzazioni estere, esempio Croazia, per legare il conto dell'iva all'aliquota utilizzata (esempio se viene utilizzata l'aliquota IVA 10% verrà associato il conto "iva acquisti al 10%", quindi specifico per quell'aliquota anzichè un conto, esempio "iva a credito", generico come in Italia per tutte le aliquote).
+Ova postavka se ne koristi u Italiji, ali je korisna u stranim lokalizacijama, na primer u Hrvatskoj, gde omogućava povezivanje konta PDV-a sa korišćenom stopom. Na primer, ako se koristi stopa PDV-a od 10 %, povezaće se konto „Prethodni porez po stopi od 10 %”, specifičan za tu stopu, umesto opšteg konta „Prethodni porez”, koji se u Italiji koristi za sve stope.
 
-**Descrizione parametrica della registrazione contabile**: all'interno di questa si possono codificare delle descrizioni standard che vengono compilate dal programma attraverso i vari codici indicati nella legenda posta immediatamente sopra al compo, descrizioni che saranno riportate nelle stampe contabili e in particolare negli Estratti conto e nel Libro giornale. 
+**Parametarski opis računovodstvenog knjiženja**: u ovom polju mogu se definisati standardni opisi koje program sastavlja pomoću kodova navedenih u legendi neposredno iznad polja. Ti opisi prikazuju se u računovodstvenim izveštajima, naročito u izvodima konta i dnevniku knjiženja.
 
-Anche per ogni riga di movimentazione della sezione *Dettaglio conti / sottoconti - Prototipo registrazione* è possibile, come già illustrato sopra, codificare delle note preimpostate così come per la Descrizione generale. 
+Za svaki red knjiženja u odeljku *Detalji konta / analitičkih konta – Šablon za knjiženje* moguće je, kao što je prethodno opisano, definisati unapred postavljene napomene, jednako kao i za opšti opis knjiženja.
 
-**ATTENZIONE**: in particolare i codici (8) e (9) sono gestiti solo per la descrizione specifica di riga e non sono considerati nella descrizione generale della registrazione di cui al campo in commento.
+**PAŽNJA**: kodovi (8) i (9) koriste se isključivo za opis pojedinačnog reda i ne uzimaju se u obzir u opštem opisu knjiženja iz ovog polja.
 
 ![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/attributes-detail/image05.png)
 
-### 1.2 Dettagli registrazione
+### 1.2 Detalji knjiženja
 
-**Registro IVA**: il campo, obbligatorio solo per causali con tipo movimento IVA, consente di assegnare il registro IVA di riferimento alla causale in gestione.
+**PDV registar**: ovo polje je obavezno samo za šablone sa vrstom kretanja koja uključuje PDV. Omogućava dodelu odgovarajućeg PDV registra šablonu koji se uređuje.
 
-**Data competenza IVA**: il campo consente di definire quale sia la data di competenza da assegnare al movimento IVA: il programma propone la data registrazione per i movimenti su registri acquisti e la data documento per movimenti su registri vendite. Si raccomanda di impostare la data competenza come data registrazione anche per le causali di giroconto IVA intra cee e reverse charge. 
+**Datum obračuna PDV-a**: ovim poljem određuje se datum obračuna koji će biti dodeljen kretanju PDV-a. Program za knjiženja u registrima nabavke predlaže datum knjiženja, a za knjiženja u registrima prodaje datum dokumenta. Preporučuje se postavljanje datuma knjiženja kao datuma obračuna PDV-a i za šablone prenosa PDV-a za nabavke unutar EU i za *reverse charge*.
 
-E' fondamentale, infatti, controllare che le due causali, di acquisto e di giroconto, che sono coinvolte in questi tipi di "doppia registrazione", presentino il medesimo settaggio per evitare che l'iva detratta e l'iva esigibile in contropartita possano assumere periodi di competenza differenti. Lo vogliamo evidenziare in modo particolare perché, la causale di giroconto, essendo una causale iva lato vendite, propone di default il criterio data documento che va dunque modificato.
+Veoma je važno proveriti da li oba šablona, nabavni i šablon prenosa, koji učestvuju u ovim vrstama „dvostrukog knjiženja”, imaju jednake postavke. Time se izbegava da odbitni PDV i odgovarajuća obračunata obaveza za PDV pripadnu različitim obračunskim periodima.
 
-#### Opzioni tipo documento
+To je posebno važno jer šablon prenosa PDV-a, pošto je reč o šablonu PDV-a na strani prodaje, podrazumevano predlaže datum dokumenta. Tu postavku je zato potrebno promeniti.
 
-**Tipo/N. documento**: l'impostazione di questo flag rende obbligatorio il campo del numero documento per il salvataggio della registrazione basata su questa causale.
+#### Opcije vrste dokumenta
 
-**Data documento**: l'impostazione di questo flag rende obbligatorio il campo della data documento per il salvataggio della registrazione basata su questa causale.
+**Vrsta/broj dokumenta**: aktiviranjem ove oznake polje Broj dokumenta postaje obavezno za čuvanje knjiženja koje se zasniva na ovom šablonu.
 
-**N. Doc. = Prot. IVA**: l'impostazione di questo flag implica che il programma proporrà il numero del documento sulla base del numero di protocollo IVA progressivo. Il campo, quindi, non va impostato per registrazioni d'acquisto per le quali il numero documento e protocollo non hanno alcun legame reciproco; per quanto riguarda le vendite, invece, l'uso è suggerito solo per causali di registrazioni effettuate manualmente direttamente in contabilità generale: l'impostazione di questo flag è sconsigliata per causali impostate nei tipi fatture di vendita e utilizzate nella contabilizzazione fatture.
+**Datum dokumenta**: aktiviranjem ove oznake polje Datum dokumenta postaje obavezno za čuvanje knjiženja koje se zasniva na ovom šablonu.
 
-**Prot. IVA = N. doc**: l'impostazione di questo flag implica che il programma cercherà di attribuire il protocollo iva sulla sulla base del numero di documento. Il campo, quindi, non va impostato per registrazioni d'acquisto per le quali il numero documento e protocollo non hanno alcun legame reciproco; per quanto riguarda le vendite, invece, **l'uso è suggerito per tutte le causali impostate nei tipi fatture di vendita e utilizzate quindi nella contabilizzazione automatica fatture**: la possibilità di utilizzare questa impostazione dipende dalla certezza che la numerazione dei tipi fatture sia la stessa per tutti i documenti da registrare nello stesso Registro IVA, diversamente si verrebbero a creare dei "salti" (o dei "doppioni" con conseguente rifiuto di salvataggio) nella protocollazione.
+**Broj dokumenta = PDV protokol**: aktiviranjem ove oznake program predlaže broj dokumenta na osnovu rednog broja PDV protokola. Ova opcija ne sme se koristiti za nabavna knjiženja kod kojih broj dokumenta i broj protokola nisu međusobno povezani.
 
-L'utilità di questa funzione nella contabilizzazione automatica delle fatture consiste nella possibilità di contabilizzare senza porre attenzione all'ordine di protocollazione: esempio posso contabilizzare la fattura nr. 2 e poi la nr. 1 ottenendo una corretta protocollazione che associa la fattura nr. 1 al protocollo 1 ecc...
+Za prodaju se preporučuje samo za šablone za knjiženje koji se ručno unose direktno u glavnu knjigu. Ne preporučuje se za šablone definisane u tipovima prodajnih faktura koji se koriste pri knjiženju faktura.
 
-A fine periodo IVA (mese o trimestre) basterà dunque accertarsi di aver contabilizzato tutte le fatture emesse.
+**PDV protokol = broj dokumenta**: aktiviranjem ove oznake program pokušava da dodeli PDV protokol na osnovu broja dokumenta. Ova opcija ne sme se koristiti za nabavna knjiženja kod kojih broj dokumenta i broj protokola nisu međusobno povezani.
 
-#### Opzioni tipo registrazione
+Za prodaju se **preporučuje za sve šablone definisane u tipovima prodajnih faktura koji se koriste pri automatskom knjiženju faktura**. Korišćenje ove postavke zavisi od toga da li je numerisanje tipova faktura jednako za sve dokumente koji se knjiže u istom PDV registru. U suprotnom mogu nastati preskakanja brojeva ili duplikati, zbog kojih sistem neće dozvoliti čuvanje.
 
-**Apertura partite**: la presenza di questo flag farà comparire il tabulatore di creazione dei partitari nella registrazione contabile che utilizzerà questa causale; l'impostazione di questo flag è quindi consigliata per tutte le registrazioni di tipo IVA e in generale per poter gestire lo scadenzario clienti/fornitori. Il flag può essere impostato anche per causali che rilevano un pagamento anticipato: in questo caso sarà aperta una partita di segno inverso da compensare successivamente con le partite che si creeranno al momento della rilevazione contabile del documento fiscale successivo.
+Prednost ove funkcije pri automatskom knjiženju faktura jeste to što nije potrebno voditi računa o redosledu dodele protokola. Na primer, moguće je prvo proknjižiti fakturu broj 2, a zatim fakturu broj 1, pri čemu će protokoli biti ispravno dodeljeni tako da faktura broj 1 dobije protokol 1 itd.
 
-**Dett. mov. in partite**: con questo flag il programma inserirà nelle **note delle partite** i testi inseriti nel campo 'Dettaglio movimento' della riga di contabilità d'origine della partita.![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail/image02.png)
+Na kraju poreskog perioda za PDV (meseca ili tromesečja) dovoljno je proveriti da li su sve izdate fakture proknjižene.
 
-Il flag è attivo solo quando il precedente *Apertura partite* è stato impostato.
+#### Opcije vrste knjiženja
 
-**Apertura per ogni riga mov.**: con questo flag il programma inserirà, una partita per ogni riga movimento, nella quale è presente un sottoconto con il flag di gestione partite aperte impostato. Il flag è attivo solo quando il precedente *Apertura partite* è stato impostato.
+**Otvaranje stavki**: aktiviranjem ove oznake u računovodstvenom knjiženju koje koristi ovaj šablon prikazaće se kartica za otvaranje otvorenih stavki. Ova postavka se preporučuje za sva knjiženja koja uključuju PDV i uopšteno za upravljanje rokovima dospeća kupaca i dobavljača. Oznaka se može aktivirati i za šablone kojima se evidentiraju avansi. U tom slučaju otvoriće se stavka suprotnog predznaka, koja će se naknadno zatvoriti stavkama nastalim prilikom računovodstvenog evidentiranja sledećeg poreskog dokumenta.
 
-Il flag si può attivare solo per causali non iva (esempio apertura conti) per ogni riga movimento fornitore o cliente apre una partita e riporta le indicazioni di pagamento che prende in anagrafica (serve nel caso in cui si apra più di una riga per un singolo cliente o fornitore).
+**Detalji kretanja u stavkama**: aktiviranjem ove oznake program će u **napomene otvorenih stavki** preneti tekst unet u polje „Detalji kretanja” izvornog računovodstvenog reda stavke.
 
-**Chiusura partite**: la presenza di questo flag farà comparire il tabulatore di chiusura dei partitari nella registrazione contabile che utilizzerà questa causale. Si tratta tipicamente di tutte le registrazioni pagamento/incasso non IVA, ma può anche essere impostato in combinazione con apertura partite e compensazione partite per le causali delle note di credito e in generale per tutte le registrazioni che prevedono un'apertura partite con una contestuale compensazione di una situazione pregressa.
+![](/img/it-it/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates/recording-detail/image02.png)
 
-**Usa cambio storico**: con questo flag, disponibile solo nel caso sia stata impostata la chiusura partite, l'applicativo procederà a chiudere i partitari con il cambio storico di apertura, senza alcuna rilevazione automatica delle differenze di cambio (permettendo quindi di gestirle eventualmente in maniera manuale).
+Ova oznaka je aktivna samo ako je prethodno aktivirana opcija *Otvaranje stavki*.
 
-**Ragg. pag. in libro giornale**: con questo flag, disponibile solo nel caso sia stata impostata la chiusura partite, l'applicativo procederà a raggruppare in un unico movimento di contabilità tutti gli importi di chiusura partite legati ad uno stesso sottoconto (in particolare, raggrupperà i movimenti di stesso segno e stessa divisa).
+**Otvaranje za svaki red kretanja**: aktiviranjem ove oznake program će otvoriti zasebnu stavku za svaki red kretanja koji sadrži analitički konto sa aktiviranom opcijom upravljanja otvorenim stavkama. Ova oznaka je aktivna samo ako je prethodno aktivirana opcija *Otvaranje stavki*.
 
-**Escludi da provv. maturate**: con questo flag, disponibile solo nel caso sia stata impostata la chiusura partite, le chiusure partite effettuate con questa causale contabile non saranno ritenuti validi per il calcolo delle provvigioni maturate per agenti con calcolo di tipo 'Pagamento avvenuto'.
+Ova oznaka može se aktivirati samo za šablone bez PDV-a, na primer za početno otvaranje konta. Za svaki red kretanja kupca ili dobavljača otvara se zasebna stavka, a podaci o plaćanju preuzimaju se iz šifarnika kupca ili dobavljača. To je korisno kada se za istog kupca ili dobavljača otvara više redova.
 
-**Rif. doc. partita in pag.**: con questo flag, disponibile solo nel caso sia stata impostata la chiusura partite, l'applicativo procederà a gestire i codici (8) e (9) di rilevazione dei riferimenti delle chiusure partite nelle descrizioni di dettaglio dei movimenti.
+**Zatvaranje stavki**: aktiviranjem ove oznake u računovodstvenom knjiženju koje koristi ovaj šablon prikazaće se kartica za zatvaranje otvorenih stavki. Ova opcija se obično koristi za sva knjiženja plaćanja i naplate bez PDV-a, ali može se kombinovati sa otvaranjem i prebijanjem stavki kod šablona za knjižna odobrenja i uopšteno kod svih knjiženja koja otvaraju stavke uz istovremeno prebijanje prethodno nastalih stavki.
 
-**Compens. partite**: con questo flag, disponibile solo nel caso siano stati impostati entrambi i flag di apertura e chiusura partite, la procedura attiverà la possibilità di procedere ad una compensazione partite all'interno della registrazione basata su questa causale: questa combinazione di flag viene consigliata per tutte le causali collegate a documenti di tipo note di credito.
+**Koristi istorijski kurs**: ova oznaka je dostupna samo ako je aktivirano zatvaranje stavki. Aplikacija će zatvoriti otvorene stavke primenom istorijskog kursa korišćenog pri njihovom otvaranju, bez automatskog evidentiranja kursnih razlika, čime se omogućava njihovo eventualno ručno knjiženje.
 
-**Avviso comp.**: con questo flag si attiva, al salvataggio della registrazione contabile, un controllo che avvisa l'utente sulla presenza di partite da compensare.
+**Grupisanje plaćanja u dnevniku knjiženja**: ova oznaka je dostupna samo ako je aktivirano zatvaranje stavki. Aplikacija će objediniti sve iznose zatvaranja stavki povezanih sa istim analitičkim kontom u jedno računovodstveno kretanje. Pritom će grupisati kretanja istog predznaka i iste valute.
 
-**Ragg. partite**: il flag attiva la gestione dei raggruppamenti partite invece che la gestione standard ad apertura/chiusura partite, attraverso un tabulatore specifico di rilevazione nella registrazione contabile.
+**Isključi iz obračunatih provizija**: ova oznaka je dostupna samo ako je aktivirano zatvaranje stavki. Zatvaranja stavki izvršena ovim računovodstvenim šablonom neće se uzimati u obzir pri izračunavanju obračunatih provizija agenata kod kojih je način obračuna postavljen na „Nakon izvršenog plaćanja”.
 
-**Crea Gruppo**: il flag, se attivo ed in combinazione con il flag precedente, crea automaticamente un gruppo partite nei raggruppamenti partite, nel quale fa confluire le partite della registrazione (da attivarsi nelle causali delle fatture di acquisto/vendita).
+**Referenca dokumenta stavke u plaćanju**: ova oznaka je dostupna samo ako je aktivirano zatvaranje stavki. Aplikacija će koristiti kodove (8) i (9) za evidentiranje referenci zatvorenih stavki u detaljnim opisima kretanja.
 
-**Ragg. partite – tipo pagamento**: è la tipologia di pagamento da assegnare ai movimenti dei raggruppamenti partite rilevati con questa causale.
+**Prebijanje stavki**: ova oznaka je dostupna samo ako su aktivirane obe opcije, otvaranje i zatvaranje stavki. Postupak će omogućiti prebijanje stavki unutar knjiženja koje se zasniva na ovom šablonu. Ova kombinacija oznaka preporučuje se za sve šablone povezane sa dokumentima tipa knjižno odobrenje.
 
-**Progetti**: (ex Commesse): l'attivazione di questo flag farà comparire il campo *Progetto* nella testata della registrazione oltre ai campi di dettaglio el corpo della registrazione per il collegamento dei progetti (commesse) con i movimenti contabili di dettaglio.
+**Upozorenje o prebijanju**: aktiviranjem ove oznake prilikom čuvanja računovodstvenog knjiženja proveriće se da li postoje stavke za prebijanje i korisniku će se prikazati upozorenje.
 
-Per ulteriori dettagli vedere **[qui](/docs/finance-area/ledger-records/records/ledger-record)**
+**Grupisanje stavki**: ovom oznakom omogućava se upravljanje grupama stavki umesto standardnog načina rada sa otvaranjem i zatvaranjem stavki. Za to se u računovodstvenom knjiženju koristi posebna kartica za evidentiranje grupa.
 
-**Centri di costo**: la presenza di questo flag farà comparire il tabulatore di gestione della valorizzazione centri di costo nelle registrazioni contabili.
+**Kreiraj grupu**: ako je ova oznaka aktivirana zajedno sa prethodnom, program će automatski kreirati grupu stavki i u nju uključiti stavke iz knjiženja. Ovu opciju treba aktivirati u šablonima za nabavne i prodajne fakture.
 
-**Centri di profitto**: la presenza di questo flag farà comparire il tabulatore di gestione della valorizzazione centri di profitto nelle registrazioni contabili.
+**Grupisanje stavki – vrsta plaćanja**: vrsta plaćanja koja se dodeljuje kretanjima u grupama stavki evidentiranim ovim šablonom.
 
-**Gestione macchina**: NON ATTIVATO il flag visualizzerà in contabilità, nella scheda analitica, una griglia di valorizzazione dei costi/ricavi agli automezzi aziendali.
+**Projekti**: (ranije *Nalozi*). Aktiviranjem ove oznake u zaglavlju knjiženja prikazaće se polje *Projekat*, kao i odgovarajuća polja u detaljima knjiženja, radi povezivanja projekata (naloga) sa pojedinačnim računovodstvenim kretanjima.
 
-**Cespiti**: la presenza di questo flag farà comparire il tabulatore di gestione delle schede cespiti nella registrazione contabile.
+Za više detalja pogledajte **[ovde](/docs/finance-area/ledger-records/records/ledger-recor&#x64;)**.
 
-**Tipo operazione**: si tratta del tipo di operazione da proporre di default per i nuovi movimenti rilevati all'interno della scheda cespiti in contabilità.
+**Centri troška**: aktiviranjem ove oznake u računovodstvenim knjiženjima prikazaće se kartica za upravljanje raspodelom vrednosti na centre troška.
 
-**Aggiornamento saldi**: flag impostato di default.
+**Centri prihoda**: aktiviranjem ove oznake u računovodstvenim knjiženjima prikazaće se kartica za upravljanje raspodelom vrednosti na centre prihoda.
 
-**Descr. mov. in giornale e pagamenti**: con questo flag la procedura andrà a copiare la descrizione generale della registrazione in tutte le descrizioni di dettaglio dei movimenti e anche nelle note dei pagamenti.
+**Upravljanje vozilima**: oznaka NIJE AKTIVIRANA. Njenim aktiviranjem u analitičkoj kartici računovodstva prikazaće se tabela za raspodelu troškova i prihoda na službena vozila preduzeća.
 
-**Provvigioni**: il flag attiva un tabulatore specifico all'interno delle registrazioni contabili per gestire i dati di calcolo delle provvigioni dal modulo amministrazione (questo modulo, recentemente introdotto, opera in alternativa rispetto alla gestione provvigioni dal modulo vendite, ma non lo sostituisce rimanendo quest'ultimo comunque attivo).
+**Osnovna sredstva**: aktiviranjem ove oznake u računovodstvenom knjiženju prikazaće se kartica za upravljanje evidencijom osnovnih sredstava.
 
-**Intrastat**: il flag attiva un tabulatore specifico all'interno delle registrazioni contabili per gestire i dati, provenienti dalla fattura d'acquisto o di vendita contabilizzata automaticamente tramite l'apposita procedura, oppure inseriti al momento dell'inserimento della scrittura contabile di prima nota, e relativi alla creazione dei modelli intrastat. I dati così gestiti saranno acquisiti nella procedura di creazione dei modelli intrastat tramite la procedura *Acquisizione delle registrazioni contabili.* Si ricorda che è presenta in alternativa la procedura di *acquisizione dalle fatture* che non interagisce con i movimenti contabili andando a leggere direttamente e soltanto i documenti di acquisto / vendita.
+**Vrsta operacije**: vrsta operacije koja će se podrazumevano predložiti za nova kretanja evidentirana na kartici osnovnih sredstava u računovodstvu.
 
-#### Ulteriori colonne visualizzabili nella griglia delle registrazioni contabili
+**Ažuriranje stanja**: oznaka koja je podrazumevano aktivirana.
 
-**Divisa**: la presenza di questo flag farà comparire il campo Divisa nella sezione del libro giornale.
+**Opis kretanja u dnevniku i plaćanjima**: aktiviranjem ove oznake postupak će kopirati opšti opis knjiženja u sve detaljne opise pojedinačnih kretanja, kao i u napomene uz plaćanja.
 
-**Cambio/data valuta**: la presenza di questo flag farà comparire i campi del cambio e della data valuta nella sezione del libro giornale.
+**Provizije**: ova oznaka aktivira posebnu karticu u okviru računovodstvenih knjiženja za upravljanje podacima za obračun provizija iz administrativnog modula. Ovaj modul je uveden nedavno i predstavlja alternativu upravljanju provizijama iz prodajnog modula, ali ga ne zamenjuje jer prodajni modul ostaje aktivan.
 
-**Importo valuta**: la presenza di questo flag farà comparire il campo Importo valuta nella sezione del libro giornale.
+**Intrastat**: ova oznaka aktivira posebnu karticu u okviru računovodstvenih knjiženja za upravljanje podacima potrebnim za izradu Intrastat obrazaca. Podaci se mogu automatski preuzeti iz nabavne ili prodajne fakture odgovarajućim postupkom knjiženja ili uneti prilikom unosa računovodstvenog knjiženja u dnevnik.
 
-**Sottoconto di contropartita**: la presenza di questo flag farà comparire i campi dei sottoconti di contropartita nella sezione del libro giornale. La gestione dei campi di contropartita non è consigliata.
+Tako evidentirani podaci preuzimaju se u postupak izrade Intrastat obrazaca putem postupka *Preuzimanje računovodstvenih knjiženja*. Napominjemo da postoji i alternativni postupak *Preuzimanje iz faktura*, koji ne koristi računovodstvena kretanja, već direktno čita isključivo nabavne i prodajne dokumente.
 
-**Dettaglio del movimento**: la presenza di questo flag farà comparire il campo del Dettaglio movimento nella sezione del libro giornale: si consiglia di impostare questo flag per tutte le causali contabili, in modo da consentire sempre l'inserimento di note di dettaglio del singolo movimento contabile.
+#### Dodatne kolone koje se mogu prikazati u tabeli računovodstvenih knjiženja
 
-**Divisione**: la presenza di questo flag farà comparire il campo Divisione già a partite dalla sezione IVA, così come nella sezione del libro giornale. Con questa impostazione sarà possibile spezzare il caricamento dello stesso documento su più divisioni della società.
+**Valuta**: aktiviranjem ove oznake u odeljku dnevnika knjiženja prikazaće se polje Valuta.
 
-**Giorni banca**: la presenza di questo flag farà comparire il campo della data valuta banca nella sezione del libro giornale: il campo, quindi, è consigliato per tutte le causali contabili che rilevano movimenti finanziari. La gestione di questo campo può essere automatizzata sulla base dei giorni valuta (positivi/negativi) impostati nell'anagrafica banche per ogni singola causale.
+**Kurs/datum valute**: aktiviranjem ove oznake u odeljku dnevnika knjiženja prikazaće se polja Kurs i Datum valute.
 
-**Numero progressivo**: la presenza di questo flag farà comparire il campo del Numero riga nella sezione del libro giornale: si consiglia di inserire questo flag per causali particolarmente lunghe, in modo da consentire all'utente di ordinare i record in modo fisso come nella causale (es. rilevazione paghe).
+**Iznos u valuti**: aktiviranjem ove oznake u odeljku dnevnika knjiženja prikazaće se polje Iznos u valuti.
 
-**Rif. manuale partite**: la presenza di questo flag farà comparire il campo del Rif. Manuale partita nella sezione del libro giornale. Il campo è indicato per collegare manualmente movimenti di contabilità senza passare per la gestione partite. In pratica si tratta di un campo note libero.
+**Analitički konto protivstavke**: aktiviranjem ove oznake u odeljku dnevnika knjiženja prikazaće se polja za analitičke konte protivstavki. Ne preporučuje se upravljanje tim poljima.
 
-**Operazioni straordinarie**: la presenza di questo flag farà comparire il campo omonimo (di tipo bit ovvero un flag) al fine di evidenziare alcuni movimenti contabili (in particolare ad esempio un costo) come *straordinario* e permettere poi una facile ricerca o estrazione all'interno di una stampa degli stessi.
-Questa possibilità si rivela utile a seguito delle modifiche agli schemi di bilancio introdotte con la direttiva 2013/34 (Dlgs 139/2015). Tali modifiche avevano introdotto, in sintesi, l'eliminazione dell'area "straordinaria" del Conto Economico. Ne consegue che tutti i componenti "eccezionali" non possono essere rappresentati da conti quali ad esempio le sopravvenienze attive dell'area straordinaria, ma devono essere iscritti direttamente nel conto cui si riferisce, ad esempio, la spesa (per natura).  Si presenta tuttavia la necessità di evidenziare  tali componenti di costo / ricavo per il necessario dettaglio in nota integrativa e per altre eventuali ragioni di tipo fiscali, ad esempio le riprese in diminuzione di costi nella dichiarazione dei redditi ecc...
+**Detalji kretanja**: aktiviranjem ove oznake u odeljku dnevnika knjiženja prikazaće se polje Detalji kretanja. Preporučuje se aktiviranje ove oznake za sve računovodstvene šablone kako bi se uvek omogućio unos detaljnih napomena za pojedinačno računovodstveno kretanje.
 
-**Tipo Operazione fiscale**: Rende visibile una combo box con la quale contrassegnare la riga di contabilita a supporto di una successiva elaborazione (esterna) della dichiarazione annuale iva, dove è richiesto di indicare se l'operazione corrisponda a:
-- acquisto beni ammortizzabili
-- acquisto beni strumentali non ammortizzabili
-- acquisto beni / servizi destinati alla rivendita
-- altri acquisti
- 
-**Riferimento documento**: Rende visibile, in corrispondenza delle righe del movimento contabile due campi ulteriori per annotare il riferimento alla data e numero documento (ad es. fattura sulla riga del conto di contropartita).
+**Organizaciona jedinica**: aktiviranjem ove oznake polje Organizaciona jedinica prikazaće se već u odeljku PDV-a, kao i u odeljku dnevnika knjiženja. Time je omogućena raspodela istog dokumenta na više organizacionih jedinica preduzeća.
+
+**Dani bankarske valute**: aktiviranjem ove oznake u odeljku dnevnika knjiženja prikazaće se polje Datum valute banke. Preporučuje se za sve računovodstvene šablone kojima se evidentiraju finansijska kretanja. Popunjavanje ovog polja moguće je automatizovati na osnovu pozitivnih ili negativnih dana valute definisanih u šifarniku banaka za svaku pojedinačnu vrstu šablona.
+
+**Redni broj**: aktiviranjem ove oznake u odeljku dnevnika knjiženja prikazaće se polje Broj reda. Preporučuje se za obimnije računovodstvene šablone kako bi korisnik mogao trajno da odredi redosled zapisa, kao što je slučaj sa knjiženjima zarada.
+
+**Ručna referenca stavke**: aktiviranjem ove oznake u odeljku dnevnika knjiženja prikazaće se polje Ručna referenca stavke. Ovo polje namenjeno je ručnom povezivanju računovodstvenih kretanja bez korišćenja upravljanja otvorenim stavkama. U osnovi je reč o slobodnom polju za napomene.
+
+**Vanredne transakcije**: aktiviranjem ove oznake prikazaće se istoimeno polje (tipa bit, odnosno oznaka) kojim se određena računovodstvena kretanja, na primer troškovi, mogu označiti kao *vanredna*. To omogućava njihovo jednostavno pretraživanje ili izdvajanje u izveštajima.
+
+Ova mogućnost je korisna nakon izmena strukture finansijskih izveštaja uvedenih Direktivom 2013/34 (Zakonodavna uredba 139/2015). Tim izmenama je, ukratko, ukinuta vanredna kategorija bilansa uspeha. Zbog toga se vanredne stavke više ne mogu prikazivati na posebnim kontima, na primer na kontima vanrednih prihoda, već se moraju evidentirati direktno na kontu koji odgovara prirodi prihoda ili troška.
+
+Ipak, potrebno je zasebno identifikovati takve vanredne troškove i prihode radi odgovarajućih detalja u napomenama uz finansijske izveštaje i drugih mogućih poreskih potreba, na primer poreski nepriznatih troškova koji se dodaju poreskoj osnovici u poreskoj prijavi.
+
+**Vrsta poreske transakcije**: prikazuje padajuću listu kojom se računovodstveni red označava za potrebe naknadne spoljne obrade godišnje prijave PDV-a. Potrebno je navesti da li se transakcija odnosi na:
+
+- nabavku amortizujuće imovine
+- nabavku dugotrajne imovine koja se ne amortizuje
+- nabavku robe ili usluga namenjenih daljoj prodaji
+- ostale nabavke
+
+**Referenca dokumenta**: prikazuje dva dodatna polja uz redove računovodstvenog kretanja za unos datuma i broja dokumenta, na primer fakture uz red konta protivstavke.
 
 ### 1.3 Parametri
 
-#### Ordine dei tab nelle registrazioni contabili
+#### Redosled kartica u računovodstvenim knjiženjima
 
-E' dedicata all'impostazione dell'ordine con il quale presentare i tabulatori previsti, attraverso gli appositi pulsanti: **Sposta su** e **Sposta giù**. 
+Ovaj odeljak služi za određivanje redosleda prikaza kartica pomoću odgovarajućih dugmadi **Pomeri nagore** i **Pomeri nadole**.
 
-#### Parametri registrazione
+#### Parametri knjiženja
 
-**Controllo tipo conto**: la presenza di questo flag imporrà alla procedura di verificare la corrispondenza del sottoconto intestatario della registrazione rispetto alle impostazioni dei parametri di contabilità (es. uso di un conto cliente in una causale d'acquisto da fornitore): in caso di esito negativo sarà eseguito un semplice messaggio di avvertimento.
+**Provera vrste konta**: aktiviranjem ove oznake postupak će proveravati da li je analitički konto nosioca knjiženja u skladu sa postavkama računovodstvenih parametara. Na primer, proverava se da li se konto kupca koristi u šablonu nabavnog knjiženja dobavljača. Ako provera nije uspešna, prikazaće se upozorenje.
 
-**Blocca registrazione se il tipo conto è incompatibile**: la presenza di questo flag imporrà alla procedura di annullare l'inserimento di un sottoconto intestatario della registrazione non valido rispetto alle impostazioni dei parametri di contabilità (es. uso di un conto cliente in una causale d'acquisto da fornitore).
+**Blokiraj knjiženje ako vrsta konta nije kompatibilna**: aktiviranjem ove oznake postupak će onemogućiti unos analitičkog konta nosioca knjiženja koji nije u skladu sa postavkama računovodstvenih parametara. Na primer, neće biti dozvoljena upotreba konta kupca u šablonu nabavnog knjiženja dobavljača.
 
-**Permetti registrazione contabile con sbilancio**: la presenza di questo flag consentirà all'utente di salvare registrazioni contabili non bilanciate (sconsigliato). Può essere utile ad esempio (con le necessarie cautele) per forzare una contabilizzazione automatica che restituisce un messaggio di errore al fine di meglio comprendere il risultato della registarzione e correggere i settaggi.
+**Dozvoli neuravnoteženo računovodstveno knjiženje**: aktiviranjem ove oznake korisniku se omogućava čuvanje računovodstvenih knjiženja koja nisu uravnotežena. Ova mogućnost se ne preporučuje. Može biti korisna, uz odgovarajući oprez, za prinudno izvršavanje automatskog knjiženja koje vraća poruku o grešci, kako bi se lakše razumeo rezultat knjiženja i ispravile postavke.
 
-**Blocca cancellazione registrazioni con partite pagate**: con questo flag non sarà possibile cancellare le registrazioni che abbiano all'interno almeno una partita con un pagamento collegato.
+**Blokiraj brisanje knjiženja sa plaćenim stavkama**: aktiviranjem ove oznake neće biti moguće obrisati knjiženja koja sadrže barem jednu stavku povezanu sa plaćanjem.
 
-**Blocca registrazione se il valore delle partite non è uguale al movimento contabile**: la presenza di questo flag imporrà alla procedura di bloccare il salvataggio di registrazioni per le quali il valore dei movimenti contabili non corrisponde ai valori di movimentazione dei partitari (in apertura e in chiusura partite): nel caso in cui non sia impostato, la procedura, comunque eseguirà un messaggio di avviso della presenza di una differenza. Il controllo viene eseguito su tutti i sottoconti che nel piano dei conti hanno impostato il flag *Apertura partite*.
+**Blokiraj knjiženje ako vrednost stavki nije jednaka računovodstvenom kretanju**: aktiviranjem ove oznake postupak će blokirati čuvanje knjiženja ako se vrednosti računovodstvenih kretanja ne podudaraju sa vrednostima kretanja otvorenih stavki (pri otvaranju i zatvaranju stavki). Ako oznaka nije aktivirana, postupak će ipak prikazati upozorenje o postojanju razlike. Provera se sprovodi za sve analitičke konte koji u kontnom planu imaju aktiviranu oznaku *Otvaranje stavki*.
 
-**Blocca registrazione se il totale documento è differente dal totale dei dati iva**: la presenza di questo flag imporrà alla procedura di bloccare il salvataggio di registrazioni per le quali il valore totale dei movimenti iva non corrisponde ai totali impostati in testata della registrazione: nel caso in cui il campo non sia impostato comunque la procedura eseguirà un messaggio di avviso.
+**Blokiraj knjiženje ako se ukupni iznos dokumenta razlikuje od ukupnog iznosa podataka o PDV-u**: aktiviranjem ove oznake postupak će blokirati čuvanje knjiženja ako ukupni iznos kretanja PDV-a ne odgovara ukupnim iznosima unetim u zaglavlje knjiženja. Ako oznaka nije aktivirana, postupak će ipak prikazati upozorenje.
 
-**Aggiorna automaticamente il totale del documento al variare dei dati nella griglia dell'iva: l**a presenza di questo flag imporrà alla procedura di aggiornare, ma solo in incremento, i totali della testata della registrazione al variare della somma totale inserita nella sezione iva della registrazione.
+**Automatski ažuriraj ukupni iznos dokumenta pri promeni podataka u tabeli PDV-a**: aktiviranjem ove oznake postupak će ažurirati ukupne iznose u zaglavlju knjiženja pri promeni ukupnog zbira unetog u odeljak PDV-a, ali samo ako se iznos povećava.
 
-**Aggiorna anche in decremento**: questo flag, attivo solo quando il precedente è impostato, forzerà la procedura ad aggiornare i totali della registrazione anche in decremento.
+**Ažuriraj i pri smanjenju**: ova oznaka je aktivna samo ako je prethodna opcija aktivirana. Omogućava ažuriranje ukupnih iznosa knjiženja i pri smanjenju.
 
-**Blocca registrazione se l'ordine di protocollo non è rispettato**: la presenza di questo flag imporrà alla procedura di bloccare il salvataggio di registrazioni per le quali l'ordine temporale di protocollazione non sia rispettato: in particolare, con questo flag la procedura recupererà numeri di protocolli solo nel caso in cui sia stata impostata una data registrazione valida per il numero stesso. Se il flag non viene inserito, comunque la procedura eseguirà un messaggio di avviso della mancanza di ordine di protocollazione: si ricorda, inoltre, che la stampa registri iva non consente, nell'impostazione di default, di stampare in definitivo registri iva che abbiano buchi nella numerazione oppure non seguano l'ordine di protocollazione corretto.
+**Blokiraj knjiženje ako nije poštovan redosled protokola**: aktiviranjem ove oznake postupak će blokirati čuvanje knjiženja ako nije poštovan hronološki redosled dodele protokola. Konkretno, brojevi protokola dodeljivaće se samo ako je za njih postavljen odgovarajući datum knjiženja. Ako oznaka nije aktivirana, postupak će ipak prikazati upozorenje o nepoštovanju redosleda protokola. Napominjemo da podrazumevane postavke štampanja PDV registara ne dozvoljavaju konačno štampanje registara koji imaju praznine u numerisanju ili ne prate ispravan redosled protokola.
 
-**Gestione separata Cdc/Cdp**: questo flag, attivo solo nel caso in cui la causale gestisca sia i centri di costo che di profitto, consentirà di assegnare i movimenti economici di contabilità sia ai centri di costo che ai centri di profitto. Se non è impostato, invece, il movimento può essere assegnato solo a uno delle due sezioni.
+**Odvojeno upravljanje centrima troška i centrima prihoda**: ova oznaka je aktivna samo ako šablon omogućava upravljanje i centrima troška i centrima prihoda. Omogućava dodelu računovodstvenih kretanja na obe vrste centara. Ako nije aktivirana, kretanje se može dodeliti samo jednoj od te dve grupe.
 
-**Ricalcolo automatico CdC, CdP e commesse**: il flag in oggetto sarà riportato anche nelle registrazioni contabili basate su questa causale: il significato è quello di eseguire automaticamente o meno il ricalcolo delle sezioni analitiche dei centri di costo, profitto e delle commesse una volta entrati in modifica di una registrazione contabile già salvata. All'atto dell'inserimento di una nuova registrazione, fino al suo primo salvataggio, l'aggiornamento di queste sezioni sarà sempre automatico nel rispetto delle impostazioni di default definite.
+**Automatski ponovni obračun centara troška, centara prihoda i naloga**: ova oznaka prenosi se i u računovodstvena knjiženja koja se zasnivaju na ovom šablonu. Određuje da li će se automatski ponovo obračunavati analitički odeljci centara troška, centara prihoda i naloga prilikom otvaranja već sačuvanog knjiženja radi izmene. Pri unosu novog knjiženja, sve do prvog čuvanja, ti odeljci se uvek automatski ažuriraju u skladu sa podrazumevanim postavkama.
 
-**Blocca registrazione se il valore dei Cdc/Cdp non è uguale al movimento contabile**: la presenza di questo flag imporrà alla procedura di bloccare il salvataggio di registrazioni per le quali il valore totale dei movimenti analitici dei centri di costo e profitto non corrisponde agli importi economici movimentati nella sezione di contabilità generale: nel caso in cui il flag non sia inserito sarà comunque eseguito un messaggio di avviso della mancata corrispondenza dei valori.
+**Blokiraj knjiženje ako vrednost centara troška/centara prihoda nije jednaka računovodstvenom kretanju**: aktiviranjem ove oznake postupak će blokirati čuvanje knjiženja ako ukupna vrednost analitičkih kretanja centara troška i centara prihoda ne odgovara iznosima evidentiranim u glavnoj knjizi. Ako oznaka nije aktivirana, prikazaće se upozorenje o nepodudaranju vrednosti.
 
-**Raggruppa Iva in libro giornale**: la presenza di questo flag imporrà alla procedura di raggruppare nel libro giornale le righe Iva assegnate allo stesso sottoconto contabile (e alla stessa divisione).
+**Grupiši PDV u dnevniku knjiženja**: aktiviranjem ove oznake postupak će grupisati redove PDV-a u dnevniku knjiženja koji su povezani sa istim analitičkim kontom i istom organizacionom jedinicom.
 
-**Blocca salvataggio con numero documento duplicato**: la presenza di questo flag, inserito di default, imporrà alla procedura di bloccare il salvataggio di registrazioni contabili con stesso numero documento, stesso anno, stesso tipo documento e anagrafica in testata della registrazione.
+**Blokiraj čuvanje ako je broj dokumenta dupliran**: ova oznaka je podrazumevano aktivirana. Njome se blokira čuvanje računovodstvenih knjiženja koja imaju isti broj dokumenta, istu godinu, isti tip dokumenta i isti subjekt naveden u zaglavlju knjiženja.
 
-**Background colour**: impostare in questo campo il colore di sfondo per visualizzare nelle ricerche a video i movimenti basati su questa causale. L'uso dei colori può essere utile per individuare il tipo di movimento senza dover leggere descrizioni o codici delle causali.
+**Boja pozadine**: u ovo polje postavlja se boja pozadine kojom će se u rezultatima pretraživanja na ekranu prikazivati kretanja koja se zasnivaju na ovom šablonu. Boje mogu olakšati prepoznavanje vrste kretanja bez čitanja opisa ili šifara šablona.
 
-**Foreground colour**: impostare in questo campo il colore di dei testi da visualizzare nelle ricerche a video i movimenti basati su questa causale. L'uso dei colori può essere utile per individuare il tipo di movimento senza dover leggere descrizioni o codici delle causali.
+**Boja teksta**: u ovo polje postavlja se boja teksta kojim će se u rezultatima pretraživanja na ekranu prikazivati kretanja koja se zasnivaju na ovom šablonu. Boje mogu olakšati prepoznavanje vrste kretanja bez čitanja opisa ili šifara šablona.
 
-**Sample text**: il campo visualizza il risultato della combinazione di colori impostata.
+**Primer teksta**: ovo polje prikazuje rezultat izabrane kombinacije boja.
 
-**Carattere corsivo**: impostare in questo campo la visualizzazione in corsivo dei caratteri per questa causale nelle ricerche a video: può essere utile per individuare il tipo di movimento senza dover leggere descrizioni o codici delle causali.
+**Kurziv**: omogućava prikaz teksta u kurzivu za ovaj šablon u rezultatima pretraživanja na ekranu. To može olakšati prepoznavanje vrste kretanja bez čitanja opisa ili šifara šablona.
 
-**Carattere grassetto**: impostare in questo campo la visualizzazione in grassetto dei caratteri per questa causale nelle ricerche a video: può essere utile per individuare il tipo di movimento senza dover leggere descrizioni o codici delle causali.
+**Podebljano**: omogućava prikaz teksta podebljanim slovima za ovaj šablon u rezultatima pretraživanja na ekranu. To može olakšati prepoznavanje vrste kretanja bez čitanja opisa ili šifara šablona.
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
+:::important Pogledajte i
+
+[**VIDEO-UPUTSTVA O RAČUNOVODSTVENIM ŠABLONIMA ZA KNJIŽENJE**](/docs/video/finance/intro)
+
 :::
 
-### 1.4 Controllo aliquote IVA
+### 1.4 Kontrola stopa PDV-a
 
-In questo tab è possibile inserire alcune aliquote IVA (precedentemente codificate nella tabella [**Aliquote / Modalità IVA**](/docs/configurations/tables/finance/vat-rates/)) che vincoleranno l'utente all' utilizzo esclusivo delle stesse.
+Na ovoj kartici moguće je navesti određene stope PDV-a, prethodno definisane u tabeli [**Stope PDV-a / Načini obračuna PDV-a**](/docs/configurations/tables/finance/vat-rates/), čime se korisnik ograničava na njihovu isključivu upotrebu.
 
-Rappresenta dunque una forma di controllo e di vincolo ad utilizzare solo codici iva ritenuti corretti e consoni alla scrittura contabili gestita dalla causale in oggetto.
+To je način kontrole kojim se obezbeđuje korišćenje samo onih šifara PDV-a koje se smatraju ispravnim i odgovarajućim za računovodstveno knjiženje povezano sa predmetnim šablonom.
 
-La possibilità di inserire nella griglia e dunque di attivare il controllo è abilitata dal flag **Imposta aliquote IVA abilitate**.
- 
-E' presente accanto ai campi che riportano il codice / descrizione dell'aliquota inserita, un campo per impostare una data di fine validità della scelta precedentemente effettuata e dunque cambiare o concludere la politica di gestione.
+Mogućnost unosa stopa u tabelu i aktiviranja ove kontrole omogućava oznaka **Postavi dozvoljene stope PDV-a**.
+
+Uz polja sa šifrom i opisom unete stope nalazi se i polje za postavljanje datuma završetka važenja prethodno izabranog pravila, što omogućava izmenu ili završetak primene određene postavke.

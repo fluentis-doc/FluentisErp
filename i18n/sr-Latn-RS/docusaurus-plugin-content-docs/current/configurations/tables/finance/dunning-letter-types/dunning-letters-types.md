@@ -3,8 +3,8 @@ title: Pretraživanje tipova opomena
 sidebar_position: 1
 ---
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi ih se moglo pregledati, izmijeniti ili izbrisati.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na gumb **Pretraži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na dugme **Pretraživanje** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazni red u mreži ili pritisnuti gumb **Novi**.
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.

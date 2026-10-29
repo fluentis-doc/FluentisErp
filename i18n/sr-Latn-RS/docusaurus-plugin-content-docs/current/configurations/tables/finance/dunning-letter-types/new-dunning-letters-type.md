@@ -1,50 +1,54 @@
 ---
-title: Novi tip opomena
+title: Novi tipovi opomena
 sidebar_position: 3
 ---
 
-Polja ove forme su:
+Polja ovog obrasca su:
 
-**Šifra**: identifikacijska šifra tipa opomene.
+**Šifra**: identifikaciona šifra tipa opomene.
 
-**Opis**: opis tipa opomene.
+**Opis**: opis tipa opomene.
 
-**Vrsta kamata**: opcionalno, povezuje se s vrstom kamatne stope koja se primjenjuje na kašnjenje u plaćanju, kako bi se izračun izvršio na datum izdavanja opomene.
+**Tip kamate**: opciono polje koje povezuje tip opomene sa tipom kamatne stope koja se primenjuje na zakašnjela plaćanja, kako bi se omogućio obračun kamate na datum izdavanja opomene.
 
-**Opomena po grupi stavki:**: oznaka za upravljanje grupom stavki; posebno, omogućuje slanje jednog pisma opomene za grupu stavki istovremeno (standardno upravljanje), dok bez oznake svaka stavka ima zasebnu opomenu.
+**Opomena za grupu stavki**: oznaka za upravljanje grupom stavki. Ako je aktivirana, omogućava izdavanje jedne opomene za više stavki istovremeno (standardni način rada). Ako oznaka nije aktivirana, za svaku računovodstvenu stavku izdaje se zasebna opomena.
 
-Nakon što se tip opomene spremi, moguće je kreirati različite razine klikom na gumb Novi.
+Nakon čuvanja tipa opomene moguće je klikom na dugme **Novo** kreirati pojedinačne nivoe opomene.
 
-**Šifra**: identifikacijska šifra opomene.
+**Šifra**: identifikaciona šifra nivoa opomene.
 
-**Opis**: opis tipa opomene.
+**Opis**: opis nivoa opomene.
 
-**Prioritet**: redoslijed kreiranja od 1 do N razina.
+**Prioritet**: redosled izdavanja opomena, od nivoa 1 do nivoa N.
 
-**Opis vrste limita**: veza na tip kontrole kredita za klijenta nije aktivna.
+**Opis tipa kreditnog limita**: povezivanje sa tipom kontrole kreditnog limita kupca nije podržano.
 
-**Dani kašnjenja**: broj dana kašnjenja koji mora proteći prije nego se opomena pošalje.
+**Dani kašnjenja**: broj dana kašnjenja koji mora da protekne pre slanja opomene za određenu stavku.
 
-:::tip[Informacija]
-U proceduri [***Generiranja opomena***](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro), moguće je upravljati i opomenama s negativnim brojem **Dana kašnjenja**. Obično se negativni dani koriste za slanje upozorenja prije dospijeća. Procedura [*Automatsko generiranje opomena*](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue) **NE** podržava negativni parametar.
+:::tip[Informacije]
+U postupku [**Generisanje opomena**](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro) moguće je koristiti i opomene sa **negativnim brojem dana kašnjenja**. Negativni broj dana obično se postavlja radi izrade obaveštenja pre dospeća.
+
+Međutim, postupak [*Automatsko generisanje opomena*](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue) **NE** podržava negativne vrednosti ovog parametra.
 :::
 
-**Dani**: broj dana do dospijeća opomene i da li se ti dani računaju od datuma kreiranja ili od datuma dospijeća prethodne opomene.
+**Dani**: broj dana koji se uzima u obzir za sledeću opomenu i određuje da li se ti dani računaju od datuma kreiranja opomene ili od datuma prethodne opomene.
 
-**Od datuma prethodnog dokumenta**: referentni datum za razine nakon prve.
+**Od datuma prethodnog knjiženja**: referentni datum za sve nivoe nakon prvog.
 
-**Od datuma kreiranja**: referentni datum koji se obično koristi za prvu razinu.
+**Od datuma kreiranja**: referentni datum koji se obično koristi za prvi nivo.
 
 :::danger PAŽNJA
-Vrijednosti polja "**dani kašnjenja**" i "**dani**", posebno za opomene nakon prve, se zbrajaju. Stoga, kod druge, treće opomene itd., obično nije potrebno unositi dodatnu vrijednost u parametar *dani kašnjenja*, već se može koristiti dodatno proteklo vrijeme od datuma prve opomene preko parametra *dani*.
+Vrednosti polja **Dani kašnjenja** i **Dani**, naročito za opomene nakon prve, sabiraju se. Zato za drugu, treću i svaku narednu opomenu po pravilu nije potrebno unositi vrednost u parametar *Dani kašnjenja*. Umesto toga, dodatni period od datuma prve opomene može se definisati parametrom *Dani*.
 :::
 
-Za svaki broj opomene moguće je, nakon spremanja, unijeti različite tekstove na jeziku: prvi uneseni tekst bit će zadani kada klijentski zapis nema dodijeljen jezik.
+Nakon čuvanja svakog nivoa opomene moguće je uneti tekstove na različitim jezicima. Prvi uneti tekst koristiće se kao podrazumevani ako u šifarniku kupca nije naveden jezik.
 
-Tekstovi su podijeljeni u 4 sekcije: predmet pisma, zaglavlje, zaključak i sekcija referenci (aktivna samo za opomene na grupu stavki). U sekciji referenci posebno je moguće unijeti tekst koristeći kodove predviđene na dnu forme; npr. “Ref. (3) br. (4) od (5), (9) od (8) (10) s dospijećem na (6)”.
+Tekstovi su podeljeni u četiri odeljka: predmet pisma, zaglavlje, završni deo i odeljak sa referencama (aktivan samo za opomene koje obuhvataju grupe stavki).
 
+U odeljak sa referencama moguće je uneti tekst koristeći kodove navedene na dnu obrasca. Na primer: „Ref. (3) br. (4) od (5), (9) od (8) (10), sa dospećem na dan (6)”.
 
+:::note[Postavke banke za uplatu]
+Šablon za štampanje opomena sadrži podrazumevano polje u kojem se prikazuje banka na koju je potrebno izvršiti uplatu. Banku je moguće definisati u odgovarajućem odeljku [**šifarnika preduzeća**](/docs/configurations/tables/general-settings/company#griglia-delle-divisioni-banca-dappoggio-di-default-e-logo).
 
-
-
-
+Alternativno, podatke o banci na koju se vrši uplata uvek je moguće navesti u tekstu opomene, na primer u završnom delu.
+:::

@@ -9,7 +9,7 @@ Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Tra
 
 Za otvaranje detalja predloška, potrebno je označiti željeni redak i dvaput kliknuti mišem ili kliknuti na tipku **Uredi** (omogućuje pregled i izmjenu podataka) ili na tipku **Pregledaj** (omogućuje pregled podataka bez mogućnosti izmjene).
 
-Za unos novog predloška kliknite na tipku **Novi**.
+Za unos novog predloška kliknite na tipku **Novo**.
 
 *Specifična tipka*  
 

@@ -1,21 +1,20 @@
 ---
-title: Predlošci knjiženja – VIDEO TUTORIJALI
+title: Šabloni za knjiženje – VIDEO-TUTORIJALI
 sidebar_position: 1
 ---
 
-Konfiguracija predložaka knjiženja čini logičku srž modula za računovodstvena knjiženja i omogućuje potpunu primjenu svih povezanih automatizacija.
+Konfiguracija šablona za knjiženje predstavlja logičko jezgro modula za računovodstvena knjiženja i omogućava potpunu primenu svih povezanih automatizacija.
 
-Pregled ovih videozapisa preporučuje se svim korisnicima koji žele bolje razumjeti specifične postavke sustava.
+Pregled ovih video-snimaka preporučuje se svim korisnicima koji žele bolje da razumeju specifične postavke sistema.
 
-Za one koji žele postaviti prilagođeno radno okruženje, gledanje ovih materijala je neophodno.
+Za one koji žele da podese prilagođeno radno okruženje, gledanje ovih materijala je neophodno.
 
-Kroz pravilnu konfiguraciju i primjenu opisanih postupaka, ERP korisnik može značajno optimizirati tijek automatskog knjiženja, smanjiti ručne pogreške i poboljšati sljedivost računovodstvenih operacija.
+Pravilnom konfiguracijom i primenom opisanih postupaka korisnik ERP sistema može značajno da optimizuje tok automatskog knjiženja, smanji broj ručnih grešaka i poboljša sledljivost računovodstvenih operacija.
 
-
-:::important Pogledaj i
-[**VIDEO TUTORIJALE O PREDLOŠCIMA KNJIŽENJA**](/docs/video/finance/intro)
+:::important Pogledajte i
+[**VIDEO-TUTORIJALI O ŠABLONIMA ZA KNJIŽENJE**](/docs/video/finance/intro)
 :::
 
 :::tip[Više informacija]
-Pogledaj stranicu o [**Unosu novog predloška knjiženja**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+Pogledajte stranicu o [**Unosu novog šablona za knjiženje**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates).
 :::

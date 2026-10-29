@@ -1,24 +1,24 @@
 ---
-title: Pretraživanje predložaka za računovodstveno knjiženje
+title: Pretraživanje šablona za računovodstveno knjiženje
 sidebar_position: 2
 ---
 
-Ova funkcionalnost omogućuje pretraživanje svih predložaka knjiženja s ciljem njihovog pregleda, izmjene, eventualnog brisanja ili unosa novog predloška. Prozor je podijeljen na područje za filtriranje i mrežu s rezultatima pretrage.
+Ova funkcionalnost omogućava pretraživanje svih šablona za knjiženje radi njihovog pregleda, izmene, eventualnog brisanja ili unosa novog šablona. Prozor je podeljen na oblast za filtriranje i tabelu sa rezultatima pretraživanja.
 
-Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** u *traci izbornika* kako bi se prikazali rezultati u mreži s podacima.
+Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Traži** u *traci menija* kako bi se rezultati prikazali u tabeli sa podacima.
 
-Za otvaranje detalja predloška, potrebno je označiti željeni redak i dvaput kliknuti mišem ili kliknuti na tipku **Uredi** (omogućuje pregled i izmjenu podataka) ili na tipku **Pregledaj** (omogućuje pregled podataka bez mogućnosti izmjene).
+Za otvaranje detalja šablona potrebno je označiti željeni red i dvaput kliknuti mišem ili kliknuti na dugme **Uredi** (omogućava pregled i izmenu podataka) ili na dugme **Pregled** (omogućava pregled podataka bez mogućnosti izmene).
 
-Za unos novog predloška kliknite na tipku **Novi**.
+Za unos novog šablona kliknite na dugme **Novo**.
 
-*Specifična tipka*  
+*Specifično dugme*
 
-> **Dupliciraj označeni predložak**: omogućuje dupliciranje trenutno označenog predloška. Korisno kada se želi kreirati novi predložak sličan postojećem. Otvara se prozor u kojem se traži unos koda za novi predložak, a nakon potvrde korisniku se nudi mogućnost ulaska u novi predložak radi dodatnih izmjena.  
+> **Dupliraj označeni šablon**: omogućava dupliranje trenutno označenog šablona. Korisno je kada želite da kreirate novi šablon sličan postojećem. Otvara se prozor u kojem se traži unos šifre novog šablona, a nakon potvrde korisniku se nudi mogućnost otvaranja novog šablona radi dodatnih izmena.
 
-:::important Pogledaj i 
-[**VIDEO TUTORIJALE O PREDLOŠCIMA KNJIŽENJA**](/docs/video/finance/intro)
+:::important Pogledajte i
+[**VIDEO-TUTORIJALI O ŠABLONIMA ZA KNJIŽENJE**](/docs/video/finance/intro)
 :::
 
 :::tip[Više informacija]
-Pogledaj stranicu o [**Unosu novog predloška knjiženja**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+Pogledajte stranicu o [**Unosu novog šablona za knjiženje**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates).
 :::
