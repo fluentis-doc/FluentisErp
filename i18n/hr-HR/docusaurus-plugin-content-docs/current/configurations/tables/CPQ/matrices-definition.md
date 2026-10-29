@@ -1,5 +1,5 @@
 ---
-title: Vrijednost odabira definicije matrice
+title: Definiranje matrice
 sidebar_position: 3
 ---
 
