@@ -4,6 +4,12 @@ sidebar_label: 🔧 Patch Notes v545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0130 - 29/10/2026
+
+> - FI - Corretto bug nella contabilizzazione fatture di vendita, che generava un falso avviso di squadratura tra partite e saldo contabile, quando contenevano partite di anticipo già incassate (fattura di acconto con partite da mantenere chiuse) e nella fattura era contenuta più di una partita di anticipo (#TT03396/26)  
+> - SD - Stampa ordine cliente: ottimizzato calcolo calcolato Totale merce (#TT04449/26)  
+> - SH - incrementato a 100 caratteri il campo Descrizione nella tabella Aliquote/ Modalità IVA (#TT04528/26)
+
 ### Patch 545.1-0129 - 06/08/2026
 
 > - FI - Revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)  
@@ -18,7 +24,6 @@ sidebar_position: 1
 > - FI - Intrastat - in caso di importo 0 il raggruppamento mantiene il campo del segno impostato a 1 (#TT00417/26)
 > - PR - Cambiamentivari nella creazione file SDD (#TT05663/25)
 > - SD - Agenti: Abilitata la gestione di provvigioni a valore e in percentuale per lo stesso agente (#TT00102/26)
-
 
 ### Patch 545.1-0127 - 02/02/2026
 
