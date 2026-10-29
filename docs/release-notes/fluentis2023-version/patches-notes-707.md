@@ -6,6 +6,45 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0088 - 29/10/2026
+
+> -	CO - Errore cancellazione centri aziendali: Sistemato errore che bloccava il programma quando veniva cancellato un centro aziendale utilizzato. Aggiunto messaggio di errore per avvertire l’utente che il centro aziendale è stato utilizzato. (#TT04134/26)
+> -	CO - nella procedura di Contabilizzazione rimanenze all’interno delle chiusure infrannuali sono stati aggiunti i parametri di ripresa da anagrafico articolo, storicizzazione inventario, da Storicizzazione. Modifications inside form accounting for inventories can have impact on profiles. (#TT04214/26)
+> -	CO - Risolto un problema durante la creazione del bilancio infrannuale che causava la visualizzazione del messaggio di errore "L'operazione è stata annullata dall'utente". (#TT04479/26)
+> -	CRM - Offerte: Nell’help articoli abilitati i tab listini e documenti. Modifications inside SalesOffer object form and Item help can have impact on profiles (#TT03623/26)
+> -	FI - contabilizzazione accrediti, revisione rollback con pulsante ‘rollback registrazione’ (#TT04068/26)
+> -	FI - contabilizzazione assestamenti con singola registrazione impostata, revisione gestione link tra movimenti analitica e giornale. (TT02507/26)
+> -	FI - Corretti i parametri di contabilizzazione relativi ai pagamenti dei compensi (#TT04081/26)
+> -	FI - il salvataggio compensi professionisti con flag di calcolo manuale non aggiorna più erroneamente l’importo della ritenuta appena modificata. (#TT04123/26)
+> -	FI - Importazione da DocFinance, revisione gestione riferimento al numero documento nel caso di apertura di una nuova partita (#TT04247/26)
+> -	FI - Importazione registrazioni da DocFinance, la data scadenza inserita nel pagamento importato ora corrisponde alla data scadenza della partita di riferimento. (#TT04071/26)
+> -	FI - Migliorata la gestione dei tassi di cambio nella generazione automatica della partita di anticipo dagli ordini clienti, con corretto funzionamento dell'incasso e della fattura di acconto generati successivamente. (TT01656/26)
+> -	FI - nella LIPE, quando si imposta il codice fiscale intermediario ora Fluentis avvisa se si è dimenticato di impostare la data impegno. (#TT04153/26)
+> -	FI - revisione Visualizzazione bilancio (F2023) /Visualizzazione bilancio di verifica (F2025) per conti sintetici mancanti e totalizzazioni di gruppo. Modifications inside Visualizzazione bilancio form can have impact on profiles. (#TT04535/26)
+> -	FI - Ricerca compensi: corretta la gestione del filtro “Data pagamento” nella ricerca dei compensi. Modifications inside professional filter form can have impact on profiles. (TT03733/26).
+> -	FI - Stampa schede cespiti: corretta la stampa in presenza del filtro “Ubicazione” (TT04471/26).
+> -	MES - Dichiarazioni di produzione - tabulatore Scarti: attivata la gestione della dichiarazione multipla di Scarti con diverso magazzino e causale di destinazione. (#TT03897/26)
+> -	MES - Manufacturing Execution System: Corretta anomalia che non permetteva, in dichiarazione di produzione, la selezione multipla di lotti e serial number all’interno del tab materiali. (#TT03999/26 )
+> -	MS - Dichiarazioni di produzione: corretta l’anomalia che non permetteva il consumo di materiali gestiti a Numeri seriali a fronte di Giacenza disponibile. (#TT03997/26)
+> -	MS - Rilascio ordini pianificati: per Ordini pianificati gestiti con Siti di produzione, venivano considerati e proposti magazzini indicati nei parametri degli ordini di produzione anziché quelli indicati nei Parametri per Sito produttivo. (#TT04436/26).
+> -	PR - importazione movimenti conto corrente da xml Sepa, gestione del tag ValDt mancante. (#TT04491/26)
+> -	SCM - Quando un DDT movimentato a magazzino viene valorizzato o evaso in una Fattura di Acquisto con cambio valuta diverso, il cambio del DDT e il relativo importo della registrazione di magazzino vengono aggiornati di conseguenza (#TT04371/26).
+> -	SCM - Valorizzazione DDT di acquisto e di rientro: estesa possibilità di inserimento dei riferimenti a numero e data fattura (#TT04205/26).
+> -	SCM - Calcolo CONAI: ottimizzato calcolo nella procedura di valorizzazione DDT di Acquisto (#TT04208/26).
+> -	SCM - Ottimizzazione chiamata WebApi PurchaseInvoice, la data di scadenza nei riepiloghi mantiene il valore fornito in importazione (#TT04076/26)
+> -	SCS - Campi giacenza e disponibilità in evasione materiale su DDT: i dati presenti sono riferiti al magazzino da cui i materiali verranno scaricati. Tendenzialmente, il magazzino interno (#TT03693/26).
+> -	SD - Fatture di vendita: Nel diagramma di evasione viene riportato anche il riferimento all’oggetto Intervento se la fattura nasce da una valorizzazione interventi. (#TT02524/25)
+> -	SD - Stampa ordine cliente: ottimizzato calcolo calcolato Totale merce (#TT04449/26)
+> -	SD - Stampa situazione acconti: revisione della proposta dei totali in presenza di valori negativi. (Rif. Ticket 4253)
+> -	SH - Chart of Accounts fix when FSLedgerAccount object is extended (#TT03996/26)
+> -	SH - incrementato a 100 caratteri il campo Descrizione nella tabella Aliquote/ Modalità IVA. ( TT04528/26)
+> -	SH - Menu, bloccando (pin) il tab aperto nel menu laterale, l'ordine dei tab rimane invariato (#TT04452/25)
+> -	SH - Profili, i filtri presenti nel tab extradata nelle finestre di ricerca vengono correttamente azzerati quando si passa da un profilo all'altro (#TT02223/26)
+> -	WM - Distinta Base: Apertura da Menu contestuale con versione di default della distinta Pharma. (#TT00931/26)
+> -	WM - Warehouse Movement and picking: aggiunta possibilità di storicizzare a costo medio/ultimo da anagrafica articoli. (#TT04014/26)
+> -	WM - Ottimizzata la procedura di calcolo della disponibilità dei materiali utilizzati in numerose distinte base. (#TT04532/26)
+
+
 ### Patch 707.1-0087 - 29/09/2026
 
 > -	CO - revisione calcolo comparazione riclassificazioni su dati del controlling con modelli che hanno nodi di tipo ‘somma dei figli’ con formula null (#TT03629/26)

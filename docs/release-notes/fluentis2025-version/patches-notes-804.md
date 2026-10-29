@@ -4,6 +4,29 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.030 - 29/10/2026
+
+> -	BI - Cruscotti: Fixed checkbox selection in BI dashboard details after a grid refresh. (#TT4104/26)
+> -	BizLink: aggiornati range di dati e descrizioni per una migliore comprensione delle colonne - Items (#TT04537/26)
+> -	CO - Ripresa dati da produzione, algoritmo di ripresa costi di progetto, revisione priorità di assegnazione conto e centro di costo (#TT04665/26)
+> -	FI - Gestione compensi: correzione del ricalcolo della quota Enasarco in fase di inserimento del compenso. Modifications inside Compenso form can have impact on profiles. ( TT04187/26).
+> -	FI - Migliorata la gestione dei tassi di cambio nella generazione automatica della partita di anticipo dagli ordini clienti, con corretto funzionamento dell'incasso e della fattura di acconto generati successivamente. ( TT01656/26)
+> -	FI - revisione Visualizzazione bilancio (F2023) /Visualizzazione bilancio di verifica (F2025) per conti sintetici mancanti e totalizzazioni di gruppo. Modifications inside Visualizzazione bilancio form can have impact on profiles. (#TT04535/26)
+> -	FI - export intrastat, risolto caso di errore per importo null (notification 289652/2026, TT04688/26)
+> -	MS - AFCS. È ora possibile assegnare ad una risorsa AFCS un tempo di riposo dopo utilizzo. Lo schedulatore non potrà utilizzare tale risorsa prima che sia trascorso il tempo indicato (es. pulizia, raffreddamento, etc.) (#TT04100/26)
+> -	MS - Capacità centri di lavoro: corretta l’anomalia che, alla selezione di una fase, nell’istogramma di capacità l’eventuale indicazione di sovraccarico non veniva più rappresentata e la somma dei valori di dettaglio non corrispondeva al totale del carico giornaliero. (#TT04501/26)
+> -	MS - Commesse di produzione - Costificazione: corretto il calcolo del costo di un articolo in conto lavoro, che non teneva correttamente conto dei costi derivanti dai materiali e dalle lavorazioni. È stato inoltre inibito il calcolo in presenza di più commesse pianificate, qualora venga utilizzato il “Raggruppamento degli ordini pianificati”, disponibile nei parametri della “Pianificazione generale”. (#TT03691/26)
+> -	MS - M.R.P.: la proposta del Reintegro scorta ora viene considerato solamente se l’articolo, nei propri Parametri MRP, ha una Politica di gestione a Scorta e il flag di Reintegro scorta minima è indicato. (#TT04430/26)
+> -	MS - Pianificazione generale, M.R.P. e Completamento dati ordine: in presenza dello stesso materiale utilizzato in diverse fasi di lavorazione e riportato in più voci della Distinta Base, nell’Ordine pianificato e nell’Ordine di produzione il materiale veniva riportato una sola volta, con la quantità totale risultante dalla somma dei consumi, perdendo così il riferimento alle singole fasi di lavorazione. (#TT04399/26)
+> -	PR - Risolto un problema nella procedura di contabilizzazione degli anticipi incassi che impediva il corretto riporto delle descrizioni dei movimenti contabili. (#TT04632/26)
+> -	SCM - Supply Chain Management: corretta anomalia che permetteva di cancellare una riga lotto da un ricevimento merci già caricato a magazzino. (#TT04295/26)
+> -	SCM - Ottimizzazione pulsante Anteprima di Stampa in Documenti Acquisto in Entrata, corretta anomalia inserimento “Data di Stampa, Utente di Stampa” (#TT04470/26 #TT04593/26)
+> -	SD - Evasione forzata ordini clienti: allineati lo stato delle righe allo stato della testata in caso di modifica manuale (#TT04656/26)
+> -	SD - SalesOrder: corretta anomalia che non faceva creare un picking da un ordine cliente con almeno un tipo riga 2 “Articolo non codificato”. (#TT04563/26)
+> -	SH - DocManager: Reduce barcode false positives with fallback decoding
+> -	SH - Porto: esteso collegamento alla relativa tab cliccando sul campo con tasto destro > Apri form o CTRL+F9 (#TT04684/26).
+
+
 ### Patch 804.029 - 26/10/2026
 
 > -	CRM - Offerte: Nell’help articoli abilitati i tab listini e documenti. Modifications inside SalesOffer object form and Item help can have impact on profiles(#TT03623/26)
