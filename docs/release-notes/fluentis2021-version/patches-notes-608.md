@@ -4,6 +4,11 @@ sidebar_label: 🔧 Patch Notes v608
 sidebar_position: 1
 ---
 
+### Patch 608.1-0094 - 29/10/2026
+  
+> - SD - Stampa ordine cliente: ottimizzato calcolo calcolato Totale merce (#TT04449/26)  
+> - SH - incrementato a 100 caratteri il campo Descrizione nella tabella Aliquote/ Modalità IVA (#TT04528/26)
+
 ### Patch 608.1-0093 - 11/09/2026
 
 > -	FI - Corretto bug nella contabilizzazione fatture di vendita, che generava un falso avviso di squadratura tra partite e saldo contabile, quando contenevano partite di anticipo già incassate (fattura di acconto con partite da mantenere chiuse) e nella fattura era contenuta più di una partita di anticipo. (TT03396/26)
