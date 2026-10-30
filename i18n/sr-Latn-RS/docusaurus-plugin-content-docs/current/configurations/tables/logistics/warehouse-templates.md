@@ -1,112 +1,114 @@
 ---
-title: Predlošci zapisa skladišta
+title: Šabloni skladišnih knjiženja
 sidebar_position: 9
 ---
 
-:::important Čemu služi 
-Tablica Predlošci zapisa skladišta u Fluentisu ključna je za upravljanje skladišnim operacijama, omogućujući definiranje i prilagodbu razloga koji se koriste za knjiženje ulaza i izlaza robe. Korisnici jednostavno mogu dodavati nove razloge u tablicu, unoseći obavezne podatke poput skladišta, koda razloga
+:::important Čemu služi
+Tabela Šabloni skladišnih kretanja u Fluentisu predstavlja ključni element za upravljanje skladišnim kretanjima jer omogućava definisanje i prilagođavanje šablona koji se koriste pri ulaznim i izlaznim kretanjima. Korisnici mogu jednostavno dodavati nove šablone u tabelu, navodeći obavezne podatke kao što su pripadajuće skladište, šifra šablona i opis.
 
-Jedna od glavnih značajki ove tablice je mogućnost dodjele specifičnih razloga za svako skladište, što daje veliku fleksibilnost u prilagodbi poslovnih procesa. Svaki razlog može biti definiran kao ulazni ili izlazni, što omogućuje precizno upravljanje utjecajem na stanje zaliha.
+Jedna od glavnih karakteristika ove tabele jeste mogućnost povezivanja posebnih šablona sa svakim skladištem, što omogućava veliku fleksibilnost u prilagođavanju operativnih postupaka. Svaki šablon može biti definisan kao ulaz ili izlaz, čime se precizno određuje njegov uticaj na stanje zaliha u skladištu.
 
-Osim toga, moguće je konfigurirati različite opcijske parametre, uključujući vidljivost u određenim područjima i definiranje predloženih troškova za knjiženja. Također, može se aktivirati automatsko ažuriranje prosječnih troškova, zadnjih troškova i prodajnih cijena ovisno o izvršenim skladišnim operacijama. Sve ove značajke čine ovu tablicu ključnim dijelom učinkovite kontrole skladišnih procesa i praćenja troškova.  
+Pored toga, korisnici mogu konfigurisati različite neobavezne parametre, uključujući oznake vidljivosti u određenim područjima i definisanje predloženog troška za kretanja. Takođe je moguće aktivirati funkcije za automatsko ažuriranje prosečnog troška, poslednjeg troška i prodajne cene, u zavisnosti od izvršenih kretanja. Ove karakteristike čine ovu tabelu ključnom komponentom za efikasno upravljanje skladišnim operacijama i praćenje troškova.
 :::
 
-Kroz ovaj prozor postavljaju se svi razlozi skladišnih knjiženja potrebni za premještanje artikala u i iz različitih skladišta upisanih u posebnu tablicu *Skladišta*.
+U ovom prozoru definišu se svi šabloni skladišnih kretanja potrebni za kretanje artikala iz različitih skladišta i u njih, koja su uneta u odgovarajuću tabelu *Skladišta*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Predlošci zapisa skladišta**
+**Pretraživanje šablona skladišnih kretanja**
 
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u tablici rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos predložaka zapisa skladišta**
+**Unos šablona skladišnih kretanja**
 
-Za unos novih kodova potrebno je kliknuti u prazni prvi red tablice ili pritisnuti tipku **Novi**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-**Skladište**: u ovom stupcu korisnik treba postaviti, koristeći padajući izbornik koji dohvaća podatke iz tablice *Skladišta*, šifru skladišta za koje se želi unijeti predložak zapisa;
+**Skladište**: u ovoj koloni korisnik treba da odabere šifru skladišta za koje želi da unese šablon skladišnog kretanja, koristeći odgovarajući padajući meni koji preuzima podatke iz tabele *Skladišta*.
 
-**Predložak**: u ovom stupcu korisnik unosi šifru predloška zapisa skladišta. Maksimalna duljina je 3 alfanumerička znaka. Moguće je kreirati više predložaka s istom šifrom, pod uvjetom da su za različita skladišta; dva predloška s istom šifrom za isto skladište nisu dopuštena;
+**Šablon**: u ovoj koloni korisnik treba da unese šifru šablona skladišnog kretanja. Šifra može sadržati najviše 3 alfanumerička znaka. Moguće je kreirati više šablona skladišnih kretanja sa istom šifrom, pod uslovom da su šabloni definisani za različita skladišta. Dakle, nije dozvoljeno imati dva šablona sa istom šifrom za isto skladište.
 
-**Opis**: u ovom stupcu korisnik unosi opis predloška zapisa skladišta, koji može imati maksimalno 80 alfanumeričkih znakova;
+**Opis**: u ovoj koloni korisnik treba da unese opis šablona skladišnog kretanja, koji može sadržati najviše 80 alfanumeričkih znakova.
 
-**Tip**: u ovom stupcu korisnik unosi *Tip pokreta* koji karakterizira predložak. Može biti *Zadužen*, gdje se količina pokreta u skladištu bilježi kao pozitivna, ili *Istovaren*, gdje se količina bilježi kao negativna;  
+**Tip**: u ovoj koloni korisnik treba da odabere *tip kretanja* koji određuje šablon. Može biti reč o *ulazu*, pri čemu se količina skladišnog kretanja kreiranog tim šablonom čuva u bazi podataka kao pozitivna vrednost, ili o *izlazu*, pri čemu se količina čuva kao negativna vrednost.
 
-**Vidljivo u nabavi**: ako je aktivno, predložak je vidljiv u području nabave;
+**Koristi se u nabavci**: ako je aktivirano, šablon je vidljiv u području nabavke.
 
-**Vidljivo u prodaji**: ako je aktivno, predložak je vidljiv u području prodaje;
+**Koristi se u prodaji**: ako je aktivirano, šablon je vidljiv u području prodaje.
 
-**Vidljivo u proizvodnji**: ako je aktivno, predložak je vidljiv u području proizvodnje;
+**Koristi se u proizvodnji**: ako je aktivirano, šablon je vidljiv u području proizvodnje.
 
-**Vidljivo u podizvođaču**: se attivo, rende visibile la causale nell’area conto lavoro;
+**Koristi se kod podizvođača**: ako je aktivirano, šablon je vidljiv u području podizvođača.
 
-**Visibile in Logistica**: se attivo, rende visibile la causale nell’area logistica;
+**Koristi se u logistici**: ako je aktivirano, šablon je vidljiv u području logistike.
 
-**Predloženi trošak**: u ovom stupcu korisnik bira koji se trošak automatski predlaže prilikom ručnog unosa pokreta. Predloženi trošak može biti posljednji trošak, prosječni trošak, prodajna cijena ili standardni trošak artikla. Vrijednosti dolaze iz kartice artikla. Važno je napomenuti da predloženi trošak ima prioritet nad dokumentima; stoga predlošci koji će se koristiti u dokumentima trebaju imati vrijednost "Nijedan" za predloženi trošak kako bi se uzimao trošak iz dokumenta;  
+**Predloženi trošak**: u ovoj koloni korisnik treba da odabere trošak koji će se automatski predložiti prilikom ručnog unosa skladišnog kretanja. Predloženi trošak može biti poslednji trošak, prosečni trošak, prodajna cena ili standardni trošak artikla. Treba napomenuti da se predložene vrednosti preuzimaju direktno iz šifarnika artikala. Takođe je važno imati na umu da predloženi trošak ima prednost u odnosu na trošak naveden u dokumentima. Stoga šabloni skladišnih kretanja koji će se koristiti u dokumentima moraju imati vrednost **Nijedan** u polju „Predloženi trošak“ kako bi se preuzeo trošak naveden u dokumentu.
 
-**Ažuriraj prosječni trošak**: svi pokreti izvršeni korištenjem uzroka koji ima ovaj flag aktiviran doprinose izračunu prosječne ponderirane cijene artikla. Treba napomenuti da se flag ne može aktivirati ili deaktivirati nakon što je uzrok već korišten, čak i za samo jedan pokret skladišta. Obično se ovaj flag aktivira samo za pokrete utovara, ali se može aktivirati i za pokrete istovara, kada se želi osigurati da se prosječna ponderirana cijena artikla izračunava uzimajući u obzir i prodajne cijene povezane s istovarima skladišta samog artikla.  
-Prosječna cijena u kartonu artikla ažurira se s iznosom pokreta samo ako su aktivni i flagovi *Ažuriraj trošak artikla* i *Porezni interes*;
+**Ažuriraj prosečni trošak**: sva kretanja izvršena pomoću šablona sa aktiviranom ovom oznakom učestvuju u izračunavanju ponderisanog prosečnog troška artikla. Ovu oznaku nije moguće aktivirati ni deaktivirati nakon što je šablon upotrebljen za najmanje jedno skladišno kretanje. Obično se aktivira samo za ulazna kretanja, ali može se aktivirati i za izlazna kretanja kada se želi da se ponderisani prosečni trošak artikla izračunava uzimajući u obzir i prodajne cene povezane sa izlaznim skladišnim kretanjima tog artikla.
 
-**Ažuriraj posljednji trošak**: svi pokreti s predloškom koji ima ovaj označivač aktiviran sudjeluju u izračunu posljednjeg troška artikla. Ne može se mijenjati nakon prvog korištenja. Obično se koristi samo za prijeme.   
-Posljednji trošak u kartici artikla ažurira se samo ako su aktivni i *Ažuriraj trošak artikla* i *Porezni interes*;    
+Prosečni trošak u šifarniku artikala ažurira se iznosom kretanja samo ako su aktivirane i oznake *Ažuriraj trošak artikla* i *Poreski interes*.
 
-**Ažuriraj prodajnu cijenu**: ne može se mijenjati nakon prvog korištenja. Koristi se uglavnom za otpremu. Prodajna cijena u kartici artikla ažurira se samo ako je aktivan označivač *Ažuriraj trošak artikla*;     
+**Ažuriraj poslednji trošak**: sva kretanja izvršena pomoću šablona sa aktiviranom ovom oznakom učestvuju u izračunavanju poslednjeg troška artikla. Ovu oznaku nije moguće aktivirati ni deaktivirati nakon što je šablon upotrebljen za najmanje jedno skladišno kretanje. Ova oznaka aktivira se samo za ulazna kretanja.
 
-**Ažuriraj trošak artikla**: prilikom unosa skladišnog kretanja pomoću šablona koji u zaglavlju knjiženja ima aktiviranu opciju **Ažuriraj trošak artikla**, ažuriraju se prosečni trošak, poslednji trošak i/ili prodajna cena na kartici artikla, u zavisnosti od toga koje su od sledećih opcija aktivirane: *Ažuriraj prosečni trošak*, *Ažuriraj poslednji trošak* i *Ažuriraj prodajnu cenu*.   
+Poslednji trošak u šifarniku artikala ažurira se iznosom kretanja samo ako su aktivirane i oznake *Ažuriraj trošak artikla* i *Poreski interes*.
 
-**Fiskalni interes**: prilikom unosa skladišnog kretanja pomoću šablona koji u zaglavlju knjiženja ima aktiviranu opciju **Fiskalni interes**, to kretanje se uzima u obzir u skladišnoj evidenciji, kao i pri izračunavanju poslednje i prosečne cene i količinske zalihe sa iskazanom vrednošću, pod uslovom da je i na artiklu, na kartici **Opšti podaci**, aktivirana opcija *Fiskalni interes*.
-Ova opcija ne utiče na izračunavanje stanja zaliha ni u jednom poreskom izveštaju.
+**Ažuriraj prodajnu cenu**: ovu oznaku nije moguće aktivirati ni deaktivirati nakon što je šablon upotrebljen za najmanje jedno skladišno kretanje. Aktivira se samo za izlazna kretanja.
 
-**Točka narudžbe**: kada se unosi skladišni pokret koristeći u zaglavlju registracije predložak koji ima aktiviran flag **Točka narudžbe** taj pokret se uzima u obzir prilikom obrade u postupku izračuna točke narudžbe;       
+Prodajna cena u šifarniku artikala ažurira se iznosom kretanja samo ako je aktivirana i oznaka *Ažuriraj trošak artikla*.
 
-**Upravljanje serijama**: kada se unosi skladišni pokret koristeći u zaglavlju registracije predložak koji ima aktiviran flag **Upravljanje serijama** pokret omogućuje unos serije u odgovarajuću tablicu registracije skladišta za artikl koji se vodi po serijama.
-Isti princip vrijedi i za upravljanje **Serijskim brojevima**;
+**Ažuriraj trošak artikla**: prilikom unosa skladišnog kretanja, ako je u zaglavlju knjiženja odabran šablon sa aktiviranom oznakom **Ažuriraj trošak artikla**, u šifarniku artikala ažuriraće se prosečni trošak, poslednji trošak i/ili prodajna cena iznosom kretanja, u zavisnosti od toga koje su od sledećih oznaka aktivirane: *Ažuriraj prosečni trošak*, *Ažuriraj poslednji trošak* i *Ažuriraj prodajnu cenu*.
 
-**Integracija početne količine**: koristi se isključivo uz upravljanje serijama; omogućuje povećanje količine serije već unešene prethodnim pokretom, zadržavajući isti broj serije.  
+**Fiskalni interes**: prilikom unosa skladišnog kretanja pomoću šablona sa aktiviranom oznakom **Poreski interes** u zaglavlju knjiženja, samo kretanje uzima se u obzir u skladišnom dnevniku, izračunavanju poslednjeg i prosečnog troška, kao i izračunavanju inventure količina sa vrednovanjem, pod uslovom da je za artikal takođe aktivirana oznaka *Poreski interes* na kartici *Opšti podaci*. Ova oznaka ne utiče na izračunavanje stanja zaliha ni u jednom poreskom izveštaju.
 
-**Kreiraj seriju iz serije**: ako je flag aktivan, omogućuje da se ta skladišna predložena zapisa prikaže kao predložak unutar procedure Kreiranje serije iz serije, kojom se omogućuje zamjena jedne serije drugom; program tada automatski kreira pokret za izlaz iz jedne serije i ulaz u drugu seriju istog artikla.
-Dostupna je i dodatna procedura Kreiranje serije iz serije uz promjenu artikla, kojom je moguće iz jedne serije određenog artikla preći na drugu seriju drugog artikla.
-Da bi se ovaj flag mogao aktivirati, predložak mora biti tipa **Istovar** a aktivni moraju biti i sljedeći flagovi: **Upravljanje serijama**, **Integracija početne količine**. Također, flag **Sastavnica materijala** e smije biti aktivna, a u polju **Predložak protupokreta za ulaz** mora biti postavljen odgovarajući predložak.;
+**Tačka ponovnog naručivanja**: prilikom unosa skladišnog kretanja pomoću šablona sa aktiviranom oznakom **Tačka ponovnog naručivanja** u zaglavlju knjiženja, kretanje se uzima u obzir u postupku izračunavanja tačke ponovnog naručivanja.
 
-**Nedostupne serije**: kada se unosi skladišni pokret koristeći predložak koji ima aktivan flag *Nedostupne serije* moguće je obaviti izlaz i iz serija koje se nalaze u statusu "nedostupno";
+**Upravljanje lotovima**: prilikom unosa skladišnog kretanja pomoću šablona sa aktiviranom oznakom **Upravljanje lotovima** u zaglavlju knjiženja, omogućava se unos lota u odgovarajuću tabelu knjiženja skladišnog kretanja za određeni artikal kojim se upravlja po lotovima.
 
-**Kreiraj serijske brojeve (S/N)**: ako je flag aktivan, omogućuje se upravljanje serijskim brojevima te njihovo automatsko generiranje pri unosu pokreta;  
+Isti postupak važi i za upravljanje **serijskim brojevima**.
 
-**Obavezan dokument**: kada se unosi skladišni pokret koristeći predložak koji ima aktiviran flag **Obavezan dokument** obavezno je unijeti podatak u polje *Referentni dokument* unutar registracije skladišta – u suprotnom nije moguće nastaviti s unosom.;
+**Integriši početnu količinu**: koristi se samo pri upravljanju lotovima; omogućava povećanje količine lota primljenog prethodnim kretanjem, uz zadržavanje istog broja lota.
 
-**Obavezan konto**: kada se unosi promet skladišta koristeći u zaglavlju dokumenta predložak koji ima uključenu opciju **Obavezan račun** obavezno je potrebno popuniti polje *Kupac/Dobavljač*.  Ova se opcija najčešće koristi za evidenciju potrošnje ili isporuke materijala kod vanjskih suradnji (rada po narudžbi za treće strane). Bez unosa tog podatka, nije moguće nastaviti s unosom.
+**Kreiraj lot iz lota**: ako je aktivirana, omogućava prikaz tog šablona kao šablona u postupku „Kreiranje lota iz lota“ radi promene jednog lota u drugi. Program će automatski izvršiti izlaz jednog lota i ulaz drugog lota istog artikla. Dostupan je i postupak „Kreiranje lota iz lota uz promenu artikla“, koji omogućava izlaz artikla sa određenim lotom i ulaz drugog artikla sa drugim lotom. Da bi se ova oznaka mogla aktivirati, kreirani šablon mora biti tipa **Izlaz**, a moraju biti aktivirane i sledeće oznake: **Upravljanje lotovima** i **Uključi početnu količinu**. Osim toga, oznaka **Sastavnica** ne sme biti aktivirana, a u polju **Šablon protivstavke ulaza** mora biti naveden šablon.
 
-**Sastavnica materijala**: kada se unosi promet skladišta koristeći u zaglavlju dokumenta predložak koji ima uključenu opciju receptura, prilikom spremanja stavke ne knjiži se odabrani gotovi proizvod, već se automatski knjiže njegovi sastavni dijelovi prvog stupnja, definirani u recepturi. Ova se funkcionalnost često koristi kod izdatnica za razduženje komponenti proizvoda koji je prethodno zaprimljen kroz glavni predložak.
+**Nedostupni lotovi**: prilikom unosa skladišnog kretanja pomoću šablona sa aktiviranom oznakom *Nedostupni lotovi* omogućava se i izlaz lotova koji imaju status nedostupnosti.
 
-**Fizička inventura**: opcija **fizička inventura** omogućuje određivanje koji se predlošci skladišnog prometa mogu odabrati u [Parametri inventurnih razlika](/docs/configurations/parameters/logistics/stock-difference) kao predlošci koji će se koristiti pri izračunu razlika utvrđenih tijekom fizičke inventure. Skladišni zapisi koje će sustav automatski generirati putem postupka *Obrada razlika inventure* imat će u zaglavlju upravo ovakve predloške;  
+**Kreiraj serijski broj**: ako je aktivirana, omogućava upravljanje serijskim brojevima i njihovo automatsko kreiranje.
 
-**Protu-skladište**: u ovom stupcu korisnik može unijeti šifru **protu-skladišta**, odabirom iz pripadajuće padajuće liste povezane s tablicom *Skladišta*. Riječ je o skladištu koje treba biti prikazano na kartici *Protustavka* unutar zapisa skladišnog prometa;  
+**Obavezan dokument**: prilikom unosa skladišnog kretanja pomoću šablona sa aktiviranom oznakom **Obavezan dokument**, obavezno je navesti podatak u polju *Referentni dokument* u knjiženju skladišnog kretanja. U suprotnom nije moguće nastaviti.
 
-**Predložak za protu-knjiženje**: u ovom stupcu korisnik može unijeti šifru **predloška za protu-knjiženje**. To omogućuje da se prilikom unosa skladišnog prometa putem glavnog predloška automatski generira i promet suprotnog predznaka. Na primjer, predložak za protu-knjiženje koristi se za prijenose između različitih skladišta ili za premještanja unutar različitih lokacija u istom skladištu.;
+**Obavezan konto**: prilikom unosa skladišnog kretanja pomoću šablona sa aktiviranom oznakom **Obavezan konto**, obavezno je navesti podatak u polju *Kupac/Dobavljač* u knjiženju skladišnog kretanja. Ova opcija se obično koristi za knjiženja povezana sa potrošnjom i isporukom materijala podizvođaču. U suprotnom nije moguće nastaviti.
 
-**Ostatci**: ovim se označavanjem korisniku omogućuje da za svaki skladišni prostor odredi točno jedan predložak koji će se koristiti u postupku *Vrednovanja skladišta* prilikom zatvaranja skladišta, kako bi se stvorili zapisi ulaza za početno stanje zaliha. Da bi se pokreti napravljeni s tim predloškom uzeli u obzir u izvještaju [Inventura s količinskim vrednovanjem](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity), potrebno je da budu aktivirane opcije  **Porezni značaj** i, prema potrebi **Ažuriranje posljednje cijene** te **Ažuriranje prosječne cijene**. Također, da bi zališni promet imao pridruženu vrijednost, u polje **Predložena cijena** mora biti unesen odgovarajući iznos.       
+**Sastavnica**: prilikom unosa skladišnog kretanja pomoću šablona sa aktiviranom oznakom **Sastavnica**, prilikom čuvanja reda kretanja umesto odabranog artikla (koji obavezno mora imati sastavnicu) unose se artikli prvog nivoa sastavnice. Često se koristi u šablonima izlaza protivstavke za izlaz komponenti artikla koji je primljen pomoću glavnog šablona.
 
-**Vrsta operativnog dokumenta**: koristi se u inozemnim lokalizacijama poput Rumunjske i Hrvatske, gdje se skladišni pokreti moraju evidentirati i u financijskom knjigovodstvu;      
+**Fizička inventura**: oznaka **Fizička inventura** omogućava određivanje šablona skladišnih kretanja koji se mogu odabrati u [Parametrima inventurnih razlika](/docs/configurations/parameters/logistics/stock-difference) kao šabloni za korišćenje pri izračunavanju inventurnih razlika. Knjiženja skladišnih kretanja koja se automatski kreiraju postupkom *Inventurne razlike* imaće u zaglavlju šablone ovog tipa.
 
-**Knjigovodstveni predložak**: koristi se u inozemnim lokalizacijama poput Rumunjske i Hrvatske, gdje se skladišni pokreti moraju evidentirati i u financijskom knjigovodstvu. Ovaj predložak služi za odabir unaprijed definiranih modela glavne knjige koji omogućuju evidentiranje skladišnih pokreta u glavnoj knjizi za svako skladište, kao i odgovarajući model skladišnog pokreta, ovisno o vrsti i prethodno definiranim postavkama;             
+**Protustavno skladište**: u ovoj koloni korisnik može navesti šifru **protustavnog skladišta** odabirom iz odgovarajućeg padajućeg menija koji preuzima podatke iz tabele *Skladišta*. To je skladište koje se prikazuje na kartici *Protivstavka* u knjiženju skladišnog kretanja.
 
-**Vrsta knjigovodstvenog predloška**: koristi se u inozemnim lokalizacijama poput Rumunjske i Hrvatske, gdje se skladišni pokreti moraju evidentirati i u financijskom knjigovodstvu;    
+**Šablon protivstavke**: u ovoj koloni korisnik može navesti šifru **šablona protivstavke**. Time se omogućava da se prilikom kreiranja skladišnog kretanja pomoću glavnog šablona automatski unese i kretanje suprotnog predznaka. Na primer, šablon protivstavke može se postaviti za premeštanje između različitih skladišta ili između različitih lokacija unutar istog skladišta.
 
-**Lokacija**: u ovom stupcu korisnik može unijeti zadanu lokaciju, koristeći *Pomoć za lokacije*, koja se otvara dvostrukim klikom na samo polje. Ta će lokacija biti predložena u zapisima o ulazu ili izlazu iz skladišta, ako nije prethodno postavljena kroz proceduru koja kreira promet. Postavljanje zadane lokacije najčešće se koristi kod predložaka za ulaz robe, dok se za izlaz koristi stvarna lokacija na kojoj se artikl nalazi u trenutku izdavanja. Stoga lokacija unesena u dokumentu ima prednost nad onom definiranom u skladišnom predlošku;
+**Zaliha**: ovom oznakom korisnik može odrediti samo jedan šablon za svako skladište koji će koristiti postupak *Vrednovanje zaliha* pri zatvaranju skladišta za kreiranje ulaznih knjiženja početne inventurne količine. Kako bi se kretanja kreirana pomoću ovog šablona uzimala u obzir u postupku [Inventure količina sa vrednovanjem](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity), moraju biti aktivirane i oznake **Poreski interes** i, prema potrebi, **Ažuriraj poslednji trošak** i **Ažuriraj prosečni trošak**. Osim toga, kako bi kreirano kretanje početne zalihe imalo trošak, potrebno je uneti vrednost u polje **Predloženi trošak**.
 
-**Indeks obrtaja**: ako je ova opcija aktivna, zapisi skladišnog prometa kreirani ovim predloškom bit će uključeni u postupak izračuna **indeksa obrtaja** skladišta (Ispis);
+**Tip upravnog dokumenta**: koristi se u stranim lokalizacijama, na primer u Rumuniji i Hrvatskoj, gde se skladišna kretanja moraju knjižiti i u računovodstvu.
 
-**Alternative**: ova se opcija aktivira zajedno s opcijom *Sastavnica materijala*. Kada su obje opcije uključene, i ako neki od sastavnih artikala nije dostupan u dovoljnoj količini za izdavanje, sustav provjerava postoji li zamjenski artikl (definiran u recepturi) s dovoljnim količinama, kako bi se upotrijebio umjesto glavnog artikla;
+**Računovodstveni šablon**: koristi se u stranim lokalizacijama, na primer u Rumuniji i Hrvatskoj, gde se skladišna kretanja moraju knjižiti i u računovodstvu. Služi za odabir unapred definisanih šablona glavne knjige koji omogućavaju knjiženje skladišnih kretanja u glavnu knjigu za svako skladište, kao i odgovarajućeg šablona skladišnog kretanja, u zavisnosti od tipa i prethodno definisanih podešavanja.
 
-**Kombinirani zamjenski artikli**: ova se opcija aktivira zajedno s opcijom *Sastavnica materijala*; kada je aktivna, sustav može istovremeno povući više različitih zamjenskih artikala sve dok se ne postigne potrebna ukupna količina. Ova opcija usko je povezana s opcijom *Zamjenski artikli*;
+**Tip računovodstvenog šablona**: koristi se u stranim lokalizacijama, na primer u Rumuniji i Hrvatskoj, gde se skladišna kretanja moraju knjižiti i u računovodstvu.
 
-**Uključi pokrete s nulom**: aktiviranjem ove opcije korisnik može odrediti koji skladišni pokreti s količinom jednakom nuli trebaju biti uključeni u izračun ponderirane prosječne cijene artikala. Ovo je jedini predložak koji omogućuje unos pokreta s količinom nula. U pravilu se koristi uz predloške koji imaju aktiviranu opciju *Ažuriranje prosječne cijene*;
+**Lokacija**: u ovoj koloni korisnik može odabrati podrazumevanu lokaciju iz odgovarajućeg menija za pomoć pri odabiru lokacija, koji se otvara dvostrukim klikom na polje. Odabrana lokacija biće predložena pri ulaznom ili izlaznom kretanju ako nije prosleđena iz postupka koji kreira kretanje. Podrazumevana lokacija obično se postavlja za ulazna kretanja jer se izlaz mora izvršiti sa lokacije na kojoj se artikal nalazi u trenutku izlaza. Stoga lokacija navedena u dokumentu ima prednost u odnosu na lokaciju navedenu u šablonu skladišnog kretanja.
 
-**Sljedivost**: Kada je ova opcija aktivna, označava da će skladišni pokreti generirani tim predloškom biti korišteni za [Sljedivost serija/lotova](/docs/logistics/lots-serial-numbers/lots-register); ova funkcionalnost omogućuje praćenje korištenih materijala u određenom gotovom proizvodu ili, obrnuto, identificiranje gotovih proizvoda u kojima je određeni materijal upotrijebljen.
+**Indeks obrta**: ako je ova oznaka aktivirana, knjiženja kreirana pomoću tog šablona uzimaju se u obzir u postupku izračunavanja **Indeksa obrta** skladišta (štampa).
 
-**Otpad**: ako je ova opcija aktivna, predložak postaje vidljiv za definiranje otpada u formi *Dodatna povlačenja za proizvodnju* te na kartici *Otpad* unutar [Izjava o proizvodnji](/docs/production/pp-production-in-progress/signals/sisgnals/);	
+**Alternative**: aktiviranje ove oznake povezano je sa oznakom *Sastavnica*. Ako je aktivirana, prilikom kreiranja kretanja pomoću izlaznog šablona sa aktivirane obe oznake, a jedna od komponenti nema dovoljnu količinu za izlaz, postupak proverava da li postoji alternativni artikal (naveden u sastavnici) sa dovoljnom količinom za izlaz umesto glavne komponente.
 
-**Ispravak logističke jedinice**: ako je ova opcija aktivna, predložak je vidljiv za unos ispravki vezanih uz logističke jedinice.;      
+**Mešovite alternative**: aktiviranje ove oznake povezano je sa oznakom *Sastavnica*. Ako je aktivirana, postupak istovremeno izvršava izlaz više alternativnih artikala sve dok se ne dostigne potrebna količina. Ova oznaka je usko povezana sa oznakom *Alternative*.
 
-**D.D.M.R.P. ADU**:  Ako je ova opcija aktivna, označava da se predložak koristi za prepoznavanje svih skladišnih pokreta koji su relevantni za izračun ADU-a (*Average Daily Use*) artikla. Ova je opcija vidljiva samo ako je aktiviran DDMRP izbornik..        
+**Uzmi u obzir kretanja sa nulom**: ova oznaka mora se koristiti zajedno sa oznakom *Ažuriraj prosečni trošak*. Označava da se u izračunavanje moraju uključiti i skladišna kretanja sa količinom jednakom nuli ako knjiženje ima šablon sa aktiviranom ovom oznakom.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+**Sledljivost**: ako je aktivirana, označava da će se kretanja kreirana pomoću ovog šablona koristiti za [Sledljivost lotova](/docs/logistics/lots-serial-numbers/lots-register). Ovaj postupak omogućava utvrđivanje koji su materijali upotrebljeni u određenom gotovom proizvodu ili, obrnuto, u kojim je gotovim proizvodima upotrebljen određeni materijal.
+
+**Otpad**: ako je aktivirana, šablon postaje vidljiv za definisanje otpada u obrascu *Dodatna izdavanja u proizvodnji* i na kartici *Otpad* u [Izveštajima o proizvodnji](/docs/production/pp-production-in-progress/signals/sisgnals/).
+
+**Ispravka utovarne jedinice**: ako je aktivirana, šablon postaje vidljiv za ispravke utovarnih jedinica.
+
+**D.D.M.R.P. ADU**: ako je aktivirana, označava da se šablon koristi za prepoznavanje svih skladišnih kretanja koja se uzimaju u obzir pri izračunavanju ADU-a (*Average Daily Use*) artikla. Ova oznaka vidljiva je samo ako je postavljen meni DDMRP.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

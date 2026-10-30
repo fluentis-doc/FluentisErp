@@ -1,5 +1,5 @@
 ---
-title: Status dostave
+title: Statusi dostave
 sidebar_position: 61
 ---
 
@@ -16,7 +16,7 @@ Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon 
 **Unos statusa dostave**
 
 Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra** i **Descrizione**.
+Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra** i **Opis**.
 
 #### Specifična polja  
 
@@ -24,6 +24,6 @@ Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **
 > **Opis**: opis *Statusa dostave*.   
 > **Boja pozadine**: omogućuje definiranje boje pozadine retka prikazanog u [Filtru dostave](/docs/logistics/shipping/search-shippings). 
 > **Boja teksta**: omogućuje definiranje boje teksta retka prikazanog u [Filtru dostave](/docs/logistics/shipping/search-shippings). 
-> **Stavka rječnika**: permette di definire la *Voce del dizionario*.   
+> **Stavka rječnika**: Omogućuje definiranje stavke rječnika.  
 
 Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

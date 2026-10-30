@@ -13,6 +13,6 @@ Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se 
 
 **Unos vrste upravnog dokumenta**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**.
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.
 
 Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

@@ -9,10 +9,10 @@ Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjen
 
 **Pretraživanje numeracija lista za prijenos**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
 **Unos numeracija lista za prijenos**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**.
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
 
 Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

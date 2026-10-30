@@ -1,29 +1,30 @@
 ---
-title: Vrste dostave
+title: Tipovi isporuke
 sidebar_position: 60
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Vrste dostave**.
+Tabela se nalazi na putanji **Tabele > Logistika > Tipovi isporuke**.
 
-U ovoj tablici moguće je šifrirati *Vrste dostave* koje će se kasnije moći odabrati unutar modula [dostava](/docs/logistics/shipping/shippings-intro)
+U ovoj tabeli moguće je šifrirati *tipove isporuke* koji će kasnije moći da se odaberu u okviru modula [isporuka](/docs/logistics/shipping/shippings-intro).
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraga vrsta dostave**
+**Pretraživanje tipova isporuke**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos vrsta dostave**
+**Unos tipova isporuke**
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.      
-Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra**, **Opis** i **Numeracija**.
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+
+Za novi zapis potrebno je uneti barem obavezna polja koja sistem zahteva: **Šifra**, **Opis** i **Numerisanje**.
 
 #### Specifična polja
 
-> **Šifra**: šifra *Tipa pošiljke*.   
-> **Opis**: opis *Tipa pošiljke*.   
-> **Napomena**: slobodne bilješke.    
-> **Numeracija**: šifra numeracije *Tipa otpreme.*.   
-> **Opis**: opis numeracije *Tipa otpreme*.   
+- **Šifra**: šifra *tipa pošiljke*.
+- **Opis**: opis *tipa pošiljke*.
+- **Napomena**: slobodne beleške.
+- **Numerisanje**: šifra numerisanja *tipa otpreme*.
+- **Opis**: opis numerisanja *tipa otpreme*.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

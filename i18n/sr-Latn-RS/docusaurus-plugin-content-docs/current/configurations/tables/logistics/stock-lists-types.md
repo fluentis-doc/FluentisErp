@@ -1,20 +1,20 @@
 ---
-title: Tipovi inventurnih lista  
+title: Tipovi inventurnih lista
 sidebar_position: 32
 ---
 
-Tablica omogućuje upravljanje šifriranjem različitih tipova *Inventurnih lista*.
+Tabela omogućava upravljanje šifriranjem različitih tipova *inventurnih lista*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraga tipova inventurnih lista**
+**Pretraživanje tipova inventurnih lista**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraga** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
 **Unos tipova inventurnih lista**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Flag **Zadrži lokaciju** u tablici *Tipovi inventurnih lista*, ako je aktiviran, omogućuje da se tijekom inventure putem **WMS** unesena lokacija ne mijenja sve dok se ne očita neka druga lokacija. Ako je flag deaktiviran, lokaciju će biti potrebno unositi svaki put prije potvrde artikla.
+Opcija **Zadrži lokaciju** u tabeli *Tipovi inventurnih lista*, ako je aktivirana, omogućava da se tokom inventure putem **WMS-a** uneta lokacija ne menja sve dok se ne očita neka druga lokacija. Ako je opcija deaktivirana, lokaciju će biti potrebno uneti svaki put pre potvrde artikla.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

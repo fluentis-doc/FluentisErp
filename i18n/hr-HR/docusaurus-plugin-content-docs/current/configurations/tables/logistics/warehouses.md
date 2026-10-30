@@ -18,20 +18,20 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregled
 
 **Pretraživanje skladišta**
 
-Forma se sastoji od filtra i prikaza rezultata. Nakon što se postave željeni filteri, potrebno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar mreže s rezultatima.
+Forma se sastoji od filtra i prikaza rezultata. Nakon što se postave željeni filteri, potrebno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar tablice s rezultatima.
 
 **Unos skladišta**
 
-Za unos novog zapisa potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Unos**.
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Umetanje**.
 Za novi zapis obavezno je unijeti barem sljedeća polja: šifra **Skladišta** i **Opis**.
 
 #### Specifična polja
 
-- **Proizvodni pogon**: označava [Mjesto proizvodnje](/docs/configurations/parameters/production/production-orders-parameters/production-site) kojem pripada skladište;   
-- **Poslovno područje**: označava [Područje upravljanja](/docs/configurations/tables/logistics/management-area) kojem skladište pripada;     
-- **Datum završetka valjanosti**: označava datum do kojeg je skladište važeće;  
-- **Nadimak** i **Tvrtka (naziv)**: označavaju odredište (preuzeto iz *Kontakti baze*).   
+- **Mjesto proizvodnje**: označava [Mjesto proizvodnje](/docs/configurations/parameters/production/production-orders-parameters/production-site) kojem pripada skladište;   
+- **Područje upravljanja**: označava [Područje upravljanja](/docs/configurations/tables/logistics/management-area) kojem skladište pripada;     
+- **Datum kraja valjanosti**: označava datum do kojeg je skladište važeće;  
+- **Kratki naziv** i **Tvrtka (naziv)**: označavaju odredište (preuzeto iz *Kontakti baze*).   
 
-Za svako skladište moguće je unijeti pripadajuće **Troškovne centre** i/ili **Centre prihoda**. 
+Za svako skladište moguće je unijeti pripadajuće **centre troška** i/ili **centre prihoda**. 
 
 Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

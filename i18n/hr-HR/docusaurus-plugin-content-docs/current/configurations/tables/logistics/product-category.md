@@ -3,7 +3,7 @@ title: Kategorija artikla
 sidebar_position: 10
 ---
 
-Pozicija u izborniku **Tablice > Logistika > Kategorije artikla**.
+Pozicija u izborniku **Tablice > Logistika > Kategorija artikla**.
 
 Ova tablica omogućuje upravljanje šifriranjem različitih kategorija prema logici grupiranja artikala. Kategorija se može povezati s artiklom kako bi se koristila kao grupiranje, statistički podatak ili funkcionalni element u relevantnim modulima.
 
@@ -13,14 +13,14 @@ Tablica omogućuje unos novih zapisa, kao i pretraživanje postojećih radi preg
 
 **Pretraživanje kategorija artikla**
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postaviš željene filtre, klikni na tipku **Traži** kako bi se prikazali rezultati u rešetki.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postaviš željene filtre, klikni na tipku **Traži** kako bi se prikazali rezultati u tablici.
 
 **Unos kategorije artikla**
 
-Za unos nove šifre potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.  
+Za unos nove šifre potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.  
 
 Za novi zapis obavezno je unijeti barem sljedeća polja: **Šifra** i njegov **Opis**. 
 
-U donjoj rešetki moguće je unijeti i **Opise na drugim jezicima** za svaku *kategoriju artikla*.
+U donjoj tablici moguće je unijeti i **Opise na drugim jezicima** za svaku *kategoriju artikla*.
 
 Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

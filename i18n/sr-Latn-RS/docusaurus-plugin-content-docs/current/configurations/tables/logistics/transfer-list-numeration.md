@@ -1,18 +1,18 @@
 ---
-title: Numeracije lista za prijenos 
+title: Numerisanje lista za prenos
 sidebar_position: 19
 ---
 
-Ova tablica omogućuje upravljanje šifriranjem različitih vrsta *Numeracija lista za prijenos*.
+Ova tabela omogućava upravljanje šifriranjem različitih tipova *numerisanja lista za prenos*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje numeracija lista za prijenos**
+**Pretraživanje numerisanja lista za prenos**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos numeracija lista za prijenos**
+**Unos numerisanja lista za prenos**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

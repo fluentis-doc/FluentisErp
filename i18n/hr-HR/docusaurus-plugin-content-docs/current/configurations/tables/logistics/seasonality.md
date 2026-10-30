@@ -1,9 +1,9 @@
 ---
-title: Sezonski
+title: Sezonalnost (sezonski)
 sidebar_position: 46
 ---
 
-Tablica omogućuje upravljanje šifriranjem različitih *Sezonski*.
+Tablica omogućuje upravljanje šifriranjem različitih *sezonalnosti*.
 
 Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 

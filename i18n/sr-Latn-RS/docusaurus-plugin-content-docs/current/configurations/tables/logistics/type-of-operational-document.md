@@ -1,18 +1,18 @@
 ---
-title: Vrsta upravnog dokumenta 
+title: Tip upravnog dokumenta
 sidebar_position: 54
 ---
 
-Ova tablica omogućuje upravljanje šifriranjem različitih  *Vrsta upravnih dokumenata* (dokument za carinu).
+Ova tabela omogućava upravljanje šifriranjem različitih *tipova upravnih dokumenata* (carinskih dokumenata).
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje vrste upravnog dokumenta**
+**Pretraživanje tipova upravnih dokumenata**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos vrste upravnog dokumenta**
+**Unos tipova upravnih dokumenata**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
