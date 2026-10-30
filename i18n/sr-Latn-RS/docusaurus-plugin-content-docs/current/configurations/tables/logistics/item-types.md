@@ -1,21 +1,22 @@
 ---
-title: Vrsta artikla
+title: Tipovi artikala
 sidebar_position: 24
 ---
 
-Tablica se nalazi na putanji: **Tablice > Logistika > Tip artikla**.
+Tabela se nalazi na putanji **Tabele > Logistika > Tipovi artikala**.
 
-U ovoj tablici moguće je upravljati šifriranjem različitih *Tipova artikla* da associare ai singoli articoli nel tabulatore [Generealità](/docs/erp-home/registers/items/create-new-item).    
+U ovoj tabeli moguće je upravljati šifriranjem različitih *tipova artikala* koji se zatim povezuju sa pojedinačnim artiklima na kartici [Opšte](/docs/erp-home/registers/items/create-new-item).
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
-**Pretraživanje tipa artikla**
+**Pretraživanje tipova artikala**
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraživanje** da biste prikazali rezultate unutar mreže rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos tipa artikla**
+**Unos tipova artikala**
 
-Za unos nove šifre potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.    
-Za novi zapis dovoljno je unijeti **Opis**, uz mogućnost dodavanja **Prijevoda opisa**, na drugi jezik putem polja *Opis na jeziku*.    
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opće funkcionalnosti formi, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za novi zapis dovoljno je uneti **Opis**, kojem je po potrebi moguće pridružiti **Opis na različitim jezicima**, odnosno prevod *tipa artikla* na drugi jezik.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

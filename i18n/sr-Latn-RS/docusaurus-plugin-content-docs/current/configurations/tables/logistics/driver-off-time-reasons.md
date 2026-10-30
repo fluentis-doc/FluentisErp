@@ -1,29 +1,34 @@
 ---
-title: Razlozi odsutnosti vozača
+title: Razlozi odsustva vozača
 sidebar_position: 59
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Razlozi odsutnosti vozača**.
+Tabela se nalazi na putanji **Tabele > Logistika > Razlozi odsustva vozača**.
 
-U ovoj tablici moguće je kodirati *Razloge odsutnosti vozača*.
+U ovoj tabeli moguće je šifrirati *razloge odsustva vozača*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi prikaza, izmene ili brisanja.
 
-**Pretraživanje razloga odsutnosti vozača**
+**Pretraživanje razloga odsustva vozača**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos razloga odsutnosti vozača**
+**Unos razloga odsustva vozača**
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.     
-Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
-Tipkom **Otkaži** moguće je obrisati odabrani zapis.  
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-*Specifična polja*: 
+Za novi zapis potrebno je uneti najmanje obavezna polja koja program zahteva: **Šifra** i **Opis**.
 
-> **Šifra**: kod *Razloga odsutnosti vozača*.   
-> **Opis**: opis *Razloga odsutnosti vozača*.   
-> **Boja pozadine**: omogućuje definirati boju pozadine zaduženja vozača u [Kalendaru](/docs/logistics/shipping/calendar).     
-> **Boja prednjeg plana**: omogućuje definirati boju teksta zaduženja vozača u [Kalendaru](/docs/logistics/shipping/calendar).     
+Dugmetom **Otkaži** moguće je obrisati odabrani zapis.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i polja zajednička za sve forme](/docs/guide/common).
+*Specifična polja*:
+
+> **Šifra**: šifra *razloga odsustva vozača*.
+
+> **Opis**: opis *razloga odsustva vozača*.
+
+> **Boja pozadine**: omogućava definisanje boje pozadine zaduženja vozača u [Kalendaru](/docs/logistics/shipping/calendar).
+
+> **Boja prednjeg plana**: omogućava definisanje boje teksta zaduženja vozača u [Kalendaru](/docs/logistics/shipping/calendar).
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i polja zajednička za sve obrasce](/docs/guide/common).

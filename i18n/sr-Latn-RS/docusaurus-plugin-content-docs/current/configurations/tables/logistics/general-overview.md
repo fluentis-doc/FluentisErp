@@ -1,6 +1,6 @@
 ---
-title: Općenito
+title: Opšte
 sidebar_position: 1
 ---
 
-Tablice logističkog područja služe za unos svih glavnih podataka koji se obrađuju unutar cijelog logističkog područja.
+Tabele logističke oblasti služe za unos svih osnovnih podataka koji se obrađuju u okviru celokupne logističke oblasti.

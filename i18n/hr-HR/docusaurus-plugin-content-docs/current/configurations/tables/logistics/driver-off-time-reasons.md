@@ -11,11 +11,11 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza
 
 **Pretraživanje razloga odsutnosti vozača**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
 **Unos razloga odsutnosti vozača**
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.     
+Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u tablici ili pritisnuti tipku **Novo**.     
 Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 Tipkom **Otkaži** moguće je obrisati odabrani zapis.  
 

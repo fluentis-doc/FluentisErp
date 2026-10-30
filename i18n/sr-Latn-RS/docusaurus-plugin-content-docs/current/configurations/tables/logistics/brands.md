@@ -1,19 +1,20 @@
 ---
-title: Marke  
+title: Marke
 sidebar_position: 16
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Marke** i omogućuje upravljanje kodiranjem različitih *Marki*.
+Tabela se nalazi na putanji **Tabele > Logistika > Marke** i omogućava upravljanje šifrovanjem različitih *marki*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi prikaza, izmene ili brisanja.
 
-**Pretraživanje Marki**
+**Pretraživanje marki**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos Marki**
+**Unos marki**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i polja zajednička za sve forme](/docs/guide/common).
+Za novi zapis potrebno je uneti obavezna polja koja program zahteva: **Šifra** i **Opis**.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i polja zajednička za sve obrasce](/docs/guide/common).

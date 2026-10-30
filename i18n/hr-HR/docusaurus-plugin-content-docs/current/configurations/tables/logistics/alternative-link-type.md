@@ -1,5 +1,5 @@
 ---
-title: Vrsta alternativne veze  
+title: Alternativni tip veze
 sidebar_position: 31
 ---
 

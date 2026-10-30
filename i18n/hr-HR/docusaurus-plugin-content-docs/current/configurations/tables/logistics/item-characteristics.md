@@ -3,22 +3,22 @@ title: Karakteristike artikala
 sidebar_position: 5
 ---
 
-Tablica se nalazi na putu **Tablice > Logistika > Karakteristike artikla**
+Tablica se nalazi na putanji **Tablice > Logistika > Karakteristike artikala**.
 
-Tablica za unos *Karakteristike artikla* potrebna je kako bi se omogućilo grupiranje artikala. U statističke svrhe ključno je omogućiti grupiranje artikala kako bi ih se moglo pretraživati prema određenom parametru.  
+Tablica za unos *svojstava artikala* potrebna je za grupiranje artikala. U statističke je svrhe vrlo važno omogućiti grupiranje artikala kako bi ih bilo moguće pretraživati prema određenom kriteriju.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se oni prikazali, izmijenili ili izbrisali.  
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmjene ili brisanja.
 
-**Pretraživanje karakteristika artikla**
+**Pretraživanje svojstava artikala**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-**Unos karakteristika artikla**
+**Unos svojstava artikala**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**. 
+Za unos novih šifri potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.
 
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: Alfanumerički **kod** alfanumerico karakteristike i njezin **Opis**. 
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: alfanumeričku **Šifru** svojstva i njegov **Opis**.
 
-Za svaku karakteristiku moguće je unijeti **Opise na drugim jezicima** u donjoj tablici.
+Za svako svojstvo moguće je unijeti **Opise na različitim jezicima** u donjoj tablici.
 
-Za sve što nije posebno navedeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i polja zajednička za sve forme](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

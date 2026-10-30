@@ -3,7 +3,7 @@ title: Knjigovodstvena kategorija artikala
 sidebar_position: 8
 ---
 
-Tablica se nalazi na putanji: **Tablice > Logistika > Porezne kategorije artikla**.  
+Tablica se nalazi na putanji: **Tablice > Logistika > Knjigovodstvena kategorija artikala**.  
 
 U ovoj tablici moguće je šifrirati različite kategorije prema poreznoj logici, koja se zatim može povezati s proizvodom te koristiti kao kriterij za grupiranje, statističku obradu ili u sklopu funkcionalnosti relevantnih modula.  
 

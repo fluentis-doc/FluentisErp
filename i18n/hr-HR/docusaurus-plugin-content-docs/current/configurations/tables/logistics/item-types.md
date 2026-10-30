@@ -1,21 +1,22 @@
 ---
-title: Vrsta artikla
+title: Tipovi artikala
 sidebar_position: 24
 ---
 
-Tablica se nalazi na putanji: **Tablice > Logistika > Tip artikla**.
+Tablica se nalazi na putanji **Tablice > Logistika > Tipovi artikala**.
 
-U ovoj tablici moguće je upravljati šifriranjem različitih *Tipova artikla* da associare ai singoli articoli nel tabulatore [Generealità](/docs/erp-home/registers/items/create-new-item).    
+U ovoj je tablici moguće upravljati šifriranjem različitih *vrsta (tipova) artikala* koje se zatim povezuju s pojedinačnim artiklima na kartici [Općenito](/docs/erp-home/registers/items/create-new-item).
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmjene ili brisanja.
 
-**Pretraživanje tipa artikla**
+**Pretraživanje vrsta artikala**
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraživanje** da biste prikazali rezultate unutar mreže rezultata.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-**Unos tipa artikla**
+**Unos vrsta artikala**
 
-Za unos nove šifre potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.    
-Za novi zapis dovoljno je unijeti **Opis**, uz mogućnost dodavanja **Prijevoda opisa**, na drugi jezik putem polja *Opis na jeziku*.    
+Za unos novih šifri potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opće funkcionalnosti formi, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za novi zapis dovoljno je unijeti **Opis**, kojemu je po potrebi moguće pridružiti **Opis na različitim jezicima**, odnosno prijevod *vrste artikla* na drugi jezik.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

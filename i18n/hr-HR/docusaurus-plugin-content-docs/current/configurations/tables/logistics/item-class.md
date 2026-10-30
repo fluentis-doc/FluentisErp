@@ -3,55 +3,58 @@ title: Klase artikala
 sidebar_position: 12
 ---
 
-:::important A cosa serve
-Klasa artikla u sustavu Fluentis predstavlja ključni element za učinkovito upravljanje artiklima. Omogućuje grupiranje sličnih artikala, čime se olakšava njihovo pronalaženje i omogućuje detaljna analiza.
-Svaki artikl se jednoznačno identificira kombinacijom klase, unaprijed definiranog podatka, i alfanumeričkog koda. U nekim slučajevima, klasa artikla može biti konfigurirana tako da automatski generira i kod i opis artikala koji joj pripadaju, čime se pojednostavljuje proces kodiranja.
-Također je moguće prilagoditi klase artikala prema operativnim potrebama, što osigurava veću učinkovitost u klasifikaciji i upravljanju proizvodima.    
+:::important Čemu služi
+Klasa artikla u Fluentisu ključan je element za učinkovito upravljanje artiklima. Omogućuje grupiranje srodnih artikala, čime se olakšava njihovo praćenje i omogućuju detaljne analize.
+
+Svaki se artikl jedinstveno identificira kombinacijom klase, unaprijed definirane vrijednosti predšifre i alfanumeričke šifre. U nekim slučajevima klasu artikla moguće je konfigurirati tako da automatski generira i šifru i opis artikala koji pripadaju toj klasi, čime se olakšavaju postupci šifriranja.
+
+Osim toga, klase artikala moguće je prilagoditi operativnim potrebama. Takav pristup osigurava veću učinkovitost u klasifikaciji i upravljanju proizvodima.
 :::
 
-Tablica se nalazi na putu **Tablice > Logistika > Klase artikala**.  
+Tablica se nalazi na putanji **Tablice > Logistika > Klase artikala**.
 
-Ova tablica omogućuje upravljanje kodiranjem različitih klasa artikala kako bi se omogućilo grupiranje artikala.
+Tablica omogućuje upravljanje šifriranjem različitih klasa artikala radi njihova grupiranja.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
-
-**Pretraživanje klasa artikala**
-
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u rešetki s rezultatima.  
+Omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmjene ili brisanja.
 
 **Pretraživanje klasa artikala**
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti na tipku **Novo**.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-#### Specifična polja
+**Unos klasa artikala**
 
-> **Šifra**: označava kod klase artikala;    
-> **Opis**: opis klase artikala;  
-> **Promjena klase**: ako je aktivirano, omogućuje promjenu klase artikla čak i ako je već korišten u prometu;    
-> **Grupa proizvoda**: označava šifru obitelji proizvoda kojoj pripada klasa artikala;  
-> **Opis grupe proizvoda**: opis obitelji proizvoda kojoj pripada klasa artikala.  
+Za unos novih šifri potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.
 
-*Na desnoj strani forme nalaze se tri dodatne kartice:*
+#### Posebna polja
 
-- **Kodifikator artikla**: omogućuje operateru vođeni unos kodiranja novog artikla unutar te klase artikla. Moguće je definirati pravila kodiranja koristeći sljedeća polja:     
-> **Redoslijed**: određuje redoslijed pojedinog elementa kodiranja;   
-> **Tip**: definira vrstu podatka koji će se koristiti u kodiranju;   
-> **ExtraData**: označava šifru dodatnog podatka korištenog u kodiranju;   
-> **Koristi u kodu**: ako je aktivirano, element se koristi u kodu artikla;  
-> **Upotrijebite u opisu**: ako je aktivirano, element se koristi u opisu artikla;  
-> **Kod objekta**: označava svojstvo poslovnog objekta.;     
-> **Opis svojstva**: opisuje svojstvo poslovnog objekta;    
-> **Dužina**: određuje duljinu komponente koda;     
-> **Separator**: znak koji se koristi kao separator;   
-> **Znak za popunjavanje brojača**: znak koji se koristi za popunjavanje brojača kod generiranja šifre.;   
-> **Progresivni vrijednost početak**: početna vrijednost za numerički dio koda;     
-> **Fiksna vrijednost**: unaprijed definirana vrijednost koja se koristi u kodu;   
-> **Propagacija**: označava da je omogućeno automatsko prenošenje podatka;     
-> **Obavezno**: označava da je unos ovog podatka obavezan.     
+> **Šifra**: Označava šifru klase artikala.
+> **Opis**: Označava opis klase artikala.
+> **Promjena klase**: Ako je ova opcija aktivna, omogućuje promjenu klase artikla čak i ako je artikl već imao evidentirana kretanja.
+> **Grupa proizvoda**: Označava šifru grupe proizvoda kojoj pripada klasa artikla.
+> **Opis grupe proizvoda**: Označava opis grupe proizvoda kojoj pripada klasa artikla.
+*Na desnoj strani obrasca nalaze se još tri kartice:*
 
-- **Extra Data**: omogućuje upravljanje dodatnim podacima vezanim uz tu klasu artikla;
-*Za više informacija o funkcionalnostima dodatnih podataka, pogledajte članak Extra Data*
+- **Kodifikator artikla**: Omogućuje usmjeravanje operatera pri šifriranju novog artikla za odabranu klasu artikla. Moguće je definirati pravila šifriranja pomoću sljedećih polja:
 
-- **Jezik opisa**: Omogućuje unos prijevoda opisa klase artikla na druge jezike.  
+  > **Sortiraj**: Označava redoslijed pojedine komponente šifre.
+  > **Tip**: Označava vrstu podatka koja će se koristiti u šifriranju.
+  > **ExtraData**: Označava šifru dodatnih podataka (Extra Data) koja se koristi pri šifriranju.
+  > **Koristi u šifri**: Ako je ova opcija aktivna, element će se koristiti u šifri artikla.
+  > **Koristi u opisu**: Ako je ova opcija aktivna, element će se koristiti u opisu artikla.
+  > **Svojstvo šifre**: Označava svojstvo poslovnog objekta.
+  > **Opis svojstva**: Označava opis svojstva poslovnog objekta.
+  > **Duljina**: Označava duljinu komponente šifre.
+  > **Separatr**: Označava znak koji će se koristiti kao razdjelnik.
+  > **Znak za progresivno popunjavanje**: Označava znak kojim će se popunjavati redni broj.
+  > **Početna vrijednost rednog broja**: Označava početnu vrijednost rednog broja pri šifriranju.
+  > **Fiksna vrijednost**: Označava fiksnu vrijednost koja će se unijeti u šifru.
+  > **Prijenos (propagacija)**: Označava je li omogućen prijenos podatka.
+  > **Obvezno**: Označava je li unos podatka obvezan.
 
-Za sve što nije posebno navedeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+- **Extra Data**: Omogućuje upravljanje dodatnim podacima povezanima s tom klasom artikla.
+
+  *Za funkcionalnosti dostupne u okviru Extra Data pogledajte članak Extra Data.*
+
+- **Opis na različitim jezicima**: Omogućuje unos prijevoda opisa klase artikla na drugi jezik.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
