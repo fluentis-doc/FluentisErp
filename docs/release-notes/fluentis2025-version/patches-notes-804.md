@@ -424,6 +424,7 @@ Regole applicate:
 
 > -	ARM - gestione BPMN, revisione cancellazione script e salvataggio modifica (#TT03241/26)
 > -	CPM - Calculation of margins inside CPM (#TT03252/26)
+> -	CPM - Rilascio stampa standard per form "Marginalità di vendita prodotto" nel CPM
 > -	CPQ - Modificata la generazione delle distinte in prototipi nel configuratore con apertura distinta generata. Aggiunta la possibilità di importare distinte nelle configurazioni principali. Aggiunta la duplicazione delle distinte per gli articoli (#TT03290/26, #TT03349/26)
 > -	FI - Amministrazione Ricerca Conto per descrizione (#TT03281/26)
 > -	FI - corretto bug nella stampa Verifica dichiarazione i intento con dettagli relativamente ai compensi percipienti: Non venivano valorizzate correttamente le colonne Fatturato e Registrato, sommando i valori (#TT02312/26)
@@ -433,17 +434,17 @@ Regole applicate:
 > -	FI - Registrazioni contabili: revisione della logica di proposta automatica del campo "Materiale/Immateriale" durante la contabilizzazione automatica delle fatture di acquisto cespiti. **Attenzione! Questa modifica può impattare sui profili** (#TT03017/26)
 > -	FI - Revisione label utile/perdita di fine sezione nel caso di comparazione con risultati opposti (#TT03315/26)
 > -	FI - webapi su oggetto FSPosting, tolto vincolo di compilazione della proprietà FSPosting.Account (#TT02929/26)
-> -	Fix stable sorting for grid export (#TT02877/25)
-> -	Rilascio stampa standard per form "Marginalità di vendita prodotto" nel CPM
-> -	Risolto bug per generare un namaspace valido per gli script
+> -	MS/WM - Pianificazione generale e Analisi disponibilità: gestione domande e offerte per le Attrezzature in Pianificazione generale.(#TT01328/26)
 > -	SCM - Corretto l’allineamento degli indirizzi inseriti nel tab Destinazione della testata dell’ordine fornitore (#TT03325/26)
 > -	SCS - Ordini di conto lavoro: ottimizzata apertura documentale (#TT03342/26)
+> - SCS – Corretto registrazione di magazzino errata per Rientro di C/L con quantità lotti parziale. (#TT02559/26).
 > -	SD - La cancellazione della fattura di vendita ora elimina eventuali calcoli margini prodotto presenti nella soluzione CPM (#TT03393/26)
 > -	SH - Corretta anomalia nel salvataggio del flag "Fatturazione elettronica" in anagrafica contatti (#TT03344/26) Modificato metodo di verifica firma dei pagamenti STRIPE
+> -	SH - Risolto bug per generare un namaspace valido per gli script
 > -	SH - Fix DepartmentId type for account widget (#TT03414/26)
+> -	SH - Fix stable sorting for grid export (#TT02877/25)
 > -	WM - Analisi disponibilità: corretto errore di timeout in caricamento dettagli per articoli aventi distinte con numerosi componenti fittizi (#TT03051/26)
 > -	WM - Differenze inventariali: Aggiunti flag nella sezione filtro per l'attivazione in griglia delle colonne con i costi dell’articolo (#TT01224/26)
-> -	WM e MS - Pianificazione generale e Analisi disponibilità: gestione dell’analisi disponibilità per considerare domande e offerte le Attrezzature e loro considerazione nella Pianificazione generale.(#TT01328/26)
 > -	WMS - Ricevimento Merce: Allineate label in griglia UDC su Maui e WPF (#TT02777/26)
 
 ### Patch 804.009 - 24/07/2026

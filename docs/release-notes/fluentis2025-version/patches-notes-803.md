@@ -178,9 +178,9 @@ Regole applicate:
 > -	PM - risolto caso per cui nei parametri progetti non venivano salvate le impostazioni del campo "Costo predefinito materiali progetto" (#TT03292/26)
 > -	PR - revisione creazione file Riba e bonifici, sostituzione “left or right quotation mark” con ' (quotation mark) e - (En dash) con - (minus) (#TT02815/26)
 > -	QY - Controllo articoli - Importa articoli da controllare: per i tipi documento Dichiarazioni di produzione e Fasi ordine di produzione, nella griglia dei risultati sono state aggiunte le colonne di Macchina e Gruppo manodopera (#TT03195/26)
-> -	Risolto bug per generare un namaspace valido per gli script
 > -	SCS - Ordini conto Lavoro: La ripresa dei prezzi dai listini di conto lavoro avviene considerando i prezzi in unità di misura alternativa e la priorità di ricerca standard di prezzi e sconti (#TT1847/26)
-> -	SCS- Corretta importazione web api per la creazione di nuovi lotti e serial number (#TT03379/26)
+> -	SCS - Corretta importazione web api per la creazione di nuovi lotti e serial number (#TT03379/26)
+> - SCS – Corretto registrazione di magazzino errata per Rientro di C/L con quantità lotti parziale. (#TT02559/26).
 > -	SD - Fix Create AgentSettlement-special case for CreditNote (#TT02018/26)
 > -	SD - Griglia pagamenti dentro liquidazione agenti, in caso di pagamento avvenuto o scadenza maturata, la griglia non è più editabile nei valori e mostra correttamente la quota parte maturata nella liquidazione in us. **Attenzione! Questa modifica può impattare sui profili** (#TT04671/24)
 > -	SD - Listini di Vendita: Corretta configurazione campo SDSPLIED_ExtraDataValue in ExtraData presenti su articolo (#TT03220/26)
@@ -188,6 +188,7 @@ Regole applicate:
 > -	SD - Offerte con struttura gerarchica - corretto calcolo totali nei livelli intermedi nel caso di applicazione di sconti nel riepilogo (#TT03244/26)
 > -	SD - Proporre la data di trasporto con la data odierna durante la creazione della Nota di Credito di Vendita tramite il pulsante Nota di Credito (#TT03251/26)
 > -	SH - Corretta anomalia nel salvataggio del flag "Fatturazione elettronica" in anagrafica contatti (#TT03344/26)
+> -	SH - Risolto bug per generare un namaspace valido per gli script
 > -	WM - Analisi disponibilità: corretto errore di timeout in caricamento dettagli per articoli aventi distinte con numerosi componenti fittizi (#TT03051/26)
 > -	WM - Correzione della logica di filtraggio per codice articolo nel report Inventario Quantita Valorizzato in presenza del check Lotti (#TT03401/26)
 > -	WMS - Spunta Picking: Disabilitata doppia pressione su tasto conferma (#TT02234/26)

@@ -112,8 +112,7 @@ keywords:
 
 ### Patch 707.1-0083 - 31/07/2026
 
-> -	Bizlink - Documenti di acquisto in entrata da SDI:  aggiunto un nuovo comando che consente di visualizzare l'anteprima di stampa di più documenti in un unico file. Per utilizzare il comando è necessario configurare un menu Ribbon personalizzato (PrintPreviewAttachmentCommand from SdiDocumentFilterViewModel from Fluentis.FluentisErp.Mvvm.SH.ViewModels).
-Migliorata la leggibilità delle stampe dirette tramite l'aggiornamento delle dimensioni dei caratteri. (#TT3283/26) 
+> -	Bizlink - Documenti di acquisto in entrata da SDI:  aggiunto un nuovo comando che consente di visualizzare l'anteprima di stampa di più documenti in un unico file. Per utilizzare il comando è necessario configurare un menu Ribbon personalizzato (PrintPreviewAttachmentCommand from SdiDocumentFilterViewModel from Fluentis.FluentisErp.Mvvm.SH.ViewModels). Migliorata la leggibilità delle stampe dirette tramite l'aggiornamento delle dimensioni dei caratteri. (#TT3283/26) 
 > -	Add Class Context to configuration category manager for script editor
 > -	Add configuration for Office365 two factor autentication
 > -	CO - nella procedura Valorizzazione acquisti e vendite dentro le Chiusure infrannuali, modifica della gestione analitica per la dimensione progetti (#TT03218/26)
@@ -138,7 +137,7 @@ Migliorata la leggibilità delle stampe dirette tramite l'aggiornamento delle di
 > -	PM - risolto caso per cui nei parametri progetti non venivano salvate le impostazioni del campo "Costo predefinito materiali progetto" (#TT03292/26)
 > -	PR - revisione creazione file Riba e bonifici, sostituzione “left or right quotation mark” con ' (quotation mark) e - (En dash) con - (minus). (#TT02815/26)
 > -	QY - Controllo articoli - Importa articoli da controllare: per i tipi documento Dichiarazioni di produzione e Fasi ordine di produzione, nella griglia dei risultati sono state aggiunte le colonne di Macchina e Gruppo manodopera. (#TT03195/26)
-> -	Risolto bug per generare un namaspace valido per gli script
+> - SCS – Corretto registrazione di magazzino errata per Rientro di C/L con quantità lotti parziale. (#TT02559/26).
 > -	SCS - Ordini conto Lavoro: La ripresa dei prezzi dai listini di conto lavoro avviene considerando i prezzi in unità di misura alternativa e la priorità di ricerca standard di prezzi e sconti (#TT1847/26)
 > -	SD - Fix Create AgentSettlement-special case for CreditNote. (#TT02018/26)
 > -	SD - Griglia pagamenti dentro liquidazione agenti, in caso di pagamento avvenuto o scadenza maturata, la griglia non è più editabile nei valori e mostra correttamente la quota parte maturata nella liquidazione in us.Modifications inside Agent settlemente form can have impact on profiles. (#TT04671/24)
@@ -147,6 +146,7 @@ Migliorata la leggibilità delle stampe dirette tramite l'aggiornamento delle di
 > -	SD: Offerte con struttura gerarchica - corretto calcolo totali nei livelli intermedi nel caso di applicazione di sconti nel riepilogo (#TT03244/26)
 > -	SD: Proporre la data di trasporto con la data odierna durante la creazione della Nota di Credito di Vendita tramite il pulsante Nota di Credito TT03251/26
 > -	SH - Corretta anomalia nel salvataggio del flag "Fatturazione elettronica" in anagrafica contatti (#TT03344/26)
+> -	SH - Risolto bug per generare un namaspace valido per gli script.
 > -	WM - Analisi disponibilità: corretto errore di timeout in caricamento dettagli per articoli aventi distinte con numerosi componenti fittizi. (#TT03051/26)
 > -	WM - Correzione della logica di filtraggio per codice articolo nel report Inventario Quantita Valorizzato in presenza del check Lotti (#TT03401/26)
 > -	WMS - Spunta Picking: Disabilitata doppia pressione su tasto conferma. (#TT02234/26)
