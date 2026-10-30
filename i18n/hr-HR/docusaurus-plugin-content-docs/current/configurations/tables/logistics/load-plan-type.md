@@ -3,13 +3,13 @@ title: Vrsta plana utovara
 sidebar_position: 56
 ---
 
-Tablica omogućuje upravljanje šifriranjem različitih vrsta *Vrsta plana utovara *.
+Tablica omogućuje upravljanje šifriranjem različitih vrsta *Vrsta plana utovara*.
 
 Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se moglo prikazati, izmijeniti ili izbrisati.
 
 **Pretraživanje tipa plana utovara**
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar tablice rezultata.
 
 **Unos tipa plana utovara**
 

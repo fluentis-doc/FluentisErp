@@ -1,18 +1,18 @@
 ---
-title: Vrsta oznake
+title: Tipovi etiketa
 sidebar_position: 52
 ---
 
-Tablica omogućuje upravljanje šifriranjem različitih vrsta *Vrsta oznake*.
+Tabela omogućava upravljanje šifriranjem različitih *tipova etiketa*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje tipova oznake**
+**Pretraživanje tipova etiketa**
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na gumb **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Kada su svi željeni filteri postavljeni, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos tipova oznake**
+**Unos tipova etiketa**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opće funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opšte funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

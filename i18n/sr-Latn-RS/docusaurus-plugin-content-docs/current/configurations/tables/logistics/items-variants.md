@@ -3,16 +3,16 @@ title: Varijante artikala
 sidebar_position: 38
 ---
 
-Tablica omogućuje upravljanje šifriranjem različitih vrsta *Varijanti artikala*.
+Tabela omogućava upravljanje šifriranjem različitih *varijanti artikala*.
 
-Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se moglo prikazati, izmijeniti ili izbrisati.
+Omogućava unos novih zapisa ili pretraživanje postojećih kako bi ih bilo moguće prikazati, izmeniti ili izbrisati.
 
 **Pretraživanje tipova varijanti artikala**
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Kada su svi željeni filteri postavljeni, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
 **Unos tipova varijanti artikala**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novi**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opće funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opšte funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

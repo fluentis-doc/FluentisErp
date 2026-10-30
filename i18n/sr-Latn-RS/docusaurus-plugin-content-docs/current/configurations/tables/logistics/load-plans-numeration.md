@@ -1,18 +1,18 @@
 ---
-title: Numeracije planova utovara
+title: Numerisanje planova utovara
 sidebar_position: 57
 ---
 
-Tablica omogućuje upravljanje šifriranjem različitih vrsta *Numeracija planova utovara*.
+Tabela omogućava upravljanje šifriranjem različitih vrsta *numerisanja planova utovara*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje numeracija planova utovara**
+**Pretraživanje numerisanja planova utovara**
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada se postave svi željeni filteri, dovoljno je kliknuti na gumb **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Kada se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos numeracija planova utovara**
+**Unos numerisanja planova utovara**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opće funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opšte funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).
