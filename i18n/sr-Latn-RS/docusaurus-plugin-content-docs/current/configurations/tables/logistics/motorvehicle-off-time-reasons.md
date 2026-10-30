@@ -3,27 +3,32 @@ title: Razlozi za zadržavanje vozila
 sidebar_position: 58
 ---
 
-Tablica se nalazi na putu **Tablice > Logistika > Razlozi za zadržavanje vozila**.
+Tabela se nalazi na putanji **Tabele > Logistika > Razlozi za zadržavanje vozila**.
 
-U ovoj tablici moguće je kodirati *Razloge za zadržavanje vozila*.  
+U ovoj tabeli moguće je šifrirati *razloge za zadržavanje vozila*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje Razloga za zadržavanje vozila**
+**Pretraživanje razloga za zadržavanje vozila**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se prikazali rezultati u rešetki rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos Razloga za zadržavanje vozila**
+**Unos razloga za zadržavanje vozila**
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
-Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
-Pomoću tipke **Obriši** moguće je izbrisati odabrani zapis.  
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-#### Specifična polja    
+Za novi zapis potrebno je uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
 
-> **Šifra**: predstavlja šifru za *Razlog zadržavanja vozila*.   
-> **Opis**: opisuje *Razlog zadržavanja vozila*.   
-> **Boja pozadine**: omogućuje definiranje boje pozadine za zauzeće vozila prikazano u [Kalendaru](/docs/logistics/shipping/calendar).      
-> **Boja teksta**: omogućuje definiranje boje teksta za zauzeće vozila prikazano u [Kalendaru](/docs/logistics/shipping/calendar).     
+Pomoću dugmeta **Obriši** moguće je izbrisati odabrani zapis.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+#### Specifična polja
+
+> **Šifra**: predstavlja šifru za *razlog zadržavanja vozila*.
+
+> **Opis**: opisuje *razlog zadržavanja vozila*.
+
+> **Boja pozadine**: omogućava definisanje boje pozadine za zauzeće vozila prikazano u [Kalendaru](/docs/logistics/shipping/calendar).
+
+> **Boja teksta**: omogućava definisanje boje teksta za zauzeće vozila prikazano u [Kalendaru](/docs/logistics/shipping/calendar).
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

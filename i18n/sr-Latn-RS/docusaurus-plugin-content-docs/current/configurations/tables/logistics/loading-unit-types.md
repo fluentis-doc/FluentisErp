@@ -4,38 +4,51 @@ sidebar_position: 37
 ---
 
 :::important Čemu služi
-Tablica Tip utovarne jedinice u Fluentisu omogućuje kodiranje i definiranje različitih kategorija utovarnih jedinica, pružajući strukturirani okvir koji olakšava rukovanje materijalima i njihovo praćenje. Korisnici mogu kreirati nove zapise, mijenjati postojeće ili ih brisati putem intuitivnog sučelja.
+Tabela Tipovi utovarnih jedinica (UDC) u Fluentisu omogućava šifriranje i definisanje različitih kategorija utovarnih jedinica, pružajući strukturirani okvir koji olakšava rukovanje materijalima i njihovu sledljivost. Korisnici mogu unositi nove zapise, menjati postojeće ili ih brisati putem jednostavnog korisničkog interfejsa.
 
-Postupak pretraživanja je jednostavan i omogućuje brzo filtriranje željenih tipova utovarnih jedinica, prikazujući rezultate u lako čitljivoj mreži. Svaki zapis može sadržavati ključne podatke, poput jedinstvenog alfanumeričkog koda i opisa, koji jasno identificiraju tip utovarne jedinice. Učinkovito upravljanje utovarnim jedinicama ključno je za osiguravanje nesmetane i organizirane logistike, čime se doprinosi većoj operativnoj učinkovitosti unutar poduzeća.
+Postupak pretraživanja je jednostavan i omogućava brzo filtriranje željenih tipova utovarnih jedinica, uz prikaz rezultata u preglednoj tabeli. Svaki zapis može sadržati ključne podatke, kao što su jedinstvena alfanumerička šifra i opis, koji jasno određuju tip utovarne jedinice. Efikasno upravljanje utovarnim jedinicama ključno je za obezbeđivanje nesmetane i organizovane logistike i doprinosi poboljšanju operativne efikasnosti preduzeća.
 :::
 
-Tablica omogućuje upravljanje kodiranjem različitih vrsta *Tipova utovarnih jedinica*.
+Tabela omogućava upravljanje šifriranjem različitih *tipova utovarnih jedinica*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
 **Pretraživanje tipova utovarnih jedinica**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata. 
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
 **Unos tipova utovarnih jedinica**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-#### Specifična polja
+#### Posebna polja
 
-> **Tip**: označava šifru tipa utovarne jedinice;   
-> **Opis**: opis tipa utovarne jedinice;    
-> **Tip grupe**: označava tip grupe odabrane u tablici [Tip grupe](/docs/configurations/tables/logistics/loading-unit-group-type/), koji definira kako se sastavlja dio šifre utovarne jedinice;        
-> **Opis tipa grupe**: opis odabranog tipa grupe;          
-> **Jedinica mjere za dimenzije**: označava jedinicu mjere u kojoj su definirane dimenzije visine, širine i dubine prazne utovarne jedinice; prilikom unosa predložena je jedinica mjere sa aktivnim flagom *Jedinica mjere za dimenzije* iz tablice [Jedinice mjere](/docs/configurations/tables/general-settings/measurement-units/);     
-> **Visina / Širina / Dubina**: označavaju vrijednosti visine, širine i dubine prazne utovarne jedinice, izražene u jedinici mjere definiranoj u polju **Jedinica mjere za dimenzije**;           
-> **Jedinica mjere težine**: označava jedinicu mjere u kojoj je definirana težina prazne utovarne jedinice; prilikom unosa predložena je jedinica mjere s aktivnim flagom *Jedinica mjere težine* iz tablice [Jedinice mjere](/docs/configurations/tables/general-settings/measurement-units/);   
-> **Težina**: označava težinu prazne utovarne jedinice u definiranoj jedinici mjere iz polja **Jedinica mjere za težinu**;         
-**Jedinica mjere za volumen**: označava jedinicu mjere u kojoj je definiran volumen prazne utovarne jedinice; prilikom unosa predložena je jedinica mjere s aktivnim flagom *Jedinica mjere za volumen* iz tablice [Jedinice mjere](/docs/configurations/tables/general-settings/measurement-units/);       
-> **Volumen**: označava volumen prazne utovarne jedinice u definiranoj jedinici mjere; automatski se izračunava na temelju vrijednosti unesenih u polja **Unità di misura peso**; questo verrà calcolato in automatico sulla base dei valori inseriti nei campi **Visina / Širina / Dubina**, ali ga je moguće i ručno prilagoditi;               
-> **Promjenjiv volumen**: po zadanim postavkama je aktivan i označava da je volumen utovarne jedinice promjenjiv – dakle, ukupan volumen će varirati ovisno o tome što i kako se utovara (npr. paleta); ako nije aktivan, znači da se volumen ne mijenja, kao kod npr. metalnih sanduka;       
-> **Tip ambalaže**: omogućuje označavanje vrste ambalaže korištene među onima definiranima u tablici [Tipovi ambalaže](/docs/configurations/tables/logistics/packing-type/);     
-> **Opis tipa ambalaže**: opis korištene vrste ambalaže;      
-> **Numeracija**: označava numeraciju tipa utovarne jedinice.      
+> **Tip**: Označava šifru tipa utovarne jedinice.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link  [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Opis**: Označava opis tipa utovarne jedinice.
+
+> **Tip grupe**: Označava tip grupe odabran u tabeli [Tipovi grupa](/docs/configurations/tables/logistics/loading-unit-group-type/), koji omogućava definisanje načina sastavljanja dela šifre utovarne jedinice.
+
+> **Opis tipa grupe**: Označava opis tipa grupe.
+
+> **Merna jedinica dimenzija**: Označava mernu jedinicu u kojoj su definisane visina, širina i dubina prazne utovarne jedinice. Prilikom unosa automatski se predlaže merna jedinica sa uključenom oznakom *Merna jedinica dimenzija* iz tabele [Merne jedinice](/docs/configurations/tables/general-settings/measurement-units/).
+
+> **Visina / Širina / Dubina**: Označavaju vrednosti visine, širine i dubine prazne utovarne jedinice, izražene u mernoj jedinici definisanoj u polju **Merna jedinica dimenzija**.
+
+> **Merna jedinica težine**: Označava mernu jedinicu u kojoj je definisana težina prazne utovarne jedinice. Prilikom unosa automatski se predlaže merna jedinica sa uključenom oznakom *Merna jedinica težine* iz tabele [Merne jedinice](/docs/configurations/tables/general-settings/measurement-units/).
+
+> **Težina**: Označava vrednost težine prazne utovarne jedinice, izraženu u mernoj jedinici definisanoj u polju **Merna jedinica težine**.
+
+> **Merna jedinica zapremine**: Označava mernu jedinicu u kojoj je definisana zapremina prazne utovarne jedinice. Prilikom unosa automatski se predlaže merna jedinica sa uključenom oznakom *Merna jedinica zapremine* iz tabele [Merne jedinice](/docs/configurations/tables/general-settings/measurement-units/).
+
+> **Zapremina**: Označava vrednost zapremine prazne utovarne jedinice, izraženu u mernoj jedinici definisanoj u polju **Merna jedinica zapremine**. Vrednost se automatski izračunava na osnovu unetih vrednosti u poljima **Visina / Širina / Dubina**, ali ju je moguće i ručno izmeniti.
+
+> **Promenljiva zapremina**: Ova opcija je podrazumevano aktivna i označava da je zapremina utovarne jedinice promenljiva, odnosno da se ukupna zapremina menja u zavisnosti od toga šta se i na koji način utovaruje, na primer na paletu. Ako opcija nije aktivna, zapremina utovarne jedinice se ne menja, kao u slučaju kontejnera.
+
+> **Tip ambalaže**: Omogućava odabir tipa ambalaže koji se koristi, među tipovima unetim u tabelu [Tipovi ambalaže](/docs/configurations/tables/logistics/packing-type/).
+
+> **Opis tipa ambalaže**: Označava opis korišćenog tipa ambalaže.
+
+> **Numerisanje**: Označava numerisanje tipa utovarne jedinice.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

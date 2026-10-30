@@ -3,19 +3,20 @@ title: Status lokacije
 sidebar_position: 23
 ---
 
-Tablica se nalazi na putu **Tablice > Logistika > Status lokacije**.
+Tabela se nalazi na putanji **Tabele > Logistika > Status lokacije**.
 
-U ovoj tablici moguće je upravljati kodiranjem statusa [lokacija](/docs/logistics/warehouse/location/locations/) di magazzino.    
+U ovoj tabeli moguće je upravljati šifriranjem statusa [skladišnih lokacija](/docs/logistics/warehouse/location/locations/).
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
 **Pretraživanje statusa lokacije**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
 **Unos statusa lokacije**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.    
-Za novi zapis obavezno je unijeti polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za novi zapis obavezno je uneti polja koja program zahteva: **Šifra** i **Opis**.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

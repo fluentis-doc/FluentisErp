@@ -1,9 +1,9 @@
 ---
-title: Numeriranje vrsta upravljačkih dokumenata
+title: Numeriranje vrsta operativnog dokumenta
 sidebar_position: 55
 ---
 
-Tablica omogućuje upravljanje kodiranjem različitih vrsta *Numeriranja upravljačkih dokumenata*.
+Tablica omogućuje upravljanje kodiranjem različitih vrsta *Numeriranja upravljačkih (operativnih) dokumenata*.
 
 Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 

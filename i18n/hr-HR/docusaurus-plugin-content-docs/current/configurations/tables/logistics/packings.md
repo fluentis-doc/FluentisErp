@@ -13,7 +13,7 @@ Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmje
 
 Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
-**Unos ambalaže*
+**Unos ambalaže**
 
 Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.  
 Za novi zapis obavezno je unijeti polja koja program zahtijeva: **Alfanumeričku šifru** i njezin **Opis**.  

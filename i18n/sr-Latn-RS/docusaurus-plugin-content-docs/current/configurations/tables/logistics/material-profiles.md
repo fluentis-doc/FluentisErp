@@ -1,28 +1,32 @@
 ---
-title: Materijalni profili
+title: Profili materijala
 sidebar_position: 7
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Profili materijala**.  
+Tabela se nalazi na putanji **Tabele > Logistika > Profili materijala**.
 
-U ovoj tablici moguće je šifrirati različite *Profili materijala* koje se zatim mogu povezati s pojedinačnim artiklima.    
-Primjer korištenja nalazi se unutar Šifarnika artikla, u kartici [Težine/Dimenzije](/docs/erp-home/registers/items/create-new-item) pod stavkom *Profil*.  
+U ovoj tabeli moguće je šifrirati različite *profile materijala* koji se zatim mogu povezati sa pojedinačnim artiklima.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.  
+Primer korišćenja nalazi se u okviru Šifarnika artikala, na kartici [Težine/Dimenzije](/docs/erp-home/registers/items/create-new-item), u polju *Profil*.
+
+Omogućava unos novih zapisa ili pretraživanje postojećih kako bi ih bilo moguće pregledati, izmeniti ili obrisati.
 
 **Pretraživanje profila materijala**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u rešetki s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos profila materijal**
+**Unos profila materijala**
 
-Za unos novih *Profila materijala* potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *profila materijala* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+
+Za novi zapis potrebno je uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
 
 #### Specifična polja
 
-> **Šifra**: šifra *Profila materijala*.   
-> **Opis**: opis *Profila materijala*.     
-> **Bilješke**: slobodne napomene.  
+> **Šifra**: šifra *profila materijala*.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link [Funkcionalnosti, tipke i uobičajena polja](/docs/guide/common).
+> **Opis**: opis *profila materijala*.
+
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i uobičajena polja](/docs/guide/common).

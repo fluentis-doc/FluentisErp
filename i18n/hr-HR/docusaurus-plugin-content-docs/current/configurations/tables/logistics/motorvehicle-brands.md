@@ -11,14 +11,14 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregled
 
 **Pretraživanje marki vozila**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u rešetki rezultata.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici rezultata.
 
 **Unos marki vozila**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.     
 Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra** i **Opis**.
 Pomoću tipke **Obriši** moguće je izbrisati odabrani zapis. 
 
-Također, u donjoj rešetki moguće je unijeti opise različitih modela vozila koji pripadaju toj marki. 
+Također, u donjoj tablici moguće je unijeti opise različitih modela vozila koji pripadaju toj marki. 
 
 Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link  [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

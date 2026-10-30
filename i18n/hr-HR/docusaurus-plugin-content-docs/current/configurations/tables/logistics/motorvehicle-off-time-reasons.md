@@ -11,11 +11,11 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se m
 
 **Pretraživanje Razloga za zadržavanje vozila**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se prikazali rezultati u rešetki rezultata.  
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici rezultata.  
 
 **Unos Razloga za zadržavanje vozila**
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.     
 Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 Pomoću tipke **Obriši** moguće je izbrisati odabrani zapis.  
 

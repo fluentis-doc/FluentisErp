@@ -1,23 +1,26 @@
 ---
-title: Vrste goriva za motorna vozila
+title: Tipovi goriva za motorna vozila
 sidebar_position: 55
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Vrste goriva za motorna vozila**.
+Tabela se nalazi na putanji **Tabele > Logistika > Tipovi goriva za motorna vozila**.
 
-U ovoj tablici moguće je kodirati *Vrste goriva za motorna vozila* koje će se moći odabrati u [Registru vozila](/docs/logistics/motorvehicles/motorvehicle).
+U ovoj tabeli moguće je šifrirati *tipove goriva za motorna vozila* koji se mogu odabrati u [Registru vozila](/docs/logistics/motorvehicles/motorvehicle).
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati. 
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje Vrsta goriva za motorna vozila**
+**Pretraživanje tipova goriva za motorna vozila**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se prikazali rezultati u rešetki rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos Vrsta goriva za motorna vozila**
+**Unos tipova goriva za motorna vozila**
 
-Za unos novog zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
-Za novi zapis potrebno je unijeti jedno obavezno polje koje program zahtijeva: **Opis**.         
-Osim toga, za svaki tip moguće je označiti sljedeće karakteristike:   
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+
+Za novi zapis potrebno je uneti jedno obavezno polje koje program zahteva: **Opis**.
+
+Pored toga, za svaki tip moguće je označiti sledeće karakteristike jednostavnim aktiviranjem odgovarajuće opcije:
+
 - **Gorivo na metan**
 - **Dizelsko gorivo**
 - **Hibridno gorivo**
@@ -26,9 +29,9 @@ Osim toga, za svaki tip moguće je označiti sljedeće karakteristike:
 - **Organsko gorivo**
 - **Benzinsko gorivo**
 - **Hibridno/benzinsko gorivo**
-jednostavnim aktiviranjem odgovarajućeg flag-a.  
-Ovi flag-ovi koriste se za identifikaciju vrste goriva koje koristi vozilo u svrhu ESG-a.  
 
-Pomoću tipke **Obriši** moguće je izbrisati odabrani zapis.  
+Ove opcije koriste se za identifikaciju tipa goriva koje vozilo koristi u svrhu ESG-a.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common). 
+Pomoću dugmeta **Obriši** moguće je izbrisati odabrani zapis.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

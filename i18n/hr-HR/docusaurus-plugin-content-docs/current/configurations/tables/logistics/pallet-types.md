@@ -15,6 +15,6 @@ Forma se sastoji od dva dijela: područja za filtriranje i prikaza rezultata. Na
 
 Za unos nove šifre potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**. 
 
-Prilikom unosa novog zapisa, potrebno je ispuniti barem obavezna polja koja sustav zahtijeva: Tip, Opis, Grupa tipova (koja se preuzima iz tablice *Tipovi grupa utovarnih jedinica*) i Numeracija.
+Prilikom unosa novog zapisa, potrebno je ispuniti barem obavezna polja koja sustav zahtijeva: Tip, Opis, Grupu tipa (koja se preuzima iz tablice *Tipovi grupa utovarnih jedinica*) i Numeracija.
 
 Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

@@ -1,20 +1,20 @@
 ---
-title: Vrste pakiranja
+title: Tipovi pakovanja
 sidebar_position: 29
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Vrste ambalaže**.
+Tabela se nalazi na putanji **Tabele > Logistika > Tipovi pakovanja**.
 
-U ovoj tablici moguće je kodirati različite *Vrste ambalaže*.
+U ovoj tabeli moguće je šifrirati različite *tipove pakovanja*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje vrsta ambalaže**
+**Pretraživanje tipova pakovanja**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata. 
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos vrsta ambalaže**
+**Unos tipova pakovanja**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

@@ -1,18 +1,18 @@
 ---
-title: Porijeklo materijala
+title: Poreklo materijala
 sidebar_position: 51
 ---
 
-Tablica omogućuje upravljanje šifriranjem mogućih *Podrijetla materijala*.
+Tabela omogućava upravljanje šifriranjem mogućih *porekla materijala*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
+Omogućava unos novih zapisa ili pretraživanje postojećih kako bi ih bilo moguće pregledati, izmeniti ili izbrisati.
 
-**Pretraživanje podrijetla materijala**
+**Pretraživanje porekla materijala**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u rešetki rezultata. 
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos podrijetla materijala**
+**Unos porekla materijala**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novi**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link: [Funkcionalnosti, tipke i uobičajena polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i uobičajena polja](/docs/guide/common).

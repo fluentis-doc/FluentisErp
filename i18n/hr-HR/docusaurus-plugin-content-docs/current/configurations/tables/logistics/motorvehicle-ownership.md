@@ -11,16 +11,16 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se m
 
 **Pretraživanje Svojstva vozila**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se prikazali rezultati u rešetki rezultata.  
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici rezultata.  
 
 **Unos Svojstva vozila**
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.     
 Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.          
 Osim toga, za svaku tipologiju moguće je naznačiti da li je:  
-- **Asset**: označava da je vozilo u vlasništvu;
+- **Vlasništvo (asset)**: označava da je vozilo u vlasništvu;
 - **Leasing**: označava da je vozilo u leasingu;
-- **Najam**: označava da je vozilo u najmu.  
+- **Najam (rented)**: označava da je vozilo u najmu.  
 
 Pomoću tipke **Otkaži** moguće je izbrisati odabrani zapis.  
 

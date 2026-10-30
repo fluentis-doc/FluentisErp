@@ -1,22 +1,24 @@
 ---
-title: Vrste vozila  
+title: Tipovi vozila
 sidebar_position: 54
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Vrste vozila**.
+Tabela se nalazi na putanji **Tabele > Logistika > Tipovi vozila**.
 
-U ovoj tablici moguće je kodirati *Vrste vozila* koje će se moći odabrati u [Registru vozila](/docs/logistics/motorvehicles/motorvehicle).
+U ovoj tabeli moguće je šifrirati *tipove vozila* koji se mogu odabrati u [Registru vozila](/docs/logistics/motorvehicles/motorvehicle).
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje vrsta vozila**
+**Pretraživanje tipova vozila**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata. 
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos novih vrsta vozila**
+**Unos novih tipova vozila**
 
-Za unos novog zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.        
-Za svaki novi zapis obavezno je unijeti polja koja program zahtijeva: **Šifra** i **Opis**.        
-Pritiskom na tipku **Otkaži** moguće je izbrisati odabrani zapis.
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za svaki novi zapis obavezno je uneti polja koja program zahteva: **Šifra** i **Opis**.
+
+Pritiskom na dugme **Otkaži** moguće je izbrisati odabrani zapis.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

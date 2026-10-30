@@ -9,10 +9,10 @@ Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmje
 
 **Pretraživanje tipova lokacija**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
 **Unos tipova lokacija**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.
+Za unos novih kodova potrebno je kliknuti na prvi prazan redak u tablici ili pritisnuti tipku **Novo**.
 
 Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link  [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

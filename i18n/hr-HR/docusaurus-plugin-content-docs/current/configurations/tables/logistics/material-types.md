@@ -1,9 +1,9 @@
 ---
-title: Tipovi materijala 
+title: Vrste materijala 
 sidebar_position: 6
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Tipovi materijala**.
+Tablica se nalazi na putanji **Tablice > Logistika > Vrste materijala**.
 
 U ovoj tablici moguće je upravljati šifriranjem različitih *Tipova materijala* ambalaže koji se koriste u okviru [CONAI upravljanja](/docs/sales/sales-flow/conai).
 
@@ -11,13 +11,13 @@ Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmje
 
 **Pretraživanje tipova materijala**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
 **Unos tipova materijala**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.  
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.  
 
-U gornjoj rešetki se šifriraju *Tipovi materijala*. Obavezna polja koja sustav zahtijeva su: **Šifra** i **Opis**.  
+U gornjoj tablici se šifriraju *Tipovi materijala*. Obavezna polja koja sustav zahtijeva su: **Šifra** i **Opis**.  
 
 #### Specifična polja 
 
@@ -27,6 +27,6 @@ U gornjoj rešetki se šifriraju *Tipovi materijala*. Obavezna polja koja sustav
 > **Opis artikla**: opis *Artikla za reciklažnu naknadu*;    
 > **Bilješke**: slobodne napomene.   
 
-U donjoj rešetki moguće je definirati *Troškove reciklaže* povezane s pojedinim materijalima unesenima u gornjoj tablici, odnosno tarife koje se primjenjuju unutar različitih *raspona datuma*, zajedno s **Jedinicom mjere** koja se mora koristiti, a ta jedinica mora biti u skladu s jedinicom mjere definiranoj u prodajnim artiklima i fiktivnim CONAI artiklima.
+U donjoj tablici moguće je definirati *Troškove reciklaže* povezane s pojedinim materijalima unesenima u gornjoj tablici, odnosno tarife koje se primjenjuju unutar različitih *raspona datuma*, zajedno s **Jedinicom mjere** koja se mora koristiti, a ta jedinica mora biti u skladu s jedinicom mjere definiranoj u prodajnim artiklima i fiktivnim CONAI artiklima.
 
 Za sve što nije detaljno opisano u ovom dokumentu o funkcioniranju *CONAI upravljanja* u Fluentisu, pogledajte sljedeći link [CONAI upravljanje](/docs/sales/sales-flow/conai).

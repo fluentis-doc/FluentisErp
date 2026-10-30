@@ -3,38 +3,44 @@ title: Povratna ambalaža
 sidebar_position: 15
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Povratna ambalaža**.
+Tabela se nalazi na putanji **Tabele > Logistika > Povratna ambalaža**.
 
-U ovoj tablici moguće je kodirati različite vrste *Povratne ambalaže* koje se koriste u *Upravljanju ambalažom* unutar dokumenata nabave, prodaje i rada s podizvođačima.   
+U ovoj tabeli moguće je šifrirati različite tipove *povratne ambalaže* koji se koriste u okviru *Upravljanja ambalažom* u dokumentima nabavke, prodaje i rada sa podizvođačima.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
 **Pretraživanje povratne ambalaže**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
 **Unos povratne ambalaže**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Umetanje**.  
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Ova tablica sadrži artikle koji se smatraju *Povratnom ambalažome* radi praćenja zaliha. Artikl unesen u ovu tablicu mora imati kao Vrstu artikla postavljeno: *Ambalaža* (vrsta artikla unosi se u šifrarniku artikala, kartica [Općenito](/docs/erp-home/registers/items/create-new-item)).     
-Pomoću flagova u tablici moguće je odabrati u kojim će područjima artikl biti dostupan za manipulaciju.  
+Ova tabela sadrži artikle koji se smatraju *povratnom ambalažom* radi praćenja zaliha. Artikal unet u ovu tabelu mora imati podešen tip artikla: *Ambalaža* (tip artikla unosi se u šifarniku artikala, na kartici [Opšte](/docs/erp-home/registers/items/create-new-item)).
+
+Pomoću opcija u tabeli moguće je odabrati u kojim će područjima artikal biti dostupan za manipulaciju.
 
 #### Obavezni podaci
 
-> **Šifra**: šifra *Povratne ambalaže*;     
-> **Opis**: opis *povratne ambalaže*;   
-> **Klasa artikla**: označava [Klasu](/docs/configurations/tables/logistics/item-class) kojoj artikl pripada;   
-> **Šifra artikla**: šifra samog artikla.    
+> **Šifra**: šifra *povratne ambalaže*;
 
-#### Specifična polja  
+> **Opis**: opis *povratne ambalaže*;
 
-> **Upotreba u nabavi**: aktiviranjem ovog flaga, ambalaža će biti vidljiva u dokumentima iz područja nabave;       
-> **Upotreba kod podizvođača**: aktiviranjem ovog flaga, ambalaža će biti vidljiva u dokumentima za rad s podizvođačima;  
-> **Upotreba u prodaji**: aktiviranjem ovog flaga, ambalaža će biti vidljiva u dokumentima iz područja prodaje. 
+> **Klasa artikla**: označava [Klasu](/docs/configurations/tables/logistics/item-class) kojoj artikal pripada;
 
-Također je moguće unijeti **Skladište** i **Predložak** koji će se koristiti za taj artikl u svakom pojedinom području.
+> **Šifra artikla**: šifra samog artikla.
 
-Nakon što je ova tablica parametarski postavljena, u dokumentima gdje je to predviđeno moguće je otvoriti formu povratne ambalaže pomoću tipke na traci izbornika pod nazivom **Upravljanje ambalažom**. Ta tipka će otvoriti proceduru *Upravljanje ambalažom*, već unaprijed popunjenu ambalažom definiranim u tablici *Povratna ambalaža*, tako da korisnik mora unijeti samo količine.  
+#### Specifična polja
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Upotreba u nabavci**: aktiviranjem ove opcije ambalaža će biti vidljiva u dokumentima iz područja nabavke;
+
+> **Upotreba kod podizvođača**: aktiviranjem ove opcije ambalaža će biti vidljiva u dokumentima za rad sa podizvođačima;
+
+> **Upotreba u prodaji**: aktiviranjem ove opcije ambalaža će biti vidljiva u dokumentima iz područja prodaje.
+
+Takođe je moguće uneti **Skladište** i **Šablon** koji će se koristiti za taj artikal u svakom pojedinačnom području.
+
+Nakon što se ova tabela podesi, u dokumentima u kojima je to predviđeno moguće je otvoriti obrazac povratne ambalaže pomoću dugmeta na traci sa alatkama pod nazivom **Upravljanje ambalažom**. To dugme otvara proceduru *Upravljanje ambalažom*, već unapred popunjenu ambalažom definisanom u tabeli *Povratna ambalaža*, tako da korisnik treba da unese samo količine.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

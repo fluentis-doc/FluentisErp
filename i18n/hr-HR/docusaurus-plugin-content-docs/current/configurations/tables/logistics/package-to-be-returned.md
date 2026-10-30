@@ -1,9 +1,9 @@
 ---
-title: Povratna ambalaža
+title: Ambalaža za povrat
 sidebar_position: 15
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Povratna ambalaža**.
+Tablica se nalazi na putanji **Tablice > Logistika > Ambalaža za povrat**.
 
 U ovoj tablici moguće je kodirati različite vrste *Povratne ambalaže* koje se koriste u *Upravljanju ambalažom* unutar dokumenata nabave, prodaje i rada s podizvođačima.   
 
@@ -15,10 +15,10 @@ Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon š
 
 **Unos povratne ambalaže**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Umetanje**.  
+Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.  
 
-Ova tablica sadrži artikle koji se smatraju *Povratnom ambalažome* radi praćenja zaliha. Artikl unesen u ovu tablicu mora imati kao Vrstu artikla postavljeno: *Ambalaža* (vrsta artikla unosi se u šifrarniku artikala, kartica [Općenito](/docs/erp-home/registers/items/create-new-item)).     
-Pomoću flagova u tablici moguće je odabrati u kojim će područjima artikl biti dostupan za manipulaciju.  
+Ova tablica sadrži artikle koji se smatraju *Povratnom ambalažom* radi praćenja zaliha. Artikl unesen u ovu tablicu mora imati kao Vrstu artikla postavljeno: *Ambalaža* (vrsta artikla unosi se u šifarniku artikala, kartica [Općenito](/docs/erp-home/registers/items/create-new-item)).     
+Pomoću opcija u tablici moguće je odabrati u kojim će područjima artikl biti dostupan za manipulaciju.  
 
 #### Obavezni podaci
 
@@ -29,9 +29,9 @@ Pomoću flagova u tablici moguće je odabrati u kojim će područjima artikl bit
 
 #### Specifična polja  
 
-> **Upotreba u nabavi**: aktiviranjem ovog flaga, ambalaža će biti vidljiva u dokumentima iz područja nabave;       
-> **Upotreba kod podizvođača**: aktiviranjem ovog flaga, ambalaža će biti vidljiva u dokumentima za rad s podizvođačima;  
-> **Upotreba u prodaji**: aktiviranjem ovog flaga, ambalaža će biti vidljiva u dokumentima iz područja prodaje. 
+> **Upotreba u nabavi**: aktiviranjem ove opcije, ambalaža će biti vidljiva u dokumentima iz područja nabave;       
+> **Upotreba kod podizvođača**: aktiviranjem ove opcije, ambalaža će biti vidljiva u dokumentima za rad s podizvođačima;  
+> **Upotreba u prodaji**: aktiviranjem ove opcije, ambalaža će biti vidljiva u dokumentima iz područja prodaje. 
 
 Također je moguće unijeti **Skladište** i **Predložak** koji će se koristiti za taj artikl u svakom pojedinom području.
 

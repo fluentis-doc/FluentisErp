@@ -3,19 +3,20 @@ title: Ambalaža
 sidebar_position: 14
 ---
 
-Tablica se nalazi na putanji **Tablice > Logistika > Ambalaža**.
+Tabela se nalazi na putanji **Tabele > Logistika > Ambalaža**.
 
-U ovoj tablici moguće je kodirati različite vrste *Ambalaže* koje se unose u zaglavlje dokumenta pod stavkom *Otpreme*.
+U ovoj tabeli moguće je šifrirati različite tipove *ambalaže* koji se unose u zaglavlje dokumenta u okviru stavke *Otpremanje*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
 **Pretraživanje ambalaže**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos ambalaže*
+**Unos ambalaže**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.  
-Za novi zapis obavezno je unijeti polja koja program zahtijeva: **Alfanumeričku šifru** i njezin **Opis**.  
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za novi zapis obavezno je uneti polja koja program zahteva: **Alfanumeričku šifru** i njen **Opis**.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

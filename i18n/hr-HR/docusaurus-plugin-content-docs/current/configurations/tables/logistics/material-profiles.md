@@ -1,5 +1,5 @@
 ---
-title: Materijalni profili
+title: Profili materijala
 sidebar_position: 7
 ---
 
@@ -12,11 +12,11 @@ Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pre
 
 **Pretraživanje profila materijala**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u rešetki s rezultatima.  
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
-**Unos profila materijal**
+**Unos profila materijala**
 
-Za unos novih *Profila materijala* potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.   
+Za unos novih *Profila materijala* potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.   
 Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
 #### Specifična polja

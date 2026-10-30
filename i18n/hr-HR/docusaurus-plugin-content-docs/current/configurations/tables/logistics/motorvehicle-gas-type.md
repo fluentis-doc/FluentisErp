@@ -11,11 +11,11 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se m
 
 **Pretraživanje Vrsta goriva za motorna vozila**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se prikazali rezultati u rešetki rezultata.  
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici rezultata.  
 
 **Unos Vrsta goriva za motorna vozila**
 
-Za unos novog zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.     
 Za novi zapis potrebno je unijeti jedno obavezno polje koje program zahtijeva: **Opis**.         
 Osim toga, za svaki tip moguće je označiti sljedeće karakteristike:   
 - **Gorivo na metan**
@@ -26,8 +26,9 @@ Osim toga, za svaki tip moguće je označiti sljedeće karakteristike:
 - **Organsko gorivo**
 - **Benzinsko gorivo**
 - **Hibridno/benzinsko gorivo**
-jednostavnim aktiviranjem odgovarajućeg flag-a.  
-Ovi flag-ovi koriste se za identifikaciju vrste goriva koje koristi vozilo u svrhu ESG-a.  
+jednostavnim aktiviranjem odgovarajuće opcije.  
+
+Ove opcije koriste se za identifikaciju vrste goriva koje koristi vozilo u svrhu ESG-a.  
 
 Pomoću tipke **Obriši** moguće je izbrisati odabrani zapis.  
 

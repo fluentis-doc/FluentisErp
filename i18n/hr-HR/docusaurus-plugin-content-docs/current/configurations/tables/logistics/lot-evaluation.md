@@ -7,12 +7,12 @@ Tablica omogućuje upravljanje kodiranjem različitih vrsta *Procjene lotova*.
 
 Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi ih se moglo pregledavati, uređivati ili brisati.  
 
-**Pretraživanje procjene lotove**
+**Pretraživanje procjene lotova**
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite sve željene filtere, potrebno je kliknuti na tipku **Traži** kako biste prikazali rezultate unutar mreže rezultata.  
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite sve željene filtere, potrebno je kliknuti na tipku **Traži** kako biste prikazali rezultate unutar tablice rezultata.  
 
 **Unos procjene lotova**
 
-Za unos novih kodova potrebno je kliknuti na prvu praznu redak u mreži ili pritisnuti tipku **Novi**.
+Za unos novih kodova potrebno je kliknuti na prvu praznu redak u tablice ili pritisnuti tipku **Novi**.
 
 Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

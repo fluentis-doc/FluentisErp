@@ -1,21 +1,22 @@
 ---
-title: Tipovi lota
+title: Tipovi lotova
 sidebar_position: 33
 ---
 
-Tablica se nalazi na putanji **Tabelle > Logistica > Tipi lotto**.
+Tabela se nalazi na putanji **Tabele > Logistika > Tipovi lotova**.
 
-U ovoj tablici moguće je upravljati kodiranjem različitih tipova *Tipova lotova*.
+U ovoj tabeli moguće je upravljati šifriranjem različitih *tipova lotova*.
 
-Omogućuje unos novih zapisa ili pretraživanje već postojećih za pregled, izmjenu ili brisanje.  
+Omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
-**Pretraživanje Tipova lotova**
+**Pretraživanje tipova lotova**
 
-Forma se sastoji od područja za filtriranje i područja za rezultat. Nakon što postavite sve željene filtre, potrebno je kliknuti na tipku **Traži** kako biste prikazali rezultate unutar mreže rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos Tipova lotova**
+**Unos tipova lotova**
 
-Za unos novih kodiranja potrebno je kliknuti na prvu praznu redak unutar mreže ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link  [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za novi zapis potrebno je uneti obavezna polja koja program zahteva: **Šifru** i **Opis**.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
