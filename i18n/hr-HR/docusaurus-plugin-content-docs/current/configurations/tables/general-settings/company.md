@@ -3,190 +3,208 @@ title: Poduzeće
 sidebar_position: 3
 ---
 
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-:::tip[FAst Start]
-Tablica se koristi u postupku [**Fast Start**](/docs/guide/fast-start)
-
-U slučaju ručne konfiguracije, potrebno je pratiti check listu s navedene stranice.
+Ako tablicu želite konfigurirati ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-### UVOD
+**### UVOD**
 
-Tablica, koja se smatra osnovnom i neophodnom za upravljanje bilo kojim drugim podacima, omogućuje kodiranje tvrtki povezanih s bazom podataka na koju ste povezani.
+Ova tablica smatra se osnovnom i nužnom za upravljanje svim ostalim podacima jer omogućuje definiranje poduzeća povezanih s bazom podataka na koju ste spojeni.
 
-Moguće je kodirati neograničen broj tvrtki koje će uvijek biti sve istovremeno dostupne unutar iste baze podataka.  
-Nakon unosa / kreiranja nove tvrtke, bit će potrebno upravljati pravima vidljivosti za korisnike putem aplikacije ARM.
+Moguće je definirati neograničen broj poduzeća koja će istodobno biti dostupna unutar iste baze podataka.
 
-:::note Napomena
-Prilikom instalacije Fluentis ERP-a automatski se kreira jedno početno društvo, tako da baza nikada nije potpuno prazna.
+Nakon unosa odnosno stvaranja novog poduzeća potrebno je putem aplikacije ARM postaviti prava vidljivosti za korisnike.
+
+:::note[Napomena]
+Postupak instalacije sustava Fluentis uobičajeno stvara jedno zadano poduzeće pa baza podataka nikada nije potpuno prazna.
 :::
 
-Uz pojam tvrtke (ili preciznije, poduzeća, uključujući i pravni smisao, kako su evidentirana u bazi podataka), potrebno je odmah spomenuti i pojam **DIVIZIJE**.
+Uz pojam poduzeća potrebno je odmah objasniti i pojam **DIVIZIJE**.
 
-Za svako društvo je potrebno <u>**kodirati barem jednu diviziju**</u> (na primjer, moguće ju je nazvati "*Glavna poslovnica*" ili sličnim nazivima, ako ne postoji posebna potreba za definiranjem više divizija, pod uvjetom da su shvaćeni način upravljanja i njihove specifičnosti).
+Za svako poduzeće potrebno je definirati barem jednu diviziju (primjerice, moguće ju je nazvati *Glavno sjedište* ili nekim sličnim nazivom ako ne postoji posebna potreba za definiranjem različitih divizija, uz prethodno razumijevanje načina njihova upravljanja i posebnosti).
 
-:::tip INFO
-Pojam divizije može se tumačiti kao poslovni odjel ili čak poslovna jedinica, koja je dovoljno značajna da ima vlastiti aktivni i pasivni ciklus, odnosno zasebno kreira dokumente, narudžbe, račune itd.
-Računovodstvo, iako jedinstveno na razini društva koje sastavlja jednu bilancu, može se jednostavno filtrirati po diviziji kako bi se izradio divizijski bilanc. Također, u raznim formama – poput pretrage knjiženja ili otvorenih stavki – moguće je filtriranje po diviziji (u nekim slučajevima je to polje filtriranja inicijalno "skriveno" unutar proširivog dijela forme).
-Čak su i šifrarnici artikala odvojeni jer se odnose na različite poslovne jedinice
+:::tip[INFO]
+Pojam divizije može se shvatiti kao odjel poduzeća ili njegov poslovni segment koji je dovoljno značajan da ima zaseban ulazni i izlazni poslovni ciklus, odnosno zasebno izdavanje dokumenata, narudžbi, računa itd.
+
+Iako je računovodstvo jedinstveno na razini poduzeća koje sastavlja jedan financijski izvještaj, moguće ga je jednostavno filtrirati prema divizijama kako bi se izradio izvještaj za pojedinu diviziju. Filtriranje prema diviziji moguće je i u različitim obrascima, primjerice prilikom pretraživanja računovodstvenih knjiženja i otvorenih stavki (ponekad je polje za filtriranje u početku "skriveno" unutar proširivog odjeljka). Šifarnici artikala također su odvojeni jer se odnose na različita poslovna područja.
 :::
 
 ---
 
-### UPRAVLJANJE TABLICOM  
+**### UPRAVLJANJE TABLICOM**
 
-Maska koja se otvara prikazuje popis društava prisutnih u bazi podataka.
-Radi praktičnosti, u mreži su prikazana neka polja koja se nalaze i u detaljima samog društva, kako je prikazano u nastavku.
+Otvoreni obrazac prikazuje popis poduzeća koja postoje u bazi podataka.
 
-**Za kreiranje novog poduzeća** (naknadno će biti definirana jedna ili više pripadajućih divizija) **pritisnite tipku *NOVO***.
+Radi lakšeg pregleda, u tablici se prikazuju neka polja iz detalja pojedinog poduzeća, koja su opisana u nastavku.
 
-:::note Napomena 
-Nakon kreiranja novog poduzeća u ovoj tablici, potrebno je upravljati dopuštenjima vidljivosti za različite korisnike putem aplikacije ARM, te prethodno definirati i samo poduzeće unutar ARM-a (izbornik "Poduzeća")  
+**Za stvaranje novog poduzeća** (za koje će se zatim definirati jedna ili više pripadajućih divizija) **pritisnite gumb _NOVO_**.
+
+:::note[Napomena]
+Nakon stvaranja novog poduzeća u ovoj tablici potrebno je putem aplikacije ARM postaviti prava vidljivosti za pojedine korisnike. Prije toga potrebno je definirati i samo poduzeće u aplikaciji ARM (izbornik Poduzeća).
 :::
 
-### DETALJI OSNOVNIH PODATAKA O PODUZEĆU 
+**### DETALJI ŠIFARNIKA PODUZEĆA**
 
-**Šifra** poduzeća (koja mora odgovarati šifri definiranoj na portalu ARM)  
+**Šifra** poduzeća (mora odgovarati šifri definiranoj na portalu ARM).
 
-**Opis**: službeni naziv poduzeća (pravna forma)  
+**Opis**: službeni naziv poduzeća.
 
-**PDV broj (OIB)**: obično se unosi bez predfiksa države, npr. IT za Italiju  
+**PDV identifikacijski broj**: u pravilu se unosi bez nacionalnog prefiksa, primjerice IT za Italiju.
 
-**Porezni broj poduzeća**: može biti isti kao i PDV broj
+<details>
 
-**Šifra djelatnosti**: tj. ATECO šifra glavne djelatnosti poduzeća  
+<summary>Detalji upravljanja **licencom Fluentis** i provjere PDV identifikacijskog broja (kliknite za proširenje)</summary>
 
-**Država poduzeća**: na temelju ovog polja Fluentis prepoznaje lokalizaciju i zadane porezne postavke koje će prikazati u sustavu
+1. Prilikom **prve instalacije** sustav traži unos poduzeća, divizije i valute u bazu podataka. Poduzeće se unosi **bez PDV identifikacijskog broja**, zbog čega nije povezano s licencom i može se bez problema koristiti. Stoga je moguće unijeti proizvoljan broj poduzeća i divizija **ako nemaju PDV identifikacijski broj**, jer ih sustav za upravljanje licencama ne prepoznaje. Međutim, u takvom okruženju neće biti moguće upravljati računima i drugim ključnim poreznim dokumentima.
 
-**Valuta**: valuta u kojoj se vodi službeno knjigovodstvo poduzeća.  
+2. Kada se odluči konfigurirati stvarno poduzeće, postoje dva moguća scenarija:
 
-:::note Napomena
-Država i valuta poduzeća su već unaprijed postavljene jer su obavezni podaci definirani prilikom instalacije Fluentis sustava.
-To su ključni podaci koji utječu na čitav niz drugih administrativnih i poreznih postavki.
-Valuta, posebno, označava onu u kojoj se vodi naše službeno knjigovodstvo.  
+   a. **Krajnji korisnik**: unosi se poduzeće i PDV identifikacijski broj koji su dostavljeni komercijalnoj podršci i za koje je aktivirana licenca unesena tijekom instalacije. Od tog trenutka svaka promjena naziva/opisa poduzeća i njegova PDV identifikacijskog broja mora se dogovoriti s komercijalnom podrškom, uključujući dodavanje drugih poduzeća. U suprotnom će se to smatrati prijevarnom aktivnošću i licenca će biti blokirana. Moguće je, međutim, stvoriti više kopija istog okruženja (baze podataka), čak i na različitim poslužiteljima (primjerice za razvojna ili testna okruženja), uz zadržavanje istog poduzeća i PDV identifikacijskog broja. Broj korisnika koji se mogu istodobno povezati računa se za sva okruženja zajedno.
+
+   b. **Partner**: partneru se dodjeljuje NFR licenca s unaprijed definiranim brojem korisničkih računa (5 standardnih – 50 VIP). Partner može koristiti licencu za vlastitu internu upotrebu sustava Fluentis, kao i za stvaranje različitih razvojnih/testnih ili demo okruženja. Međutim, licenca uvijek mora biti povezana s poduzećima bez PDV identifikacijskog broja ili s poduzećem i PDV identifikacijskim brojem koji su dostavljeni komercijalnoj podršci. Unos drugog poduzeća i/ili PDV identifikacijskog broja koji Fluentis nije odobrio dovest će do blokiranja licence. Ukupan broj povezanih korisnika računa se za sva okruženja stvorena istom licencom. Nakon ugovaranja suradnje s klijentom potrebno je zatražiti službenu licencu za krajnjeg korisnika koja će se konfigurirati u njegovim okruženjima.
+
+</details>
+
+**Porezni broj poduzeća**: može biti jednak PDV identifikacijskom broju.
+
+**Šifra djelatnosti**: odnosno Ateco šifra glavne djelatnosti poduzeća.
+
+**Država poduzeća**: na temelju ovog polja Fluentis prepoznaje lokalizaciju i porezne postavke koje će se u sustavu prikazivati kao zadane.
+
+**Valuta**: valuta u kojoj se vodi službeno računovodstvo poduzeća.
+
+:::note[Napomena]
+Država i valuta poduzeća već su popunjene jer su obvezni podaci koji se postavljaju prilikom instalacije sustava Fluentis. To su ključni podaci koji određuju niz drugih administrativnih i poreznih postavki. Valuta je posebno važna jer se u njoj vodi naše računovodstvo.
 :::
 
-**Jezik**: ovo polje nije obavezno, ali je vrlo važno – u njemu se definira službeni jezik poduzeća.
-Koristi se kao zadani jezik za ispis dokumenata, kao i za automatsko popunjavanje opisnih nizova u računovodstvu.  
+**Jezik**: ovo polje nije obvezno, ali je vrlo važno. U njemu se određuje službeni jezik poduzeća. Koristi se kao zadani jezik za ispis dokumenata, kao i za automatsko popunjavanje opisnih tekstova u računovodstvu.
 
-**Povezana evidencija**: ovo je opcionalno polje koje služi za dvije vrste korištenja: prvo, u slučaju da je tvrtka samostalni poduzetnik, ovo je poveznica na karton koji nam omogućuje preuzimanje podataka fizičke osobe za porezne prijave.  
-Drugo korištenje: u slučaju dvije tvrtke koje pripadaju grupi i imaju međusobne odnose, a time i međusobne dokumente, služi za prijenos podataka iz jedne tvrtke u drugu; na primjer, kako bi račun za prodaju prve tvrtke automatski postao račun za kupnju za drugu tvrtku: da bi se to postiglo, druga tvrtka mora znati u kojem kartonu potražiti dobavljača kako bi ispravno naslovila dokument.
-Postavka se također koristi za proceduru modula Kontroling  > Zatvaranja > Međugodišnji > Konsolidacija gdje sustav neutralizira troškove i prihode, potraživanja i dugove između dviju društava koja su dio grupe, dok se troškovi i prihodi, potraživanja i dugovi "vanjski" agregiraju kako bi se dobio konsolidirani bilans.
+**Povezani šifarnik**: ovo je neobvezno polje koje služi za dvije namjene. Prva je povezivanje s fizičkom osobom u slučaju kada je poduzeće samostalna djelatnost, kako bi se podaci o fizičkoj osobi mogli preuzeti za porezne prijave.
 
-**Polja adrese**: adresa sjedišta poduzeća
+Druga namjena odnosi se na dva poduzeća koja pripadaju istoj grupi i međusobno posluju, odnosno razmjenjuju dokumente unutar grupe (intercompany). Polje omogućuje prijenos podataka iz jednog poduzeća u drugo. Primjerice, moguće je automatski pretvoriti izlazni račun prvog poduzeća u ulazni račun drugog poduzeća. Kako bi se to ostvarilo, drugo poduzeće mora znati u kojem šifarniku treba pronaći dobavljača na kojeg će glasiti dokument.
 
-**Porezni ured (PDV)**: u ovo se polje unosi grad u kojem se nalazi nadležni porezni ured za PDV poduzeća
+Ova se postavka koristi i u postupku **Kontroling > Zaključivanja > Međurazdoblja > Konsolidacija**, u kojem sustav eliminira međusobne troškove i prihode, potraživanja i obveze između dvaju poduzeća koja pripadaju istoj grupi, a istodobno objedinjuje troškove i prihode, potraživanja i obveze prema vanjskim subjektima radi izrade konsolidiranog financijskog izvještaja.
 
-**REA ured / Broj REA upisa**: šifra županije i broj upisa u registar poduzeća (potrebno za e-račune)
+**Polja adrese**: odnose se na adresu registriranog sjedišta.
 
-**Upisani/ uplaćeni temeljni kapital**: podaci o stanju temeljnog kapitala poduzeća (također obavezni za e-račune)
+**PDV ured**: u ovo se polje unosi grad u kojem se nalazi nadležni PDV ured poduzeća.
 
-Potrebno je unijeti i podatke o **Članovima** te **Status** poduzeća, npr. je li u likvidaciji – što je također obavezno za potrebe elektroničkog fakturiranja.
+**Ured REA / Broj upisa u REA-u**: oznaka pokrajine i broj upisa u registar trgovačkih društava (potrebno za elektroničko fakturiranje).
 
-**Pravni oblik**: u ovom polju se navodi kod koji identificira vrstu tvrtke. Tablica je fiksna i unaprijed definirana.
+**Upisani kapital / Uplaćeni kapital**: tekstualni podaci koji se odnose na vrijednosti stanja kapitala poduzeća (potrebni za elektroničko fakturiranje).
 
-**Porezni režim**: u ovom polju se označava pod kojim poreznim režimom se posluje. Tablica je fiksna i unaprijed definirana.
+Za elektroničko fakturiranje potrebno je popuniti i polja **Članovi poduzeća** i **Status**, kojim se određuje je li poduzeće u postupku likvidacije.
 
-:::tip GRUPA PDV-a
-U popis mogućih poreznih režima dodan je kod 61 – GRUPA PDV-a. Ako se odabere ova opcija (u slučaju da poduzeće koje se trenutno uređuje pripada grupi PDV-a, te stoga koristi svoj porezni broj (OIB), ali PDV broj matičnog poduzeća), prilikom izvoza XML datoteke za izlazni e-račun, bit će uključeni i PDV broj i porezni broj (OIB).
+**Pravni oblik**: u ovo se polje unosi šifra koja identificira vrstu poduzeća. Tablica je fiksna i unaprijed definirana.
 
-To je zato što sustav SDI (Sistema di Interscambio) provjerava oba podatka – ne samo PDV broj – u slučaju kada poduzeće izjavljuje da pripada grupi PDV-a.
+**Porezni režim**: u ovo se polje unosi porezni režim u kojem poduzeće posluje. Tablica je fiksna i unaprijed definirana.
+
+:::tip[PDV grupa]
+Na popis dostupnih poreznih režima dodana je šifra 61 – PDV GRUPA. Odabirom ove stavke, ako poduzeće pripada PDV grupi te stoga ima vlastiti porezni broj, ali koristi PDV identifikacijski broj matičnog poduzeća, prilikom izvoza XML datoteke izlaznog računa bit će navedeni i PDV identifikacijski broj i porezni broj. Naime, SDI provjerava oba polja, a ne samo PDV identifikacijski broj, ako poduzeće navede da pripada PDV grupi.
+
+Kod XML datoteka ulaznih računa ovom se postavkom provjerava PDV identifikacijski broj, a ako u bazi podataka postoji više poduzeća s istim PDV identifikacijskim brojem, provjerava se i porezni broj.
 :::
 
-**Decimalni brojevi za polja količina**: označava koliko decimalnih mjesta treba prikazati u ispisima za polja količina u dokumentima.  
-Flag **Prikaz simbola valute** označava treba li prikazivati simbol valute (i polja s vrijednošću nula) u ekranima za prikaz knjiženja.  
+**Broj decimala za polja količina**: određuje broj decimalnih mjesta koja će se prikazivati u ispisima za polja količina u dokumentima.
 
-Flag **Upravljanje kontrolingom** omogućuje "napredne" procedure (kompletan set funkcionalnosti) za controlling područje za društvo koje se trenutno uređuje.  
+Zastavica **Prikaži simbol valute** određuje hoće li se simbol valute (i polja čija je vrijednost nula) prikazivati u obrascima za pregled računovodstvenih knjiženja.
 
-**Matična tvrtka**: polje koje se koristi u proceduri modula kontrolling *Konsolidacija master*. Ova funkcionalnost provodi specifičnu konsolidaciju podataka na matičnom poduzeću.  
+Zastavica **Upravljanje kontrolingom** omogućuje aktiviranje naprednih postupaka, odnosno cjelokupnog skupa funkcionalnosti područja kontrolinga za poduzeće koje se uređuje.
 
-Unosem društvo matičnu kompaniju, polje za usklađivanje s planom računa matične kompanije postaje vidljivo unutar plana računa odabrane kompanije.  
-Dakle, u fazi konsolidacije, računovodstveni zapis podružnice bit će prebačen na navedeni račun koji se odnosi na matičnu kompaniju.  
-Podatak koji se obrađuje u ovoj obradi, u svakom slučaju, je onaj koji se upravlja u modulu kontrolinga i koji su već obradili odgovarajući uzroci troškova, a ne podatak iz općeg računovodstva.  
-Samo će dio podataka od računovodstvene prirode biti transkodiran, dok će se kretanje troškovnog centra (centar poduzeća) prikazati bez izmjena, a preduvjet za prijenos je, zapravo, da kod troškovnog centra bude isti i u matičnoj kompaniji i u podružnici.
+**Matično poduzeće grupe**: polje se koristi u postupku modula Kontroling **Glavna konsolidacija**. Ovim se postupkom provodi posebna konsolidacija podataka na razini matičnog poduzeća.
 
-#### Donji odjeljak
+Nakon unosa matičnog poduzeća, u kontnom planu odabranog poduzeća postaje vidljivo i polje za povezivanje s odgovarajućim kontima u kontnom planu glavnog poduzeća.
 
-U donjem dijelu prozora nalaze se tri proširive sekcije s dodatnim podacima koji se mogu unijeti. U ovom slučaju radi se o opcionalnim podacima koji nisu nužno prisutni, barem ne u početnoj fazi:
+Tijekom konsolidacije računovodstveno knjiženje ovisnog poduzeća prenijet će se na konto navedeno za matično poduzeće.
 
-U sekciji **EDI** (Electronic Data Interchange) moguće je navesti određene identifikacijske podatke poduzeća koji se koriste u tim telematičkim datotekama. 
+Podatak koji se obrađuje u ovom postupku jest podatak iz modula Kontroling, koji su već obradili odgovarajući nositelji troškova, a ne podatak iz glavne knjige.
 
-U sekciji **Trošak biljega**, unosi se vrijednost troška biljega te prag iznosa koji uzrokuje obvezu primjene biljega na računu, broj odobrenja za virtualni biljeg te županija porezne uprave.
-Podsjećamo da se u tablici poduzeća unosi minimalna vrijednost transakcija oslobođenih PDV-a koje pokreću obvezu dodavanja biljega na računu. No, ovaj trošak biljega mora također biti definiran u tablici Vrste troškova i unesen u matične podatke klijenta.
-Samo pod tim uvjetima, ako je iznos na računu oslobođen PDV-a, trošak biljega bit će automatski dodan.  
+Samo će se računovodstveni dio podataka preslikati na odgovarajuće šifre, dok će se kretanje centra troška (centra tvrtke) prenijeti bez izmjena. Preduvjet za prijenos jest da šifra centra tvrtke bude jednaka u matičnom i ovisnom poduzeću.
 
-**Proširiva sekcija Ri.Ba.** : ovdje se unose identifikacijski podaci poduzeća za bankovni telematski sustav: SIA kod (5 alfanumeričkih znakova) i CUC kod (8 znakova) za SEPA sustav.  
+**#### Donji odjeljak**
 
+U donjem dijelu prozora nalaze se tri proširiva odjeljka s dodatnim podacima. Riječ je o neobveznim podacima koji ne moraju biti uneseni, barem ne u početnoj fazi:
 
-### Mreža podjela, Zadana banka za knjiženje i Logotip
+U odjeljku **EDI** (Electronic Data Interchange) moguće je navesti određene podatke o poduzeću koji se koriste u elektroničkoj razmjeni podataka.
 
-U desnom stupcu maske nalaze se tri mreže.
+U odjeljku **Troškovi biljega** unose se iznos troška biljega i prag iznosa nakon kojeg je obvezno njegovo iskazivanje na računu, broj odobrenja za virtualni biljeg i pokrajina nadležnog financijskog ureda. Napominjemo da se u tablici poduzeća unosi minimalna vrijednost transakcija oslobođenih PDV-a nakon koje se na račun dodaje trošak biljega. Međutim, taj trošak potrebno je definirati i u tablici Vrste troškova te ga unijeti u šifarnik kupca. Samo će se na taj način trošak biljega automatski dodati ako je iznos na računu oslobođen PDV-a.
 
-U prvoj su vidljive podjele definirane za poduzeće. Važno je uvijek imati na umu da za svako poduzeće unutar softvera mora postojati barem jedna podjela, čak i ako ona, kao što je često slučaj, odgovara jedinoj poslovnici. U tom se slučaju često preimenuje u Podjela 1 ili, još bolje, jednostavno u Poslovnica. Na svakoj podjeli moguće je definirati odvija li se kontroling s tjednom ili mjesečnom učestalošću.
+**Proširivi odjeljak Ri.Ba.**: sadrži identifikacijske podatke poduzeća za elektronički bankovni sustav: SIA šifru (5 alfanumeričkih znakova) i CUC šifru (8 znakova) za SEPA-u.
 
-U drugoj mreži možemo označiti flagove koji se odnose na:
+**### Tablica divizija, zadana banka i logotip**
 
-Zadnji dio odnosi se na logotip poduzeća, pri čemu se zadani logotip (postavljen putem tipke ***Promijeni zadani logotip*** u traci izbornika) automatski koristi unutar dokumenata aktivnog/pasivnog ciklusa.
+Na desnoj strani obrasca nalaze se tri tablice.
 
-Potrebno je prethodno uvesti jednu ili više slika koje će se koristiti kao logotip putem tipke ***Uvoz slika***.
+U prvoj su prikazane divizije definirane za poduzeće. Važno je zapamtiti da svako poduzeće u programu mora imati barem jednu diviziju, čak i ako ona, kao što je često slučaj, odgovara jedinom poslovnom sjedištu. Često se preimenuje u Divizija 1 ili, još bolje, jednostavno u Sjedište. Za svaku diviziju moguće je definirati provodi li se kontroling na tjednoj ili mjesečnoj razini.
+
+U drugoj tablici moguće je navesti banke preko kojih poduzeće posluje te jednu od njih označiti kao zadanu banku. Ovaj podatak nema posebnu praktičnu važnost. Mogao bi se koristiti u prilagođenim izvještajima za ispis radi prikaza referentne banke. U standardnim postupcima koristi se samo u izvještaju za ispis [**opomena za plaćanje**](/docs/finance-area/maturity-values/reports/dunning-letters) koji se šalju kupcima, kako bi se navela banka putem koje je moguće izvršiti uplatu.
+
+Posljednji dio odnosi se na logotip poduzeća. Zadani logotip (postavljen putem gumba **Promijeni zadani logotip** na vrpci) automatski se koristi u dokumentima ulaznog i izlaznog poslovnog ciklusa.
+
+Prije toga potrebno je uvesti jednu ili više slika koje će se koristiti kao logotipi putem gumba **Uvoz slika**.
 
 ---
 
-### TIPKA OPĆE POSTAVKE (ZA POKRETANJE FAST START PROCEDURE)
+**### GUMB OPĆE POSTAVKE (ZA POKRETANJE POSTUPKA FAST START)**
 
-Ova tipka u novoinstaliranoj bazi podataka ili u poduzeću koje je dodano u bazu podataka, kreira cijeli niz osnovnih početnih podataka; na primjer, kontni plan te osnovne postavke za evidenciju PDV-a, knjižne temeljnice, vrste dokumenata kao što su narudžbe, otpremnice i računi itd.
+Ovaj gumb u tek instaliranoj bazi podataka ili u poduzeću dodanom u postojeću bazu stvara niz zadanih osnovnih podataka. Primjerice, stvara kontni plan i osnovne postavke PDV registara, računovodstvenih predložaka te vrsta dokumenata kao što su narudžbe, otpremnice, računi itd.
 
-Radi se o vrlo korisnoj funkcionalnosti u fazi definiranja strategije za pokretanje novog poduzeća i za odgovarajuće postavljanje softvera, jer u određenim slučajevima može biti isplativije, kako bi se softver što prije doveo u potpuno operativno stanje, započeti s početnim zadanim postavkama, a zatim ih prilagoditi — primjerice kontni plan, knjižne temeljnice i druge zadane tablice — konkretnim potrebama, nego početi od nule stvaranjem svih tih tablica i postavki.
+Ova je funkcionalnost vrlo korisna prilikom definiranja strategije pokretanja novog poduzeća i pripadajućeg postavljanja softvera. U određenim slučajevima može biti praktičnije započeti sa zadanim postavkama i zatim ih prilagoditi stvarnim potrebama, primjerice izmjenom kontnog plana, računovodstvenih predložaka i drugih zadanih tablica, nego sve stvarati od početka. Na taj se način softver može u potpunosti osposobiti za rad u kraćem vremenu.
 
 :::tip[Više informacija]
-Za više detaljnih informacija pogledajte [**ovdje**](/docs/guide/fast-start)
+Za detaljnije informacije pogledajte [**ovdje**](/docs/guide/fast-start).
 :::
 
-### POTREBNI PODACI ZA ELEKTRONIČKO IZDAVANJE RAČUNA
+**### PODACI POTREBNI ZA ELEKTRONIČKO FAKTURIRANJE**
 
-:::tip PAŽNJA
+:::tip[PAŽNJA]
 
-Preporučuje se da se svi podaci u matičnim podacima poduzeća popune na potpun način. Ipak, ovom prilikom želimo istaknuti polja koja su nužna za kreiranje elektroničkih računa. 
+Preporučuje se potpuno popuniti sve podatke u šifarniku poduzeća. Ovom prilikom posebno ističemo polja potrebna za izradu elektroničkih računa:
 
--	Prije svega, PDV identifikacijski broj (OIB) i porezni broj  
--	Kod primatelja i PEC adresa nisu obavezna polja, već služe isključivo za pohranu vlastitih podataka  
--	Kada je riječ o telefonu i faksu, ako ih se želi unijeti, preporučuje se ne koristiti kosu crtu (/) za odvajanje pozivnog broja, kako bi se izbjegli mogući problemi prilikom formalne provjere od strane sustava za razmjenu (SdI), zbog neprihvaćenih znakova.  
--	Polja koja se odnose na URED REA: prvo polje predviđeno je za unos oznake županije, a drugo za broj  
--	Također je potrebno unijeti podatke o članovima (Soci) i stanje poduzeća, tj. nalazi li se ono u likvidaciji ili ne  
--	U tu svrhu također treba unijeti podatke o upisanom i uplaćenom kapitalu, pazeći da se: ne koristi točka za tisuće, decimalna vrijednost odvaja točkom, a ne zarezom, zbog formalnih kontrola od strane SdI,  
--	Pravna forma i porezni režim također su obavezni podaci  
+- Prije svega, PDV identifikacijski broj i porezni broj.
+- Šifra primatelja i PEC adresa nisu obvezna polja te služe isključivo za pohranu vlastitih podataka.
+- Ako želite unijeti telefonski broj i broj faksa, preporučuje se da ne koristite kosu crtu za odvajanje pozivnog broja kako biste izbjegli moguće probleme prilikom formalnih provjera u sustavu za razmjenu podataka zbog neprepoznatih znakova.
+- U polja povezana s uredom REA potrebno je unijeti oznaku pokrajine u prvo polje, a broj u drugo.
+- Potrebno je popuniti i polja Članovi poduzeća i Status, kojim se određuje je li poduzeće u postupku likvidacije.
+- Potrebno je unijeti i upisani i uplaćeni kapital. Pritom nemojte koristiti točku za razdvajanje tisućica, a decimalna mjesta odvojite točkom, a ne zarezom, također zbog formalnih provjera sustava SDI.
+- Pravni oblik i porezni režim.
+
 :::
 
+**### POSTAVKE ZA PODUZEĆA KOJA PRIPADAJU PDV GRUPI**
 
-### POSTAVKE ZA PODUZEĆA KOJA SU DIO PDV GRUPE
+:::tip[Informacije: PDV grupa]
+Uvođenjem ove zakonske odredbe omogućeno je povezanim poduzećima koja imaju zajedničke financijske, ekonomske i organizacijske interese osnivanje jedinstvene grupe koja se prema poreznim tijelima smatra jednim poreznim obveznikom, isključivo za potrebe PDV-a. Grupa stoga ima jedan zajednički PDV identifikacijski broj.
 
-:::tip Info: PDV grupa  
-Uvođenjem ove norme, predviđena je mogućnost za poduzeća povezana financijskim, ekonomskim i organizacijskim interesima da stvore jedinstvenu grupu, koja se smatra jednim poreznim obveznikom (samo u svrhu PDV-a) prema fiskalnim vlastima. Stoga će imati jedinstveni broj PDV-a. Poduzeća koja su dio grupe fakturirat će transakcije prema trećim stranama s zajedničkim PDV-om, PDV-om grupe. S druge strane, isporuke dobara i usluga razmijenjene između tvrtki unutar grupe neće se smatrati oporezivim za PDV. Kao posljedica toga, sve transakcije koje izvrši jedan od subjekata grupe smatraju se kao izvršene od strane cijele grupe. Račun i drugi dokumenti izdaju se od strane predstavnika Grupe ili sudionika, a na njima se osim broja PDV-a Grupe navodi i OIB subjekta sudionika koji je izvršio transakciju.
+Poduzeća koja pripadaju grupi izdavat će račune za transakcije s trećim osobama koristeći zajednički PDV identifikacijski broj grupe. S druge strane, isporuke dobara i usluge između poduzeća unutar grupe ne ulaze u osnovicu za obračun PDV-a.
+
+Slijedom toga, sve transakcije koje izvrši jedno od poduzeća u grupi smatraju se transakcijama cijele grupe. Račune i ostale dokumente izdaje predstavnik grupe ili pojedini članovi, pri čemu se uz PDV identifikacijski broj grupe navodi i porezni broj poduzeća koje je izvršilo transakciju.
 :::
 
-U slučaju da je jedno ili više poduzeća prisutnih u bazi podataka dio PDV grupe, u ovoj tablici je nužno popuniti sljedeća polja **PDV br** i **Porezni broj** (specifico za društvo koje je dio grupe)
-Također je važno postaviti i pravnu formu **Pravni oblik** na vrijednost "61 – PDV grupa. 
+Ako jedno ili više poduzeća u bazi podataka pripada PDV grupi, u ovoj je tablici potrebno popuniti polja **PDV IDENTIFIKACIJSKI BROJ** (PDV identifikacijskim brojem grupe) i **POREZNI BROJ** (posebnim poreznim brojem poduzeća koje pripada grupi).
 
+Važno je postaviti i **PRAVNI OBLIK**, koji mora biti **61 – PDV grupa**.
 
-### **NOVA KARTICA – PDV GRUPA**
+**### NOVA KARTICA PDV GRUPE**
 
-Na ovoj kartici unose se postavke PDV grupe koju čini jedno ili više poduzeća prisutnih u bazi podataka.
+U ovoj se kartici unose postavke PDV grupe koju čini jedno ili više poduzeća prisutnih u bazi podataka.
 
-Razdoblje / Godina početka i Razdoblje / Godina završetka: koriste se za definiranje valjanosti postavke i statusa pripadnosti PDV grupi
+**Razdoblje / Godina početka** i **Razdoblje / Godina završetka**: određuju razdoblje valjanosti postavke i trajanje statusa PDV grupe.
 
-Je li poduzeće matično: označava se flag ako je trenutno aktivno poduzeće matično, tj. ono koje koristi vlastiti PDV broj i prenosi ga na ostala poduzeća u grupi
+**Je li matično poduzeće grupe**: aktivirajte ovu opciju ako je poduzeće koje koristite matično poduzeće, odnosno poduzeće koje ostalim članovima dodjeljuje svoj PDV identifikacijski broj.
 
-Combo box – matično poduzeće: služi za povezivanje aktivnog poduzeća s već postojećim matičnim poduzećem unutar iste baze podataka
+**Padajući izbornik Matično poduzeće**: služi za povezivanje poduzeća koje koristite s matičnim poduzećem koje već postoji u istoj bazi podataka.
 
-Matično poduzeće – vanjska evidencija: koristi se kada je matično poduzeće vanjsko, tj. nije prisutno u istoj bazi kao poduzeće (npr. jer se vodi u drugom softveru); u tom slučaju ga je potrebno unijeti kao jednostavan kontakt iz kojeg se mogu čitati podaci poput PDV broja itd.
+**Šifarnik matičnog poduzeća**: služi za odabir vanjskog matičnog poduzeća, odnosno poduzeća koje nije definirano u istoj bazi podataka kao poduzeće. Primjerice, može se raditi o poduzeću koje se vodi u drugom softveru pa ga je potrebno unijeti samo kao kontakt u šifarnik kako bi se mogli dohvatiti podaci poput PDV identifikacijskog broja itd.
 
-
-**NAPOMENA: Unutar obrade LiPe izvještaja (tromjesečna prijava PDV likvidacija) nalazi se flag za omogućavanje načina rada PDV grupe za samu prijavu.**
+**NAPOMENA: U postupku obrade LiPe (tromjesečne prijave obračuna PDV-a) postoji zastavica kojom se omogućuje način rada za PDV grupu u samoj prijavi.**
 
 ---
 
-### VIDEO TUTORIJALI
+**### VIDEO VODIČI**
 
-:::important Pogledaj također
-[**VIDEO TUTORIJALI O OPĆIM TABLICAMA**](/docs/video/finance/intro)
+:::important[Pogledajte i]
+[**VIDEO VODIČI O OPĆIM TABLICAMA**](/docs/video/finance/intro)
 :::

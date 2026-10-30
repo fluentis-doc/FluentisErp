@@ -1,45 +1,44 @@
 ---
-title: Mogućnosti / Načini plaćanja
+title: Uvjeti plaćanja
 sidebar_position: 10
 ---
 
-:::tip[FAst Start]
-Ova je tablica uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-U slučaju da se konfiguracija želi provesti ručno, preporučuje se konzultirati kontrolni popis na poveznici.  
+Ako se konfiguracija unosi ručno, potrebno je slijediti kontrolni popis na povezanoj stranici.
 :::
 
-Tablica sadrži rješenja plaćanja koja se koriste u sustavu za izračun dospijeća i otvorenih stavki.  
+Tablica sadrži načine (uvjete) plaćanja koji se koriste u ERP sustavu za izračun datuma dospijeća i otvorenih stavki.
 
-:::danger Pažnja 
-Ispravno unesen način plaćanja zahtijeva popunjavanje i gornje mreže i mreže s detaljima koja definira izračun dana dospijeća. Iako program omogućuje spremanje bez unosa u mrežu s detaljima, takvo rješenje neće biti moguće koristiti u praksi. 
+:::danger Pažnja
+Za ispravan unos načina plaćanja potrebno je popuniti i gornju tablicu i tablicu s detaljima, koja definira izračun dana dospijeća. Iako program omogućuje spremanje bez popunjene tablice s detaljima, tako kreiran način plaćanja neće se moći koristiti.
 :::
 
-### Gornja mreža
+### Gornja tablica
 
-**Rješenje / Opis**: Predstavlja šifru i opis načina plaćanja koji će se primijeniti.
+**Uvjeti plaćanja / Opis**: Predstavlja šifru i opis odgode plaćanja koja se primjenjuje.
 
-**Kraj mjeseca**: Ako je flag aktivan, odgoda plaćanja se računa do kraja mjeseca nakon primjene broja dana definiranih u donjoj mreži s detaljima.
+**Plaćanje krajem mjeseca**: Ako je ova oznaka aktivna, odgoda plaćanja pomiče se na kraj mjeseca nakon primjene broja dana definiranog u donjoj tablici s detaljima.
 
-**Kraj tjedna**: Ako je flag aktivan, dospijeće se pomiče na prvi sljedeći petak nakon datuma dobivenog primjenom dana iz donje mreže.
+**Kraj tjedna**: Ako je ova oznaka aktivna, odgoda plaćanja pomiče se na sljedeći petak nakon datuma dobivenog primjenom broja dana definiranog u donjoj tablici s detaljima.
 
-**Dani**: Broj dana koji se dodaje na kraj mjeseca za dobivanje fiksnog dana dospijeća. Ispravno postavljanje uključuje definiranje broja dana odgode u donjoj mreži (može biti i nula), zatim se primjenjuje flag "kraj mjeseca" te se dodatno dodaju eventualni dani iz ovog polja. Za normalizaciju izračuna preporučuje se uključiti i flag za komercijalni kalendar, kojim se svi mjeseci tretiraju kao da imaju 30 dana.
+**Dani**: Broj dana koji se dodaju na kraj mjeseca kako bi se dobio fiksni dan dospijeća. Ispravno postavljanje podrazumijeva da se najprije u donjoj tablici definira broj dana odgode, uključujući i nulu ako je potrebno. Zatim se primjenjuje oznaka za kraj mjeseca, a na kraju se dodaju dodatni dani nakon završetka mjeseca. Radi ujednačavanja izračuna preporučuje se uključiti i oznaku za komercijalni kalendar, kojom se svi mjeseci tretiraju kao da imaju 30 dana.
 
-**DL Članak 62**: koji označava dvije rate na 30 i 60 dana, koje se primjenjuju na račune s pokvarljivom robom, sukladno članku 62 Zakonske uredbe od 24. siječnja 2012. br. 1.
+**Zadano za čl. 62**: Oznaka koja identificira dvije rate s dospijećem od 30 i 60 dana, a koje se koriste za izračun rokova plaćanja na računima koji sadrže lako pokvarljivu robu, u skladu s člankom 62. Zakonske uredbe br. 1 od 24. siječnja 2012.
 
-[**Vidi šifrarnik kupaca i dobavljača**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)
+[**Pogledajte šifarnike kupaca i dobavljača**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)
 
-**Država**: Filtriranje koje omogućuje da je određeni način plaćanja vidljiv samo tvrtkama u bazi podataka koje imaju navedenu državu kao matičnu. Ovo je korisno jer je tablica zajednička svim tvrtkama u istoj bazi.
+**Država**: Filtar kojim se određuje da taj način plaćanja bude vidljiv samo poduzećima u bazi podataka koja imaju navedenu nacionalnost. To je korisno jer je tablica, kao osnovna tablica, vidljiva svim poduzećima u istoj bazi podataka.
 
+### Donja tablica
 
-### Donja mreža
+Kod obročne otplate moguće je raspodijeliti oporezivi iznos, PDV i troškove dokumenta po pojedinim ratama u postotcima. Postotak troškova ne može se izravno primijeniti na knjiženja u glavnoj knjizi. Ako se postotak ostavi na nuli, **_Fluentis_** će iznose ravnomjerno raspodijeliti na sve definirane rate.
 
-Kod definiranja obročne otplate moguće je raspodijeliti osnovicu, PDV i troškove dokumenta po različitim ratama u postotcima (napomena: postotak troškova se ne primjenjuje izravno u knjiženjima u glavnoj knjizi). Ako postotak ostane nula, ***Fluentis*** će ravnomjerno raspodijeliti iznos na broj rata.
+**Komercijalni kalendar**: Uz ovu opciju u odgovarajuće polje moguće je unijeti samo višekratnike od 30 dana, koji će se obrađivati kao cijeli mjeseci.
 
-**Komercijalno**: Ova opcija omogućuje unos samo višekratnika od 30 dana, koji se zatim tretiraju kao puni mjeseci.
-
-Primjer: Ako imamo dospijeće „30 dana kraj mjeseca“ i račun je izdan 31.01., tada bez flag-a „komercijalno“ 30 kalendarskih dana vodi do 02.03., a kraj mjeseca daje 31.03. — dakle zapravo 60 dana. Ako je flag komercijalno aktivan, tada se 30 dana tretira kao jedan mjesec, pa dospijeće ispravno pada na 28. ili 29. veljače.
+Tipičan je primjer dospijeće 30 dana od kraja mjeseca kada je datum računa 31. 1. Ako primijenimo 30 kalendarskih dana (bez oznake „Komercijalni kalendar”), dobit ćemo datum dospijeća 2. 3., a pomicanjem na kraj mjeseca datum dospijeća postaje 31. 3. To znači da je rok zapravo 60 dana, a ne 30, kako je predviđeno nazivom. Ako je uključena oznaka „Komercijalni kalendar”, 30 dana obrađuje se kao dodatni mjesec, nakon čega se primjenjuje pravilo kraja mjeseca. Tako će se od datuma 31. 1. ispravno dobiti 28. ili 29. veljače, ovisno o kalendaru.
 
 ### Jezici
 
-Za svaki odabrani način plaćanja u gornjoj mreži moguće je definirati opise na drugim jezicima, što je korisno za potrebe prilagođenog ispisa.
+Za svaki način plaćanja odabran u gornjoj tablici moguće je definirati opise na različitim jezicima, koji se mogu koristiti u prilagođenim ispisima.

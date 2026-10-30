@@ -1,14 +1,14 @@
 ---
-title: Pridruživanje mjesec - slovo
+title: Povezivanje meseca - slovo
 sidebar_position: 1
 ---
 
-Tablica se otvara putem putanje **Tablice > Opće postavke > Pridruživanje mjesec - slovo** i omogućuje unos šifriranja za pojedine mjesece, koje će se kasnije koristiti u šifriranju serija (lotova).  
+Tabela se otvara putem putanje **Tabele > Opšta podešavanja > Povezivanje meseca i slova** i omogućava unos šifara za pojedinačne mesece, koje će se kasnije koristiti za šifrovanje lotova.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mrež 
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novo**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u gornjoj tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije posebno opisano u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledaj sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije posebno opisano u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

@@ -1,54 +1,60 @@
 ---
-title: Jedinice mjere 
+title: Jedinice mere
 sidebar_position: 9
 ---
 
+Putanja do obrasca: **Tabele > Opšta podešavanja > Jedinice mere**
 
-Putanja forme: **Tablice > Opće postavke > Jedinice mjere**
+Tabela omogućava definisanje različitih mernih jedinica u sistemu i njihovih odgovarajućih detaljnih svojstava.
 
-Ova tablica omogućuje definiranje različitih jedinica mjere prisutnih u sustavu, kao i njihovih detaljnih atributa.  
- 
-### Jedinice mjere
+### Merne jedinice
 
-Ovdje se kodira nova jedinica mjere i dodjeljuju joj se osnovne karakteristike.  
+U ovom odeljku definišu se nove merne jedinice i dodeljuju im se osnovna svojstva.
 
-#### Specifična polja  
+#### Specifična polja
 
-**J.M. / Opis:** Šifra i opis jedinice mjere kako bi se mogla pozivati unutar sustava.
+**J.M. / Opis**: šifra i opis merne jedinice kako bi mogla da se izabere u sistemu.
 
-**Predstavlja Kg:** označava koja šifra predstavlja kilogram kao mjernu jedinicu mase (najčešće se odnosi na jedinicu označenu kao „Kg / Kilogrami“).
+**Predstavljeni kg**: označava koja šifra predstavlja kilogram kao mernu jedinicu za masu (po pravilu se aktivira za mernu jedinicu naziva Kg / Kilogrami).
 
-**Decimalna mjesta:** omogućuje definiranje broja decimalnih mjesta nakon zareza za prikaz vrijednosti. Na primjer, unosom broja 2 za jedinicu „Kilovat“ vrijednosti će biti prikazane kao X,00; unosom broja 3 kao X,000.
+**Decimale**: omogućava unos broja decimalnih mesta za prikaz odgovarajuće merne jedinice. Na primer, unosom vrednosti 2 uz mernu jedinicu Kilovat, vrednosti u dokumentima prikazivaće se u obliku X,00. Unosom vrednosti 3 prikazivaće se u obliku X,000.
 
-**Dodatna jedinica za Intrastat:** dodatna jedinica mjere (stupac 8 – isporuke; stupac 9 – nabave): koristi se kada carinska tarifa propisuje jedinicu mjere drugačiju od kilograma kao neto mase. Ako je postavljena za J.M. „kg“, automatski će se koristiti u Intrastat izvještavanju.
+**Dodatna J.M. za Intrastat**: dodatna merna jedinica (kolona 8 za isporuke; kolona 9 za nabavke). Dodatna merna jedinica razlikuje se od kilograma koji se navode kao neto masa i mora se obavezno navesti za određene vrste robe ako je to propisano carinskom tarifom. Ako je podešena uz mernu jedinicu KG, predlagaće se i koristiti u postupcima izrade Intrastat izveštaja.
 
-**Jedinica mase:** označava jedinicu mjere kao mjeru mase (primjenjuje se na odgovarajuće jedinice).  
+**J.M. za težinu**: označava mernu jedinicu kao jedinicu za masu (aktivira se za odgovarajuće merne jedinice).
 
-**Jedinica volumena:** označava jedinicu mjere kao mjeru volumena. 
+**J.M. za zapreminu**: označava mernu jedinicu kao jedinicu za zapreminu (aktivira se za odgovarajuće merne jedinice).
 
-**Jedinica dimenzije:** označava jedinicu mjere kao mjeru dimenzije.  
+**J.M. za dimenzije**: označava mernu jedinicu kao jedinicu za dimenzije (aktivira se za odgovarajuće merne jedinice).
 
-**Zadana jedinica:** označava jedinicu mjere koja će se automatski predlagati kao zadana.  
+**Referenca**: označava podrazumevanu mernu jedinicu koja se automatski predlaže.
 
-**Jedinica vremena:** označava jedinicu mjere kao mjeru vremena.  
+**J.M. za vreme**: označava mernu jedinicu kao jedinicu za vreme (aktivira se za odgovarajuće merne jedinice).
 
-**Minute:** označava jedinicu mjere kao mjernu jedinicu izraženu u minutama.  
+**Minuti**: označava mernu jedinicu kao jedinicu vremena izraženu u minutima (aktivira se za odgovarajuće merne jedinice).
 
-:::important IMPORTANTE
-**Vrsta vrednovanja vremena:** polje koje se koristi u controlling modulu za definiranje je li jedinica mjere tipa „tok“ ili „stanje“.  
-Primjer: „strojni sati“ predstavljaju tok (jer se troše), dok su kvadratni metri zgrade tipično stanje (jer vrijede kontinuirano iz mjeseca u mjesec).
+:::important[VAŽNO]
+**Tip procene vremena**: polje koje se koristi u modulu Kontroling za određivanje da li je merna jedinica tipa Tok ili Stanje.
+
+Na primer, mašinski sati predstavljaju tok, dok kvadratni metri poslovne zgrade tipično predstavljaju stanje jer je njihova vrednost važeća svakog meseca.
 :::
 
-### Konverzije između jedinica mjere  
+### Opisi na različitim jezicima
 
-Ovdje se upravlja konverzijskim faktorima između različitih jedinica mjere radi podrške korištenju dvostrukih jedinica mjere u dokumentima.  
+Korisnik može da prevede šifru i opis na željeni jezik koristeći ovu karticu.
 
-**Alternativna J.M:** unosi se jedinica u koju se konvertira primarna jedinica mjere.  
+Dovoljno je da odabere mernu jedinicu u glavnoj tabeli, zatim jezik u odgovarajućoj kartici i unese *Šifru* i *Opis*.
 
-**Faktor konverzije:** unosi se faktor kojim se množi ili dijeli (npr. 0,5).  
+### Konverzije između različitih mernih jedinica
 
-**Za umnožiti:** ako flag nije aktivan, vrijednost se dijeli; ako je flag aktivan, vrijednost se množi s definiranim faktorom.
+U ovom odeljku definišu se faktori konverzije između različitih mernih jedinica kako bi se u dokumentima mogla koristiti dvostruka merna jedinica.
 
-### Vrsta vrednovanja tarife
+**Alternativna J.M.**: unesite mernu jedinicu u koju će se pretvarati odabrana osnovna merna jedinica.
 
-Trenutno nije u upotrebi.
+**Faktor konverzije**: unesite faktor konverzije, na primer 0,5 (vrednost kojom će se osnovna merna jedinica deliti ili množiti).
+
+**Množiti faktorom**: ako opcija nije aktivirana, vrednost se deli faktorom konverzije; ako je aktivirana, vrednost se množi faktorom konverzije.
+
+### Tip procene tarife
+
+Funkcionalnost nije aktivna.

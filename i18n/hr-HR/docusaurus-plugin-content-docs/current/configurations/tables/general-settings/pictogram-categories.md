@@ -7,13 +7,13 @@ Unutar ove tablice kodiraju se sve **Kategorije ikona** koje se kasnije mogu kor
 
 Tablica omogućuje unos novih zapisa, kao i pretraživanje postojećih radi prikaza, izmjene ili brisanja.
 
-**Pretraživanje kategorija piktograma**
+**Pretraživanje kategorija ikona**
 
 Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u donjoj mreži rezultata.
 
-**Unos novih kategorija piktograma**
+**Unos novih kategorija ikona**
 
-Za unos nove šifre kategorije piktograma, kliknite na prvi prazan redak u mreži ili pritisnite tipku **Novo**. 
+Za unos nove šifre kategorije ikona, kliknite na prvi prazan redak u mreži ili pritisnite tipku **Novo**. 
 
 Za svaki novi zapis potrebno je unijeti barem obavezno polje koje program zahtijeva: **Šifra**.
 

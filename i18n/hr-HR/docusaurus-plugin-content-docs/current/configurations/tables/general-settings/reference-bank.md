@@ -1,20 +1,20 @@
 ---
-title: Banka prezentacije
+title: Banka korisnika
 sidebar_position: 1
 ---
 
-U ovu tablicu unose se banke za naplatu koje se mogu pozivati u matičnim podacima Klijenata i Dobavljača (i Matičnim podacima Banaka) radi upravljanja raznim automatizmima, kao što su ponajprije uključivanje u ispis (npr. bankovni podaci za plaćanje na izlaznom računu) i kanalizacija financijskih tokova vezanih uz otvorene stavke itd.   
+U ovoj se tablici unose banke koje se mogu odabrati u šifarnicima kupaca i dobavljača (i šifarniku banaka) radi upravljanja različitim automatizacijama, prvenstveno za prikaz podataka na ispisima (npr. podaci o bankovnom računu za plaćanje na izlaznom računu) i usmjeravanje financijskih tokova povezanih s otvorenim stavkama itd.
 
-Unutar ove tablice moguće je unijeti i banke društva i banke druge strane (klijenta ili dobavljača).
+U ovoj je tablici moguće unijeti banke poduzeća, kao i banke poslovnih partnera (kupaca ili dobavljača).
 
 :::tip
-Preporučuje se, primjerice, koristiti slovnu šifru za banke društva, a brojčanu šifru za banke klijenata i dobavljača kako bi se one jasno razlikovale.  
+Preporučuje se, primjerice, koristiti abecednu šifru za banke poduzeća, a numeričku šifru za banke kupaca i dobavljača kako bi se one jasno razlikovale.
 
-Također, moguće je unijeti retke s potpunim podacima IBAN i/ili SWIFT (preporučeno za banke društva) ili retke s isključivo ABI i CAB šiframa (preporučeno za banke druge strane za koje se IBAN i SWIFT mogu navesti u poljima unutar mreže u matičnim podacima).  
+Također je moguće unijeti zapise s potpunim IBAN i/ili SWIFT podacima (preporučuje se za banke poduzeća) te zapise koji sadrže samo ABI i CAB šifre (preporučuje se za banke poslovnih partnera, za koje se IBAN i SWIFT mogu unijeti u polja tablice u šifarniku).
 :::
 
-Ako je redak u tablici Banka za naplatu potpun s IBAN i/ili SWIFT, uz ABI i CAB, pozivanjem tog retka putem padajuće liste podaci će biti preneseni u mrežu u matičnim podacima. U suprotnom, prenijet će se samo ABI i CAB, no uvijek je moguće naknadno unijeti nedostajuće podatke izravno u mrežu.
+Ako redak u tablici Banke sadrži IBAN i/ili SWIFT, uz ABI i CAB šifre, odabirom tog retka putem padajućeg izbornika podaci će se prenijeti u tablicu u šifarniku. U suprotnom će se prenijeti samo ABI i CAB šifre, a podatke koji nedostaju uvijek je moguće dodati izravno u tablicu.
 
-Ovo se preporučuje za banke druge strane kako bi se izbjeglo kodiranje prevelikog broja redaka u tablici Banka za naplatu koji se koriste samo za jednog klijenta ili dobavljača. Poželjno je navesti samo podatke o bankovnoj poslovnici (ABI i CAB) preko koje više klijenata ili dobavljača može imati tekući račun.
+Takav se pristup preporučuje za banke poslovnih partnera kako bi se izbjeglo unošenje prevelikog broja zapisa u tablicu Banke koji bi se koristili samo za jednog kupca ili dobavljača. Preporučuje se unositi samo podatke o poslovnici banke (ABI i CAB) u kojoj tekući račun mogu imati različiti kupci ili dobavljači.
 
-Unos banke može se izvršiti i dvostrukim klikom u polja abi/cab **u matičnim podacima Klijenta ili Dobavljača** kako bi se otvorio pomoćni prozor za pretraživanje nacionalnih bankovnih poslovnica (Pomoć se oslanja na tablicu pod nazivom *ABI* *CAB*), iz kojih se može odabrati odgovarajuća. Odabir će spremiti podatke u ovu tablicu i u matične podatke, gdje je moguće odmah dopuniti s podacima tekućeg računa, cin, iban, swift.
+Banku je moguće unijeti i dvostrukim klikom na polja ABI/CAB u **šifarniku kupca ili dobavljača**. Time se otvara pomoć za pretraživanje nacionalnih bankovnih poslovnica (koja se temelji na tablici pod nazivom *ABI CAB*), iz koje je moguće odabrati odgovarajuću poslovnicu. Odabirom se podaci spremaju u ovu tablicu i u šifarnik, gdje je odmah moguće dopuniti podatke o tekućem računu, CIN-u, IBAN-u i SWIFT-u.

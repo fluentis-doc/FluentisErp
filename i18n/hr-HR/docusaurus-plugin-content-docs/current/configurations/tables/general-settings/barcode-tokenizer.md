@@ -8,15 +8,15 @@ To operatoru donosi veliku prednost u smislu brzine unosa i učinkovitosti, jer 
 
 U tablici zaglavlja potrebno je unijeti sljedeća polja:
 
-> **Kod**: označava prefiks barcode tokenizer-a;        
+> **Šifra**: označava prefiks barcode tokenizer-a;        
 > **Opis**: opisuje barcode tokenizer;        
-> **Razdjelnik**: znak koji se koristi kao razdjelnik unutar barcode tokenizer-a.
+> **Separator**: znak koji se koristi kao razdjelnik unutar barcode tokenizer-a.
 
 U tablici detalja definiraju se objekti i svojstva koja će se čitati iz barkoda.
 
-Barkod se mora sastaviti prema formatu: **KodBarkoda** + **Razdjelnik** + **PoslovniObjekt.Svojstvo** [ + **Razdjelnik** + **PoslovniObjekt.Svojstvo** ]  
+Barkod se mora sastaviti prema formatu: **KodBarkoda** + **Separator** + **PoslovniObjekt.Svojstvo** [ + **Separator** + **PoslovniObjekt.Svojstvo** ]  
 
-Zadnji dio **PoslovniObjekt.Svojstvo** može se ponavljati više puta; duljina vrijednosti ili **razdjelnik** definiran u tablici omogućit će ispravnu identifikaciju svakog podatka.      
+Zadnji dio **PoslovniObjekt.Svojstvo** može se ponavljati više puta; duljina vrijednosti ili **Separator** definiran u tablici omogućit će ispravnu identifikaciju svakog podatka.      
  
 U pravilu, svaki barcode tokenizer sadrži jedan **glavni objekt**, koji može biti sastavljen od više **poslovnih objekata**.      
 Ovi **poslovni objekti** mogu biti direktna svojstva **glavnog objekta** (u tom slučaju su **poslovni** i **glavni objekt** isti) ili mogu pripadati drugim **poslovnim objektima**, ali su i dalje referencirani unutar **glavnog objekta**.          

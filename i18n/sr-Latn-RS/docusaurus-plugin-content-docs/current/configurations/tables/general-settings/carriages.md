@@ -1,33 +1,32 @@
 ---
-title: Paritet
+title: Pariteti
 sidebar_position: 2
 ---
 
-Tablica se otvara putem izbornika **Tablice > Opće postavke > Paritet** i koristi se za unos uvjeta isporuke koji se primjenjuju u dokumentima kupnje/prodaje.
+Tabela se otvara putem menija **Tabele > Opšta podešavanja > Pariteti** i koristi se za unos uslova isporuke koji se mogu primenjivati u dokumentima nabavke/prodaje.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Forma se sastoji od oblasti za filtriranje i oblasti sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Pretraga** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novi**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u gornjoj tabeli ili pritisnuti dugme **Novo**.
 
-### Paritet
+### Pariteti
 
-**Kod / Opis**: unosi se jedinstvena šifra za uvjet isporuke te njegov opis;
+**Šifra/Opis**: uneti jedinstvenu šifru uslova isporuke i odgovarajući opis.
 
-**Intra kod**: navodi se službeni kod koji se koristi u Intrastat prijavi;   
+**Intra šifra**: uneti zvaničnu šifru koja se koristi u Intrastat prijavi.
 
+**Intra znak**: polje nije obavezno. Služi za određivanje da li troškovi dokumenta, koji imaju oznaku *Stat. vrednost Intra*, povećavaju ili smanjuju vrednost robe za obračun statističke vrednosti.
 
-**Znak za Intra**: neobavezno polje, koristi se za označavanje treba li trošak iz dokumenta, ako ima aktiviran flag *Stat. vrijednost Intra*, povećati ili smanjiti vrijednost robe za izračun statističke vrijednosti;
+**ISO šifra države**: označava da se ova šifra može koristiti u Intrastat prijavama preduzeća čije je sedište u toj državi.
 
-**ISO kod države** označava da se ovaj kod može koristiti u Intrastat prijavama za društva te nacionalnosti;  
+**Troškovi**: omogućava upravljanje troškovima za Intrastat statističku vrednost.
 
-**Troškovi**: omogućuje upravljanje troškovima za statističku vrijednost u Intrastat sustavu;  
-
-**Datum kraja valjanosti**: označava do kojeg je datuma uvjet isporuke valjan.
+**Datum isteka važenja**: označava datum isteka važenja uslova isporuke.
 
 ### Jezici
 
-U mreži je moguće unijeti prijevode opisa na strane jezike za trenutno označeni redak u mreži *Paritet*.
+U tabeli je moguće podesiti opise na različitim jezicima za red izabran u tabeli *Pariteti*.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a tiče se zajedničkog funkcioniranja formi, pogledajte poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcionisanje formi, pogledajte sledeću stranicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

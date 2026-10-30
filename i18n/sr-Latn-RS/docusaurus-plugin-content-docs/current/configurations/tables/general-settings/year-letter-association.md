@@ -1,14 +1,14 @@
 ---
-title: Pridruživanje godina - slovo
+title: Povezivanje godina - slovo
 sidebar_position: 1
 ---
 
-Tablica se otvara putem izbornika **Tablice > Opće postavke > Povezivanje mjesec – slovo** i omogućuje unos šifri vezanih uz različite godine koje će se potom koristiti u šifriranju serija (lotova).  
+Tabela se otvara putem menija **Tabele > Opšta podešavanja > Povezivanje godina – slovo** i omogućava unos šifara povezanih sa različitim godinama, koje će se zatim koristiti za šifrovanje lotova.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi prikaza, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novo**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u gornjoj tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i polja zajednička za sve forme](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i polja zajednička za sve obrasce](/docs/guide/common).

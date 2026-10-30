@@ -3,24 +3,26 @@ title: Tipovi adrese
 sidebar_position: 6
 ---
 
-Tablica se otvara putem izbornika **Tablice > Opće postavke > Tipovi adrese** i služi za slobodno kodiranje (kod i opis) različitih alternativnih adresa koje se mogu povezati s kontaktima u bazi (bilo da se radi o Dobavljaču, Klijentu, Banci ili Agentu).
+Tablica se otvara putem izbornika **Tablice > Opće postavke > Tipovi adrese** i služi za slobodno definiranje (na razini šifre i opisa) različitih alternativnih adresa koje se povezuju sa šifarnikom kontakata (dobavljač, kupac, banka ili agent).
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Za unos zapisa potrebno je kliknuti prvi prazan redak tablice ili pritisnuti gumb **Novo**.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, potrebno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u mreži rezultata.
+Dostupne su unaprijed definirane zastavice kojima se određuju svojstva koja se mogu koristiti u dodatnim automatizacijama unutar programa (neke su već dostupne u standardnoj verziji).
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**.
+Sljedeće su automatizacije već dostupne i spremne za korištenje:
 
-Dostupni su određeni unaprijed definirani flagovi koji dodjeljuju svojstva korisna za daljnje automatizacije (neke su već uključene u standardnu verziju programa).
+**E-pošta za račune kupaca**: povezivanjem ove zastavice s vrstom adrese koja se definira te unosom takve adrese u šifarnik kontakata, u odjeljak *Alternativne adrese*, adresa (ili više adresa) e-pošte unesena u odgovarajuće polje koristit će se u tijeku rada (promjena statusa) za automatsko masovno slanje izlaznih računa.
 
-Već dostupne i spremne automatizacije uključuju:
+:::note[Napomena]
+Ostale dostupne zastavice povezane sa slanjem e-pošte mogu se povezati s određenim dokumentom nakon odgovarajuće *konfiguracije*.
+:::
 
-**E-mail za slanje računa kupcima**: kada se ovom flagu pridruži određena vrsta adrese i ta adresa unese u kontakte u odjeljku **Alternativne adrese**, e-mail adresa(e) unesena u za to predviđeno polje koristit će se u Workflow procesu (promjena stanja) za automatsko masovno slanje prodajnih računa.
+**Zajednički nositelji**: povezivanjem ove zastavice definira se vrsta adrese prikladna za unos matičnih podataka svakog suvlasnika u šifarniku, kako bi se ti podaci kasnije mogli dohvatiti prilikom izrade izlaznog računa.
 
-**Zajednički nositelji**: ovim flagom se kodira vrsta adrese prikladna za definiranje osobnih podataka (za svakog Zajedničkog nositelja unesenog u kontakte) kako bi se ti podaci mogli pozvati prilikom izdavanja prodajnog računa.
+**Korišteno se u SEPA-i**: omogućuje pohranu alternativne adrese u šifarniku kontakata radi dohvaćanja **naziva vjerovnika** i njegova unosa u **nalog za prijenos sredstava** (polje *Vjerovnik*) te u pripadajuću XML datoteku za izvoz na bankovne portale. Time se izbjegavaju problemi povezani s **provjerom vlasnika računa**.
 
-Ostali mogući flagovi vezani uz slanje e-maila mogu se povezati s određenim dokumentima uz prethodnu *konfiguraciju*.
+**Stalna poslovna jedinica**: zastavicu je potrebno aktivirati za korištenje alternativne adrese u šifarniku dobavljača, kojom se označava stalna poslovna jedinica inozemnog dobavljača u Italiji.
 
-Na kraju, postoje i drugi flagovi koji se mogu koristiti za moguće porezne automatizacije (Stalna poslovna jedinica i Porezni zastupnik), kao i rezidualni Opća lokacija.
+**Porezni zastupnik**: zastavicu je potrebno aktivirati za korištenje alternativne adrese u šifarniku dobavljača, kojom se označava porezni zastupnik inozemnog dobavljača u Italiji.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a tiče se zajedničkog funkcioniranja formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+**Opća lokacija**: nije povezana s posebnom funkcionalnošću i preporučuje se za opće alternativne adrese.

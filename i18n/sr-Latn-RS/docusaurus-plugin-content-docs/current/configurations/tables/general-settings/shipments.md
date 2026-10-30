@@ -1,20 +1,20 @@
 ---
-title: Dostave
+title: Pošiljke
 sidebar_position: 3
 ---
 
-Tablica se otvara putem izbornika **Tablice > Opće postavke > Otpreme** i koristi se za definiranje vrste otpreme, odnosno je li riječ o otpremi kopnom, morem, zrakom itd.  
+Tabela se otvara putem menija **Tabele > Opšta podešavanja > Pošiljke (otprema/dostava)** i koristi se za definisanje vrste otpreme, odnosno da li je reč o otpremi kopnom, morem, vazduhom itd.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novo**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u gornjoj tabeli ili pritisnuti dugme **Novo**.
 
-#### Specifična polja 
+#### Specifična polja
 
-**Šifra/Opis**: unijeti jedinstvenu šifru za vrstu otpreme i odgovarajući opis.  
+**Šifra/Opis**: uneti jedinstvenu šifru za vrstu otpreme i odgovarajući opis.
 
-**Intra kod**: unijeti odgovarajući službeni kod koji se koristi za intrastat prijavu.
+**Intra šifra**: uneti odgovarajuću zvaničnu šifru koja se koristi za Intrastat prijavu.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledati sljedeću poveznicu [Funkcionalnosti, tipke i polja zajednička za sve forme](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i polja zajednička za sve obrasce](/docs/guide/common).

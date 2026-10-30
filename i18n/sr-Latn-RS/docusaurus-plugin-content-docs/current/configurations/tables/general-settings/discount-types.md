@@ -1,34 +1,34 @@
 ---
-title: Vrste popusta
+title: Tipovi rabata
 sidebar_position: 8
 ---
 
-Tablica se otvara putem izbornika **Tablice > Opće postavke > Vrste popusta** i koristi se za unos vrsta popusta i već je popunjena tijekom instalacije programa. Moguće je dodati druge vrste popusta, a ti će se moći koristiti samo kao popusti u postotku.
+Tabela se otvara putem menija **Tabele > Opšta podešavanja > Tipovi rabata** i koristi se za unos vrsta popusta. Već je popunjena tokom instalacije programa. Moguće je dodati druge vrste popusta, koje će moći da se koriste samo kao procentualni popusti.
 
-Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se prikazalo, izmijenilo ili obrisalo.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmene ili brisanja.
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za unos novog zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novo**. 
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u gornjoj tabeli ili pritisnuti dugme **Novo**.
 
 ## Popust
 
-**Šifra / Opis**: unesite jedinstvenu šifru za vrstu popusta i odgovarajući opis.  
+**Šifra / Opis**: unesite jedinstvenu šifru za vrstu popusta i odgovarajući opis.
 
-**Prioritet**: definirajte prioritet kod preuzimanja ovog popusta.  
+**Prioritet**: definišite prioritet prilikom primene ovog popusta.
 
-**Primjena**: navesti kako primijeniti popust. Može se primijeniti u KASKADI u odnosu na popuste s višim prioritetom ili na OSNOVICU neovisno o prioritetu.
+**Primena (kaskada/osnovica)**: navedite kako primeniti popust. Može se primeniti KASKADNO u odnosu na popuste sa višim prioritetom ili na OSNOVICU, nezavisno od prioriteta.
 
-**Isključi iz provizije**: ako je ova opcija označena, popust se neće uključiti u izračun osnovice za proviziju.  
+**Isključi iz provizija**: ako je ova opcija označena, popust neće biti uključen u obračun osnovice za proviziju.
 
-**Knjigovodstvo po bruto iznosu**: je moguće aktiviranjem ovog flag-a evidentirati prihod bruto bez popusta. Popust će se zatim registrirati na račun naveden u donjem dijelu ekrana (Knjigovodstvo prodaje).
+**Knjiženje po bruto iznosu**: aktiviranjem ove opcije moguće je evidentirati prihod u bruto iznosu, bez umanjenja za popust. Popust će se zatim knjižiti na konto naveden u donjem delu ekrana (Knjiženje prodaje).
 
-### Opis jezika
+### Opisi na jezicima
 
-Za svaki redak popusta odabran u gornjoj mreži, moguće je unijeti opise na jeziku koji će se zatim prikazati na dokumentima.
+Za svaki red popusta odabran u gornjoj tabeli moguće je uneti opise na različitim jezicima, koji će se zatim prikazivati na dokumentima.
 
-### Knjigovodstveno evidentiranje kupnji/prodaja
+### Knjigovodstveno evidentiranje nabavke/prodaje
 
-Za svaki redak popusta odabran u gornjoj tablici moguće je odrediti račun na koji će se usmjeriti iznosi popusta, i za dio kupnji i za dio prodaja. Ova opcija će biti aktivirana ako je označeno polje *Knjigovodstveno evidentiranje bruto*.
+Za svaki red popusta odabran u gornjoj tabeli moguće je odrediti konto na koji će se knjižiti iznosi popusta, kako za deo nabavke, tako i za deo prodaje. Ova opcija biće aktivna ako je označeno polje *Knjiženje po bruto iznosu*.
 
-Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, molimo da se obratite na sljedeću poveznicu:[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve ostalo što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

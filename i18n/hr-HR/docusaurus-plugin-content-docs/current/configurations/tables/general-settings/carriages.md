@@ -7,15 +7,15 @@ Tablica se otvara putem izbornika **Tablice > Opće postavke > Paritet** i koris
 
 Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novi**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj tablici ili pritisnuti tipku **Novo**. 
 
 ### Paritet
 
-**Kod / Opis**: unosi se jedinstvena šifra za uvjet isporuke te njegov opis;
+**Šifra / Opis**: unosi se jedinstvena šifra za uvjet isporuke te njegov opis;
 
-**Intra kod**: navodi se službeni kod koji se koristi u Intrastat prijavi;   
+**Šifra intrastat**: navodi se službeni kod koji se koristi u Intrastat prijavi;   
 
 
 **Znak za Intra**: neobavezno polje, koristi se za označavanje treba li trošak iz dokumenta, ako ima aktiviran flag *Stat. vrijednost Intra*, povećati ili smanjiti vrijednost robe za izračun statističke vrijednosti;
@@ -28,6 +28,6 @@ Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži 
 
 ### Jezici
 
-U mreži je moguće unijeti prijevode opisa na strane jezike za trenutno označeni redak u mreži *Paritet*.
+U tablici je moguće unijeti prijevode opisa na strane jezike za trenutno označeni redak u tablici *Paritet*.
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu, a tiče se zajedničkog funkcioniranja formi, pogledajte poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

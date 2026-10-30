@@ -1,55 +1,53 @@
 ---
-title: Načini plaćanja
+title: Način plaćanja
 sidebar_position: 7
 ---
-:::tip[FAst Start]
-Tablica je obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako želite izvršiti ručnu konfiguraciju, pogledajte kontrolni popis na poveznici iznad.  
+Ako se konfiguracija unosi ručno, potrebno je pratiti kontrolnu listu na povezanoj stranici.
 :::
 
-Ova tablica sadrži vrste plaćanja koje se koriste u sustavu za upravljanje.  
+Tabela sadrži tipove (načine) plaćanja koji se koriste u ERP sistemu.
 
-Omogućuje unos novih zapisa te pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Za unos novog zapisa kliknite na prvi prazan redak u gornjoj rešetki ili pritisnite tipku **Novo**. 
+Za unos novih zapisa kliknite na prvi prazan red u gornjoj tabeli ili pritisnite dugme **Novi**.
 
-## Načini plaćanja
+## Način plaćanja
 
-**Plaćanje**: alfanumerički identifikacijski kod;
+**Plaćanje**: alfanumerička šifra za prepoznavanje.
 
-**Opis**: opis vrste plaćanja, koji se uobičajeno prikazuje na raznim ispisima u okviru izlaznih/ulaznih procesa;
+**Opis**: opis plaćanja koji se uobičajeno prikazuje na različitim ispisima izlaznog i ulaznog poslovnog ciklusa.
 
-**Iznos biljega**: iznos pristojbe (biljega);  
+**Količina taksi**: iznos takse.
 
-**Postotak popusta pri plaćanju**: Omogućuje povezivanje određene vrste (pozivom iz tablice Vrste popusta) i pripadajućeg postotka popusta s redovima artikala u dokumentu, ovisno o odabranoj vrsti plaćanja.
-Na primjer, moguće je definirati popust od 5% u slučaju kada se koristi vrsta plaćanja "Gotovina".
+**Procenat popusta**: omogućava povezivanje tipa popusta (odabirom iz tabele Tipovi popusta) i odgovarajućeg procenta popusta sa stavkama artikala u dokumentu, u zavisnosti od tipa plaćanja. Na primer, moguće je definisati popust od 5 % ako se koristi tip plaćanja Gotovina.
 
-:::note Napomena
-Ovaj se popust odnosi na umanjenje osnovice po stavci, zajedno s ostalim popustima koji proizlaze iz cjenika i komercijalnih uvjeta definiranih u matičnim podacima.
+:::note[Napomena]
+Ovaj popust umanjuje oporezivi iznos stavke, zajedno sa ostalim popustima koji proizlaze iz cenovnika i komercijalnih uslova definisanih u šifarniku.
 :::
 
-**Vrsta financijskog popusta / Vrijednost financijskog popusta:** Povezani su s datumom dospijeća računa, i ne utječu na ukupni iznos dokumenta, već se primjenjuju prilikom evidentiranja naplate.
+**Tip finansijskog popusta / Procenat finansijskog popusta**: povezani su sa dospećem fakture i ne utiču na ukupan iznos dokumenta, već se primenjuju prilikom knjiženja naplate.
 
+**Tip hartije od vrednosti**: omogućava definisanje vrste hartije od vrednosti koja je eventualno povezana sa plaćanjem ili nekog drugog tipa plaćanja. Trenutno ovo polje ima samo informativnu ulogu, bez posebnih povezanih automatizacija, osim za tip Bankarska potvrda, koji identifikuje tip plaćanja pogodan za naknadno upravljanje kreiranjem hartije od vrednosti.
 
-**Vrsta računa**: Omogućuje definiranje vrste efekta povezanog s plaćanjem ili nekom drugom vrstom naplate. Trenutačno ovo polje ima samo informativnu svrhu i nema povezane automatizacije, osim u slučaju vrste Bankovna mjenica koja identificira odgovarajuću vrstu plaćanja za kasnije kreiranje efekta.
+**Šifra Intra usluge**: šifra plaćanja koja se unosi u Intrastat izveštaje.
 
-**Intra kod usluge** : Kod plaćanja koji se koristi u Intrastat izvješćima.
+**Šifra za e-fakture**: identifikaciona šifra tipa plaćanja za e-fakture i fakture izdate javnoj upravi (na primer MP01, MP02 itd.; pogledajte uputstva nadležnog ministarstva za popunjavanje e-faktura).
 
-**Kod za elektroničke račune** : Identifikacijski kod vrste plaćanja za elektroničke račune i račune prema javnim institucijama (primjeri: MP01, MP02 itd. – pogledati službene upute ministarstva za ispravno popunjavanje elektroničkih računa).
-
-**Država**: Filtar koji omogućuje da se određena vrsta plaćanja prikaže samo onim tvrtkama unutar baze podataka koje imaju naznačenu nacionalnost. (Ovo je korisno jer je tablica zajednička svim tvrtkama unutar iste baze podataka.)
+**Država**: filter kojim se određuje da taj tip plaćanja bude vidljiv samo preduzećima u bazi podataka koja imaju navedenu nacionalnost. To je korisno jer je tabela, kao osnovna tabela, vidljiva svim preduzećima u istoj bazi podataka.
 
 ### Jezici
 
-Za svaku vrstu plaćanja odabranu u gornjoj tablici, moguće je definirati opise na više jezika, što omogućuje korištenje za prilagođene ispise.
+Za svaki tip plaćanja odabran u gornjoj tabeli moguće je definisati opise na različitim jezicima, koji se mogu koristiti u prilagođenim ispisima.
 
-### Tipi effetti
+### Tipovi hartija od vrednosti
 
-Za svaku vrstu plaćanja odabranu u gornjoj tablici, moguće je unaprijed definirati vrstu efekta koja će se kreirati iz stavke/dospijeća unutar modula *Portfelj efekata*.
+Za svaki tip plaćanja odabran u gornjoj tabeli moguće je unapred definisati tip hartije od vrednosti koji će se kreirati iz otvorene stavke/dospeća u modulu *Lista hartija od vrednosti*.
 
-:::danger Upozorenje
-Povezivanje vrste plaćanja s efektom omogućuje da se u sučelju za kreiranje efekata prikazuju samo stavke koje su relevantne za određenu vrstu efekta. Na primjer, ispravna postavka bila bi povezivanje vrste plaćanja RiBa s efektom Bankovna mjenica, a vrste plaćanja Mjenica s efektom Mjenica. Na taj način, stavke s vrstom plaćanja Transakcija neće se prikazivati prilikom kreiranja efekata, čime se izbjegava generiranje nedosljednih podataka.
+:::danger[Pažnja]
+Povezivanje plaćanja i hartije od vrednosti služi tome da se u obrascu za kreiranje hartija od vrednosti prikazuju samo otvorene stavke koje odgovaraju odabranom tipu hartije od vrednosti. Na primer, ispravno je povezati tip plaćanja Ri.Ba. sa tipom hartije od vrednosti Bankarska potvrda, a tip plaćanja Menica sa tipom hartije od vrednosti Menica. Na taj način se u obrascu za kreiranje hartija od vrednosti iz otvorenih stavki ili dospeća neće prikazivati, na primer, otvorene stavke sa tipom plaćanja Bankarski prenos, čime se izbegava generisanje neusaglašenih podataka.
 :::
 
-Za sve dodatne informacije koje nisu posebno objašnjene u ovom dokumentu, pogledajte sljedeću poveznicu:[Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

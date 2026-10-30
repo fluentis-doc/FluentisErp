@@ -1,22 +1,22 @@
 ---
-title: Piktogrami
+title: Ikonice
 sidebar_position: 60
 ---
 
-U ovoj se tablici kodiraju svi *Piktogrami* koji se zatim mogu koristiti unutar odgovarajuće kartice u [Registar stavki](/docs/erp-home/registers/items/create-new-item).
+U ovoj tabeli definišu se sve *ikonice* koje se zatim mogu odabrati na odgovarajućoj kartici u [Šifarniku artikala](/docs/erp-home/registers/items/create-new-item).
 
-Tablica omogućuje unos novih zapisa, kao i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje piktograma**
+**Pretraživanje ikonica**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Inserimento Pittogrammi**
+**Unos ikonica**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Novo**. 
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za svaki novi zapis potrebno je unijeti barem obavezno polje koje sustav zahtijeva: **Šifra**.      
-Za svaki zapis moguće je unijeti: opis, kategoriju odabirom među onima kodiranim unutar tablice [Piktogrami](/docs/configurations/tables/general-settings/pictograms), eventualnu slobodnu napomenu i samu sliku piktograma.
+Za novi zapis potrebno je uneti najmanje obavezno polje koje zahteva program: **Šifra**.
 
+Za svaki zapis moguće je uneti opis, kategoriju izborom neke od kategorija definisanih u tabeli [Ikonice](/docs/configurations/tables/general-settings/pictograms), eventualnu slobodnu napomenu i samu sliku ikonice.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledati sljedeću poveznicu [Funkcionalnosti, tipke i polja zajednička za sve forme](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

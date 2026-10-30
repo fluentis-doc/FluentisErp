@@ -3,4 +3,4 @@ title: Svojstvo kontakta
 sidebar_position: 49
 ---
 
-Tablica omogućuje stvaranje strukture stabla slobodnih svojstava koja se mogu povezati s kupcima/dobavljačima.
+Tabela omogućava kreiranje strukture stabla proizvoljnih svojstava koja se mogu povezati sa kupcima/dobavljačima.
