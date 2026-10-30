@@ -1,9 +1,9 @@
 ---
-title: Numeracije fizičkih inventara
+title: Numeriranje fizičkog inventara
 sidebar_position: 17
 ---
 
-Ova tablica omogućuje upravljanje kodiranjem različitih tipova *Numeracija fizičkih inventara*.
+Ova tablica omogućuje upravljanje kodiranjem različitih tipova *Numeriranja fizičkog inventara*.
 
 Putem tablice moguće je unositi nove zapise ili pretraživati postojeće radi pregleda, izmjene ili brisanja.  
 

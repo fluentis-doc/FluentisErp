@@ -1,9 +1,9 @@
 ---
-title: Numeracije liste za preuzimanje
+title: Numeracije picking liste
 sidebar_position: 18
 ---
 
-Ova tablica omogućuje upravljanje kodiranjem različitih tipova *Numeracija liste za preuzimanje*.
+Ova tablica omogućuje upravljanje kodiranjem različitih tipova *Numeracija (picking) liste za preuzimanje*.
 
 Putem tablice moguće je unositi nove zapise ili pretraživati postojeće radi pregleda, izmjene ili brisanja.
 

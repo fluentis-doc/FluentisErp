@@ -1,18 +1,18 @@
 ---
-title: Numeracije liste za preuzimanje
+title: Numerisanje picking liste
 sidebar_position: 18
 ---
 
-Ova tablica omogućuje upravljanje kodiranjem različitih tipova *Numeracija liste za preuzimanje*.
+Ova tabela omogućava upravljanje šifriranjem različitih tipova *numerisanja liste za preuzimanje (picking)*.
 
-Putem tablice moguće je unositi nove zapise ili pretraživati postojeće radi pregleda, izmjene ili brisanja.
+Putem tabele moguće je unositi nove zapise ili pretraživati postojeće radi pregleda, izmene ili brisanja.
 
-**Pretraživanje numeracija liste za preuzimanje**
+**Pretraživanje numerisanja liste za preuzimanje**
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici ispod.  
+Obrazac se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite željene filtere, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli ispod.
 
-**Unos numeracija liste za preuzimanje**
+**Unos numerisanja liste za preuzimanje**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
