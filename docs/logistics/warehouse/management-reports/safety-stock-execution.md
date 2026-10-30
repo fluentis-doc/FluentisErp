@@ -12,13 +12,17 @@ Una serie di impostazioni di natura sia tabellare precodificata, che anche una c
 - nei *Parametri MRP* degli articoli che si desidera gestire con il sottoscorta è necessario che la *politica di gestione sia a scorta*.        
 - la Scorta minima deve essere minore o uguale al Punto di riordino.
 
-**Procedura**
+**Calcolo**
 
-La procedura del sottoscorta utilizza un algoritmo che si basa sul consumo medio giornaliero calcolato dal tab *Approvvigionamento* dell'*Anagrafica articoli*.
+Il calcolo del sottoscorta utilizza un algoritmo che si basa sul consumo medio giornaliero calcolato dal tab *Approvvigionamento* dell'*Anagrafica articoli*.
 
 Si parte quindi dalla giacenza al momento dell'elaborazione e si controlla se alla data richiesta, tramite il consumo medio, si va o meno in sottoscorta.
 
-(Scorta minima - Punto di riordino) / Giorni per il riordino
+    Consumo Medio Giornaliero = (Punto di riordino - Scorta minima) / Giorni per il riordino
+
+    Quantità da riordinare = Scorta minima + Consumo Medio nel periodo − Giacenza
+
+**Procedura**
 
 La procedura permette di scegliere: **Articolo** (classe, codice articolo, descrizione), eventuale **Variante** solo per articoli gestiti a variante, la **Data** limite fino alla quale si vuole calcolare il sottoscorta. E' inoltre possibile abilitare la **Creazione automatica delle richieste di acquisto** per gli articoli in sottoscorta. Se viene attivata questa funzione è necessario specificare il **Tipo** richiesta documento e, volendo, una **Nota** da inserire in testata richiesta di acquisto.
 
