@@ -1,62 +1,70 @@
 ---
-title: Tipovi pickinga
+title: Vrste Pickinga
 sidebar_position: 34
 ---
 
 :::important Čemu služi
-Tablica Tip pickinga u sustavu Fluentis omogućuje kodiranje i definiranje različitih tipova pickinga koji se mogu koristiti prilikom izrade lista za preuzimanje. Korisnici mogu unositi nove zapise, uređivati postojeće ili ih brisati, ovisno o operativnim potrebama.
+Tablica Vrste Pickinga u Fluentisu omogućuje šifriranje i definiranje različitih vrsta Pickinga koje se mogu koristiti prilikom kreiranja lista za preuzimanje. Korisnici mogu unositi nove zapise, mijenjati postojeće ili ih brisati prema operativnim potrebama.
 
-Svaki tip pickinga može imati pridružene specifične parametre, uključujući jedinstveni alfanumerički kôd, numeraciju dokumenata i predloške za manipulaciju robom. Moguće je definirati i tip računa ili otpremnice koji će se koristiti, kao i konfiguracije poput početnog statusa pickinga i prioriteta skladišnih lokacija. Ova fleksibilnost omogućuje tvrtkama prilagodbu sustava vlastitim potrebama, čime se povećava učinkovitost skladišnog poslovanja i omogućuje optimalno upravljanje materijalnim tokovima.
+Svaka vrsta Pickinga može se povezati s određenim parametrima, uključujući jedinstvenu alfanumeričku šifru, numeriranje dokumenata i predloške skladišnih kretanja. Također je moguće odrediti vrstu računa ili otpremnice koja će se koristiti te upravljati postavkama kao što su početni status Pickinga i prioritet skladišnih lokacija. Ova fleksibilnost omogućuje poduzećima prilagodbu sustava vlastitim potrebama, čime se povećava učinkovitost skladišnih operacija i optimizira upravljanje tokovima materijala.
 :::
 
-Tablica se nalazi putem izbornika: **Tablice > Logistika > Tipovi pickinga**.
+Tablica se nalazi na putanji **Tablice > Logistika > Vrste Pickinga**.
 
-U ovoj tablici moguće je kodirati različite tipove pickinga koji će se koristiti prilikom kreiranja [Novog pickinga](/docs/logistics/picking/picking-management).
+U ovoj je tablici moguće definirati različite vrste Pickinga koje će se koristiti prilikom kreiranja [novog Pickinga](/docs/logistics/picking/picking-management).
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmjene ili brisanja.
 
-**Pretraživanje tipova pickinga**
+**Pretraživanje vrsta Pickinga**
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u donjoj tablici.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-**Unos tipova pickinga**
+**Unos vrsta Pickinga**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Novo**.
+Za unos novih šifri potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.
 
-**Tip/Opis**: jedinstveni alfanumerički kod i opis *Tipa pickinga*;   
+**Vrsta/Opis**: Jedinstvena alfanumerička šifra i opis *vrste Pickinga*.
 
-**Numeracija**: ovdje se unosi šifra odgovarajuće numeracije. Više informacija dostupno je u članku [Numeracije u Fluentisu](/docs/configurations/tables/fluentis-numerations);
+**Numeriranje**: U ovo polje potrebno je unijeti odgovarajuću šifru numeriranja. Za više informacija pogledajte članak [Numeriranja u Fluentisu](/docs/configurations/tables/fluentis-numerations).
 
-**Numeracija liste za preuzimanje**: označava numeraciju koja će se koristiti za liste utovarnih jedinica kreirane s ovim tipom pickinga;   
+**Numeriranje liste za preuzimanje**: Označava numeriranje koje će se koristiti za UDC liste kreirane ovom vrstom Pickinga.
 
-**Izvršenje tipa računa**: u ovo polje unosi se tip računa koji se predlaže za kreiranje računa iz pickinga putem predviđene procedure;  
+**Razduživanje – vrsta računa**: U ovom polju potrebno je definirati *vrstu računa* koja će se predložiti prilikom kreiranja računa iz Pickinga putem odgovarajućeg postupka.
 
-**Izvršenje tipa otpremnice**: u ovo polje unosi se tip otpremnice koji se predlaže za kreiranje otpremnice iz pickinga putem predviđene procedure;  
+**Razduživanje – vrsta otpremnice**: U ovom polju potrebno je definirati *vrstu otpremnice* koja će se predložiti prilikom kreiranja otpremnice iz Pickinga putem odgovarajućeg postupka.
 
-**Početno stanje**: označava početni *Status* koji se automatski dodjeljuje novom pickingu;
+**Vrsta POS-a**: *Vrsta POS-a* koja će se koristiti prilikom kreiranja POS-a iz Pickinga.
 
-**Skladište / Opis skladišta**: u ova polja unosi se skladište iz kojeg se predlaže kretanje robe na redovima artikala unutar pickinga;     
+**Početni status**: Označava zadani *status* s kojim se kreira Picking.
 
-**Predložak / Opis predloška**: u ova polja navodi se predložak za manipulaciju robom koji se koristi za pickinge ove vrste;  
+**Skladište/Opis skladišta**: U ovo polje unosi se skladište za evidentiranje kretanja robe, koje će se automatski predložiti na stavkama artikala unesenima u Picking.
 
-**Bez izvršenja**: prilikom izvršenja narudžbe putem pickinga, status izvršenja narudžbe se ne mijenja;
+**Predložak/Opis predloška**: U ovom se polju navodi predložak skladišnog kretanja robe sadržane u Pickingu koji pripada ovoj vrsti.
 
-**Izvršenje bez zbrajanja količina artikala**: ako je ova opcija aktivna, prilikom kreiranja pickinga na temelju drugog dokumenta, količine artikala na redovima se neće zbrajati; 
+**Bez razduživanja**: Prilikom razduživanja narudžbe u Pickingu ne mijenja se status razduženja narudžbe.
 
-**Prijenos**: ako je ova opcija aktivna, označava da se radi o internom prijenosu između skladišta;   
+**Količine artikala kod razduživanja ne zbrajaju se**: Ako je ova opcija aktivna, prilikom kreiranja Pickinga iz drugog dokumenta količine razduženih stavki artikala neće se zbrajati.
 
-**Lista preuzimanja materijala**: *Tipovi pickinga* s ovom aktivnom opcijom bit će vidljivi u *Listi preuzimanja materijala*;
+**Prijenos**: Ako je ova opcija aktivna, označava da je riječ o Pickingu za prijenos između internih skladišta.
+
+**Lista za preuzimanje materijala**: Vrste Pickinga s aktivnom ovom opcijom bit će vidljive u funkcionalnosti *Lista za preuzimanje materijala*.
 
 :::note Napomena
-Za *Tipove pickinga* koji će se koristiti u *Listama preuzimanja materijala*, dakle one s aktiviranom opcijom *Lista preuzimanja materijala* potrebno je unijeti skladišni predložak koji uključuje i kontropartiju.  
+Za vrste Pickinga koje će se koristiti u *Listama za preuzimanje materijala*, odnosno za one kod kojih je aktivna opcija *Lista za preuzimanje materijala*, potrebno je unijeti skladišni predložak koji ima i protustavku.
 :::
 
-**Isporuka narudžbi s radnim nalozima**: više se ne koristi;  
+**Kontrola raspoloživosti Pickinga**: Deaktiviranjem ove opcije odgovarajući Pickinzi isključuju se iz *Analize raspoloživosti*.
 
-**Obavezna utovarna jedinica**: tipovi pickinga kod kojih je ova opcija deaktivirana ne mogu se koristiti za preuzimanje utovarnih jedinica te će biti vidljivi u formi za [Potvrdu pickinga](/docs/logistics/wms/sales/check-row-management) unutar WMS-a. Suprotno tome, tipovi pickinga s aktiviranom ovom opcijom bit će prikazani u modulu [Upravljanje označavanjem](/docs/logistics/wms/sales/check-row-management) u WMS-u. 
+**Kontrola raspoloživosti potvrde**: Aktiviranjem ove opcije potvrde u Pickingu uzimaju se u obzir kao rezervacija u *Analizi raspoloživosti*.
 
-**Mogućnost isporuke veće količine**: ako je opcija uključena, sustav omogućuje isporuku količine veće od one navedene u pickingu. Funkcija je dostupna i u [Upravljanju označavanjem](/docs/logistics/wms/sales/check-row-management) i u [Potvrdi pickinga](/docs/logistics/wms/sales/check-row-management). Ako opcija nije uključena, a pokuša se isporučiti veća količina, pojavljuje se upozorenje i onemogućuje se nastavak.  
-**Ispis**: označava naziv pripadajuće ispise te **Broj kopija** koje se automatski ispisuju.   
+**Vidljivo u WMS-u**: Deaktiviranjem ove opcije odgovarajući Pickinzi neće biti vidljivi u obrascima WMS-a.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+**Obvezna utovarna jedinica**: Vrste Pickinga kod kojih je ova opcija deaktivirana neće se moći koristiti za preuzimanje utovarnih jedinica te će biti vidljive u obrascu [Potvrda Pickinga](/docs/logistics/wms/sales/check-row-management) u WMS-u. Nasuprot tome, vrste Pickinga kod kojih je ova opcija aktivna prikazivat će se u funkcionalnosti [Upravljanje potvrdom](/docs/logistics/wms/sales/check-row-management) u WMS-u.
 
+**Dopušteno prekomjerno razduživanje**: Ako je ova opcija aktivna, omogućuje prekomjerno razduživanje količine navedene u Pickingu. Može se koristiti u funkcionalnostima [Upravljanje potvrdom](/docs/logistics/wms/sales/check-row-management) i [Potvrda Pickinga](/docs/logistics/wms/sales/check-row-management) u WMS-u. Ako opcija nije aktivna, pri pokušaju evidentiranja količine veće od navedene prikazuje se poruka upozorenja koja onemogućuje nastavak postupka.
+
+**Ispis**: Označava naziv zadanog izvješća povezanog s Pickingom.
+
+**Broj kopija**: Označava zadani broj kopija za ispis.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

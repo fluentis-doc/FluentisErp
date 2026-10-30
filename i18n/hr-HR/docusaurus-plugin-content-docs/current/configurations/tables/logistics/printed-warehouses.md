@@ -9,10 +9,10 @@ Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se oni pregl
 
 **Pretraživanje skladišnih pisača**
 
-Forma se sastoji od filtracijskog područja i područja s rezultatima. Nakon što postaviš željene filtere, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u rešetki s rezultatima. 
+Forma se sastoji od filtracijskog područja i područja s rezultatima. Nakon što postaviš željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima. 
 
 **Unos skladišnih pisača**
 
-Za unos nove šifre potrebno je kliknuti na prvi prazan redak u rešetki ili pritisnuti tipku **Novo**.
+Za unos nove šifre potrebno je kliknuti na prvi prazan redak u tablici ili pritisnuti tipku **Novo**.
 
 Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
