@@ -1,18 +1,18 @@
 ---
-title: Tip kartice
+title: Tipovi kartica
 sidebar_position: 12
 ---
 
-Tablica omogućuje upravljanje šifriranjem različitih vrsta *Tipa kartice*.
+Tabela omogućava upravljanje šiframa različitih *tipova kartica*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmene ili brisanja.
 
-**Pretraživanje Tipa kartice**
+**Pretraživanje tipova kartica**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-**Unos Tipa kartice**
+**Unos tipova kartica**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

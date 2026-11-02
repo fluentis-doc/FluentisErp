@@ -3,16 +3,16 @@ title: Tip verzije
 sidebar_position: 16
 ---
 
-Tablica omogućuje upravljanje kodiranjem različitih tipova *Tip verzije*.
+Tabela omogućava upravljanje šifrovanjem različitih *tipova verzija*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje Tip verzije**
+**Pretraživanje tipova verzija**
 
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što postavite sve željene filtere, dovoljno je kliknuti na tipk **Traži** kako biste prikazali rezultate u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako biste prikazali rezultate u tabeli rezultata.
 
-**Unos Tip verzije**
+**Unos tipova verzija**
 
-Za unos novih kodova potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazni red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

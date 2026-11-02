@@ -1,39 +1,55 @@
 ---
-title: Razlozi prekida
+title: Predlošci prekida
 sidebar_position: 5
 ---
 
-Ova tablica omogućuje upravljanje šifriranjem različitih tipova *Razloga prekida*.
+Tablica omogućuje upravljanje šiframa različitih vrsta *predložaka prekida*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja. 
+Omogućuje unos novih zapisa ili traženje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-**Pretraživanje razloga prekida**
+**Traženje predložaka prekida**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima.
-Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u prikazanoj mreži.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
-**Unos razloga prekida**
+**Unos predložaka prekida**
 
-Za unos nove šifre potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.
+Za unos novih šifri potrebno je kliknuti u prvi prazni redak tablice ili pritisnuti gumb **Novo**.
 
-*Specifična polja*: 
+*Specifična polja*:
 
-> **Šifra**: označava šifru razloga prekida;           
-> **Opis**: opis razloga prekida;   
-> **Redovno održavanje**: trenutno nije implementirano;                    
-> **Izvanredno održavanje**: trenutno nije implementirano;            
-> **Generiranje naloga za održavanje**: trenutno nije implementirano;          
-> **Korisnici**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;          
-> **Odsutnost**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;              
-> **Prenos**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;               
-> **Zadano**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;               
-> **Zadano za prenos**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;               
-> **Neizravno**: trenutno nije implementirano;     
-> **Stroj**: trenutno nije implementirano;     
-> **Vrsta**: označava tip razloga prekida, može biti;
-> > **Proizvodnja**: vrijeme između *prekida* i *nastavka* smatra se izgubljenim vremenom zbog vanjskih uzroka (npr. neispravan materijal od dobavljača/klijenta);        
-> > **Podešavanje**: vrijeme se računa kao vrijeme podešavanja;          
-> > **Gubitak**: vrijeme se računa kao izgubljeno vrijeme zbog internih uzroka;           
-> > **Održavanje**: vrijeme se računa kao vrijeme održavanja stroja ili postrojenja.
+> **Šifra**: označava šifru predloška prekida;
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Opis**: označava opis predloška prekida;
+
+> **Redovni (običan) pregled**: trenutačno nije implementirano;
+
+> **Izvanredni pregled (remont)**: trenutačno nije implementirano;
+
+> **Generiranje naloga**: trenutačno nije implementirano;
+
+> **Korisnici**: koristi se u obrascu za upravljanje radnim satima zaposlenika, koji se nalazi na putanji *Proizvodnja > Upravljanje satima proizvodnje > Upravljanje satima zaposlenika*;
+
+> **Izostanak**: koristi se u obrascu za upravljanje radnim satima zaposlenika, koji se nalazi na putanji *Proizvodnja > Upravljanje satima proizvodnje > Upravljanje satima zaposlenika*;
+
+> **Ustupanje (zajam)**: koristi se u obrascu za upravljanje radnim satima zaposlenika, koji se nalazi na putanji *Proizvodnja > Upravljanje satima proizvodnje > Upravljanje satima zaposlenika*;
+
+> **Zadano**: koristi se u obrascu za upravljanje radnim satima zaposlenika, koji se nalazi na putanji *Proizvodnja > Upravljanje satima proizvodnje > Upravljanje satima zaposlenika*;
+
+> **Zadano ustupanje (zajam)**: koristi se u obrascu za upravljanje radnim satima zaposlenika, koji se nalazi na putanji *Proizvodnja > Upravljanje satima proizvodnje > Upravljanje satima zaposlenika*;
+
+> **Neizravan**: trenutačno nije implementirano;
+
+> **Stroj**: trenutačno nije implementirano;
+
+> **Blokiraj prijedloga faze u M.E.S.-u**: prilikom prekida aktivnosti, ako se odabere *predložak prekida* s aktiviranom ovom oznakom, prekinuta faza neće biti prikazana pri sljedećem predlaganju faza u obradi za radni centar. Kako bi se nastavila obrada prekinute faze, potrebno ju je odabrati pomoću gumba **Odaberi nove faze** i evidentirati nastavak rada;
+
+> **Tip**: označava vrstu predloška prekida, a može biti:
+> > **Proizvodnja**: označava da se vrijeme između *prekida* i sljedećeg *nastavka* smatra izgubljenim vremenom zbog uzroka izvan poduzeća (primjerice, materijal koji je poslao dobavljač ili kupac nije sukladan);
+
+> > **Podešavanje**: označava da se vrijeme između *prekida* i sljedećeg *nastavka* smatra vremenom podešavanja;
+
+> > **Gubitak**: označava da se vrijeme između *prekida* i sljedećeg *nastavka* smatra izgubljenim vremenom zbog uzroka unutar poduzeća;
+
+> > **Održavanje**: označava da se vrijeme između *prekida* i sljedećeg *nastavka* smatra vremenom održavanja postrojenja.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

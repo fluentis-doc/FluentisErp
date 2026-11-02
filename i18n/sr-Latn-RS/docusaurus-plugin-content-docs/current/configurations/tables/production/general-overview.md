@@ -1,5 +1,5 @@
 ---
-title: Općenito
+title: Opšte
 sidebar_position: 1
 ---
 

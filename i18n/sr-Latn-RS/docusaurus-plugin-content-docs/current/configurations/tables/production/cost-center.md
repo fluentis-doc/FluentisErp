@@ -1,26 +1,27 @@
 ---
-title: Troškovni centri
+title: Centri troška
 sidebar_position: 6
 ---
-  
-Ovo je tablica u koju se unose tarife koje se povezuju sa strojem i grupom radne snage kako bi se moglo vrednovati faze obrade unutar različitih radnih centara.  
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Ovo je tabela u koju se unose tarife koje se povezuju sa mašinom i grupom radnika kako bi se mogle vrednovati faze obrade na različitim radnim centrima.
 
-**Pretraživanje troškovnih centara**
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmene ili brisanja.
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+**Pretraživanje centara troška**
 
-**Unos troškovnih centara**
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi** nakon čega je moguće odabrati troškovni centar iz padajućeg izbornika. Ako želite unijeti novi troškovni centar, potrebno ga je prethodno dodati u tablicu [Poslovni centri](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers/) te aktivirati flag **Vidljiv u proizvodnji**. U suprotnom neće biti prikazan u izborniku za unos **Troškovnih centara**. 
+**Unos centara troška**
 
-Za novi zapis obavezno je unijeti barem sljedeća polja: **Šifra** troškovnog centra i **Verzija**, budući da je moguće definirati različite troškove za različite verzije istog troškovnog centra.           
-Nakon toga moguće je dodijeliti tom centru određeni **Trošak**, koji će se koristiti za izračun troškova. Ako se ne specificira nijedna **JM**, unesena tarifa će se smatrati satnicom (tarifa po satu).
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**. Zatim je moguće odabrati centar troška koji se želi dodati iz padajućeg menija. Za kreiranje novog centra troška potrebno ga je uneti u tabelu [Centri preduzeća](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers/) i aktivirati oznaku **Vidljivo u proizvodnji**. U suprotnom neće biti dostupan u padajućem meniju za unos **Centara troška**.
 
-Troškovni centri mogu se povezati sa sljedećim resursima:  
-- [Stroj](/docs/configurations/tables/production/machines)
-- [Grupa radne snage](/docs/configurations/tables/production/labour-group)
-- [Pojedini operater unutar grupe radne snage](/docs/configurations/tables/production/labour-group)
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifru** centra troška i **Verziju**, jer je moguće imati različite troškove za pojedine verzije istog centra troška.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Nakon toga moguće je centru dodeliti **Trošak**, koji će se koristiti za obračun troškova. Ako nije navedena **Merna jedinica**, uneta tarifa smatraće se satnom tarifom.
+
+Centri troška mogu se povezati sa sledećim resursima:
+- [Mašina](/docs/configurations/tables/production/machines)
+- [Grupa radnika](/docs/configurations/tables/production/labour-group)
+- [Pojedinačni operater iz grupe radnika](/docs/configurations/tables/production/labour-group)
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

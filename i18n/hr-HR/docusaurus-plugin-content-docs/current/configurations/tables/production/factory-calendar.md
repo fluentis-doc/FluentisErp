@@ -3,30 +3,36 @@ title: Tvornički kalendar
 sidebar_position: 4
 ---
 
-Putem ovog prozora moguće je generirati i/ili izmijenit *Tvornički kalendar* poduzeća, ključni element koji se uzima u obzir prilikom izvođenja procedura **Općeg planiranja**, **Planiranja s ograničenim kapacitetom** i **MRP-a**.
+U ovom je prozoru moguće generirati i/ili izmijeniti *tvornički kalendar* poduzeća, koji je ključan element koji uzimaju u obzir postupci **Općeg planiranja**, **Raspoređivanja uz ograničene kapacitete** i **MRP-a**.
 
-Prozor se prikazuje kao tablica u kojoj se nalaze onoliko ćelija koliko ima dana u mjesecu odabranom u gornjem desnom kutu.
-U prvom polju prikazuju se **Mjesec** i **Godina** na koje se kalendar odnosi, a koji se mogu odabrati putem kombiniranog izbornika i polja za unos ili klikom na tipke **Prethodna godina / Sljedeća godina** i **Prethodni mjesec / Sljedeći mjesec**.
+Prozor je prikazan u obliku tablice s onoliko polja koliko ima dana u mjesecu odabranom u gornjem desnom kutu.
 
-U svakoj ćeliji nalazi se flag koji, ako je aktiviran, označava da je taj dan *Praznik*.  
-Ako je određeni dan označen kao *Praznik* sustav će pri generiranju [Kalendar proizvodnih kapaciteta](/docs/configurations/tables/production/productive-capacity-calendar) automatski generirati dostupnost *Proizvodnih resursa*isključivo za dane koji u *Tvorničkom kalendaru* nisu označeni kao praznici.  
-Ova informacija također je važna pri definiranju *vrijeme isporuke od preferiranih dobavljača*, jer se ono također mora računati prema *Tvorničkom kalendaru*.  
+U prvom polju nalaze se **Mjesec** i **Godina** na koje se kalendar odnosi. Mogu se odabrati putem padajućeg izbornika i susjednog polja za unos ili klikom na gumbe **Prethodna/sljedeća godina** i **Prethodni/sljedeći mjesec**.
+
+U svakom polju nalazi se oznaka koja, ako je aktivirana, označava da je određeni dan *neradni dan*.
+
+Označavanje određenog dana kao *neradnog dana* omogućuje aplikaciji da prilikom generiranja [Kalendara proizvodnih kapaciteta](/docs/configurations/tables/production/productive-capacity-calendar) automatski kreira raspoloživost *proizvodnog resursa* samo za dane koji u *Tvorničkom kalendaru* nisu označeni kao neradni.
+
+Osim toga, podaci o neradnim danima važni su i pri definiranju *vremena nabave kod preferiranih dobavljača*, koje je stoga potrebno odrediti uzimajući u obzir *Tvornički kalendar*.
+
 *Primjer*:
-Ako se subota i nedjelja smatraju praznicima, a kao vrijeme isporuke postavi se 10 dana, to zapravo podrazumijeva otprilike 2 kalendarska tjedna, jer se radni tjedan u tom slučaju sastoji od 5 dana.
 
-Nakon što su svi podaci uneseni, dovoljno je kliknuti na tipku **Spremi**.
+Ako su subota i nedjelja označene kao neradni dani, postavljanjem vremena nabave na 10 dana podrazumijeva se ukupno vrijeme od približno dva tjedna, s obzirom na to da se radni tjedan u ovom slučaju sastoji od samo pet kalendarskih dana.
 
-Flagovi koji označavaju praznike mogu se postaviti:  
-- **ručno** izravno od strane korisnika 
-ili, što je uobičajenije,   
-- korištenjem tipke na traci izbornika pod nazivom **Generiranje tvorničkog kalendara**. Klikom na ovu tipku otvara se pop-up prozor pod nazivom Generiranje kalendara.  
+Nakon postavljanja svih polja dovoljno je kliknuti gumb **Spremi**.
 
-U ovom prozoru korisnik može automatski generirati tvornički kalendar za određenu godinu, koju unosi u polje **Generiranje kalendara za godinu**.  
-Nakon odabira dana u tjednu koji se smatraju praznicima i odluke treba li uzeti u obzir postavke iz tablice *Godišnji praznici*, korisnik klikne na **OK** kako bi automatski generirao kalendar za odabranu godinu.  
+Oznake neradnih dana mogu se postaviti:
+- **ručno**, od strane korisnika;
+- ili, kao što je uobičajeno, pomoću gumba na vrpci **Generiranje tvorničkog kalendara**. Klikom na ovaj gumb otvara se skočni prozor **Generiranje kalendara**.
 
-Nakon generiranja kalendara, potrebno je ponovno kliknuti na Spremi i zatvoriti prozor Tvorničkog kalendara. 
+U ovom skočnom prozoru korisnik može odabrati automatsko generiranje tvorničkog kalendara za određenu godinu, koju može unijeti u odgovarajuće polje **Generiranje kalendara za godinu**.
 
-*Specifična tipka*:  
-> **Generiranje tvorničkog kalendara**: otvara pop-up prozor za automatsko generiranje tvorničkog kalendara za cijelu godinu.  
+Nakon odabira neradnih dana u tjednu i odluke o tome hoće li se uzeti u obzir postavke definirane u tablici *Godišnji blagdani*, kliknite gumb **U redu** kako bi se automatski generirao tvornički kalendar za odabranu godinu.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Nakon generiranja kalendara korisnik mora ponovno kliknuti gumb **Spremi** i zatvoriti prozor tvorničkog kalendara.
+
+*Poseban gumb*:
+
+> **Generiranje tvorničkog kalendara**: omogućuje otvaranje skočnog prozora za automatsko generiranje tvorničkog kalendara za cijelu godinu.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

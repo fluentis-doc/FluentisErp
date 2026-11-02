@@ -1,32 +1,54 @@
 ---
-title: Kalendar kapaciteta proizvodnje
+title: Kalendar proizvodnih kapaciteta
 sidebar_position: 3
 ---
 
-Prozor se prikazuje kao tablica u kojoj se nalaze onoliko polja koliko ima dana u mjesecu odabranom u gornjem desnom kutu.
-U prvom se polju nalaze **Mjesec** i **Godina** na koje se kalendar odnosi, a mogu se odabrati putem padajućeg izbornika i polja za unos pored njega ili pomoću tipki **Prethodna/Sljedeća godina** i **Prethodni/Sljedeći mjesec**.
+Prozor je prikazan kao tablica unutar koje se nalazi onoliko polja koliko ima dana u mjesecu odabranom u gornjem desnom kutu.
 
-U nastavku se nalaze niz padajućih izbornika pomoću kojih se odabire Radni centar za koji se želi kreirati kalendar, **Stroj** te **Grupa radne snage**.
+U prvom polju nalaze se **Mjesec** i **Godina** na koje se odnosi prikaz, a mogu se odabrati putem padajućeg izbornika i susjednog polja za unos ili klikom na gumbe **Prethodna/sljedeća godina** i **Prethodni/sljedeći mjesec**.
 
-U svakoj ćeliji nalazi se flag koji, ako je aktiviran, označava da je taj dan *Praznik*.  
-Ako je određeni dan označen kao *Praznik* korisnik može osigurati da prilikom generiranja *Kalendara kapaciteta proizvodnje* aplikacija automatski generira dostupnost *proizvodnih resursa* samo za dane koji u [Kalendaru tvornice](/docs/configurations/tables/production/factory-calendar) nisu označeni kao praznični.  
+U nastavku se nalazi niz padajućih izbornika u kojima se odabiru **Radni centar** za koji se želi izraditi kalendar, **Stroj** i **Grupa radnika**.
 
-Osim flaga, unutar svake ćelije moguće je vidjeti i/ili izmijeniti i broj *sati proizvodnog kapaciteta* tog radnog centra (dakle, koliko sati dnevno može raditi).  
+U svakom polju nalazi se oznaka koja, ako je aktivirana, označava da je određeni dan *neradni dan*.
 
-Moguće je postaviti da radni centar radi svaki dan osim praznika, a u slučaju **Iznimki** dovoljno je pozicionirati se na određeni dan, dodati ili ukloniti flag te povećati ili smanjiti broj radnih sati.
+Označavanje određenog dana kao *neradnog dana* omogućuje korisniku da prilikom generiranja *kalendara proizvodnih kapaciteta* aplikacija automatski generira raspoloživost *proizvodnog resursa* samo za dane koji su u [Tvorničkom kalendaru](/docs/configurations/tables/production/factory-calendar) označeni kao radni dani.
 
-Kalendar kapaciteta proizvodnje ima prednost nad kalendarom tvornice.
+Osim te oznake, u svakom polju prikazuju se i *sati/minute proizvodnog kapaciteta* tog radnog centra za određeni dan.
 
-Nakon što se svi potrebni podaci postave, dovoljno je kliknuti tipku **Spremi**.
+U donjem popisu *Radnih razdoblja* za prikazani radni centar i mjesec navedene su sljedeće informacije:
 
-Klikom na tipku **Automatsko generiranje** otvara se novi obrazac u kojem se može navesti godina za koju će se kalendar generirati te broj sati dnevnog kapaciteta koji će se uzeti u obzir samo za one radne centre koji nemaju definirano vlastito radno vrijeme (početak i kraj).
+> **Dan**: naziv dana u tjednu na koji se odnosi; informacija je samo za čitanje.
 
-Ovim postupkom moguće je generirati kalendare za sve radne centre istovremeno ili, uklanjanjem flaga **Generiranje kalendara** za sve radne centre i pritiskom na tipku **Traži**, ručno odabrati radne centre za koje se želi kreirati kalendar.
+> **Datum**: datum na koji se odnosi, u formatu *dan/mjesec/godina*; informacija je samo za čitanje.
 
-Tijekom kreiranja moguće je odlučiti hoće li se uzeti u obzir postotak iskorištenosti definiran unutar radnog centra.
+> **Neradni dan**: označava je li *Datum* neradni ili radni dan; informacija je samo za čitanje.
 
-*Specifična tipka*:  
-> **Automatsko generiranje:**: omogućuje otvaranje prozora u kojem se postavljaju parametri za generiranje zajedničkog kalendara za više radnih centara s istim parametrima za sve mjesece u godini.
-Nakon što se unesu parametri zajedničkog kalendara, pomoću ove tipke može se pokrenuti njegovo stvarno kreiranje.  
+> **Vrijeme početka**: početak radnog razdoblja za određeni *Datum*, u formatu *sati:minute*, preuzet iz postavki *Radnog centra*; informacija se može mijenjati. Promjena uzrokuje ponovni izračun proizvodnog kapaciteta za taj dan.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Vrijeme završetka**: završetak radnog razdoblja za određeni datum, u formatu *sati:minute*, preuzet iz postavki *Radnog centra*; informacija se može mijenjati. *Vrijeme završetka* ne može biti ranije od *Vremena početka*. Promjena uzrokuje ponovni izračun proizvodnog kapaciteta za taj dan.
+
+> **Broj**: broj resursa (stroj ili radnik), preuzet iz postavki *Radnog centra*; informacija se može mijenjati. Promjena uzrokuje ponovni izračun proizvodnog kapaciteta za taj dan.
+
+> **Vrsta resursa**: vrsta resursa na koju se odnosi navedeni broj; preuzeta je iz postavki *Radnog centra*; informacija je samo za čitanje.
+
+:::important Izračun dnevnog proizvodnog kapaciteta
+Dnevni proizvodni kapacitet izračunava se prema sljedećoj formuli:
+
+> Σ ((Vrijeme završetka - Vrijeme početka) * Broj)
+:::
+
+Kalendar proizvodnih kapaciteta ima prednost pred Tvorničkim kalendarom.
+
+Nakon što postavite sva polja, dovoljno je kliknuti gumb **Spremi**.
+
+Klikom na gumb **Automatsko generiranje** otvara se novi obrazac u kojem je moguće odrediti godinu za koju će se generirati kalendar te broj sati dnevnog kapaciteta. Taj će se broj sati uzeti u obzir samo za one radne centre za koje nisu definirana odgovarajuća vremena početka i završetka.
+
+Ovim postupkom moguće je generirati kalendare za sve radne centre istodobno. Ako uklonite oznaku **Generiranje kalendara za sve radne centre** i kliknete gumb **Traži**, moći ćete ručno odabrati radne centre za koje želite izraditi kalendar.
+
+Prilikom izrade kalendara moguće je odabrati hoće li se uzeti u obzir postotak iskorištenja definiran u postavkama radnog centra.
+
+*Poseban gumb*:
+
+> **Automatsko generiranje**: otvara prozor u kojem je moguće postaviti različite parametre za generiranje zajedničkog kalendara za više radnih centara, uz jednake parametre za sve mjesece u godini. Nakon unosa parametara zajedničkog kalendara, putem istog gumba moguće je pokrenuti njegovu izradu.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, gumbe i polja, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

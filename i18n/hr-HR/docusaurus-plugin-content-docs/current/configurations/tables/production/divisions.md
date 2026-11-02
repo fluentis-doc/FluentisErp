@@ -1,5 +1,5 @@
 ---
-title: Odjeli
+title: Sektor/Odjeli
 sidebar_position: 11
 ---
 
@@ -9,17 +9,17 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovo
 
 **Pretraživanje odjela**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
 **Unos odjela**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**. 
+Za unos novih šifri potrebno je kliknuti na prvi prazan redak u tablici ili pritisnuti tipku **Novo**. 
 
 Za novi zapis obavezno je unijeti barem osnovna polja koja sustav zahtijeva: alfanumerički **Kod** odjela i njegov **Opis**. 
 
 *Specifična polja*: 
 
-**Odjel**: označava šifru odjela;  
+**Sektor/Odjel**: označava šifru odjela;  
 **Opis**: opisuje odjel;  
 **Datum unosa**: datum kada je zapis unesen;  
 **Datum izmjene**: datum posljednje izmjene zapis.  

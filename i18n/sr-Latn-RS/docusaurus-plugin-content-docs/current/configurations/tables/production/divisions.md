@@ -1,28 +1,27 @@
 ---
-title: Odjeli
+title: Sektor/Odeljenja
 sidebar_position: 11
 ---
 
-Ova tablica nije obavezna i omogućuje šifriranje različitih proizvodnih odjela.
+Ova tabela nije obavezna i omogućava šifriranje različitih proizvodnih odeljenja.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmene ili brisanja.
 
-**Pretraživanje odjela**
+**Pretraživanje odeljenja**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-**Unos odjela**
+**Unos odeljenja**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**. 
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+Za novi zapis obavezno je uneti barem osnovna polja koja sistem zahteva: alfanumeričku **Šifru** odeljenja i njegov **Opis**.
 
-Za novi zapis obavezno je unijeti barem osnovna polja koja sustav zahtijeva: alfanumerički **Kod** odjela i njegov **Opis**. 
+*Specifična polja*:
 
-*Specifična polja*: 
+**Setor/Odeljenje**: označava šifru odeljenja;
 
-**Odjel**: označava šifru odjela;  
-**Opis**: opisuje odjel;  
-**Datum unosa**: datum kada je zapis unesen;  
-**Datum izmjene**: datum posljednje izmjene zapis.  
+**Opis**: opisuje odeljenje;
+**Datum unosa**: datum kada je zapis unet;
+**Datum izmene**: datum poslednje izmene zapisa.
 
-
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

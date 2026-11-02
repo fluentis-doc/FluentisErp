@@ -1,22 +1,22 @@
 ---
-title: Tip kostifikacije narudžbe
+title: Tip obračuna troškova naloga
 sidebar_position: 19
 ---
 
-Tablica omogućuje upravljanje šifriranjem različitih vrsta *Tipova kostifikacije narudžbe*.
+Tabela omogućava upravljanje šiframa različitih tipova *obračuna troškova naloga*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmene ili brisanja.
 
-**Pretraživanje tipa kostifikacije narudžbe**
+**Pretraživanje tipova obračuna troškova naloga**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-**Unos tipa kostifikacije narudžbe**    
+**Unos tipova obračuna troškova naloga**
 
-Za unos novih šifri potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novo**.    
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
 :::note Napomena
-Za svaki novi unos potrebno je navesti *Šifra* i *Opis* tipa kostifikacije te pripadajuću *Numeraciju*; nakon toga se automatski preuzimaju podaci o *Vrsti troška*, *Trošku lota*, *Trošku narudžbe* i *Vrsti marže* iz odjeljka  *kostifikacija narudžbe* unutar [MS parametara](/docs/configurations/parameters/production/mps-parameters), naravno, ti se podaci po potrebi mogu naknadno ručno izmijeniti.     
-:::    
+Prilikom svakog novog unosa potrebno je navesti *Šifru* i *Opis* tipa obračuna troškova, kao i pripadajuće *Numerisanje*. Nakon toga automatski se popunjavaju podaci o *Tipu troška*, *Trošku lota*, *Trošku naloga* i *Tipu dodatka*, preuzeti iz odeljka *Obračun troškova naloga* u [MS parametrima](/docs/configurations/parameters/production/mps-parameters). Te podatke je, prema potrebi, moguće naknadno ručno izmeniti.
+:::
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).     
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

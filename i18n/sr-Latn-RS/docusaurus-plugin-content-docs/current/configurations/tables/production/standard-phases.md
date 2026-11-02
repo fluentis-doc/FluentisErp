@@ -3,68 +3,104 @@ title: Standardne faze
 sidebar_position: 7
 ---
 
-Ova tablica odgovara registru faza koje se koriste u radnim ciklusima; u njoj se kodiraju sve faze s pripadajućim podacima kako bi se kasnije mogle predložiti i odabrati unutar radnog ciklusa.
+Ova tabela odgovara šifarniku faza koje se koriste u radnim ciklusima. U njoj se definišu sve faze sa pripadajućim podacima kako bi se kasnije mogle predložiti i odabrati unutar radnog ciklusa.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmene ili brisanja.
 
-**Pretraživanje standardnih faza**
+**Traženje standardnih faza**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
 **Unos standardnih faza**
 
-Za unos novih šifri potrebno je kliknuti u rešetki na prvi prazan redak ili pritisnuti tipku **Novi**. 
+Za unos novih šifara potrebno je kliknuti na prvi prazni red u tabeli ili pritisnuti dugme **Novo**.
 
-Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Kod**, **Opis faze/podfaze**, **Radni centar**  i **Jedinicu mjere vremena**.         
-Kada se unese radni centar, on automatski preuzima informacije o stroju i grupi radne snage navedene u tablici radnih centara, no korisnik ih može ručno izmijeniti na samoj fazi.
-Također, važno je obratiti pozornost da kodovi **Faza** i **Podfaza** budu jedinstveni, inače će se prikazati poruka upozorenja.  
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifra**, **Opis faze/podfaze**, **Radni centar** i **Merna jedinica vremena**.
 
-Jedan od najvažnijih podataka za unos u ovu tablicu je **Vrsta faze/podfaze**: *Interna* ili *Eksterna*. Ako je interna, znači da se obavlja unutar proizvodnog pogona, dok ako je eksterna, znači da se daje u kooperaciju vanjskom dobavljaču i generirat će nalog za kooperaciju namijenjen njezinu izvršenju  
+Prilikom odabira radnog centra automatski se preuzimaju i podaci o mašini i grupi radnika definisani u tabeli radnih centara. Korisnik ih ipak može ručno izmeniti direktno na fazi.
 
-*Specifična polja:*: 
+Osim toga, potrebno je voditi računa o tome da se unesu jedinstvene vrednosti za polja **Faza** i **Podfaza**, jer će se u suprotnom prikazati poruka upozorenja.
 
-**Kod**: označava kod standardne faze; 
-**Faza**: označava redni broj faze;   
-**Podfaza**: označava broj podfaze unutar iste faze;  
-**Opis faze/podfaze**: označava opis faze/podfaze;   
-**Vrsta faze/podfaze**: označava je li faza/podfaza interna ili eksterna;   
-**Proizvodna faza**: označava radi li se o fazi proizvodnog tipa;  
-**Kreiranje zaliha**: označava da faza generira skladišne pokrete (izdavanje i zaprimanje);    
-**Kontrola kvalitete**: ako je aktivirano, ovaj flag označava da je faza podložna analizama vezanim uz kontrolu kvalitete;    
-**Radni centar**: označava šifru radnog centra (CdL);  
-**Fiksno vrijeme**: označava da radni centar radi s fiksnim vremenom, tj. vrijeme obrade artikla ne ovisi o broju komada;    
-**J.M. vremena**: označava jedinicu mjere vremena faze;    
-**Vrijeme čekanja/red čekanja**: označava vrijeme potrebno pričekati nakon završetka faze prije njezina ponovnog izvođenja;         
-**Vrijeme pripreme**: označava vrijeme potrebno za pripremu stroja prije početka obrade;   
-**Vrijeme ponovne priprem**: označava vrijeme potrebno za prilagodbu stroja između izrade više komada;   
-**Stroj**: označava kod stroja;   
-**Vrijeme stroja**: označava vrijeme korištenja stroja u toj fazi;                         
-**Broj strojeva**: označava broj strojeva koji su istovremeno angažirani u proizvodnji;  
-**Broj komada**: označava broj komada proizvedenih pri jednom izvođenju te faze;               
-**Grupa radne snage**: označava kod grupe radne snage;  
-**Dodijeljeno vrijeme**: označava vrijeme koje radna snaga utroši u toj fazi;              
-**Broj radnika**: označava broj radnika koji rade na fazi;           
-**Održavanje**: označava je li faza tipa održavanja;          
-**Trošak**: indica il costo della fase per produrre i pezzi indicati nel campo Numero pezzi;    
-**Descrizione terzista**: označava trošak faze za izradu komada navedenih u polju **Broj komada**;  
-**Opis kooperanta**: indica l'ubicazione di magazzino associata a quella fase; questo significa che tutti gli articoli impiegati in quella fase saranno presenti in quell'ubicazione;    
-**Tipo fatturato acquisto**: označava vrstu fakturiranog troška prikazanog na razini stavke u nalogu za posao (omogućeno samo ako je faza tipa **Vanjska**);      
-**Opis vrste fakturiranog troška**: označava opis vrste fakturiranog troška prikazanog na razini stavke u nalogu za posao (omogućeno samo ako je faza tipa **Vanjska**);      
-**Vrsta plana kontrole**: označava vrstu plana za kontrolu kvalitete (samo ako je označeno polje **Kontrola kvalitete**);  
-**Godina plana kontrole**: označava godinu plana za kontrolu kvalitete (samo ako je označeno polje **Kontrola kvalitete**);  
-**Šifra plana kontrole**: označava šifru plana za kontrolu kvalitete (samo ako je označeno polje  **Kontrola kvalitete**);  
-**Opis plana kontrole**: označava opis plana za kontrolu kvalitete (samo ako je označeno polje **Kontrola kvalitete**);  
-**Datum kreiranja**: označava datum kreiranja zapisa;    
-**Datum izmjene**: označava datum zadnje izmjene zapisa;   
-**Bilješke**: slobodno polje za unos bilješki;  
-**Opis radnog centra**: označava opis radnog centra;    
-**Opis stroja**: označava opis stroja;  
-**Opis skupine radne snage**: označava opis skupine radne snage.  
-      
+Jedan od najvažnijih podataka koji je potrebno uneti u ovu tabelu jeste **Tip faze/podfaze**: *Interna* ili *Eksterna*. Ako je reč o internoj fazi, to znači da se ona izvodi unutar proizvodnog pogona. Ako je reč o eksternoj fazi, ona se poverava dobavljaču kao podizvođaču, a za njeno izvršenje automatski se generiše odgovarajuća narudžbina podizvođaču.
 
-:::note Napomena 
-Sve vanjske faze moraju uvijek imati aktivna polja **Proizvodna faza** i **Faza s pomicanjem**.
+*Posebna polja*:
+
+**Šifra**: označava šifru standardne faze;
+
+**Faza**: označava redni broj faze;
+
+**Podfaza**: označava broj podfaze unutar iste faze;
+
+**Opis faze/podfaze**: označava opis faze/podfaze;
+
+**Tip faze/podfaze**: označava da li je faza/podfaza interna ili eksterna;
+
+**Proizvodna faza**: označava da li je reč o fazi proizvodnog tipa;
+
+**Dozvoljeno kretanje**: označava da će faza generisati skladišna kretanja (izlaze i ulaze);
+
+**Kontrola kvaliteta**: ako je aktivirana, ova oznaka određuje da faza podleže nizu analiza povezanih sa kontrolom kvaliteta;
+
+**Radni centar**: označava šifru radnog centra;
+
+**Fiksno vreme**: označava da radni centar radi sa fiksnim vremenom, odnosno da vreme obrade artikla ne zavisi od broja komada;
+
+**Merna jedinica vremena**: označava mernu jedinicu vremena faze;
+
+**Vreme čekanja/red čekanja**: označava vreme koje mora proteći nakon završetka faze pre nego što ona može ponovo da se izvrši;
+
+**Vreme podešavanja**: označava vreme potrebno za podešavanje pre početka obrade;
+
+**Vreme ponovnog podešavanja**: označava vreme potrebno za ponovno podešavanje mašine između proizvodnje jednog ili više komada;
+
+**Mašina**: označava šifru mašine;
+
+**Vreme mašine**: označava vreme korišćenja mašine u ovoj fazi;
+
+**Broj mašina**: označava broj mašina koje istovremeno učestvuju u obradi;
+
+**Broj delova**: označava broj komada proizvedenih tokom svakog izvođenja te faze;
+
+**Grupe rada**: označava šifru grupe radnika;
+
+**Dodeljeno vreme**: označava vreme koje radnici utroše na tu fazu;
+
+**Broj radnika**: označava broj radnika koji obavljaju fazu;
+
+**Održavanje**: označava da li je faza namenjena održavanju;
+
+**Trošak**: označava trošak faze za proizvodnju broja komada navedenog u polju Broj komada;
+
+**Opis podizvođača**: označava opis podizvođača (polje je omogućeno samo ako je faza tipa **Eksterna**);
+
+**Lokacija**: označava skladišnu lokaciju povezanu sa tom fazom; to znači da će se svi artikli koji se koriste u toj fazi nalaziti na toj lokaciji;
+
+**Tip prometa nabavke**: označava tip fakturisanja nabavke naveden na nivou reda artikla u narudžbini podizvođaču (polje je omogućeno samo ako je faza tipa **Eksterna**);
+
+**Opis prometa nabavke**: označava opis tipa fakturisanja nabavke navedenog na nivou reda artikla u narudžbini podizvođaču (polje je omogućeno samo ako je faza tipa **Eksterna**);
+
+**Tip kontrolnog plana**: označava tip plana za kontrolu kvaliteta (samo ako je aktivirana oznaka **Kontrola kvaliteta**);
+
+**Godina kontrolnog plana**: označava godinu plana za kontrolu kvaliteta (samo ako je aktivirana oznaka **Kontrola kvaliteta**);
+
+**Kontrolni**: označava šifru plana za kontrolu kvaliteta (samo ako je aktivirana oznaka **Kontrola kvaliteta**);
+
+**Opis kontrolnog plana**: označava opis plana za kontrolu kvaliteta (samo ako je aktivirana oznaka **Kontrola kvaliteta**);
+
+**Datum izrade**: označava datum izrade zapisa;
+
+**Datum izmene**: označava datum poslednje izmene zapisa;
+
+**Napomene**: slobodno polje za unos napomena;
+
+**Opis radnog centra**: označava opis radnog centra;
+
+**Opis mašine**: označava opis mašine;
+
+**Opis grupe radnika**: označava opis grupe radnika.
+
+:::note Napomena
+Sve eksterne faze uvek moraju imati aktivirane oznake **Proizvodna faza** i **Dozvoljeno kretanje**.
 :::
 
-
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, dugmad i polja, pogledajte sledeću poveznicu [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

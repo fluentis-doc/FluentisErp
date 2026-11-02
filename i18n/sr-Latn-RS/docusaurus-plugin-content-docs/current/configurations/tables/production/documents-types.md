@@ -1,32 +1,34 @@
 ---
-title: Vrste dokumenata
+title: Tipovi dokumenata
 sidebar_position: 13
 ---
 
 :::important Čemu služi
-Tablica Vrste dokumenata, omogućuje kreiranje i međusobno povezivanje svih dokumenata koji se koriste unutar područja [Planiranja](/docs/planning/planning-intro/) i [Proizvodnje](/docs/production/production-intro/).
+Tabela Tipovi dokumenata omogućava kreiranje i međusobno povezivanje svih dokumenata kojima se upravlja u oblastima [Planiranje](/docs/planning/planning-intro/) i [Proizvodnja](/docs/production/production-intro/).
 :::
 
-Ova tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmene ili brisanja.
 
-**Pretraživanje vrsta dokumenata**
+**Pretraživanje tipova dokumenata**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-**Unos vrsta dokumenata**
+**Unos tipova dokumenata**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za novi zapis obavezno je unijeti barem sljedeća polja: alfanumerički **Kod** vrste, njezin **Opis**, odgovarajući **Standardni kod** te **Vrstu numeriranja**. Standardni kod definira tip dokumenta koji se kreira, a to može biti: komisija proizvodnje, kupčev narudžbeni nalog, nalog za doradu ili proizvodni nalog, kao i planirana narudžba za nabavu, doradu ili proizvodnju.
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: alfanumeričku **Šifru** tipa dokumenta, njegov **Opis**, odgovarajuću **Standardnu šifru** i **Tip numerisanja**. Standardna šifra određuje tip upravo kreiranog dokumenta, koji može biti: nalog za proizvodnju, narudžbina kupca, narudžbina podizvođaču ili nalog za proizvodnju, odnosno planirani nalog za nabavku, podizvođača ili proizvodnju.
 
-Moguće je imati više dokumenata s istim standardnim kodom; u tom slučaju pomoću flag-a Zadano određuje se koji će dokument sustav koristiti kao glavni/podrazumijevani.     
+Za istu standardnu šifru moguće je imati više dokumenata. Stoga je aktiviranjem oznake **Podrazumevano (def.)** moguće odrediti koji će dokument sistem koristiti kao podrazumevani.
 
-Nakon unosa, za svaki dokument potrebno je definirati odgovarajuće Vrste generiranih dokumenata.        
-Primjerice, ako se radi o dokumentu tipa komisija proizvodnje, korisnik treba unijeti dokumente koji iz nje proizlaze: *planirane narudžbe za nabavu, proizvodnju i doradu.*    
-Zauzvrat, *planirane narudžbe za nabavu* generiraju odgovarajuću vrstu *zahtjeva za nabavu*, dok *planirane narudžbe za doradu* kreiraju vrstu *naloga za doradu*. Na kraju, *planirane narudžbe za proizvodnju* generiraju vrstu *naloga za proizvodnju* te potencijalno i *nalog za doradu* za vanjske faze unutar radnog ciklusa.
+Nakon završetka unosa potrebno je za svaki kreirani dokument uneti odgovarajuće tipove dokumenata koje on generiše.
 
-Aktivacijom flag-a **Održavanje**, moguće je označiti da će se dokument koristiti za aktivnosti održavanja, dok će, ako je deaktiviran, biti korišten u kontekstu proizvodnje.
+Na primer, u slučaju dokumenta tipa nalog za proizvodnju, korisnik mora uneti dokumente koji se njime generišu, a to su: *planirani nalozi za nabavku, planirani nalozi za proizvodnju i planirani nalozi za podizvođača*.
 
-Za **Vrste dokumenata** sa standardnim kodom *CP* (Komisije proizvodnje), moguće je unijeti i **Vrstu obračuna troškova komisije**koja će se automatski predložiti prilikom svake obrade troškova za tu komisiju.
+Planirani nalozi za nabavku generisaće određeni tip *zahteva za nabavku*, dok će planirani nalozi za podizvođača kreirati određeni tip *narudžbine podizvođaču*. Na kraju, planirani nalozi za proizvodnju imaće određeni tip *naloga za proizvodnju*, kao i tip *podizvođača* povezan sa spoljnim fazama sadržanim u tehnološkom postupku.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Aktiviranjem oznake **Održavanje** moguće je odrediti da će se dokument koristiti za radove održavanja. Ako oznaka nije aktivirana, dokument će se koristiti za proizvodnju.
+
+Za **Tipove dokumenata** sa standardnom šifrom *CP* (Nalozi za proizvodnju) moguće je uneti **Tip troška radnog naloga**, koji će se zatim predlagati kao podrazumevani pri svakom pokretanju obračuna troškova naloga.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

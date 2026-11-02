@@ -1,18 +1,18 @@
 ---
-title: CRP - Numeriranje Gantt simulacije
+title: Numerisanje Gantt simulacije
 sidebar_position: 18
 ---
 
-Ova tablica omogućuje upravljanje šifriranjem različitih vrsta *Numeriranja Gantt simulacije*.
+Tabela omogućava upravljanje šiframa različitih tipova *numerisanja Gantt simulacije*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmene ili brisanja.
 
-**Ricerca CRP - Numeriranje Gantt simulacije**
+**Pretraživanje CRP - numerisanja Gantt simulacije**
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-**Inserimento CRP - Numeriranje Gantt simulacije**
+**Unos CRP - numerisanja Gantt simulacije**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

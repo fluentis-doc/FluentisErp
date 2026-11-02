@@ -3,16 +3,16 @@ title: J.M. vremena
 sidebar_position: 14
 ---
 
-Tablica omogućava upravljanje kodiranjem broja decimalnih mjesta za svaku jedinicu mjere vremena (Dani, Sati, Minute, Sekunde) *J.M. vremena*.
+Tabela omogućava upravljanje kodiranjem broja decimalnih mesta za svaku jedinicu mere vremena (Dani, Sati, Minute, Sekunde) *J.M. vremena*.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregledavanja, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Traži J.M. vremena**
+**Traženje J.M. vremena**
 
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako biste vidjeli rezultate u tablici rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako biste videli rezultate u tabeli rezultata.
 
-**Unos JM vremena**
+**Unos J.M. vremena**
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
+Za unos novih šifara potrebno je kliknuti na prvi prazni red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
