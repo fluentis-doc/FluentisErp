@@ -3,47 +3,41 @@ title: Sigurnosna zaliha
 sidebar_position: 3
 ---
 
-Izvještaj se nalazi na putanji **Logistika > Skladište > Upravljački izvještaji > Sigurnosna zaliha** i omogućuje korisniku jednostavno pretraživanje sustava te brzo izdvajanje informacija o artiklima koji će u budućnosti pasti ispod minimalne zalihe. Na taj je način moguće pravovremeno planirati nabavu i osigurati kontinuiranu raspoloživost artikala.
+Ispis se nalazi na putanji **Logistika > Skladište > Izvještaji upravljanja > Sigurnosna zaliha** i omogućuje operateru provođenje kontrola radi pravilnog upravljanja zalihama. Konkretno, nakon što se pravilno popuni šifarnik artikala, moguće je upitati sustav i pronaći artikle kod kojih će u budućnosti doći do pada zaliha ispod minimalne razine. Osim toga, nakon izvršavanja postupka moguće je automatski i pravodobno kreirati zahtjeve za nabavu za artikle kod kojih će doći do pada zaliha ispod minimalne razine.
 
 **Tablice i parametri**
 
-Prije pokretanja postupka sigurnosne zalihe preporučuje se provjeriti sljedeće postavke:
+Prije pokretanja postupka izračuna artikala ispod minimalne zalihe preporučuje se definirati niz postavki, kako u obliku unaprijed definiranih tablica tako i pravilnim parametriziranjem osnovnih algoritama:
 
-- u *Šifarniku artikala* potrebno je popuniti karticu *Nabava*, posebno podatke vezane uz opskrbu
-- u *MRP parametrima* za artikle koji će se pratiti kroz sigurnosnu zalihu potrebno je postaviti *Politiku upravljanja* na **Zaliha**
-- vrijednost **Minimalna zaliha** mora biti manja ili jednaka vrijednosti **Točka naručivanja**
+- U *šifarniku artikala* potrebno je popuniti karticu *Nabava*, a posebno podatke za nabavu.
+- U *MRP parametrima* artikala kojima se želi upravljati pomoću postupka za artikle ispod minimalne zalihe potrebno je postaviti *politiku upravljanja Zaliha*.
+- Minimalna zaliha mora biti manja ili jednaka točki ponovnog naručivanja.
+
+**Izračun**
+
+Izračun artikala ispod minimalne zalihe koristi algoritam koji se temelji na prosječnoj dnevnoj potrošnji, izračunatoj na kartici *Nabava* u *šifarniku artikala*.
+
+Polazi se od stanja zaliha u trenutku obrade te se provjerava hoće li, na temelju prosječne potrošnje, doći do pada zaliha ispod minimalne razine do zadanog datuma.
+
+    Prosječna dnevna potrošnja = (Točka ponovnog naručivanja - Minimalna zaliha) / Dani za ponovno naručivanje
+
+    Količina za ponovno naručivanje = Minimalna zaliha + Prosječna potrošnja u razdoblju − Stanje zaliha
 
 **Postupak**
 
-Postupak sigurnosne zalihe koristi algoritam koji se temelji na prosječnoj dnevnoj potrošnji izračunatoj na kartici *Nabava* u *Šifarniku artikala*.
+U postupku je moguće odabrati: **Artikl** (klasa, šifra artikla, opis), eventualnu **Varijantu** (samo za artikle kojima se upravlja po varijantama) te krajnji **Datum** do kojeg se želi izračunati stanje zaliha ispod minimalne razine. Također je moguće omogućiti **Automatsko kreiranje zahtjeva za nabavu** za artikle ispod minimalne zalihe. Ako je ova funkcija aktivirana, potrebno je navesti **Vrstu** zahtjeva za dokument te, po želji, **Napomenu** koja će se unijeti u zaglavlje zahtjeva za nabavu.
 
-Polazi se od trenutnog stanja zalihe te se provjerava hoće li, na temelju prosječne potrošnje, do odabranog datuma doći do pada ispod minimalne zalihe.
+Nakon unosa ovih filtara pritisnite gumb **Izvrši** kako biste obradili podatke.
 
-Postupak omogućuje odabir:
+Tablica rezultata izvršavanja prikazuje popis provedenih obrada, uz podatke **Broj** i **Datum obrade**.
 
-- **Artikla** (klasa, šifra artikla, opis)
-- eventualne **Varijante** za artikle koji koriste upravljanje varijantama
-- **Datuma** do kojeg se želi izračunati sigurnosna zaliha
+Važno je napomenuti da se u postupku izračuna artikala ispod minimalne zalihe, kada se generira zahtjev za nabavu (RDA), a raspoloživost je manja od točke ponovnog naručivanja, tražena količina izračunava na sljedeći način:
 
-Također je moguće aktivirati opciju **Automatski izradi dokument za nadopunu zaliha** za artikle koji će pasti ispod minimalne zalihe.
-
-Ako je ta opcija aktivna, potrebno je dodatno odrediti:
-
-- **Tip dokumenta zahtjeva**
-- **Napomenu** koja će se upisati u zaglavlje zahtjeva za nabavu
-
-Nakon unosa željenih parametara potrebno je kliknuti **Izvrši** kako bi se pokrenula obrada podataka.
-
-Tablica rezultata prikazuje popis izvršenih obrada s pripadajućim podacima **Broj** i **Datum obrade**.
-
-Važno je napomenuti da se u ovom postupku, kada se generira **zahtjev za nabavu** i raspoloživa količina je manja od **Razine zalihe za ponovno naručivanje**, količina zahtjeva određuje na sljedeći način: ako za artikl nije postavljena vrijednost **Maksimalne zalihe**, tražena količina bit će jednaka vrijednosti **Razina zalihe za ponovno naručivanje – Raspoloživa količina**; dok će, ako je definirana i vrijednost **Maksimalne zalihe**, tražena količina biti jednaka vrijednosti **Maksimalna zaliha – Raspoloživa količina**.
+- Ako za artikl nije definirana *maksimalna zaliha*, tražena količina bit će jednaka **Točka ponovnog naručivanja – Raspoloživost**.
+- Ako je definirana i *maksimalna zaliha*, tražena količina bit će jednaka **Maksimalna zaliha – Raspoloživost**.
 
 :::note Napomena
-Ako je za artikl način opskrbe postavljen na **Nabava**, kreirat će se zahtjev za nabavu, ali neće biti kreiran radni nalog.
-
-Ako je za artikl način opskrbe postavljen na **Proizvodnja** ili **Kooperacija**, sustav će kreirati odgovarajući radni nalog.
+Treba napomenuti da će se, ako je način nabave artikla *Nabava*, kreirati zahtjev za nabavu, ali ne i nalog. Ako je način nabave artikla *Proizvodnja* ili *Podizvođač*, kreirat će se odgovarajući nalog.
 :::
 
-Za sve funkcionalnosti koje nisu posebno opisane u ovom dokumentu o zajedničkom radu obrazaca za ispis pogledajte:
-
-[Pregled i ispis](/docs/guide/common/operations-with-data/reports).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca za ispis, pogledajte sljedeću poveznicu: [Pregled i ispis](/docs/guide/common/operations-with-data/reports).

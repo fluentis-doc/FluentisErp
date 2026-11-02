@@ -3,47 +3,41 @@ title: Sigurnosna zaliha
 sidebar_position: 3
 ---
 
-Izveštaj se nalazi na putanji **Logistika > Skladište > Upravljački izveštaji > Sigurnosna zaliha** i omogućava korisniku jednostavnu pretragu sistema i brzo izdvajanje informacija o artiklima koji će u budućnosti pasti ispod minimalne zalihe. Na taj način moguće je pravovremeno planirati nabavku i obezbediti kontinuiranu raspoloživost artikala.
+Izveštaj se nalazi na putanji **Logistika > Skladište > Izveštaji upravljanja > Sigurnosna zaliha** i omogućava operateru sprovođenje kontrola radi pravilnog upravljanja zalihama. Konkretno, nakon pravilnog popunjavanja šifarnika artikala, moguće je upitati sistem i pronaći artikle kod kojih će u budućnosti doći do pada zaliha ispod minimalnog nivoa. Osim toga, nakon izvršavanja postupka moguće je automatski i pravovremeno kreirati zahteve za nabavku za artikle kod kojih će doći do pada zaliha ispod minimalnog nivoa.
 
-## Tabele i parametri
+**Tabele i parametri**
 
-Pre pokretanja postupka sigurnosne zalihe preporučuje se provera sledećih podešavanja:
+Pre pokretanja postupka izračunavanja artikala ispod minimalne zalihe preporučuje se definisanje niza podešavanja, kako u obliku unapred definisanih tabela tako i pravilnim parametrizovanjem osnovnih algoritama:
 
-- u *Šifarniku artikala* potrebno je popuniti karticu *Nabavka*, naročito podatke vezane za snabdevanje
-- u *MRP parametrima* za artikle koji će se pratiti kroz sigurnosnu zalihu potrebno je postaviti *Politiku upravljanja* na **Zaliha**
-- vrednost **Minimalna zaliha** mora biti manja ili jednaka vrednosti **Tačka naručivanja**
+- U *šifarniku artikala* potrebno je popuniti karticu *Nabavka*, a posebno podatke za nabavku.
+- U *MRP parametrima* artikala kojima se želi upravljati pomoću postupka za artikle ispod minimalne zalihe potrebno je postaviti *politiku upravljanja Zaliha*.
+- Minimalna zaliha mora biti manja ili jednaka tački ponovnog naručivanja.
 
-## Postupak
+**Izračunavanje**
 
-Postupak sigurnosne zalihe koristi algoritam zasnovan na prosečnoj dnevnoj potrošnji izračunatoj na kartici *Nabavka* u *Šifarniku artikala*.
+Izračunavanje artikala ispod minimalne zalihe koristi algoritam koji se zasniva na prosečnoj dnevnoj potrošnji, izračunatoj na kartici *Nabavka* u *šifarniku artikala*.
 
-Polazi se od trenutnog stanja zalihe i proverava da li će, na osnovu prosečne potrošnje, do izabranog datuma doći do pada ispod minimalne zalihe.
+Polazi se od stanja zaliha u trenutku obrade i proverava se da li će, na osnovu prosečne potrošnje, doći do pada zaliha ispod minimalnog nivoa do zadatog datuma.
 
-Postupak omogućava izbor:
+    Prosečna dnevna potrošnja = (Tačka ponovnog naručivanja - Minimalna zaliha) / Dani za ponovno naručivanje
 
-- **Artikla** (klasa, šifra artikla, opis)
-- eventualne **Varijante** za artikle koji koriste upravljanje varijantama
-- **Datuma** do kog se želi izvršiti obračun sigurnosne zalihe
+    Količina za ponovno naručivanje = Minimalna zaliha + Prosečna potrošnja u periodu − Stanje zaliha
 
-Takođe je moguće aktivirati opciju **Automatski kreiraj dokument za dopunu zaliha** za artikle koji će pasti ispod minimalne zalihe.
+**Postupak**
 
-Ako je ta opcija aktivna, potrebno je dodatno definisati:
+U postupku je moguće odabrati: **Artikal** (klasa, šifra artikla, opis), eventualnu **Varijantu** (samo za artikle kojima se upravlja po varijantama) i krajnji **Datum** do kojeg se želi izračunati stanje zaliha ispod minimalnog nivoa. Takođe je moguće omogućiti **Automatsko kreiranje zahteva za nabavku** za artikle ispod minimalne zalihe. Ako je ova funkcija aktivirana, potrebno je navesti **Tip** zahteva za dokument i, po želji, **Napomenu** koja će biti uneta u zaglavlje zahteva za nabavku.
 
-- **Tip dokumenta zahteva**
-- **Napomenu** koja će biti upisana u zaglavlje zahteva za nabavku
+Nakon unosa ovih filtera kliknite na dugme **Izvrši** kako biste obradili podatke.
 
-Nakon unosa željenih parametara potrebno je kliknuti **Izvrši** kako bi se pokrenula obrada podataka.
+Tabela rezultata izvršavanja prikazuje spisak izvršenih obrada, uz podatke **Broj** i **Datum obrade**.
 
-Tabela rezultata prikazuje listu izvršenih obrada sa pripadajućim podacima **Broj** i **Datum obrade**.
+Važno je napomenuti da se u postupku izračunavanja artikala ispod minimalne zalihe, kada se generiše zahtev za nabavku (RDA), a raspoloživost je manja od tačke ponovnog naručivanja, tražena količina izračunava na sledeći način:
 
-Važno je napomenuti da se u ovom postupku, kada se generiše **zahtev za nabavku** i raspoloživa količina je manja od **Nivoa zalihe za ponovno naručivanje**, količina zahteva određuje na sledeći način: ukoliko za artikal nije definisana vrednost **Maksimalne zalihe**, tražena količina biće jednaka vrednosti **Nivo zalihe za ponovno naručivanje – Raspoloživa količina**; dok će, ukoliko je definisana i vrednost **Maksimalne zalihe**, tražena količina biti jednaka vrednosti **Maksimalna zaliha – Raspoloživa količina**.
+- Ako za artikal nije definisana *maksimalna zaliha*, tražena količina biće jednaka **Tačka ponovnog naručivanja – Raspoloživost**.
+- Ako je definisana i *maksimalna zaliha*, tražena količina biće jednaka **Maksimalna zaliha – Raspoloživost**.
 
 :::note Napomena
-Ako je za artikal način snabdevanja postavljen na **Nabavka**, kreiraće se zahtev za nabavku, ali neće biti kreiran radni nalog.
-
-Ako je za artikal način snabdevanja postavljen na **Proizvodnja** ili **Kooperacija**, sistem će kreirati odgovarajući radni nalog.
+Treba napomenuti da će se, ako je način nabavke artikla *Nabavka*, kreirati zahtev za nabavku, ali ne i nalog. Ako je način nabavke artikla *Proizvodnja* ili *Podizvođač*, kreiraće se odgovarajući nalog.
 :::
 
-Za sve funkcionalnosti koje nisu posebno opisane u ovom dokumentu o zajedničkom radu formi za štampu pogledajte:
-
-[Pregled i štampa](/docs/guide/common/operations-with-data/reports).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca za štampanje, pogledajte sledeću poveznicu: [Pregled i štampanje](/docs/guide/common/operations-with-data/reports).
