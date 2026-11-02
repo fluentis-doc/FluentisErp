@@ -3,7 +3,7 @@ title: Resursi projekata
 sidebar_position: 10
 ---
 
-Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Resursi projekat** i sadrži neke zadane podatke o resursima. Područje za filtriranje omogućuje ciljano pretraživanje podataka.
+Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Resursi projekata** i sadrži neke zadane podatke o resursima. Područje za filtriranje omogućuje ciljano pretraživanje podataka.
 
 ![](/img/it-it/configurations/tables/projects/resources.png)
 
@@ -17,7 +17,7 @@ Nakon što se postave filteri, pritiskom na tipku ![](/img/neutral/common/search
 
 **Prezime/Ime**: sadrži prezime i ime resursa;
 
-**Konto/Potkonto**: sadrži eventualni konto i potkonto povezane s resursom;
+**Konto/Podkonto**: sadrži eventualni konto i podkonto povezane s resursom;
 
 **Glavna smjena**: sadrži uobičajenu [radnu smjenu] resursa, s pripadajućim **Opisom**;
 

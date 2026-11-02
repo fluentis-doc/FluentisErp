@@ -3,51 +3,43 @@ title: Vremenska zaokruživanja
 sidebar_position: 24
 ---
 
-Kartica se nalazi u Konfiguracija > tablice > Upravljanje projektima > Vremenska zaokruživanja.
+Tablica se nalazi u izborniku Konfiguracija > Tablice > Upravljanje projektima > Vremenska zaokruživanja.
 
-U ovoj kartici konfiguriraju se zaokruživanja koja se primjenjuju u planu fakturacije na sate usluge evidentirane u intervencijama.
+U ovoj se tablici definiraju pravila zaokruživanja koja se primjenjuju u planu fakturiranja na sate usluge prijavljene u intervencijama.
 
-**Minuti** označava početni prag za primjenu zaokruživanja, koji se koristi za određivanje pravilnog zaokruživanja na osnovu sati usluge izvršene intervencije.  
-**Zaokruživanje** je broj minuta na koji se zaokružuje.
-**Tolerancija** je broj minuta tolerancije prije nego što se aktivira zaokruživanje ili sljedeći prag.
+**Minute** označavaju početak raspona koji se koristi za određivanje zaokruživanja na temelju broja sati usluge obavljene intervencijom.
 
+**Zaokruživanje** označava broj minuta na koji se zaokružuje.
 
-Kartica radi s “pragovima”.  
+**Tolerancija** označava broj minuta tolerancije prije primjene zaokruživanja ili prelaska na sljedeći raspon.
 
+Tablica funkcionira prema načelu raspona.
 
-Primjer: ako želimo zaokružiti sve intervencije od 2 sata na 2 sata, dovoljno je konfigurirati:
+Primjerice, ako se sve intervencije želi zaokruživati na višekratnike od 2 sata, dovoljno je konfigurirati:
 
+>> Minute 0 > Zaokruživanje u minutama 120 > Tolerancija 0
 
->> minuti 0 > zaokruživanje u minutama 120 > tolerancija 0
+>> To znači da će se od 0 minuta nadalje sati uvijek zaokruživati na višekratnike od 2 sata. Tolerancija označava vremenski razmak nakon kojeg se primjenjuje sljedeći raspon.
 
+>> Primjer:
+- Intervencija A: 1 h i 30 minuta > fakturiraju se 2 sata
+- Intervencija B: 2 h i 10 minuta > fakturiraju se 4 sata
+- Intervencija C: 8 h i 30 minuta > fakturira se 10 sati
 
->> to znači da će od 0 pa nadalje svi sati biti zaokruženi na višekratnike od 2 sata. Tolerancija označava vremenski “razmak” nakon kojeg se prelazi na sljedeći prag.
+Dodavanjem tolerancije od, primjerice, 15 minuta, intervencija B fakturirat će se kao 2 sata.
 
+Dodavanjem još jednog raspona moguće je, primjerice, prilagoditi zaokruživanje za sate nakon prvih 8 sati:
 
->> Primjer. 
-- Intervencija A: 1 sat i 30 minuta > fakturirano 2 sata
-- Intervencija B: 2 sata i 10 minuta > fakturirano 4 sata
-- Intervencija C: 8 sati i 30 minuta > fakturirano 10 sati
+>> Minute 0 > Zaokruživanje u minutama 120 > Tolerancija 0
 
+>> Minute 480 > Zaokruživanje u minutama 30 > Tolerancija 0
 
-Ako dodamo toleranciju npr. 15 minuta, Intervencija B će se fakturirati kao 2 sata.
-Dodavanjem drugog praga možemo podesiti zaokruživanje za sate preko 8 sati, na primjer:  
+Prema tome, u prethodnom primjeru intervencija C fakturirat će se kao 8 h i 30 minuta. Da je intervencija C trajala 8 h i 15 minuta, također bi se fakturiralo 8 h i 30 minuta jer je predviđeno zaokruživanje na pola sata.
 
->> minuti 0 > zaokruživanje u minutama 120 > tolerancija 0
+Ako se, primjerice, želi fakturirati isključivo 4 ili 8 sati, moguće je konfigurirati:
 
+>> Minute 0 > Zaokruživanje 240 minuta > Tolerancija 0
 
->> minuti 480 > zaokruživanje u minutama 30 > tolerancija 0
+>> Minute 240 > Zaokruživanje 240 minuta > Tolerancija 0
 
-U gore navedenom primjeru, Intervencija C će biti fakturirana kao 8 sati i 30 minuta.
-Ako je Intervencija C trajala 8 sati i 15 minuta, fakturirat će se i dalje 8 sati i 30 minuta jer je definirano zaokruživanje na pola sata.  
-
-Ako želimo fakturirati, na primjer, samo 4 ili 8 sati, možemo konfigurirati ovako:  
-
-
->> Minuti 0 > zaokruživanje 240 minuta > tolerancija 0
-
-
->> Minuti 240 > zaokruživanje 240 minuta > tolerancija 0
-
-
->> Minuti 480 > zaokruživanje 1 minuta > tolerancija 0
+>> Minute 480 > Zaokruživanje 1 minuta > Tolerancija 0, čime se osigurava da se nakon 8 sati više ne primjenjuje zaokruživanje.

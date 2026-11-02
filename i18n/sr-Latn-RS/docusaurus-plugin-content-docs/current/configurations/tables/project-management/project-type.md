@@ -1,80 +1,84 @@
 ---
-title: Vrste projekta
+title: Tipovi projekata
 sidebar_position: 12
 ---
 
-Tablica je dostupna putem **Tablice > Upravljanje projektima > Vrste projekta**
+Tabeli se može pristupiti putem **Tablice > Upravljanje projektima > Tipovi projekata** (ranije tipovi prodajnih naloga).
 
-Tablica sadrži moguće tipove **Projekta**. Sastoji se od dijela za filtriranje u kojem se može pretraživati po opisu tipa te od dvije mreže (grid): u jednoj će biti navedene sve unesene vrste projekta (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Traži u traci izbornika za prikaz), a u drugoj se mogu unijeti unaprijed definirani troškovi/prihodi za svaki tip projekta koji će se koristiti za izračun SAL-a.
+Tabela sadrži moguće tipove **projekata**. Sastoji se od područja za filtriranje, u kojem je moguće pretraživati prema opisu tipa, i dve tabele: u prvoj su navedeni svi uneti tipovi projekata (dovoljno je kliknuti na dugme ![](/img/neutral/common/search.png) Traži na alatnoj traci kako bi se prikazali), dok je u drugoj moguće definisati podrazumevane troškove/prihode za svaki tip projekta koji će se koristiti pri obračunu procenta dovršenosti projekta (SAL).
 
 ![](/img/it-it/configurations/tables/projects/proj-type.png)
 
-U ovoj formi moguće je dodati nove vrste projekta unutar mreže klikom na tipku ![](/img/neutral/common/new.png) Novo; time će se dodati novi red u mrežu gdje se mogu definirati sljedeće informacije:
+U istom obrascu moguće je dodati nove tipove projekata u tabelu klikom na dugme ![](/img/neutral/common/new.png) Novo. Na taj način dodaće se novi red u tabelu u kojem je moguće definisati sledeće podatke:
 
-**Tip**: kod vrste projekta;
+**Tip**: šifra tipa projekta;
 
-**Opis vrste projekta**: opis vrste projekta;
+**Opis tipa projekta**: opis tipa projekta;
 
-**Numeracija**: numeracija dodijeljena projektu, konfigurirana posebno;
+**Numerisanje**: numerisanje povezano sa projektom, posebno konfigurisano za tu namenu;
 
-**Hijerarhijska struktura**: ako je označeno, omogućuje projektima da imaju hijerarhijsku, višerazinsku strukturu;
+**Hijerarhijska struktura**: ako je ova oznaka aktivirana, projekti mogu imati hijerarhijsku strukturu, odnosno više nivoa;
 
-**Tip naloga**: moguće je povezati tip naloga;
+**Tip narudžbine**: moguće je navesti povezani tip narudžbine;
 
-**Opis tipa naloga**: opis povezanog tipa naloga; koristi se kod kreiranja projekata iz naloga
+**Opis tipa narudžbine**: opis povezanog tipa narudžbine; koristi se pri izradi projekata iz narudžbine.
 
-**Tip fakture**: moguće je povezati tip fakture potreban za fakturiranje projekata;
+**Tip fakture**: moguće je navesti tip fakture koji se koristi pri fakturisanju rata definisanih u redu projekta, na kartici „Fakturisanje“, ili pri fakturisanju putem kartice „Fakture za avans“ ako je tip reda „konačni obračun“. U slučaju tipa „avans“, ovaj tip fakture koristi se ako nije definisan poseban tip fakture za avans.
 
-**Opis tipa fakture**: opis povezane fakture;
+**Opis tipa fakture**: opis tipa fakture povezanog u prethodnoj koloni;
 
-**Predložak**: ako je označeno, tip projekta je predložak (template), ne može se pozivati u drugim dokumentima, koristi se samo kao model za kreiranje novih projekata;
+**Tip fakture za avans**: moguće je navesti tip fakture koji se koristi pri fakturisanju putem kartice „Fakture za avans“ ako je tip reda „avans“. Ako „Tip fakture za avans“ nije postavljen, koristi se tip definisan u polju „Tip fakture“, koji tada važi za obe mogućnosti – avans i konačni obračun.
 
-**Omogućena sigurnost projekta**: ako je označeno, omogućuje u kartici Dozvole korisnika na zaglavlju projekta biranje korisnika koji imaju prava samo za čitanje ili za čitanje i pisanje projekta (ostali korisnici neće imati pristup); ako nije označeno, svi korisnici mogu mijenjati projekt;
+**Opis tipa fakture za avans**: opis tipa fakture za avans povezanog u prethodnoj koloni;
 
-**Tip zahtjeva za nabavku**: moguće je povezati tip zahtjeva za nabavku; time će se zahtjevi za nabavku moći generirati direktno iz projekta.
+**Šablon**: ova oznaka određuje da li je tip projekta šablon. Takav tip ne može se koristiti u drugim dokumentima, već služi isključivo kao šablon za izradu novih projekata.
 
-U mreži ispod nalaze se i neki flagovi koji označavaju koje će se kartice prikazivati za određeni tip projekta:
+**Bezbednost projekta omogućena**: ako je oznaka aktivirana, na kartici Dozvole korisnika u zaglavlju projekta omogućava odabir korisnika koji imaju pravo pristupa projektu samo za čitanje ili pravo čitanja i pisanja (ostali korisnici neće moći da mu pristupe). Ako oznaka nije aktivirana, svi korisnici mogu da menjaju projekat.
 
-**Aktivnosti**: kartica s glavnim i obaveznim podacima za projektni redak, kao što su artikl, količina, cijena i sažetak troškova;
+**Tip zahteva za nabavku**: moguće je povezati tip zahteva za nabavku. Na taj način biće moguće generisati zahteve za nabavku direktno iz projekta.
 
-**Planiranje usluge**: tab vezan uz planirane datume početka/kraja, % napretka, tipove intervencija i moguće veze s drugim WBS-ovima;
+U tabeli se nalaze i određene oznake koje određuju koje će se kartice prikazivati za pojedinačni tip projekta.
 
-**Resursi: kartica za planiranje resursa;
+**Aktivnosti**: kartica koja sadrži sve glavne i obavezne podatke za red projekta, kao što su artikal, količina i cena, kao i pregled troškova;
 
-**Materijali: kartica s popisom materijala i pripadajućim troškovima;
+**Planiranje usluga**: kartica koja se odnosi na predviđene datume početka i završetka, procenat napretka, tipove intervencija koje će se koristiti i eventualne veze sa drugim WBS strukturama;
+
+**Resursi**: kartica za planiranje resursa;
+
+**Materijali**: kartica koja sadrži spisak materijala i pripadajuće troškove;
 
 **Faze**:
 
-**Podaci: kartica s općim informacijama vezanim uz kodove za izračun SAL projekta, referencama na tikete, proizvodne naloge, CRM kontakte;
+**Podaci**: kartica koja sadrži opšte informacije povezane sa šiframa za obračun procenta dovršenosti projekta (SAL), referencama na tikete, naloge za proizvodnju i CRM kontakte;
 
-**Napredak**: 
+**Napredak**:
 
-**Agenti**: kartica za unos agenata povezanih s projektom;
+**Agenti**: kartica za unos agenata povezanih sa projektom;
 
-**Fakturiranje**: kartica za popunjavanje plana obroka fakturiranja po projektnom retku;
+**Fakturisanje**: kartica za definisanje rasporeda rata fakturisanja za red projekta;
 
 **Dodatni podaci**: kartica za upravljanje dodatnim podacima;
 
 **Priloženi dokumenti**: kartica za upravljanje prilozima;
 
-**Gantt**: opća kartica koja prikazuje Ganttov dijagram projekta;
+**Gantt**: opšta kartica koja prikazuje Ganttov dijagram projekta;
 
-**Avansna faktura**: kartica za upravljanje avansnim fakturama vezanim uz projekte.
+**Faktura za avans**: kartica za upravljanje fakturama za avans povezanim sa projektima;
 
-**Obavezni prihod**: ako je projektni redak fakturabilan i označen kao obavezan prihod, spremanje će biti onemogućeno.
+**Obavezno fakturisanje**: ako je red projekta moguće fakturisati i aktivirana je oznaka Obavezno fakturisanje, čuvanje će biti blokirano.
 
-**Automatski preračun datuma početka i kraja**: ako je omogućeno, automatski se mijenjaju datumi početka i kraja planiranja u WBS retcima projekta. Datumi se ažuriraju ovisno o količini retka ako jedinica mjere (JM) odgovara postavljenoj JM dana u projektnim parametrima ili prilikom unosa novih resursa u karticu resursa projektnog retka.
+**Ponovni obračun datuma početka-završetka**: ako je ova opcija omogućena, dopušta automatsku izmenu datuma početka i završetka planiranja u WBS redovima projekta. Datumi će se ažurirati na osnovu količine u redu ako merna jedinica odgovara mernoj jedinici za dane definisanoj u parametrima projekta ili prilikom unosa novih resursa na kartici Resursi reda projekta.
 
-U donjoj mreži moguće je definirati vrednovanje SAL-a u okviru stanja napretka radova. Za svaki projekt moguće je navesti niz kodova koji predstavljaju dokumente uključene u izračun stanja napretka radova. Ti će kodovi kasnije biti ponuđeni u pojedinačnim projektnim redcima.
+U donjoj tabeli moguće je definisati vrednovanje procenta dovršenosti projekta (SAL) u okviru praćenja napretka radova. Za svaki projekat moguće je navesti niz šifara koje predstavljaju dokumente uključene u obračun procenta dovršenosti projekta. Te šifre će se zatim predlagati u pojedinačnim redovima projekta.
 
-Nakon odabira retka u prvoj mreži, polja za popunjavanje u drugoj su:
+Nakon odabira reda u prvoj tabeli, u drugoj je potrebno popuniti sledeća polja:
 
-**Tip porijekla troška/prihoda**: sadrži popis kodova troškova/prihoda predviđenih za SAL izračun za projekte tog tipa;
+**Tip porekla troška/prihoda**: sadrži spisak šifara predviđenih troškova/prihoda koje će se koristiti za obračun procenta dovršenosti projekata tog tipa;
 
-**Opis: opis troškova/prihoda**;
+**Opis**: opis troškova/prihoda;
 
-**Tip**: označava je li riječ o trošku ili prihodu.
+**Tip**: označava da li je reč o trošku ili prihodu;
 
-**Izraz filtra**: ako polje nije popunjeno, uzimaju se svi dokumenti predviđeni za taj kod. Ako želite isključiti određene dokumente (npr. po tipu, numeraciji itd.), možete konfigurirati izraz za filtriranje. 
+**Izraz filtera**: ako polje nije popunjeno, uzimaju se u obzir svi dokumenti predviđeni za određenu šifru. Ako se određeni dokumenti žele isključiti (npr. prema tipu, numerisanju itd.), moguće je konfigurisati izraz filtera.
 
 ![](/img/it-it/configurations/tables/projects/revenue.png)

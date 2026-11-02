@@ -1,7 +1,7 @@
 ---
-title: Tip pogona
+title: Tipovi pogona
 sidebar_position: 8
 ---
 
-Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Vrste postrojenja** i sadrži popis vrsta postrojenja. Moguće je pretraživati, kreirati i brisati postrojenja, koja se kodiraju putem **Šifra** i **Opisa**.
+Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Tipovi pogona** i sadrži popis vrsta postrojenja (pogona). Moguće je pretraživati, kreirati i brisati postrojenja, koja se kodiraju putem **Šifre** i **Opisa**.
 

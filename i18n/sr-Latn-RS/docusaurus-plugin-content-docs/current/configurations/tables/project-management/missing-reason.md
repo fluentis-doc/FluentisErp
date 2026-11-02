@@ -1,17 +1,18 @@
 ---
-title: Predlošci odsutnosti
+title: Razlozi odsustva
 sidebar_position: 2
 ---
 
-Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Predlošci odsutnosti** i sadrži razloge odsutnosti povezane s tvrtkom. Za pretraživanje pritisnite ![](/img/neutral/common/search.png) Traži u traci izbornika nakon što unesete filtre.
- Podaci koje treba unijeti su:  
+Ovoj tabeli može se pristupiti putem **Tablice > Upravljanje projektima > Razlozi odsustva**. Sadrži razloge odsustva povezane sa preduzećem, koji se mogu koristiti na ekranu za podnošenje zahteva za godišnji odmor i odsustvo u području projekata.
 
-**Šifra**: sadrži šifru predloška;
+Moguće je konfigurisati sledeće podatke:
 
-**Razlog**: sadrži opis razloga; 
+**Šifra**: sadrži šifru razloga;
 
-**Tvrtka**: sadrži tvrtku u kojoj se predložak validira, s pripadajućim **Opisom**.
+**Razlog**: sadrži opis razloga;
 
-**Kategorija aktivnosti**: sadrži kategoriju aktivnosti koja će biti predložena kao podrazumevana prilikom potvrđivanja godišnjih odmora i odsustava.
+**Preduzeće**: sadrži preduzeće u kojem razlog važi, uz pripadajući **Opis**.
 
-**Projekat**: sadrži WBS element projekta koji će biti predložen kao podrazumevani prilikom potvrđivanja godišnjih odmora i odsustava.
+**Kategorija aktivnosti**: sadrži kategoriju aktivnosti koja će se podrazumevano predložiti prilikom potvrde godišnjeg odmora i odsustva.
+
+**Projekat**: sadrži WBS projekta koji će se podrazumevano predložiti prilikom potvrde godišnjeg odmora i odsustva.

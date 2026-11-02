@@ -1,9 +1,8 @@
 ---
-title: Statusi intervencija
+title: Status intervencije
 sidebar_position: 5
 ---
 
-Ova tablica je dostupna putem **Tablice > Upravljanje projektima > Statusi intervencija** i sadrži tipove stanja koja intervencije mogu imati. Moguće je pretraživati, unositi i brisati stanja, no tablica je već unaprijed popunjena s mogućim zadanim stanjima.  
+Ova tabela je dostupna putem **Tablice > Upravljanje projektima > Status intervencije** i sadrži tipove statusa koje intervencije mogu imati. Moguće je pretraživati, unositi i brisati statuse, ali tabela je već unapred popunjena mogućim podrazumevanim statusima.
 
 ![](/img/it-it/configurations/tables/projects/interv.png)
-

@@ -1,6 +1,6 @@
 ---
-title: Tip SAL
+title: Tipovi napretka radova
 sidebar_position: 14
 ---
 
-Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Tip SAL** i sadrži dostupne tipove stanja napretka radova. Moguće je kreirati, pretraživati i brisati tipove. Svaki je definiran **Šifrom**, **Opisom** i **Numeracijom**.
+Ova tabela dostupna je putem **Tablice > Upravljanje projektima > Tipovi napretka radova** i sadrži dostupne tipove statusa napretka radova. Moguće je kreirati, pretraživati i brisati tipove. Svaki je definisan **Šifrom**, **Opisom** i **Numerisanjem**.

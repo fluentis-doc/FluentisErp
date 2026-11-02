@@ -1,26 +1,26 @@
 ---
-title: Vrsta aktivnosti
+title: Tipovi aktivnosti
 sidebar_position: 7
 ---
 
-Tablica je dostupna putem **Tablice > Upravljanje projektima > Tipovi aktivnosti**.
-Tablica sadrži moguće tipove aktivnosti. Sastoji se od dijela za filtriranje gdje se može pretraživati po kodu i opisu, te mreže u kojoj će biti prikazani svi tipovi aktivnosti (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Traži na traci izbornika za prikaz).
+Tabeli se može pristupiti putem **Tablice > Upravljanje projektima > Tipovi aktivnosti**.
+
+Tabela sadrži moguće tipove aktivnosti. Sastoji se od područja za filtriranje, u kojem je moguće pretraživati prema šifri i opisu, i tabele u kojoj će biti navedeni svi tipovi aktivnosti (dovoljno je kliknuti na dugme ![](/img/neutral/common/search.png) Traži na alatnoj traci kako bi se prikazali).
 
 ![](/img/it-it/configurations/tables/projects/activitytype.png)
 
-Unutar ove forme moguće je također dodavati nove tipove aktivnosti u mrežu klikom na tipku ![](/img/neutral/common/new.png) Novo; na taj način će se dodati novi redak u mrežu u kojem je moguće definirati sljedeće informacije:
+U istom obrascu moguće je dodati nove tipove aktivnosti u tabelu klikom na dugme ![](/img/neutral/common/new.png) Novo. Na taj način dodaće se novi red u tabelu u kojem je moguće definisati sledeće podatke:
 
-**Kod**: kod tipa aktivnosti;  
+**Šifra**: šifra tipa aktivnosti;
 
-**Opis**: opis koda;  
+**Opis**: opis šifre;
 
-**Fakturabilna aktivnost**: ovaj flag označava je li aktivnost fakturabilna ili ne;  
+**Fakturabilna aktivnost**: ova oznaka određuje da li se aktivnost može fakturisati;
 
-**Tip aktivnosti**: moguće je povezati tip s tipologijom za prijavu aktivnosti u CRM-u, zajedno s pripadajućim opisom;  
+**Tip intervencije**: moguće je povezati tip aktivnosti sa tipom intervencije u CRM-u, uz odgovarajući opis;
 
-**Ponovno izračunaj projekt**: označava hoće li se izvršiti ponovno izračunavanje napretka projekta;  
+**Preračun projekta**: određuje da li je potrebno ponovo izračunati napredak projekta;
 
-Nadalje, prisutni su različiti flagovi koji, ako su označeni, označavaju obaveznost određenih polja u odabranom tipu aktivnosti. 
+Dostupan je i niz oznaka koje, ako su aktivirane, određuju obaveznost unosa određenih polja za odabrani tip aktivnosti.
 
-**Boja**: boja za označavanje prijava aktivnosti u kalendarima područja projekata, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [Dodjela WBS resursa](/docs/project-management/planned-interventions/wbs-resource-assignation)
-
+**Boja**: boja koja služi za prepoznavanje prijava aktivnosti u kalendarima u području projekata, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [Dodela resursa WBS-u](/docs/project-management/planned-interventions/wbs-resource-assignation).

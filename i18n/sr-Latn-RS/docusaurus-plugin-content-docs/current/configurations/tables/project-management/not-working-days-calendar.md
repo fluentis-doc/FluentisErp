@@ -3,9 +3,10 @@ title: Kalendar neradnih dana
 sidebar_position: 3
 ---
 
-U ovoj tablici se konfiguriraju neradni ili praznični dani tvrtke. Tijekom evidentiranja aktivnosti, datumi uneseni ovdje neće biti ponuđeni, a pri obračunu plaća ti dani će se po defaultu smatrati praznicima.
-Osim toga, ako je konfigurirano u parametrima Projekata, plan fakturiranja može doživjeti promjene u izračunu. 
+U ovoj tabeli definišu se praznici i neradni dani preduzeća. Prilikom prijave aktivnosti, ovde uneti datumi neće biti ponuđeni za odabir, a pri obračunu zarada taj dan će se podrazumevano smatrati praznikom.
 
-**Slobodan dan**: unesite datum prazničnog ili neradnog dana tvrtke.
+Osim toga, ako je tako definisano u parametrima Projekata, može doći do promena u obračunu plana fakturisanja.
 
-**Napomene**: eventualna napomena ili opis vezan uz uneseni datum.
+**Neradni dan**: potrebno je uneti datum praznika ili neradnog dana preduzeća.
+
+**Napomene**: eventualna napomena ili opis koji se odnosi na uneti datum.

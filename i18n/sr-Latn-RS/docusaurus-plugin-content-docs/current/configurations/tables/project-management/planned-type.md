@@ -1,25 +1,26 @@
 ---
-title: Vrsta planiranja
+title: Tipovi planiranih intervencija
 sidebar_position: 11
 ---
 
-Tablica je dostupna putem **Tablice > Upravljanje projektima > Vrsta planiranja**.
-Tablica sadrži moguće vrste planiranja. Sastoji se od dijela za filtriranje u kojem se može pretraživati po kodu i opisu, te mreže u kojoj će biti prikazane sve vrste planiranja (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Traži u traci izbornika da bi ih se prikazalo).  
+Tabeli se može pristupiti putem **Tablice > Upravljanje projektima > Tipovi planiranih intervencija**.
+
+Tabela sadrži moguće tipove planiranja. Sastoji se od područja za filtriranje, u kojem je moguće pretraživati prema šifri i opisu, i tabele u kojoj će biti navedeni svi tipovi planiranih intervencija (dovoljno je kliknuti na dugme ![](/img/neutral/common/search.png) Traži na alatnoj traci kako bi se prikazali).
 
 ![](/img/it-it/configurations/tables/projects/planned-type.png)
 
-Unutar ovog obrasca moguće je dodati nove vrste u mrežu klikom na tipku ![](/img/neutral/common/new.png) Novo: na taj će način biti dodan novi redak u mreži u kojem se mogu definirati sljedeće informacije:  
+U istom obrascu moguće je dodati nove tipove planiranja u tabelu klikom na dugme ![](/img/neutral/common/new.png) Novo. Na taj način dodaće se novi red u tabelu u kojem je moguće definisati sledeće podatke:
 
-**Kod**: kod vrste planiranja;  
+**Šifra**: šifra tipa planirane aktivnosti;
 
-**Opis**: opis koda;
+**Opis**: opis šifre;
 
-**Nepredviđeno**: ako je označeno, označava da se radi o vrsti koja nije predviđena;  
+**Nije planirano**: ako je oznaka aktivirana, označava da je reč o tipu koji nije planiran;
 
-**Numeracija**: označava pridruženu numeraciju;  
+**Numerisanje**: označava povezano numerisanje;
 
-**Tip intervencije**: označava zadani tip intervencije s pripadajućim opisom;  
+**Tip intervencije**: označava podrazumevani povezani tip intervencije, uz pripadajući opis;
 
-**Vanjsko/Unutarnje**: ako je označeno, znači da je operacija vanjska. 
+**Eksterno/Interno**: ako je oznaka aktivirana, označava da je reč o eksternoj operaciji.
 
-**Boja**: boja za identifikaciju planiranih intervencija u kalendarima projektnog područja, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [Dodjela WBS resursa](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**Boja**: boja koja služi za prepoznavanje planiranih intervencija u kalendarima u području projekata, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [Dodela resursa WBS-u](/docs/project-management/planned-interventions/wbs-resource-assignation).

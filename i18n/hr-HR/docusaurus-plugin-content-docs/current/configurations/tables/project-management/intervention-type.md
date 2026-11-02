@@ -1,57 +1,58 @@
 ---
-title: Vrsta intervencije
+title: Tipovi intervencija
 sidebar_position: 9
 ---
 
-Tablica je dostupna putem **Tablice > Upravljanje projektima > Vrsta intervencije**.
-Tablica sadrži moguće tipove intervencija. Sastoji se od dijela za filtriranje gdje je moguće pretraživati po kodu i opisu, te od tablice u kojoj će biti navedeni svi tipovi intervencija (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Traži u traci izbornika da se prikažu).
+Tablici se može pristupiti putem **Tablice > Upravljanje projektima > Tipovi intervencija**.
+
+Tablica sadrži moguće vrste (tipove) intervencija. Sastoji se od područja za filtriranje, u kojem je moguće pretraživati prema šifri i opisu, te tablice u kojoj će biti navedene sve vrste intervencija (dovoljno je kliknuti gumb ![](/img/neutral/common/search.png) Traži na alatnoj traci kako bi se prikazale).
 
 ![](/img/it-it/configurations/tables/projects/intervention.png)
 
-U istoj formi moguće je dodati nove tipove unutar tablice klikom na tipku ![](/img/neutral/common/new.png) Novo: na taj će se način dodati novi red u tablicu gdje je moguće definirati sljedeće informacije:  
+U istom obrascu moguće je dodati nove vrste intervencija u tablicu klikom na gumb ![](/img/neutral/common/new.png) Novo. Na taj će se način dodati novi redak u tablicu u kojem je moguće definirati sljedeće podatke:
 
-**Tip**: kod tipa intervencije;  
+**Tip**: šifra vrste intervencije;
 
-**Opis**: opis tipa;  
+**Opis**: opis vrste intervencije;
 
-**Tip fakt.**: označava tip računa povezan s intervencijom;  
+**Vrsta fakturiranja (prometa)**: označava vrstu računa koja je povezana s intervencijom;
 
-**Stanje**: moguće je odabrati stanje intervencije između U tijeku, Završeno, Provjereno, U sporu, Na čekanju;  
+**Status**: moguće je odabrati status intervencije između sljedećih vrijednosti: U tijeku, Završeno, Provjereno, U sporu, Na čekanju;
 
-**Opis**: sadrži opis stanja;  
+**Opis**: sadrži opis statusa;
 
-**Tip aktivnosti**: sadrži povezani tip aktivnosti;  
+**Vrsta aktivnosti**: sadrži povezanu vrstu aktivnosti;
 
-**Operater**: moguće je navesti zadani operater s pripadajućim **Imenom** i **Prezimenom**;
+**Operater**: moguće je odrediti zadanog operatera, uz pripadajuće **Ime** i **Prezime**;
 
-**Konto**: moguće je navesti zadanog klijenta ako se intervencija kreira iz početka;  
+**Konto**: moguće je odrediti zadanog kupca ako se intervencija izrađuje od početka;
 
-**Podkonto**: sadrži podkonto klijenta;  
+**Podkonto**: sadrži analitički konto kupca;
 
-**Cijena s PDV-om**: označava upravlja li intervencija cijenama s PDV-om;  
+**Cijena s PDV-om**: označava koristi li intervencija cijene s PDV-om;
 
-**Vanjski**: označava je li intervencija vanjska;  
+**Vanjski**: označava je li intervencija vanjska;
 
-**Materijali**: označava upravlja li tip materijalim;    
+**Materijali**: označava podržava li vrsta intervencije upravljanje materijalima;
 
-**U aktivnosti**: označava hoće li intervencija biti uključena u aktivnosti;
+**U aktivnostima**: označava hoće li se intervencija prikazivati među aktivnostima;
 
-**Putni troškovi**: označava upravlja li se putnim troškovima;  
+**Putni troškovi**: označava upravljaju li se putnim troškovima;
 
-**Automatsko kreiranje aktivnosti**: ako je označeno, promjena stanja intervencije (iz Uneseno u Provjereno) automatski će generirati aktivnost;  
+**Automatski izradi aktivnost**: ako je oznaka aktivirana, promjena statusa intervencije (iz Uneseno u Provjereno) automatski će generirati aktivnost;
 
-**Projekt obavezan**: ako je označeno, uvijek je potrebno navesti projekt za ovaj tip intervencije;  
+**Projekt je obvezan**: ako je oznaka aktivirana, za ovu vrstu intervencije uvijek je potrebno navesti projekt;
 
-**Kategorija aktivnosti obavezna**: ako je označeno, uvijek je potrebno navesti kategoriju aktivnosti za ovaj tip intervencije;  
+**Kategorija aktivnosti obvezna**: ako je oznaka aktivirana, za ovu vrstu intervencije potrebno je navesti kategoriju aktivnosti;
 
-**Obavezna evidencija postrojenja**: ako je označeno, uvijek je potrebno navesti evidenciju postrojenja za ovaj tip intervencije;  
+**Glavna imovina je obvezna**: ako je oznaka aktivirana, za ovu vrstu intervencije uvijek je potrebno navesti instalaciju iz šifarnika;
 
-**Resurs obavezan**: ako je označeno, uvijek je potrebno navesti resurs za ovaj tip intervencije;  
+**Resurs obvezan**: ako je oznaka aktivirana, za ovu vrstu intervencije uvijek je potrebno navesti resurs;
 
-**% napretka obavezno**: ako je označeno, uvijek je potrebno navesti % napretka za ovaj tip intervencije;  
+**Postotak napretka obvezan**: ako je oznaka aktivirana, za ovu vrstu intervencije uvijek je potrebno navesti postotak napretka;
 
-**Fakturiranje prodaje**: ako je označeno, uvijek je potrebno navesti fakturiranje za ovaj tip intervencije, pod uvjetom da je usluga/materijal označen kao fakturabilan;  
+**Obavezno fakturiranje**: ako je oznaka aktivirana, za ovu vrstu intervencije uvijek je potrebno navesti iznos fakturiranja, pod uvjetom da je za uslugu/materijal aktivirana oznaka Naplativo;
 
-**PDV obavezan**: ako je označeno, uvijek je potrebno navesti PDV za ovaj tip intervencije.  
+**PDV obvezan**: ako je oznaka aktivirana, za ovu vrstu intervencije uvijek je potrebno navesti PDV.
 
-**Boja**: boja za identificiranje intervencija u kalendarima projektnog područja, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [Dodjela WBS resursa](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**Boja**: boja koja služi za prepoznavanje intervencija u kalendarima područja projekata, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [Dodjela resursa WBS-u](/docs/project-management/planned-interventions/wbs-resource-assignation).

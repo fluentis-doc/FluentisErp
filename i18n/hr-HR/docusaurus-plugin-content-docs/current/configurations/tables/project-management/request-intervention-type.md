@@ -1,33 +1,34 @@
 ---
-title: Vrsta zahtjeva za intervenciju
+title: Vrste zahtjeva za intervenciju
 sidebar_position: 13
 ---
 
-Kartica je dostupna putem **Tablice > Upravljanje projektima > Vrsta zahtjeva za intervenciju**.
-Kartica sadrži moguće tipove **Zahtjeva za intervenciju**. Sastoji se od dijela za filtriranje u kojem je moguće pretraživati po kodu i opisu te mreže u kojoj će biti prikazane sve unesene vrste zahtjeva (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Pretraži u traci izbornika da se prikažu).  
+Tablici se može pristupiti putem **Tablice > Upravljanje projektima > Vrste zahtjeva za intervenciju**.
+
+Tablica sadrži moguće vrste **zahtjeva za intervenciju**. Sastoji se od područja za filtriranje, u kojem je moguće pretraživati prema šifri i opisu, te tablice u kojoj će biti navedene sve unesene vrste zahtjeva (dovoljno je kliknuti gumb ![](/img/neutral/common/search.png) Traži na alatnoj traci kako bi se prikazale).
 
 ![](/img/it-it/configurations/tables/projects/request.png)
 
-Unutar ove forme moguće je dodati nove tipove zahtjeva u mrežu klikom na tipku ![](/img/neutral/common/new.png) Novo; time će se dodati novi redak u mrežu u kojem se mogu definirati sljedeće informacije koje će biti povezane s dokumentom:  
+U istom obrascu moguće je dodati nove vrste zahtjeva u tablicu klikom na gumb ![](/img/neutral/common/new.png) Novo. Na taj će se način dodati novi redak u tablicu u kojem je moguće definirati sljedeće podatke koji će biti povezani s dokumentom:
 
-**Tip**: kod vrste zahtjeva;kod vrste zahtjeva;
+**Vrsta**: sadrži šifru vrste zahtjeva;
 
-**Opis vrste**: opis tipa;
+**Opis vrste**: opis vrste zahtjeva;
 
-**Numeracija**: pridružena numeracija;
+**Numeracija**: povezano numeriranje;
 
-**Težina tiketa**: zadana težina tiketa za ovu vrstu;
+**Važnost tiketa**: sadrži zadani prioritet tiketa za ovu vrstu zahtjeva;
 
-**SLA**: pridruženi Service Level Agreement;
+**SLA**: sadrži povezani ugovor o razini usluge (SLA);
 
-**Opis**: opis SLA;
+**Opis**: sadrži opis SLA-a;
 
-**Tip intervencije**: pridruženi tip intervencije;
+**Vrsta intervencije**: povezana vrsta intervencije;
 
-**Vanjska/Unutarnja**: ovaj indikator označava je li zahtjev za intervenciju vanjski ili unutarnji;
+**Vanjski/Interni**: ova oznaka određuje je li zahtjev za intervenciju interni ili vanjski;
 
-**Vrsta planiranja**: zadana vrsta planiranja;
+**Vrsta planiranja**: označava zadanu vrstu planiranja;
 
-**Opis**: opis vrste planiranja;
+**Opis**: sadrži opis vrste planirane aktivnosti;
 
-**Boja**: boja kojom se identificiraju zahtjevi za intervenciju u kalendarima područja projekata, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [i Dodjela WBS resursa](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**Boja**: boja koja služi za prepoznavanje zahtjeva za intervenciju u kalendarima područja projekata, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [Dodjela resursa WBS-u](/docs/project-management/planned-interventions/wbs-resource-assignation).

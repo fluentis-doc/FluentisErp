@@ -1,25 +1,26 @@
 ---
-title: Kategorija aktivnosti
+title: Kategorije aktivnosti
 sidebar_position: 1
 ---
 
-Kartica je dostupna putem **Tablice > Upravljanje projektima > Kategorija aktivnosti**.
-Kartica sadrži moguće kategorije aktivnosti. Sastoji se od dijela za filtriranje u kojem je moguće pretraživati po kodu i opisu te mreže u kojoj će biti prikazane sve vrste (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Traži u traci izbornika da se prikažu).
+Tablici se može pristupiti putem **Tablice > Upravljanje projektima > Kategorije aktivnosti**.
+
+Tablica sadrži moguće kategorije aktivnosti. Sastoji se od područja za filtriranje, u kojem je moguće pretraživati prema šifri i opisu, te tablice u kojoj će biti navedene sve kategorije (dovoljno je kliknuti gumb ![](/img/neutral/common/search.png) Traži na alatnoj traci kako bi se prikazale).
 
 ![](/img/it-it/configurations/tables/projects/task-category.png)
 
-Unutar ove forme moguće je dodati nove tipove u mrežu klikom na tipku ![](/img/neutral/common/new-child.png) Novi grupu ili ![](/img/neutral/common/new-brother.png) Novi raspored; time će se dodati novi redak u mrežu u kojem se mogu definirati sljedeće informacije:
+U istom obrascu moguće je dodati nove kategorije u tablicu klikom na gumb ![](/img/neutral/common/new-child.png) Nova grupa ili ![](/img/neutral/common/new-brother.png) Novo grupiranje. Na taj će se način dodati novi redak u tablicu u kojem je moguće definirati sljedeće podatke:
 
-**Kod**: kod kategorije;
+**Šifra**: šifra kategorije;
 
 **Opis**: opis kategorije;
 
-**Fakturabilna aktivnost**: ovaj indikator postavlja aktivnost kao fakturabilnu po defaultu;
+**Naplativa aktivnost**: ova oznaka prema zadanim postavkama određuje da se aktivnost može fakturirati;
 
-**Aktivnost s dodanom vrijednošću**: ovaj indikator označava aktivnost kao aktivnost s dodanom vrijednošću; ovaj indikator se nalazi u svim dokumentima područja projekata, postavljen prema kategoriji aktivnosti, a korisnik ga može kasnije izmijeniti. U slučaju dokumenata generiranih procedurom, a ne unesenih ručno, vrijednost indikatora će se naslijediti iz prethodnog dokumenta od kojeg je novi dokument nastao. Tako je moguće napraviti analizu između aktivnosti s i bez dodane vrijednosti.
+**Aktivnost s dodanom vrijednošću**: ova oznaka označava aktivnost kao aktivnost s dodanom vrijednošću. Ova je oznaka dostupna u svim dokumentima područja projekata, a njezina se vrijednost preuzima iz kategorije aktivnosti, nakon čega je korisnik može promijeniti. U slučaju dokumenata generiranih automatskim postupkom, a ne unesenih od početka, vrijednost oznake preuzima se iz prethodnog dokumenta na temelju kojeg je novi dokument generiran. Na taj je način moguće provoditi analize aktivnosti s dodanom vrijednošću i onih bez dodane vrijednosti.
 
-**Kod plaća**: kod koji će se koristiti u proceduri obračuna plaća, konfiguriran u kartici **Kodovi plaća**.
+**Kodovi plaća**: šifra koja će se koristiti u postupku izračuna podataka za obračun plaće, konfiguriranih u tablici **Šifre obračuna plaće**.
 
-**Poslovni centar**: sadrži troškovni centar koji će služiti za agregaciju aktivnosti i pružiti kontrolingu informacije o svim aktivnostima obavljenim u određenom razdoblju.
+**Centar troška**: sadrži centar troška koji služi za grupiranje aktivnosti kako bi se kontrolingu omogućio pregled svih aktivnosti obavljenih tijekom određenog razdoblja.
 
-**Opis**: opis poslovnog centra.
+**Opis**: sadrži opis centra tvrtke.
