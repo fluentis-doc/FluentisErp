@@ -3,29 +3,28 @@ title: Pravila postavljanja
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tablice > Proizvodnja > Tablice F.C.S. > Pravila postavljanja**.
+Tablica se nalazi na putanji **Tablice > Proizvodnja > Tablice A.F.C.S. > Pravila postavljanja**.
 
-Podaci iz ove tablice koriste se isključivo unutar postupka [F.C.S. Planiranja](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+Podaci iz ove tablice koriste se isključivo u postupku [A.F.C.S. raspoređivanja](/docs/planning/ms-master-scheduling/fcs-scheduling).
 
-Ova forma omogućuje definiranje pravila za izračun vremena postavljanja obrade koja se odvija na stroju za koji su prethodno definirani [Atributi postavljanja](/docs/configurations/tables/production/fcs-tables/setup-property).       
-Jedno pravilo postavljanja može biti definirano putem više zapisa u ovoj tablici.
-Svaki zapis omogućuje upravljanje s najviše 10 atributa postavljanja.
-Za svaki od atributa definiranih u zapisu, postoji koeficijent množenja (zadano: 1) koji se primjenjuje na vrijednost promjene stanja atributa.
-Vrijednosti dobivene množenjem s koeficijentima zatim se obrađuju prema odabranoj vrsti izračuna u zapisu (maksimum, minimum, zbroj, prosjek).
-Nakon toga, rezultat se dodatno množi s ukupnim koeficijentom (zadano: 1).
-Ako je pravilo definirano kroz više zapisa, konačno vrijeme postavljanja izračunava se kao zbroj rezultata svih zapisa.
+Ovaj obrazac omogućuje definiranje pravila za izračun vremena podešavanja (postavljanja) operacija koje se izvršavaju na stroju za koji su definirani [Atributi podešavanja](/docs/configurations/tables/production/fcs-tables/setup-property).
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Jedno pravilo podešavanja može se definirati pomoću više zapisa u ovoj tablici. Svaki zapis omogućuje upravljanje s najviše 10 atributa podešavanja. Za svaki atribut definiran u zapisu postoji koeficijent množenja (zadana vrijednost je 1) koji se primjenjuje na vrijednost prijelaza stanja atributa.
 
-**Pretraživanje pravila postavljanja**
+Vrijednosti dobivene množenjem koeficijentima obrađuju se prema vrsti izračuna odabranoj u zapisu (maksimum, minimum, zbroj, prosjek), a zatim se dobiveni rezultat množi ukupnim koeficijentom (zadana vrijednost je 1).
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata.
-Nakon što postaviš željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži.  
+Ako je pravilo definirano pomoću više zapisa, rezultati svakog pojedinog zapisa zbrajaju se kako bi se dobilo konačno vrijeme podešavanja.
 
-**Unos pravila za postavljanje**
+Tablica omogućuje unos novih zapisa ili traženje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**. 
+**Traženje pravila podešavanja**
 
-Za novi zapis obavezno je unijeti barem one podatke koje sustav zahtijeva: **Šifra** i **Opis**.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+**Unos pravila podešavanja**
+
+Za unos novih šifri potrebno je kliknuti u prvi prazni redak tablice ili pritisnuti gumb **Novo**.
+
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

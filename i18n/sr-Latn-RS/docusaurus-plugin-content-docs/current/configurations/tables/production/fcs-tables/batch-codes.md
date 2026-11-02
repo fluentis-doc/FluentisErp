@@ -1,22 +1,22 @@
 ---
-title: Šifre grupiranja
+title: Šifre grupisanja
 sidebar_position: 4
 ---
 
-Tablica se nalazi putem izbornika **Tablice > Proizvodnja > Tablice F.C.S. > Šifre grupiranja**.
+Tabela se nalazi u meniju **Tabele > Proizvodnja > Tabele A.F.C.S. > Šifre grupisanja**.
 
-Podaci u ovoj tablici koriste se isključivo unutar postupka [F.C.S. Planiranja](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+Podaci u ovoj tabeli koriste se isključivo u okviru postupka [F.C.S. planiranja](/docs/planning/ms-master-scheduling/fcs-scheduling).
 
-Šifre grupiranja omogućuju grupiranje radnih faza koje se obrađuju zajedno na strojevima gdje je moguće objediniti obrade.
+Šifre grupisanja omogućavaju grupisanje radnih faza koje se obrađuju zajedno na mašinama na kojima je moguće objediniti obrade.
 
-**Pretraživanje šifri grupiranja**
+**Pretraživanje šifara grupisanja**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se odaberu svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se odaberu svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-**Unos šifri grupiranja**
+**Unos šifara grupisanja**
 
-Za unos novih šifri potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**. 
+Za unos novih šifara potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Kod unosa novog zapisa obavezno je unijeti barem jedno obavezno polje: **Šifra**.
+Prilikom unosa novog zapisa obavezno je uneti barem jedno obavezno polje: **Šifra**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

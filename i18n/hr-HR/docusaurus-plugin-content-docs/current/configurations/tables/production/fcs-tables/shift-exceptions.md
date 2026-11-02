@@ -3,25 +3,28 @@ title: Izuzeci u kalendaru
 sidebar_position: 7
 ---
 
-Tablica se nalazi na putanji **Tablice > Proizvodnja > Tablice F.C.S. > Izuzeci u kalendaru**.
+Tablica se nalazi na putanji **Tablice > Proizvodnja > Tablice A.F.C.S. > Izuzeci u kalendaru**.
 
-Podaci u ovoj tablici koriste se isključivo u postupku [F.C.S. raspoređivanja](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+Podaci iz ove tablice koriste se isključivo u postupku [A.F.C.S. raspoređivanja](/docs/planning/ms-master-scheduling/fcs-scheduling).
 
-Ovaj obrazac omogućuje definiranje izuzetaka u kalendaru za bilo koji resurs koji se simulira u raspoređivaču (Radni centri, Strojevi, Radnici, Proizvodni resursi).
-Postoji hijerarhijski odnos između centara i strojeva – ako je centar neaktivan u određeno vrijeme, tada će i povezani strojevi automatski biti neaktivni.
-Svaki resurs ima svoj standardni radni turnus, no u određenim danima moguće je definirati drugačiji turnus. Na primjer, blagdani se unose kao izuzeci u kalendaru s praznim radnim turnusom.
-Ostali tipični primjeri praznog turnusa uključuju održavanje stroja, odsutnost radnika (godišnji odmor ili bolovanje), održavanje proizvodnih resursa.
-Izuzeci se također mogu koristiti za ograničena vremenska razdoblja u kojima se radi manje ili više nego inače (prekovremeni rad, rad na skraćeno radno vrijeme itd.).
-Unos izuzetaka vrši se odabirom radnog turnusa, vremenskog razdoblja u kojem će izuzetak vrijediti te elemenata na koje se izuzetak primjenjuje (moguće je istovremeno odabrati više elemenata istog tipa, npr. više centara i više strojeva).
+Ovaj obrazac omogućuje definiranje kalendarskih iznimki za bilo koji resurs koji simulira planer (radni centri, strojevi, radnici, proizvodni resursi).
 
-**Pretraživanje izuzetaka u kalendaru**
+Između radnih centara i strojeva postoji hijerarhijski odnos. Stoga, ako je radni centar neaktivan u određenom vremenu, pripadajući strojevi automatski će također biti neaktivni.
 
-Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Svaki resurs ima svoj standardni radni raspored, ali za određene dane moguće je definirati drukčiji radni raspored. Primjerice, blagdani se definiraju kao kalendarske iznimke s praznim radnim rasporedom.
 
-**Unos izuzetaka u kalendaru**
+Drugi tipični primjeri primjene praznog radnog rasporeda su održavanje stroja, odsutnost radnika (godišnji odmor ili bolovanje) te održavanje proizvodnih resursa. Izuzeci se mogu koristiti i za ograničena vremenska razdoblja tijekom kojih se radi manje ili više sati nego inače (prekovremeni rad, skraćeno radno vrijeme itd.).
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**. 
+Izuzeci se unose odabirom radnog rasporeda, vremenskog razdoblja tijekom kojeg će iznimka vrijediti te elemenata na koje se iznimka primjenjuje. Za svaku vrstu elemenata moguće je odabrati više elemenata istodobno, primjerice više radnih centara i više strojeva.
 
-Za novi zapis obavezno je unijeti najmanje one podatke koje sustav zahtijeva: **Datum**, **Kategorija** i **Radna smjena**.
+**Traženje iznimki u kalendaru**
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici rezultata.
+
+**Unos iznimki u kalendaru**
+
+Za unos novih šifri potrebno je kliknuti u prvi prazni redak tablice ili pritisnuti gumb **Novo**.
+
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Datum**, **Kategorija** i **Radni raspored**.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

@@ -1,39 +1,46 @@
 ---
-title: Pravila podešavanja stroja
+title: Pravila grupiranja strojeva
 sidebar_position: 3
 ---
 
-Tablica se nalazi putem izbornika **Tablice > Proizvodnja > Tablice F.C.S. > Pravila grupiranja po stroju**.
+Tablica se nalazi na putanji **Tablice > Proizvodnja > Tablice A.F.C.S. > Pravila grupiranja strojeva**.
 
-Podaci iz ove tablice koriste se isključivo unutar postupka [F.C.S. Planiranja](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+Podaci iz ove tablice koriste se isključivo u postupku [A.F.C.S. raspoređivanja](/docs/planning/ms-master-scheduling/fcs-scheduling).
 
-Svako pravilo grupiranja definira se jedinstvenim zapisom u ovoj tablici.
+Svako pravilo grupiranja definirano je jednim zapisom u ovoj tablici.
 
 **Specifična polja**
 
-> **Element za razmatranje**: odabire se element na temelju kojeg se računa razina popunjenosti stroja (jedna od linearnih dimenzija artikla, volumen, težina, maksimalan broj obrada neovisno o dimenzijama artikla ili ukupan broj komada za obradu).
-Ako je odabran dimenzionalni parametar, njegova vrijednost preuzeta iz šifrarnika artikla množi se s količinom proizvodnog naloga, osim ako nije označen flag "Neovisno o količini".     
-> **Minimalna vrijednost**: minimalna vrijednost popunjenosti stroja potrebna za pokretanje.      
-> **Maksimalna vrijednost**: maksimalna vrijednost popunjenosti stroja. Ako obrada s istim kodom grupiranja premaši ovu vrijednost, planer će podijeliti posao u više sesija, kreirajući jedan zadatak za svaku od njih.       
-> **Neovisno o količini**: ako je ovaj flag označen, dimenzionalna vrijednost artikla na koju se pravilo odnosi neće se množiti s količinom proizvodnog naloga.            
-> **Grupiraj samo naloge s istom količinom**: ako je ovaj flag označen, grupirat će se samo faze koje imaju isti kod grupiranja i istu količinu za proizvodnju.
-Planer će za te faze generirati fiktivni kod grupiranja spajanjem šifre grupiranja i količine za proizvodnju.        
-> **Bilješke**: omogućuje unos slobodne napomene          
+> **Element za razmatranje**: potrebno je odabrati element na temelju kojeg će se izračunavati razina popunjenosti stroja (jedna od linearnih dimenzija artikla, volumen, težina, maksimalan broj operacija neovisno o dimenzijama artikala ili ukupan broj komada za obradu). Ako je odabrana dimenzijska vrijednost, odgovarajuća vrijednost preuzeta iz šifarnika artikala množit će se s količinom iz naloga za proizvodnju, osim ako je aktivirana oznaka „Neovisno o količini”.
+
+> **Minimalna vrijednost**: minimalna razina popunjenosti stroja potrebna za njegovo pokretanje.
+
+> **Maksimalna vrijednost**: maksimalna razina popunjenosti stroja. Ako operacije s istom šifrom grupiranja premaše ovo ograničenje, planer će upravljati s više radnih ciklusa stroja, kreirajući zadatak za svaki od njih.
+
+> **Nezavisna količina**: ako je ova oznaka aktivirana, dimenzijska vrijednost artikla na koji se pravilo odnosi neće se množiti s količinom iz naloga za proizvodnju.
+
+> **Grupiraj samo naloge/narudžbe s istom količinom**: ako je ova oznaka aktivirana, grupirat će se faze koje imaju istu šifru grupiranja i istu količinu za proizvodnju.
+
+Za te će faze planer kreirati fiktivnu šifru grupiranja u obliku niza znakova koji povezuje šifru grupiranja i količinu za proizvodnju.
+
+> **Napomene**: omogućuje unos proizvoljne napomene.
 
 :::note Napomena
-Ako radnom centru nije aktiviran flag za fiksno vrijeme obrade, moguće je da faze s istim kodom grupiranja imaju različita vremena obrade (vrijeme po jedinici × količina).
-U tom slučaju, kao vrijeme obrade uzet će se najveće od svih faza koje se grupiraju (konzervativna i sigurnosna procjena).
-Tijekom uvoza podataka prije pokretanja planiranja, sustav će prikazati upozorenja na listi grešaka uvoza, podsjećajući da će biti uzeto najveće vrijeme obrade.
+Imajte na umu da, ako za radni centar nije aktivirana oznaka fiksnog vremena obrade, mogu postojati faze koje treba obraditi s istom šifrom grupiranja, ali različitim vremenima obrade (jedinično vrijeme obrade × količina za proizvodnju).
+
+U tom će se slučaju kao vrijeme obrade uzeti najdulje vrijeme među fazama koje se grupiraju (pesimistična i oprezna pretpostavka).
+
+Tijekom faze uvoza podataka, koja prethodi pokretanju raspoređivanja, sustav će na popisu pogrešaka pri uvozu prikazati upozorenja kako bi nas obavijestio da će se uzeti u obzir najdulje vrijeme obrade.
 :::
 
-**Pretraživanje pravila grupiranja po stroju**
+**Traženje pravila grupiranja prema stroju**
 
-Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se postave željeni filteri, klikni na tipku **Traži** za prikaz rezultata unutar mreže.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
-**Unos pravila grupiranja po stroju**
+**Unos pravila grupiranja prema stroju**
 
-Za unos nove šifre potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**. 
+Za unos novih šifri potrebno je kliknuti u prvi prazni redak tablice ili pritisnuti gumb **Novo**.
 
-Kod unosa novog zapisa obavezno je unijeti barem polja: **Šifra** i **Element za razmatranje**.
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Element za razmatranje**.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).
