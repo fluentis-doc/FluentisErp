@@ -1,31 +1,32 @@
 ---
-title: Tipovi normi i zakoni
+title: Tipovi normi i zakona
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putu **Tablice > Kvaliteta > Dokumenti > Tipovi normi i zakoni**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Dokumenti > Tipovi normi i zakona**.
 
-:::important Čemu služi  
-U ovoj je tablici moguće kodirati različite tipove normi i zakona.   
-Primjer upotrebe nalazi se u modulu **Norme i zakoni**.
+:::important Čemu služi
+U ovoj tabeli moguće je šifrirati različite tipove normi i zakona.
+Primer upotrebe nalazi se u modulu **Norme i zakoni**.
 :::
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraga Tipova normi i zakona**
+**Pretraživanje tipova normi i zakona**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos Tipova normi i zakona**
+**Unos tipova normi i zakona**
 
-Za unos novih *Tipova normi i zakona* potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja program traži: **Šifra** i **Opis**.
+Za unos novih *tipova normi i zakona* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-*Specifična polja*: 
+Za novi zapis potrebno je uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
 
-> **Šifra tipa**: šifra *tipa norme ili zakona*.   
-> **Opis tipa**: opis *tipa norme ili zakona*.   
-> **Mogućnost brisanja**: označava može li se ta tipologija izbrisati ili ne;   
-> **Napomene**: slobodne bilješke.
+*Specifična polja*:
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Tip šifre**: šifra *tipa norme ili zakona*.
+> **Opis tipa**: opis *tipa norme ili zakona*.
+> **Mogućnost brisanja (obnova)**: označava da li se ta tipologija može izbrisati ili ne.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeći link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

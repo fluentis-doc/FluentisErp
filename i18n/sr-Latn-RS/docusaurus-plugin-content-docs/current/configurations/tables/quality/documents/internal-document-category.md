@@ -1,111 +1,125 @@
 ---
-title: Kategorije dokumenata internog podrijetla  
+title: Kategorije dokumenata internog porekla
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putu **Tablice > Kvaliteta > Dokumenti > Kategorije dokumenata internog podrijetla**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Dokumenti > Kategorije dokumenata internog porekla**.
 
-:::important Čemu služi  
-Podaci u ovoj tablici koriste se za katalogiziranje različitih vrsta dokumenata internog podrijetla.
-Podaci uneseni u ove mreže prenijet će se prilikom izrade dokumenata internog podrijetla.
-Primjer upotrebe nalazi se u modulu **Dokumenti internog podrijetla**.
+:::important Čemu služi
+Podaci u ovoj tabeli koriste se za katalogizaciju različitih tipova dokumenata internog porekla.
+Podaci uneti u ove tabele prenose se prilikom kreiranja dokumenata internog porekla.
+Primer upotrebe nalazi se u modulu **Dokumenti internog porekla**.
 :::
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraga kategorija dokumenata internog podrijetla**
+**Pretraživanje kategorija dokumenata internog porekla**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos kategorija dokumenata internog podrijetla**  
+**Unos kategorija dokumenata internog porekla**
 
-Za unos novih *kategorija dokumenata internog podrijetla* potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja program traži: **Šifra** i **Opis**.
+Za unos novih *kategorija dokumenata internog porekla* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-**Dupliciranje kategorija dokumenata internog podrijetla**
+Za novi zapis potrebno je uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
 
-Za dupliciranje postojeće *kategorije dokumenta* u novu *kategoriju dokumenta* potrebno je kliknuti na *kategoriju dokumenta* koju želite duplicirati i pritisnuti tipku **Dupliciraj**.   
-Zatim će se prikazati zahtjev za unos **šifre** i **opisa** nove *kategorije dokumenta* (oba podatka su obavezna).   
-Nakon toga pritisnite tipku **OK** ili **Odustani** ovisno o tome želite li nastaviti s dupliciranjem ili ne.  
+**Dupliranje kategorija dokumenata internog porekla**
 
-## Kategorije dokumenata internog podrijetla
+Za dupliranje postojeće *kategorije dokumenta* u novu *kategoriju dokumenta* potrebno je kliknuti na *kategoriju dokumenta* koju želite da duplirate i pritisnuti dugme **Dupliraj**.
 
-Ovo je popis u koji se unose osnovne informacije o *kategoriji dokumenta*.   
-Popis se sastoji od sljedećih informacija:    
-> **Kategorija**: šifra *kategorije dokumenta*.   
-> **Opis kategorije**: opis *kategorije dokumenta*.   
-> **Sekvenca**: redoslijed prikaza u popisu *kategorija dokumenata*.   
-> **Obavezni dokument**: označava je li obavezno priložiti dokument.     
-> **Automatsko kodiranje**:označava želi li se omogućiti automatsko kodiranje dokumenta; kod će se sastojati od *šifre kategorije* i progresivnog broja s određenim brojem znamenki, počevši od broja navedenog u *Početni progresivni broj*.   
-> **Broj progresivnih znamenki**: omogućeno ako je uključeno *automatsko kodiranje*, određuje broj znamenki koje čine kod dokumenta.  
-> **Početni progresivni broj**: omogućeno ako je uključeno *automatsko kodiranje* predstavlja početni broj koji će se predložiti pri unosu prvog dokumenta.
-> **Funkcija provjere/odobrenja**: *poslovna funkcija* odgovorna za provjeru/odobrenje dokumenta.  
-> **Funkcija izrade/izdavanja**: *poslovna funkcija* odgovorna za izradu/izdavanje dokumenta.  
-> **Vrsta dokumenta**: šifra *vrste dokumenta* predložene za kodiranje priloženog dokumenta u *dokumentnom sustavu*.   
-> **Opis vrste dokumenta**: opis *vrste dokumenta* predložene za kodiranje priloženog dokumenta u *dokumentnom sustavu*.   
-> **Arhiva**: polje u kojem se dodjeljuje skladište povezano s određenom kategorijom.   
-> **Lokacija**: označava fizičku lokaciju povezanu s *kategorijom*; moguće je odabrati samo *lokacije* koje pripadaju odabranom *arhivu*.   
-> **Opis lokacije**: ako lokacija nije kodirana, može se ručno unijeti u ovo slobodno polje.   
-> **Razdoblje čuvanja**: razdoblje čuvanja koje se unosi ručno.  
-> **Odgovorna funkcija**: *poslovna funkcija* odgovorna za *kategoriju*.   
-> **Napomene**: slobodne bilješke.  
+Zatim će se prikazati zahtev za unos **šifre** i **opisa** nove *kategorije dokumenta* (oba podatka su obavezna).
 
-### Lista distribucije  
+Nakon toga pritisnite dugme **OK** ili **Odustani**, u zavisnosti od toga da li želite da nastavite sa dupliranjem ili ne.
 
-U ovom popisu moguće je povezati: *poslovne funkcije*, *zaposlenike*, *klijente/dobavljače* i *kontakte* che abitualmente ricevono copia della *Categoria Documento* selezionata ed indicare le metodologie abituali di ricezione del documento.   
-L'elenco si compone delle seguenti informazioni:   
-> **Grupa**   
->> **Šifra**: šifra *ARM uloge* primatelja.   
->> **Opis**: opis *ARM uloge* primatelja.   
+## Kategorije dokumenata internog porekla
+
+Ovo je lista u koju se unose osnovne informacije o *kategoriji dokumenta*.
+
+Lista se sastoji od sledećih informacija:
+> **Kategorija**: šifra *kategorije dokumenta*.
+> **Opis kategorije**: opis *kategorije dokumenta*.
+> **Redosled**: redosled prikaza na listi *kategorija dokumenata*.
+> **Obavezni dokument**: označava da li je obavezno priložiti dokument.
+> **Automatsko šifriranje**: označava da li se želi omogućiti automatsko šifriranje dokumenta; šifra će se sastojati od *šifre kategorije* i progresivnog broja sa određenim brojem cifara, počevši od broja navedenog u polju *Početni progresivni broj*.
+> **Broj progresivnih cifara**: omogućeno ako je uključeno *automatsko šifriranje*, određuje broj cifara koje čine šifru dokumenta.
+> **Početni progresivni broj**: ako je uključeno *automatsko šifriranje*, predstavlja početni broj koji će biti predložen prilikom unosa prvog dokumenta.
+> **Funkcija provere/odobrenja**: *poslovna funkcija* odgovorna za proveru/odobrenje dokumenta.
+> **Funkcija kreiranja/izdavanja**: *poslovna funkcija* odgovorna za kreiranje/izdavanje dokumenta.
+> **Tip dokumenta**: šifra *tipa dokumenta* predloženog za šifriranje priloženog dokumenta u *upravljanju dokumentima*.
+> **Opis tipa dokumenta**: opis *tipa dokumenta* predloženog za šifriranje priloženog dokumenta u *upravljanju dokumentima*.
+> **Arhiva**: polje u kojem se dodeljuje skladište povezano sa određenom kategorijom.
+> **Izvorna lokacija**: označava fizičku lokaciju povezanu sa *kategorijom*; moguće je odabrati samo *lokacije* koje pripadaju odabranoj *arhivi*.
+> **Opis lokacije**: ako lokacija nije šifrirana, može se ručno uneti u ovo slobodno polje.
+> **Period zadržavanja**: period čuvanja koji se unosi ručno.
+> **Odgovorna funkcija**: *poslovna funkcija* odgovorna za *kategoriju*.
+> **Napomene**: slobodne napomene.
+
+### Distribuciona lista
+
+U ovoj listi moguće je povezati *poslovne funkcije*, *zaposlene*, *kupce/dobavljače* i *kontakte* koji redovno primaju kopiju odabrane *kategorije dokumenta*, kao i odrediti uobičajene načine prijema dokumenta.
+
+Lista se sastoji od sledećih podataka:
+> **Grupa**
+>> **Šifra**: šifra *ARM uloge* primaoca.
+>> **Opis**: opis *ARM uloge* primaoca.
 >
-> **Korisnik**   
->> **Šifra**: šifra *ARM korisnika* primatelja.   
->> **Opis**: opis *ARM korisnika* primatelja. 
+> **Korisnik**
+>> **Šifra**: šifra *ARM korisnika* primaoca.
+>> **Opis**: opis *ARM korisnika* primaoca.
 >
-> **Poslovna funkcija**
->> **Šifra**: šifra *poslovne funkcije* primatelja.   
->> **Opis**: opis *poslovne funkcije* primatelja. 
+> **Funkcija preduzeća**
+>> **Šifra**: šifra *poslovne funkcije* primaoca.
+>> **Opis**: opis *poslovne funkcije* primaoca.
 >
-> **Zaposlenik**
->> **Šifra**: šifra *zaposlenika* primatelja.   
->> **Prezime**: prezime *zaposlenika* primatelja. 
->> **Ime**: ime *zaposlenika* primatelja.  
+> **Zaposleni**
+>> **Šifra**: šifra *zaposlenog* primaoca.
+>> **Prezime**: prezime *zaposlenog* primaoca.
+>> **Ime**: ime *zaposlenog* primaoca.
 >
-> **Klijent/Dobavljač**
->> **Opis**: naziv *klijenta/dobavljača* primatelja.   
+> **Kupac/Dobavljač**
+>> **Opis**: naziv *klijenta/dobavljača* primaoca.
 >
 > **Kontakt**
->> **Šifra**: šifra *kontakta* primatelja.  
->> **Opis**: opis *kontakta* primatelja.  
+>> **Šifra**: šifra *kontakta* primaoca.
+>> **Opis**: opis *kontakta* primaoca.
 >
-> **Drugi primatelj**
->> **Opis**: slobodan opis nekodiranog primatelja.   
+> **Drugi primalac**
+>> **Opis**: slobodan opis primaoca koji nije šifriran.
 >
-> **Podaci za dostavu**
->> **Tiskano**: označava želi li primatelj prilikom distribucije (interni postupak u upravljanju *dokumentima internog podrijetla*) primiti tiskanu kopiju dokumenta ili ga zaprimiti kao privitak putem *e-pošte*.   
->> **Način dostave**: uobičajena metoda dostave *kategorije dokumenta*.   
->> **Email**: adresa e-pošte ako nije kodirana u evidenciji primatelja.   
->> **Broj kopija**: broj tiskanih kopija koje primatelj želi primiti.     
->> **Napomene**: slobodne bilješke.    
+> **Podaci za isporuku**
+>> **Na papiru**: označava da li primalac prilikom distribucije (interni postupak u upravljanju *dokumentima internog porekla*) želi da primi štampanu kopiju dokumenta ili da ga primi kao prilog putem *e-pošte*.
+>> **Tip obaveštenja**: uobičajeni način isporuke *kategorije dokumenta*.
+>> **E-mail**: adresa e-pošte ako nije šifrirana u evidenciji primaoca.
+>> **Broj kopija**: broj štampanih kopija koje primalac želi da primi.
+>> **Napomene**: slobodne napomene.
 
-*Specifične tipke*:      
-**Novi primatelj**: umeće novi redak u popis.  
-**Izbriši primatelja**: briše odabrani redak iz popisa.   
+*Specifična dugmad*:
+
+**Novi primalac**: umeće novi red u listu.
+
+**Izbriši primaoca**: briše odabrani red iz liste.
 
 ### Dozvoljen pristup funkcijama
-U ovaj se popis mogu unijeti *poslovne funkcije* kojima će se dodijeliti prava pristupa.     
-Ako se u ovoj tablici ne unese nijedan redak, pristup je omogućen svima.     
-Popis se sastoji od sljedećih informacija:     
-> **Funkcija**: šifra *poslovne funkcije*.   
-> **Opis funkcije**: opis *poslovne funkcije*.     
-> **Napomene**: slobodne bilješke.  
 
-*Specifične tipke*:      
-**Nova funkcija pristupa**: umeće novi redak u popis.    
-**Izbriši funkciju pristupa**: briše odabrani redak iz popisa.    
+U ovu listu mogu se uneti *poslovne funkcije* kojima će biti dodeljena prava pristupa.
+
+Ako se u ovoj tabeli ne unese nijedan red, pristup je omogućen svima.
+
+Lista se sastoji od sledećih informacija:
+> **Funkcija**: šifra *poslovne funkcije*.
+> **Opis funkcije**: opis *poslovne funkcije*.
+> **Napomene**: slobodne napomene.
+
+*Specifična dugmad*:
+
+**Nova funkcija pristupa (prijave)**: umeće novi red u listu.
+
+**Izbriši funkciju pristupa (prijave)**: briše odabrani red iz liste.
 
 ### Dodatni podaci
-Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *dokument internog podrijetla*.   
-Ti *Extra data* mogu se naslijediti u *interna dokumenta* određene kategorije.    
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Moguće je uneti [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *dokument internog porekla*.
+
+Ti *dodatni podaci* mogu se naslediti u *internom dokumentu* određene kategorije.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeći link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

@@ -1,94 +1,108 @@
 ---
-title: Kategorije dokumenata vanjskog podrijetla
+title: Kategorije dokumenata eksternog porekla
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Dokumenti > Kategorije dokumenata vanjskog podrijetla**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Dokumenti > Kategorije dokumenata eksternog porekla**.
 
 :::important Čemu služi
-Podaci u ovoj tablici koriste se za kategorizaciju različitih vrsta Dokumenata vanjskog podrijetla.
-Podaci uneseni u ovu tablicu prenose se prilikom izrade Dokumenata vanjskog podrijetla. 
-Primjer korištenja nalazi se u modulu **Dokumenti vanjskog podrijetla**.
+Podaci u ovoj tabeli koriste se za kategorizaciju različitih tipova dokumenata eksternog porekla.
+Podaci uneti u ovu tabelu prenose se prilikom kreiranja dokumenata eksternog porekla. 
+Primer upotrebe nalazi se u modulu **Dokumenti eksternog porekla**.
 :::
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmeniti ili izbrisati.
 
-**Pretraživanje Kategorija dokumenata vanjskog podrijetla**
+**Pretraživanje kategorija dokumenata eksternog porekla**
 
-Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar mreže rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos Kategorija dokumenata vanjskog podrijetla**
+**Unos kategorija dokumenata eksternog porekla**
 
-Za unos novih *Kategorija dokumenata vanjskog podrijetla* potrebno je kliknuti u mrežu na prvi prazan redak ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti najmanje obavezna polja koja zahtijeva program: **Kod** i **Opis**.
+Za unos novih *kategorija dokumenata eksternog porekla* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-**Dupliciranje Kategorije dokumenata vanjskog podrijetla**
+Za novi zapis potrebno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
-Za dupliciranje postojeće *Kategorije dokumenta* u novu *Kategoriju dokumenta* potrebno je u mreži označiti *Kategoriju dokumenta* koju želite duplicirati i pritisnuti tipku **Dupliciraj**.   
-Prikazat će se zahtjev za unos **Koda** i **Opisa** nove *Kategorije dokumenta* (oba podatka su obavezna).    
-Zatim pritisnite tipku **OK** za potvrdu ili **Otkaži** ako želite prekinuti postupak dupliciranja.
+**Dupliranje kategorije dokumenta eksternog porekla**
 
-## Kategorije dokumenata vanjskog podrijetla  
+Za dupliranje postojeće *kategorije dokumenta* u novu *kategoriju dokumenta* potrebno je u mreži označiti *kategoriju dokumenta* koju želite da duplirate i pritisnuti dugme **Dupliraj**.
 
-Ovo je popis u koji se unose osnovne informacije o *Kategoriji dokumenta*.   
-Popis sadrži sljedeće informacije:     
-> **Kategorija**: kod *Kategorije dokumenta*.   
-> **Opis kategorije**: opis *Kategorije dokumenta*.   
-> **Arhiva**: označava skladište u kojem se nalazi određena kategorija.   
-> **Lokacija**: izička lokacija gdje se uobičajeno nalazi *Kategorija*; moguće je odabrati samo *Lokacije* koje pripadaju odabranoj *Arhivi*.  
-> **Opis lokacije**: ako lokacija nije kodificirana, može se ručno unijeti u ovo slobodno polje.  
-> **Razdoblje čuvanja**: razdoblje čuvanja koje se unosi ručno.    
-> **Odgovorna funkcija**: *Poslovna funkcija* odgovorna za tu *Kategoriju*.   
-> **Napomene**: slobodne bilješke.  
+Prikazaće se zahtev za unos **Šifre** i **Opisa** nove *kategorije dokumenta* (oba podatka su obavezna).
 
-### Lista distribucije  
+Zatim pritisnite dugme **OK** za potvrdu ili **Otkaži** ako želite da prekinete postupak dupliranja.
 
-U ovom popisu moguće je povezati: *Poslovne funkcije*, *Zaposlenike*, *Klijente/Dobavljače* i *Kontakte* koji uobičajeno primaju kopiju *Kategorije dokumenta* te odrediti standardne načine dostave.  
-Popis sadrži sljedeće informacije:  
-> **Poslovna funkcija**   
->> **Kod**: kod *Poslovne funkcije* primatelja.    
->> **Opis**: opis *Poslovne funkcije* primatelja  
+## Kategorije dokumenata eksternog porekla
+
+Ovo je lista u koju se unose osnovne informacije o *kategoriji dokumenta*.
+
+Lista sadrži sledeće informacije:
+> **Kategorija**: šifra *kategorije dokumenta*.
+> **Opis kategorije**: opis *kategorije dokumenta*.
+> **Arhiva**: označava skladište u kojem se nalazi određena kategorija.
+> **Lokacija**: fizička lokacija na kojoj se uobičajeno nalazi *kategorija*; moguće je odabrati samo *lokacije* koje pripadaju odabranoj *arhivi*.
+> **Opis lokacije**: ako lokacija nije šifrirana, može se ručno uneti u ovo slobodno polje.
+> **Period zadržavanja**: period čuvanja koji se unosi ručno.
+> **Odgovorna funkcija**: *poslovna funkcija* odgovorna za tu *kategoriju*.
+> **Napomene**: slobodne napomene.
+
+### Distribuciona lista
+
+U ovoj listi moguće je povezati: *poslovne funkcije*, *zaposlene*, *kupce/dobavljače* i *kontakte* koji uobičajeno primaju kopiju *kategorije dokumenta*, kao i odrediti standardne načine isporuke.
+
+Lista sadrži sledeće informacije:
+> **Poslovna funkcija**
+>> **Šifra**: šifra *poslovne funkcije* primaoca.
+>> **Opis**: opis *poslovne funkcije* primaoca
 >
-> **Zaposlenik**   
->> **Kod**: kod *Zaposlenika* primatelja.   
->> **Prezime**: prezime *Zaposlenika* primatelja.   
->> **Ime**: ime *Zaposlenika* primatelja.   
+> **Zaposleni**
+>> **Šifra**: šifra *zaposlenog* primaoca.
+>> **Prezime**: prezime *zaposlenog* primaoca.
+>> **Ime**: ime *zaposlenog* primaoca.
 >
-> **Klijent/Dobavljač**   
->> **Opis**: naziv tvrtke *Klijenta* ili *Dobavljača* primatelja.   
+> **Kupac/Dobavljač**
+>> **Opis**: naziv preduzeća *klijenta* ili *dobavljača* primaoca.
 >
-> **Kontakt**   
->> **Kod**: kod *Kontakta* primatelja.   
->> **Opis**: opis *Kontakta* primatelja.   
+> **Kontakt**
+>> **Šifra**: šifra *kontakta* primaoca.
+>> **Opis**: opis *kontakta* primaoca.
 >
-> **Drugi primatelj**   
->> **Opis**: slobodan opis primatelja koji nije kodificiran.    
+> **Drugi primalac**
+>> **Opis**: slobodan opis primaoca koji nije šifriran.
 >
-> **Podaci za dostavu**   
->> **Tiskano**: označava da, u trenutku distribucije (unutarnji postupak u okviru modula   *Dokumenti vanjskog podrijetla*) subjekt želi primiti *tiskanu kopiju* dokumenta ili kopiju u privitku putem *Emaila*.   
->> **Način isporuke**: označava uobičajenu metodu isporuke za *Kategoriju dokumenta*.   
->> **Email**: označava adresu e-pošte primatelja, ako nije definirana u matičnim podacima primatelja.    
->> **Broj kopija**: označava broj tiskanih kopija koje primatelj želi primiti.    
->> **Bilješke**: slobodne napomene   
+> **Podaci za isporuku**
+>> **Na papiru**: označava da li subjekt u trenutku distribucije (interni postupak u okviru modula *Dokumenti eksternog porekla*) želi da primi *štampanu kopiju* dokumenta ili kopiju u prilogu putem *e-pošte*.
+>> **Tip obaveštenja**: označava uobičajeni način isporuke za *kategoriju dokumenta*.
+>> **E-mail**: označava adresu e-pošte primaoca, ako nije definisana u matičnim podacima primaoca.
+>> **Broj kopija**: označava broj štampanih kopija koje primalac želi da primi.
+>> **Napomene**: slobodne napomene.
 
-*Specifične tipke*:      
-**Novi primatelj**: umeće novi redak u popis.     
-**Izbriši primatelja**: briše odabrani redak iz popisa.     
+*Specifična dugmad*:
 
-### Dozvoljen pristup funkcijama  
-U ovaj se popis mogu unijeti *poslovne funkcije* kojima će se dodijeliti prava pristupa.    
-Ako se u ovoj tablici ne unese nijedan redak, pristup je omogućen svima.     
-Popis se sastoji od sljedećih informacija:    
-> **Funkcija**: kod *poslovne funkcije*.     
-> **Opis funkcije**: opis *poslovne funkcije*.   
-> **Napomene**: slobodne bilješke.  
+**Novi primalac**: umeće novi red u listu.
 
-*Specifične tipke*:      
-**Nova funkcija pristupa**: umeće novi redak u popis.     
-**Izbriši funkciju pristupa**: briše odabrani redak iz popisa.   
+**Izbriši primaoca**: briše odabrani red iz liste.
 
-### Dodatni podaci  
-Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *dokument vanjskog podrijetla*.     
-Ti *Extra data* mogu se naslijediti u *vanjski dokument* određene kategorije.     
+### Dozvoljen pristup funkcijama
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+U ovu listu mogu se uneti *poslovne funkcije* kojima će biti dodeljena prava pristupa.
+
+Ako se u ovoj tabeli ne unese nijedan red, pristup je omogućen svima.
+
+Lista se sastoji od sledećih informacija:
+> **Funkcija**: šifra *poslovne funkcije*.
+> **Opis funkcije**: opis *poslovne funkcije*.
+> **Napomene**: slobodne napomene.
+
+*Specifična dugmad*:
+
+**Nova funkcija pristupa (prijave)**: umeće novi red u listu.
+
+**Izbriši funkciju pristupa (prijave)**: briše odabrani red iz liste.
+
+### Dodatni podaci
+
+Moguće je uneti [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *dokument eksternog porekla*.
+
+Ti *Extra Data* mogu se naslediti u *eksternom dokumentu* određene kategorije.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeći link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

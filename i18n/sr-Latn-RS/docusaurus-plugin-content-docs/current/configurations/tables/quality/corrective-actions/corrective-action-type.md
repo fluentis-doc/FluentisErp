@@ -1,37 +1,40 @@
 ---
-title: Vrste korektivne radnje
+title: Tipovi korektivnih mera
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Korektivne radnje > Vrste korektivne radnje**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Korektivne mere > Tipovi korektivnih mera**.
 
-U ovoj tablici moguće je kodificirati *Vrste korektivne radnje*.   
-Neki primjeri korištenja *Vrsta korektivne radnje* nalaze se u upravljanjima:  
-> **Korektivne radnje** - u *zaglavnim podacima*;   
-> **Parametri korektivnih radnji** - u *zaglavnim podacima*.
+U ovoj tabeli moguće je definisati *tipove korektivnih mera*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.
+Neke primere upotrebe *tipova korektivnih mera* možemo pronaći u sledećim evidencijama:
+> **Korektivne mere** – u *podacima zaglavlja*;
+> **Parametri korektivnih mera** – u *podacima zaglavlja*.
 
-**Pretraživanje Vrsta korektivne radnje**
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi njihovog pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar mreže rezultata.
+**Pretraživanje tipova korektivnih mera**
 
-**Unos Vrsta korektivne radnje**
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-Za unos novih *Vrsta korektivne radnje* potrebno je kliknuti u mrežu na prvi prazan redak ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.
+**Unos tipova korektivnih mera**
 
-*Specifična polja*: 
-    
-> **Kod**: kod *Vrste korektivne radnje*.   
-> **Opis**: opis *Vrste korektivne radnje*.   
-> **Numeracija**: kod *Numerazione*.   
-> **Descrizione numerazione**: opis *Numeracije*.   
-> **Napomene**: slobodne bilješke.
+Za unos novih *tipova korektivnih mera* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-### Atributi Vrste korektivne radnje
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
-Moguće je dodati [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) opće podatke za *Vrstu korektivne radnje*.   
-Ovi *Extra data* mogu se naslijediti u *Korektivnim radnjama* određenog tipa.  
+*Specifična polja*:
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Šifra**: šifra *tipa korektivne mere*.
+> **Opis**: opis *tipa korektivne mere*.
+> **Numeracija**: šifra *numeracije*.
+> **Opis numeracije**: opis *numeracije*.
+> **Napomene**: slobodne napomene.
+
+### Dodatni podaci tipa korektivne mere
+
+Moguće je uneti [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *tip korektivne mere*.
+
+Ti se *dodatni podaci* mogu naslediti u *korektivnim merama* određenog tipa.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sledeću poveznicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).
