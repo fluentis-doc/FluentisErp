@@ -1,31 +1,33 @@
 ---
-title: Vrste obavijesti
+title: Tipovi obaveštenja
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Vrste obavijesti**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Opšte > Tipovi obaveštenja**.
 
-U ovoj je tablici moguće kodirati metode koje se koriste za primanje ili slanje dokumenata.  
-Neki primjeri upotrebe *Vrsta obavijesti* nalaze se u sljedećim upravljanjima:  
-> **Kategorije dokumenata i Dokumenti vanjskog podrijetla** - u kartici *liste distribucije*;   
-> **Kategorije dokumenata i Dokumenti unutarnjeg podrijetla** - u kartici *liste distribucije*;   
-> **Reklamacije** - u kartici *Zaglavlje*.
+U ovoj tabeli moguće je šifrirati metode koje se koriste za prijem ili slanje dokumenata.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
+Neki primeri upotrebe *tipova obaveštenja* nalaze se u sledećim evidencijama:
+> **Kategorije dokumenata i Dokumenti eksternog porekla** – na kartici *distribucione liste*;
+> **Kategorije dokumenata i Dokumenti internog porekla** – na kartici *distribucione liste*;
+> **Reklamacije** – na kartici *Zaglavlje*.
 
-**Pretraživanje Vrsta obavijesti**
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
+**Pretraživanje tipova obaveštenja**
 
-**Unos Vrsta obavijesti**
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-Za unos novih *Vrsta obavijesti* potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novi**.   
-Za novi zapis potrebno je unijeti barem obvezna polja koja program zahtijeva: **Šifru** i **Opis**.
+**Unos tipova obaveštenja**
 
-*Specifična polja*: 
+Za unos novih *tipova obaveštenja* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-> **Šifra**: šifra *Vrste obavijesti*.   
-> **Opis vrste obavijesti**: opis *Vrste obavijesti*.   
-> **Napomene**: slobodne bilješke.
+Za novi zapis potrebno je uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+*Specifična polja*:
+
+> **Šifra**: šifra *tipa obaveštenja*.
+> **Opis tipa obaveštenja**: opis *tipa obaveštenja*.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeći link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

@@ -1,64 +1,73 @@
 ---
-title: Uloge u poduzeću
+title: Uloge u preduzeću (poslovne funkcije)
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Poslovne funkcije**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Opšte > Uloge u preduzeću (poslovne funkcije)**.
 
-Pod poslovnom funkcijom podrazumijeva se skup *zaposlenika/korisnika* ili *radnih centara* koji obavljaju slične, homogeno definirane aktivnosti.  
-U ovoj tablici moguće je kodirati *poslovne funkcije* koje se koriste u većini modula područja Kvalitete za označavanje, primjerice: funkcije odgovorne za dokument, funkcije koje mogu izvršavati određene vrste aktivnosti i slično.     
+Poslovna funkcija označava grupu *zaposlenih/korisnika* ili *radnih centara* koji obavljaju srodne aktivnosti.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+U ovoj tabeli moguće je definisati *poslovne funkcije* koje se koriste u većini evidencija modula Kvalitet za određivanje odgovorne funkcije za dokument, funkcije koja može da obavlja ili obavlja određene tipove aktivnosti itd.
 
-**Pretraga poslovnih funkcija**
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi njihovog pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
+**Pretraživanje poslovnih funkcija (uloga)**
+
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
 **Unos poslovnih funkcija**
 
-Za unos novih *poslovnih funkcija* potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *poslovnih funkcija* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
 ## Poslovne funkcije
 
-Ovo je popis u koji se unose osnovne informacije o *poslovnoj funkciji*.   
-Popis se sastoji od sljedećih informacija:    
-> **Šifra**: šifra *poslovne funkcije*.  
-> **Opis poslovne funkcije**: opis *poslovne funkcije*.   
-> **Uloga**: šifra *ARM uloge*   
-> **Opis uloge**: opis *ARM uloge*   
-> **Razlog uključivanja u pritužbe**: omogućuje navođenje tipičnih ili specifičnih slučajeva uključivanja poslovne funkcije u *Pritužbe* ti će se podaci automatski prenijeti u *Pritužbe*; ti će se podaci automatski prenijeti u *Pritužbe* kada se funkcija uključi.   
-> **Razlog uključivanja u nesukladnosti**: omogućuje navođenje specifičnih ili karakterističnih razloga uključivanja *poslovne funkcije* u *Nesukladnosti*; ti će se podaci automatski prenijeti u *Nesukladnosti* prilikom uključivanja funkcije.
-> **Napomene**: slobodne bilješke.
+Ovo je lista u koju se unose osnovni podaci o *poslovnoj funkciji*.
 
-### Zaposlenici i korisnici povezani s funkcijom
+Lista se sastoji od sledećih podataka:
 
-U ovom popisu moguće je povezati *zaposlenike* i/ili *korisnike* koji čine odabranu *poslovnu funkciju*.   
-Popis se sastoji od sljedećih informacija:   
-> **Zaposlenik**   
->> **Operater**: šifra *zaposlenika*.   
->> **Prezime**: prezime *zaposlenika*.   
->> **Ime**: ime *zaposlenika*.   
+> **Šifra**: šifra *poslovne funkcije*.
+> **Opis funkcije preduzeća**: opis *poslovne funkcije*.
+> **Uloga**: šifra *A.R.M. uloge*.
+> **Opis uloge**: opis *A.R.M. uloge*.
+> **Razlog za uključivanje u reklamacije**: moguće je navesti posebne/karakteristične razloge uključivanja *poslovne funkcije* u *reklamacije*. Ti razlozi će se automatski preneti u *reklamacije* prilikom uključivanja *poslovne funkcije*.
+> **Razlog za uključivanje u neusaglašenosti**: moguće je navesti posebne/karakteristične razloge uključivanja *poslovne funkcije* u *neusaglašenosti*. Ti razlozi će se automatski preneti u *neusaglašenosti* prilikom uključivanja *poslovne funkcije*.
+> **Napomene**: slobodne napomene.
+
+### Zaposleni i korisnici povezani sa funkcijom
+
+U ovoj listi moguće je povezati *zaposlene* i/ili *korisnike* koji pripadaju odabranoj *poslovnoj funkciji*.
+
+Lista se sastoji od sledećih podataka:
+
+> **Zaposleni**
+>> **Operater**: šifra *zaposlenog*.
+>> **Prezime**: prezime *zaposlenog*.
+>> **Ime**: ime *zaposlenog*.
 >
-> **Korisnik**   
->> **Naziv**: šifra *ARM korisnika*   
->> **Opis**: opis *ARM korisnika*   
+> **Korisnik**
+>> **Ime**: šifra *A.R.M. korisnika*.
+>> **Opis**: opis *A.R.M. korisnika*.
 >
-> **Valjanost**   
->> **Zadani**: samo jedan subjekt može biti postavljen kao *zadani*; taj će se subjekt, gdje je primjenjivo, automatski predlagati kao referent *poslovne funkcije* .   
->> **Aktivan**: označava je li subjekt još uvijek dio *poslovne funkcije*.   
->> **Početak valjanosti**:datum od kojeg subjekt postaje član *poslovne funkcije*.   
->> **Kraj valjanosti**: datum od kojeg subjekt prestaje biti član *poslovne funkcije*.   
+> **Važenje**
+>> **Podrazumevano**: samo jedan subjekt može biti postavljen kao podrazumevani. *Podrazumevani subjekt* biće ponuđen kao kontakt za *poslovnu funkciju* u slučajevima u kojima je to predviđeno.
+>> **Aktivno**: označava da li subjekt još uvek pripada *poslovnoj funkciji*.
+>> **Datum početka**: datum od kojeg subjekt postaje član *poslovne funkcije*.
+>> **Datum završetka**: datum od kojeg subjekt prestaje da bude član *poslovne funkcije*.
 >
-> **Napomene**: slobodne bilješke.
+> **Napomene**: slobodne napomene.
 
-### Radni centri
+### Radni centar
 
-*Poslovne funkcije* mogu imati i proizvodne uloge te predstavljati *radne centre* ili njihove skupine.     
-U ovom popisu moguće je povezat *radne centre* koji su dio odabrane *poslovne funkcije*.  
-Popis se sastoji od sljedećih informacija:     
-> **Radni centar**: šifra *radnog centra*.   
-> **Opis radnog centra**: opis *radnog centra*.   
-> **Napomene**: slobodne bilješke.
+*Poslovne funkcije* mogu obuhvatati i proizvodne uloge i predstavljati *radne centre* ili njihove grupe.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+U ovoj listi moguće je povezati *radne centre* koji pripadaju odabranoj *poslovnoj funkciji*.
+
+Lista se sastoji od sledećih podataka:
+
+> **Radni centri**: šifra *radnog centra*.
+> **Opis radnog centra**: opis *radnog centra*.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sledeću poveznicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

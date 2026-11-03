@@ -3,34 +3,35 @@ title: Inspektori
 sidebar_position: 8
 ---
 
-Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Inspektori**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Općenito > Inspektori**.
 
-U ovoj tablici moguće je kodirati *Inspektore* koji provode interne procjene ili procjene dobavljača.  
-Primjer primjene nalazi se u modulu **Početne i periodične procjene dobavljača**.
+U ovoj tablici moguće je definirati *inspektore* koji će provoditi interne ocjene ili ocjene dobavljača.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Primjer upotrebe možemo pronaći u evidenciji **Početne i periodične procjene dobavljača**.
 
-**Pretraga inspektora**
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima.
-Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+**Pretraživanje inspektora**
+
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
 **Unos inspektora**
 
-Za unos novih *Inspektora* potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *inspektora* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-*Specifična polja*: 
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-> **Inspektor – šifra**: è il codice dell'*Ispettore*.   
-> **Inspektor – opis**: è la descrizione dell'*Ispettore*.   
-> **Interni inspektor – šifra**: è il codice del dipendente ispettore*.   
-> **Interni inspektor – prezime**: è il cognome del dipendente ispettore*.   
-> **Interni inspektor – ime**: è il nome del dipendente ispettore*.   
-> **Eksterni inspektor – opis**: è la ragione sociale del fornitore ispettore*.   
-> **Aktivan**: indica se l'ispettore è ancora in carica.   
-> **Početak valjanosti**: è la data dalla quale l'ispettore entra in carica.   
-> **Kraj valjanosti**: è la data dalla quale l'ispettore cessa di essere in carica.   
-> **Napomene**: slobodne bilješke.  
+*Specifična polja*:
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Inspektor – Šifra**: šifra *inspektora*.
+> **Inspektor – Opis**: opis *inspektora*.
+> **Interni inspektor – Šifra**: šifra zaposlenika koji obavlja ulogu inspektora.
+> **Interni inspektor – Prezime**: prezime zaposlenika koji obavlja ulogu inspektora.
+> **Interni inspektor – Ime**: ime zaposlenika koji obavlja ulogu inspektora.
+> **Vanjski inspektor – Opis**: naziv tvrtke dobavljača koji obavlja ulogu inspektora.
+> **Aktivno**: označava je li inspektor još uvijek na dužnosti.
+> **Početak valjanosti**: datum od kojeg inspektor stupa na dužnost.
+> **Kraj valjanosti**: datum od kojeg inspektor prestaje obavljati dužnost.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

@@ -1,38 +1,41 @@
 ---
-title: Sektori kvalitete
+title: Sektori kvaliteta
 sidebar_position: 7
 ---
 
-Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Sektori kvalitete**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Opšte > Sektori kvaliteta**.
 
-U ovoj je tablici moguće kodirati *Sektore kvalitete* relevantne za dokument.   
-Neki primjeri primjene *Sektora kvalitete* nalaze se u sljedećim upravljanjima:
-> **Korektivne radnje** - u *podacima zaglavlja*;   
-> **Osnovni tečajevi** - u *podacima zaglavlja*;   
-> **Tečajevi i obuka** - u *podacima zaglavlja*.   
+U ovoj tabeli moguće je šifrirati *sektore kvaliteta* relevantne za dokument.
 
-Tablica sadrži vrijednosti unaprijed definirane od strane sustava. Predefinirane vrijednosti su:
-| Šifra |   
+Neki primeri primene *sektora kvaliteta* nalaze se u sledećim evidencijama:
+> **Korektivne mere** – u *podacima zaglavlja*;
+> **Osnovni kursevi** – u *podacima zaglavlja*;
+> **Kursevi i obuka** – u *podacima zaglavlja*.
+
+Tabela sadrži vrednosti koje je sistem unapred definisao. Podrazumevane vrednosti su:
+
+| Šifra |
 |:--|
-| Okoliš |   
-| Etika |   
-| Kvaliteta |   
-| Sigurnost |   
+| Ambijent |
+| Etika |
+| Kvalitet |
+| Sigurnost |
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-**Pretraživanje Sektora kvalitete**
+**Pretraživanje sektora kvaliteta**
 
-Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipk **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-**Unos Sektora kvalitete**
+**Unos sektora kvaliteta**
 
-Za unos novih *Sektora kvalitete* potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti barem obvezno polje koje program zahtijeva: **Šifra**.
+Za unos novih *sektora kvaliteta* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-*Specifična polja*: 
+Za novi zapis potrebno je uneti barem obavezno polje koje program zahteva: **Šifra**.
 
-> **Šifra**: šifra *Sektora kvalitete*.   
-> **Napomene**: slobodne bilješke.  
+*Specifična polja*:
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Šifra**: šifra *sektora kvaliteta*.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeći link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

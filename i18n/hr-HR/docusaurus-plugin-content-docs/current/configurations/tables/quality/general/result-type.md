@@ -1,36 +1,38 @@
 ---
-title: Vrste Ishoda
+title: Vrste ishoda
 sidebar_position: 5
 ---
 
-Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Vrste ishoda**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Općenito > Vrste ishoda**.
 
-In questa tabella è possibile codificare i *Tipi esito* ottenuti successivamente a rilevazioni o ad attività.   
-Neki primjeri primjene *Vrsta ishoda* nalaze se u sljedećim upravljanjima:
-> **Vrste ispitivanja** - u kartici *Mogući ishodi*;   
-> **Kontrola artikala** - u kartici *Ispitivanja*;   
-> **Certifikati analize** - u kartici *Kontrole i zabilježene vrijednosti > Zabilježene vrijednosti*;   
-> **M.E.S.** - u kartici *Kontrole kvalitete > Ispitivanja*;   
-> **Umjeravanje instrumenta** - u *podacima zaglavlja* i u kartici *Zabilježene vrijednosti*;   
-> **Korektivne radnje** - u karticama *Provjere sljedećeg audita* i *Programi korektivnih radnji*.     
+U ovoj tablici moguće je definirati *vrste ishoda* dobivenih nakon mjerenja ili provedenih aktivnosti.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Neke primjere upotrebe *vrsta ishoda* možemo pronaći u sljedećim evidencijama:
+> **Vrste ispitivanja** – na kartici *Mogući rezultati*;
+> **Kontrola artikala** – na kartici *Ispitivanja*;
+> **Certifikati analize** – na kartici *Kontrole i izmjerene vrijednosti > Izmjerene vrijednosti*;
+> **M.E.S.** – na kartici *Kontrola kvalitete > Ispitivanja*;
+> **Kalibracija instrumenta** – u *podacima zaglavlja* i na kartici *Izmjerene vrijednosti*;
+> **Korektivne radnje** – na karticama *Provjere sljedeće revizije* i *Programi korektivnih radnji*.
 
-**Pretraživanje Vrsta ishoda**
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+**Pretraživanje vrsta ishoda**
 
-**Unos Vrsta ishoda**
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-Za unos novih *Vrsta ishoda* potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novi**.   
-Za novi zapis potrebno je unijeti barem obvezna polja koja program zahtijeva: **Šifru** i **Opis**.
+**Unos vrsta ishoda**
 
-*Specifična polja*: 
+Za unos novih *vrsta ishoda* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-> **Ishod**: šifra *Vrste ishoda*.   
-> **Opis ishoda**: opis *Vrste ishoda*.   
-> **Pozitivan ishod**: označuje treba li sustav prepoznati ishod kao *pozitivan* ili *negativan*.  
-> **Sekvenca**: redoslijed prikaza u popisima *Vrsta ishoda*.   
-> **Napomene**: slobodne bilješke.
-  
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
+
+*Specifična polja*:
+
+> **Rezultat**: šifra *vrste ishoda*.
+> **Opis rezultata**: opis *vrste ishoda*.
+> **Pozitivan rezultat**: označava treba li sustav rezultat prepoznati kao *pozitivan* ili *negativan*.
+> **Redoslijed**: redoslijed prikaza *vrsta ishoda* na popisima.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

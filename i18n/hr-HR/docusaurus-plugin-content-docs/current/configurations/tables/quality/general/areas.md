@@ -15,16 +15,16 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregled
 
 **Pretraga područja kvalitete**  
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
 **Unos područja kvalitete**
 
-Za unos novih *područja kvalitete* potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.   
+Za unos novih *područja kvalitete* potrebno je kliknuti na prvi prazan redak u tablici ili pritisnuti tipku **Novo**.   
 Za novi zapis potrebno je unijeti barem obavezno polje koje program zahtijeva: **Šifra**.
 
 *Specifična polja*: 
 
 > **Šifra**: šifra *područja kvalitete*.   
-> **Napomene**: slobodne bilješke.   
+> **Bilješka**: slobodne bilješke.   
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

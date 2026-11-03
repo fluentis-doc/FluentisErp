@@ -15,11 +15,11 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza
 
 **Pretraživanje Vrsta obavijesti**
 
-Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
+Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
 **Unos Vrsta obavijesti**
 
-Za unos novih *Vrsta obavijesti* potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novi**.   
+Za unos novih *Vrsta obavijesti* potrebno je kliknuti u tablici na prvi prazan redak ili pritisnuti tipku **Novo**.   
 Za novi zapis potrebno je unijeti barem obvezna polja koja program zahtijeva: **Šifru** i **Opis**.
 
 *Specifična polja*: 

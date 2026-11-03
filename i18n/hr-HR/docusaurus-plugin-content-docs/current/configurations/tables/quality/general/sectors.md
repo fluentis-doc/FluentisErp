@@ -14,7 +14,7 @@ Neki primjeri primjene *Sektora kvalitete* nalaze se u sljedećim upravljanjima:
 Tablica sadrži vrijednosti unaprijed definirane od strane sustava. Predefinirane vrijednosti su:
 | Šifra |   
 |:--|
-| Okoliš |   
+| Ambijent |   
 | Etika |   
 | Kvaliteta |   
 | Sigurnost |   
@@ -23,16 +23,16 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza
 
 **Pretraživanje Sektora kvalitete**
 
-Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipk **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
 **Unos Sektora kvalitete**
 
-Za unos novih *Sektora kvalitete* potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novo**.   
+Za unos novih *Sektora kvalitete* potrebno je kliknuti u tablici na prvi prazan redak ili pritisnuti tipku **Novo**.   
 Za novi zapis potrebno je unijeti barem obvezno polje koje program zahtijeva: **Šifra**.
 
 *Specifična polja*: 
 
 > **Šifra**: šifra *Sektora kvalitete*.   
-> **Napomene**: slobodne bilješke.  
+> **Bilješke**: slobodne bilješke.  
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

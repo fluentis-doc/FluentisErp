@@ -1,33 +1,35 @@
 ---
-title: Tip vrijednosti
+title: Tipovi vrednosti
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Tipovi vrijednosti**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Opšte > Tipovi vrednosti**.
 
-U ovoj je tablici moguće kodirati *Tipove vrijednosti* koje se zahtijevaju pri bilježenju vrijednosti.
-Neki primjeri primjene *Tipova vrijednosti* nalaze se u sljedećim upravljanjima::
-> **Tehnički listovi** - u kartici *Svojstva*;   
-> **Kontrolni planovi** - u kartic *Planirana ispitivanja*;   
-> **Kontrola artikala** - u kartic *Ispitivanja*;   
-> **Certifikati analize** - u kartic *Kontrole i zabilježene vrijednosti > Zabilježene vrijednosti*;   
-> **M.E.S.** - u kartici *Kontrole kvalitete > Ispitivanja*.
+U ovoj tabeli moguće je definisati *tipove vrednosti* koji su potrebni prilikom evidentiranja vrednosti.
 
-Tablica sadrži vrijednosti unaprijed definirane od strane sustava i nije moguće unositi nove, brisati ili mijenjati postojeće vrijednosti. Predefinirane vrijednosti su:  
-| Šifra | Opis |   
-|:-:|:--|
-| 1 | Numerička |   
-| 2 | Da/Ne |   
-| 3 | Tekstualna |   
+Neke primere upotrebe *tipova vrednosti* možemo pronaći u sledećim evidencijama:
+> **Tehnička uputstva** – na kartici *Svojstva*;
+> **Kontrolni planovi** – na kartici *Planirana ispitivanja*;
+> **Kontrola artikala** – na kartici *Ispitivanja*;
+> **Sertifikati analize** – na kartici *Kontrole i izmerene vrednosti > Izmerene vrednosti*;
+> **M.E.S.** – na kartici *Kontrola kvaliteta > Ispitivanja*.
 
-**Pretraživanje Tipova vrijednosti**
+Tabela sadrži vrednosti koje je sistem unapred definisao i nije ih moguće dodavati, brisati ni menjati. Podrazumevane vrednosti su:
 
-Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
+| Šifra | Opis |
+|:---:|:--|
+| 1 | Numerički |
+| 2 | Da/Ne |
+| 3 | Tekst |
 
-*Specifična polja*: 
+**Pretraživanje tipova vrednosti**
 
-> **Šifra**: informacija samo za čitanje; šifra *Tipa vrijednosti*.   
-> **Tip vrijednosti**: informacija samo za čitanje; opis *Tipa vrijednosti*.   
-> **Napomene**: slobodne bilješke.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+*Specifična polja*:
+
+> **Šifra**: podatak je samo za čitanje; predstavlja šifru *tipa vrednosti*.
+> **Tip iznosa**: podatak je samo za čitanje; predstavlja opis *tipa vrednosti*.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sledeću poveznicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).
