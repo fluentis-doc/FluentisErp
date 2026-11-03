@@ -1,9 +1,9 @@
 ---
-title: Klasifikacije mjernog instrumenta
+title: Klasifikacije (mjernog instrumenta)
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putanji **ablice > Kvaliteta > Kalibracija instrumenata > Klasifikacije instrumenata**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Klasifikacije**.
 
 U ovoj tablici moguće je definirati (šifrirati) *Klasifikacije mjernih instrumenata* koje se koriste za kategorizaciju *Mjernih instrumenata*.   
 Primjer upotrebe nalazi se u modulu **Mjerni instrumenti**.
@@ -23,6 +23,6 @@ Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: *
     
 > **Šifra**: šifra *Klasifikacije mjernog instrumenta*.   
 > **Opis**: opis *Klasifikacije mjernog instrumenta*.   
-> **Bilješke**: slobodne napomene.
+> **Bilješka**: slobodne napomene.
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link:[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

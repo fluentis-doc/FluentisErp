@@ -3,43 +3,58 @@ title: Tipovi kalibracije
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putanji **Tabelle > Qualità > Kalibracija uređaja > Tipovi kalibracije**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Tipovi kalibracije**.
 
-U ovoj tablici moguće je definirati (šifrirati) različite *Tipove kalibracije*.   
-Neki primjeri korištenja *Tipova kalibracije* nalaze se u modulima:
-> **Kalibracija instrumenata** - u *zaglavlju podataka*;   
-> **Parametri Taratura strumenti** - u *zaglavlju podataka*.
+U ovoj je tablici moguće definirati *vrste (tipove) kalibracije*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Primjeri korištenja *vrsta kalibracije* nalaze se u sljedećim funkcionalnostima:
 
-**Pretraga tipova kalibracije**
+> **Kalibracija instrumenata** – u *podacima zaglavlja*;
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici s rezultatima.
+> **Parametri kalibracije instrumenata** – u *podacima zaglavlja*.
 
-**Unos tipova kalibracije**
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihova pregleda, izmjene ili brisanja.
 
-Za unos novog *Tipa kalibracije* potrebno je kliknuti u tablici na prvi prazan redak ili pritisnuti tipku **Novi**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifru** i **Opis**.
+**Traženje vrsta kalibracije**
 
-## Tipovi kalibracije
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
-Ovo je popis u kojem se unose osnovne informacije o *Tipovima kalibracije*.   
-Popis se sastoji od sljedećih informacija:    
-> **Tip kalibracije**   
->> **Šifra**: šifra *Tipa kalibracije*.   
->> **Opis**: opis *Tipa kalibracije*.   
->> **Interna kalibracija**: označava koristi li se *Tip kalibracije* za evidentiranje *Internih kalibracija*.   
+**Unos vrsta kalibracije**
+
+Za unos novih *vrsta kalibracije* potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.
+
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
+
+## Vrste kalibracije
+
+Ovo je popis u koji se unose glavni podaci o *vrstama kalibracije*.
+
+Popis se sastoji od sljedećih podataka:
+
+> **Vrsta kalibracije**
+
+>> **Šifra**: šifra *vrste kalibracije*.
+
+>> **Opis**: opis *vrste kalibracije*.
+
+>> **Interna kalibracija**: označava koristi li se *vrsta kalibracije* za evidentiranje *internih kalibracija*.
+
 >
 > **Numeracija**
->> **Šifra**: šifra *Numeracije*.   
->> **Opis**: opis *Numeracije*.   
->> **Tip objekta**: opis tipa objekta na kojem se temelji *Numeracija*.   
+
+>> **Šifra**: šifra *numeriranja*.
+
+>> **Opis**: opis *numeriranja*.
+
+>> **Predmet**: opis vrste objekta na kojoj se temelji *numeriranje*.
+
 >
-> **Bilješke**: slobodne napomene.
+> **Napomene**: slobodne napomene.
 
 ### Dodatni podaci
 
-Moguće je unijeti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za određeni *Tip kalibracije*.   
-Ovi *Dodatni podaci* mogu se automatski naslijediti u *Kalibraciji instrumenta* te konkretne vrste. 
+Moguće je unijeti opće [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *vrstu kalibracije*.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Ti se *dodatni podaci* mogu naslijediti u *kalibraciju instrumenta* određene vrste.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, gumbe i polja, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

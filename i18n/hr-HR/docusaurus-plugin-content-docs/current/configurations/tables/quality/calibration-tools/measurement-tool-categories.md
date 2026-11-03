@@ -1,39 +1,42 @@
 ---
-title: Kategorije mjernih instrumenata
+title: Kategorije mjernih (alata) instrumenata
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Kategorije mjernih instrumenata**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Kategorije mjernih (alata) instrumenata**.
 
-U ovoj tablici moguće je definirat *Kategorije mjernih instrumenata*.   
-*Kategorija mjernog instrumenta* sastavni je dio jedinstvenog koda *Mjernog instrumenta*, zajedno sa *Šifrom* i  *Serijskim brojem*.
-Neki primjeri korištenja *Kategorija mjernih instrumenata* nalaze se u upravljanju:
-> **Mjerni instrumenti** - u *zaglavlju podataka*;   
-i u svim upravljanjima gdje se koristi *Mjerni instrument*.
+U ovoj tablici moguće je definirati *kategorije mjernih (alata) instrumenata*.  
+*Kategorija mjernog instrumenta* sastavni je dio jedinstvene šifre *mjernog instrumenta*, zajedno sa *šifrom* i *serijskim brojem*.
 
-Tablica omogućava unos novih zapisa ili pretraživanje postojećih radi pregledavanja, izmjene ili brisanja.
+Neke primjere upotrebe *kategorija mjernih instrumenata* možemo pronaći u sljedećim evidencijama:
+> **Mjerni instrumenti** – u *podacima zaglavlja*;
 
-**Pretraživanje Kategorija mjernih instrumenata**
+kao i u svim evidencijama u kojima se upotrebljava *mjerni instrument*.
 
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako biste vidjeli rezultate prikazane u tablici.  
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-**Unos Kategorija mjernih instrumenata**
+**Pretraživanje kategorija mjernih instrumenata**
 
-Za unos novih *Categorie strumenti di misura* potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novi**.   
-Za novi zapis potrebno je unijeti barem obavezna polja tražena od strane programa: **Šifra** i **Opis**.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
+
+**Unos kategorija mjernih instrumenata**
+
+Za unos novih *kategorija mjernih instrumenata* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.  
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
 ## Kategorije mjernih instrumenata
 
-Ovdje se unose glavne informacije o *Kategorijama mjernih instrumenata*.   
-Popis se sastoji od sljedećih podataka: 
-> **Šifra**: šifra *Kategorije mjernog instrumenta.a*.   
-> **Opis**: opis *Kategorije mjernog instrumenta*.   
-> **Jedinica mjere**: *jedinica mjere* kojom se bilježe vrijednosti instrumenata unutar kategorije.   
-> **Napomene**: slobodne bilješke.  
+Ovo je popis u koji se unose osnovni podaci o *kategorijama mjernih instrumenata*.  
+Popis se sastoji od sljedećih podataka:
 
-### Dodatni podaci  
+> **Šifra**: šifra *kategorije mjernog instrumenta*.
+> **Opis**: opis *kategorije mjernog instrumenta*.
+> **Jedinica mjere**: *mjerna jedinica* kojom se bilježe vrijednosti instrumenata koji pripadaju toj kategoriji.
+> **Napomene**: slobodne napomene.
 
-Mogu se unijeti i [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/search-extradata) koji su općeniti za *Kategoriju mjernog instrumenta*.   
-Ti *Dodatni podaci* mogu se naslijediti u *Mjerni instrument* te kategorije.     
+### Dodatni podaci
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Moguće je unijeti opće [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *kategoriju mjernog instrumenta*.  
+Ti se *dodatni podaci* mogu naslijediti u *mjernom instrumentu* koji pripada određenoj kategoriji.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

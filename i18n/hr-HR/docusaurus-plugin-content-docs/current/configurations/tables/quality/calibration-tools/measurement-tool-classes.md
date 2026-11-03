@@ -1,12 +1,12 @@
 ---
-title: Klase instrumenata  
+title: Klase (alata) instrumenata  
 sidebar_position: 5
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Klase instrumenata**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Klase (alata) instrumenata**.
 
 :::important Čemu služi  
-U ovoj tablici moguće je definirati *Klase instrumenata* koje se koriste za određivanje razine sukladnosti *Mjernih instrumenata*.   
+U ovoj tablici moguće je definirati *Klase (alata) instrumenata* koje se koriste za određivanje razine sukladnosti *Mjernih instrumenata*.   
 Primjer njihove upotrebe može se pronaći u modulu **Mjerni instrumenti**.
 :::
 
@@ -25,6 +25,6 @@ Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: *
     
 > **Šifra**: šifra *Klase instrumenta*.   
 > **Opis**: opis *Klase instrumenta*.   
-> **Napomene**: slobodne bilješke.  
+> **Bilješka**: slobodne bilješke.  
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

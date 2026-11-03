@@ -1,32 +1,34 @@
 ---
-title: Jedinice mjere instrumenata
+title: Mjerne jedinice instrumenata
 sidebar_position: 4
 ---
 
-Tablica se nalazi na putanji **Tabelle > Qualità > Taratura strumenti > Unità di misura strumenti**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Mjerne jedinice instrumenata (interval)**.
 
 :::important Čemu služi
-U ovoj tablici moguće je definirati *Jedinice mjere* koje se koriste za određivanje periodičnosti kalibracije *Mjernih instrumenata*.    
-Primjer njihove upotrebe može se pronaći u modulu **Mjerni instrumenti**.
+U ovoj tablici moguće je definirati *mjerne jedinice* koje se upotrebljavaju za određivanje periodičnosti kalibracije *mjernih instrumenata*.
+
+Primjer upotrebe možemo pronaći u evidenciji **Mjerni instrumenti**.
 :::
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.  
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-**Pretraživanje Jedinica mjere instrumenata**
+**Pretraživanje mjernih jedinica instrumenata**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-**Unos Jedinica mjere instrumenata**
+**Unos mjernih jedinica instrumenata**
 
-Za unos novih *Jedinica mjere instrumenata* potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *mjernih jedinica instrumenata* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-*Specifična polja*: 
-    
-> **Šifra**: šifra *Jedinice mjere instrumenata*.     
-> **Opis**: opis *Jedinice mjere instrumenata*.     
-> **Dani**: označava da *Jedinica mjere instrumenata* predstavlja dane; samo jedna *Jedinica mjere* od svih definiranih može predstavljati dane.    
-> **Mjeseci**: označava da *Jedinica mjere instrumenata* predstavlja mjesece; samo jedna *Jedinica mjere* od svih definiranih može predstavljati mjesece.  
-> **Napomene**: slobodne bilješke.
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+*Specifična polja*:
+
+> **Šifra**: šifra *mjerne jedinice instrumenta*.
+> **Opis**: opis *mjerne jedinice instrumenta*.
+> **Dani**: označava predstavlja li *mjerna jedinica instrumenta* dane; samo jedna od svih definiranih *mjernih jedinica* može predstavljati dane.
+> **Mjeseci**: označava predstavlja li *mjerna jedinica instrumenta* mjesece; samo jedna od svih definiranih *mjernih jedinica* može predstavljati mjesece.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).
