@@ -1,62 +1,70 @@
 ---
-title: Vrste reklamacija
+title: Tipovi reklamacija
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i Nesukladnosti > Vrste reklamacija**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i nesukladnosti > Tipovi reklamacija**.
 
-U ovoj tablici moguće je definirati *Vrste reklamacija*.   
-*Vrsta reklamacije* čini sastavni dio, zajedno s *Godinom* i *Brojem*, jedinstvenog koda *Reklamacije*.
-Neke primjene *Vrsta reklamacija* nalazimo u modulima:  
-> **Reklamacije** - u *zaglavnim podacima*;   
-> **Parametri reklamacija i nesukladnosti** - u kartici *Općenito*;   
-te u svim modulima u kojima se koristi *Reklamacija*.
+U ovoj tablici moguće je definirati *vrste (tipove) reklamacija*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.  
+*Vrsta reklamacije* sastavni je dio jedinstvene šifre *reklamacije*, zajedno s *godinom* i *brojem*.
+
+Neke primjere upotrebe *vrsta reklamacija* možemo pronaći u sljedećim evidencijama:
+> **Reklamacije** – u *podacima zaglavlja*;
+> **Parametri reklamacija i nesukladnosti** – na kartici *Općenito*;
+
+kao i u svim evidencijama u kojima se upotrebljava *reklamacija*.
+
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
 **Pretraživanje vrsta reklamacija**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
 **Unos vrsta reklamacija**
 
-Za unos novih *Vrsta reklamacija* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
-Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *vrsta reklamacija* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
+
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
 ## Vrste reklamacija
 
-Ovo je popis u kojem se unose osnovne informacije o *Vrstama reklamacija*.   
+Ovo je popis u koji se unose osnovni podaci o *vrstama reklamacija*.
+
 Popis se sastoji od sljedećih podataka:
+
 > **Vrsta reklamacije**
->> **Šifra**: šifra *Vrste reklamacije*.   
->> **Opis**: opis *Vrste reklamacije*.
->   
-> **Model reklamacije**
-> popis je unaprijed definiranih vrijednosti koje određuju model upravljanja *Reklamacijom*; Predefinirane vrijednosti su:   
-> - *CL - Classic*;   
-> - *8D - 8D Problem Solving*.   
->>
->> **Šifra**: šifra *Modela reklamacije*;      
->> **Opis**: opis *Modela reklamacije*.
->   
+>> **Šifra**: šifra *vrste reklamacije*.
+>> **Opis**: opis *vrste reklamacije*.
+>
+> **Predložak reklamacije**
+
+> Popis vrijednosti koje je unaprijed definirao sustav i koje određuju predložak za upravljanje *reklamacijom*. Zadane vrijednosti su:
+> - *CL - Classic*;
+> - *8D - 8D Problem Solving*.
+>
+>> **Šifra**: šifra *predloška reklamacije*.
+>> **Opis**: opis *predloška reklamacije*.
+>
 > **Numeracija**
->> **Šifra**: šifra *Numeracije*.   
->> **Opis**: opis *Numeracije*.
->> **Objekt**: vrsta objekta na kojem se temelji *Numeracija*.
->   
+>> **Šifra**: šifra *numeracije*.
+>> **Opis**: opis *numeracije*.
+>> **Objekt**: vrsta objekta na kojoj se temelji *numeracija*.
+>
 > **Vrsta računa**
->> **Šifra**: šifra *Vrste računa* koja se koristi za *vrednovanje reklamacije* pri izradi *odobrenja*.   
+>> **Šifra**: šifra *vrste računa* koja se upotrebljava za *vrednovanje* *reklamacije* prilikom izrade *odobrenja*.
 >> **Opis**: opis *vrste računa*.
->   
+>
 > **Vrsta PDV-a**
->> **Šifra**: šifra *Vrste PDV-a* koja se koristi za *Vrednovanje reklamacije* pri izradi *odobrenja* u slučaju da ga kupac nema.    
->> **Opis**: opis *Vrste PDV-a*.
->   
-> **Bilješke**: slobodne napomene.  
+>> **Šifra**: šifra *vrste PDV-a* koja se upotrebljava za *vrednovanje* *reklamacije* prilikom izrade *odobrenja*, ako kupac nema definiranu vlastitu vrstu PDV-a.
+>> **Opis**: opis *vrste PDV-a*.
+>
+> **Napomene**: slobodne napomene.
 
-### Atributi vrste reklamacije  
+### Dodatni podaci vrste reklamacije
 
-Moguće je dodati [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) općeg tipa za *Vrstu reklamacije*.   
-Ti *Extra data* mogu se nasljeđivati u *Reklamacijama* te određene vrste.   
+Moguće je unijeti [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *vrstu reklamacije*.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Ti se *dodatni podaci* mogu naslijediti u *reklamacijama* određene vrste.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

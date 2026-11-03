@@ -25,14 +25,14 @@ Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: *
     
 > **Šifra**: šifra *Uzroka*.   
 > **Opis uzroka**: opis *Uzroka*.   
-> **Pretpostavljeni**: označava aktivaciju uzroka u *Pretpostavljenim uzrocima*.   
-> **Stvarni**: označava aktivaciju uzroka u *Stvarnim uzrocima*.   
+> **Navodni**: označava aktivaciju uzroka u *Pretpostavljenim uzrocima*.   
+> **Stvarna**: označava aktivaciju uzroka u *Stvarnim uzrocima*.   
 > **Reklamacije**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Reklamacijama*.   
 > **Unutarnje nesukladnosti**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Unutarnjim nesukladnostima*.   
-> **Nesukladnosti kod dobavljača**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Nesukladnosti kod dobavljač*.   
-> **Nesukladnosti kod kupca**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Nesukladnosti kod kupca*.   
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: predstavlja broj bodova za umanjenje *Bonusa* koji se koristi tijekom *Periodične procjene dobavljača prema nesukladnostima*.   
-> **Aktivan**: označava je li uzrok još uvijek valjan i upotrebljiv.    
+> **Nesukladnosti s dobavljačem**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Nesukladnosti kod dobavljač*.   
+> **Nesukladnosti s kupcem (nepridržavanje kupca)**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Nesukladnosti kod kupca*.   
+> **Bodovi izračuna indeksa za kvalifikaciju dobavljača**: predstavlja broj bodova za umanjenje *Bonusa* koji se koristi tijekom *Periodične procjene dobavljača prema nesukladnostima*.   
+> **Aktivno**: označava je li uzrok još uvijek valjan i upotrebljiv.    
 > **Napomene**: slobodne bilješke.  
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).  

@@ -1,34 +1,44 @@
 ---
-title: Teškoća
+title: Ozbiljnost
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i Nepodudarnosti > Teškoća**.
+Tabela se nalazi na putanji **Tabele > Kvalitet > Reklamacije i neusaglašenosti > Ozbiljnost**.
 
-U ovoj tablici moguće je kodificirati *Teškoće* uočene kod situacija nepodudarnosti.     
-Neki primjeri korištenja *Teškoća* nalazimo u upravljanjima: 
-> **Reklamacije** - u kartici *Upravljanje nedostacima*;   
-> **Nepodudarnosti** - u kartici *Upravljanje nedostacima*.
+U ovoj tabeli moguće je definisati *nivoe ozbiljnosti* utvrđenih neusaglašenosti.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati. 
+Neke primere upotrebe *nivoa ozbiljnosti* možemo pronaći u sledećim evidencijama:
 
-**Pretraživanje Teškoća**
+> **Reklamacije** – na kartici *Upravljanje nedostacima*;
 
-Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** za prikaz rezultata unutar rezultirajuće mreže.  
+> **Neusaglašenosti** – na kartici *Upravljanje nedostacima*.
 
-**Unos Teškoća**
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi njihovog pregleda, izmene ili brisanja.
 
-Za unos novih *Teškoća* potrebno je kliknuti u mrežu na prvi prazan redak ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.
+**Pretraživanje nivoa ozbiljnosti**
 
-*Specifična polja*: 
-    
-> **Redoslijed**: redoslijed prikaza u popisu *Teškoća*.   
-> **Kod**: kod *Teškoće*.   
-> **Opis teškoće**: opis *Teškoće*.   
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: bodovi za umanjenje *Bonus-a* korišteni tijekom *Periodične procjene dobavljača na Nepodudarnosti*.   
-> **Moguće brisanje**: označava može li se *Teškoća* izbrisati.   
-> **Aktivno**: označava je li *Teškoća* još uvijek valjana i upotrebljiva.     
-> **Napomene**: slobodne bilješke.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+**Unos nivoa ozbiljnosti**
+
+Za unos novih *nivoa ozbiljnosti* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifra** i **Opis**.
+
+*Specifična polja*:
+
+> **Redosled**: redosled prikaza *nivoa ozbiljnosti* na listama.
+
+> **Šifra**: šifra *nivoa ozbiljnosti*.
+
+> **Opis ozbiljnosti**: opis *nivoa ozbiljnosti*.
+
+> **Bodovi za obračun indeksa za kvalifikaciju dobavljača**: broj bodova koji se oduzimaju od *bonusa* tokom *periodične procene dobavljača na osnovu neusaglašenosti*.
+
+> **Može se brisati (obnova)**: označava da li se *nivo ozbiljnosti* može brisati.
+
+> **Aktivno**: označava da li je *nivo ozbiljnosti* i dalje važeći i može li se koristiti.
+
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sledeću vezu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

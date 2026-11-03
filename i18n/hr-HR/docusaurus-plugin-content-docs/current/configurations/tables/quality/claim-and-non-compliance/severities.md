@@ -1,34 +1,36 @@
 ---
-title: Teškoća
+title: Ozbiljnost
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i Nepodudarnosti > Teškoća**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i nesukladnosti > Ozbiljnost**.
 
-U ovoj tablici moguće je kodificirati *Teškoće* uočene kod situacija nepodudarnosti.     
-Neki primjeri korištenja *Teškoća* nalazimo u upravljanjima: 
-> **Reklamacije** - u kartici *Upravljanje nedostacima*;   
-> **Nepodudarnosti** - u kartici *Upravljanje nedostacima*.
+U ovoj tablici moguće je definirati *razine ozbiljnosti* utvrđenih nesukladnosti.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati. 
+Neke primjere upotrebe *razina ozbiljnosti* možemo pronaći u sljedećim evidencijama:
+> **Reklamacije** – na kartici *Upravljanje nedostacima*;
+> **Nesukladnosti** – na kartici *Upravljanje nedostacima*.
 
-**Pretraživanje Teškoća**
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** za prikaz rezultata unutar rezultirajuće mreže.  
+**Pretraživanje razina ozbiljnosti**
 
-**Unos Teškoća**
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-Za unos novih *Teškoća* potrebno je kliknuti u mrežu na prvi prazan redak ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.
+**Unos razina ozbiljnosti**
 
-*Specifična polja*: 
-    
-> **Redoslijed**: redoslijed prikaza u popisu *Teškoća*.   
-> **Kod**: kod *Teškoće*.   
-> **Opis teškoće**: opis *Teškoće*.   
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: bodovi za umanjenje *Bonus-a* korišteni tijekom *Periodične procjene dobavljača na Nepodudarnosti*.   
-> **Moguće brisanje**: označava može li se *Teškoća* izbrisati.   
-> **Aktivno**: označava je li *Teškoća* još uvijek valjana i upotrebljiva.     
-> **Napomene**: slobodne bilješke.  
+Za unos novih *razina ozbiljnosti* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
+
+*Specifična polja*:
+
+> **Redoslijed**: redoslijed prikaza *razina ozbiljnosti* na popisima.
+> **Šifra**: šifra *razine ozbiljnosti*.
+> **Opis ozbiljnosti**: opis *razine ozbiljnosti*.
+> **Bodovi izračuna indeksa za kvalifikaciju dobavljača**: broj bodova koji se oduzimaju od *bonusa* tijekom *periodične ocjene dobavljača na temelju nesukladnosti*.
+> **Može se brisati (obnova)**: označava može li se *razina ozbiljnosti* brisati.
+> **Aktivno**: označava je li *razina ozbiljnosti* još uvijek važeća i može li se upotrebljavati.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

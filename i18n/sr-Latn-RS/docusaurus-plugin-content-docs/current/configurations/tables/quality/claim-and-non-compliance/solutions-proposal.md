@@ -1,47 +1,66 @@
 ---
-title: Prijedlozi rješenja
+title: Predlozi rešenja
 sidebar_position: 8
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i Nepodudarnosti > Prijedlozi rješenja**.  
+Tabela se nalazi na putanji **Tabele > Kvalitet > Reklamacije i neusaglašenosti > Predlozi rešenja**.
 
-U ovoj tablici moguće je kodificirati tehničke/menadžerske *Odluke* koje su poduzete za rješavanje *Uočenih nedostataka*.   
-Neki primjeri korištenja *Prijedloga rješenja* nalazimo u upravljanjima:
-> **Reklamacije** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*;   
-> **Nepodudarnosti** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*.
+U ovoj tabeli moguće je definisati tehničke/menadžerske *odluke* koje su preduzete radi rešavanja *uočenih nedostataka*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
+Neke primere upotrebe *predloga rešenja* nalazimo u sledećim evidencijama:
 
-**Pretraživanje Prijedloga rješenja**
+> **Reklamacije** – na kartici *Upravljanje nedostacima > Podaci o nedostatku*;
 
-Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** za prikaz rezultata unutar mreže.  
+> **Neusaglašenosti** – na kartici *Upravljanje nedostacima > Podaci o nedostatku*.
 
-**Unos Prijedloga rješenja**
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmene ili brisanja.
 
-Za unos novih *Prijedloga rješenja* potrebno je kliknuti u mrežu na prvi prazan redak ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.
+**Pretraživanje predloga rešenja**
 
-## Prijedlozi rješenja
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** za prikaz rezultata u tabeli.
 
-Ovo je popis u kojem se unose glavne informacije o *Prijedlogu rješenja*.   
-Popis se sastoji od sljedećih informacija:  
-> **Kod**: kod *Prijedloga rješenja*.   
-> **Opis prijedloga rješenja**: opis *Prijedloga rješenja*.   
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: bodovi za umanjenje *Bonus-a* korišteni tijekom *Periodične procjene dobavljača na Nepodudarnosti*.   
-> **Aktivno**: označava je li odluka još uvijek valjana i upotrebljiva.  
-> **Napomene**: slobodne bilješke.
+**Unos predloga rešenja**
 
-### Uključenost subjekata
+Za unos novih *predloga rešenja* potrebno je kliknuti u tabeli na prvi prazan red ili pritisnuti dugme **Novo**.
 
-U ovom popisu moguće je povezati *Poslovne funkcije* i/ili *Zaposlenike* za njihovu uključenost u upravljanja *Reklamacijama* i *Nepodudarnostima*.   
-Prilikom odabira *Prijedloga rješenja* ti subjekti bit će predloženi u popisu *Uključenih subjekata* u navedenim upravljanjima.  
-Popis se sastoji od sljedećih informacija:     
-> **Redoslijed**: redoslijed uključenosti subjekta za odabrani "Prijedlog rješenja".     
-> **Poslovna funkcija**: kod *Poslovne funkcije* koja se treba uključiti.   
-> **Opis poslovne funkcije**: opis *Poslovne funkcije* koja se treba uključiti.
-> **Zaposlenik**: kod *Zaposlenika* koji se treba uključiti.  
-> **Puno ime**: prezime i ime *Zaposlenika* koji se treba uključiti.  
-> **Opis subjekta**: slobodni opis subjekta koji nije kodificiran, a treba biti uključen.    
-> **Razlog uključenosti**: slobodni opis razloga koji će biti predložen u popisu *Uključenih subjekata u upravljanjima Reklamacijama i Nepodudarnostima*.   
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+## Predlozi rešenja
+
+Ovo je lista u kojoj se unose osnovne informacije o *predlogu rešenja*.
+
+Lista se sastoji od sledećih informacija:
+
+> **Šifra**: šifra *predloga rešenja*.
+
+> **Opis predloga rešenja**: opis *predloga rešenja*.
+
+> **Bodovi za obračun indeksa za kvalifikaciju dobavljača**: bodovi za umanjenje *bonusa* koji se koriste tokom *periodične procene dobavljača u vezi sa neusaglašenostima*.
+
+> **Aktivno**: označava da li je odluka i dalje važeća i upotrebljiva.
+
+> **Napomene**: slobodne napomene.
+
+### Uključivanje subjekata
+
+U ovoj listi moguće je povezati *poslovne funkcije* i/ili *zaposlene* radi njihovog uključivanja u upravljanje *reklamacijama* i *neusaglašenostima*.
+
+Prilikom izbora *predloga rešenja*, ovi subjekti biće predloženi na listi *uključenih subjekata* u navedenim evidencijama.
+
+Lista se sastoji od sledećih informacija:
+
+> **Redosled**: redosled uključivanja subjekta za izabrani „Predlog rešenja“.
+
+> **Funkcija preduzeća**: šifra *poslovne funkcije* koju treba uključiti.
+
+> **Opis funkcije preduzeća**: opis *poslovne funkcije* koju treba uključiti.
+
+> **Zaposleni**: šifra *zaposlenog* kojeg treba uključiti.
+
+> **Puno ime**: prezime i ime *zaposlenog* kojeg treba uključiti.
+
+> **Opis predmeta**: slobodan opis subjekta koji nije evidentiran šifrom, a treba da bude uključen.
+
+> **Razlog uključivanja**: slobodan opis razloga koji će biti predložen na listi *uključenih subjekata u upravljanju reklamacijama i neusaglašenostima*.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu u vezi sa uobičajenim radom sa obrascima, pogledajte sledeći link: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

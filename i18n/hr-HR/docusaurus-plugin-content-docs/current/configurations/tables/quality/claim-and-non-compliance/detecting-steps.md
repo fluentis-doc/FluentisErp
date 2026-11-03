@@ -3,30 +3,32 @@ title: Faze otkrivanja
 sidebar_position: 4
 ---
 
-Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Faze otkrivanja**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i nesukladnosti > Faze otkrivanja**.
 
-U ovoj je tablici moguće šifrirati *Faze otkrivanja*, odnosno trenutke unutar proizvodnog ili upravljačkog procesa u kojima su uočeni nedostaci.   
-Neke primjene *faza otkrivanja* nalazimo u modulima:
-> **Reklamacije** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*;   
-> **Non conformità** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*.
+U ovoj tablici moguće je definirati *faze otkrivanja*, odnosno trenutak u proizvodnoj/upravljačkoj fazi u kojem su otkriveni nedostaci.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.
+Neke primjere upotrebe *faza otkrivanja* možemo pronaći u sljedećim evidencijama:
+> **Reklamacije** – na kartici *Upravljanje nedostacima > Podaci o nedostatku*;
+> **Nesukladnosti** – na kartici *Upravljanje nedostacima > Podaci o nedostatku*.
+
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
 **Pretraživanje faza otkrivanja**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
 **Unos faza otkrivanja**
 
-Za unos novih *Faza otkrivanja* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novo**.   
-Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *faza otkrivanja* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-*Specifična polja*: 
-    
-> **Šifra**: šifra *Faze otkrivanja*.   
-> **Opis faze otkrivanja**: opis *Faze otkrivanja*.   
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
-> **Aktivno**: označava je li faza još uvijek valjana i upotrebljiva.     
-> **Bilješke**: slobodne napomene.  
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+*Specifična polja*:
+
+> **Šifra**: šifra *faze otkrivanja*.
+> **Opis faze otkrivanja**: opis *faze otkrivanja*.
+> **Bodovi izračuna indeksa za kvalifikaciju dobavljača**: broj bodova koji se oduzimaju od *bonusa* tijekom *periodične ocjene dobavljača na temelju nesukladnosti*.
+> **Aktivno**: označava je li faza još uvijek važeća i može li se upotrebljavati.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

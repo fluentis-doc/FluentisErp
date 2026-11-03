@@ -3,39 +3,56 @@ title: Uočeni nedostaci
 sidebar_position: 5
 ---
 
-Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Uočeni nedostaci**.
+Tabela se nalazi na putanji **Tabele > Kvalitet > Reklamacije i neusaglašenosti > Uočeni nedostaci**.
 
-U ovoj je tablici moguće šifrirati *uočene nedostatke* u proizvodima, materijalima i uslugama.   
-Neke primjene *uočenih nedostataka* nalazimo u modulima:
-> **Reklamacije** - u kartici *Upravljanje nedostacima*;   
-> **Nesukladnosti** - u kartici *Upravljanje nedostacima*;   
-> **M.E.S.** - u kartici *Proizvodnja*.
+U ovoj tabeli moguće je definisati šifre za *uočene nedostatke* na proizvodima, materijalima i uslugama.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.
+Neke primere upotrebe *uočenih nedostataka* nalazimo u modulima:
+
+> **Reklamacije** – na kartici *Upravljanje nedostacima*;
+
+> **Neusaglašenosti** – na kartici *Upravljanje nedostacima*;
+
+> **M.E.S.** – na kartici *Proizvodnja*.
+
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmene ili brisanja.
 
 **Pretraživanje uočenih nedostataka**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
 **Unos uočenih nedostataka**
 
-Za unos novih *uočenih nedostataka* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
-Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *uočenih nedostataka* potrebno je kliknuti u tabeli na prvi prazan red ili pritisnuti dugme **Novo**.
 
-*Specifična polja*: 
+Za novi zapis moraju se uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
 
-> **Šifra**: šifra *Uočenog nedostatka*.   
-> **Opis uočenog nedostatka**: opis *uočenog nedostatka*.     
-> **Kategorija**: šifra *kategorije uočenog nedostatka*.     
-> **Opis kategorije**: opis *kategorije uočenog nedostatka*.     
-> **Klasa**: *klasifikacija nedostatka*.     
-> **Reklamacije**: označava aktivaciju nedostatka u upravljanju *Reklamacijama*.     
-> **Unutarnje nesukladnosti**: označava aktivaciju nedostatka u upravljanju *Unutarnjim nesukladnostima*.     
-> **Nesukladnosti prema dobavljaču**: označava aktivaciju nedostatka u upravljanju *nesukladnostima prema dobavljaču*.   
-> **Nesukladnosti prema kupcu**: označava aktivaciju nedostatka u upravljanju *nesukladnostima prema kupcu*.     
-> **Proizvodne izjave**: označava aktivaciju nedostatka u upravljanju *proizvodnim izjavama*.    
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
-> **Aktivno**: označava je li nedostatak još uvijek valjan i upotrebljiv.   
-> **Bilješke**: slobodne napomene.
+*Specifična polja*:
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Šifra**: šifra *uočenog nedostatka*.
+
+> **Opis uočenog nedostatka**: opis *uočenog nedostatka*.
+
+> **Kategorija**: šifra *kategorije uočenog nedostatka*.
+
+> **Opis kategorije**: opis *kategorije uočenog nedostatka*.
+
+> **Klasa**: *klasifikacija nedostatka*.
+
+> **Koristi se u reklamacijama**: označava aktiviranje nedostatka u upravljanju *reklamacijama*.
+
+> **Interne neusaglašenosti**: označava aktiviranje nedostatka u upravljanju *internim neusaglašenostima*.
+
+> **Neusaglašenost sa dobavljačem**: označava aktiviranje nedostatka u upravljanju *neusaglašenostima kod dobavljača*.
+
+> **Neusaglašenosti sa kupcem (nepridržavanje kupca)**: označava aktiviranje nedostatka u upravljanju *neusaglašenostima kod kupca*.
+
+> **Koristi se u proizvodnim deklaracijama**: označava aktiviranje nedostatka u upravljanju *proizvodnim deklaracijama*.
+
+> **Bodovi za obračun indeksa za kvalifikaciju dobavljača**: broj bodova za umanjenje *bonusa* koji se koristi tokom *periodične procene dobavljača u slučaju neusaglašenosti*.
+
+> **Aktivno**: označava da li je nedostatak i dalje važeći i upotrebljiv.
+
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu u vezi sa uobičajenim radom sa obrascima, pogledajte sledeći link: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

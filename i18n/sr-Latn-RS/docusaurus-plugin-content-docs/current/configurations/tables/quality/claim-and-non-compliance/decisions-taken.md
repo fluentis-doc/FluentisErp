@@ -1,6 +1,45 @@
 ---
 title: Provedene odluke
+sidebar_position: 9---
+title: Sprovedene odluke
 sidebar_position: 9
+---
+
+Tabela se nalazi na putanji **Tabele > Kvalitet > Reklamacije i neusaglašenosti > Sprovedene odluke**.
+
+U ovoj tabeli moguće je definisati *sprovedene odluke* za rešavanje *utvrđenih nedostataka*.
+
+Neke primere upotrebe *donetih (sprovedenih) odluka* možemo pronaći u sledećim evidencijama:
+
+> **Reklamacije** – na kartici *Upravljanje nedostacima > Podaci o nedostatku*;
+
+> **Neusaglašenosti** – na kartici *Upravljanje nedostacima > Podaci o nedostatku*.
+
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi njihovog pregleda, izmene ili brisanja.
+
+**Pretraživanje donetih odluka**
+
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
+
+**Unos donetih odluka**
+
+Za unos novih *donetih odluka* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifra** i **Opis**.
+
+*Specifična polja*:
+
+> **Šifra**: šifra *donete odluke*.
+
+> **Opis donete odluke**: opis *donete odluke*.
+
+> **Bodovi za obračun indeksa za kvalifikaciju dobavljača**: broj bodova koji se oduzimaju od *bonusa* tokom *periodične procene dobavljača na osnovu neusaglašenosti*.
+
+> **Aktivno**: označava da li je odluka i dalje važeća i može li se koristiti.
+
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sledeću vezu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).
 ---
 
 Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Donošene odluke**.

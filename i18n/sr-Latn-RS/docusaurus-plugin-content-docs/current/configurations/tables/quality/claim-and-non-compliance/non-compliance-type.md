@@ -1,59 +1,80 @@
 ---
-title: Tipovi nepodudarnosti
+title: Tipovi neusaglašenosti (nepodudarnosti)
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Tipovi nepodudarnosti**.
+Tabela se nalazi na putanji **Tabele > Kvalitet > Reklamacije i neusaglašenosti > Tipovi neusaglašenosti (nepodudarnosti)**.
 
-U ovoj je tablici moguće šifrirati *Tipove nepodudarnosti*.   
-*Tip nepodudarnosti* je sastavni dio, zajedno s *Godinom* i *Brojem*, jedinstvenog koda *Nepodudarnosti*.  
-Neke primjene *Tipova nepodudarnosti* nalazimo u modulima:
-> **Nesukladnosti** - u *podacima zaglavlja*;   
-> **Parametri Reklamacije i Nesukladnost** - u kartici *Općenito*;   
-i u svim modulima gdje se koristi *Nepodudarnost*.
+U ovoj tabeli moguće je definisati *tipove neusaglašenosti*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+*Tip neusaglašenosti* sastavni je deo jedinstvene šifre *neusaglašenosti*, zajedno sa *godinom* i *brojem*.
 
-**Pretraživanje tipova nepodudarnosti**
+Neke primere upotrebe *tipova neusaglašenosti* možemo pronaći u sledećim evidencijama:
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
+> **Neusaglašenosti** – u *podacima zaglavlja*;
 
-**Unos tipova nepodudarnosti**
+> **Parametri reklamacija i neusaglašenosti** – na kartici *Opšte*;
 
-Za unos novih *Tipova nepodudarnosti* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novo**.   
-Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+kao i u svim evidencijama u kojima se koristi *neusaglašenost*.
 
-## Tipovi nepodudarnosti
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi njihovog pregleda, izmene ili brisanja.
 
-Ovdje se unose osnovne informacije o *Tipovima nepodudarnosti*.   
-Popis uključuje sljedeće informacije:   
-> **Tip nepodudarnosti**
->> **Šifra**: šifra *Tipa nepodudarnosti*.   
->> **Opis**: opis *Tipa nepodudarnosti*.
->   
-> **Upotreba u**
->> **Interna nepodudarnost**: označava aktivaciju *Funkcije/Područja/Odjela* kao primatelja *Nepodudarnosti*.   
->> **Nepodudarnost kod dobavljača**: označava aktivaciju *Dobavljača* kao primatelja *Nepodudarnosti*.   
->> **Nepodudarnost kod kupca**: označava aktivaciju *Kupca* kao primatelja *Nepodudarnosti*.   
->   
-> **Numeracija**
->> **Šifra**: šifra *Numeracije*.   
->> **Opis**: opis *Numeracije*.
->> **Predmet**: tip objekta na kojem se temelji *Numeracija*.
->   
-> **Vrsta računa**
->> **Šifra**: šifra *Vrste računa* koja se koristi za *Vrednovanje* nepodudarnosti pri izradi *obrazaca zaduženja*.   
->> **Opis**: opis *Vrste računa*.
->   
-> **Vrsta PDV-a**
->> **Šifra**: šifra *vrste PDV-a* koja se koristi za *Vrednovanje* za *Nepodudarnost* pri izradi *Obrazaca zaduženja* ukoliko primatelj *Dobavljač* ili *Kupac* nema istu.   
->> **Opis**: opis *vrste PDV-a*.
->   
-> **Bilješke**: slobodne napomene.  
+**Pretraživanje tipova neusaglašenosti**
 
-### Atributi vrste nesukladnosti
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *vrstu nesukladnosti*.   
-Ovi *Extra data* mogu se naslijediti u *nesukladnostima* te određene vrste.   
+**Unos tipova neusaglašenosti**
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za unos novih *tipova neusaglašenosti* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+
+Za novi zapis potrebno je uneti barem obavezna polja koja zahteva program: **Šifra** i **Opis**.
+
+## Tipovi neusaglašenosti
+
+Ovo je lista u koju se unose osnovni podaci o *tipovima neusaglašenosti*.
+
+Lista se sastoji od sledećih podataka:
+
+> **Tip neusaglašenosti**
+
+>> **Šifra**: šifra *tipa neusaglašenosti*.
+
+>> **Opis**: opis *tipa neusaglašenosti*.
+
+> **Koristi se u**
+
+>> **Interne neusaglašenosti**: označava aktiviranje *funkcije/područja/odeljenja* kao subjekta kojem je namenjena *neusaglašenost*.
+
+>> **Neusaglašenosti sa dobavljačem**: označava aktiviranje *dobavljača* kao subjekta kojem je namenjena *neusaglašenost*.
+
+>> **Neusaglašenosti prema kupcu (nepridržavanje kupca)**: označava aktiviranje *kupca* kao subjekta kojem je namenjena *neusaglašenost*.
+
+> **Numerisanje**
+
+>> **Šifra**: šifra *numerisanja*.
+
+>> **Opis**: opis *numerisanja*.
+
+>> **Predmet**: tip objekta na kojem se zasniva *numerisanje*.
+
+> **Tip fakture**
+
+>> **Šifra**: šifra *tipa fakture* koja se koristi za *vrednovanje* *neusaglašenosti* prilikom kreiranja *zaduženja*.
+
+>> **Opis**: opis *tipa fakture*.
+
+> **Tip PDV-a**
+
+>> **Šifra**: šifra *tipa PDV-a* koja se koristi za *vrednovanje* *neusaglašenosti* prilikom kreiranja *zaduženja*, ako subjekt kojem je neusaglašenost namenjena (*dobavljač* ili *kupac*) nema definisan sopstveni tip PDV-a.
+
+>> **Opis**: opis *tipa PDV-a*.
+
+> **Napomene**: slobodne napomene.
+
+### Dodatni podaci tipa neusaglašenosti
+
+Moguće je uneti [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *tip neusaglašenosti*.
+
+Ti *dodatni podaci* mogu se naslediti u *neusaglašenostima* određenog tipa.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sledeću vezu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

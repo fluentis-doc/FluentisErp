@@ -3,31 +3,32 @@ title: Provedene odluke
 sidebar_position: 9
 ---
 
-Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Donošene odluke**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i nesukladnosti > Provedene odluke**.
 
-U ovoj je tablici moguće šifrirati *Donošene odluke* koje se poduzimaju radi rješavanja *utvrđenih nedostataka*.  
+U ovoj tablici moguće je definirati *provedene odluke* za rješavanje *utvrđenih nedostataka*.
 
-Neke primjene *Donošenih odluka* nalazimo u modulima:  
-> **Reklamacije** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*;   
-> **Nesukladnosti** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*.
+Neke primjere upotrebe *donesenih (provedenih) odluka* možemo pronaći u sljedećim evidencijama:
+> **Reklamacije** – na kartici *Upravljanje nedostacima > Podaci o nedostatku*;
+> **Nesukladnosti** – na kartici *Upravljanje nedostacima > Podaci o nedostatku*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.  
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-**Pretraživanje donošenih odluka**
+**Pretraživanje donesenih odluka**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se rezultati prikazali u mreži s rezultatima.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-**Unos donošenih odluka**
+**Unos donesenih odluka**
 
-Za unos novih *Donošenih odluka* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
-Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *donesenih odluka* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-*Specifična polja*: 
-    
-> **Šifra**: šifra *Donošene odluke*.   
-> **Opis donošene odluke**: opis *Donošene odluke*.   
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
-> **Aktivno**: označava je li odluka još uvijek valjana i upotrebljiva.   
-> **Note**: slobodne napomene.
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+*Specifična polja*:
+
+> **Šifra**: šifra *donesene odluke*.
+> **Opis donesene odluke**: opis *donesene odluke*.
+> **Bodovi izračuna indeksa za kvalifikaciju dobavljača**: broj bodova koji se oduzimaju od *bonusa* tijekom *periodične ocjene dobavljača na temelju nesukladnosti*.
+> **Aktivno**: označava je li odluka još uvijek važeća i može li se upotrebljavati.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

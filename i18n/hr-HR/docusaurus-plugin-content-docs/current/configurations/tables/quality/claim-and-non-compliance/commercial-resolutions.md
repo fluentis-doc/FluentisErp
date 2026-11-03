@@ -1,31 +1,33 @@
 ---
-title: Komercijalna riješenja
+title: Komercijalna rješenja
 sidebar_position: 7
 ---
 
-Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Komercijalna rješenja**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i nesukladnosti > Komercijalna rješenja**.
 
-U ovoj je tablici moguće šifrirati *Komercijalna rješenja* koja su poduzeta radi otklanjanja *Utvrđenih nedostataka*.   
-Neke primjene *Komercijalnih rješenja* nalazimo u modulima:  
-> **Reklamacije** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*.
+U ovoj tablici moguće je definirati *komercijalna rješenja* koja se primjenjuju za rješavanje *utvrđenih nedostataka*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.  
+Neke primjere upotrebe *komercijalnih rješenja* možemo pronaći u sljedećoj evidenciji:
+> **Reklamacije** – na kartici *Upravljanje nedostacima > Podaci o nedostatku*.
+
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
 **Pretraživanje komercijalnih rješenja**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
 **Unos komercijalnih rješenja**
 
-Za unos novih *komercijalnih rješenja* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
-Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *komercijalnih rješenja* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-*Specifična polja*: 
-    
-> **Šifra**: šifra *Komercijalnog rješenja*.   
-> **Opis komercijalnog rješenja**: opis *Komercijalnog rješenja*.   
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
-> **Aktivno**: označava je li rješenje još uvijek valjano i upotrebljivo.   
-> **Bilješke**: slobodne napomene.  
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+*Specifična polja*:
+
+> **Šifra**: šifra *komercijalnog rješenja*.
+> **Opis komercijalnog rješenja**: opis *komercijalnog rješenja*.
+> **Bodovi izračuna indeksa za kvalifikaciju dobavljača**: broj bodova koji se oduzimaju od *bonusa* tijekom *periodične ocjene dobavljača na temelju nesukladnosti*.
+> **Aktivno**: označava je li rješenje još uvijek važeće i može li se upotrebljavati.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

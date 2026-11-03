@@ -15,11 +15,11 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovo
 
 **Pretraživanje uočenih nedostataka**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
 **Unos uočenih nedostataka**
 
-Za unos novih *uočenih nedostataka* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
+Za unos novih *uočenih nedostataka* potrebno je kliknuti u tablici na prvi prazan red ili pritisnuti tipku **Novi**.   
 Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
 *Specifična polja*: 
@@ -29,13 +29,13 @@ Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **�
 > **Kategorija**: šifra *kategorije uočenog nedostatka*.     
 > **Opis kategorije**: opis *kategorije uočenog nedostatka*.     
 > **Klasa**: *klasifikacija nedostatka*.     
-> **Reklamacije**: označava aktivaciju nedostatka u upravljanju *Reklamacijama*.     
+> **Koristi se u reklamacijama**: označava aktivaciju nedostatka u upravljanju *Reklamacijama*.     
 > **Unutarnje nesukladnosti**: označava aktivaciju nedostatka u upravljanju *Unutarnjim nesukladnostima*.     
-> **Nesukladnosti prema dobavljaču**: označava aktivaciju nedostatka u upravljanju *nesukladnostima prema dobavljaču*.   
-> **Nesukladnosti prema kupcu**: označava aktivaciju nedostatka u upravljanju *nesukladnostima prema kupcu*.     
-> **Proizvodne izjave**: označava aktivaciju nedostatka u upravljanju *proizvodnim izjavama*.    
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
+> **Nesukladnost s dobavljačem**: označava aktivaciju nedostatka u upravljanju *nesukladnostima prema dobavljaču*.   
+> **Nesukladnosti prema kupcu (nepridržavanje kupca)**: označava aktivaciju nedostatka u upravljanju *nesukladnostima prema kupcu*.     
+> **Korišteno u deklaracijama o proizvodnji**: označava aktivaciju nedostatka u upravljanju *proizvodnim deklaracijama*.    
+> **Bodovi izračuna indeksa za kvalifikaciju dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
 > **Aktivno**: označava je li nedostatak još uvijek valjan i upotrebljiv.   
-> **Bilješke**: slobodne napomene.
+> **Napomene**: slobodne napomene.
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
