@@ -3,26 +3,26 @@ title: Tipovi prijema robe
 sidebar_position: 4
 ---
 
-Tablica se otvara putem puta **Tablice > Nabava > Tipovi prijema robe** i koristi se za određivanje svojstava primitka robe.
+Tabela se otvara putem menija **Tabele > Nabavka > Tipovi prijema robe** i služi za određivanje svojstava primke.
 
-Polja koja se nalaze u tablici su:  
+Dostupna su sledeća polja:
 
-**Šifra**: šifra vrste primitka robe.
+**Šifra**: šifra tipa primke.
 
-**Opis**: opis vrste primitka robe.
+**Opis**: opis tipa primke.
 
-**Otpremnica**: Ako je aktivirano, sustav omogućuje generiranje otpremnice iz primitka robe. Ako nije aktivirano, neće biti moguće generirati otpremnicu iz primitka robe, pa će operacije skladišnog prijema i evidentiranja otpremnice ostati nepovezane.
+**Otpremnica**: ako je ova opcija aktivirana, sistem omogućava generisanje otpremnice iz primke. Ako nije aktivirana, otpremnicu neće biti moguće generisati iz primke, pa će operacije skladišnog prijema i evidentiranja otpremnice ostati nepovezane.
 
-**Račun**: ako je aktivirano, sustav omogućuje generiranje računa iz primitka robe. Ako nije aktivirano, neće biti moguće generirati račun iz primitka robe, te će skladišna prijema ostati nepovezana.  
+**Faktura**: ako je ova opcija aktivirana, sistem omogućava generisanje fakture iz primke. Ako nije aktivirana, fakturu neće biti moguće generisati iz primke, pa će operacija skladišnog prijema ostati nepovezana.
 
-**Narudžbina neubrojene količine artikla**: ako je označeno, prilikom realizacije redaka narudžbe s djelomičnim količinama u istom primitku robe, ovaj će zastavica omogućiti da se količine realizirane narudžbe prikazuju po pojedinačnim stavkama bez zbrajanja količina.  
+**Nesabirana količina artikla narudžbine**: ako je ova opcija aktivirana, prilikom razduživanja redova narudžbine sa delimičnim količinama unutar iste primke omogućava se prikaz razduženih količina narudžbine u zasebnim redovima artikala, bez sabiranja količina.
 
-**Numeracija**: određuje [Numeraciju](/docs/configurations/tables/fluentis-numerations) i pripadajući **Opis** koji su povezani s *Vrsta primitka robe*. 
+**Numerisanje**: određuje [Numerisanje](/docs/configurations/tables/fluentis-numerations) i pripadajući **Opis** povezane sa *tipom primke*.
 
-**Kontrola kvalitete**: *Vrste primitka* koje imaju ovu zastavicu aktiviranu vidljive su u formi [Uvoz artikala za kontrolu](/docs/quality/item-control/items-control/item-control-import/) unutar područja *Kvaliteta*.
+**Kontrola kvaliteta**: *tipovi primki* za koje je ova opcija aktivirana vidljivi su u obrascu [Uvoz artikala za kontrolu](/docs/quality/item-control/items-control/item-control-import/) u području *Kvalitet*.
 
-**Upravljanje osnovnim sredstvima**: ova zastavica omogućuje aktivaciju [Upravljanja osnovnim sredstvima](/docs/finance-area/fixed-assets/general-overview) za tu vrstu primitka te odabir **Vrsta operacije** ckoju želite izvršiti, a u slučaju nabave to će biti *Nabavna cijena*.
+**Osnovna sredstva**: ova opcija omogućava aktiviranje [Upravljanja osnovnim sredstvima](/docs/finance-area/fixed-assets/general-overview) za taj tip primke i izbor **Tipa operacije** koja se želi izvršiti. U slučaju nabavke, reč je o operaciji *Izvorni trošak*.
 
-:::tip NAPOMENA 
-Skladište i Klasu za prijem robe treba definirati u Parametrima Narudžbi dobavljača, kartica [Zaduženje](/docs/configurations/parameters/purchase/purchase-orders-parameters).  
+:::tip Napomena
+Skladište i šablon koji će se koristiti za skladišni prijem primke definišu se u parametrima narudžbina dobavljača, na kartici [Prijem](/docs/configurations/parameters/purchase/purchase-orders-parameters).
 :::

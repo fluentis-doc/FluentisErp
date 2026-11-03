@@ -1,16 +1,16 @@
 ---
-title: Kategorije popusta za upravljanje cijenama 
+title: Kategorije popusta za upravljanje cenama
 sidebar_position: 11
 ---
 
-Tablica se otvara putem puta **Tablice > Nabava > Kategorije popusta za upravljanje cijenama** i koristi se za dodjeljivanje kategorije popusta artiklima u evidenciji artikala.  
+Tabeli se pristupa putem **Tablice > Nabavka > Kategorije popusta za upravljanje cenama** i koristi se za dodeljivanje kategorije popusta artiklima u šifarniku artikala.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih za pregled, izmjenu ili brisanje.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, potrebno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja svih željenih filtera, potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**. 
+Za unos novih šifara potrebno je kliknuti na prvi prazni red u tabeli ili pritisnuti dugme **Novo**.
 
-**Šifra/Opis**: unesite šifru i opis za označavanje kategorije popusta na cijene. Potreban je jedinstveni kod maksimalne duljine 10 znakova. 
+**Šifra/Opis**: unesite šifru i opis za označavanje kategorije popusta na cene. Potrebna je jedinstvena šifra maksimalne dužine 10 znakova.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

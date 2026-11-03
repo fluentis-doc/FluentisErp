@@ -1,37 +1,38 @@
 ---
-title: Postavke XML-a
+title: XML postavke
 sidebar_position: 10
 ---
 
-Tablica se otvara putem **Tablice > Nabava > Promet nabave** i koristi se za definiranje svojstava zahtjeva.
-Ova je tablica potrebna za postavljanje podataka potrebnih za uvoz cjenika dobavljača preuzetog s internetske stranice u XML formatu.
+Tablica se otvara putem izbornika **Tablice > Nabava > XML postavke** i služi za određivanje svojstava zahtjeva.
 
-Polja koja su prisutna su:
+Ova je tablica potrebna za definiranje podataka za uvoz dobavljačeva cjenika preuzimanjem s internetske stranice u XML formatu.
 
-**Konto–Podkonto/Opis podkonta**: konto i podkonto kupca za kojeg se uvozi cjenik.
+Dostupna su sljedeća polja:
+
+**Konto – analitički konto/Opis analitičkog konta**: konto i analitički konto kupca za kojeg se uvozi cjenik.
 
 **Adresa**: adresa s koje se preuzima XML datoteka.
 
-**Korisnik**: korisničko ime za povezivanje na navedenu adresu.
+**Korisnik**: korisničko ime za povezivanje s adresom.
 
-**Lozinka**: lozinka za povezivanje na navedenu adresu.
+**Lozinka**: lozinka za povezivanje s adresom.
 
-**Webservice**: putanja na kojoj se nalaze podaci i datoteka za uvoz.
+**Web usluga**: putanja do podataka i datoteke za uvoz.
 
-**Početna informacija**: početni podatak od kojeg započinje kreiranje XML datoteke, npr. offset=”1”.
+**Početna informacija**: početna informacija od koje započinje izrada XML datoteke: offset="1".
 
-**Početni tag**: definira početni XML tag koji označava početak datoteke, npr. listino.
+**Početna oznaka (tag)**: definira početnu oznaku za prepoznavanje početka XML datoteka: listino.
 
-**Početni redak**: definira redak od kojeg počinje uvoz, npr. artikli.
+**Početna linija**: definira redak od kojeg započinje uvoz: articoli.
 
-**Početna stranica**: definira početnu stranicu, npr. page.
+**Početna stranica**: definira početnu stranicu: page.
 
-**Veličina stranice**: definira broj zapisa po stranici, npr. offset=”500”.
+**Veličina stranice**: definira veličinu stranica: offset="500".
 
-**Klasa**: klasa koja se koristi za uvoz artikala.
+**Klasa**: klasa koja će se koristiti za uvoz artikala.
 
-**JM**: jedinica mjere koja se koristi za uvoz artikala.
+**Jedinica mjere**: mjerna jedinica koja će se koristiti za uvoz artikala.
 
-**Marka**: marka koja se koristi za uvoz artikala.
+**Marka**: marka koja će se koristiti za uvoz artikala.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, gumbe i polja, pogledajte sljedeću poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

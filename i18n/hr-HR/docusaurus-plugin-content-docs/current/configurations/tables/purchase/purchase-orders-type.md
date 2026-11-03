@@ -1,36 +1,36 @@
 ---
-title: Vrste narudžbi dobavljača  
+title: Tipovi narudžbi dobavljača
 sidebar_position: 3
 ---
 
-Ova tablica je ključna za definiranje različitih vrsta narudžbi dobavljača, svaka sa svojim specifičnostima. Dostupna je putem  *Konfiguracija > Tablice > Nabava > Vrste narudžbi dobavljača*.   
+Ova je tablica ključna za definiranje različitih vrsta narudžbi dobavljača, od kojih svaka ima svoja svojstva. Dostupna je putem izbornika *Konfiguracija > Tablice > Nabava > Tipovi narudžbi dobavljača*.
 
-Polja koja su prisutna su:    
+Dostupna su sljedeća polja:
 
-**Šifra/Opis**: obavezna polja za definiranje vrste i opisa narudžbe.  
+**Tip/Opis**: obvezna polja za definiranje vrste i opisa narudžbe dobavljaču.
 
-**Numeracija/Opis numeracije**: obavezno polje za odabir [Numeracija](/docs/configurations/tables/fluentis-numerations) koja se povezuje s vrstom narudžbe.  
+**Numeracija/Opis**: obvezno polje za odabir [Numeriranja](/docs/configurations/tables/fluentis-numerations) koje će se povezati s vrstom narudžbe.
 
-**Automatska potvrda narudžbe**: ako je uključeno, prilikom kreiranja narudžbe tog *Tipa narudžbe* automatski se upisuje današnji datum u polje *Datum potvrde narudžbe* u zaglavlju narudžbe. 
+**Automatska potvrda narudžbe**: ako je ova opcija aktivirana, prilikom izrade narudžbe ove *vrste narudžbe* automatski se popunjava i polje *Datum potvrde narudžbe* u zaglavlju narudžbe, i to tekućim datumom.
 
-**Cash Flow**: ako je uključeno, ova vrsta narudžbe sudjeluje u izračunu novčanog toka.  
+**Novčani tijek**: ako je ova opcija aktivirana, vrsta narudžbe uključuje se u izračun novčanog toka.
 
-**Skladište/Opis skladišta**: skladište dolaska robe koje se automatski postavlja u stavke artikala narudžbi tog tipa.  
+**Skladište/Opis skladišta**: skladište u koje se zaprima roba, a koje se automatski postavlja na retke artikala narudžbi izrađenih s ovom vrstom narudžbe.
 
-**Predložak/Opis predloška**: [Predložak](/docs/configurations/tables/logistics/warehouse-templates) za knjigovodstvenu evidenciju ulazne robe koji se automatski postavlja u stavke artikala narudžbi tog tipa.
+**Predložak/Opis predloška**: [Predložak](/docs/configurations/tables/logistics/warehouse-templates) skladišnog kretanja za zaprimljenu robu, koji se automatski postavlja na retke artikala narudžbi izrađenih s ovom vrstom.
 
-**Provjera dostupnosti**: ako je uključeno, narudžbe ovog tipa sudjeluju u izračunu dostupnosti i vidljive su u formi [Analiza dostupnosti](/docs/erp-home/registers/items/availability-analysis).
+**Kontroliraj raspoloživost**: ako je ova opcija aktivirana, narudžbe ove vrste uključuju se u izračun raspoloživosti i vidljive su u obrascu [Analiza raspoloživosti](/docs/erp-home/registers/items/availability-analysis).
 
-**Poljoprivredna nabava PDV**: ako je aktivno, pri kreiranju narudžbe sustav provjerava postoji li za artikl kod poljoprivrednog PDV-a; ako ne postoji, koristi se standardni PDV kod artikla.
+**Poljoprivredni PDV u nabavi**: ako je ova opcija aktivirana, prilikom izrade narudžbe sustav provjerava postoji li za korišteni artikl šifra poljoprivrednog PDV-a. Ako ne postoji, koristi se uobičajena šifra PDV-a.
 
-**Upravljanje dodatnim matricama**: ako je aktivirano, omogućava prikaz dodatnog taba za unos količina po pojedinoj ćeliji matrice kod artikala s matricom.
+**Upravljanje dodatnim podacima matrice**: ako je ova opcija aktivirana, omogućuje prikaz dodatne kartice za unos količina za svaku pojedinu ćeliju matrice, u slučaju upravljanja artiklima s matricom.
 
-**Ažuriranje cjenika**: omogućuje automatsko ažuriranje cijena u cjenicima na temelju cijena navedenih u narudžbi. Ako nije označeno, moguće je ručno ažurirati vrijednost cjenika u stavkama narudžbe prema navedenoj cijeni.
+**Ažurirati cjenik**: služi za automatsko ažuriranje cijena u cjenicima na temelju cijena navedenih u narudžbi. Ako ova opcija nije aktivirana, i dalje je moguće ručno ažurirati vrijednost u cjeniku na temelju cijene navedene u retku narudžbe.
 
-**Tip otpremnice**: određuje vrstu otpremnice koja će se kreirati prilikom korištenja postupka [Isporuke po narudžbama](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).
+**Tip otpremnice**: vrsta nabavne otpremnice koja će se izraditi prilikom korištenja postupka [Razduživanje iz narudžbi](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).
 
-**Ispis**: u ovom polju može se odabrati zadani obrazac za ispis (napomena: za ispis zadane forme, pri ispisu treba odabrati opciju *Višestruki ispisi*); u sljedećem polju može se unijeti **Broj kopija** za ispis.  
+**Izvještaji**: u ovom polju moguće je odabrati zadani ispis (napominjemo da je za ispis zadanog izvještaja prilikom ispisa potrebno odabrati opciju *Višestruki ispisi*). U sljedećem polju moguće je navesti **Broj kopija** za ispis.
 
-**Kontrola dobavljača**: omogućava kontrolu pri odabiru subjekta narudžbe tako da se mogu odabrati samo računi tipa dobavljač, a ne kupac. 
+**Kontrola dobavljača**: omogućuje aktivaciju kontrole prema kojoj će postupak prilikom odabira subjekta navedenog u zaglavlju narudžbe dopuštati odabir samo konta vrste dobavljač, a ne konta vrste kupac.
 
-**Upravljanje dugotrajnom imovinom**: ovaj flag omogućava aktivaciju [Upravljanja dugotrajnom imovinom](/docs/finance-area/fixed-assets/general-overview) za tu vrstu narudžbe i izbor **Tipa operacije** koji se želi provesti.  
+**Osnovnim sredstva**: ova opcija omogućuje aktivaciju [Upravljanja osnovnim sredstvima](/docs/finance-area/fixed-assets/general-overview) za tu vrstu narudžbe i odabir **Vrste operacije** koja se želi izvršiti.

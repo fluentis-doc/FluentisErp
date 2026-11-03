@@ -3,36 +3,36 @@ title: Tipovi primki
 sidebar_position: 5
 ---
 
-Ova tablica je ključna za definiranje različitih tipova primki za nabavu, svaki sa svojim karakteristikama. Pristupa joj se putem *Konfiguracija > Tablice > Nabava > Tipovi primki*.
+Ova je tablica ključna za definiranje različitih vrsta primki, od kojih svaka ima svoja svojstva. Dostupna je putem izbornika *Konfiguracija > Tablice > Nabava > Tipovi primki*.
 
-Polja su:  
+Dostupna su sljedeća polja:
 
-**Šifra/Opis**: obavezna polja za definiranje tipa i opisa primke za nabavu.
+**Tip/Opis**: obvezna polja za definiranje vrste i opisa primke.
 
-**Numeracija/Opis**: obavezno polje za [Numeraciju](/docs/configurations/tables/fluentis-numerations) koju treba povezati s tipom primke.  
+**Numeracija/Opis**: obvezno polje za odabir [Numeriranja](/docs/configurations/tables/fluentis-numerations) koje će se povezati s vrstom otpremnice.
 
-**Tip/Opis računa za nabavu**: ovdje se definira [Tip računa](/docs/configurations/tables/purchase/purchase-invoices-type) koji će se kreirati prilikom postupka [Vrijednovanja primke za nabavu](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization). Račun se može napraviti iz primke samo ako je ovo polje popunjeno.
+**Tip računa (ulaznog)/Opis**: u ovom polju potrebno je definirati [Vrstu ulaznog računa](/docs/configurations/tables/purchase/purchase-invoices-type) koja će se izraditi prilikom korištenja postupka [Valorizacija primki](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization). Račun je moguće izraditi iz otpremnice samo ako je ovo polje popunjeno.
 
-**Priroda primke**: ovdje se unosi priroda primke: isporuka, povrat, na uvid ili povrat na uvid. Vrijednost se bira iz liste.  
+**Vrsta otpremnice**: u ovom polju potrebno je odabrati vrstu otpremnice: isporuka, povrat, davanje na pregled ili povrat robe dane na pregled. Vrijednost se odabire s popisa.
 
-**Skladište/Opis skladišta**: skladište dolaska robe koje se automatski postavlja na stavke artikala primke kreirane s ovim tipom.  
+**Skladište/Opis skladišta**: skladište u koje se zaprima roba, a koje se automatski postavlja na retke artikala otpremnica izrađenih s ovom vrstom.
 
-**Predložak/Opis predloška**: to je [Predložak](/docs/configurations/tables/logistics/warehouse-templates) za kretanje robe u dolasku koji se automatski postavlja na stavke artikala primki kreiranih s ovim tipom.  
+**Predložak/Opis predloška**: [Predložak](/docs/configurations/tables/logistics/warehouse-templates) skladišnog kretanja za zaprimljenu robu, koji se automatski postavlja na retke artikala otpremnica izrađenih s ovom vrstom.
 
-**Kontrola dobavljača**: aktivira kontrolu kojom se prilikom odabira subjekta primke omogućuje odabir samo računa tipa dobavljač, a ne kupac.
+**Kontrola dobavljača**: omogućuje aktivaciju kontrole prema kojoj će postupak prilikom odabira subjekta navedenog u zaglavlju otpremnice dopuštati odabir samo konta vrste dobavljač, a ne konta vrste kupac.
 
-**Novčani tok (Cash Flow)**: ako je postavljeno, tip narudžbe utječe na izračun novčanog toka.
+**Novčani tijek (Cash flow)**: ako je ova opcija aktivirana, vrsta narudžbe uključuje se u izračun novčanog toka.
 
-**Isporuka količine artikla bez zbrajanja**: ako je postavljeno, prilikom ispunjavanja redaka narudžbe s djelomičnim količinama u istoj primci, ovaj flag omogućuje prikaz količina ispunjenih po stavci bez zbrajanja.
+**Nezbrojena količina artikala narudžbe**: ako je ova opcija aktivirana, prilikom razduživanja redaka narudžbe s djelomičnim količinama unutar iste otpremnice omogućuje se prikaz razduženih količina narudžbe u zasebnim recima artikala, bez zbrajanja količina.
 
-**Poljoprivredna nabava PDV**: ako je aktivno, pri kreiranju primke sustav provjerava postoji li za korišteni artikl šifra poljoprivrednog PDV-a; ako ne postoji, koristi se redovni PDV.
+**Poljoprivredni PDV u nabavi**: ako je ova opcija aktivirana, prilikom izrade otpremnice sustav provjerava postoji li za korišteni artikl šifra poljoprivrednog PDV-a. Ako ne postoji, koristi se uobičajena šifra PDV-a.
 
-**Upravljanje matricama dodatnih podataka**: ako je aktivno, za artikle s matricom prikazuje se dodatni tab za unos količine po pojedinoj ćeliji matrice.
+**Upravljanje dodatnim podacima matrice**: ako je ova opcija aktivirana, omogućuje prikaz dodatne kartice za unos količina za svaku pojedinu ćeliju matrice, u slučaju upravljanja artiklima s matricom.
 
-**Ispis**: moguće je odabrati zadani ispis (za ispis zadane verzije potrebno je prilikom ispisa označiti opciju *Višestruki ispisi*); u sljedećem polju može se definirati **Broj kopija**.    
+**Izvještaji**: u ovom polju moguće je odabrati zadani ispis (napominjemo da je za ispis zadanog izvještaja prilikom ispisa potrebno odabrati opciju *Višestruki ispisi*). U sljedećem polju moguće je navesti **Broj kopija** za ispis.
 
-**Upravljanje Conai**: ovaj flag aktivira upravljanje Conai troškovima za svaki tip primke. Za više detalja o [Conai](/docs/sales/sales-flow/conai) upravljanju, pogledajte odgovarajuću dokumentaciju. 
+**Upravljanje Conai naknadama (recikliranje)**: ova opcija omogućuje aktivaciju upravljanja Conai naknadama za svaku vrstu otpremnice. Za više pojedinosti o upravljanju naknadama povezanima s [Conai sustavom](/docs/sales/sales-flow/conai) pogledajte odgovarajuću stranicu dokumentacije.
 
-**Kontrola kvalitete**: tipovi primki s ovim aktiviranim flagom vidljivi su u formi [Uvoz artikala za kontrolu](/docs/quality/item-control/items-control/item-control-import/) unutar područja *Kvaliteta*.
+**Kontrola kvalitete**: vrste otpremnica za koje je ova opcija aktivirana vidljive su u obrascu [Uvoz artikala za kontrolu](/docs/quality/item-control/items-control/item-control-import/) u području *Kvaliteta*.
 
-**Upravljanje imovinom**: ovaj flag omogućuje aktivaciju [Upravljanja imovinom](/docs/finance-area/fixed-assets/general-overview) za taj tip narudžbe te izbor **Tipa operacije** koji će se izvršiti, što će za nabavu biti *Početni trošak*.     
+**Osnovna sredstva**: ova opcija omogućuje aktivaciju [Upravljanja osnovnim sredstvima](/docs/finance-area/fixed-assets/general-overview) za tu vrstu narudžbe i odabir **Vrste operacije** koja se želi izvršiti. U slučaju nabave, riječ je o operaciji *Izvorni trošak*.

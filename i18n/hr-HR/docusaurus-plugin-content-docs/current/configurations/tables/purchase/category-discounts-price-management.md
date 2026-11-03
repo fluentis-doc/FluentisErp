@@ -7,9 +7,9 @@ Tablica se otvara putem puta **Tablice > Nabava > Kategorije popusta za upravlja
 
 Omogućuje unos novih zapisa ili pretraživanje postojećih za pregled, izmjenu ili brisanje.
 
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, potrebno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, potrebno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
-Za unos novih kodova potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**. 
+Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**. 
 
 **Šifra/Opis**: unesite šifru i opis za označavanje kategorije popusta na cijene. Potreban je jedinstveni kod maksimalne duljine 10 znakova. 
 

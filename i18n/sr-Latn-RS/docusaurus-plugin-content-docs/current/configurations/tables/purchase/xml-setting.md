@@ -1,37 +1,38 @@
 ---
-title: Postavke XML-a
+title: XML podešavanja
 sidebar_position: 10
 ---
 
-Tablica se otvara putem **Tablice > Nabava > Promet nabave** i koristi se za definiranje svojstava zahtjeva.
-Ova je tablica potrebna za postavljanje podataka potrebnih za uvoz cjenika dobavljača preuzetog s internetske stranice u XML formatu.
+Tabela se otvara putem menija **Tabele > Nabavka > XML podešavanja** i služi za definisanje svojstava zahteva.
 
-Polja koja su prisutna su:
+Ova tabela je potrebna za definisanje podataka za uvoz cenovnika dobavljača preuzimanjem sa internet stranice u XML formatu.
 
-**Konto–Podkonto/Opis podkonta**: konto i podkonto kupca za kojeg se uvozi cjenik.
+Dostupna su sledeća polja:
 
-**Adresa**: adresa s koje se preuzima XML datoteka.
+**Konto – analitički konto/Opis analitičkog konta**: konto i analitički konto kupca za koga se uvozi cenovnik.
 
-**Korisnik**: korisničko ime za povezivanje na navedenu adresu.
+**Adresa**: adresa sa koje se preuzima XML datoteka.
 
-**Lozinka**: lozinka za povezivanje na navedenu adresu.
+**Korisnik**: korisničko ime za povezivanje sa adresom.
 
-**Webservice**: putanja na kojoj se nalaze podaci i datoteka za uvoz.
+**Lozinka**: lozinka za povezivanje sa adresom.
 
-**Početna informacija**: početni podatak od kojeg započinje kreiranje XML datoteke, npr. offset=”1”.
+**Veb usluga**: putanja do podataka i datoteke za uvoz.
 
-**Početni tag**: definira početni XML tag koji označava početak datoteke, npr. listino.
+**Početna informacija**: početna informacija od koje započinje kreiranje XML datoteke: offset="1".
 
-**Početni redak**: definira redak od kojeg počinje uvoz, npr. artikli.
+**Početna oznaka (tag)**: definiše početnu oznaku za prepoznavanje početka XML datoteka: listino.
 
-**Početna stranica**: definira početnu stranicu, npr. page.
+**Početna linija**: definiše red od kojeg započinje uvoz: articoli.
 
-**Veličina stranice**: definira broj zapisa po stranici, npr. offset=”500”.
+**Početna stranica**: definiše početnu stranicu: page.
 
-**Klasa**: klasa koja se koristi za uvoz artikala.
+**Veličina stranice**: definiše veličinu stranica: offset="500".
 
-**JM**: jedinica mjere koja se koristi za uvoz artikala.
+**Klasa**: klasa koja će se koristiti za uvoz artikala.
 
-**Marka**: marka koja se koristi za uvoz artikala.
+**Jedinica mere**: merna jedinica koja će se koristiti za uvoz artikala.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+**Marka**: marka koja će se koristiti za uvoz artikala.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, dugmad i polja, pogledajte sledeću vezu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

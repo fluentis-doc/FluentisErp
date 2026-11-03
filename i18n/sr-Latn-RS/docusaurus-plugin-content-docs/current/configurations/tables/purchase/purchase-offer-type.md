@@ -1,20 +1,20 @@
 ---
-title: Vrsta upita za ponudu
+title: Tip upita za ponudu
 sidebar_position: 2
 ---
 
-Ova tablica je ključna za definiranje različitih vrsta upita za ponudu, svaki sa svojim karakteristikama. Dostupna je putem *Konfiguracija > Tablice > Nabava > Vrste upita za ponudu*.     
+Ova tabela je ključna za definisanje različitih tipova upita za ponudu, od kojih svaki ima svoje karakteristike. Dostupna je putem *Konfiguracija > Tabele > Nabavka > Tip upita za ponudu*.
 
-Polja koja su prisutna su: 
+Polja koja su prisutna su:
 
-**Šifra/Opis**: obavezna polja za identifikaciju vrste upita.
+**Šifra/Opis**: obavezna polja za identifikaciju tipa upita.
 
-**Numeracija**: sadrži [numeraciju](/docs/configurations/tables/fluentis-numerations) koja je pridružena vrsti;        
+**Numerisanje**: sadrži [numerisanje](/docs/configurations/tables/fluentis-numerations) koje je pridruženo tipu;
 
-**Tip narudžbe dobavljača**: sadrži [Tip narudžbe dobavljača](/docs/configurations/tables/purchase/purchase-orders-type) i pripadajući **opis** koji se kreira na temelju upita za ponudu (RDO) u postupku [Kreiranja narudžbe dobavljača iz ponude dobavljača](/docs/purchase/offer-request/procedures/order-creation).         
+**Tip narudžbine dobavljača**: sadrži [Tip narudžbine dobavljača](/docs/configurations/tables/purchase/purchase-orders-type) i pripadajući **opis** koji se kreira na osnovu upita za ponudu (RDO) u postupku [Kreiranja narudžbine dobavljača iz ponude dobavljača](/docs/purchase/offer-request/procedures/order-creation).
 
-**Cijena s PDV-om**: ovaj flag označava da će u stavkama dokumenta cijena biti već uključujući PDV.
+**Cena sa PDV-om**: ova oznaka označava da će cena u stavkama dokumenta već uključivati PDV.
 
-**Ispis**: u ovom polju može se odabrati zadani obrazac za ispis (napomena: za ispis zadane forme, pri ispisu treba odabrati opciju  *Višestruki ispisi*); u sljedećem polju može se unijeti **Broj kopija** za ispis.    
+**Štampa**: u ovom polju može se odabrati podrazumevani obrazac za štampu (napomena: za štampanje podrazumevanog obrasca, prilikom štampanja treba odabrati opciju *Višestruke štampe*); u sledećem polju može se uneti **Broj kopija** za štampu.
 
-**Upravljanje dugotrajnom imovinom**: ovaj flag označava da vrsta upita za ponudu mora upravljati dugotrajnom imovinom; u sljedećem polju potrebno je definirati **Tip operacije**, koji je u nabavi uvijek *Izvorni trošak*.     
+**Osnovna sredstva**: ova oznaka označava da tip upita za ponudu mora da upravlja osnovnim sredstvima; u sledećem polju potrebno je definisati **Tip operacije**, koji je u nabavci uvek *Izvorni trošak*.

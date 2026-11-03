@@ -1,24 +1,24 @@
 ---
-title: Vrste zahtjeva za nabavu
+title: Tipovi zahteva za nabavku
 sidebar_position: 1
 ---
 
-Ova tablica je ključna za definiranje različitih vrsta RZN-a (zahtjeva za nabavu), svaka sa svojim specifičnostima. Dostupna je putem *Konfiguracija > Tablice > Nabava > Vrste zahtjeva za nabavu*.
+Ova tabela je ključna za definisanje različitih tipova RZN-a (zahteva za nabavku), od kojih svaki ima svoje specifičnosti. Dostupna je putem *Konfiguracija > Tabele > Nabavka > Tipovi zahteva za nabavku*.
 
-Polja koja su prisutna su:  
+Polja koja su prisutna su:
 
-**Šifra/Opis**: obavezna polja za identifikaciju vrste zahtjeva.
+**Tip/Opis**: obavezna polja za identifikaciju tipa zahteva.
 
-**Numeracija**: potrebno je odabrati [Numeraciju](/docs/configurations/tables/fluentis-numerations) koja će biti povezana s vrstom zahtjeva.  
+**Numerisanje**: potrebno je odabrati [Numerisanje](/docs/configurations/tables/fluentis-numerations) koje će biti povezano sa tipom zahteva.
 
-**Centar troška**: centar troška koji će se predložiti pri kreiranju zahtjeva za nabavu. Može ostati prazan ako se ne koristi modul kontrolinga.
+**Centar troška**: centar troška koji će biti predložen prilikom kreiranja zahteva za nabavku. Može ostati prazan ako se ne koristi modul kontrolinga.
 
-**Skladište/Opis skladišta**: zadano skladište koje će se koristiti prilikom kreiranja zahtjeva za nabavu.
+**Skladište/Opis skladišta**: podrazumevano skladište koje će se koristiti prilikom kreiranja zahteva za nabavku.
 
-**Provjera dostupnosti**: ako je uključeno, zahtjevi za nabavu kreirani s ovom vrstom koriste se u izračunu dostupnosti i vidljivi su u formi [Analiza dostupnosti](/docs/erp-home/registers/items/availability-analysis).         
+**Kontroliši raspoloživost**: ako je ova opcija uključena, zahtevi za nabavku kreirani sa ovim tipom koriste se u obračunu raspoloživosti i vidljivi su u obrascu [Analiza raspoloživosti](/docs/erp-home/registers/items/availability-analysis).
 
-**Ispis**: u ovom polju moguće je odabrati zadani obrazac za ispis (napomena: za ispis zadane forme potrebno je u fazi ispisa odabrati opciju *Višestruki ispisi*); nu sljedećem polju može se unijeti **Broj kopija** za ispis.   
+**Štampa**: u ovom polju moguće je odabrati podrazumevani obrazac za štampu (napomena: za štampanje podrazumevanog obrasca potrebno je u fazi štampanja odabrati opciju *Višestruke štampe*); u sledećem polju može se uneti **Broj kopija** za štampu.
 
-**Cash flow**: ako je ovaj flag aktivan, ova vrsta RZN-a uključuje se u izračun novčanog toka.   
+**Novčani tok**: ako je ova oznaka aktivna, ovaj tip RZN-a uključuje se u obračun novčanog toka.
 
-**Vrsta upita za ponudu**: u ovom polju potrebno je odabrati koju će [vrstu upita za ponudu (RDO)](/docs/configurations/tables/purchase/purchase-offer-type) sustav kreirati iz ove vrste zahtjeva za nabavu.  
+**Tip upita za ponudu**: u ovom polju potrebno je odabrati koji će [tip upita za ponudu (RDO)](/docs/configurations/tables/purchase/purchase-offer-type) sistem kreirati iz ovog tipa zahteva za nabavku.

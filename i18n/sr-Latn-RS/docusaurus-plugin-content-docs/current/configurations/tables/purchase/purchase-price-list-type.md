@@ -1,16 +1,16 @@
 ---
-title: Vrste cjenika dobavljača
+title: Tipovi cenovnika dobavljača
 sidebar_position: 7
 ---
 
-Tablica se otvara putem **Tablice > Nabava > Vrste cjenika dobavljača** i koristi se za definiranje različitih vrsta cjenika dobavljača.
+Tabela se otvara putem **Tabele > Nabavka > Tipovi cenovnika dobavljača** i koristi se za definisanje različitih tipova cenovnika dobavljača.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici s rezultatima.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-Za unos novih šifri potrebno je kliknuti u tablici na prvi prazan redak ili pritisnuti tipku **Novo**. 
+Za unos novih šifara potrebno je kliknuti u tabeli na prvi prazan red ili pritisnuti dugme **Novo**.
 
-**Šifra/Opis**: obavezna polja za definiranje vrste cjenika.
+**Šifra/Opis**: obavezna polja za definisanje tipa cenovnika.
 
-Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na uobičajeno funkcionisanje obrazaca, pogledati sledeći link: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

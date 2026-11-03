@@ -1,17 +1,16 @@
 ---
-title: Tipovi nabavnih poslova
+title: Tipovi naloga nabave
 sidebar_position: 8
 ---
 
-Tablica se otvara putem **Tablice > Nabava > Tipovi nabavnih poslova** i koristi se za definiranje svojstava nabavnog posla.
+Tablica se otvara putem izbornika **Tablice > Nabava > Tipovi naloga nabave** i služi za određivanje svojstava naloga.
 
-Polja koja su prisutna su:
+Dostupna su sljedeća polja:
 
-**Tip/Opis tipa nabavnog posla**: obavezna polja za definiranje tipa posla.
+**Vrsta/Opis vrste nabavnog naloga**: obvezna polja za definiranje vrste naloga.
 
-**Hijerarhijska struktura**: ako je uključeno, prikaz artikala unutar posla bit će hijerarhijski organiziran.  
+**Struktura hijerarhije**: ako je ova opcija aktivirana, artikli u nalogu prikazuju se u hijerarhijskoj strukturi.
 
-**Numeracija**: za odabir odgovarajuće [numeracije](/docs/configurations/tables/fluentis-numerations). 
+**Numeracija**: omogućuje odabir odgovarajućeg [Numeriranja](/docs/configurations/tables/fluentis-numerations).
 
-**Ispis** omogućava odabir obrasca ispisa koji će se koristiti pri ispisu posla, a polje **Broj kopija**, određuje koliko će se primjeraka predložiti za ispis.
-
+**Ispis**: omogućuje odabir predloška ispisa koji će se koristiti prilikom ispisa naloga. Pomoću polja **Broj kopija** određuje se zadani broj kopija dokumenta koji će se predložiti za ispis.
