@@ -1,58 +1,60 @@
 ---
-title: Tipovi kontrole artikla
+title: Tipovi kontrole artikala
 sidebar_position: 9
 ---
 
-Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Tipovi kontrole artikla**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kontrola artikala > Tipovi kontrole artikala**.
 
-U ovoj tablici moguće je kodificirati različite tipove *Tipovi kontrole artikla*.   
-*Tip kontrole artikla* je sastavni dio, zajedno s *Godina* i *Broj*, jedinstvenog koda *Kontrola artikla*.
-Neki primjeri upotrebe *Tipovi kontrole artikla* nalazimo u upravljanjima:  
-> **Uvoz artikala za kontrolu** - u *podacima zaglavlja*;    
-> **Kontrola artikala** - u popisu *podataka zaglavlja*;   
-> **Certifikati analiza** - u tabulatoru *Kontrole i izmjereni rezultati*;   
-> **Parametri Kontrole artikala** - u tabulatoru *Općenito*;     
-i u svim upravljanjima gdje se koristi *Kontrola artikla*.  
+U ovoj tablici moguće je definirati *vrste (tipove) kontrola artikala*.  
+*Vrsta kontrole artikla*, zajedno s *godinom* i *brojem*, čini jedinstvenu šifru *kontrole artikla*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Primjeri upotrebe *vrsta kontrola artikala* mogu se pronaći u sljedećim modulima:
+> **Uvoz artikala za kontrolu** – u *podacima zaglavlja*;  
+> **Kontrole artikala** – na popisu *podataka zaglavlja*;  
+> **Certifikati analize** – na kartici *Kontrole i zabilježene vrijednosti*;  
+> **Parametri kontrola artikala** – na kartici *Općenito*;  
+> kao i u svim modulima u kojima se upotrebljava *kontrola artikla*.
 
-**Pretraži Tipovi kontrole artikla**
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmjene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mreže.
+**Pretraživanje vrsta kontrola artikala**
 
-**Unos Tipovi kontrole artikla**  
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici.
 
-Za unos novih *Tipovi kontrole artikla* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+**Unos vrsta kontrola artikala**
 
-## Tipovi kontrole artikla
+Za unos novih *vrsta kontrola artikala* potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.  
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-To je popis gdje se unose osnovne informacije o *Tipovi kontrole artikla*.
-Popis sadrži sljedeće informacije:    
-> **Tip kontrole**: šifra *Tip kontrole artikla*.   
-> **Opis tipa kontrole**: opis *Tip kontrole artikla*.    
-> **Skladište**: šifra *Skladišta* koja se predlaže u *Kontrola artikala > Testovi > Skladište*;    
-to je *Skladište* kontrole kvalitete koje se koristi za premještanje artikala, nakon kontrole, u odgovarajuće *Skladište* sukladno i nesukladno (ako je postavljeno kao protukonto odgovarajućem *Predlošku*).   
-> **Predložak iskrcaja nekonformnih artikala**: to je kod *predložak skladišta* koji se predlaže u *Kontrola artikala > Testovi > Predložak iskrcaja nekonformnih artikala*;   
-to je *predložak* preuzimanja koji se koristi za premještanje nekonformnih artikala, jednom kada su kontrolirani, u odgovarajuće *Skladište* nekonformnih artikala;     
-*predložak* protustrane nije obavezan ako se ne želi upravljati *Skladište* otpada ili nadopune nakon naknadnog rekonfiguriranja ili prerade kontroliranog artikla.       
-> **Predložak iskrcaja konformnih artikala**: to je kod *predložak skladišta* koji se predlaže u *Kontrola artikala > Testovi > Predložak iskrcaja konformnih artikala*;    
-to je *predložak* preuzimanja koji se koristi za premještanje konformnih artikala, jednom kada su kontrolirani, u odgovarajuće *Skladište* konformnih artikala;    
-poželjno je postaviti odgovarajući *predložak* protustrane kako bi konformni artikl ponovno bio dostupan jednom kada je kontroliran;  
-> **Predložak iskrcaja destruktivnih testova**: to je kod *predložak skladišta* koji se predlaže u *Kontrola artikala > Testovi > Predložak iskrcaja nekonformnih artikala* ako je *Test* tipa *Destruktivni*;  
-to je *predložak* preuzimanja koji se koristi za premještanje nekonformnih artikala, jednom kada su kontrolirani;  
-nije predviđen *predložak* protustrane jer je *Test* tipa *Destruktivni* i nemoguće je izvršiti naknadnu rekondiciju ili preradu kontroliranog artikla.    
-> **Predloženi tip certifikata**: to je kod *Tip certifikata analize* koji se predlaže pri kreiranju novog *Certifikata analize* iz ovog *Tip kontrola artikla*.     
-> **Opis skladišta**: to je opis *Skladište*;       
-> **Opis predložak iskrcaja nekonformnih artikala**: to je opis *Predložak iskrcaja nekonformnih artikala*;  
-> **Opis predložak iskrcaja konformnih artikala**: to je opis *Predložak iskrcaja konformnih artikala*;     
-> **Opis predložak iskrcaja destruktivnih testova**: to je opis *Predložak iskrcaja destruktivnih testova*;     
-> **Opis predloženog tipa certifikata**: to je opis *Predloženi tip certifikata*;       
-> **Bilješke**: slobodne bilješke.      
+## Vrste kontrola artikala
 
-### Dodatni podaci  
+Ovo je popis u koji se unose osnovni podaci o *vrstama kontrola artikala*.  
+Popis se sastoji od sljedećih podataka:
 
-Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *Tip kontrola artikla*.      
-Ovi *Extra data* mogu se naslijediti u *Kontrola artikala* za tu određenu vrstu.     
+> **Tip kontrole**: šifra *vrste kontrole artikla*.  
+> **Opis vrste kontrole**: opis *vrste kontrole artikla*.  
+> **Skladište**: šifra *skladišta* koja se predlaže u **Kontrola artikala > Ispitivanja > Skladište**;  
+> riječ je o skladištu za kontrolu kvalitete koje se upotrebljava za premještanje artikala, nakon provedene kontrole, u odgovarajuće skladište sukladnih odnosno nesukladnih artikala (ako je postavljeno kao protustavka u odgovarajućem *predlošku*).  
+> **Predložak za razduženje nesukladnih artikala**: šifra *skladišnog predloška* koja se predlaže u **Kontrola artikala > Ispitivanja > Predložak za razduženje nesukladnih artikala**;  
+> riječ je o predlošku preuzimanja koji se upotrebljava za premještanje nesukladnih artikala, nakon provedene kontrole, u odgovarajuće skladište nesukladnih artikala;  
+> predložak protustavke nije obvezan ako se ne želi upravljati skladištem škarta ili skladištem za ponovno zaprimanje artikala nakon naknadne obnove ili dorade kontroliranog artikla.  
+> **Predložak za razduženje sukladnih artikala**: šifra *skladišnog predloška* koja se predlaže u **Kontrola artikala > Ispitivanja > Predložak za razduženje sukladnih artikala**;  
+> riječ je o predlošku preuzimanja koji se upotrebljava za premještanje sukladnih artikala, nakon provedene kontrole, u odgovarajuće skladište sukladnih artikala;  
+> preporučuje se postaviti odgovarajući *predložak* protustavke kako bi sukladni artikl nakon kontrole ponovno postao raspoloživ.  
+> **Predložak za razduženje za destruktivna ispitivanja**: šifra *skladišnog predloška* koja se predlaže u **Kontrola artikala > Ispitivanja > Predložak za razduženje nesukladnih artikala** ako je *ispitivanje* vrste *Destruktivno*;  
+> riječ je o predlošku preuzimanja koji se upotrebljava za premještanje artikala nakon provedene kontrole;  
+> predložak protustavke nije predviđen jer je *ispitivanje* destruktivno, pa naknadna obnova ili dorada kontroliranog artikla nije moguća.  
+> **Vrsta predloženog certifikata**: šifra *vrste certifikata analize* koja se predlaže prilikom izrade novog *certifikata analize* na temelju ove *vrste kontrole artikla*.  
+> **Opis skladišta**: opis *skladišta*.  
+> **Opis predloška istovara nesukladnih artikala**: opis *predloška izlaza nesukladnih artikala*.  
+> **Opis predloška istovara sukladnih artikala**: opis *predloška izlaza sukladnih artikala*.  
+> **Opis predloška istovara za destruktivna ispitivanja**: opis *predloška izlaza za destruktivna ispitivanja*.  
+> **Opis predložene vrste certifikata**: opis *predložene vrste certifikata*.  
+> **Napomene**: slobodne napomene.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+### Dodatni podaci
+
+Moguće je unijeti opće [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *vrste kontrola artikala*.  
+Ti se *dodatni podaci* mogu naslijediti u *kontrolama artikala* te vrste.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

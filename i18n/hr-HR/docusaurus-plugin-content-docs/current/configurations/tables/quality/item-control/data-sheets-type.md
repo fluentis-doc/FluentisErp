@@ -1,65 +1,74 @@
 ---
-title: Vrste podatkovne liste
+title: Vrste tehničkih uputstava
 sidebar_position: 4
 ---
 
-Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Vrste podatkovne liste**. 
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kontrola artikala > Vrste tehničkih uputstava (podatkovne liste)**.
 
-U ovoj tablici moguće je kodificirati *Vrste podatkovne liste*.  
-*Vrsta podatkovne liste* je sastavni dio, zajedno s *Godina*, *Broj* i *Revizija*, jedinstvenog koda *Podatkovne liste*.  
-Neki primjeri upotrebe *Vrste podatkovne liste* nalazimo u upravljanjima:  
-> **Podatkovne liste** - u *podacima zaglavlja*;   
-> **Parametri kontrole artikala** - u tabulatoru *Općenito*;   
-i u svim upravljanjima gdje se koristi *Podatkovna lista*.
+U ovoj tablici moguće je definirati *vrste tehničkih uputstava*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+*Vrsta tehničkog uputstva* sastavni je dio jedinstvene šifre *tehničkog uputstva*, zajedno s *godinom*, *brojem* i *revizijom*.
 
-**Pretraži Vrste podatkovne liste**  
+Neke primjere upotrebe *vrsta tehničkih uputstava* možemo pronaći u sljedećim evidencijama:
+> **Tehnička uputstva** – u *podacima zaglavlja*;
+> **Parametri kontrole artikala** – na kartici *Općenito*;
 
-Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mreže.
+kao i u svim evidencijama u kojima se upotrebljava *tehničko uputstvo*.
 
-**Unos Vrste podatkovne liste**
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-Za unos novih *Vrste podatkovne liste* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+**Pretraživanje vrsta tehničkih uputstava**
 
-## Vrste podatkovne liste
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-Ovdje se unose glavne informacije o *Vrste podatkovne liste*.  
-Popis se sastoji od sljedećih informacija:     
-> **Šifra**: šifra *Vrste podatkovne liste*.     
-> **Opis**: opis *Vrste podatkovne liste*.    
-> **Bilješke**: slobodne napomene.  
+**Unos vrsta tehničkih uputstava**
 
-### Atributi Vrste podatkovne liste
+Za unos novih *vrsta tehničkih uputstava* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *Vrstu podatkovne liste*.     
-Ovi *Extra data* mogu se naslijediti u *Podatkovnim listama* te vrste.  
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-### Metoda kodifikacije
+## Vrste tehničkih uputstava (podatkovne liste)
 
-Ovdje se unose informacije za kodiranje *Šifre* i *Opisa* *Podatkovne liste*.
-Popis se sastoji od sljedećih informacija  
-> **Redoslijed**: redoslijed primjene pri kreiranju *Šifre* i *Opisa* *Podatkovne liste*.    
-> **Tip**: popis unaprijed definiranih vrijednosti u sustavu koji identificiraju element za kodiranje *Podatkovne liste*; unaprijed definirane vrijednosti su:    
->> *ExtraData* - koristi se samo za kreiranje šifre i opisa, to je Extra data prepoznat po stupcu *Extradata*;   
->> *Godina* - koristi se samo za kreiranje šifre, to je *Godina* kreiranja *Podatkovne liste*, može se postaviti na 2, 3 ili 4 znamenke u polju *Duljina*;    
->> *Mjesec* - koristi se samo za kreiranje šifre, to je *Mjesec* kreiranja *Podatkovne liste*, fiksna vrijednost 2 znamenke;  
->> *Dan* - koristi se samo za kreiranje šifre, to je *Dan* kreiranja *Podatkovne liste*, fiksna vrijednost 2 znamenke;    
->> *Progresivno* - koristi se samo za kreiranje šifre, to je *Progresivno* kreiranja *Podatkovne liste*, početna vrijednost, znak za popunjavanje i dimenzije se postavljaju u polju *Duljina*;    
->> *Šifra tipa* - koristi se samo za kreiranje šifre, to je *Šifra* *Vrste podatkovne liste*;     
->> *Opis tipa* - koristi se samo za kreiranje opisa, to je *Opis* *Vrste podatkovne liste*;     
->> *Fiksna vrijednost šifre* - koristi se samo za kreiranje šifre, fiksni znakovi se postavljaju u stupcu *Fiksna vrijednost*;     
->> *Fiksna vrijednost opisa* - koristi se samo za kreiranje opisa, fiksni znakovi se postavljaju u stupcu *Fiksna vrijednost*.     
+Ovo je popis u koji se unose osnovni podaci o *vrstama tehničkih uputstava*.
+
+Popis se sastoji od sljedećih podataka:
+
+> **Šifra**: šifra *vrste tehničkog uputstva*.
+> **Opis**: opis *vrste tehničkog uputstva*.
+> **Napomene**: slobodne napomene.
+
+### Atributi vrsta tehničkog uputstva
+
+Moguće je unijeti [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *vrstu tehničkog uputstva*.
+
+Ti se *dodatni podaci* mogu naslijediti u *tehničkim uputstvima* određene vrste.
+
+### Način šifriranja (kodiranja)
+
+Ovo je popis u koji se unose podaci za formiranje *šifre* i *opisa* *tehničkog uputstva*.
+
+Popis se sastoji od sljedećih podataka:
+
+> **Sortiraj**: redoslijed primjene prilikom izrade *šifre* i *opisa* *tehničkog uputstva*.
+> **Tip**: popis vrijednosti koje je unaprijed definirao sustav i koje određuju objekt na temelju kojeg se formira šifra *tehničkog uputstva*. Zadane vrijednosti su:
+>> *ExtraData* – upotrebljava se samo za izradu šifre i opisa; predstavlja dodatni podatak koji se može identificirati u stupcu *Dodatni podaci*.
+>> *Godina* – upotrebljava se samo za izradu šifre; predstavlja *godinu* izrade *tehničkog uputstva*. Može se prikazati s 2, 3 ili 4 znamenke, što se određuje u polju *Duljina*.
+>> *Mjesec* – upotrebljava se samo za izradu šifre; predstavlja *mjesec* izrade *tehničkog uputstva*, uvijek s 2 znamenke.
+>> *Dan* – upotrebljava se samo za izradu šifre; predstavlja *dan* izrade *tehničkog uputstva*, uvijek s 2 znamenke.
+>> *Redni broj* – upotrebljava se samo za izradu šifre; predstavlja *redni broj* izrade *tehničkog uputstva*. Početna vrijednost, znak za popunjavanje i duljina određuju se u polju *Duljina*.
+>> *Šifra vrste* – upotrebljava se samo za izradu šifre; predstavlja *šifru* *vrste tehničkog uputstva*.
+>> *Opis vrste* – upotrebljava se samo za izradu opisa; predstavlja *opis* *vrste tehničkog uputstva*.
+>> *Fiksna vrijednost šifre* – upotrebljava se samo za izradu šifre; predstavlja fiksne znakove koji se definiraju u stupcu *Fiksna vrijednost*.
+>> *Fiksna vrijednost opisa* – upotrebljava se samo za izradu opisa; predstavlja fiksne znakove koji se definiraju u stupcu *Fiksna vrijednost*.
 >
-> **Extradata**: aktivno ako je u *Tip* odabrana vrijednost *ExtraData*, to je *ExtraData* koji se koristi za sastavljanje *Šifre* i/ili *Opisa* *Podatkovne liste*.     
-> **Svojstvo Šifra**: aktivno ako je u *Tip* odabrana vrijednost *ExtraData*, to je svojstvo *Šifra* *ExtraData* koji se koristi za sastavljanje *Šifre* *Podatkovne liste*.    
-> **Svojstvo Opis**: aktivno ako je u *Tip* odabrana vrijednost *ExtraData*, to je svojstvo *Opis* *ExtraData* koji se koristi za sastavljanje *Opisa* *Podatkovne liste*.     
-> **Duljina**: aktivno ako je u *Tip*: *Godina* ili *Progresivno*, to je duljina koja će se dodijeliti *Tipu*.    
-> **Razmak**: označava hoće li se u *Šifri* umetnuti razmak između ove komponente i sljedeće.   
-> **Separator**: znak koji se koristi kao separator između ove komponente *Šifre* i sljedeće.     
-> **Znak popunjavanja**: znak koji se koristi za popunjavanje duljine *Progresivnog*.     
-> **Početna vrijednost progresivnog**: početna vrijednost *Progresivnog* prilikom unosa prve *Podatkovne liste*.     
-> **Fiksna vrijednost**: aktivno ako je u *Tip*: *Fiksna vrijednost šifre* ili *Fiksna vrijednost opisa*.    
+> **Dodatni podaci**: polje je omogućeno ako je u polju *Vrsta* odabrana vrijednost *ExtraData*. Predstavlja dodatni podatak koji se upotrebljava za sastavljanje *šifre* i/ili *opisa* *tehničkog uputstva*.
+> **Svojstvo koda**: polje je omogućeno ako je u polju *Vrsta* odabrana vrijednost *ExtraData*. Predstavlja svojstvo *Šifra* dodatnog podatka koje se upotrebljava za sastavljanje *šifre* *tehničkog uputstva*.
+> **Opis svojstva**: polje je omogućeno ako je u polju *Vrsta* odabrana vrijednost *ExtraData*. Predstavlja svojstvo *Opis* dodatnog podatka koje se upotrebljava za sastavljanje *opisa* *tehničkog uputstva*.
+> **Dužina**: polje je omogućeno ako je u polju *Vrsta* odabrana vrijednost *Godina* ili *Redni broj*. Određuje duljinu odabrane *vrste*.
+> **Prostor**: označava hoće li se u *šifru* umetnuti razmak između ove i sljedeće komponente *šifre*.
+> **Separator**: znak koji se upotrebljava kao razdjelnik između ove i sljedeće komponente *šifre*.
+> **Ispuni znak**: znak koji se upotrebljava za popunjavanje duljine *rednog broja*.
+> **Progresivna vrijednost-početak**: početna vrijednost *rednog broja* prilikom unosa prvog *tehničkog uputstva*.
+> **Fiksna vrijednost**: polje je omogućeno ako je u polju *Vrsta* odabrana vrijednost *Fiksna vrijednost šifre* ili *Fiksna vrijednost opisa*.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

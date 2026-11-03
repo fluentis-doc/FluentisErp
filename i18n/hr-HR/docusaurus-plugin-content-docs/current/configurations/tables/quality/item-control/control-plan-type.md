@@ -3,63 +3,73 @@ title: Vrste kontrolnog plana
 sidebar_position: 8
 ---
 
-Tablica se nalazi na putu **Tabele > Kvaliteta > Kontrola artikla > Tipovi kontrolnog plana**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kontrola artikala > Vrste kontrolnog plana**.
 
-U ovoj tablici moguće je kodirati *Tipove kontrolnog plana*.   
-*Tip kontrolnog plana* je sastavni dio, zajedno s *Godinom*, *Brojem* i *Revizijom*, jedinstvenog koda *Kontrolnog plana*.  
-Primjeri korištenja *Tipova kontrolnog plana* mogu se pronaći u upravljanjima:  
-> **Kontrolni planovi** - u *podacima zaglavlja*;   
-> **Parametri kontrole artikla** - u kartici *Općenito*;   
-i u svim upravljanjima gdje se koristi *Kontrolni plan*.
+U ovoj tablici moguće je definirati *vrste kontrolnih planova*.
 
-Tablica sadrži unaprijed definirane vrijednosti od sustava i nije ih moguće mijenjati niti brisati. Unaprijed definirane vrijednosti su:  
-| Kod | Opis |   
+*Vrsta kontrolnog plana* sastavni je dio jedinstvene šifre *kontrolnog plana*, zajedno s *godinom*, *brojem* i *revizijom*.
+
+Neke primjere upotrebe *vrsta kontrolnih planova* možemo pronaći u sljedećim evidencijama:
+> **Kontrolni planovi** – u *podacima zaglavlja*;
+> **Parametri kontrole artikala** – na kartici *Općenito*;
+
+kao i u svim evidencijama u kojima se upotrebljava *kontrolni plan*.
+
+Tablica sadrži vrijednosti koje je unaprijed definirao sustav i nije ih moguće mijenjati ni brisati. Zadane vrijednosti su:
+
+| Šifra | Opis |
 |:--|:--|
-| MInt | Interno |   
-| MNNr | Nenormalizirano |   
-| MNrm | Normalizirano |   
-| MUff | Službeno |   
+| MInt | Interni |
+| MNNr | Nestandardizirani |
+| MNrm | Standardizirani |
+| MUff | Službeni |
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih za pregled, izmjenu ili brisanje (ako su *Brišivi*).  
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja (ako je označeno da se mogu brisati).
 
-**Pretraživanje Tipova kontrolnog plana**
+**Pretraživanje vrsta kontrolnih planova**
 
-Forma se sastoji od područja za filtriranje i područja za rezultat. Nakon što postavite sve željene filtre, kliknite na gumb **Traži** za prikaz rezultata u mreži.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-**Unos Tipova kontrolnog plana**  
+**Unos vrsta kontrolnih planova**
 
-Za unos novih *Tipova kontrolnog plana* potrebno je kliknuti na prvi prazni redak u mreži ili pritisnuti gumb **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.  
+Za unos novih *vrsta kontrolnih planova* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-## Tipovi kontrolnog plana
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-Ovo je popis gdje se unose glavne informacije o *Tipovima kontrolnog plana*.
-Popis sadrži sljedeće informacije: 
-> **Kod**: kod *Tipa kontrolnog plana*.  
-> **Opis**: opis *Tipa kontrolnog plana*.   
-> **Numeracija**: kod *Numeracije*.   
-> **Brišivo**: označava je li *Tip kontrolnog plana* brišiv. 
-> **Napomene**: slobodne bilješke.
+## Vrste kontrolnih planova
 
-### Extra podaci
+Ovo je popis u koji se unose osnovni podaci o *vrstama kontrolnih planova*.
 
-Moguće je unijeti [Extra podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *Tip kontrolnog plana*.     
-Ti *Extra podaci* mogu se naslijediti u *Kontrolne planove* te vrste.    
+Popis se sastoji od sljedećih podataka:
 
-### Planirane probe
+> **Šifra**: šifra *vrste kontrolnog plana*.
+> **Opis**: opis *vrste kontrolnog plana*.
+> **Numeracija**: šifra *numeracije*.
+> **Može se brisati (obnova)**: označava može li se *vrsta kontrolnog plana* brisati.
+> **Napomene**: slobodne napomene.
 
-Moguće je unijeti [Tipove ispitivanja](/docs/configurations/tables/quality/item-control/test-type) općenito za *Tip kontrolnog plana*.     
-Ti *Tipovi ispitivanja* nasljeđuju se u *Kontrolnim planovima* te vrste.    
+### Dodatni podaci
 
-#### Atributi planiranih probe
+Moguće je unijeti [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *vrstu kontrolnog plana*.
 
-Moguće je unijeti [Extra podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *Planiranu probu*.   
-Ti *Extra podaci* mogu se naslijediti u *Probe* dokumenata gdje je predviđena upotreba atributa.     
+Ti se *dodatni podaci* mogu naslijediti u *kontrolnim planovima* određene vrste.
 
-#### Konfiguracija planiranih probe
+### Planirana ispitivanja
 
-Sadrži [Extra podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari potrebne operaterima za pripremu svih potrebnih alata kako bi mogli započeti određenu probu.
-Mogu se smatrati potrebnom konfiguracijom, operativnim informacijama za izvođenje probe.
-Ti *Extra podaci* mogu se naslijediti u *Probe* dokumenata gdje je predviđena konfiguracija. 
+Moguće je definirati opće [vrste ispitivanja](/docs/configurations/tables/quality/item-control/test-type) za *vrstu kontrolnog plana*.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Te se *vrste ispitivanja* nasljeđuju u *kontrolnim planovima* određene vrste.
+
+#### Atributi planiranih ispitivanja
+
+Moguće je unijeti opće [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *planirano ispitivanje*.
+
+Ti se *dodatni podaci* mogu naslijediti u *ispitivanjima* dokumenata u kojima je predviđena upotreba atributa.
+
+#### Planirane testne konfiguracije
+
+Sadrži [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) potrebne operaterima za pripremu svih instrumenata potrebnih za početak određenog ispitivanja. Mogu se smatrati potrebnim konfiguracijskim postavkama i operativnim informacijama koje prethode provedbi ispitivanja.
+
+Ti se *dodatni podaci* mogu naslijediti u *ispitivanjima* dokumenata za koja je predviđena konfiguracija.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

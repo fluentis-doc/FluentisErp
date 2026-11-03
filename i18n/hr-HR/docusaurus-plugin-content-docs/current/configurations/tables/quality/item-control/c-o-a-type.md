@@ -1,38 +1,43 @@
 ---
-title: Tipovi Certifikata analize
+title: Vrste certifikata analize
 sidebar_position: 10
 ---
 
-Tablica se nalazi na putu **Tablice > Kvaliteta > Kontrola artikala > Tipovi kalibracije**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kontrola artikala > Vrste certifikata o analizi**.
 
-U ovoj tablici moguće je kodirati *Tipove Certifikata analize*.
-Neki primjeri primjene *Tipova Certifikata analize* nalaze se u sljedećim upravljanjima:
-> **Certifikati analize** – u *podacima zaglavlja*;   
-> **Parametri Kontrole artikala** - u kartici *Općenito*.
+U ovoj tablici moguće je definirati *vrste certifikata analize*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
+Neke primjere upotrebe *vrsta certifikata analize* možemo pronaći u sljedećim evidencijama:
+> **Certifikati analize** – u *podacima zaglavlja*;
+> **Parametri kontrole artikala** – na kartici *Općenito*.
 
-**Pretraživanje Tipova Certifikata analize**
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima. 
+**Pretraživanje vrsta certifikata analize**
 
-**Unos Tipova Certifikata analize**
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-Za unos novih *Tipova Certifikata analize* potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novo**.   
-Za novi zapis potrebno je unijeti barem obvezna polja koja program zahtijeva: **Šifra** i **Opis**.
+**Unos vrsta certifikata analize**
 
-## Tipovi Certifikata analize  
+Za unos novih *vrsta certifikata analize* potrebno je kliknuti prvi prazan redak u tablici ili pritisnuti gumb **Novo**.
 
-Ovdje se unose osnovne informacije o *Tipovima Certifikata analize*.  
-Popis sadrži sljedeće informacije:    
-> **Šifra**: šifra *Tipa Certifikata analize*.   
-> **Opis**: opis *Tipa Certifikata analize*.   
-> **Numeracija**: šifra *Numeracije*.   
-> **Napomene**: slobodne bilješke.
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-### Extra data
+## Vrste certifikata analize
 
-Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) koji su opći za *Tip Certifikata analize*.   
-Ovi *Extra data* mogu se naslijediti u *Certifikatima analize* te određene tipologije.   
+Ovo je popis u koji se unose osnovni podaci o *vrstama certifikata analize*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Popis se sastoji od sljedećih podataka:
+
+> **Šifra**: šifra *vrste certifikata analize*.
+> **Opis**: opis *vrste certifikata analize*.
+> **Numeracija**: šifra *numeracije*.
+> **Napomene**: slobodne napomene.
+
+### Dodatni podaci
+
+Moguće je unijeti [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *vrstu certifikata analize*.
+
+Ti se *dodatni podaci* mogu naslijediti u *certifikatima analize* određene vrste.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

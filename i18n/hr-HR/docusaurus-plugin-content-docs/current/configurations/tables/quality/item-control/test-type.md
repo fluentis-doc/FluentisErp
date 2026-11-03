@@ -1,113 +1,125 @@
 ---
-title: Vrsta testiranja
+title: Vrste ispitivanja
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Kontrola artikala > Vrsta testiranja**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kontrola artikala > Vrste ispitivanja**.
 
-U ovoj tablici moguće je definirati različite vrste testiranja koje se provode prilikom prijema robe i tijekom proizvodnog procesa na artiklima.       
-Primjeri korištenja *Vrsta testiranja* nalaze se u modulima:    
-> **Tehnički listovi** - kartica *Svojstva*;  
-> **Kontrolni planovi** - kartica *Planirani testovi*;     
-> **Kontrola artikala** - kartica *Testovi*;     
-> **Kontrola artikala** - kartica *Testovi*;    
-> **M.E.S.** - kartica *Kontrola kvalitete > Testovi*.  
+U ovoj tablici moguće je definirati vrste ispitivanja koja se provode na artiklima prilikom zaprimanja robe i tijekom proizvodnog procesa.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Primjeri upotrebe *vrsta ispitivanja* mogu se pronaći u sljedećim modulima:
+> **Tehnička uputstva** – na kartici *Svojstva*;  
+> **Kontrolni planovi** – na kartici *Planirana ispitivanja*;  
+> **Kontrola artikala** – na kartici *Ispitivanja*;  
+> **Certifikati analize** – na kartici *Kontrole i zabilježene vrijednosti > Zabilježene vrijednosti*;  
+> **M.E.S.** – na kartici *Kontrola kvalitete > Ispitivanja*.
 
-**Pretraživanje Vrsta testiranja**
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmjene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon postavljanja željenih filtera, kliknite gumb **Pretraži** kako bi se rezultati prikazali u mreži rezultata.
+**Pretraživanje vrsta ispitivanja**
 
-**Unos Vrsta testiranja**
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici.
 
-Za unos nove *Vrsta testiranja* kliknite na prvu praznu liniju u mreži ili pritisnite gumb **Novi**.  
-Za novi zapis potrebno je unijeti barem obavezna polja: **Šifra** i **Opis**.
+**Unos vrsta ispitivanja**
 
-**Dupliciranje Vrsta testiranja**  
+Za unos novih *vrsta ispitivanja* potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.  
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-Za dupliciranje postojeće *Vrsta testiranja* u novu, odaberite test u mreži i pritisnite gumb **Dupliciraj**.  
-Pojavit će se prozor za unos **Šifre** novog testa (obavezno) i opcije koje omogućuju kopiranje informacija o: *Konfiguraciji*, *Mogućim rezultatima*, *Funkcijama* i *Slikama*.  
-Zatim kliknite **OK** za nastavak ili **Cancel** za otkazivanje.  
+**Dupliciranje vrsta ispitivanja**
 
-## Vrsta testiranja  
+Za dupliciranje postojeće *vrste ispitivanja* u novu *vrstu ispitivanja* potrebno je u tablici odabrati *vrstu ispitivanja* koju želite duplicirati i pritisnuti gumb **Dupliciraj**.  
+Prikazat će se zahtjev za unos **Šifre** nove *vrste ispitivanja* (obvezan podatak) te oznaka koje omogućuju odabir informacija koje će se također duplicirati: *Konfiguracija*, *Mogući rezultati*, *Funkcija* i *Slike*.  
+Zatim pritisnite gumb **U redu** ili **Odustani**, ovisno o tome želite li nastaviti s dupliciranjem.
 
-Ovdje se unose osnovne informacije o *Vrsta testiranja*.  
-Popis sadrži sljedeća polja:    
-> **Šifra**: šifra testa.       
-> **Opis**: opis testa.       
-> **Referenca standardnog kontrolnog plana**: opisno polje koje sadrži reference na standardizirane metode testiranja.    
->  
-> **Kategorija**  
->> **Šifra**: šifra kategorije.      
->> **Opis**: opis kategorije.      
->> **Destruktivno**: označava je li test destruktivan.     
+## Vrste ispitivanja
+
+Ovo je popis u koji se unose osnovni podaci o *vrsti ispitivanja*.  
+Popis se sastoji od sljedećih podataka:
+
+> **Šifra**: šifra *vrste ispitivanja*.  
+> **Opis**: opis *vrste ispitivanja*.  
+> **Obvezan test**: označava je li ispitivanje obvezno za nastavak proizvodne prijave; ova se kontrola provodi u proizvodnim prijavama u sustavu [M.E.S.](/docs/production/mes/mes-main-form).  
+> **Referenca standardnog plana kontrole**: opisno polje koje sadržava reference na šifre priznatih standardnih metoda ispitivanja.  
 >
-> **Interni laboratorij**: označava da li se test provodi u internom laboratoriju.    
->  
-> **Vanjski laboratorij**    
->> **Naziv**: ako interni laboratorij nije odabran, ovdje se upisuje naziv vanjskog laboratorija koji provodi test.      
->  
-> **Mjerni instrument**    
->> **Šifra**: šifra kategorije mjernog instrumenta koji se koristi za očitanje rezultata testa.     
->> **Opis**: opis kategorije mjernog instrumenta koji se koristi.     
->  
-> **Vrijednosti**    
->> **Za očitavanje**: označava je li test za očitavanje ili se radi samo o svojstvu, koje se koristi u tehničkim listovima.     
->> **Jedinica mjere**: jedinica mjere za očitavanje.      
->> **Tip vrijednosti**: tip vrijednosti za očitavanje: *Numerički*, *Da/Ne* ili *Tekst*.       
->> **Tip granice**: ako je tip vrijednosti numerički, ovdje se definira tip granice koji će biti ponuđen u testu.     
->  
-> **Tip kontrole testa**    
->> **Generički**: označava se primjenjuje li se test na uobičajene tipove dokumenata.    
->> **Tip dokumenta**: ako je tip vrijednosti generički, označava dokument u kojem se test obično provodi.      
->> **Predloženo u...**: detalj dokumenta (*zaglavlje* ili *redak*) gdje se test obično provodi.    
->> **Šifra**: šifra tipa kontrole testa koji se koristi.    
->> **Opis**: opis tipa kontrole testa.       
->> **Frekvencija**: opis frekvencije provođenja kontrole.    
-> **Napomene**: slobodne bilješke.       
-
-### Atributi Vrsta testiranja  
-
-Mogu se definirati [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/search-extradata) za test.       
-Ovi podaci mogu se naslijediti u testovima dokumenata gdje se atributi koriste.   
-
-### Parametri konfiguracije testa i mjernog instrumenta  
-
-Sadrži [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) potrebne operaterima za pripremu instrumenata za izvođenje testa. To su pripremne konfiguracije i operativne informacije potrebne za izvođenje testa.  
-Ovi podaci mogu se naslijediti u testovima dokumenata gdje je konfiguracija potrebna.     
-
-### Mogući rezultati  
-
-Za odabranu *Vrsta testiranja* moguće je definirati moguće rezultate.    
-Kada se provede test, sustav predlaže *pozitivan* ili *negativan* rezultat prema zadanom.    
-Popis sadrži:      
-> **Rezultat**: šifra rezultata.      
-> **Opis rezultata**: opis rezultata.      
-> **Zadano pozitivno**: predloženo kao pozitivan rezultat.     
-> **Zadano negativno**: predloženo kao negativan rezultat.    
-> **Redoslijed**: redoslijed prikaza u popisu rezultata.       
-> **Napomene**: slobodne bilješke.  
-
-### Funkcije očitavanja i odobravanja
-
-Definira prava tko može očitavati i odobravati rezultate testa.      
-Popis sadrži:     
-> **Funkcija**: šifra funkcije.    
-> **Opis funkcije**: opis funkcije.       
-> **Tip aktivnosti**: pravo dodijeljeno *Funkciji u tvrtki* tijekom aktivnosti očitavanja i/ili odobravanja testa. Moguće vrijednosti su:      
-> - *Može očitavati* - Funkcija u tvrtki ima dopuštenje samo za očitavanje vrijednosti;     
-> - *Može odobravati* - Funkcija u tvrtki ima dopuštenje samo za odobravanje testa;      
-> - *Može očitavati i odobravati* - Funkcija u tvrtki ima dopuštenje za očitavanje vrijednosti i odobravanje testa.     
+> **Kategorija**
 >
-> Ostale *Funkcije u tvrtki* koje nisu navedene nemaju pravo očitavanja vrijednosti niti odobravanja testa.     
-> Ako se funkcije ne definiraju, svi operateri imaju pravo očitavati vrijednosti i odobravati test.  
+> > **Šifra**: šifra *kategorije*.  
+> > **Opis**: opis *kategorije*.  
+> > **Destruktivno**: označava je li ispitivanje destruktivno.  
 >
-> **Napomene**: slobodne bilješke.  
+> **Interni laboratorij**: označava provodi li se ispitivanje interno.  
+>
+> **Vanjski laboratorij**
+>
+> > **Opis**: polje je omogućeno ako nije odabran interni laboratorij. Sadržava naziv *laboratorija za analizu* (*dobavljača*) koji će provesti ispitivanje.  
+>
+> **Alata za mjerenje (Mjerni instrument)**
+>
+> > **Šifra**: šifra *kategorije mjernog instrumenta* koji će se upotrebljavati za mjerenje vrijednosti *vrste ispitivanja*.  
+> > **Opis**: opis *kategorije mjernog instrumenta* koji će se upotrebljavati za mjerenje vrijednosti *vrste ispitivanja*.  
+>
+> **Vrijednosti**
+>
+> > **Za otkrivanje**: označava treba li se rezultat ispitivanja zabilježiti ili je riječ samo o *svojstvu* koje nije moguće izmjeriti, pa se upotrebljava u *tehničkim uputstvima*.  
+> > **Jedinica mjere**: *mjerna jedinica* vrijednosti koje je potrebno zabilježiti.  
+> > **Vrsta iznosa**: *vrsta vrijednosti* koju je potrebno zabilježiti: *Numerička*, *Da/Ne* ili *Tekst*.  
+> > **Vrsta limita**: polje je omogućeno ako je *vrsta vrijednosti* *Numerička*. Određuje *vrstu ograničenja* koja će se predložiti u ispitivanjima.  
+>
+> **Vrsta kontrole testa**
+>
+> > **Općenito**: označava provodi li se ispitivanje uobičajeno na vrstama dokumenata koje je moguće odrediti u sljedećim stupcima.  
+> > **Tip dokumenta**: polje je omogućeno ako je odabrana vrijednost *Općenito*. Određuje dokument na kojem se uobičajeno provodi *vrsta ispitivanja*.  
+> > **Predloženo u...**: polje je omogućeno ako je odabrana vrijednost *Općenito* i ako to odabrana *vrsta dokumenta* podržava. Određuje detalj (*Zaglavlje dokumenta* ili *Redak dokumenta*) na kojem se uobičajeno provodi *vrsta ispitivanja*.  
+> > **Šifra**: šifra *vrste kontrole ispitivanja* koja će se upotrebljavati.  
+> > **Opis**: opis *vrste kontrole ispitivanja* koja će se upotrebljavati.  
+> > **Učestalost**: opis učestalosti kojom je potrebno provoditi kontrolu.  
+>
+> **Napomene**: slobodne napomene.
+
+### Atributi vrste testa
+
+Moguće je unijeti opće [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *vrstu ispitivanja*.  
+Ti se *dodatni podaci* mogu naslijediti u *ispitivanjima* dokumenata u kojima je predviđena upotreba atributa.
+
+### Konfiguracija parametara ispitivanja i mjerila
+
+Sadržava [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) koji su potrebni operaterima za pripremu svih instrumenata potrebnih za početak određenog ispitivanja. Mogu se smatrati potrebnim konfiguracijskim postavkama i operativnim informacijama koje prethode provedbi ispitivanja.  
+Ti se *dodatni podaci* mogu naslijediti u *ispitivanjima* dokumenata za koja je predviđena konfiguracija.
+
+### Mogući rezultati
+
+Za odabranu *vrstu ispitivanja* moguće je prilagoditi *moguće vrste rezultata*.  
+Prilikom bilježenja pojedinačnog ispitivanja sustav će, ovisno o njegovoj sukladnosti, prema zadanim postavkama predložiti *pozitivan* ili *negativan* rezultat.
+
+Popis se sastoji od sljedećih podataka:
+
+> **Rezultat**: šifra *vrste rezultata*.  
+> **Opis rezultata**: opis *vrste rezultata*.  
+> **Zadani pozitivni rezultat**: označava da će se ovaj rezultat predložiti kao pozitivan prilikom bilježenja ispitivanja.  
+> **Zadani negativni rezultat**: označava da će se ovaj rezultat predložiti kao negativan prilikom bilježenja ispitivanja.  
+> **Redoslijed**: redoslijed prikaza *vrsta rezultata* na popisima za odabranu *vrstu ispitivanja*.  
+> **Napomene**: slobodne napomene.
+
+### Funkcije za detekciju i odobravanje
+
+Ovdje se definiraju prava kojima se određuje tko može bilježiti i/ili odobravati vrijednosti ispitivanja.
+
+Popis se sastoji od sljedećih podataka:
+
+> **Funkcija**: šifra *poslovne funkcije*.  
+> **Opis funkcije**: opis *poslovne funkcije*.  
+> **Vrsta aktivnosti**: pravo dodijeljeno *poslovnoj funkciji* tijekom aktivnosti bilježenja i/ili odobravanja ispitivanja. Moguće vrijednosti su:
+> - *Može bilježiti (otkriti)* – *poslovna funkcija* ima samo ovlasti za bilježenje vrijednosti;
+> - *Može odobriti* – *poslovna funkcija* ima samo ovlasti za odobravanje ispitivanja;
+> - *Može bilježiti (otkriti) i odobriti* – *poslovna funkcija* ima ovlasti za bilježenje vrijednosti i odobravanje ispitivanja.
+>
+> Ostale *poslovne funkcije* koje nisu navedene nemaju nikakva prava za bilježenje vrijednosti ni odobravanje ispitivanja.  
+> Ako nisu navedene *poslovne funkcije*, svi operateri moći će bilježiti vrijednosti i odobravati ispitivanje.
+>
+> **Napomene**: slobodne napomene.
 
 ### Slike
 
-Moguće je pridružiti slike koje mogu biti korisne za test koji se provodi.  
-Na primjer, slike mogu poslužiti za vizualno prikazivanje određenih karakteristika ili aktivnosti koje je potrebno obaviti tijekom pripreme i izvođenja samog testa.  
+Moguće je povezati slike koje su korisne za ispitivanje koje je potrebno provesti. Primjerice, slike mogu vizualno prikazivati određene značajke ili aktivnosti koje je potrebno obaviti tijekom pripreme i provedbe samog ispitivanja.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

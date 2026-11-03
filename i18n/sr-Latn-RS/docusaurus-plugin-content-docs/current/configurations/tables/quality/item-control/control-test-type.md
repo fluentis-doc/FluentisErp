@@ -1,33 +1,35 @@
 ---
-title: Vrste kontrolnih testova 
+title: Tipovi kontrolnih testova
 sidebar_position: 6
 ---
 
-Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Vrste kontrolnih testova**.
+Tabela se nalazi na putanji **Tabele > Kvalitet > Kontrola artikala > Tipovi kontrolnih testova**.
 
-U ovoj tablici moguće je kodificirati različite tipove kontrola nad testovima koji se trebaju provesti.
-Neki primjeri upotrebe *Vrste kontrolnih testova* nalazimo u upravljanjima:
-> **Vrste testova**;;   
-> **Kontrolni planovi** - u tabulatoru *Planirani testovi*;   
-> **Kontrola artikala** - u tabulatoru *Testovi*;   
-> **Certifikati analiza** - u tabulatoru *Kontrole i zabilježene vrijednosti > Zabilježene vrijednosti*;     
-> **M.E.S.** - u tabulatoru *Kontrole kvalitete > Testovi*.  
+U ovoj tabeli moguće je šifrirati različite tipove kontrola nad testovima koje je potrebno sprovesti.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
+Neke primere upotrebe *tipova kontrolnih testova* nalazimo u sledećim evidencijama:
+> **Tipovi testova**;
+> **Kontrolni planovi** – na kartici *Planirani testovi*;
+> **Kontrola artikala** – na kartici *Testovi*;
+> **Sertifikati analize** – na kartici *Kontrole i zabeležene vrednosti > Zabeležene vrednosti*;
+> **M.E.S.** – na kartici *Kontrola kvaliteta > Testovi*.
 
-**Pretraživanje Vrste kontrolnih testova**
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mreže.
+**Pretraživanje tipova kontrolnih testova**
 
-**Unos Vrste kontrolnih testova**
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Kada postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za unos novih *Tipova normi i zakona* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novi**.
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+**Unos tipova kontrolnih testova**
 
-*Specifična polja*: 
+Za unos novih *tipova kontrolnih testova* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-> **Vrsta kontrolnog testa**: šifra *Vrste kontrolnog testa*.
-> **Opis Vrste kontrolnog testa**: opis *Vrste kontrolnog testa*.  
-> **Bilješke**: slobodne napomene.
+Za novi zapis potrebno je uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+*Specifična polja*:
+
+> **Tip kontrolnog testa**: šifra *tipa kontrolnog testa*.
+> **Opis tipa kontrolnog testa**: opis *tipa kontrolnog testa*.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeći link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

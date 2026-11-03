@@ -14,18 +14,18 @@ Tablica omogućuje unos novih zapisa ili pretraživanje već postojećih radi pr
 
 **Pretraživanje Kategorija tipa ispitivanja** 
 
-Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar mreže rezultata.  
+Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar tablice rezultata.  
 
 **Unos Kategorija tipa ispitivanja**  
 
-Za unos novih *Kategorija tipa ispitivanja* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti tipku **Novo**.    
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.    
+Za unos novih *Kategorija tipa ispitivanja* potrebno je kliknuti na prvu praznu liniju u tablici ili pritisnuti tipku **Novo**.    
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.    
 
 
 *Specifična polja*:    
 
-> **Kod**: to je kod *Kategorija tipa ispitivanja*.      
-> **Kod**: to je kod *Kategorija tipa ispitivanja*.     
+> **Šifra**: to je šifra *Kategorije tipa ispitivanja*.      
+> **Opis**: to je opis *Kategorije tipa ispitivanja*.     
 > **Bilješke**: slobodne bilješke.    
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

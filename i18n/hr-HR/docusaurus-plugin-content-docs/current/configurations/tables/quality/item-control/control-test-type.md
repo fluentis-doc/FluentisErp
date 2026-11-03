@@ -17,17 +17,17 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza
 
 **Pretraživanje Vrste kontrolnih testova**
 
-Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mreže.
+Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar tablice.
 
 **Unos Vrste kontrolnih testova**
 
-Za unos novih *Tipova normi i zakona* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novi**.
+Za unos novih *Tipova normi i zakona* potrebno je kliknuti na prvu praznu red u tablici ili pritisnuti tipku **Novo**.
 Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
 *Specifična polja*: 
 
 > **Vrsta kontrolnog testa**: šifra *Vrste kontrolnog testa*.
-> **Opis Vrste kontrolnog testa**: opis *Vrste kontrolnog testa*.  
-> **Bilješke**: slobodne napomene.
+> **Opis tipa kontrolnog testa**: opis *Vrste kontrolnog testa*.  
+> **Napomene**: slobodne napomene.
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

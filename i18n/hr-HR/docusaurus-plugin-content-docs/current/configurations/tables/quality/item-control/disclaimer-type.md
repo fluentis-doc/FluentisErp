@@ -1,28 +1,28 @@
 ---
-title: Tipovi izjave
+title: Tipovi izjava o odricanju od odgovornosti
 sidebar_position: 5
 ---
 
-Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Tipovi izjave**.  
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Tipovi izjava o odricanju od odgovornosti**.
 
-U ovoj tablici moguće je kodificirati različite tipove *Tipovi izjave*.
-Neki primjeri upotrebe *Tipovi izjave* nalazimo u upravljanju **Izjava o odricanju odgovornosti**.  
+U ovoj tablici moguće je definirati različite vrste (tipove) izjava o odricanju od odgovornosti.  
+Primjeri upotrebe *vrsta izjava o odricanju od odgovornosti* mogu se pronaći u modulu **Izjava o odricanju od odgovornosti**.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmjene ili brisanja.
 
-**Pretraži Tipovi izjave**
+**Pretraživanje vrsta izjava o odricanju od odgovornosti**
 
-Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mreže.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici.
 
-**Unos Tipovi izjave**
+**Unos vrsta izjava o odricanju od odgovornosti**
 
-Za unos novih *Tipovi izjave* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Za unos novih *vrsta izjava o odricanju od odgovornosti* potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.  
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
 *Specifična polja*:
 
-> **Šifra tipa**: šifra *Tipovi izjave*. 
-> **Opis tipa**: opis *Tipovi izjave*.    
-> **Bilješke**: slobodne napomene.  
+> **Vrsta šifre**: šifra *vrste izjave o odricanju od odgovornosti*.  
+> **Opis tipa**: opis *vrste izjave o odricanju od odgovornosti*.  
+> **Napomene**: slobodne napomene.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
