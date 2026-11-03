@@ -1,31 +1,33 @@
 ---
-title: Tipovi procjene dobavljača
+title: Tipovi procene dobavljača
 sidebar_position: 4
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Kvalifikacija dobavljača > Tipovi procjene dobavljača**.  
+Tabela se nalazi na putanji **Tablice > Kvalitet > Kvalifikacija dobavljača > Tipovi procene dobavljača**.
 
-Podaci u ovoj tablici koriste se za kategorizaciju različitih *Tipova procjene dobavljača*.  
-Neki primjeri upotrebe *Tipova procjene dobavljača* mogu se pronaći u sljedećim modulima:  
-> **Početne i periodične procjene** – u popisu *zaglavnih podataka*;     
-> **Periodične procjene prema Nesukladnostima** – u popisu *zaglavnih podataka*;      
-> **Parametri kvalifikacije dobavljača**.       
+Podaci u ovoj tabeli koriste se za kategorizaciju različitih *tipova procene dobavljača*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
+Neki primeri upotrebe *tipova procene dobavljača* mogu se pronaći u sledećim modulima:
+> **Početne i periodične procene** – u poljima *zaglavlja dokumenta*;
+> **Periodične procene prema neusaglašenostima** – u poljima *zaglavlja dokumenta*;
+> **Parametri kvalifikacije dobavljača**.
 
-**Pretraživanje Tipova procjene dobavljača**  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+**Pretraživanje tipova procene dobavljača**
 
-**Unos Tipova procjene dobavljača** 
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-Za unos novog *Tipa procjene dobavljača* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.  
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+**Unos tipova procene dobavljača**
 
-*Specifična polja*:   
+Za unos novog *tipa procene dobavljača* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-> **Tip**: šifra *Tipa procjene dobavljača*.       
-> **Opis tipa**: opis *Tipa procjene dobavljača*.    
-> **Napomene**: slobodne bilješke.
+Za novi zapis potrebno je uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+*Specifična polja*:
+
+> **Tip**: šifra *tipa procene dobavljača*.
+> **Opis tipa**: opis *tipa procene dobavljača*.
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeći link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

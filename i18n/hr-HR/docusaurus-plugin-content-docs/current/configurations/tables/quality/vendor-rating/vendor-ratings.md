@@ -3,35 +3,36 @@ title: Procjene dobavljača
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Kvalifikacija dobavljača > Procjene dobavljača**.  
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kvalifikacija dobavljača > Procjene dobavljača**.
 
-Podaci u ovoj tablici koriste se za dodjeljivanje procjene dobavljačima.  
-Neki primjeri upotrebe *Procjena dobavljača* mogu se pronaći u sljedećim modulima:    
-> **Početne i periodične procjene** – u popisu *zaglavnih podataka*;       
-> **Periodične procjene prema Nesukladnostima** – u popisu *zaglavnih podataka*;      
-> **Parametri kvalifikacije dobavljača**;      
-> **Kartice kontakata** – u kartici *Računovodajni podaci > Podaci o kvaliteti*.      
+Podaci iz ove tablice upotrebljavaju se za dodjelu ocjena dobavljačima.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
+Primjeri upotrebe *ocjena dobavljača* mogu se pronaći u sljedećim modulima:
+> **Početne i periodične procjene** – na popisu *podataka zaglavlja*;  
+> **Periodične procjene na temelju nesukladnosti** – na popisu *podataka zaglavlja*;  
+> **Parametri kvalifikacije dobavljača**;  
+> **Šifarnici kontakata** – na kartici *Računovodstveni podaci > Podaci o kvaliteti*.
 
-**Pretraživanje Procjena dobavljača**  
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmjene ili brisanja.
 
-Forma se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+**Pretraživanje procjena dobavljača**
 
-**Unos Procjena dobavljača**
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici.
 
-Za unos novih *Procjena dobavljača* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.  
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+**Unos procjena dobavljača**
 
-*Specifična polja*:    
+Za unos novih *procjena dobavljača* potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.  
+Za novi zapis potrebno je unijeti barem obvezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-> **Redoslijed**: redoslijed prikaza u popisima *Procjena dobavljača*.       
-> **Šifra**: šifra *Procjene dobavljača*.      
-> **Opis**: opis *Procjene dobavljača*.     
-> **Bodovi za izračun indeksa kvalifikacije dobavljača**: decimalna vrijednost koja će se koristiti za ocjenjivanje dobavljača.     
-> **Automatska suspenzija**: označava želi li se omogućiti automatska suspenzija dobavljača (ako je predviđena u *Parametrima kvalifikacije dobavljača*) pri dodjeli ove vrste procjene.     
-> **Pozadina**: omogućeno ako je automatska suspenzija aktivna; boja koja će se primijeniti na pozadinu ćelije kada se dodijeli ova vrsta procjene, radi vizualnog označavanja negativne vrijednosti.       
-> **Tekst**: omogućeno ako je automatska suspenzija aktivna; boja koja će se primijeniti na tekst ćelije kada se dodijeli ova vrsta procjene, radi vizualnog označavanja negativne vrijednosti.       
-> **Napomene**: slobodne bilješke.
+*Specifična polja*:
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Redoslijed**: redoslijed prikaza *ocjena dobavljača* na popisima.  
+> **Šifra**: šifra *ocjene dobavljača*.  
+> **Opis**: opis *ocjene dobavljača*.  
+> **Bodovi izračuna indeksa za kvalifikaciju dobavljača**: decimalna vrijednost koja će se upotrebljavati za procjenu dobavljača.  
+> **Automatska obustava**: označava želi li se aktivirati automatska obustava dobavljača prilikom dodjele ove vrste ocjene, ako je ta mogućnost predviđena i u *parametrima kvalifikacije dobavljača*.  
+> **Pozadina**: polje je omogućeno ako je aktivirana automatska obustava. Određuje boju pozadine ćelije koja će se primijeniti prilikom dodjele ove vrste ocjene kako bi se istaknula njezina negativna vrijednost.  
+> **Tekst**: polje je omogućeno ako je aktivirana automatska obustava. Određuje boju teksta u ćeliji koja će se primijeniti prilikom dodjele ove vrste ocjene kako bi se istaknula njezina negativna vrijednost.  
+> **Napomene**: slobodne napomene.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

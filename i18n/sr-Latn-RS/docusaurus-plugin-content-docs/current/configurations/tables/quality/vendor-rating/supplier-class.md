@@ -1,53 +1,63 @@
 ---
-title: Klase isporuke
+title: Klasa snabdevanja
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Kvalifikacija dobavljača > Klase isporuke**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Kvalifikacija dobavljača > Klasa snabdevanja**.
 
-Podaci u ovoj tablici koriste se za kategorizaciju različitih *Klasa isporuke* dobavljača.  
-U tablici se mogu povezati određene informacije koje će kasnije biti pridružene dobavljaču.  
-Neki primjeri upotrebe *Klasa isporuke* mogu se pronaći u sljedećim modulima:
-> **Kartice kontakata** - u kartici *Računovodajni podaci > Podaci o kvaliteti*.     
+Podaci iz ove tabele koriste se za razvrstavanje različitih *klasa snabdevanja* dobavljača.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
+U tabeli je moguće povezati određene podatke koji će se zatim predlagati dobavljaču.
 
-**Pretraživanje Klasa isporuke**
+Primeri upotrebe *klasa snabdevanja* mogu se pronaći u sledećem modulu:
+> **Šifarnik kontakata** – na kartici *Administracija > Podaci o kvalitetu*.
 
-Forma se sastoji od područja filtra i područja rezultata. Kada se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
-**Unos Klasa isporuke**
+**Pretraživanje klasa snabdevanja**
 
-Za unos nove *Klase isporuke* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.  
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-*Specifična polja*: 
+**Unos klasa snabdevanja**
 
-> **Klasa isporuke**    
->> **Šifra**: šifra *Klase isporuke*.      
->> **Opis**: opis *Klase isporuke*.     
+Za unos novih *klasa snabdevanja* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+
+Za novi zapis potrebno je uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
+
+*Specifična polja*:
+
+> **Klasa snabdevanja**
 >
-> **Kontrolna lista**       
-> *Kontrolna lista* i *Periodičnost* predlažu se dobavljačima koji su povezani s određenom *Klasom isporuke* i koriste se za njihovu *Početnu i periodičnu procjenu*.  
->> **Šifra**: šifra *Kontrolne liste*.     
->> **Opis**: opis *Kontrolne liste*.      
->> **Periodičnost (u mjesecima)**: razdoblje izraženo u mjesecima.      
+>> **Šifra**: šifra *klase snabdevanja*.
+>> **Opis**: opis *klase snabdevanja*.
 >
-> **Vrsta kontrole**     
->> **Šifra**: šifra *Vrste kontrole* koja se provodi za *Klasu isporuke*.    
->> **Opis**: opis *Vrste kontrole* koja se provodi za *Klasu isporuke*.      
->> **Za kontrolu**: broj artikala koji se trebaju kontrolirati u odnosu na ukupan broj naveden u *Od ukupno*.       
->> **Od ukupno**: ukupan broj artikala na temelju kojeg se određuje koliko artikala treba kontrolirati, navedenih u *Za kontrolu*.    
+> **Kontrolna lista (Check-list)**
 >
-> **Upravljanje bonusom**       
-> *Bonus* i *Periodičnost* dodjeljuju se dobavljačima povezanim s određenom *Klasom isporuke* i koriste se za njihovu *Periodičnu procjenu na temelju nesukladnosti*.  
->> **Predložena vrijednost**: početni bonus (bodovi) dodijeljen dobavljačima u klasi;     
->> *Bonus* dodijeljen dobavljaču može se kasnije mijenjati;    
->> Tijekom procjene, bodovi se smanjuju na temelju vrijednosti dodijeljenih nesukladnostima prijavljenim dobavljaču u određenom razdoblju    
->> **Periodičnost (u mjesecima)**: razdoblje izraženo u mjesecima;     
->> *Periodičnost* dodijeljena dobavljaču može se kasnije mijenjati;    
->> To je razdoblje procjene nesukladnosti dodijeljenih dobavljaču kako bi se smanjio početni *Bonus*.      
+> Kontrolna lista i *periodičnost* predlažu se dobavljačima povezanim sa određenom *klasom snabdevanja* i koriste se za njihovu *početnu i periodičnu procenu*.
 >
-> **Napomene**: slobodne bilješke.
+>> **Šifra**: šifra *kontrolne liste (check-liste)*.
+>> **Opis**: opis *kontrolne liste (check-liste)*.
+>> **Periodičnost (u mesecima)**: period izražen u mesecima.
+>
+> **Tip kontrole**
+>
+>> **Šifra**: šifra *tipa kontrole* koju je potrebno sprovesti za određenu *klasu snabdevanja*.
+>> **Opis**: opis *tipa kontrole* koju je potrebno sprovesti za određenu *klasu snabdevanja*.
+>> **Za kontrolu**: broj artikala koje je potrebno kontrolisati od ukupnog broja navedenog u polju *Ukupno*.
+>> **Ukupno**: ukupan broj artikala na osnovu kojeg se određuje koliko je artikala potrebno kontrolisati, što je navedeno u polju *Broj artikala za kontrolu*.
+>
+> **Upravljanje bonusima**
+>
+> Bonus i *periodičnost* dodeljuju se dobavljačima povezanim sa određenom *klasom snabdevanja* i koriste se za njihovu *periodičnu procenu na osnovu neusaglašenosti*.
+>
+>> **Predložena vrednost**: početni bonus (broj bodova) dodeljen dobavljačima određene kategorije;
+>> bonus dodeljen dobavljaču moguće je naknadno promeniti;
+>> tokom procene broj bodova smanjivaće se na osnovu vrednosti dodeljenih neusaglašenostima evidentiranim za dobavljača u određenom periodu.
+>>
+>> **Periodičnost (u mesecima)**: period izražen u mesecima;
+>> periodičnost dodeljenu dobavljaču moguće je naknadno promeniti;
+>> određuje period procene neusaglašenosti evidentiranih za dobavljača, na osnovu kojih se smanjuje početni *bonus*.
+>
+> **Napomene**: slobodne napomene.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

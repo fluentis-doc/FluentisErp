@@ -7,19 +7,19 @@ Tablica se nalazi na putanji **Tablice > Kvaliteta > Kvalifikacija dobavljača >
 
 Podaci u ovoj tablici koriste se za kategorizaciju različitih *Tipova procjene dobavljača*.  
 Neki primjeri upotrebe *Tipova procjene dobavljača* mogu se pronaći u sljedećim modulima:  
-> **Početne i periodične procjene** – u popisu *zaglavnih podataka*;     
-> **Periodične procjene prema Nesukladnostima** – u popisu *zaglavnih podataka*;      
+> **Početne i periodične procjene** – u poljima *zaglavlja dokumenta*;     
+> **Periodične procjene prema nesukladnostima** – u poljima *zaglavlja dokumenta*;      
 > **Parametri kvalifikacije dobavljača**.       
 
 Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
 
 **Pretraživanje Tipova procjene dobavljača**  
 
-Forma se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Forma se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
 **Unos Tipova procjene dobavljača** 
 
-Za unos novog *Tipa procjene dobavljača* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.  
+Za unos novog *Tipa procjene dobavljača* potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.  
 Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
 *Specifična polja*:   

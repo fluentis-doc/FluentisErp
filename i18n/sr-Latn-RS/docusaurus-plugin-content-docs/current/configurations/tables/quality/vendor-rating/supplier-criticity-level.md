@@ -1,37 +1,41 @@
 ---
-title: Kritične razine dobavljača
+title: Kritični nivoi dobavljača
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putanji **Tablice > Kvaliteta > Kvalifikacija dobavljača > Kritične razine dobavljača**.
+Tabela se nalazi na putanji **Tablice > Kvalitet > Kvalifikacija dobavljača > Kritični nivoi dobavljača**.
 
-Podaci u ovoj tablici koriste se za dodjeljivanje ocjene dobavljačima.  
-Primjer upotrebe *Kritičnih razina dobavljača* može se pronaći u modulu **Kartice kontakata** – u kartici *Računovodajni podaci > Podaci o kvaliteti*.    
+Podaci iz ove tabele koriste se za dodeljivanje ocena dobavljačima.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
+Primer upotrebe *kritičnih nivoa dobavljača* može se pronaći u modulu **Šifarnik kontakata** – na kartici *Administracija > Podaci o kvalitetu*.
 
-**Pretraživanje Kritičnih razina dobavljača**  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja filtra i područja rezultata. Kada se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
+**Pretraživanje kritičnih nivoa dobavljača**
 
-**Unos Kritičnih razina dobavljača**  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za unos nove *Kritične razine dobavljača* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.  
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+**Unos kritičnih nivoa dobavljača**
 
-*Specifična polja*:   
+Za unos novih *kritičnih nivoa dobavljača* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-> **Kritična razina dobavljača**     
->> **Šifra**: šifra *Procjene dobavljača*.       
->> **Opis**: opis *Procjene dobavljača*.       
->> **Redoslijed**: redoslijed prikaza u popisima *Kritičnih razina*.      
+Za novi zapis potrebno je uneti barem obavezna polja koja program zahteva: **Šifra** i **Opis**.
+
+*Specifična polja*:
+
+> **Kritični nivo dobavljača**
 >
-> **Vrsta kontrole**      
->> **Šifra**: šifra *Vrste kontrole* koja se provodi za *Kritičnu razinu*.      
->> **Opis**: opis *Vrste kontrole* koja se provodi za *Kritičnu razinu*.       
->> **Za kontrolu**: broj artikala koji se trebaju kontrolirati u odnosu na ukupan broj naveden u *Od ukupno*.     
->> **Od ukupno**: ukupan broj artikala na temelju kojeg se određuje koliko artikala treba kontrolirati, navedenih u *Za kontrolu*.       
+>> **Šifra**: šifra *ocene dobavljača*.
+>> **Opis**: opis *ocene dobavljača*.
+>> **Redosled**: redosled prikaza *kritičnih nivoa* na listama.
 >
-> **Napomene**: slobodne bilješke.  
+> **Tip kontrole**
+>
+>> **Šifra**: šifra *tipa kontrole* koju je potrebno sprovesti za određeni *kritični nivo*.
+>> **Opis**: opis *tipa kontrole* koju je potrebno sprovesti za određeni *kritični nivo*.
+>> **Za kontrolu**: broj artikala koje je potrebno kontrolisati od ukupnog broja navedenog u polju *Ukupno*.
+>> **Ukupno**: ukupan broj artikala na osnovu kojeg se određuje koliko je artikala potrebno kontrolisati, što je navedeno u polju *Broj artikala za kontrolu*.
+>
+> **Napomene**: slobodne napomene.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
