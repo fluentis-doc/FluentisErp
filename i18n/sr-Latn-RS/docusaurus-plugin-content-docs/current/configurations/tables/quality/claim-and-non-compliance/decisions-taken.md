@@ -1,6 +1,4 @@
 ---
-title: Provedene odluke
-sidebar_position: 9---
 title: Sprovedene odluke
 sidebar_position: 9
 ---
