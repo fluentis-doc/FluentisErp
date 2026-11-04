@@ -22,19 +22,19 @@ Tablica sadrži vrijednosti koje je unaprijed definirao sustav i nije ih moguće
 |:---:|:--|
 | N.L. | Nije potrebno ograničenje |
 | = | Jednako |
-| x> | Veće |
-| x< | Manje |
-| x <> | Različito |
-| x<= | Manje ili jednako |
-| x>= | Veće ili jednako |
-| <;x;> | Izvan raspona |
-| <;x;>= | Manje ili veće/jednako |
-| <=;x;> | Manje/jednako ili veće |
-| <=;x;>= | Manje/jednako ili veće/jednako |
-| >;x;< | Strogo unutar raspona |
-| >;x;<= | Veće i manje ili jednako |
-| >=;x;< | Veće ili jednako i manje |
-| >=;x;<= | Unutar raspona |
+| `x>` | Veće |
+| `x<` | Manje |
+| `x <>` | Različito |
+| `x<=` | Manje ili jednako |
+| `x>=` | Veće ili jednako |
+| `<;x;>` | Izvan raspona |
+| `<;x;>=` | Manje ili veće/jednako |
+| `<=;x;>` | Manje/jednako ili veće |
+| `<=;x;>=` | Manje/jednako ili veće/jednako |
+| `>;x;<` | Strogo unutar raspona |
+| `>;x;<=` | Veće i manje ili jednako |
+| `>=;x;<` | Veće ili jednako i manje |
+| `>=;x;<=` | Unutar raspona |
 
 **Pretraživanje vrsta ograničenja**
 
