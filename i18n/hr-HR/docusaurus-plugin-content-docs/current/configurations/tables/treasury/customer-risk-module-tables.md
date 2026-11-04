@@ -11,7 +11,7 @@ Kreditni limit kupca preuzima podatke iz sljedećih dokumenata prodajnog područ
 
 **Vrste otpremnica:** opcija „Kreditni limit” određuje uzima li se dokument (ispisan, ali još nije fakturiran) u obzir pri izračunu kreditnog limita kupca. Opcija „Isključi blokadu” izuzima ovu vrstu dokumenta iz blokade kupca.
 
-**Vrste računa**:
+**[Vrste računa](/docs/configurations/tables/purchase/purchase-invoices-types):** opcija „Kreditni limit” određuje uzima li se dokument (ispisan, ali još nije proknjižen) u obzir pri izračunu kreditnog limita kupca. Opcija „Isključi blokadu” izuzima ovu vrstu dokumenta iz blokade kupca.
 
 Osim toga, svaki šifarnik kupca sadrži dvije postavke povezane s ovim modulom:
 
