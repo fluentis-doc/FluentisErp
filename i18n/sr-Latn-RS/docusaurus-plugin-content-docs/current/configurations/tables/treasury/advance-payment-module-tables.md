@@ -3,29 +3,28 @@ title: Tipovi avansa
 sidebar_position: 4
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se želi konfigurirati ručno, potrebno je slijediti kontrolnu listu na poveznici iznad.
+Ako konfiguraciju nameravate da izvršite ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-U ovoj tablici definiraju se moguće vrste [**avansnih naloga**](/docs/treasury/advance/advances-collections) za fakture i pripadajući parametri.
+U ovoj tabeli definišu se mogući tipovi [**lista bankarskih avansa**](/docs/treasury/advance/advances-collections) po fakturama i pripadajući parametri.
 
+**Šifra / Opis:** korisnik ih slobodno definiše radi određivanja tipa.
 
-**Šifra / Opis:** Slobodno dodijeljeno od strane korisnika za kvalifikaciju tipa.
+**Tip obračuna (Šifra / Opis):** moguće opcije su Oporezivi iznos / Ukupno: Dokument. Označava da li će banka izračunavati procenat avansa na osnovu ukupnog iznosa fakture ili samo na osnovu oporezivog iznosa.
 
-**Tip izračuna (šifra / opis):** moguće opcije su Oporezivi iznos / Ukupno: Dokument. Označava hoće li banka obračunati postotak avansa na ukupnu fakturu ili samo na oporezivi iznos.
+**Procenat fakture koji se avansira:** unesite procenat iznosa fakture koji će banka avansirati.
 
-**Postotak faktura za avans:** unesite vrijednost postotka fakture koji će banka avansirati.
+**Tip preuzimanja (akvizicije):** moguće opcije su Dospeća / Fakture. Ova opcija utiče samo na način prikaza podataka u obrascu za pretragu prilikom kreiranja nove liste avansa, odnosno određuje da li će biti moguće odabrati celu fakturu ili pojedinačna dospeća fakture. Međutim, u bazi podataka u svakom slučaju se upravlja svim dospećima, čak i kada je odabrana opcija Fakture.
 
-**Vrsta akvizicije:** moguće opcije su Rokovi / Fakture. Ova opcija kontrolira samo način prikaza podataka u sučelju pretrage pri kreiranju novog avansnog naloga, tj. hoće li se moći odabrati cijela faktura ili pojedini rokovi fakture. Ipak, u bazi podataka se u svakom slučaju upravlja svim rokovima, čak i u opciji Fakture.
+**Numeracija:** potrebno je postaviti numeraciju iz odgovarajuće tabele numeracija za ovaj tip dokumenta.
 
-**Numeracija:** potrebno je postaviti numeraciju iz odgovarajuće tablice numeratora za ovu vrstu dokumenta.
+**Banka T/R (Konto / Podkonto / Opis):** ovde se unosi analitički konto koji će se koristiti u računovodstvenim knjiženjima povezanim sa bankarskim tekućim računom.
 
-**Banka T/R:** (račun / podračun opis): ovdje se unosi podračun koji će se koristiti u knjiženjima vezanim za bankovni račun.
+**Konto bankarskih avansa:** unesite prelazni konto koji se koristi za knjiženje bankarskih avansa.
 
-**Račun bankovnih avansa:** unesite pomoćni račun koji se koristi za knjiženje bankovnog avansa.
+**Konto pasivnih kamata:** unesite konto koji se koristi za knjiženje kamata.
 
-**Račun kamate pasive:** unesite račun koji se koristi za knjiženje kamata.
-
-**Račun provizija:** unesite račun koji se koristi za knjiženje bankovnih provizija.
+**Konto bankarskih naknada:** unesite konto koji se koristi za knjiženje bankarskih provizija.

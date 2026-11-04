@@ -3,25 +3,24 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Tablice unutar područja Riznice odnose se na različite module koji pripadaju tom području.
+Tabele oblasti Riznice odnose se na različite module navedene oblasti.
 
-**One sadrže osnovne podatke i konfiguracije koje se koriste u svim operativnim procedurama**. 
-
+**One sadrže osnovne podatke i podešavanja na koje se pozivaju svi operativni postupci.**
 
 :::danger[Pažnja]
-Ako se ovi osnovni podaci ne postave, korištenje ERP-a u pripadajućem području može biti onemogućeno.
+Neodržavanje ovih osnovnih podataka može onemogućiti stvarnu upotrebu ERP-a u odgovarajućoj oblasti.
 :::
 
-:::note[Primjer]
-Primjer osnovnih podataka su Tipovi efekata i statusi efekata, koji su nužni za izdavanje efekata i sve operacije koje slijede nakon toga.  
+:::note[Primer]
+Primer osnovnih podataka predstavljaju tipovi hartija od vrednosti i njihovi statusi, koji su potrebni za izdavanje hartija od vrednosti i sve dalje operacije.
 :::
 
-Pravilno i pravovremeno podešavanje parametara omogućuje definiranje načina rada pripadajućeg modula, kao i korištenje brojnih korisnih automatizama.
+Odgovarajuća i neophodna parametrizacija omogućava definisanje načina upravljanja pojedinačnim modulom, kao i korišćenje određenih automatizovanih funkcionalnosti.
 
-Tablice Riznice nalaze se u **Konfiguracija > Tablice > Riznica**.
+Tabele Riznice nalaze se u meniju **Konfiguracija > Tabele > Riznica (blagajna)**.
 
-Područje Riznice uvelike koristi pogodnosti koje proizlaze iz aktivacije procedure [**Fast Start**](/docs/guide/fast-start).
+Na oblast Riznice u velikoj meri utiču prednosti koje donosi aktivacija postupka [**Fast Start**](/docs/guide/fast-start).
 
-Preporučujemo da pogledate navedenu poveznicu za dodatne detalje.
+Za dodatne detalje pogledajte navedenu poveznicu.
 
-Navedena stranica sadrži pregled svih uključenih tablica, a u slučaju ručne konfiguracije nudi i kontrolnu listu potrebnu za pravilno podešavanje.
+Povezana stranica sadrži detaljan pregled obuhvaćenih tabela, a ako se odlučite za ručnu konfiguraciju, nudi i kontrolnu listu za njeno sprovođenje.

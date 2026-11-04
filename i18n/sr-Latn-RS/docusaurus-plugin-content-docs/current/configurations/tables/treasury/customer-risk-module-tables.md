@@ -1,28 +1,25 @@
 ---
-title: Tablice modula Rizik kupca  
+title: Tabele modula Rizik kupca
 sidebar_position: 7
 ---
 
-U okviru ovog modula ne postoje posebne tablice, ali je važno naglasiti da različiti tipovi dokumenata u nabavi i prodaji sadrže postavke povezane s rizikom kupca.  
+U ovom modulu nema posebnih tabela, ali potrebno je napomenuti da različiti tipovi nabavnih i prodajnih dokumenata sadrže podešavanja povezana sa rizikom kupca.
 
-Kreditni limit kupca (fido) prikuplja podatke iz sljedećih dokumenata u prodajnom području:   
+Kreditni limit kupca preuzima podatke iz sledećih dokumenata prodajnog područja:
 
-**[Tip narudžbe kupca](/docs/configurations/tables/sales/sales-order-types)**: 'flag Kredit' označava da li se dokument (isprintan i potvrđen) uzima u obzir u izračunu klijentovog limita ili ne. 'Isključi blokadu' isključuje ovu vrstu dokumenta iz blokade klijenta.;
+**[Tip narudžbine kupca](/docs/configurations/tables/sales/sales-order-types):** opcija „Kreditni limit” određuje da li se dokument (odštampan i potvrđen) uzima u obzir pri izračunavanju kreditnog limita kupca. Opcija „Isključi blokadu” izuzima ovaj tip dokumenta iz blokade kupca.
 
-**Tipovi otpremnica**: 'flag Kredit' označava da li se dokument (ispisan, ne valoriziran u fakturi) uzima u obzir u izračunu klijentovog limita ili ne. 'Isključi blokadu' isključuje ovu vrstu dokumenta iz blokade klijenta.;
+**Tipovi otpremnica:** opcija „Kreditni limit” određuje da li se dokument (odštampan, ali još nije fakturisan) uzima u obzir pri izračunavanju kreditnog limita kupca. Opcija „Isključi blokadu” izuzima ovaj tip dokumenta iz blokade kupca.
 
-**[Vrsta računa](/docs/configurations/tables/purchase/purchase-invoices-type)**: ‘Flag Kredit’ označava da li se dokument (isprintan, ne knjižen) uzima u obzir pri izračunu klijentovog limita ili ne. ‘Flag Isključi blokadu’ isključuje ovu vrstu dokumenta iz blokade klijenta.
+**[Tipovi faktura](/docs/configurations/tables/purchase/purchase-invoices-types):** opcija „Kreditni limit” određuje da li se dokument (odštampan, ali još nije proknjižen) uzima u obzir pri izračunavanju kreditnog limita kupca. Opcija „Isključi blokadu” izuzima ovaj tip dokumenta iz blokade kupca.
 
-Na kraju, svaki Šifarnik  kupca ima dvije postavke povezane s predmetnim modulom:
+Osim toga, svaki šifarnik kupca sadrži dva podešavanja povezana sa ovim modulom:
 
-**Tip kontrole kreditnog limita:** 
+**Tip kontrole kreditnog limita:**
 
-**Blokada dokumenata i nadzor limita**: dokument u prodajnom području koji premašuje odobreni limit bit će blokiran, te će stoga biti potrebno odobriti ga kako bi se nastavilo s daljnjim fazama dokumentarnog toka.
+- **Blokada dokumenta i nadzor kreditnog limita:** dokument iz prodajnog područja kojim se prekoračuje kreditni limit biće blokiran. Za nastavak narednih faza toka dokumentacije biće potrebno odobrenje.
+- **Nadzor kreditnog limita:** sprovodi se samo kontrola kreditnog limita, uz eventualno obaveštavanje korisnika o prekoračenju.
+- **Grupna blokada:** kao i kod prve opcije, ali se izračunavanje kumulativno sprovodi za sva preduzeća u bazi podataka koja pripadaju istom šifarniku kupca.
+- **Grupni nadzor:** kao i kod druge opcije, ali se izračunavanje kumulativno sprovodi za sva preduzeća u bazi podataka koja pripadaju istom šifarniku kupca.
 
-**Nadzor limita**: bit će jednostavno izvršena provjera limita s eventualnom porukom korisniku o prekoračenju;
-
-**Grupna blokad**: kao za prvo, ali izračun je kumulativan za sve tvrtke u bazi podataka koje se odnose na istu karticu kupca;
-
-**Grupni nadzor**: come per il secondo, ali je izračun kumulativan za sve tvrtke u bazi podataka koje pripadaju istoj kartici kupca.
-
-Druga postavka je provjera 'kontrola izloženosti', koja čini kupca vidljivim u obrascu izloženosti kupaca.
+Drugo podešavanje je opcija **Kontrola izloženosti**, koja omogućava prikaz kupca u obrascu izloženosti kupaca.

@@ -3,40 +3,39 @@ title: Šifarnici
 sidebar_position: 1
 ---
 
-Tablica upravlja nizom **informacija koje se moraju povezati kako bi se omogućila komunikacija između Fluentis i DocFinance** (posebno se treba pozvati na specifičnu dokumentaciju DocFinance za značenje polja i odgovarajuće kodove koje treba koristiti).  
+Tabela služi za upravljanje skupom **informacija koje je potrebno povezati kako bi se omogućila komunikacija između sistema Fluentis i DocFinance** (posebno pogledajte specifičnu dokumentaciju sistema DocFinance za značenje polja koja je potrebno povezati i odgovarajuće potrebne šifre).
 
-Sastoji se od 4 odjeljka:
+Sastoji se od 4 odeljka:
 
-**[Plan računa](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**: u ovom odjeljku potrebno je za podračune bankovnih anagrafika označiti polja ‘Banka’ i ‘RBN’ (postavljanjem valjanih kodova u DocFinance). Prvo polje označava referentnu banku, dok drugo tip računa (tekući račun, SBF, itd.) povezan s tim podračunom. Ova dva polja su vidljiva i mogu se mijenjati i unutar bankovne anagrafike. Što se tiče podračuna za kupce/dobavljače, moguće je u ovom sučelju upravljati i poljem ‘Derogabilnost’, koje se može upravljati i iz glavnog sučelja anagrafike kontakata za pojedinu liniju podračuna.
+**[Kontni plan](/docs/erp-home/registers/accounting/analytic-chart-of-accounts):** u ovom odeljku potrebno je za analitičke konta iz šifarnika banaka navesti polja „Banka” i „RBN” (uz postavljanje šifara koje važe u sistemu DocFinance). Prvo polje označava pripadajuću kreditnu instituciju, dok drugo označava tip računa (redovni račun, SBF itd.) povezan sa tim analitičkim kontom. Ta dva polja vidljiva su i mogu se uređivati u šifarniku banaka. Za analitička konta tipa kupac/dobavljač u ovom obrascu moguće je upravljati i poljem „Mogućnost odstupanja”, koje se može uređivati i u glavnom obrascu šifarnika kontakata, za pojedinačni red analitičkog konta.
 
-**Novčani tokovi po rokovima**: u ovom odjeljku se svakom cash flow toku (pogledati osnovnu dokumentaciju modula) dodjeljuje odgovarajući kod za DocFinance. Dozvoljeno je da se isti kod dodijeli više redaka toka.
+**Tokovi dospeća:** u ovom odeljku potrebno je svakom toku novčanog toka (pogledajte osnovnu dokumentaciju istoimenog modula) dodeliti odgovarajuću šifru za DocFinance. Ista šifra može se dodeliti većem broju redova toka.
 
-**[Tipovi plaćanja](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types)**: u ovom odjeljku za svaki tip plaćanja se označava odgovarajući kod u DocFinance (isti kod se može dodijeliti više redaka). Moguće je dodatno označiti i kod derogabilnosti tipa plaćanja, koji će se koristiti pri izvozu podataka za DocFinance.
+**[Tipovi plaćanja](/docs/configurations/tables/treasury/bills-portfolio-module-tables/payment-types):** u ovom odeljku potrebno je za svaki tip plaćanja navesti odgovarajuću povezanu šifru u sistemu DocFinance (ista šifra može se dodeliti većem broju redova). Osim toga, moguće je navesti šifru mogućnosti odstupanja za tip plaćanja, koja će se koristiti prilikom izvoza podataka u DocFinance.
 
-**Tvrtke**: za svaku tvrtku je obavezno unijeti odgovarajući kod za DocFinance. Tvrtke bez koda bit će isključene iz procedura izvoza/uvoza podataka za/iz DocFinance.
+**Preduzeća:** za svako preduzeće obavezno je navesti odgovarajuću šifru u sistemu DocFinance. Preduzeća bez dodeljene šifre biće isključena iz postupaka izvoza/uvoza podataka u sistem DocFinance i iz njega.
 
+:::note[Detaljnije informacije]
+Primer standardnih šifara mogućnosti odstupanja u sistemu DocFinance:
 
-:::note[Detaljnije]
-Primjer standardne derogabilnosti u DocFinance:
+1 >> RATING 1
 
-1    >>         RATING 1
+2 >> RATING 2
 
-2    >>         RATING 2
+3 >> RATING 3
 
-3    >>         RATING 3
+4 >> RATING 4
 
-4    >>         RATING 4
+- **Logika izvoza konta iz sistema Fluentis u DocFinance:** dostupna dužina polja u datoteci iznosi 16 znakova (dužina u sistemu Fluentis iznosi 8 + 8 znakova za polja konto i analitički konto). Polje je podeljeno u 2 bloka. Na primer, konto `xyz-001` u datoteku se unosi kao `xyz     001     `.
 
+- **Šifre šablona iz sistema Fluentis** (u formatu DocFinance dostupna su najviše 4 znaka) mapiraju se u sistemu DocFinance na računovodstvena kretanja koja se uvoze u Fluentis. Preporučuje se da se u šablonima u sistemu Fluentis uključe opcije zatvaranja i otvaranja otvorenih stavki (u slučaju kada otvorena stavka nije pronađena ili je reč o avansu).
 
+:::danger[UPOZORENJE]
+Napominjemo da se **kreiranje SBF prezentacione liste i dalje obavlja u sistemu Fluentis** (stoga ćemo datoteku kreirati u Fluentisu i uvesti je u DocFinance), **kao i kreiranje neplaćene stavke** (radi ponovnog otvaranja izvornih otvorenih stavki).
 
-- Logika izvoza računa iz Fluentis u DocFinance: dostupno polje u datoteci ima 16 znakova (Fluentis koristi 8+8 za polja račun+podračun), polje se dijeli u dva bloka, npr. račun xyz-001 u datoteci će biti unesen kao ‘xyz 001 ‘.
-
-
-- Kodovi knjiženja u Fluentis (maksimalno 4 znaka dostupna u DocFinance tragu) mapirat će se u DocFinance za knjiženja koja se uvoze u Fluentis: preporučuje se da se u Fluentis-u postave flagovi za zatvaranje i otvaranje stavki (u slučaju da stavka nije identificirana ili je avans).
-
-- Važno je da Fluentis upravlja kreiranjem SBF naloga (datoteka se stvara u Fluentis-u za uvoz u DocFinance), kao i kreiranjem neplaćenih stavki (za ponovno otvaranje originalnih stavki). Treba zadržati upravljanje portfeljem efekata u Fluentis-u kako bi se pravilno obračunale provizije prilikom plaćanja.
-
-Knjiženje neplaćenih stavki mora predvidjeti privremeni bankovni račun (koji se može postaviti u parametrima modula neplaćenih stavki) jer DocFinance šalje terećenje na tekući račun s kontra-računom tim istim privremenim računom.
-
-Svi ostali novčani primitci i uplate koji uključuju banke bit će upravljani kroz DocFinance.
+Posebno je važno **zadržati upravljanje portfeljem hartija od vrednosti u sistemu Fluentis kako bi se pravilno upravljalo dospećem provizija prilikom plaćanja**.
 :::
+
+**Knjiženje neplaćenih stavki mora na potražnoj strani da sadrži prelazni konto banke** (koji je moguće postaviti u parametrima modula Neplaćene stavke) jer DocFinance šalje zaduženje tekućeg računa sa tim istim prelaznim kontom kao protivkontom.
+
+Sva ostala kretanja naplate i plaćanja koja uključuju banke obrađivaće se u sistemu DocFinance.
