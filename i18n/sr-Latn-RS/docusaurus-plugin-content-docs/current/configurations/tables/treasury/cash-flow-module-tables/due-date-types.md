@@ -11,7 +11,7 @@ Ako konfiguraciju nameravate da izvršite ručno, pogledajte kontrolnu listu na 
 
 U ovoj tabeli definišu se tipovi vanbilansnih dospeća kojima će se ručno upravljati unutar modula novčanog toka.
 
-**Konto / Podkonto / Opis:** omogućava dodeljivanje konta (na primer, računovodstvenog konta *Obaveze za zarade zaposlenih*) tipu dospeća pod nazivom *Zarade*, kojim će se označavati vanbilansna dospeća uneta u izveštaj [**Analiza novčanog toka**](/FluentisErp/docs/treasury/cash-flow/reports). Ako se konto ne definiše, ova dospeća biće prikazana samo pomoću polja Šifra.
+**Konto / Podkonto / Opis:** omogućava dodeljivanje konta (na primer, računovodstvenog konta *Obaveze za zarade zaposlenih*) tipu dospeća pod nazivom *Zarade*, kojim će se označavati vanbilansna dospeća uneta u izveštaj [**Analiza novčanog toka**](/docs/treasury/cash-flow/reports). Ako se konto ne definiše, ova dospeća biće prikazana samo pomoću polja Šifra.
 
 **Konto banke / Podkonto / Opis:** svakom tipu moguće je dodeliti **bankarski** analitički konto za usmeravanje novčanog toka (radi prikaza novčanog toka po bankama).
 
