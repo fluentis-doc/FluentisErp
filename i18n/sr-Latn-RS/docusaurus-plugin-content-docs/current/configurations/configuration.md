@@ -1,28 +1,52 @@
 ---
-title: Konfiguracija
+title: Konfiguracija Fluentis ERP-a
+description: Sveobuhvatan vodič za konfiguraciju Fluentis ERP-a
+keywords: ["ERP", "ERP parametri", "ERP tabele", "Fast Start"]
+tags: [ERP, Konfiguracija, Fluentis]
+schema: TechArticle
 sidebar_position: 1
 ---
 
-Područje konfiguracije sastoji se uglavnom od dva elementa: **Tablice** i **Parametri**.
+# Konfiguracija Fluentis ERP-a
 
-Oba su grupirana prema funkcionalnom području, uz skup općih tablica i parametara koji su potrebni neovisno o funkcionalnom području kojim se korisnik bavi.  
+Oblast **konfigurisanja** predstavlja polaznu tačku za pravilno korišćenje Fluentis ERP-a.
+
+Sastoji se od dva osnovna elementa: **tabela** i **parametara**.
+
+Oba elementa organizovana su prema **funkcionalnim oblastima**, uz skup **opštih** elemenata koji su potrebni nezavisno od operativne oblasti.
 
 :::danger[Pažnja]
-Ako se ovi osnovni podaci ne postave ispravno, korištenje ERP sustava u određenim područjima može biti onemogućeno.  
+Nepotpuna ili pogrešna konfiguracija ovih osnovnih podataka može onemogućiti pravilno korišćenje ERP-a u određenoj oblasti.
 :::
 
-**TABLICE**: sadrže osnovne podatke koji su potrebni za kreiranje drugih podataka ili dokumenata. Na primjer, tablica Vrste računa sadrži različite tipove računa. Prilikom kreiranja novog računa, potrebno je prethodno odabrati odgovarajući tip iz padajućeg izbornika (combo box).  
+## Tabele
 
-**PARAMETRI**: sadrže postavke, opcije ili zadane vrijednosti koje omogućuju ispravno izvođenje automatskih procedura ili generiranje podataka. Ako parametri nisu postavljeni, a posebno ako nije spremljena zadana vrijednost nekog parametra, određene funkcionalnosti mogu ne raditi ispravno.  
+**Tabele** sadrže osnovne podatke potrebne za kreiranje dokumenata i operativnih informacija.
 
-:::important[**Fast Start**]
-Nakon instalacije Fluentis ERP sustava, prije početka rada moguće je inicijalizirati [***Fast Start* okruženje koje je spremno za upotrebu**](/docs/guide/fast-start).
+Na primer, tabela **Tipovi faktura** definiše različite dostupne tipove faktura.
 
-Na poveznici se nalazi popis **tablica** i **parametara** koje ova procedura automatski popunjava.
+Za kreiranje nove fakture potrebno je odabrati odgovarajući tip putem pripadajućeg padajućeg menija (*combo box*).
 
-Ključni uvjet za pokretanje Fast Start procedure je [**Kontni plan**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (u okviru modula administracija).
+> Tabele čine osnovu sistema: njihovim pravilnim popunjavanjem obezbeđuju se doslednost i celovitost podataka u svim poslovnim oblastima.
 
-Pokretanjem Fast Start procedure kreira se standardni kontni plan. Taj se plan može nadopuniti, izmijeniti opisi konta, ili izbrisati pojedini konti, ali samo ako ti konti već nisu korišteni u drugim podacima koje je procedura generirala (npr. kontni slogovi, modeli za rekategorizaciju bilance i sl.).  
-U slučaju da standardni kontni plan nije primjeren poslovnoj stvarnosti poduzeća koje koristi Fluentis, preporučuje se ručna konfiguracija tablica i parametara za odgovarajuća funkcionalna područja. Također je potrebno ručno kreirati ili uvoziti željeni kontni plan.  
-Na prethodno navedenoj poveznici dostupna je i **kontrolna lista** za detaljnu provjeru najvažnijih tablica.  
+## Parametri
+
+**Parametri** definišu mogućnosti, podrazumevane vrednosti i podešavanja ponašanja postupaka obrade ili automatskog generisanja podataka.
+
+Njihov nedostatak ili pogrešna konfiguracija mogu narušiti rad pojedinih automatizovanih funkcija.
+
+Posebno, ako se podrazumevani parametar ne sačuva, može doći do blokiranja izvršavanja povezanog postupka.
+
+:::important[Fast Start]
+Nakon instalacije sistema **Fluentis ERP** moguće je inicijalizovati okruženje [**Fast Start**](/docs/guide/fast-start), spremno za korišćenje.
+
+Ovo okruženje automatski unapred konfiguriše brojne **tabele** i **parametre**, omogućavajući brzo i sigurno pokretanje sistema.
+
+Ključni element postupka *Fast Start* jeste [**Kontni plan**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts), koji pripada administrativnoj oblasti.
+
+Postupak *Fast Start* generiše **standardni kontni plan**. Moguće je izmeniti njegove opise, kao i dodavati ili brisati konta (pod uslovom da ih već ne koriste drugi generisani podaci, kao što su računovodstveni šabloni ili modeli finansijskih izveštaja).
+
+*Ako predloženi kontni plan ne odgovara stvarnom stanju u preduzeću*, preporučuje se ručno konfigurisanje tabela i parametara željenih funkcionalnih oblasti, kao i **uvoz prilagođenog kontnog plana**.
+
+Za proveru najvažnijih tabela pogledajte **detaljnu kontrolnu listu** dostupnu na prethodno navedenoj poveznici.
 :::
