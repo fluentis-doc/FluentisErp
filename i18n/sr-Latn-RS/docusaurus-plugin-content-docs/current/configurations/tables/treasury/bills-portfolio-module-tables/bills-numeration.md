@@ -1,19 +1,16 @@
 ---
-title: Numeracija mjenica
+title: Numerisanje hartija od vrednosti
 sidebar_position: 1
 ---
 
-:::tip[FAst Start]
-Tablica je obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako želite konfigurirati ručno, pogledajte kontrolnu listu na poveznici.  
+Ako konfiguraciju nameravate da izvršite ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Za definiranje numeracije dovoljno je postaviti referentnu godinu, kod numeracije, njezin opis i broj početka.
+Za definisanje numeracije dovoljno je postaviti referentnu godinu, šifru numeracije, njen opis i početni broj.
 
-Tablica je među onima koje se automatski upravljaju u postupku generiranja brojila za novu računovodstvenu godinu, koja se nalazi unutar ‘Alata’ - ‘Korisnost’.
+Ova tabela spada među one kojima se automatski upravlja u postupku generisanja brojača za novu poslovnu godinu, koji se nalazi u meniju **Konfigurisanje > Korisnost**.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

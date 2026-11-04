@@ -1,10 +1,9 @@
 ---
-title: Načini placanja
+title: Vrste plaćanja
 sidebar_position: 7
 ---
 
-U tablici Načini placanja moguće je (ali nije obavezno) povezati tip plaćanja s tipom učinka koji treba stvoriti u modulu portfelja učinaka.
-
+U tablici Vrste plaćanja moguće je, ali nije obvezno, povezati vrstu plaćanja s vrstom vrijednosnog papira koji će se kreirati u modulu Popis vrijednosnih papira.
 
 
 

@@ -1,32 +1,30 @@
 ---
-title: Statusi vrijednosnih papira
+title: Statusi vrijednosnih papira (mjenica)
 sidebar_position: 5
 ---
 
-:::tip[FAst Start]
-Tablica je obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se želi izvršiti ručna konfiguracija, potrebno je slijediti kontrolnu listu dostupnu na poveznici.  
+Ako konfiguraciju namjeravate izvršiti ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Tablica se popunjava unosom šifre i opisa koje definira korisnik, za različita stanja potrebna za upravljanje mjenicama unutar poduzeća.
+Tablica se popunjava unosom šifre i korisničkog opisa za statuse potrebne za upravljanje vrijednosnim papirima u poduzeću. Pritom je potrebno odabrati jedan od unaprijed definiranih statusa:
 
-**Izdana mjenica;**
+**Izdani vrijednosni papir;**
 
-**Mjenica prezentirana na eskont (diskontiranje);**
+**Uplaćeno s popustom;**
 
-**Oznaka koja identificira predstavljeni status učinka pod uvjetom dovršetka;**
+**VUplaćeno prije dospijeća;**
 
-**Oznaka koja identificira status učinka predstavljenog nakon naplate;**
+**Uplaćeno po dospijeću;**
 
-**Oznaka koja identificira status vraćenog akreditiranog učinka;**
+**Vraćeni vrijednosni papir – Dospjelo;**
 
-**Oznaka koja identificira status vraćenog neplaćenog učinka;**
+**Vraćeni vrijednosni papir – Neplaćeno;**
 
-**Oznaka koja identificira status prenesenog učinka;**
+**Potvrđeno;**
 
-**Opće stanje mjenice.**
+**Opći (generalni) vrijednosni papir.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

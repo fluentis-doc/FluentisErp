@@ -1,31 +1,38 @@
 ---
-title: Tipovi vrijednosnih papira
+title: Tipovi hartija od vrednosti
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-U slučaju da želite konfigurirati ručno, molimo pogledajte kontrolnu listu na poveznici.
+Ako konfiguraciju nameravate da izvršite ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Tablica se popunjava putem unosa koda i korisničkog opisa, kojima se zatim dodjeljuje referentni broj, tip učinka među unaprijed definiranim opcijama i na kraju podkonto za knjiženje: taj podkonto će se koristiti kao protustrana pri zatvaranju kupca unutar postupka knjiženja učinaka.
+- **Šifra/Opis:** korisnik ih može slobodno definisati za šifriranje mogućih tipova hartija od vrednosti.
+- **Numeracija:** služi za automatsko numerisanje hartija od vrednosti (reč je o standardnom Fluentisovom brojaču sa pripadajućim dostupnim opcijama).
+- **Tip hartije od vrednosti:** unapred definisane vrednosti označavaju moguće tipove hartija od vrednosti.
 
-Tip učinka može se zatim povezati s tipom plaćanja u istoimenoj tablici.
-
-Da se prijavi, konačno, da će se samo efekti promjene moći upravljati u postupku knjiženja neplaćenih potraživanja na temelju modula Neplaćeni.
-
-Flag **Upravljanje djelomičnim iznosom** omogućuje stvaranje učinaka koji *djelomično* troše partije, navodeći iznos. Predviđa ručno upravljanje unutar učinka.
-
-:::danger[Pažnja]
-Aktiviranjem ovog flag-a, procedura automatskog generiranja efekta od partija (/ računa) neće uključiti referencu na partiju u efekt, stoga, tijekom knjiženja efekta neće doći do zatvaranja partije koja će ostati otvorena.
-
-Naime, aktivacija zastavice podrazumijeva (osmišljena je za) ručno upravljanje
+:::tip[Važno]
+- **Konto – Podkonto – Opis:** analitički konto unet u ovo polje koristiće se kao **protivkonto prilikom zatvaranja kupca** u postupku [**knjiženja hartija od vrednosti**](/docs/treasury/bills-holding/accounting/bills-accounting).
 :::
 
-Poveznica **Glavna blagajna** nije u upotrebi za talijansku lokalizaciju, već služi za evidentiranje stvarnih učinaka iz blagajni.  
+:::important[Potrebno je uraditi!]
+Tip hartije od vrednosti moguće je (**preporučuje se**, radi filtriranja otvorenih stavki povezanih sa tipom plaćanja u postupku kreiranja hartija od vrednosti iz otvorenih stavki ili faktura) **povezati sa tipom plaćanja** u [**istoimenoj tabeli**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti).
+:::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::note[Napomena]
+Samo hartije od vrednosti tipa menice mogu se obrađivati u postupku knjiženja neplaćenih menica po cesiji u modulu Neplaćene stavke.
+:::
 
+Opcija **Upravljanje delimičnim iznosom** omogućava kreiranje hartija od vrednosti kojima se otvorene stavke zatvaraju *delimično*, uz navođenje iznosa. Za to je predviđeno ručno upravljanje unutar same hartije od vrednosti.
 
+:::danger[Upozorenje]
+Uključivanjem ove opcije, postupak automatskog generisanja hartije od vrednosti iz otvorenih stavki (ili faktura) neće u hartiju od vrednosti uneti referencu na otvorenu stavku. Posledično, prilikom knjiženja hartije od vrednosti neće doći do zatvaranja otvorene stavke, koja će ostati otvorena.
 
+Naime, uključivanje ove opcije podrazumeva ručno upravljanje i upravo je za njega namenjena.
+:::
+
+Veza **Glavna blagajna** ne koristi se u italijanskoj lokalizaciji. Služi za evidentiranje hartija od vrednosti iz blagajničkih uređaja.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

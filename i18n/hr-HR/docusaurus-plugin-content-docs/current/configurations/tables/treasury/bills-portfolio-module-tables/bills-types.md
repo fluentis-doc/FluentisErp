@@ -3,29 +3,36 @@ title: Tipovi vrijednosnih papira
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-U slučaju da želite konfigurirati ručno, molimo pogledajte kontrolnu listu na poveznici.
+Ako konfiguraciju namjeravate izvršiti ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Tablica se popunjava putem unosa koda i korisničkog opisa, kojima se zatim dodjeljuje referentni broj, tip učinka među unaprijed definiranim opcijama i na kraju podkonto za knjiženje: taj podkonto će se koristiti kao protustrana pri zatvaranju kupca unutar postupka knjiženja učinaka.
+- **Šifra/Opis:** korisnik ih može slobodno definirati za šifriranje mogućih vrsta vrijednosnih papira.
+- **Numeracija:** služi za automatsku numeraciju vrijednosnih papira (riječ je o standardnom Fluentisovu brojaču s pripadajućim dostupnim opcijama).
+- **Vrsta vrijednosnog papira:** unaprijed definirane vrijednosti označavaju moguće vrste vrijednosnih papira.
 
-Tip učinka može se zatim povezati s tipom plaćanja u istoimenoj tablici.
-
-Da se prijavi, konačno, da će se samo efekti promjene moći upravljati u postupku knjiženja neplaćenih potraživanja na temelju modula Neplaćeni.
-
-Flag **Upravljanje djelomičnim iznosom** omogućuje stvaranje učinaka koji *djelomično* troše partije, navodeći iznos. Predviđa ručno upravljanje unutar učinka.
-
-:::danger[Pažnja]
-Aktiviranjem ovog flag-a, procedura automatskog generiranja efekta od partija (/ računa) neće uključiti referencu na partiju u efekt, stoga, tijekom knjiženja efekta neće doći do zatvaranja partije koja će ostati otvorena.
-
-Naime, aktivacija zastavice podrazumijeva (osmišljena je za) ručno upravljanje
+:::tip[Važno]
+- **Konto – Podkonto – Opis:** analitički konto unesen u ovo polje upotrebljavat će se kao **protukonto prilikom zatvaranja kupca** u postupku [**_knjiženja vrijednosnih papira_**](/docs/treasury/bills-holding/accounting/bills-accounting).
 :::
 
-Poveznica **Glavna blagajna** nije u upotrebi za talijansku lokalizaciju, već služi za evidentiranje stvarnih učinaka iz blagajni.  
+:::important[Potrebno napraviti!]
+Vrstu vrijednosnog papira moguće je (**preporučuje se** radi filtriranja otvorenih stavki povezanih s vrstom plaćanja u postupku kreiranja vrijednosnih papira iz otvorenih stavki ili računa) **povezati s vrstom plaćanja** u [**istoimenoj tablici**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti).
+:::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::note[Napomena]
+Samo vrijednosni papiri vrste mjenice mogu se obrađivati u postupku knjiženja neplaćenih mjenica po cesiji u modulu Neplaćene stavke.
+:::
 
+Opcija **Upravljanje djelomičnim iznosom** omogućuje kreiranje vrijednosnih papira kojima se otvorene stavke zatvaraju *djelomično*, uz navođenje iznosa. Za to je predviđeno ručno upravljanje unutar samog vrijednosnog papira.
 
+:::danger[Upozorenje]
+Uključivanjem ove opcije, postupak automatskog generiranja vrijednosnog papira iz otvorenih stavki (ili računa) neće u vrijednosni papir unijeti referencu na otvorenu stavku. Posljedično, prilikom knjiženja vrijednosnog papira neće doći do zatvaranja otvorene stavke, koja će ostati otvorena.
 
+Naime, uključivanje ove opcije podrazumijeva ručno upravljanje i upravo je za njega namijenjena.
+:::
+
+Veza **Glavna blagajna** ne upotrebljava se u talijanskoj lokalizaciji. Služi za evidentiranje vrijednosnih papira iz blagajničkih uređaja.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

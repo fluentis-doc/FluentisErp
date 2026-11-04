@@ -2,39 +2,30 @@
 title: Status potraživanja
 sidebar_position: 6
 ---
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-:::tip[FAst Start]
-Tablica je obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
-
-Ako želite konfigurirati ručno, pogledajte kontrolnu listu na poveznici. 
+Ako konfiguraciju namjeravate izvršiti ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Tablica se popunjava kroz unos koda i korisničkog opisa za potrebna stanja za upravljanje neplaćenim obvezama tvrtke, postavljajući jedno od unaprijed definiranih stanja među:
+Tablica se popunjava unosom šifre i korisničkog opisa za statuse potrebne za upravljanje neplaćenim stavkama u poduzeću. Pritom je potrebno odabrati jedan od unaprijed definiranih statusa:
 
-**Neplaćeno;**
+**Neplaćen;**
 
-**Knjiženo;**
+**Knjižen;**
 
-**Izdane zadužnice (nije u upotrebi);**
+**Izdano odobrenje (ne upotrebljava se);**
 
-**Proknjižene zadužnice (nije u upotrebi);**
+**Knjiženo odobrenje (ne upotrebljava se);**
 
-**Naplaćen;**
+**Plaćen;**
 
-**Odobren (nije u upotrebi).**
+**Autoriziran (ne upotrebljava se).**
 
-
-
-| Funkcija | Prošireno značenje |
+| Funkcija | Značenje |
 | --- | --- |
-| Pretraga | Ovom se tipkom pokreće pretraga nepodmirenih stanja prema postavljenim filtrima. |
-| Novo | Postavlja pokazivač za unos novog retka. |
-| Izbriši | Briše odabranu vrstu predujma. |
-| Pregled | Pokreće ispisni pregled trenutno korištene tablice. |
-| Ispis | Pokreće ispis trenutno korištene tablice. |
-
-
-
-
-
-
+| Traži | Ovim gumbom pretražuju se statusi neplaćenih stavki prema postavljenim filtrima. |
+| Novo | Postavlja pokazivač na unos novog retka. |
+| Otkaži | Briše odabranu vrstu predujma. |
+| Prethodni pregled | Prikazuje pretpregled ispisa trenutačne tablice. |
+| Ispiši | Ispisuje trenutačnu tablicu. |

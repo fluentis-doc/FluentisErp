@@ -1,42 +1,42 @@
 ---
-title: Vrste otpremnica za prezentaciju mjenica
+title: Tipovi prezentacionih lista hartija od vrednosti
 sidebar_position: 4
 ---
 
-:::tip[FAst Start]
-Tablica je obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako želite konfigurirati ručno, pogledajte kontrolnu listu na poveznici.  
+Ako konfiguraciju nameravate da izvršite ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Ova tablica povezana je s poljem *Vrsta* koje se nalazi u zaglavlju otpremnice za prezentaciju mjenica. 
+Tabela je povezana sa poljem *Tip* koje se nalazi u zaglavlju prezentacione liste hartija od vrednosti.
 
-Popunjava se unosom šifre i opisa, kojima se zatim pridružuje odgovarajući numerator.
+Popunjava se unosom šifre i opisa, kojima je potrebno dodeliti odgovarajuću numeraciju.
 
-Dodatne opcije u formi omogućuju definiranje sljedećeg:
+Dodatne opcije dostupne u obrascu omogućavaju definisanje sledećeg:
 
-- **Račun dobavljača**: označava da se vrsta otpremnice koristi za prosljeđivanje mjenica ili vrijednosnica dobavljaču;  
+- **Prenos dobavljaču:** određuje da li tip liste treba obrađivati kao listu za prenos hartija od vrednosti dobavljaču.
 
-- **Potrošnja**: ako se vrsta otpremnice koristi za RID naloge (danas zamijenjene s SDD – SEPA Direct Debit na europskoj razini). Aktiviranjem ove opcije omogućuje se izvoz odgovarajuće datoteke putem tipke u traci izbornika forme otpremnice. 
+- **Direktna zaduženja:** određuje da li tip liste treba obrađivati kao RID listu, koju je u postupku izrade elektronske datoteke u modulu Ri.Ba. trenutno zamenio tip SDD (SEPA Direct Debit – na evropskom nivou). Uključivanjem ove opcije omogućava se dugme za izvoz odgovarajućeg formata datoteke na traci sa alatkama obrasca prezentacione liste.
 
-- **LCR**: francuski ekvivalent našeg RIBA modela. Ako je ova opcija uključena, aktivira se tipka za izvoz LCR datoteke, dok standardni izvoz nije dostupan. 
+- **LCR:** francuski ekvivalent naših Ri.Ba. potvrda. Uključivanjem ove opcije u prezentacionoj listi aktivira se dugme za izvoz LCR datoteke umesto uobičajenog izvoza.
 
-- **Izravno zasluga**: kada je ova opcija postavljena, knjiženje otpremnice evidentira iznos na DUGUJE za račun banke, a na POTRAŽUJE za prijelazni bankovni račun (primjer: *Banka X - prijelazni račun S.B.F.*) dok će knjiženje uplate imati DUGUJE za prijelazni bankovni račun, a POTRAŽUJE za račun povezan s vrstom mjenice (primjer: *Aktivne mjenice u portfelju*).   
+- **Trenutno odobrenje:** kada je ova opcija uključena, knjiženjem prezentacionih lista na dugovnoj strani knjiži se konto banke, a na potražnoj strani prelazni konto banke (na primer *Banka X C/S.B.F.*). S druge strane, knjiženjem odobrenja na dugovnoj strani knjiži se prelazni konto banke, a na potražnoj strani konto tipa hartije od vrednosti (na primer konto *Aktivne hartije od vrednosti u portfelju*).
 
-Kako je flag isključen, primjenjuje se standardna logika: na DUGUJE ide prijelazni račun, a na POTRAŽUJE račun preuzet iz vrste mjenice (primjer: *Aktivne mjenice u portfelju*), dok knjiženje uplate, kao i do sada, predviđa DUGUJE račun banke i POTRAŽUJE prijelazni bankovni račun.
+Kada je ova opcija isključena, primenjuje se standardna logika: na dugovnoj strani knjiži se prelazni konto, a na potražnoj konto preuzet iz tipa hartije od vrednosti (na primer konto *Aktivne hartije od vrednosti u portfelju*). Knjiženje odobrenja tada se, kao i do sada, sprovodi tako što se na dugovnoj strani knjiži konto banke, a na potražnoj prelazni konto banke.
 
-Ova postavka nije kompatibilna s još dvije logike koje se mogu aktivirati putem obrasca Parametri portfelja efekata: flag *Zatvaranje kupca u knjiženju popisa* ne smije biti postavljen (jer preskoči prijenos na račun efekata, s aktivnim flagom ovog tipa popisa zapravo bi onemogućio zatvaranje kupca). Također, korištenje opcija knjiženja popisa na datum dospijeća također se čini nelogičnim s aktivnim ovim flagom.
+Ovo podešavanje nije kompatibilno sa dve druge logike koje je moguće aktivirati u obrascu Parametri portfelja hartija od vrednosti:
 
-- **Vanjski kod**: polje koje se koristi u SDD zapisu za određivanje je li otpremnica tipa *CORE* ili *B2B*. Potrebno je konzultirati tehničku dokumentaciju SDD zapisa za detalje.  
+- Opcija *Zatvaranje kupca prilikom knjiženja prezentacione liste* ne sme biti uključena jer se njome preskače knjiženje preko konta hartija od vrednosti. Ako je uključena i ova opcija tipa liste, zapravo bi se onemogućilo zatvaranje kupca.
+- Korišćenje opcija za knjiženje prezentacionih lista na datum dospeća takođe nema smisla kada je ova opcija uključena.
 
+- **Eksterna šifra:** polje koje se koristi u SDD formatu datoteke za određivanje da li je prezentaciona lista tipa *CORE* ili *B2B*. Pogledajte tehničku dokumentaciju SDD formata datoteka.
 
-- **Računi**
+- **Konta**
 
-- Račun / Podračun / Opis **Banke**
-- Račun / Podračun / Opis **Prijelaznog bankovnog računa**
+  - Konto / Analitički konto / Opis **Banke**
+  - Konto / Analitički konto / Opis **Prelaznog konta banke**
 
-mogu se povezati s vrstom popisa kako bi se automatiziralo i definiralo računovodstveno kretanje prilikom kreiranja novog popisa: radi se o podračunu kartice banke na koju će se izvršiti konačno kreditiranje efekata i o privremenom računu za knjiženje popisa (tipično, na primjer, *Banka X – prijelazni račun S.B.F.*).
+  Ova konta mogu se povezati sa tipom prezentacione liste kako bi se automatizovalo i definisalo računovodstveno knjiženje prilikom kreiranja nove liste. Reč je o analitičkom kontu iz šifarnika banke na koji će se izvršiti konačno odobrenje hartija od vrednosti, kao i o prelaznom kontu za knjiženje prezentacionih lista (na primer *Banka X C/S.B.F.*).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
