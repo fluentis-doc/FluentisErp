@@ -3,70 +3,72 @@ title: Tipovi otpremnica
 sidebar_position: 18
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se želi konfigurirati ručno, potrebno je konzultirati check listu na poveznici.
+Ako nameravate da je konfigurišete ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Tablica se otvara putem **Tablice > Prodaja > Tipovi otpremnica prodaje** i koristi se za definiranje svojstava otpremnice.  
+Tabela se otvara putem putanje **Tablice > Prodaja > Tipovi otpremnica** i koristi se za određivanje svojstava otpremnice.
 
-Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se moglo prikazati, izmijeniti ili izbrisati.
+Omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za unos novih zapisa potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novi**.
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-**Vrsta otpremnice / Opis vrste otpremnice**: vrsta i opis vrste otpremnice. Kod otpremnice mora biti jedinstven;  
+**Tip otpremnice/Opis tipa otpremnice**: tip i opis tipa otpremnice. Šifra otpremnice mora biti jedinstvena.
 
-**Numeracija:** u ovo polje unosi se kod odgovarajuće numeracije. Za više detalja pogledati članak o [Fluentis numeracijama](/docs/configurations/tables/fluentis-numerations);
+**Numeracija:** u ovo polje potrebno je uneti odgovarajuću šifru numeracije. Za više informacija pogledajte članak o [Fluentis numeracijama](/docs/configurations/tables/fluentis-numerations).
 
-**Vrsta otpremnice**: u ovo polje unosi se vrsta otpremnice: isporuka, povrat, na viđenje i povrat s viđenja. Vrijednost se odabire s popisa;
+**Tip otpremnice**: u ovo polje potrebno je uneti prirodu otpremnice: isporuka, povrat, davanje na uvid i povrat robe date na uvid. Vrednost je potrebno odabrati sa liste.
 
-**Nalog**: ako je aktivan ovaj flag, označava da se otpremnica može izraditi na temelju naloga kupca;  
+**Narudžbina**: ako je ova oznaka aktivirana, otpremnicu je moguće razdužiti na osnovu narudžbine kupca.
 
-**Vrijednosti**: ako je flag aktivan, u ispisu otpremnice prikazuju se vrijednosti stavki artikala iz dokumenta;  
+**Vrednosti**: ako je ova oznaka aktivirana, u ispisu otpremnice prikazivaće se vrednosti redova artikala iz dokumenta.
 
-**Vrsta računa / Opis vrste računa**: u ova polja definira se vrsta računa koji će se koristiti pri izradi računa iz otpremnice putem odgovarajuće [procedura](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes). Račun se može izraditi iz otpremnice samo ako je ovo polje popunjeno;
+**Tip fakture/Opis tipa fakture**: u ovim poljima definiše se tip fakture koji će se koristiti za izradu fakture iz otpremnice putem odgovarajućeg [postupka](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes). Fakturu iz otpremnice moguće je izraditi samo ako je u ovom polju naveden tip fakture.
 
-**Predložak prijevoza**: u ovo se polje unosi opis predloška prijevoza; riječ je o slobodnom tekstu koji će biti predložen u otpremnici.;
+**Razlog prevoza**: u ovo polje potrebno je uneti opis razloga prevoza. Reč je o slobodnom tekstualnom polju u koje se unosi razlog koji će biti predložen u otpremnici.
 
-**Provjera kupca**: ako je aktivan, ovaj flag omogućuje sustavu da provjeri je li u dokument unesen konto/podkonto tipa kupac. Ako nije, sustav će upozoriti korisnika porukom o grešci. Preporučuje se obavezno aktivirati ga na svim vrstama otpremnica prodaje;  
+**Kontrola kupaca**: ako je ova oznaka aktivirana, sistem proverava tip šifarnika konta/analitičkog konta unetog u dokument kako bi utvrdio da li je obavezno reč o kupcu. Ako to nije slučaj, sistem će korisniku prikazati poruku o grešci. Preporučuje se aktiviranje ove opcije za sve tipove prodajnih otpremnica.
 
-**Blokiraj ispisani dokument**: ako je aktivan, flag onemogućuje izmjene otpremnice koja već ima postavljen flag Ispisano u zaglavlju;  
+**Blokiraj odštampani dokument**: ako je ova oznaka aktivirana, nije moguće menjati otpremnicu čije je zaglavlje označeno kao odštampano.
 
-**Kredit**: ako je aktivan, otpremnice ove vrste ulaze u provjeru kreditnog limita;  
+**Kredit (limit)**: ako je ova oznaka aktivirana, otpremnica ovog tipa biće uključena u kontrolu kreditnog limita.
 
-**Isključi blokadu**: ako je aktivan, sustav neće primjenjivati blokadu dokumenta zbog eventualnog prekoračenja kreditnog limita te će korisniku omogućiti unos i ispis dokumenta;  
+**Isključi zaključavanje**: ako je ova oznaka aktivirana, sistem neće blokirati dokument ovog tipa zbog eventualnog prekoračenja kreditnog limita, već će korisniku ipak omogućiti njegov unos i štampanje.
 
-**Cash flow**: ako je aktivan, ovaj tip otpremnice ulazi u izračun [cash flowa](/docs/treasury/cash-flow/cash-flow/search-cash-flow).
+**Novčani tok**: ako je ova oznaka aktivirana, ovaj tip otpremnice učestvuje u obračunu [novčanog toka](/docs/treasury/cash-flow/cash-flow/search-cash-flow).
 
-**Skladište / Opis skladišta**: u ova polja unosi se skladište u koje stiže roba navedena u otpremnicama ove vrste. Vrijednost se koristi kao zadana.  
+**Skladište/Opis skladišta**: u ova polja potrebno je uneti skladište u koje će se primiti roba sadržana u otpremnicama ovog tipa. Ova vrednost će se koristiti kao podrazumevana vrednost.
 
-**Predložak skladišta / Opis predloška skladišta**: u ova polja unosi se predložak skladišnog prometa za robu u dolaznim otpremnicama ove vrste;  
+**Skladišni šablon/Opis skladišnog šablona**: u ova polja potrebno je uneti šablon za evidentiranje kretanja robe koja se prima u otpremnicama ovog tipa.
 
-**Evidencija nesumiranih količina**: ako je ovaj flag uključen, prilikom obrade otpremnica sustav će prenijeti isporučene količine iz dokumenta razdvojene po pojedinoj stavci, bez zbrajanja količina;  
+**Nezbirna količina artikla narudžbine**: ako je ova oznaka aktivirana, prilikom razduživanja otpremnica ovog tipa količine razdužene u dokumentu razduživanja prikazivaće se zasebno po redu artikla, bez sabiranja količina.
 
-**Poljoprivredni PDV**: ako je aktiviran, sustav pri kreiranju otpremnice provjerava ima li artikal postavljen poljoprivredni PDV; ako ga nema, koristi PDV iz šifrarnika artikla;  
+**Poljoprivredni PDV (prodajnog ugovora)**: ako je ova oznaka aktivirana, prilikom izrade otpremnice sistem će proveriti da li za korišćeni artikal postoji šifra poljoprivrednog PDV-a. Ako ne postoji, upotrebiće se šifra PDV-a iz šifarnika artikala.
 
-**Kontrola preuzetog pickinga**: ako je aktivan, pri izradi otpremnice iz preuzetog pickinga automatski se postavlja flag preuzeto. Preporučuje se aktivirati ga ako se koristi upravljanje pickingom;  
+**Proveri istovareni Picking**: ako je ova oznaka aktivirana, prilikom izrade otpremnice iz razduženog Picking dokumenta automatski će se aktivirati oznaka razduživanja na otpremnici. Preporučuje se da ova opcija uvek bude aktivirana ako se koristi upravljanje Pickingom.
 
-**Blokiraj količine iz pickinga**: ako je aktivan, blokira količine i alternativne količine u otpremnici kreiranoj iz UDC liste. Preporučuje se aktivirati ako se koristi upravljanje pickingom i UDC-om;  
+**Blokiraj količinu Pickinga**: ako je ova oznaka aktivirana, blokiraju se količina i alternativna količina u otpremnici izrađenoj iz UDC liste. Preporučuje se da ova opcija uvek bude aktivirana ako se koristi upravljanje Pickingom i UDC jedinicama.
 
-**Dozvoli izdavanje nedostupnih lotova** ako je aktivan, omogućuje izdavanje i onih lotova koji nisu dostupni;  
+**Dozvoli istovar nedostupnih lotova**: ako je ova oznaka aktivirana, dozvoljava se i izlaz nedostupnih lotova.
 
-**EDI obrada**: ako je aktivan, za ovu vrstu otpremnice moguće je kreirati EDI datoteku;  
+**EDI upravljanje**: ako je ova oznaka aktivirana, za otpremnice ovog tipa moguće je izraditi EDI datoteku.
 
-**Cijena s PDV-om**: ako je aktivan, sustav dohvaća prodajnu cijenu iz cjenika ili šifrarnika artikla i prikazuje ju s dodanim PDV-om. Ako ne pronađe odgovarajući cjenik (npr. istekao ili valuta ne odgovara), sustav koristi troškove ili cijene iz šifrarnika artikla, također s PDV-om.  
+**Cena sa PDV-om**: ako je ova oznaka aktivirana, sistem preuzima prodajnu cenu iz cenovnika ili šifarnika artikala i dodaje joj PDV. Ako ne pronađe odgovarajući cenovnik (na primer, zbog isteka njegovog važenja ili neodgovarajuće valute), preuzima troškove ili cene iz šifarnika artikala i prikazuje ih sa uključenim PDV-om.
 
-Troškovi i cijene u šifrarniku izraženi su u EUR, pa ih sustav preračunava u valutu kupca.
+Troškovi i cene u šifarniku artikala izraženi su u EUR-ima, pa će ih sistem takođe preračunati u valutu kupca.
 
-**Provjera lotova:** ako je aktivan, sustav provjerava valjanost lotova za artikle;  
+**Provera lotova:** ako je ova oznaka aktivirana, proverava se da li lotovi odgovaraju artiklima.
 
-**Upravljanje matricama – dodatni podaci**: ako je aktivan, kod artikala s matricom prikazuje se dodatna kartica za unos količina po pojedinoj ćeliji matrice. Ako nije aktivan, kartica i matrica se ne prikazuju.
+**Upravljanje matricama dodatnih podataka**: ako je ova oznaka aktivirana, pri upravljanju artiklima sa matricom prikazuje se dodatna kartica za unos vrednosti količine za svaku pojedinačnu ćeliju matrice. Ako nije aktivirana, ova kartica i pripadajuća matrica neće se prikazivati.
 
-**Upravljanje osnovnim sredstvima**: ovaj flag omogućuje upravljanje osnovnim sredstvima u vrsti računa, a u sljedećem polju definira se vrsta operacije nad osnovnim sredstvima;  
+**Osnovna sredstva**: ova oznaka omogućava upravljanje osnovnim sredstvima u tipu fakture, a u sledećem polju potrebno je navesti tip operacije nad osnovnim sredstvima.
 
-**Vrsta operacije**: u padajućem izborniku moguće je odabrati vrstu operacije nad osnovnim sredstvima (revalorizacija, uništenje, plusvalija itd.).     
+**Tip operacije**: u ovom padajućem meniju moguće je odabrati tip operacije nad osnovnim sredstvima između više ponuđenih opcija (revalorizacija, uništenje, kapitalni dobitak itd.).
 
-**Vrsta popusta / Opis**: u ovom stupcu može se pridružiti vrsta popusta koja će se predlagati kada se popusti unose izravno u stupac *Popusti artikla* u mreži artikala u dokumentima (više detalja u članku [Pojednostavljeni widget za popuste](/docs/sales/sales-flow/discount-widget)).
+**Tip popusta/Opis**: u ovom stupcu moguće je povezati tip popusta koji će biti predložen kada se popusti unose direktno u kolonu *Popusti artikla* u tabeli artikala dokumenta (za više informacija pogledajte članak [Pojednostavljeno upravljanje vidžetom za popuste](/docs/sales/sales-flow/discount-widget)).
+
+**Upravljanje WEEE-om (RAEE)**: ova oznaka omogućava upravljanje [WEEE-om (RAEE)](/docs/sales/sales-flow/raee).

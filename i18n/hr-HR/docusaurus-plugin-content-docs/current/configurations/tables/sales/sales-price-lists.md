@@ -1,10 +1,11 @@
 ---
-title: Tipovi prodajnih cjenika 
+title: Vrsta cjenika prodaje
 sidebar_position: 17
 ---
 
-Tablica se otvara putem **Tablice > Prodaja > Tipovi prodajnih cjenika** i koristi se za kodiranje generičkih prodajnih cjenika, koji se razlikuju od cjenika prilagođenih klijentu jer imaju vlastiti šifru, dok cjenici za klijenta koriste šifru konta/podkonta klijenta.
+Tablica se otvara putem izbornika **Tablice > Prodaja > Vrste cjenika prodaje** i koristi se za šifriranje općih prodajnih cjenika koji se upravo po ovoj šifri razlikuju od prilagođenih cjenika za kupce, čija je šifra konto i analitički konto kupca.
 
-Za unos novih zapisa potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**. Polja koja treba popuniti su:      
-- **Šifra/Opis**: šifra i opis generičkog cjenika. Unesena šifra mora biti jedinstvena.
-- **Cijena s PDV-om**: ako je aktivno, ovaj flag označava da će cjenik biti kreiran s cijenom uključujući PDV, pa u njegovim artiklima neće biti kolone Cijena, nego samo kolone Cijena s PDV-om, koja prikazuje direktno zbroj cijene i PDV-a.   
+Za unos novih zapisa potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**. Polja koja je potrebno popuniti su:
+
+- **Šifra/Opis**: šifra i opis općeg cjenika. Unesena šifra mora biti jedinstvena.
+- **Cijena s PDV-om**: ako je ova opcija uključena, cjenik će se kreirati s cijenama s uključenim PDV-om. Stoga u njegovim artiklima neće biti prikazan stupac Cijena, već samo stupac Cijena s PDV-om, koji izravno prikazuje zbroj cijene i PDV-a.

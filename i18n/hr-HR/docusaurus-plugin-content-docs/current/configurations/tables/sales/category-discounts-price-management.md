@@ -1,15 +1,15 @@
 ---
-title: Kategorije popusta upravljanja cijenama
+title: Kategorije popusta - upravljanje cijenama
 sidebar_position: 3
 ---
 
-Tablica se otvara putem izbornika **Tablice > Prodaja > Kategorije popusta – upravljanje cijenama** i omogućuje definiranje različitih tipova popusta.  
+Tablica se otvara putem izbornika **Tablice > Prodaja > Kategorije popusta upravljanja cijenama** i omogućuje definiranje različitih tipova popusta.  
 
 Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
 
-Forma se sastoji od područja filtera i područja rezultata. Nakon što postavite sve željene filtere, kliknite na tipku **Pretraži** kako biste prikazali rezultate u mreži rezultata.  
+Forma se sastoji od područja filtera i područja rezultata. Nakon što postavite sve željene filtere, kliknite na tipku **Traži** kako biste prikazali rezultate u tablici rezultata.  
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**. 
 
 Podaci koji se unose su šifra kategorije (koja mora biti jedinstvena) i opis kategorije.  
 

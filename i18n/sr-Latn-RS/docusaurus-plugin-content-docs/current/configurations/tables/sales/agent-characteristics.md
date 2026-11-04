@@ -1,16 +1,16 @@
 ---
-title: Karakteristike agenta
+title: Karakteristike agenta (trgovačkih predstavnika)
 sidebar_position: 7
 ---
 
-Ovo je opisna tablica za agente i može se koristiti u njegovom registru. Jedinstvena je za sve tvrtke u bazi podataka i sastoji se od jednostavne tablice šifra/opis, radi kodiranja agenata za prilagođene izvještaje i statistike.
+Ovo je opisna tabela za agente i može se koristiti u njihovom šifarniku. Jedinstvena je za sva preduzeća u bazi podataka i sastoji se od jednostavne tabele šifra/opis, namenjene šifriranju agenata za prilagođene izveštaje i statistike.
 
-Tablica se otvara putem izbornika: **Tablice > Prodaja > Karakteristike agenta**.
+Tabela se otvara putem menija: **Tablice > Prodaja > Karakteristike trgovačkih predstavnika (agenata)**.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja filtera i područja rezultata. Nakon što se postave svi željeni filteri, kliknite na tipku **Pretraži** kako biste prikazali rezultate u mreži rezultata.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja svih željenih filtera, kliknite na dugme **Traži** kako biste prikazali rezultate u tabeli.
 
-Za unos novih zapisa potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Za sve što nije detaljno opisano u ovom dokumentu, a tiče se općeg funkcioniranja formi, pogledajte sljedeći link: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na opšti način rada obrazaca, pogledajte sledeći link: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

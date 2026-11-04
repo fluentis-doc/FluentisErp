@@ -7,9 +7,9 @@ Tablica se otvara putem izbornika **Tablice > Prodaja > Kategorija fakturiranja*
 
 Omogućuje unos novih zapisa te pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.  
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara, potrebno je kliknuti tipku **Pretraga** kako bi se rezultati prikazali u mreži rezultata.  
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara, potrebno je kliknuti tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
-Za unos novih zapisa potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti tipku **Novi**. 
+Za unos novih zapisa potrebno je kliknuti na prvu praznu liniju u tablici ili pritisnuti tipku **Novo**. 
 
 Podaci koji se moraju unijeti za svaku kategoriju su **Šifra** nove kategorije (koja mora biti jedinstvena) te njezin **Opis**.
 

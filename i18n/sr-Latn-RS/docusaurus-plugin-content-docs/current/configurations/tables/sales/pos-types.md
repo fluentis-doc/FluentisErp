@@ -1,76 +1,76 @@
 ---
-title: Vrste POS-a
+title: Tipovi prodajnog mesta (POS-a)
 sidebar_position: 25
 ---
 
-:::tip[FAst Start]
-Ova je tablica obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se konfiguracija provodi ručno, potrebno je slijediti check listu na poveznici iznad.  
+Ako nameravate da je konfigurišete ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Tablica se otvara putem izbornika **Tablice > Prodaja > Vrste POS-a**.
+Tabela se otvara putem putanje **Tablice > Prodaja > Tipovi prodajnog mesta**.
 
-### Pretraga POS-a
+### Pretraživanje prodajnog mesta (POS-a)
 
-Omogućuje unos novih zapisa te pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja filtra i područja rezultata. Nakon postavljanja željenih filtara, dovoljno je kliknuti tipku **Pretraga** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za pregled ili izmjenu vrste POS-a potrebno je dvokliknuti na željeni redak ili pritisnuti tipku **Uredi**.
+Za izmenu ili pregled tipa POS-a dovoljno je dvaput kliknuti na željeni red ili pritisnuti dugme **Izmeni**.
 
-Za unos novih zapisa potrebno je pritisnuti tipku **Novi**, čime se otvara nova forma za unos.  
+Za unos novih zapisa potrebno je pritisnuti dugme **Novo**, koje će otvoriti novi obrazac za unos.
 
-### Unos / Uređivanje POS-a
+### Unos/Izmena POS-a
 
-U ovoj se formi unose svi podaci vezani uz novu vrstu POS-a koju se želi definirati:
+U ovom obrascu unose se svi podaci o novom tipu POS-a koji želite da definišete:
 
-**Vrsta i opis**: u ova se polja unosi vrsta i opis POS-a;
+**Tip i opis**: u ova polja potrebno je uneti tip i opis POS-a.
 
-**Numeracija**: u ovo se polje upisuje šifra odgovarajuće numeracije. Za detalje o numeracijama pogledati članak [Numeracije Fluentis](/docs/configurations/tables/fluentis-numerations); 
+**Numeracija**: u ovo polje potrebno je uneti odgovarajuću šifru numeracije. Za više informacija o numeracijama u ERP sistemu pogledajte članak [Fluentis numeracije](/docs/configurations/tables/fluentis-numerations).
 
-**Default**: se attivo, questo flag indica il tipo POS di default che viene proposto alla creazione di un nuovo POS;
+**Podrazumevano**: ako je ova oznaka aktivirana, određuje podrazumevani tip POS-a koji se predlaže prilikom izrade novog POS-a.
 
-**Napomene**: slobodno tekstualno polje za eventualne napomene koje će biti prikazane u pripadajućim ispisima;  
+**Napomene**: slobodno tekstualno polje u koje je moguće uneti opisne napomene koje će se zatim prikazivati na odgovarajućim ispisima.
 
-**Cijena s PDV-om**: ako je aktivno, cijene prikazane u ponudi uključivat će PDV.  
+**Cena sa PDV-om**: ako je ova oznaka aktivirana, cene u ponudi prikazivaće se sa uključenim PDV-om.
 
-**Zaduženje**: ako je aktivno, ovaj flag označava da je POS tipa predujma; predujam se može stornirati transakcijom s običnim tipom POS-a.  
+**Zaduženje**: ako je ova oznaka aktivirana, označava da je POS tipa avansa i može se stornirati transakcijom sa običnim tipom POS-a.
 
-**Server P.O.S / Baza podataka / Tablica**: polja u kojima se odabire server, baza podataka i tablica iz koje se čitaju i/ili u koju se upisuju podaci POS-a;  
+**POS server/Baza podataka/Tabela**: u ovim poljima biraju se server, baza podataka i tabela iz kojih se preuzimaju i/ili u koje se upisuju podaci POS-a.
 
-**Tablica povezanih dokumenata**: tablica iz koje se čitaju i/ili u koju se upisuju podaci dokumenata povezanih s POS-om;  
+**Tabela povezanih dokumenata**: tabela iz koje se preuzimaju i/ili u koju se upisuju podaci o dokumentima povezanim sa POS-om.
 
-**Zaokružena jedinica mjere**: šifra PDV-a koja se koristi pri kreiranju otpremnica i faktura iz POS-a;      
+**JM zaokruživanja (dolaska)**: merna jedinica koja se koristi prilikom izrade otpremnica i faktura iz POS-a.
 
-**PDV arr. / Opis PDV-a**: šifra PDV-a koja se koristi pri kreiranju otpremnica i faktura iz POS-a;    
+**PDV zaokruživanja (dolazni)/Opis PDV-a**: šifra PDV-a koja se koristi prilikom izrade otpremnica i faktura iz POS-a.
 
-**Prodajno mjesto**: prodajno mjesto na kojem se kreiraju POS dokumenti;  
+**Prodajno mesto**: prodajno mesto na kojem se izrađuju POS dokumenti.
 
-**Blagajna**:  in questo campo va indicato il codice della cassa da collegare ai POS;
+**Glavna blagajna**: u ovo polje potrebno je uneti šifru blagajne koju je potrebno povezati sa POS-om.
 
-**Robna kategorija**: in questo campo viene riportata la categoria merceologica riportata sull'ordine;
+**Kategorija proizvoda**: u ovo polje prenosi se robna kategorija navedena na narudžbini.
 
-**PDV**: šifra PDV-a koja se koristi u POS-u;  
+**PDV**: šifra PDV-a koja se koristi u POS dokumentima.
 
-**Skladište**: skladište iz kojeg se rezervira roba sadržana u POS-u ove vrste;  
+**Skladište**: u ovo polje potrebno je uneti skladište u kojem se rezerviše roba sadržana u POS dokumentima ovog tipa.
 
-**Predložak**: predložak kretanja robe rezervirane u POS-u ove vrste;  
+**Šablon**: u ovo polje potrebno je uneti šablon za evidentiranje skladišnih kretanja robe rezervisane u POS dokumentima ovog tipa.
 
-**Vrsta plaćanja**: vrsta plaćanja koja se predlaže u POS-u ove vrste;  
+**Način plaćanja**: u ovo polje unosi se tip plaćanja koji će se predlagati u POS dokumentima ovog tipa.
 
-**Rješenje plaćanja**: rješenje (modalitet) plaćanja koje se predlaže u POS-u ove vrste;  
+**Uslovi plaćanja**: u ovo polje potrebno je uneti način plaćanja koji će se predlagati u POS dokumentima ovog tipa.
 
-**Cjenik**: šifra općeg cjenika iz kojeg se preuzimaju cijene artikala za POS;  
+**Cenovnik**: u ovo polje unosi se šifra opšteg cenovnika iz kojeg se preuzimaju cene artikala za unos u POS.
 
-**Datum valjanosti**: datum valjanosti općeg cjenika;  
+**Datum važenja**: ovde se prikazuje datum važenja opšteg cenovnika.
 
-**Automatsko razduženje pri zatvaranju prometa**: ako je aktivno, pri ispisu POS-a roba se automatski razdužuje sa skladišta; ako nije aktivno, razduženje se mora obaviti ručno;  
+**Automatsko razduživanje pri zatvaranju fakture**: ako je ova oznaka aktivirana, prilikom štampanja POS-a automatski se evidentira i izlaz robe iz skladišta. U suprotnom je potrebno ručno sprovesti izlaz.
 
-**Potreban je fiskalni registar**: ako je aktivno, označava da je za korištenje POS-a potreban spojeni fiskalni registar radi ispisa fiskalnog računa;  
+**Potreban je fiskalni uređaj (blagajna)**: ako je ova oznaka aktivirana, za upotrebu POS-a potrebna je veza sa fiskalnom blagajnom radi štampanja fiskalnog računa.
 
-**Prikaži varijante**: ako je aktivno, mogu se koristiti i varijante artikla;  
+**Prikaži varijante**: ako je ova oznaka aktivirana, moguće je koristiti i varijante artikala.
 
-**Prikaži atribute**: ako je aktivno, mogu se koristiti i atributi artikla.  
+**Prikaži atribute**: ako je ova oznaka aktivirana, moguće je koristiti i atribute artikala.
 
-Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcije formi, pogledati:[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

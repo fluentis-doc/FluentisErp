@@ -1,22 +1,22 @@
 ---
-title: Konfiguracija cjenovnih raspona  
+title: Konfiguracija raspona cijena
 sidebar_position: 8
 ---
 
-Tablica se otvara putem izbornika **Tablice > Prodaja > Konfiguracija cjenovnih raspona** i služi za konfiguriranje cijena prema promjeni određenih atributa (npr. u sektoru odjeće, gdje artikli imaju različitu cijenu ovisno o veličini).  
+Tablica se otvara putem izbornika **Tablice > Prodaja > Konfiguracija raspona cijena** i služi za konfiguriranje cijena koje se mijenjaju ovisno o određenim atributima (primjerice, u tekstilnoj industriji, gdje pojedini artikli imaju različitu cijenu ovisno o veličini).
 
-### Pretraga konfiguracije
+### Pretraživanje konfiguracija
 
-Omogućuje unos novih zapisa te pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
+Omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-Forma se sastoji od područja filtra i područja rezultata. Nakon postavljanja željenih filtara, dovoljno je kliknuti tipku **Pretraga** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici.
 
-Za pregled ili izmjenu konfiguracije potrebno je dvokliknuti na željeni redak ili pritisnuti tipku **Uredi**.
+Za izmjenu ili pregled konfiguracije dovoljno je dvaput kliknuti željeni redak ili pritisnuti gumb **Izmijeni**.
 
-Za unos novih zapisa potrebno je pritisnuti tipku **Novi** čime se otvara nova forma za unos.  
+Za unos novih zapisa potrebno je pritisnuti gumb **Novo**, koji će otvoriti novi obrazac za unos.
 
-### Unos / Uređivanje konfiguracije  
+### Izmjena/Unos konfiguracije
 
-U prvom dijelu unose se **Šifra** i **Opis** konfiguracije, a zatim se definiraju verzije, svaka sa svojim specifičnim podacima, koje se unose u donje kartice.  
+U prvom dijelu potrebno je unijeti **Šifru** i **Opis** konfiguracije, a zatim postaviti verzije sa svim njihovim specifičnim podacima, koji se unose na donjim karticama.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcioniranje formi, pogledati: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

@@ -3,31 +3,38 @@ title: Kategorije provizija
 sidebar_position: 3
 ---
 
-U ovoj formi definiraju se kategorije provizija, odnosno neka vrsta “dodatnih podataka” za definiranje kriterija čitanja postotaka provizije.
+U ovom obrascu definišu se kategorije provizija, odnosno svojevrsni „dodatni podaci” za definisanje kriterijuma prema kojima se određuju procenti provizije.
 
-Moguće je stoga definirati objekt poslovnog sloja (business layer) i njegovu svojstvo, koje služi kao parametar za čitanje, a u donjoj mreži specificirati uvjet filtriranja za valjanost.
+Moguće je definisati objekat poslovnog sloja i njegovo svojstvo, koje služi kao parametar za određivanje vrednosti, a u donjoj tabeli navesti uslov filtera za važenje.
 
-Primjer **Objekt** -> FSSalesOrder
-**Putanja svojstva** -> SalesOrderTypeCode (šifra tipa prodajnog naloga)  
+Primer:
 
-U donjoj mreži unesite **Vrijednost** *OCIT* (primjerice za ograničavanje valjanosti na tip naloga kodiran kao *OCIT* , npr. nalog za Italiju).  
+**Objekat** -> FSSalesOrder
 
-Uobičajeno je konfigurirati više slučajeva koji odgovaraju različitim vrijednostima odabrane svojine, npr. *OCIT*, *OCUE* itd., kako bi se postotci razlikovali ovisno o tipu naloga – talijanski ili europski.  
+**Putanja svojstva** -> SalesOrderTypeCode (šifra tipa prodajnog naloga)
 
-Moguće je imati i složenije scenarije s različitim kombinacijama vrijednosti i svojstava objekta. 
+U donjoj tabeli potrebno je navesti **Vrednost** *OCIT* (na primer, radi ograničavanja važenja na tip naloga sa šifrom *OCIT*, odnosno italijanski nalog).
+
+Uobičajeno je konfigurisati više slučajeva koji odgovaraju različitim vrednostima odabranog svojstva, na primer *OCIT*, *OCUE* itd., kako bi se procenti razlikovali u zavisnosti od tipa naloga, na primer italijanskog ili evropskog.
+
+Mogući su i složeniji slučajevi sa različitim kombinacijama vrednosti i svojstava objekta.
 
 :::note[Napomena]
-Ova konfiguracija vodi do posebnog popunjavanja mreže za definiciju prioriteta i kriterija izračuna provizije koja se nalazi u kartici *Provizije direktne* unutar registra agenta.
+Ova konfiguracija utiče na poseban način popunjavanja tabele za definisanje prioriteta i kriterijuma obračuna provizije, koja se nalazi na kartici *Izravne provizije* u šifarniku agenata.
 
-Isti kriterij treba unositi više puta (npr. za artikl ili klasu), pri čemu se svaki put povezuje odgovarajuća kategorija provizije koja **funkcionira kao filter**.
+Potrebno je više puta uneti isti kriterijum (na primer, prema artiklu ili kategoriji) i svaki put povezati odgovarajuću kategoriju provizije koja u ovom slučaju **služi kao filter**.
 
-Redak s kriterijem koji čita klasu ili artikl, povezan s detaljem kriterija (putem tipke ***Detalj odabranih postotaka*** unutar iste forme), vrijedi samo kada je tip naloga *OCIT*.
-Cijeli detalj mora se definirati u novom retku s povezivanjem na kategoriju provizije *OCUE*, koja vrijedi samo za tu kombinaciju.
+Dakle, red sa kriterijumom koji dohvaća kategoriju ili artikal, a koji je povezan sa detaljima samog kriterijuma (putem dugmeta **Detalji odabranih procenata** u istom obrascu), sadrži pojedinačne provizije za svaki artikal ili kategoriju i važi samo kada je tip naloga *OCIT*.
+
+Potrebno je definisati sve detalje u novom redu, povezati ga sa kategorijom provizije *OCUE* i primenjivati ga samo na tu kombinaciju.
 :::
 
-:::danger[Pažnja]
-Popunjavanje ove forme ima nekoliko specifičnosti:  
-- Obrazac se sastoji od *Master* mreže (gore) i *Detail* mreže (dolje) koja ovisi o prvoj. Nakon popunjavanja retka u *Master* mreži, *Detail* mreža ostaje u privremenom stanju gdje nije moguće pisati ili se prikazuju 4 kolone s oznakom *Vrijednost*. U stvarnosti se radi o 4 tipa podataka (tekst, datum, true / false itd...) alternativnih od kojih **samo jedan** može biti korišten u vezi s odabranom svojstvom u *Master* mreži. Stoga **nakon popunjavanja retka u *Master* mreži potrebno je ponovno pritisnuti tipku Pretraživanje u traci izbornika i ponovo odabrati** mišem redak kako bi se mogla popuniti *Detail* mreža.  
-- Prilikom popunjavanja retka u *Master* mreži, nakon što se unesu kod i opis slobodni za kategoriju provizije, preporučuje se koristiti widget za pretraživanje koji sugerira naziv objekta Fluentis, na primjer, upisivanjem FSSales... bit će predloženi objekti poput FSSalesOrder, ili FSSalesInvoice itd...  
-- Nakon odabira referentnog objekta Fluentis, potrebno je specificirati **svojstvo** koje će odrediti detaljnu vrijednost (popunjavanjem *Detail* mreže) koja se treba pretraživati. **Preporučuje se dvostruki klik za korištenje iskačućeg prozora za pretraživanje** koji predlaže svojstva i sve kolekcije povezane s odabranim objektom, na ovaj način je mnogo jednostavnije definirati referentno svojstvo.
-:::
+:::danger[Upozorenje]
+Popunjavanje ovog obrasca ima nekoliko posebnosti:
+
+- Obrazac se sastoji od tabele *Master* (gornja tabela) i tabele *Detail* (donja tabela), koja zavisi od prve. Nakon popunjavanja reda u tabeli *Master*, tabela *Detail* ostaje u privremenom stanju u kojem nije moguće unositi podatke ili se prikazuju četiri kolone sa oznakom *Vrednost*. Zapravo je reč o četiri alternativna tipa podataka (tekst, datum, true/false itd.), od kojih se **može upotrebiti samo jedan**, u zavisnosti od svojstva odabranog u tabeli *Master*. Zato je **nakon popunjavanja reda u tabeli Master potrebno ponovo kliknuti na dugme Traži na traci sa alatkama, a zatim ponovo izabrati red mišem** kako bi se omogućilo popunjavanje tabele *Detail*.
+
+- Prilikom popunjavanja reda u tabeli *Master*, nakon unosa proizvoljne šifre i opisa kategorije provizije, preporučuje se upotreba vidžeta za pretraživanje koji predlaže nazive Fluentis objekata. Na primer, unosom `FSSales...` prikazaće se objekti kao što su `FSSalesOrder` ili `FSSalesInvoice`.
+
+- Nakon izbora odgovarajućeg Fluentis objekta potrebno je navesti **svojstvo** koje određuje vrednost detalja (koji se unosi u tabelu *Detail*) koju je potrebno dohvatiti. **Preporučuje se dvostruki klik kako bi se otvorio iskačući prozor za pretraživanje**, koji prikazuje svojstva i sve kolekcije povezane sa odabranim objektom. Na taj način je mnogo jednostavnije definisati odgovarajuće svojstvo.
+::: 

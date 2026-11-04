@@ -1,93 +1,100 @@
 ---
-title: Vrste prodajnih računa  
+title: Tipovi izlaznih faktura
 sidebar_position: 20
 ---
 
-:::tip[FAst Start]
-Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-U slučaju da se želi konfigurirati ručno, potrebno je slijediti check listu na povezanoj stranici.  
+Ako nameravate da je konfigurišete ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Tablica se otvara putem **Tablice > Prodaja > Tipovi izlaznih računa** i koristi se za određivanje svojstava računa;  
+Tabela se otvara putem putanje **Tablice > Prodaja > Tipovi izlaznih faktura** i koristi se za određivanje svojstava fakture.
 
-Omogućuje umetanje novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja;  
+Omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, potrebno je kliknuti na tipku **Pretraži**, nakon čega će se rezultati prikazati u rešetki rezultata;  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za unos novog zapisa potrebno je kliknuti na prvu praznu liniju u rešetki ili pritisnuti tipku **Novi**; 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-**Tip/Opis**: tip računa i opis tipa; uneseni šifra mora biti jedinstvena;  
+**Tip/Opis**: tip fakture i opis tipa fakture. Uneta šifra mora biti jedinstvena.
 
-**Numeracija:** u ovo se polje upisuje šifra odgovarajuće numeracije. Za više informacija pogledati članak o [fluentis numeracijama](/docs/configurations/tables/fluentis-numerations); 
+**Numeracija:** u ovo polje potrebno je uneti odgovarajuću šifru numeracije. Za više informacija pogledajte članak o [Fluentis numeracijama](/docs/configurations/tables/fluentis-numerations).
 
-**Priroda računa**: odabire se priroda vezana uz tip računa (račun, storno račun, itd.);  
+**Tip fakture**: u ovo polje potrebno je uneti prirodu povezanu sa tipom fakture. Vrednost se bira sa liste, na primer faktura, knjižno odobrenje itd.
 
-**Narudžba**: ako je aktivno, račun se može kreirati iz izvršenja narudžbe putem odgovarajuće procedure; inače je tipka Evidentiranje iz narudžbi deaktivirana;  
+**Narudžbina**: ako je ova oznaka aktivirana, fakturu je moguće izraditi razduživanjem narudžbine putem odgovarajućeg postupka. U suprotnom će dugme „Razduživanje narudžbina” biti onemogućeno.
 
-**Neposredni račun**: ako je aktivno, račun je neposrednog tipa te je potrebno popuniti podatke o transportu; ako nije aktivno, račun je odgođenog tipa i podaci o transportu preuzimaju se iz otpremnice;  
+**Direktna**: ako je ova oznaka aktivirana, faktura je direktnog tipa i u njoj je potrebno popuniti i podatke o prevozu. Ako nije aktivirana, faktura je odloženog tipa, a podaci o prevozu preuzimaju se iz otpremnice.
 
-**Priroda Intrastat transakcije**: ovdje se upisuje šifra transakcije za Intrastat prijavu. Za više informacija pogledati [Natura transazioni intrastatPriroda Intrastat transakcija](/docs/configurations/tables/finance/nature-of-intrastat-transaction); 
+**Tip Intrastat transakcije**: u ovo polje potrebno je uneti šifru transakcije koja se koristi za Intrastat izveštavanje. Za više informacija pogledajte [Tipovi Intrastat transakcija](/docs/configurations/tables/finance/nature-of-intrastat-transaction).
 
-**U statistici**: ako je aktivno, računi ovog tipa bit će uključeni u statistike i vidljivi u ispisima *Fakturat*;
+**U statistici**: ako je ova oznaka aktivirana, fakture ovog tipa uključuju se u statistiku i biće vidljive u izveštajima *Fakturisani promet*.
 
-**Proforma**: ako je aktivno, račun je proforma i ne može se knjižiti;
+**Ponuda**: ako je ova oznaka aktivirana, faktura je predračun i ne može se knjižiti.
 
-**Predložak**: ovdje se upisuje računovodstveni predložak korišten za knjiženje računa. Za više informacija vidjeti [predloške glavne knjige](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates);
+**Šablon**: u ovo polje potrebno je uneti računovodstveni šablon koji se koristi za knjiženje fakture. Za više informacija pogledajte [Računovodstvene šablone glavne knjige](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates).
 
-**Tip dokumenta**: ovdje se upisuje analitički predložak korišten za knjiženje u analitičkom računovodstvu;  
+**Tip dokumenta**: u ovo polje potrebno je uneti analitički šablon koji se koristi za knjiženje fakture u analitičkom računovodstvu.
 
-**Napomena**: slobodan tekst za unos napomena o tipu računa;
+**Napomene**: slobodno tekstualno polje u koje je moguće uneti napomene o tipu fakture.
 
-**Kontrola kupca**: ako je aktivno, ovaj flag omogućuje sustavu da izvrši provjeru vrste kartona računa/podračuna koji je unesen u dokument kako bi se osiguralo da je obavezno kupac; Ako to nije slučaj, sustav će obavijestiti korisnika prikazujući poruku o pogrešci; Bilo bi *obavezno* aktivirati ga za sve vrste prodajnih faktura;
+**Kontrola kupca**: ako je ova oznaka aktivirana, sistem proverava tip šifarnika konta/analitičkog konta unetog u dokument kako bi utvrdio da li je obavezno reč o kupcu. Ako to nije slučaj, sistem će korisniku prikazati poruku o grešci. Obavezno je aktivirati ovu opciju za sve tipove prodajnih faktura.
 
-**Zaključaj dokument; otisnut**: ako je aktivno, ovaj flag onemogućuje izmjenu računa koji već ima postavljen flag *Otisnuto* u zaglavlju;
+**Blokiraj odštampani dokument**: ako je ova oznaka aktivirana, nije moguće menjati fakturu čije je zaglavlje već označeno kao *Odštampano*.
 
-**Intrakomunitarni**: ako je aktivno, sustav provjerava da li je država kupca *država EU*; Ovaj flag treba *postaviti samo za vrste faktura unutar zajednice*; Ako ne postoji veza između kupca i vrste fakture unutar zajednice, sustav će vratiti poruku upozorenja.;
+**Unutar Zajednice**: ako je ova oznaka aktivirana, sistem proverava da li država kupca pripada državama članicama EU. Ova oznaka aktivira se **samo za tipove faktura unutar Zajednice**. Ako kupac nije povezan sa tipom fakture unutar Zajednice, sistem će prikazati poruku upozorenja.
 
-**Evidentiranje fakture proforme**: ako je postavljeno i faktura je proforma, evidentiranjem se izvršava narudžba; u suprotnom narudžba ostaje neizvršena;  
+**Razduživanje (izvršenje) predračuna**: ako je ova oznaka aktivirana i faktura je predračun, razduživanjem će se razdužiti i narudžbina. U suprotnom će narudžbina ostati nerazdužena.
 
-**Predložak prijevoza**: slobodno tekstualno polje u koje se upisuje predložak prijevoza koji će biti otisnut na fakturi;  
+**Razlog (šablon) prevoza**: slobodno tekstualno polje u koje je moguće uneti razlog prevoza koji će se štampati na fakturi.
 
-**Kredit**: ako je aktivno, račun s ovom vrstom ulazit će u kontrolu limita;
+**Kredit (limit)**: ako je ova oznaka aktivirana, fakture ovog tipa biće uključene u kontrolu kreditnog limita.
 
-**Isključi blokadu:** odnosi se na blokadu zbog prekoračenja fida, definiranu u Lock Manageru unutar područja Riznice u procedurama korištenja fida. Ako je aktivno, sustav za ovu vrstu fakture neće primjenjivati blokadu dokumenta zbog prekoračenja fida te korisnik može unijeti i ispisati dokument. Ako nije aktivno, vrsta fakture bit će blokirana pri prekoračenju fida i korisniku neće biti dopušten ispis dokumenta;   
+**Isključi zaključavanje:** odnosi se na blokadu zbog prekoračenja kreditnog limita i podešava se u modulu Lock Manager, koji se nalazi u oblasti Trezor, među postupcima za upravljanje kreditnim limitima. Ako je ova oznaka aktivirana, sistem neće blokirati dokument ovog tipa zbog prekoračenja kreditnog limita, već će korisniku omogućiti unos i štampanje dokumenta. Ako nije aktivirana, tip fakture biće blokiran u slučaju prekoračenja kreditnog limita, a korisniku će biti onemogućeno štampanje dokumenta.
 
-**Skladište/Opis skladišta**: u ova se polja upisuje [skladište](/docs/configurations/tables/logistics/warehouses) iz kojeg se rezerviraju artikli za tu određenu vrstu fakture. Navedeno skladište prenosi se u sve retke artikala unutar fakture ove vrste;   
+**Skladište/Opis skladišta**: u ova polja potrebno je uneti [skladište](/docs/configurations/tables/logistics/warehouses) u kojem se rezervišu artikli sadržani u fakturama određenog tipa. Ovde navedeno skladište prenosi se u sve redove artikala unete u fakturu ovog tipa.
 
-**Predložak / Opis predloška skladišta**: u ova polja upisuje se [predložak kretanja](/docs/configurations/tables/logistics/warehouse-templates) za artikle koji se rezerviraju unutar te vrste narudžbe. Navedeni predložak prenosi se u sve retke artikala unutar narudžbe ove vrste; 
+**Šablon/Opis skladišnog šablona**: u ova polja potrebno je uneti [šablon za evidentiranje skladišnih kretanja](/docs/configurations/tables/logistics/warehouse-templates) artikala koji se rezervišu u fakturama određenog tipa. Ovde navedeni šablon prenosi se u sve redove artikala unete u narudžbinu ovog tipa.
 
-**Grupiranje rata**: ako je aktivno, prilikom knjiženja faktura grupe rata se spajaju. Za detalje pogledati odjeljak o [grupiranju rata](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping); 
+**Grupisanje (otvorenih) stavki**: ako je ova oznaka aktivirana, prilikom knjiženja fakture otvorene stavke se grupišu. Za više informacija pogledajte [Grupisanje otvorenih stavki](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping).
 
-**Poljoprivredni PDV za prodaju**: ako je aktivno, u fazi kreiranja DDT-a, sustav će provjeriti je li za korišteni artikal prisutan kod za poljoprivredni PDV, inače će se koristiti kod PDV-a prisutan u kartonu artikla;  
+**Poljoprivredni PDV za prodaju (prodajnog ugovora)**: ako je ova oznaka aktivirana, prilikom izrade otpremnice sistem će proveriti da li za korišćeni artikal postoji šifra poljoprivrednog PDV-a. Ako ne postoji, upotrebiće se šifra PDV-a iz šifarnika artikala.
 
-**Kontrola preuzetog Pickinga**: ako je aktivno, pri izradi fakture iz preuzetog Pickinga automatski se aktivira flag “preuzeto” za otpremnicu. Ako nije aktivno, flag se ne aktivira;   
+**Proveri istovareni Picking**: ako je ova oznaka aktivirana, prilikom izrade fakture iz razduženog Picking dokumenta automatski će se aktivirati oznaka razduživanja na otpremnici. Ako nije aktivirana, oznaka se neće automatski postaviti.
 
-**Zaključaj količinu Pickinga**: ako je aktivno, zaključava količinu i alternativnu količinu u fakturi kreiranoj iz popisa UDC-a. Ako nije aktivno, količina je slobodna za uređivanje. Preporučuje se uvijek aktivirati ovaj flag pri korištenju Pickinga i UDC-a;  
+**Blokiraj količinu Pickinga**: ako je ova oznaka aktivirana, blokiraju se količina i alternativna količina u fakturi izrađenoj iz UDC liste. Ako nije aktivirana, količine ostaju slobodne za unos. Preporučuje se da ova opcija uvek bude aktivirana ako se koristi upravljanje Pickingom i UDC jedinicama.
 
-**Izračun provizija**: ako je aktivno, fakture ove vrste uključuju se u obračun provizija agenata;  
+**Obračunaj provizije**: ako je ova oznaka aktivirana, fakture ovog tipa uključuju se u obračun provizija agenata.
 
-**Odvoji otpremnicu**: ako je aktivno, a faktura je tipa “Immediata”, omogućuje istovremeno razduženje i otpremnice i fakture koja je valorizira. Koristi se kad je potrebno evidentirati kretanje robe prije stvarnog razduženja dokumenta. U otpremnici se navodi predložak razduženja s protustavkom za zaduženje (za premještaj u drugo skladište), a zatim se fakturom konačno razdužuje roba iz drugog skladišta;     
+**Odvoji otpremnicu**: ako je ova oznaka aktivirana i reč je o direktnoj fakturi, omogućava se izlaz robe i iz otpremnice i iz fakture kojom se ona vrednuje. Ova opcija se obično koristi kada je robu potrebno premestiti pre konačnog izlaza iz dokumenta. U takvim slučajevima u otpremnici se navodi šablon izlaza sa protivstavkom ulaza (za premeštanje robe u drugo skladište), a zatim se faktura koristi za konačni izlaz robe iz drugog skladišta.
 
-**Ne izvršava Picking**: ako je aktivno, prilikom generiranja fakture picking neće biti izvršen;  
+**Ne razdužuje (ne izvršava) Picking**: ako je ova oznaka aktivirana, prilikom izrade fakture neće se razdužiti Picking.
 
-**Cijena s PDV-om**: upravljanje cijenama s PDV-om aktivira se ovim parametrom (dostupnim u svim prodajnim dokumentima, od cjenika nadalje). Pri dohvaćanju cijena traže se cjenici sa istim aktivnim flagom i popusti se računaju uvijek na cijenu s PDV-om. Iz cijene s PDV-om, prema stopi PDV-a iz kartice kupca ili artikla, računa se cijena bez PDV-a. U dokumentima su vidljive kolone Cijena i Cijena s PDV-om.
-Napomena: ako ne postoji valjan cjenik sa aktivnim flagom “Cijena s PDV-om”, a artikl u kartici ima definiranu prodajnu cijenu, ona se uzima kao cijena s PDV-om. Za detalje pogledati članak o dohvaćanju cijena i popusta u prodajnim dokumentima.  
+**Cena sa PDV-om**: upravljanje cenama sa uključenim PDV-om aktivira se ovim parametrom, koji je dostupan u svim dokumentima prodajne oblasti, počevši od prodajnih cenovnika. Prilikom preuzimanja cena u dokument sa aktiviranom opcijom *Cena sa PDV-om*, sistem pretražuje cenovnike u kojima je takođe aktivirana ista opcija i popuste obračunava polazeći od cene sa PDV-om. Na osnovu cene sa PDV-om i stope PDV-a iz šifarnika kupaca ili artikala obračunava se cena bez PDV-a.
 
-**Ekonomska pripadnost**: ako je aktivno, vrsta fakture ima ekonomsku pripadnost te je potrebno postaviti datume razdoblja pripadnosti;  
+U dokumentima su vidljive kolone *Cena* i *Cena sa PDV-om*.
 
-**Predložak ekonomske pripadnosti**: U ovo polje upisuje se predložak ekonomske pripadnosti koji se koristi pri knjiženju faktura. Ova se vrijednost može odabrati s popisa. Za detalje pogledati [Predloške glavnog knjigovodstva](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates);
+**Pažnja!** Ako ne postoji važeći cenovnik sa aktiviranom opcijom *Cena sa PDV-om*, a u šifarniku artikala postoji prodajna cena, ona će biti predložena kao cena sa PDV-om.
 
-**Upravljanje matricama Extra Data**: ako je aktivno, kod upravljanja artiklima s matricom prikazuje se dodatna kartica za unos količina za svaku pojedinu ćeliju matrice. Ako nije aktivno, ta kartica i sama matrica nisu vidljive;  
+Za razumevanje načina preuzimanja cena i upravljanja cenama sa PDV-om i bez PDV-a pogledajte članak *Preuzimanje cena i popusta u prodajnim dokumentima*.
 
-**Ispis**: u ovom se polju može postaviti zadani ispis koji će se koristiti za ovu vrstu dokumenta. Podsjećamo da je prilikom ispisa dokumenta potrebno odabrati report Stampe multiple kako bi se zadani ispis primijenio automatski;  
+**Ekonomski obračun (period)**: ako je ova oznaka aktivirana, za tip fakture primenjuje se obračunski period, pa je potrebno podesiti datume početka i završetka perioda.
 
-**Broj kopija**: u ovom se polju postavlja broj kopija dokumenta koje će se ispisati;   
+**Šablon (ekonomskog) obračunskog perioda**: u ovo polje potrebno je uneti šablon obračunskog perioda koji se koristi prilikom knjiženja fakture. Vrednost je moguće odabrati sa liste. Za više informacija pogledajte [Računovodstvene šablone glavne knjige](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates).
 
-**Upravljanje Conai**: ova tipka aktivira CONAI za ovu vrstu fakture;
+**Upravljanje matricama dodatnih podataka**: ako je ova oznaka aktivirana, pri upravljanju artiklima sa matricom prikazuje se dodatna kartica za unos vrednosti količine za svaku pojedinačnu ćeliju matrice. Ako nije aktivirana, ova kartica i pripadajuća matrica neće se prikazivati.
 
-**Upravljanje osnovnim sredstvima**: ovaj flag aktivira upravljanje osnovnim sredstvima za ovu vrstu fakture, a u sljedećem polju potrebno je odabrati vrstu operacije;  
+**Izveštaji**: u ovo polje moguće je postaviti podrazumevani ispis koji će se koristiti za ovaj tip dokumenta. Napominjemo da je prilikom štampanja dokumenta potrebno odabrati izveštaj *Višestruki ispisi* kako bi se automatski upotrebio podrazumevani ispis.
 
-**Vrsta operacije**: u ovom padajućem izborniku odabire se vrsta operacije nad osnovnim sredstvima (revalorizacija, uništenje, kapitalni dobitak itd.).       
+**Broj kopija**: u ovo polje postavlja se broj kopija dokumenta koje je potrebno odštampati.
 
-**Vrsta popusta / Opis**: u ovoj koloni moguće je pridružiti vrstu popusta koja se predlaže kada se popusti unose izravno u kolonu *Rabat stavke* u tablici artikala (za detalje pogledati članak o [Pojednostavljenom widgetu za popuste](/docs/sales/sales-flow/discount-widget)).
+**Upravljanje CONAI-jem (recikliranjem)**: ovo dugme omogućava upravljanje CONAI-jem (Consorzio Nazionale Imballaggi – Nacionalni konzorcijum za ambalažu) za ovaj tip fakture.
+
+**Osnovna sredstva**: ova oznaka omogućava upravljanje osnovnim sredstvima u tipu fakture, a u sledećem polju potrebno je navesti tip operacije nad osnovnim sredstvima.
+
+**Tip operacije**: u ovom padajućem meniju moguće je odabrati tip operacije nad osnovnim sredstvima između više ponuđenih opcija (revalorizacija, uništenje, kapitalni dobitak itd.).
+
+**Tip popusta/Opis**: u ovoj koloni moguće je povezati tip popusta koji će biti predložen kada se popusti unose direktno u kolonu *Popusti artikla* u tabeli artikala dokumenta (za više informacija pogledajte članak [Pojednostavljeno upravljanje vidžetom za popuste](/docs/sales/sales-flow/discount-widget)).
+
+**Upravljanje WEEE-om (RAEE)**: ova oznaka omogućava [upravljanje WEEE-om (RAEE)](/docs/sales/sales-flow/raee).

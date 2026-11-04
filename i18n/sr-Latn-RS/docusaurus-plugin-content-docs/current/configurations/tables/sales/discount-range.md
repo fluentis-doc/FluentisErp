@@ -1,28 +1,28 @@
 ---
-title: Rasponi rabata
+title: Rasponi rabata (popusta)
 sidebar_position: 17
 ---
 
-Tablica se otvara putem izbornika **Tabele > Prodaja > Rasponi rabata** i omogućuje definiranje elementa na temelju kojeg se određuje varijabilnost intervala primjene popusta, a koji se koriste i za definiranje provizija agenata.
+Tabela se otvara putem putanje **Tablice > Prodaja > Rasponi rabata** i omogućava definisanje elementa na osnovu kojeg se određuju rasponi primene popusta, prema kojima se zatim definišu provizije agenata.
 
-Omogućuje unos novih zapisa te pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.  
+Omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraga** kako bi se rezultati prikazali u mreži s rezultatima.
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za unos novih zapisa potrebno je u mreži kliknuti na prvi prazan red ili pritisnuti tipku **Novi**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-**Range / Opis**: u ova se polja unose šifra i opis za identifikaciju raspona popusta;  
+**Raspon/Opis**: u ova polja potrebno je uneti šifru i opis za identifikaciju raspona popusta.
 
-**Jedinstven**: aktiviranjem ovog flaga, provizijske stope popusta primjenjivat će se jednako na sve artikle, bez razlike;  
+**Jedinstven**: ako je ova oznaka aktivirana, rasponi popusta za obračun provizija primenjuju se jednako na sve artikle.
 
-**Klase artikala**: aktiviranjem ovog flaga moguće je definirati onoliko provizijskih raspona popusta koliko postoji klasa artikala;
+**Klase artikala**: ako je ova oznaka aktivirana, moguće je definisati onoliko raspona popusta za obračun provizija koliko postoji klasa artikala.
 
-**Cjenici**: aktiviranjem ovog flaga mogu se definirati provizijski rasponi popusta za svaki od definiranih (nepersonaliziranih) prodajnih cjenika;  
+**Cenovnik**: ako je ova oznaka aktivirana, moguće je definisati onoliko raspona popusta za obračun provizija koliko postoji definisanih prodajnih cenovnika (nepersonalizovanih).
 
-**Tip artikla**: aktiviranjem ovog flaga mogu se definirati provizijski rasponi popusta prema tipovima artikala;  
+**Tip artikla**: ako je ova oznaka aktivirana, moguće je definisati onoliko raspona popusta za obračun provizija koliko postoji tipova artikala.
 
-**Karakteristika**: aktiviranjem ovog flaga mogu se definirati provizijski rasponi popusta prema karakteristikama artikala;  
+**Karakteristika**: ako je ova oznaka aktivirana, moguće je definisati onoliko raspona popusta za obračun provizija koliko postoji karakteristika artikala.
 
-**Kategorija robe**: aktiviranjem ovog flaga mogu se definirati provizijski rasponi popusta prema robnim kategorijama artikala.  
- 
-Za sve što nije posebno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcioniranje formi, pogledati sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+**Kategorija proizvoda**: ako je ova oznaka aktivirana, moguće je definisati onoliko raspona popusta za obračun provizija koliko postoji robnih kategorija artikala.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

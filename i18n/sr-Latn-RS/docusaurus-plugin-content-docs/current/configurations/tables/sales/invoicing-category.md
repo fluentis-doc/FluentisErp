@@ -1,16 +1,16 @@
 ---
-title: Kategorija fakturiranja
+title: Kategorija fakturisanja
 sidebar_position: 6
 ---
 
-Tablica se otvara putem izbornika **Tablice > Prodaja > Kategorija fakturiranja** i služi za definiranje učestalosti fakturiranja za svakog kupca. Ovaj se podatak unosi u karticu kupca i koristi se kao filtar u postupku fakturiranja.  
+Tabela se otvara putem menija **Tablice > Prodaja > Kategorija fakturisanja** i služi za definisanje učestalosti fakturisanja za svakog kupca. Ovaj podatak unosi se na karticu kupca i koristi se kao filter u postupku fakturisanja.
 
-Omogućuje unos novih zapisa te pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.  
+Omogućava unos novih zapisa i pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara, potrebno je kliknuti tipku **Pretraga** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za unos novih zapisa potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti tipku **Novi**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-Podaci koji se moraju unijeti za svaku kategoriju su **Šifra** nove kategorije (koja mora biti jedinstvena) te njezin **Opis**.
+Podaci koje je potrebno uneti za svaku kategoriju su **šifra** nove kategorije (koja mora biti jedinstvena) i njen **opis**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcioniranje formi, pogledati sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajednički način rada obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

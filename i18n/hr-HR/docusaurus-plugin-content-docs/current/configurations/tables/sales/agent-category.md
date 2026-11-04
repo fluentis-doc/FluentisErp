@@ -1,64 +1,60 @@
 ---
-title: Kategorije agenata
+title: Kategorije agenata (trgovačkih predstavnika)
 sidebar_position: 2
 ---
 
-Tablica se otvara putem izbornika **Tablice > Prodaja > Kategorije agenata**.
+Tablica se otvara putem putanje **Tablice > Prodaja > Kategorije trgovačkih predstavnika (agenata)**.
 
-Ova je tablica jedinstvena za sve tvrtke unutar baze podataka i predstavlja osnovu za izračune Enasarco/FIRR doprinosa za agente.
+Tablica je jedinstvena za sva poduzeća u bazi podataka i predstavlja osnovu za izračun doprinosa Enasarco i FIRR za agente.
 
 ### Kategorije agenata
 
-Ovo je glavna mreža forme i sadrži popis kategorija agenata.  
-Za svaki redak definiraju se detaljni podaci u dvije mreže — za specifikaciju Enasarco i FIRR parametara.
+Ovo je glavna tablica obrasca koja sadržava kategorije agenata. Za svaki redak ove tablice definiraju se detaljni podaci u dvije sljedeće tablice, kojima se specificiraju izračuni Enasarco i FIRR.
 
 :::tip[Povezivanje]
-Stavke glavne mreže (povezane s detaljima izračuna) mogu se povezati u [**Podaci agent**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail) oppure (a titolo di default)ili kao zadana vrijednost u tablici [**Vrste poreznog odbitka**](/docs/configurations/tables/finance/withholding-tax-types). Vrsta poreznog odbitka može biti povezana s registrom agenta: ako uključuje zadanu kategoriju, kategorija se ne mora ručno dodjeljivati za svakog agenta.  
+Stavke iz glavne tablice (koja je povezana s detaljima izračuna) mogu se povezati u [**šifarniku agenata**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail) ili se mogu postaviti kao zadane vrijednosti u detaljima tablice [**Vrste poreza po odbitku**](/docs/configurations/tables/finance/withholding-tax-types). Vrsta poreza po odbitku može se povezati i sa šifarnikom agenata. U tom slučaju, ako ima zadanu kategoriju agenta, nije potrebno svaki put zasebno povezivati kategoriju s agentom.
 :::
 
-**Šifra/Opis**: jedinstvena šifra i opis kategorije agenta;
+**Šifra/Opis**: šifra i opis koji označavaju vrstu agenta. Šifra mora biti jedinstvena.
 
-**Jedna trvtka:** oznaka za monomandatne agente (isključivi ugovor s jednom tvrtkom);
+**Samostalni agent (jedna tvrtka):** oznaka koja identificira kategorije samostalnih agenata (ekskluzivni ugovor s jednim nalogodavcem).
 
-**Više tvrtki:** oznaka koja identificira plurimandatne kategorije (npr. agent koji surađuje s više tvrtki nalogodavaca);
+**Višestruki agent (više tvrtki):** oznaka koja identificira kategorije agenata koji zastupaju više nalogodavaca (npr. agent koji surađuje s više poduzeća).
 
-**Opći:** oznaka koja identificira generičke kategorije (npr. agencije koje posluju kao pravne osobe);
-
+**Opći:** oznaka koja identificira opće kategorije (npr. agencije osnovane u obliku trgovačkog društva).
 
 ### Enasarco
 
-**Datum početka valjanosti:**: datum od kojeg detalj postaje važeći; vrijedi sve dok se ne učita novi detalj s kasnijim datumom početka valjanosti.
+**Datum početka valjanosti**: datum početka važenja detaljnih podataka. Ti se podaci primjenjuju sve dok se ne pronađu novi detaljni podaci s kasnijim datumom početka važenja.
 
-**Min Enasarco**: ***vrijednost na tromjesečnoj osnovi***. Minimalni iznos Enasarco doprinosa (npr. 250,50 za monomandatnog agenta);  
+**Minimalni Enasarco**: *vrijednost na tromjesečnoj osnovi*. Minimalni iznos doprinosa Enasarco (primjerice 250,50 za samostalnog agenta).
 
-**Max Enasarco:** ***vrijednost na godišnjoj osnovi***. Maksimalna osnovica provizija za obračun Enasarco doprinosa; nakon što se dostigne ovaj iznos, više nije moguće uplaćivati socijalne doprinose u korist agenta (npr. 44.727,00 za monomandatnog agenta).
+**Maksimalni Enasarco:** *vrijednost na godišnjoj osnovi*. Maksimalni iznos osnovice za obračun provizije za potrebe doprinosa Enasarco (najviša osnovica). Nakon njezina dosezanja više nije moguće uplaćivati mirovinske doprinose za agenta (primjerice 44.727,00 za samostalnog agenta).
 
-**Postotak Enasarco**: postotak doprinosa na teret agenta.
+**Enasarco postotak**: postotak doprinosa Enasarco na teret agenta.
 
-**Postotak Enasarco – tvrtka** postotak doprinosa na teret tvrtke.
+**Enasarco postotak – poduzeće:** postotak doprinosa Enasarco na teret poduzeća.
 
-**Primjena Enasarco**: postotak (100%) na koji se primjenjuju Enasarco stope na ukupne provizije.
+**Iznos Enasarco**: postotak (100 %) primjene stopa Enasarco na ukupni iznos provizije.
 
+### FIRR
 
-
-### Firr
-
-Mreža se koristi za izračun FIRR-a (Fonda za naknadu pri raskidu ugovora):  
+Tablica se upotrebljava za izračun FIRR-a (Fondo indennità risoluzione rapporto – fond za naknadu pri prestanku ugovornog odnosa).
 
 ![](/img/it-it/configurations/tables/sales/agent-category/image03.png)
 
-**Redak**: identifikacijski broj retka. Mora biti jedinstven za sve kategorije agenata;  
+**Red**: označava broj retka. Mora biti jedinstven u svim kategorijama agenata.
 
-**Postotak**: stopa doprinosa;  
+**Postotak**: postotak davanja.
 
-**Od provizija / Do provizija**: donja i gornja granica primjene doprinosa;
+**OD provizije/DO provizije**: donja i gornja granica iznosa provizije na koju se primjenjuje davanje.
 
-Ova mreža mora biti popunjena u skladu s propisanim pravilima za ovu vrstu obračuna.
+Ovu tablicu potrebno je popuniti prema pravilima predviđenima za ovaj način obračuna.
 
-Stope za agente s jednim mandatom
+Stope za samostalne agente
 
-![](/img/it-it/configurations/tables/sales/agent-category/image04.png) 
+![](/img/it-it/configurations/tables/sales/agent-category/image04.png)
 
-Stope za agente s više mandata
+Stope za agente koji zastupaju više nalogodavaca
 
 ![](/img/it-it/configurations/tables/sales/agent-category/image05.png)

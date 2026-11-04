@@ -1,78 +1,90 @@
 ---
-title: Tipovi narudžbi klijenta
+title: Tipovi narudžbina kupaca
 sidebar_position: 23
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se želi konfigurirati ručno, potrebno je pratiti kontrolni popis na poveznici.
+Ako konfiguraciju nameravate da izvršite ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Tablica se otvara putem **Tablice > Prodaja > Tipovi narudžbi klijenta**.
+Tabela se otvara putem menija **Tablice > Prodaja > Tipovi narudžbina kupaca**.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
+Omogućava unos novih zapisa ili pretraživanje postojećih zapisa radi pregleda, izmene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Ricerca** kako bi se rezultati prikazali u mreži rezultata.  
- 
-Za unos novih zapisa potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-**Tip/Opis:** polja u kojima se unosi šifra i opis tipologije narudžbe klijenta. Važno: šifra mora biti jedinstvena po tvrtki i diviziji;   
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-**Numeracija**: ovdje se unosi šifra odgovarajuće numeracije. Za više informacija o numeraciji dokumenata pogledati članak [Numeracije Fluentis](/docs/configurations/tables/fluentis-numerations); 
+**Tip/Opis:** polja u koja se unose šifra i opis tipa narudžbine kupca. Važno: šifra mora biti jedinstvena za preduzeće i organizacionu jedinicu.
 
-**Automatsko kreiranje projekta** i **Tip projekta**: ako je aktivno, sustav će prilikom unosa narudžbe klijenta automatski kreirati projekt tipa navedenog u stupcu Tip projekta unutar istog tipa narudžbe, s istim brojem narudžbe klijenta. Projekt se automatski povezuje s narudžbom i služi kao spremnik za povezane dokumente i njihove stavke. Projekt se ažurira prema promjenama u narudžbi i održava vezu stavka-projekt.  
+**Numeracija:** u ovo polje potrebno je uneti odgovarajuću šifru numeracije. Za više informacija o numeraciji dokumenata pogledajte članak [Fluentis numeracije](/docs/configurations/tables/fluentis-numerations).
 
-**Automatska potvrda narudžbe**: ako je aktivno, pri unosu nove narudžbe datum potvrde narudžbe se automatski postavlja jednak datumu unosa narudžbe;   
+**Automatska izrada projekta i Tip projekta:** ako je ova opcija uključena, sistem će prilikom unosa narudžbine kupca kreirati projekat tipa navedenog u koloni Tip projekta, koja se nalazi u podešavanjima tipa narudžbine. Projekat će imati isti broj kao narudžbina kupca i automatski će biti unet u zaglavlje narudžbine radi uspostavljanja veze. Kreirani projekat služi kao spremnik za prikupljanje dokumenata povezanih sa projektom i njegovim stavkama. Projekat kreiran iz narudžbine kupca ažurira se u skladu sa izmenama narudžbine, pri čemu se održava veza između svake stavke projekta i odgovarajuće stavke narudžbine.
 
-**Isključi blokadu**: odnosi se na blokadu zbog prekoračenja limita, upravljanu putem Lock Managera u području blagajne u procedurama korištenja limita. Ako je aktivno, sustav neće blokirati narudžbu zbog prekoračenja limita, već će korisnik moći unijeti i ispisati dokument; ako nije aktivno, narudžba će se blokirati, a korisniku neće biti dopušten ispis dokumenta;   
+**Automatska potvrda narudžbine:** ako je ova opcija uključena, prilikom unosa nove narudžbine datum potvrde automatski se postavlja na datum unosa narudžbine.
 
-**Evidencija tipa otpremnice**: sadrži tip otpremnice koji se generira pri pokretanju procedure automatsko Izvršenje otpremnice/primke dostupno u ribbon tipki Pretraživanje narudžbi klijenata;   
+**Isključi zaključavanje:** odnosi se na blokadu zbog prekoračenja kreditnog limita, koja se konfiguriše u postupku Lock Manager u oblasti Trezor, u okviru postupaka za upravljanje korišćenjem kreditnih limita. Ako je ova opcija uključena, sistem za ovaj tip narudžbine neće uzeti u obzir blokadu dokumenta zbog prekoračenja kreditnog limita, već će korisniku omogućiti unos i štampanje dokumenta. Ako opcija nije uključena, tip narudžbine biće blokiran u slučaju prekoračenja kreditnog limita, a korisniku će biti onemogućeno štampanje dokumenta.
 
-**Evidencija tipa fakture**: sadrži tip fakture koji se generira pri pokretanju procedure automatsko Izvršenje računa u ribbon tipki Pretraživanje narudžbi klijenata.; 
+**Razduživanje (izvršenje) tipom otpremnice:** sadrži tip otpremnice koji će se generisati pokretanjem automatskog postupka razduživanja otpremnicama, dostupnog na traci sa alatkama u prozoru za pretraživanje narudžbina kupaca.
 
-**Evidencija tipa picking**: sadrži tip picking-a koji se generira pri kreiranju picking dokumenta iz [Otpremnica](/docs/logistics/shipping/shippings); 
+**Razduživanje (izvršenje) tipom fakture:** sadrži tip fakture koji će se generisati pokretanjem automatskog postupka razduživanja fakturama, dostupnog na traci sa alatkama u prozoru za pretraživanje narudžbina kupaca.
 
-**Blokiraj ispisani dokument**: ako je aktivno, ne dopušta izmjenu narudžbe klijenta koja ima aktiviran flag Ispisano u zaglavlju;   
+**Razduživanje (izvršenje) tipom Picking dokumenta:** sadrži tip Picking dokumenta koji će se generisati pokretanjem postupka kreiranja Picking dokumenta iz [isporuka](/docs/logistics/shipping/shippings).
 
-**Limit**: ako je aktivno, narudžba ovog tipa se uzima u obzir za izračun prekoračenja limita;   
+**Blokiraj odštampani dokument:** ako je ova opcija uključena, nije dozvoljena izmena narudžbine kupca čija je opcija „Odštampano” uključena u zaglavlju.
 
-**Cash flow**: ako je aktivno, tip narudžbe doprinosi izračunu [cash flow](/docs/treasury/cash-flow/cash-flow/search-cash-flow); 
+**Kredit (limit):** ako je ova opcija uključena, narudžbine ovog tipa uzimaju se u obzir pri obračunu prekoračenja kreditnog limita.
 
-**Skladište/Opis skladišta**: ovdje se navodi [skladište](/docs/configurations/tables/logistics/warehouses) u kojem se rezerviraju artikli za taj tip narudžbe; skladište se primjenjuje na sve stavke narudžbe tog tipa.  
+**Novčani tok:** ako je ova opcija uključena, ovaj tip narudžbine uzima se u obzir pri obračunu [novčanog toka](/docs/treasury/cash-flow/cash-flow/search-cash-flow).
 
-**Predlošak /Opis predloška skladišta**: ovdje se navodi predlošak za kretanje artikala rezerviranih za taj tip narudžbe; *predložak se primjenjuje* na sve stavke narudžbe tog tipa.
+**Skladište/Opis skladišta:** u ova polja unosi se [skladište](/docs/configurations/tables/logistics/warehouses) u kojem će se rezervisati artikli sadržani u narudžbinama ovog tipa. Ovde navedeno skladište automatski se prenosi u sve redove artikala unete u narudžbinu ovog tipa.
 
-**Ne zbrajaj količinu artikla pri isporuci**: ako je aktivno, prilikom djelomične isporuke iste stavke narudžbe u istom dokumentu (otpremnica, faktura itd.) količine se ne zbrajaju, nego se svaka isporuka pojavljuje kao zasebna stavka;   
+**Šablon skladišnog kretanja/Opis šablona skladišnog kretanja:** u ova polja unosi se *šablon skladišnog kretanja* za rezervisane artikle sadržane u narudžbinama ovog tipa. Ovde navedeni šablon automatski se prenosi u sve redove artikala unete u narudžbinu ovog tipa.
 
-**Provjera dostupnosti**: ako je aktivno, ovaj tip narudžbe se uzima u obzir u [izračunu dostupnosti](/docs/erp-home/registers/items/calculate-availability); 
+**Nezbirna količina artikla narudžbine:** ako je ova opcija uključena, prilikom razduživanja istog reda narudžbine u različitim trenucima, unutar istog dokumenta razduživanja (otpremnica, faktura itd.), pojedinačni redovi artikala prenose se u dokument razduživanja bez sabiranja količina. Primer: ako narudžbina sadrži red sa 10 komada, a prvo razduživanje otpremnicom obuhvata 2 komada, nakon čega se u drugom razduživanju istog reda prenose još 2 komada, u otpremnici će biti prikazana dva reda artikala sa količinom od po 2 komada. Ako ova opcija nije uključena, drugo razduživanje povećalo bi količinu u postojećem redu otpremnice na 4 komada.
 
-**PDV ugovora nabave**: ako je aktivno, pri kreiranju narudžbe sustav provjerava postoji li za artikl kod poljoprivrednog PDV-a; inače se koristi PDV iz [kartice artikla](/docs/erp-home/registers/items/create-new-item); 
+**Kontroliši raspoloživost:** ako je ova opcija uključena, narudžbine ovog tipa uzimaju se u obzir pri [obračunu raspoloživosti](/docs/erp-home/registers/items/calculate-availability).
 
-**Cijena s PDV-om**: upravljanje cijenama s PDV-om aktivira se ovim parametrom. Pri preuzimanju cijena za dokument s flagom Cijena s PDV-om, sustav traži odgovarajući cjenik i izračunava popuste na cijenu s PDV-om. Cijena bez PDV-a računa se prema stopi PDV-a iz kartice klijenta ili artikla. Ako ne postoji valjani cjenik s flagom Cijena s PDV-om, koristi se prodajna cijena iz kartice artikla. Razlike u obračunu nastaju prilikom dupliciranja narudžbi ili isporuke u dokumente s različitim flagom. Za detalje pogledati članak Preuzimanje cijena i popusta u dokumentima prodaje.      
+**Poljoprivredni PDV (prodajnog ugovora):** ako je ova opcija uključena, prilikom kreiranja narudžbine sistem proverava da li za odabrani artikal postoji šifra poljoprivrednog PDV-a. Ako ne postoji, koristi se šifra PDV-a iz [šifarnika artikala](/docs/erp-home/registers/items/create-new-item).
 
-**Tip proizvodne narudžbe**: ovdje se unosi tip proizvodne narudžbe koji će se generirati iz ovog tipa narudžbe klijenta u *Definiciji MPS*. Ako je aktivan flag *Generiranje proizvodne narudžbe*, narudžba se generira automatski po potvrdi narudžbe.   
+**Cena sa PDV-om:** upravljanje cenama sa uključenim PDV-om aktivira se ovim parametrom, koji je dostupan u svim dokumentima prodajne oblasti, počevši od prodajnih cenovnika. Prilikom preuzimanja cena u dokumentu za koji je uključena opcija Cena sa PDV-om, sistem pretražuje cenovnike u kojima je takođe uključena ista opcija, a popusti se obračunavaju polazeći od cene sa PDV-om. Na osnovu cene sa PDV-om obračunava se cena bez PDV-a, primenom stope PDV-a iz šifarnika kupca ili šifarnika artikala.
 
-**Tip narudžbi dobavljača/Opis tipa OF**: šifra tipa narudžbe dobavljača koja će se generirati ako se koristi procedura kreiranja narudžbe dobavljača iz narudžbe klijenta;   
+U dokumentima su vidljive kolone Cena i Cena sa PDV-om.
 
-**Kontrola klijenta**: ako je aktivno, u trenutku kada se kupac unese unutar narudžbe, sustav će izvršiti provjeru na karticama, provjeravajući da li uneseni kod obavezno odgovara kodu kartice kupca. Ako to nije slučaj, sustav će obavijestiti korisnika; bez ovog flag-a moguće je kreirati narudžbe i za tipove računa dobavljača.
+**Važno!** Ako ne postoji važeći cenovnik sa uključenom opcijom Cena sa PDV-om, a u šifarniku artikala postoji prodajna cena, ta prodajna cena biće predložena kao cena sa PDV-om.
 
-**Upravljanje matrica Extra Data**: ako je aktivno, za artikle s matricom prikazuje se dodatna kartica za unos količina po ćelijama matrice. Ako nije aktivno, kartica i matrica se ne prikazuju. Za detalje pogledati članak Upravljanje Matrici Extra-Data.  
+**Važno!** Narudžbinu sa uključenom opcijom Cena sa PDV-om moguće je razdužiti otpremnicom čiji tip nema uključenu tu opciju. Ukupni iznosi redova obračunavaju se različito u dokumentima sa uključenom i isključenom opcijom Cena sa PDV-om.
 
-**Konfiguracija**: ovdje se unosi šifra za automatsko postavljanje ExtraData u zaglavlju narudžbe klijenta.  
+**Važno!** Narudžbinu sa uključenom opcijom Cena sa PDV-om moguće je duplicirati u narudžbinu čiji tip nema uključenu tu opciju. Ukupni iznosi redova obračunavaju se različito u dokumentima sa uključenom i isključenom opcijom Cena sa PDV-om.
 
-**Ispis**: ovdje se postavlja zadani ispis za ovaj tip dokumenta; prilikom ispisa potrebno je odabrati Višestruki ispisi za automatsko korištenje zadanog ispisa;  
+Za razumevanje načina preuzimanja cena i upravljanja cenama sa PDV-om i bez PDV-a pogledajte članak *Preuzimanje cena i popusta u prodajnim dokumentima*.
 
-**Broj kopija**: ovdje se postavlja broj kopija dokumenta za ispis;   
+**Tip radnog naloga za proizvodnju:** u ovo polje moguće je uneti tip naloga za proizvodnju koji će se generisati iz ovog tipa narudžbine u okviru postupka *Definicija MPS-a*, prilikom generisanja naloga za proizvodnju iz narudžbina kupaca. Ako je uključena i sledeća opcija *Generisanje naloga za proizvodnju*, nalog za proizvodnju generisaće se automatski prilikom potvrde narudžbine.
 
-**Generiranje proizvodne narudžbe**: ako je aktivno, proizvodna narudžba tipa navedenog u stupcu *Tip proizvodne narudžbe* kreira se automatski po potvrdi narudžbe. 
+**Tip narudžbine dobavljača/Opis tipa narudžbine dobavljača:** unosi se šifra tipa narudžbine dobavljača koja će se generisati ako se odabere kreiranje narudžbine dobavljača na osnovu narudžbine kupca putem odgovarajućeg postupka.
+
+**Kontrola kupca:** ako je ova opcija uključena, prilikom unosa kupca u narudžbinu sistem proverava šifarnike kako bi utvrdio da li uneta šifra obavezno odgovara šifri iz šifarnika kupaca. Ako to nije slučaj, sistem će upozoriti korisnika. Ako ova opcija nije uključena, moguće je kreirati narudžbine i za tipove konta Dobavljač.
+
+**Upravljanje matricama ExtraData:** ako je ova opcija uključena, pri upravljanju artiklima sa matricom prikazuje se dodatna kartica za unos količina u pojedinačne ćelije matrice. Ako opcija nije uključena, ova kartica i pripadajuća matrica neće se prikazivati. Za više informacija o upravljanju matricama pogledajte članak *Upravljanje matricama ExtraData*.
+
+**Konfigurisanje:** u ovo polje unosi se šifra za automatsko podešavanje dodatnih podataka (ExtraData) u zaglavlju narudžbine kupca.
+
+**Izveštaji:** u ovo polje moguće je postaviti podrazumevani ispis koji će se koristiti za ovaj tip dokumenta. Napominjemo da je prilikom štampanja dokumenta potrebno odabrati izveštaj „Višestruki ispisi” kako bi se automatski upotrebio podrazumevani ispis.
+
+**Broj kopija:** u ovo polje unosi se broj kopija dokumenta za štampanje.
+
+**Generisanje naloga za proizvodnju:** ako je ova opcija uključena, nalog za proizvodnju tipa navedenog u koloni *Tip naloga za proizvodnju* automatski će se kreirati nakon potvrde narudžbine.
 
 :::note
-Kada se doda nova stavka u narudžbu klijenta za koju se automatski generiraju proizvodne narudžbe, nova stavka u proizvodnoj narudžbi dobiva status *Ne pregledano.*.
+Kada se doda novi red u narudžbinu kupca za koju se nalozi za proizvodnju generišu automatski, novi red u nalogu za proizvodnju dobija status *Nije pregledano*.
 :::
 
-**Upravljanje sredstvima**: ako je aktivno, u kartici artikala narudžbe prikazuje se kartica Osnovna sredstva za povezivanje narudžbe s prodajom sredstva.  
+**Osnovna sredstva:** ako je ova opcija uključena, na kartici Artikli u narudžbini aktivira se kartica Osnovna sredstva, koja omogućava povezivanje narudžbine sa prodajom osnovnog sredstva.
 
-**Tip operacije**: uvijek povezan s upravljanjem sredstvima; ako je unesen, automatski se prikazuje u widgetu Tip operacije unutar kartice Osnovna sredstva u kartici artikala narudžbe.     
+**Tip operacije:** uvek je povezan sa upravljanjem osnovnim sredstvima. Ako je unet, automatski se predlaže u vidžetu Tip operacije, koji se nalazi na kartici Osnovna sredstva unutar kartice Artikli narudžbine.
 
-**Tip popusta/Opis**: u ovoj koloni moguće je povezati tip popusta koji će se primijeniti kada se popusti unose direktno u kolonu *Popusti artikla* u mreži artikala dokumenta (za više detalja pogledati članak [Upravljanje pojednostavljenim widgetom popusta](/docs/sales/sales-flow/discount-widget)).
+**Tip popusta/Opis:** u ovoj koloni moguće je povezati tip popusta koji će biti predložen prilikom direktnog unosa popusta u kolonu *Popusti artikla* u tabeli artikala dokumenta. Za više detalja pogledajte članak [Upravljanje pojednostavljenim vidžetom za popuste](/docs/sales/sales-flow/discount-widget).
+
+**Upravljanje WEEE-om:** ova opcija omogućava upravljanje [WEEE-om](/docs/sales/sales-flow/raee) za ovaj tip dokumenta.

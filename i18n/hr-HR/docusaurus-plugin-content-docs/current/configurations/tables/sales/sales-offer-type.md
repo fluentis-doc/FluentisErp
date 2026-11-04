@@ -1,43 +1,44 @@
 ---
-title: Tipovi ponuda za klijenta
+title: Tipovi ponuda
 sidebar_position: 23
 ---
 
-:::tip[FAst Start]
-Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se želi konfigurirati ručno, potrebno je pratiti kontrolni popis na poveznici.
+Ako konfiguraciju namjeravate izvršiti ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Tablica se otvara putem **Tablice > Prodaja > Tipovi ponuda za klijenta**.
+Tablica se otvara putem izbornika **Tablice > Prodaja > Tipovi ponuda (kupaca)**.
 
-Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
+Omogućuje unos novih zapisa ili pretraživanje postojećih zapisa radi njihova pregleda, izmjene ili brisanja.
 
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon postavljanja željenih filtara dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u tablici.
 
-Za unos novih zapisa potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**. 
+Za unos novih zapisa potrebno je kliknuti prvi prazni redak u tablici ili pritisnuti gumb **Novo**.
 
-**Šifra/Opis:** polja u kojima se unosi šifra i opis tipologije dokumenta (šifra mora biti jedinstvena).
+**Šifra/Opis:** polja u koja se unose šifra i opis vrste dokumenta (unesena šifra mora biti jedinstvena).
 
-**Hijerarhijska struktura**: uključivanjem ovog flag-a, artikli u ponudi prate hijerarhijsku strukturu; za više detalja pogledati [dokumentaciju](/docs/sales/offers/insert-offer).
+**Struktura hijerarhije:** uključivanjem ove opcije artikli u ponudi slijedit će hijerarhijsku strukturu. Za više pojedinosti pogledajte odgovarajuću [dokumentaciju](/docs/sales/offers/insert-offer).
 
-**Izmjena verzije**: ovaj flag označava tipove ponuda za koje se upravlja verzijama.  
+**Izmjena verzije:** ova opcija označava vrste ponuda za koje se upravlja verzijama.
 
-**Cijena s PDV-om**: omogućuje sustavu da preuzme prodajnu cijenu iz cjenika ili iz kartice artikla i prikaže je s uključenim PDV-om. Ako cjenik nije dostupan (npr. istekao cjenik ili nekompatibilna valuta), sustav preuzima troškove ili cijene iz kartice artikla i prikazuje ih s PDV-om. Troškovi i cijene u kartici su u EUR, a sustav ih po potrebi konvertira u valutu klijenta.
+**Cijena s PDV-om:** omogućuje sustavu dohvat prodajne cijene iz cjenika ili šifarnika artikala te njezin prikaz s uključenim PDV-om. Ako cjenik nije pronađen, primjerice zbog isteka njegove valjanosti ili nekompatibilnosti valute cjenika, sustav dohvaća troškove ili cijene iz šifarnika artikala i prikazuje ih s uključenim PDV-om. Troškovi i cijene u šifarniku izraženi su u EUR-ima pa ih sustav dodatno preračunava u valutu kupca.
 
-**Numeracija**: ovdje se unosi šifra odgovarajuće numeracije. Za više informacija o numeraciji dokumenata pogledati članak [Numeracije Fluentis](/docs/configurations/tables/fluentis-numerations).
+**Numeracija:** u ovo polje potrebno je unijeti odgovarajuću šifru numeracije. Za više informacija o numeraciji dokumenata pogledajte članak [Fluentis numeracije](/docs/configurations/tables/fluentis-numerations).
 
-**Tip narudžbe klijenta**: ovdje se označava [tip narudžbe prodaje](/docs/configurations/tables/sales/sales-order-types) koji se kreira prilikom konverzije ponude odgovarajućom procedurom.    
+**Tip narudžbe kupca:** u ovo polje unosi se [vrsta prodajne narudžbe](/docs/configurations/tables/sales/sales-order-types) koja će se kreirati prilikom pretvaranja ponude odgovarajućim postupkom.
 
-**Prodajni cjenik**: ovaj generički tip cjenika koristi se za pretraživanje cijena ako u kartici klijenta ili kontakta u kartici cjenici nije upisan nijedan tip cjenika. Obično se koristi za ponude CRM kontaktima koji još nisu postali klijenti i za koje nisu upisani tipovi cjenika u kartici.  
+**Prodajni cjenik:** ovaj cjenik opće namjene koristi se za dohvat cijena u slučaju kada na kartici Cjenici u šifarniku kupca ili kontakta nije unesena nijedna vrsta cjenika. Obično se koristi prilikom izrade ponuda za CRM kontakte koji još nisu postali kupci i za koje vrste cjenika nisu unesene na kartici Cjenici u šifarniku.
 
-**Ispis i broj kopija**: ovim poljima definira se zadani ispis i broj kopija; za ispis zadane postavke potrebno je odabrati *Višestruki ispisi* prilikom ispisa.
+**Izvještaji i broj kopija:** ovim poljima definiraju se zadani ispis i broj kopija za ispis. Napominjemo da je za korištenje zadanog ispisa potrebno odabrati opciju *Višestruki ispisi* prilikom ispisa.
 
-**Tip prototipa artikla**: ovo polje sadrži tip prototipa artikla koji se kreira u proceduri kreiranja prototipa unutar ponude.  
+**Vrsta prototipa artikla:** ovo polje sadrži vrstu prototipa artikla koju je potrebno kreirati postupkom izrade prototipa unutar ponude.
 
-**Tip prilike**: ako se u Tipu ponude poveže [Tip prilike](/docs/configurations/tables/crm/opportunities/opportunity-type), pri spremanju ponude kreira se [Nova prilika](/docs/crm/chance/new-chance) ako u zaglavlju ponude nije unesena već postojeća; ako jest, postojeća prilika se ažurira.  
+**Vrsta mogućnosti:** ako je uz vrstu ponude povezana [vrsta prilike](/docs/configurations/tables/crm/opportunities/opportunity-type), prilikom spremanja ponude kreirat će se [nova prilika](/docs/crm/chance/new-chance) ako u zaglavlju ponude nije unesena već postojeća prilika. Ako je postojeća prilika unesena, ona će se ažurirati.
 
-**Upravljanje sredstvima i Tip operacije**: flag omogućuje upravljanje sredstvima za ovaj tip dokumenta. U sljedećem polju označava se tip operacije sredstava, koji u slučaju prodaje može biti potpuna ili djelomična prodaja ili uništenje.      
+**Osnovna sredstva i vrsta operacije:** ova opcija omogućuje upravljanje osnovnim sredstvima za ovu vrstu dokumenta. U sljedećem polju navodi se vrsta operacije nad osnovnim sredstvima koja u slučaju prodaje može biti potpuno ili djelomično otuđenje ili uništenje.
 
-**Tip popusta/Opis**: u ovoj koloni moguće je povezati tip popusta koji će se primijeniti kada se popusti unose direktno u kolonu Popusti artikla u mreži artikala dokumenta (za više detalja pogledati članak [Upravljanje pojednostavljenim widgetom popusta](/docs/sales/sales-flow/discount-widget)).
+**Vrsta popusta/Opis:** u ovom stupcu moguće je povezati vrstu popusta koja će se predložiti prilikom izravnog unosa popusta u stupac *Popusti artikla* u tablici artikala dokumenta. Za više pojedinosti pogledajte članak [Upravljanje pojednostavnjenim widgetom za popuste](/docs/sales/sales-flow/discount-widget).
 
+**Upravljanje WEEE-om:** ova opcija omogućuje upravljanje [WEEE-om](/docs/sales/sales-flow/raee) za ovu vrstu dokumenta.
