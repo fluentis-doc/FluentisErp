@@ -11,7 +11,7 @@ Ako konfiguraciju namjeravate izvršiti ručno, pogledajte kontrolni popis na po
 
 U ovoj tablici definiraju se vrste izvanbilančnih dospijeća kojima će se ručno upravljati unutar modula tijeka novca.
 
-**Konto / Podkonto / Opis:** omogućuje dodjelu konta (primjerice računovodstvenog konta *Obveze za plaće zaposlenika* vrsti dospijeća nazvanoj *Plaće*), kojim će se označavati izvanbilančna dospijeća unesena u izvještaj [**Analiza tijeka novca**](/FluentisErp/docs/treasury/cash-flow/reports). Ako se konto ne definira, ta će dospijeća biti prikazana samo pomoću polja Šifra.
+**Konto / Podkonto / Opis:** omogućuje dodjelu konta (primjerice računovodstvenog konta *Obveze za plaće zaposlenika* vrsti dospijeća nazvanoj *Plaće*), kojim će se označavati izvanbilančna dospijeća unesena u izvještaj [**Analiza tijeka novca**](/docs/treasury/cash-flow/reports). Ako se konto ne definira, ta će dospijeća biti prikazana samo pomoću polja Šifra.
 
 **Konto banke / Podkonto / Opis:** svakoj vrsti moguće je dodijeliti **bankovni** analitički konto za usmjeravanje novčanog toka (radi prikaza tijeka novca po bankama).
 
