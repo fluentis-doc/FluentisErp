@@ -1,93 +1,97 @@
 ---
-title: Numeracije u Fluentisu
+title: Fluentis numeracije
 sidebar_position: 13
 last_update:
   date: 03/30/2023
 ---
 
-U fazi unosa novog dokumenta, jedan od prvih podataka koji se traže je broj dokumenta o kojem se radi. Ovaj podatak se automatski predlaže zahvaljujući tablicama numeratora.
+Prilikom unosa novog dokumenta jedan od prvih potrebnih podataka jeste broj predmetnog dokumenta. Taj podatak se automatski predlaže zahvaljujući tabelama brojača.
 
-U Fluentisu je upravljanje numeratorima podijeljeno prema vrsti dokumenta, kao što možemo vidjeti iz stavki izbornika prisutnih među tablicama svakog modula.
+U Fluentisu je upravljanje brojačima podeljeno prema tipovima dokumenata, što možemo videti prema stavkama menija koje se nalaze u tabelama svakog modula.
 
-Logika koja stoji iza svih ovih numeratora je ista, stoga ćemo razmotriti jedan, posebno **Numeraciju kompenzacija**, koja će poslužiti kao teorijska osnova za definiranje numeratora drugih vrsta dokumenata.
-U formi **Numeriranje naplate** prikazana je tablica s popisom postojećih numeratora za kompenzacije. To znači da je moguće upravljati s više numeratora unutar iste vrste dokumenta. Klikom na tipku **Novi** otvara se forma **Numeracija**.
+Logika na kojoj se zasnivaju svi ovi brojači je ista, stoga ćemo detaljnije pogledati jedan od njih, odnosno numerisanje prebijanja, koje može poslužiti kao teorijska osnova za definisanje brojača drugih tipova dokumenata.
 
+U obrascu **Numeracija prebijanja** nalazi se tabela sa spiskom brojača koji se koriste za prebijanja. To znači da je moguće definisati više brojača za isti tip dokumenta. Klikom na dugme **Novo** otvara se obrazac **Numeracija**.
 
 ![](/img/it-it/configurations/tables/fluentis-numerations/image01.png)
 
-### Gornji odjeljak 
+**### Gornji odeljak**
 
-**Šifra**: kod numeratora;  
+**Šifra**: šifra brojača;
 
-**Naziv konta**: opis numeratora;
+**Opis**: opis brojača;
 
-**Formula broja**: u ovom polju može se postaviti vrijednost alfanumeričkog niza koja će biti pohranjena u zadanoj alfanumeričkoj svojini ‘FormattedNumber’ objekta (dok se numeričko polje pohranjuje u svojinu ‘Number’). Definicija *Formule* za formatiranje broja dokumenta može se postaviti na razini tipa numeracije, razini razdoblja valjanosti tipa numeracije ili na razini definicije intervala valjanosti. Prioritet primjene je odozdo prema gore: prvo se provjerava postoji li definirana formula u intervalima valjanosti, ako nema, provjerava se na razini razdoblja valjanosti, a ako ni tamo nema, provjerava se na razini tipa numeracije.
+**Formula broja**: u ovom polju moguće je definisati vrednost alfanumeričkog niza koji će biti sačuvan u podrazumevanom alfanumeričkom svojstvu objekta „FormattedNumber” (dok se numerička vrednost čuva u svojstvu „Number”). Formula za oblikovanje broja dokumenta može se definisati na nivou tipa numeracije, perioda važenja tipa numeracije ili opsega važenja. Primenjuje se načelo prioriteta od najnižeg ka najvišem nivou: najpre se proverava da li je formula definisana u opsezima važenja. Ako nije, proverava se da li je definisana u periodima važenja, a ako nije ni tamo, koristi se formula definisana na nivou tipa numeracije.
 
-Na slici iznad (preuzeto iz numeracija za kompenzacije) unesena je sljedeća formula “Year.ToString() + "-" + Number.ToString("D5") + "-" + SalesInvoiceType.Code”, što će generirati niz u formatu: “2015-00001-TestCode”.
+Na gornjoj slici (preuzetoj iz brojača prebijanja) uneta je formula „Year.ToString() + "-" + Number.ToString("D5") + "-" + SalesInvoiceType.Code”, koja će generisati niz u obliku „2015-00001-TestCode”.
 
-Drugi primjer – umetanje vrijednosti koju unosi korisnik: “Number.ToString("D5") + "-" + "-" + (CreationUser != null ? CreationUser.Description.Substring(0,3) : "")”
+Drugi primer: uključivanje vrednosti koju je uneo korisnik koji unosi dokument u broj: „Number.ToString("D5") + "-" + "-" + (CreationUser != null ? CreationUser.Description.Substring(0,3) : "")”
 
-U ovom slučaju potrebno je dodatno intervenirati i na razini ARM sustava, kako bi se omogućilo da setter za formatirani broj ima pristup svojstvu korisnika. Unutar sekcije Patterns, uređuje se odgovarajući setter.
+U ovom slučaju potrebno je napraviti i izmenu na nivou ARM-a kako bi se u podešavanjima (setteru) formatiranog broja omogućio pristup svojstvu korisnika: unutar odeljka Patterns uređuje se ovaj setter.
 
 ![](/img/it-it/configurations/tables/fluentis-numerations/image02.png)
 
-Zatim se aktivira oznaka **Used**:
+Zatim je potrebno označiti opciju **Used**:
 
 ![](/img/it-it/configurations/tables/fluentis-numerations/image03.png)
 
-Spremi, u IIS-u ponovo pokreni pool Fluentis i dobit ćeš operativne podatke.
+Nakon čuvanja potrebno je ponovo pokrenuti Fluentisov skup aplikacija (Application Pool) u IIS-u kako bi podatak postao operativan.
 
-*Dodatni primjer*: postavljanje broja fakture (ili otpremnice) s oznakom, (npr. 1/A, 2/A.... 1/B, 2/B):
+*Dodatni primer*: postavljanje broja fakture (ili otpremnice) sa oznakom iza kose crte (na primer 1/A, 2/A... 1/B, 2/B):
 
-number.ToString()+"/B"
+`number.ToString()+"/B"`
 
-potrebno unijeti u numeraciju (u zaglavlju)
+Ovu formulu potrebno je uneti u brojač (u zaglavlju).
 
-Zatim je u izvještaju potrebno zamijeniti standardno polje (npr. Number) s izračunatim poljem (npr. CalcNumber), unutar kojeg se nalazi sljedeći izraz:  
+Zatim je u izveštaju potrebno zameniti standardno polje (npr. Number) izračunatim poljem (npr. CalcNumber), koje treba da sadrži sledeći izraz:
 
-Iif(IsNullOrEmpty([FormattedNumber]),  [Number], [FormattedNumber])
+`Iif(IsNullOrEmpty([FormattedNumber]), [Number], [FormattedNumber])`
 
-*NAPOMENA*: ovo funkcionira isključivo u izvještaju, u formama će se i dalje prikazivati standardni broj bez kosog broja.
+*PAŽNJA*: ovo funkcioniše samo u izveštaju. U obrascima će se i dalje prikazivati uobičajeni broj bez oznake iza kose crte.
 
-**Onesposobljen**: za onemogućavanje brojača.
+**Onemogućeno**: omogućava onemogućavanje brojača.
 
-### Politike upravljanja (prva tablica)
+**### Pravila upravljanja (prva tabela)**
 
-U ovom odjeljku unose se politike upravljanja brojačem.
+U ovom odeljku definišu se pravila upravljanja brojačem.
 
-**Nalog**: kod zapisa retka;
+**Redosled**: šifra zapisa reda;
 
-**Vrijedi od datuma**: obavezno polje koje označava početni datum važenja numeracije;
+**Važi od datuma**: obavezno polje koje označava početni datum perioda važenja numeracije;
 
-**Valjan na datum**: datum završetka važenja intervala. Polje može biti prazno (vidi sljedeće polje);
+**Važi do datuma**: završni datum važenja perioda. Polje može ostati prazno (vidi sledeće polje);
 
-**Razdoblje**: periodičnost intervala. Opcije su *Nema* (interval vrijedi samo u definiranom rasponu; ako nema datuma završetka, brojač je stalni), *Godišnje* (brojač se automatski resetira na početni broj svake godine, do datuma završetka valjanosti), *Mjesečno* (brojač se automatski resetira na početni broj svaki mjesec, do datuma završetka valjanosti), *Dnevno* (brojač se automatski resetira na početni broj svaki dan, do datuma završetka valjanosti);  
+**Period**: učestalost ponavljanja perioda. Dostupne su sledeće mogućnosti:
 
-**Smjenski mjeseci**: mjeseci koje treba dodati na početni datum valjanosti da bi se dobio mjesec u kojem se brojač resetira;
+- *bez grupisanja*: period važi samo unutar definisanog opsega. Ako završni datum nije unet, brojač važi neograničeno.
+- *Godišnje*: brojač se automatski vraća na početni broj svake godine, sve do završetka perioda važenja.
+- *Mesečno*: brojač se automatski vraća na početni broj svakog meseca, sve do završetka perioda važenja.
+- *Dnevno*: brojač se automatski vraća na početni broj svakog dana, sve do završetka perioda važenja.
 
-**Smjenski dani**: dani koje treba dodati na početni datum valjanosti da bi se dobio dan u kojem se brojač resetira;  
+**Pomeranje meseci**: broj meseci koji se dodaju početnom datumu važenja kako bi se dobio mesec u kojem se brojač ponovo postavlja;
 
-**Progresivni datumski broj**: ako je aktivno, osigurava da numeracija bude progresivna po datumu, sprečavajući unos dokumenta s većim brojem, ali s datumom ranijim od posljednjeg unosa;
+**Pomeranje dana**: broj dana koji se dodaju početnom datumu važenja kako bi se dobio dan u kojem se brojač ponovo postavlja;
 
-**Oporavak brojeva**: omogućuje automatsko popunjavanje praznina u numeraciji. Ako je aktivan **Progresivni datumski broj** vraćanje broja može se dogoditi samo ako je u skladu s gore navedenim pravilima;
+**Progresivni datumski broj**: ako je ova opcija aktivirana, numerisanje se sprovodi hronološki prema datumu. Time se onemogućava unos dokumenta sa brojem većim od poslednjeg unetog broja, ali sa datumom koji prethodi datumu poslednjeg dokumenta;
 
-**Onesposobljen**: za onemogućavanje politike numeracije;
+**Oporavak brojeva**: omogućava automatsko popunjavanje praznina u numeraciji. Ako je aktivirana opcija **Hronološki redosled brojeva**, broj se može ponovo upotrebiti samo ako je to u skladu sa prethodno opisanim pravilima za ovu opciju;
 
+**Onemogućeno**: omogućava onemogućavanje pravila numeracije.
 
-### Numerički intervali (druga tablica)
+**### Numerički opsezi (druga tabela)**
 
-Ova tablica je povezana s odabranom politikom iz gornje tablice.
+Ova tabela povezana je sa pravilom odabranim u prethodnoj tabeli.
 
-**Nalog**: kod numeričkog intervala;  
+**Redosled**: šifra numeričkog opsega;
 
-**Početni broj**: obavezno polje koje označava početni broj intervala;
+**Početni broj**: obavezno polje koje označava početni broj opsega;
 
-**Početni broj pretraživanja**: može se unijeti ako se želi ograničiti pretraživanje broja na određeni početni interval;
+**Početni broj pretrage**: može se uneti ako se želi ograničiti pretraga broja na određeni opseg;
 
-**Završni broje**: maksimalni broj intervala, može biti prazno;
+**Završni broj**: najveći broj u opsegu; polje može ostati prazno;
 
-**Vanjska Numeracija**: označiti ako numeraciju ne dodjeljuje Fluentis, već neki vanjski sustav;  
+**Eksterna numeracija**: označava se ako brojeve ne dodeljuje Fluentis, već eksterni sistemi;
 
-**Formula numero**: ne koristi se;
+**Formula broja**: u ovom polju moguće je povezati formulu koja će se koristiti za datumski opseg odabran u prvoj tabeli;
 
-**Onesposobljen**: za onemogućavanje korištenja navedenog intervala.  
+**Onemogućeno**: omogućava onemogućavanje korišćenja predmetnog opsega.
