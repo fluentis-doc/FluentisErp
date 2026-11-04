@@ -1,26 +1,28 @@
 ---
-title: ExtraData
+title: Dodatni podaci (ExtraData)
 sidebar_position: 0
 ---
 
-Obrazac **ExtraData** dostupan je putem izbornika **Konfiguracija > Uslužni program > **ExtraData**.
+Obrascu **ExtraData** može se pristupiti putem menija **Konfigurisanje > Korisnost > Dodatni podaci > Dodatni podaci**.
 
-**ExtraData** omogućuje dodavanje **novih svojstava** standardnim i prilagođenim Fluentis objektima bez potrebe za korištenjem prilagođenog koda i kompilacijom projekata temeljenih na **custom code**.      
-Svi glavni funkcionalni objekti, poput artikala, narudžbi i računa, već su pripremljeni za proširenje putem ExtraData.  
+**ExtraData** omogućava dodavanje **novih svojstava** standardnim i prilagođenim Fluentis objektima bez potrebe za korišćenjem prilagođenog koda i kompilacijom projekata zasnovanih na **prilagođenom kodu**.
 
-### Standardni filter  
-Standardni filter omogućuje pretraživanje definiranih ExtraData unutar Fluentisa putem **šifre**.  
+Svi glavni funkcionalni objekti, kao što su artikli, narudžbine i fakture, već podržavaju dodavanje ExtraData zapisa.
 
-### ExtraData
+### Standardni filter
 
-Tablica prikazuje rezultate koji se odnose na pojedinačne ExtraData definicije u Fluentisu.  
+Standardni filter omogućava pretraživanje ExtraData zapisa definisanih u Fluentisu prema **šifri**.
 
-Otvaranjem detaljnog obrasca pojedinog ExtraData, pristupa se panelu za parametrizaciju ExtraData vrijednosti.
+### Dodatni podaci (ExtraData)
 
-#### Specifične tipke
+Tabela sadrži rezultate koji se odnose na pojedinačne ExtraData zapise definisane u Fluentisu.
 
-> **Pretraži**: omogućuje pretragu postojećih ExtraData.  
-> **Novi**: omogućuje kreiranje nove ExtraData definicije.   
-> **Uredi**: omogućuje otvaranje postojeće ExtraData u načinu za uređivanje.   
-> **Prikaz**: omogućuje otvaranje postojeće ExtraData u načinu samo za čitanje.   
-> **Obriši**:  omogućuje brisanje postojeće ExtraData definicije.  
+Otvaranjem obrasca sa detaljima pojedinačnog ExtraData zapisa pristupa se panelu za konfigurisanje njegovih parametara.
+
+#### Posebna dugmad
+
+> **Traži**: omogućava pretraživanje postojećih ExtraData zapisa.
+> **Novo**: omogućava kreiranje novog ExtraData zapisa.
+> **Izmeni**: omogućava otvaranje postojećeg ExtraData zapisa u režimu čitanja i pisanja.
+> **Prikaži**: omogućava otvaranje postojećeg ExtraData zapisa u režimu samo za čitanje.
+> **Ukloni**: omogućava brisanje postojećeg ExtraData zapisa.

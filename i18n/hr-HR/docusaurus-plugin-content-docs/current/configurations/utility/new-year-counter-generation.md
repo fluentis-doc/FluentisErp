@@ -3,33 +3,37 @@ title: Generiranje brojača za novu godinu
 sidebar_position: 3
 ---
 
-Ovaj obrazac omogućuje upravljanje brojačima prisutnima u Fluentisu, posebno prilikom prijelaza na novu godinu.
+Obrazac omogućuje upravljanje brojačima u Fluentisu, osobito prilikom prijelaza u novu godinu.
 
-Prilikom otvaranja obrasca, Fluentis prikazuje **Zadnju postojeću upravljanu godinu** (preuzetu iz računovodstvenih parametara) i filter za *brojače koji nisu valjani za sljedeću godinu*.
+Prilikom otvaranja obrasca Fluentis prikazuje **posljednju postojeću poslovnu godinu** (preuzetu iz računovodstvenih parametara) i filtar za *brojače koji neće biti valjani u sljedećoj godini*.
 
-Mrežna tablica prikazuje popis brojača koji nisu definirani (ili nisu ispravno definirani) za nadolazeću godinu, što korisniku omogućuje da dvostrukim klikom identificira razlog: problem obično proizlazi iz konfiguracije brojača s datumom završetka valjanosti bez opravdanog razloga. To je ranije zahtijevalo ručno dodavanje novog retka svake godine, umjesto da se brojač postavi kao "godišnji", koji se automatski resetira svake godine.
-Ipak, moguće je da je brojač namjerno deaktiviran iz određenog razloga (npr. promjena politike numeracije itd.).
+Tablica prikazuje popis brojača koji nisu definirani (ili nisu ispravno definirani) za sljedeću godinu. Dvostrukim klikom korisnik može utvrditi razlog. Problem je najčešće u konfiguraciji brojača kojem je bez opravdanog razloga postavljen datum završetka valjanosti. Zbog toga je prije uvođenja ove automatizacije svake godine bilo potrebno izrađivati novi redak, umjesto da se brojač postavi na opciju **Godišnje**, koja automatski započinje ispočetka svake godine.
 
-#### Specifične tipke
+Međutim, moguće je i da je brojač blokiran iz određenog razloga (npr. zbog promjene pravila numeracije).
 
-> **Kreiranje**: prikazuje poruku za potvrdu automatske korekcije brojača za odabrane retke u tablici.  
-> **Povrat postupka**: izvršava povrat postupka.
+#### Posebni gumbi
 
-*Primjer*  
-Ako se na poruku odgovori:  
-- potvrdno: bit će uklonjeni datumi završetka valjanosti za brojače koji su (pretpostavlja se) pogrešno zatvoreni tijekom 2017. godine iz primjera (brojači zatvoreni prije 2017. neće biti otključani). Uz to, brojači će biti postavljeni kao godišnji, kako bi ostali trajno valjani.  
-- Odbijeno: Fluentis brojači ostat će nepromijenjeni.  
+> **Kreiranj**: gumb prikazuje poruku kojom se traži potvrda automatskog ispravljanja brojača za retke odabrane u tablici.
+>
+> **Povrat**: izvršava vraćanje postupka na prethodno stanje.
 
+*Primjer*
 
-Napravimo nekoliko primjera:  
+Ako na poruku odgovorimo na sljedeći način:
 
-A) Pretpostavimo da je posljednja godina 2017., a brojač faktura u Fluentisu s kodom ‘1’ postavljen je s datumom završetka valjanosti u 2020., dakle važi i za 2018, postupak će tada automatski kreirati i odgovarajući brojač ex-Ideale2010 s kodom ‘1’ za 2018.
+- **Potvrdno** – uklonit će se datumi završetka valjanosti brojača za koje se pretpostavlja da su pogrešno zatvoreni u 2017. godini iz primjera (brojači zatvoreni prethodnih godina neće se deblokirati). Osim toga, postavit će se kao „godišnji” kako bi trajno ostali valjani.
+- **Odbijemo** – brojači u Fluentisu ostat će nepromijenjeni.
 
-B) pretpostavimo posljednju godinu 2017., brojač faktura Fluentis s kodom ‘2’ postavljen s datumom završetka valjanosti 2017., i stoga NIJE valjan za 2018. Ako korisnik potvrdi ispravak brojača u Fluentisu, tada će u brojaču: biti uklonjen datum završetka valjanosti, tip će biti postavljen kao godišnji, i zatim će biti ponovno kreiran odgovarajući brojač ex-Ideale2010 s kodom ‘2’. U slučaju da brojač u Fluentisu ne bude ispravljen, taj brojač neće biti valjan za 2018., i stoga će i brojač ex-Ideale2010 s kodom ‘2’ ostati blokiran.
+Pogledajmo nekoliko primjera:
 
-C) Pretpostavimo da je posljednja godina 2017., a brojač faktura u Fluentisu s kodom ‘3’ nema definiran datum završetka valjanosti, pa je već valjan za 2018. U tom slučaju, postupak će u svakom slučaju (bez obzira na korisnikov odgovor na poruku) kreirati brojač ex-Ideale2010 s kodom ‘3’ za 2018.
+A) Pretpostavimo da je posljednja poslovna godina 2017. Brojač računa u Fluentisu sa šifrom „1” ima postavljen datum završetka valjanosti 2020. i stoga je valjan za 2018. godinu. Postupak će izraditi i odgovarajući brojač ex-Ideale2010 sa šifrom 1 za 2018. godinu.
+
+B) Pretpostavimo da je posljednja poslovna godina 2017. Brojač računa u Fluentisu sa šifrom „2” ima postavljen datum završetka valjanosti 2017. i stoga NIJE valjan za 2018. godinu. Ako korisnik potvrdi ispravak brojača u Fluentisu, uklonit će se datum završetka valjanosti i vrsta brojača postavit će se na godišnju. Zatim će se ponovno izraditi odgovarajući brojač ex-Ideale2010 sa šifrom „2”.
+
+Ako korisnik ne potvrdi ispravak brojača u Fluentisu, taj brojač neće biti valjan za 2018. godinu, pa će i odgovarajući brojač ex-Ideale2010 sa šifrom „2” ostati blokiran.
+
+C) Pretpostavimo da je posljednja poslovna godina 2017. Brojač računa u Fluentisu sa šifrom „3” nema postavljen datum završetka valjanosti i stoga je valjan za 2018. godinu. Postupak će izraditi i odgovarajući brojač ex-Ideale2010 sa šifrom 3 za 2018. godinu, neovisno o korisnikovu odgovoru na poruku za potvrdu ispravka brojača u Fluentisu.
 
 :::tip NAPOMENA
-Ova funkcionalnost omogućuje i kreiranje računovodstvenih parametara za novu godinu.
-Prikazat će se poruka koja traži potvrdu. Preporučuje se prihvatiti kreiranje, jer će u protivnom računovodstveni parametri, **neophodni** za bilo kakvo knjiženje, morati biti ručno kreirani za novu godinu putem [**odgovarajućeg obrasca**](/docs/configurations/parameters/finance/accounting-parameters).
+Ovaj alat omogućuje i izradu računovodstvenih parametara za novu godinu. Prikazat će se odgovarajuća poruka s upitom za potvrdu. Preporučuje se potvrditi izradu jer se računovodstveni parametri, **nužni** za izvršavanje bilo kojeg računovodstvenog knjiženja, u suprotnom moraju izraditi za novu godinu putem [**odgovarajućeg obrasca**](/docs/configurations/parameters/finance/accounting-parameters).
 :::

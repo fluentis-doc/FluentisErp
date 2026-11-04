@@ -1,299 +1,313 @@
 ---
-title: ExtraData konfiguracija 
+title: Novi ExtraData
 sidebar_position: 1
 ---
 
-Idi na **Početna stranica > Uslužni programi > ExtraData > ExtraData** i klikni na tipku **Novo**
+Obrascu **ExtraData** može se pristupiti putem menija **Konfigurisanje > Korisnost > Dodatni podaci > Dodatni podaci**.
 
-:::note Informacije potrebne za kreiranje novih ExtraData variraju ovisno o vrsti odabranog ExtraData:   
+:::note
+Podaci potrebni za kreiranje novih ExtraData zapisa razlikuju se u zavisnosti od odabranog tipa ExtraData zapisa:
+
 1. **Jednostavni ExtraData**
-2. **ExtraData bazirani na objektu**
-3. **ExtraData bazirani na izvoru podataka**
+2. **ExtraData zasnovan na objektu**
+3. **ExtraData zasnovan na izvoru podataka**
 :::
 
-### **1.Jednostavni ExtraData**
+### 1. Jednostavni ExtraData
 
+Pomoću jednostavnog ExtraData zapisa moguće je dodati nova jednostavna svojstva postojećem Fluentis objektu.
 
-Kroz jednostavni ExtraData moguće je dodati nova jednostavna svojstva (propertiji) postojećem Fluentis objektu.    
-Takva svojstva mogu biti različitih tipova:  
+Svojstva koja se mogu dodati mogu biti različitih tipova:
 
-- **Booleani**.
-- **String**.
-- **Cijeli brojevi**, **decimalni brojevi**.
-- **Nizovi**.
+- **Bulove vrednosti**
+- **Tekstualni nizovi**
+- **Celi brojevi**, **decimalni brojevi**
+- **Nizovi (Array)**
 
 #### 1.1 Zaglavlje
- 
-U ovom primjeru kreiramo **jednostavni** ExtraData tipa string s nazivom **Model**.  
 
-#### Specifična polja  
-- **Kod**: identificira extradata polje.
-- **Vrsta sadržaja**: bit će jednostavnog tipa.
-- **Vrsta widgeta**: definira način prikaza i odabira za tipove Predmeta i Datasource. Za tip Simple ovo polje ostaje prazno jer će se koristiti zadani widget okvira vezan uz tip podatka.  
-- **Naziv**: mora biti riječ prisutna u rječniku, u suprotnom ju je potrebno dodati.    
-- **Vrsta podataka**: odnosi se na tip podatka.  
-- **Stereotip**: dodatne opcije za formatiranje polja, poput višelinijskog teksta ili definiranja broja decimalnih mjesta.  
-- **Opis**: obavezan – opis koji će biti prikazan; kao i Naziv, mora biti odabran iz rječnika.  
-- **Početak/Kraj valjanosti**: koristi se ako želimo da extradata ima vremensko ograničenje valjanosti.  
-- **Pravo za prikaz / Pravo za izmjenu**: omogućuje povezivanje određenog prava koje dozvoljava prikaz ili izmjenu extradata polja.  
+U ovom primeru kreiraćemo **jednostavni** ExtraData tekstualnog tipa i nazvaćemo ga **Model**.
 
-**Stereotip** je aktivan za **Vrstu podataka**: Date (DateTime e Time); Decimal (Currency e Numeric); Double, Float e Long (Numeric); Int (Color, Numeric e Year); Short (Numeric e Year); String (MultiLine).
+#### Posebna polja
 
-Stereotip je moguće aktivirati za sve aktivirane objekte i za svaki pojedinačni objekt.  
+- **Šifra**: identifikuje ExtraData.
+- **Tip sadržaja**: bira se jednostavni tip.
+- **Tip widgeta**: definiše način prikaza i izbora za tipove Objekt i Izvor podataka. Za tip Simple ovo polje treba ostaviti praznim jer će se učitati podrazumevani widget okvira povezan sa tipom podatka.
+- **Naziv**: mora biti reč koja postoji u rečniku; u suprotnom je potrebno dodati je u rečnik.
+- **Tip podatka**: određuje tip podatka.
+- **Stereotip**: dodatne mogućnosti oblikovanja polja, kao što su višeredni tekst ili definisanje broja decimalnih mesta.
+- **Opis**: obavezno polje – opis koji će se prikazivati. Kao i Naziv, bira se iz rečnika.
+- **Početak/kraj važenja**: koristi se ako želimo da definišemo vremenski ograničeno važenje ExtraData zapisa.
+- **Pravo prikaza / Pravo izmene**: omogućava povezivanje određenog prava kojim se dozvoljava pregled ili izmena ExtraData zapisa.
+
+**Stereotip** se može aktivirati za sledeće tipove podataka: Date (DateTime i Time); Decimal (Currency i Numeric); Double, Float i Long (Numeric); Int (Color, Numeric i Year); Short (Numeric i Year); String (MultiLine).
+
+Stereotip se može aktivirati za sve aktivirane objekte ili za pojedinačni objekat.
 
 #### 1.2 Aktivacije
 
-Kartica **Aktivacije** odnosi se na **nadređene objekte** sustava Fluentis na koje se povezuju ExtraData polja.  
-Svaki ExtraData može imati više nadređenih objekata.  
+Tabela **Aktivacije** odnosi se na **nadređene objekte** Fluentisa sa kojima se povezuju ExtraData zapisi.
 
-Mreža aktivacija omogućuje definiranje klasa na kojima će ExtraData biti dostupan.   
+Svaki ExtraData zapis može imati više nadređenih objekata.
 
-#### Specifična polja   
-- **Nadređeni objekt**: objekt na koji je vezan ExtraData, u našem slučaju FSItem. Svaki ExtraData može biti povezan s više objekata.  
-- **Svojstvo**: odnosi se na svojstvo nadređenog objekta u kojem će se učitati ExtraData. U ovom slučaju, svojstvo ExtraData je prisutno na objektu FSItem, generirano referencom koja povezuje FSItem s FSItemExtraData.   
-- **Required**: označava je li ExtraData obavezan za objekt s kojim je povezan.  
-- **To Print**: označava treba li ExtraData biti dostupan za ispis.  
-- **Naručivanje**: odnosi se na redoslijed nadređenog objekta, nema utjecaja na funkcioniranje, obično ostaje postavljeno na 0.  
-- **Start valid**/**End validity**: ako je valjanost vremenski ograničena, označava početak i kraj razdoblja u kojem se ExtraData može koristiti.   
-- **Stereotype**: formatiranje polja, mijenja se ovisno o vrsti podatka. Prepisuje opći stereotip definiran za ExtraData ako se želi prisiliti specifično ponašanje za određeni objekt koji se razlikuje od zadanog.  
+Tabela aktivacija omogućava definisanje klasa za koje će ExtraData biti dostupan.
 
-### Unos ExtraData polja u formu detalja  
+### Posebna polja
 
-Jedna od glavnih novosti uvedenih od verzije Fluentis2021 je mogućnost da se widget koji učitava sadržaj ExtraData polja umetne izravno u formu detalja.  
-U ovom slučaju, budući da je ExtraData jednostavnog tipa, bit će učitan zadani widget frameworka povezan s vrstom podatka.   
+- **Nadređeni objekat**: objekat sa kojim se povezuje ExtraData, u našem slučaju FSItem. Svaki ExtraData zapis može se povezati sa više objekata.
+- **Svojstva**: svojstvo nadređenog objekta u koje će se učitati ExtraData. U ovom slučaju svojstvo ExtraData prisutno je na objektu FSItem, a generiše se referencom koja povezuje FSItem i FSItemExtraData.
+- **Obavezno**: označava da li je ExtraData obavezan za objekat sa kojim je povezan.
+- **Odštampati**: označava da li ExtraData treba da bude dostupan za štampanje.
+- **Sortiraj**: određuje redosled nadređenog objekta. Ne utiče na funkcionisanje i obično se ostavlja na vrednosti 0.
+- **Početak važenja / Kraj važenja**: ako je važenje vremenski ograničeno, označava početak i kraj perioda tokom kojeg se ExtraData može koristiti.
+- **Stereotip**: oblikovanje polja koje se razlikuje u zavisnosti od tipa podatka. Može nadjačati opšti stereotip definisan za ExtraData ako se za određeni objekat želi nametnuti drugačije ponašanje od podrazumevanog.
 
-Za uključivanje ExtraData polja u formu detalja artikla (FSItem), možemo koristiti **form navigator** i **object navigator**.  
-1. Iz **Object Navigatora**, proširujemo čvor ExtraData koji se odnosi na poslovni objekt i odabiremo željeni ExtraData.  
-2. Iz **Form Navigatora**, proširujemo navigator do kartice Općenito u koji želimo umetnuti ExtraData.  
+**### Umetanje ExtraData zapisa u obrazac sa detaljima**
 
-Za prikaz ExtraData polja u formi detalja artikla dovoljno je povuci i ispusti (drag and drop) iz Object Navigatora u Form Navigator.  
-Za **trajni** prikaz ExtraData polja u formi detalja artikla dovoljno je kreirati specifičan profil i učitati ga svaki put kada je potrebno prikazati ExtraData.  
-Na kraju, također unutar forme detalja artikla, postoji poseban tab nazvan **Extra data**, gdje možemo pronaći sva ExtraData polja povezana s artiklom.  
-### **2. ExtraData temeljen na objektu**  
-Putem ExtraData temeljenog na objektu moguće je povezati svojstvo koje predstavlja **standardni** ili **prilagođeni (custom)** objekt s objektom u **Fluentis**.   
-*Kako bismo bolje objasnili ovaj koncept, koristit ćemo praktičan primjer u kojem povezujemo objekt **FSColor** koji predstavlja skup **boja**, s Fluentis standardnim objektom **FSItem (Artikl)***. 
+Jedna od glavnih novosti uvedenih od verzije Fluentis 2021. jeste mogućnost direktnog umetanja widgeta u obrazac sa detaljima, koji će učitati sadržaj ExtraData zapisa.
+
+U ovom slučaju, budući da je ExtraData jednostavnog tipa, učitaće se podrazumevani widget okvira povezan sa tipom podatka.
+
+Za uključivanje ExtraData zapisa u obrazac sa detaljima artikla (FSItem) možemo koristiti **Form Navigator** i **Object Navigator**.
+
+1. U odeljku **Object Navigator** proširimo čvor ExtraData koji se odnosi na poslovni objekat i odaberemo željeni ExtraData.
+2. U odeljku **Form Navigator** proširimo navigator do kartice Opšti podaci u koju želimo da umetnemo ExtraData.
+
+Za prikaz ExtraData zapisa u obrascu sa detaljima artikla dovoljno je prevući ga iz Object Navigatora u Form Navigator.
+
+Kako bi prikaz ExtraData zapisa u obrascu sa detaljima artikla bio **trajan**, dovoljno je kreirati poseban profil i učitati ga svaki put kada je potrebno prikazati ExtraData.
+
+Na kraju, u obrascu sa detaljima artikla postoji i posebna kartica **Extra data**, na kojoj se nalaze svi ExtraData zapisi povezani sa artiklom.
+
+### 2. ExtraData zasnovan na objektu
+
+Pomoću ExtraData zapisa zasnovanog na objektu moguće je povezati svojstvo predstavljeno **standardnim** ili **prilagođenim** objektom sa Fluentis objektom.
+
+*Kako bismo bolje objasnili ovaj koncept, poslužićemo se praktičnim primerom u kojem povezujemo objekat **FSColor**, koji predstavlja skup **boja**, sa standardnim Fluentis objektom **FSItem (Artikal)**.*
 
 #### 2.1 Zaglavlje
 
-Nastavljamo s kreiranjem **ExtraData** temeljenog na objektu **FSColor** koji ćemo nazvati **Color**.
+Kreiraćemo **ExtraData** zasnovan na objektu **FSColor** i nazvaćemo ga **Color**.
 
-- **Kod**: obbligatorio - codice.
-- **Content Type**: obavezno – omogućuje odabir widgeta za prikaz ExtraData. Dostupne su tri opcije:  
-  - **Combobox**: padajući izbornik koji prikazuje vrijednosti prema šifri/opisu.  
-  - **Autocomplete Code**: omogućuje unos šifre koja se automatski dovršava filtriranjem dostupnih zapisa.  
-  - **Autocomplete Description**: omogućuje unos opisa koji se automatski dovršava filtriranjem dostupnih zapisa.  
-- **Widget Type:**
-- **Business Object**: obavezno – omogućuje odabir objekta na kojem će se kreirati ExtraData, na primjer **FSColor** kako bi se stvorio ExtraData temeljen na **tablici šifri boja**.   
+- **Code**: obavezno polje – šifra.
+- **Content Type**: obavezno polje – omogućava odabir widgeta za prikaz ExtraData zapisa. Dostupne su tri mogućnosti:
+  - **Combobox**: padajući meni koji prikazuje vrednosti prema šifri/opisu.
+  - **Autocomplete Code**: omogućava unos šifre koja se automatski dopunjava filtriranjem dostupnih zapisa.
+  - **Autocomplete Description**: omogućava unos opisa koji se automatski dopunjava filtriranjem dostupnih zapisa.
+- **Widget Type**:
+- **Business Object**: obavezno polje – omogućava odabir objekta na kojem će se kreirati ExtraData. Na primer, odabirom objekta **FSColor** omogućava se kreiranje ExtraData zapisa zasnovanog na **tabeli šifara boja**.
 
 #### 2.2 Aktivacije
 
-Nastavljamo s povezivanjem **ExtraData** s poslovnim objektom **FSItem** (Artikl).  
-Vrijedi sve što je prethodno objašnjeno u prethodnom odlomku.  
+Povezaćemo **ExtraData** sa poslovnim objektom **FSItem** (Artikal).
 
-### Umetanje ExtraData u formu s detaljima
+Primenjuju se ista uputstva kao u prethodnom odeljku.
 
-Nakon što otvorimo formu s detaljima za željeni artikl, kako bismo uključili ExtraData u detaljnu formu objekta **FSItem**, possiamo utilizzare il **form navigator** e **l'object navigator**.  
-1. U **Object Navigatoru**, proširujemo čvor ExtraData koji se odnosi na poslovni objekt i odabiremo odgovarajući ExtraData.  
-2. U **Form Navigatoru**, proširujemo navigator sve do taba Općenito (Generalità) u koji želimo umetnuti ExtraData.    
+### Umetanje ExtraData zapisa u obrazac sa detaljima
 
-Za prikaz ExtraData u detaljnoj formi artikla dovoljno je povući i ispustiti (drag and drop) iz Object Navigatora u Form Navigator.  
-U ovom primjeru, ExtraData 'Color' umetnut je u LayoutGroup koji definira zaglavlje podataka artikla (FSItem).  
-ExtraData će imati widget tipa combobox (padajući izbornik) i prikazivat će točno vrijednosti **šifre** i **opisa** spremljene u odgovarajućoj tablici na MSSQL-u.  
+Nakon otvaranja obrasca sa detaljima željenog artikla, za uključivanje ExtraData zapisa u obrazac sa detaljima artikla **FSItem** možemo koristiti **Form Navigator** i **Object Navigator**.
 
-### **3. ExtraData temeljen na vanjskom DataSource-u**
+1. U odeljku **Object Navigator** proširimo čvor ExtraData koji se odnosi na poslovni objekat i odaberemo željeni ExtraData.
+2. U odeljku **Form Navigator** proširimo navigator do kartice Opšti podaci u koju želimo da umetnemo ExtraData.
 
-Putem ExtraData temeljenog na vanjskom DataSource-u moguće je povezati Fluentis objekt s vanjskom tablicom koja nije standardno prisutna u sustavu.  
+Za prikaz ExtraData zapisa u obrascu sa detaljima artikla dovoljno je prevući ga iz Object Navigatora u Form Navigator.
 
-*Kako bismo bolje objasnili ovaj scenarij korištenja, koristimo praktičan primjer u kojem je kreirana prilagođena tablica pod nazivom 'typology', koja predstavlja 3 različite završne obrade*.  
-Pomoću **FluentisQueryStudio**, spremamo SQL upit za dohvaćanje svih vrijednosti iz navedene tablice.  
+U primeru je ExtraData „Color” smešten u LayoutGroup koji definiše podatke zaglavlja artikla (FSItem).
 
-Tablica koju smo kreirali izgleda ovako:    
+ExtraData će imati widget tipa combobox (padajući meni) i prikazivaće vrednosti **šifre** i **opisa** sačuvane u odgovarajućoj MSSQL tabeli.
 
-| Id  | Code      | Description |
-| --- | --------- | ----------- |
-| 1   | Završna obrada1 | Satinirana  |
-| 2   | Završna obrada2 | Sjajna      |
-| 3   | Završna obrada3 | Matirana    |
+### 3. ExtraData zasnovan na izvoru podataka
 
-i rezultat je sljedećeg SQL upita:   
+Pomoću ExtraData zapisa zasnovanog na izvoru podataka moguće je povezati Fluentis objekat sa eksternom tabelom koja nije deo standardne konfiguracije.
 
-```SQL
-SELECT id as Id, code as Code, description as Description FROM DBO.TYPOLOGY
+*Kako bismo bolje objasnili ovaj scenario primene, poslužićemo se praktičnim primerom u kojem je kreirana prilagođena tabela pod nazivom „typology”, koja predstavlja tri različite završne obrade.*
+
+Pomoću alata **FluentisQueryStudio** sačuvaćemo SQL upit za preuzimanje svih vrednosti iz tabele.
+
+Kreirana tabela izgleda ovako:
+
+| Id | Code | Description |
+| --- | --- | --- |
+| 1 | Finitura1 | Satinata |
+| 2 | Finitura2 | Lucida |
+| 3 | Finitura3 | Opaca |
+
+Ovo je rezultat sledećeg SQL upita:
+
+```sql
+    SELECT id as Id, code as Code, description as Description FROM DBO.TYPOLOGY
 ```
 
-:::danger Pažnja  
-Struktura SQL upita mora sadržavati točno tri kolone: **Id**, **Code**, **Description**, u protivnom neće biti moguće kreirati odgovarajući DataSource.  
+:::danger[Pažnja]
+Struktura upita obavezno mora da se zasniva na tri kolone: **Id**, **Code** i **Description**. U suprotnom neće biti moguće kreirati odgovarajući izvor podataka.
 :::
 
-Pomoću **FluentisQueryStudio** sada kreiramo DataSource koji će biti baziran na gore prikazanom SQL upitu. Za detalje o korištenju **FluentisQueryStudio** pogledajte službenu dokumentaciju na sljedećem [**Linku**](#) 
+Pomoću alata **FluentisQueryStudio** kreiraćemo izvor podataka koji će se zasnivati na prethodno navedenom upitu. Za korišćenje alata **FluentisQueryStudio** pogledajte odgovarajuću dokumentaciju na sledećoj [**poveznici**](#).
 
 #### 3.1 Zaglavlje
 
-Sada nastavljamo s kreiranjem ExtraData ispunjavanjem informacija u zaglavlju:  
-- **Šifra** i **Opis**.
-- **DataSource** Type: odabrati SQL Query DataSource.   
-- **SQL Query**: odabrati željeni upit.  
-- **Area**: vrijednost iz rječnika.  
+Sada ćemo kreirati ExtraData i popuniti podatke zaglavlja:
 
-#### 3.2 Aktivacije 
+- **Code** i **Opis**.
+- **DataSource Type**: odabrati SQL Query DataSource.
+- **SQL Query**: odabrati željeni upit.
+- **Oblast**: vrednost iz rečnika.
 
-Nastavljamo s povezivanjem **ExtraData** s poslovnim objektom **FSItem** (Artikl).  
-Vrijedi sve što je prethodno objašnjeno u prethodnom odlomku.  
+#### 3.2 Aktivacije
 
-### Umetanje ExtraData u formu s detaljima  
+Povezaćemo **ExtraData** sa poslovnim objektom **FSItem** (Artikal).
 
-Nakon što otvorimo formu s detaljima za željeni artikl, kako bismo uključili ExtraData u formu s detaljima objekta FSItem, možemo koristiti **form navigator** i **l'object navigator**.  
-1. U **Object Navigatoru**, proširujemo čvor ExtraData koji se odnosi na poslovni objekt i odabiremo željeni ExtraData.  
-2. U **Form Navigatoru**, proširujemo navigator sve do taba Općenito (Generalità) u koji želimo umetnuti ExtraData.   
+Primenjuju se ista uputstva kao u prethodnom odeljku.
 
-Za prikaz ExtraData u detaljnoj formi artikla dovoljno je povući i ispustiti (drag and drop) iz Object Navigatora u Form Navigator.  
-ExtraData će imati widget tipa combobox (padajući izbornik) i prikazivat će točno vrijednosti **šifre** i **opisa** spremljene u odgovarajućoj tablici na bazi podataka.  
+### Umetanje ExtraData zapisa u obrazac sa detaljima
 
+Nakon otvaranja obrasca sa detaljima željenog artikla, za uključivanje ExtraData zapisa u obrazac sa detaljima artikla (FSItem) možemo koristiti **Form Navigator** i **Object Navigator**.
 
-#### 3.3 Propagacija ExtraData  
+1. U odeljku **Object Navigator** proširimo čvor ExtraData koji se odnosi na poslovni objekat i odaberemo željeni ExtraData.
+2. U odeljku **Form Navigator** proširimo navigator do kartice Opšti podaci u koju želimo da umetnemo ExtraData.
 
-Funkcionalnost vezana uz propagaciju ExtraData omogućuje **proširenje** određenog **ExtraData** definiranog na jednom objektu prema drugom, **izvedenom objektu**.  
-Na primjer, ExtraData definiran na objektu **FSItem** (Artikl) može se propagirati na objekt **FSSalesOrderItem** (Stavke prodajnog naloga),jer **FSSalesOrderItem*- **estende** la classe **FSItem**.  
+Za prikaz ExtraData zapisa u obrascu sa detaljima artikla dovoljno je prevući ga iz Object Navigatora u Form Navigator.
 
-#### Specifična polja   
-- **Property path**: obavezno – svojstvo koje povezuje klase.    
-- **Collection property**: obavezno – svojstvo kolekcije.   
-- **Editable**: omogućuje da ExtraData bude samostalno uređivan.  
-- **Proprity**: označava prioritet.   
-- **From val.  date / To validity date**: skoristi se ako želimo da vrijednost bude privremena – s definiranim početnim i završnim datumom.   
+ExtraData će imati widget tipa combobox (padajući meni) i prikazivaće vrednosti **šifre** i **opisa** sačuvane u odgovarajućoj tabeli u bazi podataka.
 
-Za upravljanje propagacijom s glavnog objekta na izvedeni objekt, potrebno je da ExtraData bude aktiviran na oba objekta unutar kartice **aktivacije**, a zatim se propagacija definira putem posebne kartice **propagation**.
+#### 3.3 Propagacija dodatnih podataka (ExtraData)
 
-### Umetanje ExtraData u formu s detaljima  
+Funkcionalnost propagacije dodatnih podataka omogućava **proširivanje** određenog **ExtraData** zapisa, definisanog na jednom objektu, na drugi **izvedeni objekat**.
 
-Nakon što otvorimo formu s detaljima za odgovarajući **prodajni nalog** kako bismo uključili ExtraData u formu, koristimo **form navigator** i **l'object navigator**.  
-1. U **Object Navigator** proširujemo čvor kolekcije **artikala**, zatim i čvor ExtraData.   
-2. Povučemo željeni ExtraData direktno na mrežu artikala povezanih s prodajnim nalogom.     
-ExtraData će imati widget tipa combobox (padajući izbornik) i prikazivat će vrijednost **šifre** spremljene u odgovarajućoj tablici na MSSQL bazi.  
+Na primer, ExtraData definisan na objektu **FSItem** (Artikal) može se propagirati na objekat **FSSalesOrderItem** (Stavke prodajnog naloga) jer klasa **FSSalesOrderItem** proširuje klasu **FSItem**.
 
-### **4. Umetanje ExtraData u izvještaj**  
+#### Specifična polja
 
-Što se tiče uključivanja **ExtraData** u izvještaje, moguće je konfigurirati tri različita scenarija, ovisno o vrsti ExtraData:  
-* Jednostavni ExtraData  
-* ExtraData temeljen na objektu  
-* ExtraData temeljen na vanjskom DataSource-u  
+- **Property path**: obavezno – svojstvo koje povezuje klase.
+- **Collection property**: obavezno – svojstvo kolekcije.
+- **Editable**: omogućava nezavisno uređivanje dodatnih podataka (ExtraData).
+- **Priority**: označava prioritet.
+- **From validity date / To validity date**: koristi se ako želimo da zapis bude privremen, odnosno da ima datum početka i završetka važenja.
 
-### 4.1 Jednostavni ExtraData  
+Za upravljanje propagacijom sa glavnog objekta na izvedeni objekat potrebno je na kartici **Aktivacije** aktivirati ExtraData na oba objekta, a zatim propagaciju konfigurisati putem odgovarajuće kartice **Propagation**.
 
-Za jednostavni ExtraData potrebno je uključiti sljedeću metodu u sekciju skripte izvještaja.
-U primjeru, ExtraData tipa objekt je povezan s računom za prodaju.  
+### Umetanje dodatnih podataka (ExtraData) u obrazac sa detaljima
 
+Nakon otvaranja obrasca sa detaljima željenog **prodajnog naloga**, za uključivanje ExtraData zapisa u obrazac možemo koristiti **Form Navigator** i **Object Navigator**.
+
+1. U odeljku **Object Navigator** proširimo čvor kolekcije **artikala**, a zatim čvor ExtraData.
+2. Prevucimo ExtraData direktno na tabelu artikala povezanih sa prodajnim nalogom.
+
+ExtraData će imati widget tipa combobox (padajući meni) i prikazivaće vrednost **šifre** sačuvanu u odgovarajućoj tabeli u MSSQL bazi podataka.
+
+### 4. Umetanje dodatnih podataka (ExtraData) u izveštaj
+
+Prilikom uključivanja dodatnih podataka (ExtraData) u izveštaje moguće je konfigurisati tri različita scenarija, u zavisnosti od tipa ExtraData zapisa:
+
+- Jednostavni ExtraData.
+- ExtraData zasnovan na objektu.
+- ExtraData zasnovan na izvoru podataka.
+
+### 4.1 Jednostavni ExtraData
+
+Za jednostavni ExtraData potrebno je uključiti sledeću metodu u odeljak skripte izveštaja.
+
+U primeru je ExtraData tipa objekt povezan sa prodajnom fakturom.
 ```cs
-private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e) {
-  FSSalesInvoice row = (FSSalesInvoice)e.Row;
- if (row != null)
- {
-  var extraData = row.ExtraData.Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "ExtradataXreport").FirstOrDefault();
-  if (extraData != null)
-  {
-    e.Value = extraData.ExtraDataValue;
-  }
- }  
-}
-```
-
-### 4.2 ExtraData temeljen na objektu  
-
-Za ExtraData temeljen na objektu, potrebno je uključiti sljedeću metodu u sekciju skripte izvještaja.  
-U ovom primjeru, ExtraData tipa objekt je povezan s računom za prodaju.   
-
-```cs
-private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
-{
-    FSSalesInvoice row = (FSSalesInvoice)e.Row;
-    if (row != null)
-    {
-        var extraData = row.ExtraData 
-            .Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "ObjectExtraData")
-            .FirstOrDefault();
-        
+    private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e) {
+      FSSalesInvoice row = (FSSalesInvoice)e.Row;
+      if (row != null)
+      {
+        var extraData = row.ExtraData.Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "ExtradataXreport").FirstOrDefault();
         if (extraData != null)
         {
-            var record = GetReport().DataProvider
-                .Linq<FSColor>()
-                .Where(x => x.Id == extraData.ExtraDataId)
+          e.Value = extraData.ExtraDataValue;
+        }
+      }
+    }
+```
+### 4.2 ExtraData zasnovan na objektu
+
+Za ExtraData zasnovan na objektu potrebno je uključiti sledeću metodu u odeljak skripte izveštaja.
+
+U primeru je ExtraData tipa objekt povezan sa prodajnom fakturom.
+
+```cs
+    private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
+    {
+        FSSalesInvoice row = (FSSalesInvoice)e.Row;
+        if (row != null)
+        {
+            var extraData = row.ExtraData
+                .Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "ObjectExtraData")
                 .FirstOrDefault();
-            
-            if (record != null)
+
+            if (extraData != null)
             {
-                e.Value = record.Description; 
+                var record = GetReport().DataProvider
+                    .Linq<FSColor>()
+                    .Where(x => x.Id == extraData.ExtraDataId)
+                    .FirstOrDefault();
+
+                if (record != null)
+                {
+                    e.Value = record.Description;
+                }
             }
         }
     }
-}
 ```
-### 4.3 ExtraData temeljen na vanjskom DataSource-u  
-Za ExtraData temeljen na vanjskom DataSource-u, potrebno je uključiti sljedeću metodu u sekciju skripte izvještaja.  
-ExtraData temeljen na DataSource-u naziva se ```Model```.  
-U ovom primjeru kreirana je prilagođena tablica ```dbo.Model``` koja sadrži sljedeće podatke:  
+
+### 4.3 ExtraData zasnovan na izvoru podataka
+
+Za ExtraData zasnovan na izvoru podataka potrebno je uključiti sledeću metodu u odeljak skripte izveštaja.
+
+ExtraData zasnovan na izvoru podataka naziva se `Model`.
+
+U primeru je kreirana prilagođena tabela `dbo.Model` koja sadrži sledeće podatke:
+
 ```sql
-SELECT Code, Description FROM dbo.Model
+    SELECT Code, Description FROM dbo.Model
 ```
 
- <table>
-        <tr>
-            <th>Šifra</th>
-            <th>Opis</th>
-        </tr>
-        <tr>
-            <td>Završna obrada1</td>
-            <td>Sjajna</td>
-        </tr>
-        <tr>
-            <td>Završna obrada2</td>
-            <td>Matirana</td>
-        </tr>
-        <tr>
-            <td>Završna obrada3</td>
-            <td>Kromirana</td>
-        </tr>
-    </table>
+| Šifra | Opis |
+|---|---|
+| Finitura1 | Lucida |
+| Finitura2 | Opaca |
+| Finitura3 | Cromata |
 
-
-U skripti koja se odnosi na generiranje izvještaja potrebno je uključiti sljedeću primjer metodu.   
+U skriptu za generisanje izveštaja potrebno je uključiti sledeću metodu kao primer.
 
 ```cs
-private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
-{
-    FSSalesInvoice row = (FSSalesInvoice)e.Row;
-    if (row != null)
+    private void calcExtraData_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e)
     {
-        var extraData = row.ExtraData 
-            .Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "Model")
-            .FirstOrDefault();
-
-        if (extraData != null)
+        FSSalesInvoice row = (FSSalesInvoice)e.Row;
+        if (row != null)
         {
-            if (extraData.ExtraDataObject != null && 
-                extraData.ExtraDataObject.DataSource != null && 
-                !string.IsNullOrEmpty(extraData.ExtraDataObject.DataSource.SqlQuery.Script))
+            var extraData = row.ExtraData
+                .Where(x => x.ExtraDataObject != null && x.ExtraDataObject.Code == "Model")
+                .FirstOrDefault();
+
+            if (extraData != null)
             {
-                string extradDataObjectId = extraData.ExtraDataId.ToString();
-                string sqlQueryExtraData = extraData.ExtraDataObject.DataSource.SqlQuery.Script + 
-                                           " WHERE Id = " + extradDataObjectId;
-                
-                IExecuteSql execSql = (IExecuteSql)GetReport().DataProvider;
-                using (IDbCommand command = execSql.CreateCommand())
+                if (extraData.ExtraDataObject != null &&
+                    extraData.ExtraDataObject.DataSource != null &&
+                    !string.IsNullOrEmpty(extraData.ExtraDataObject.DataSource.SqlQuery.Script))
                 {
-                    command.CommandText = sqlQueryExtraData;
-                    using (IDataReader reader = command.ExecuteReader())
+                    string extradDataObjectId = extraData.ExtraDataId.ToString();
+                    string sqlQueryExtraData = extraData.ExtraDataObject.DataSource.SqlQuery.Script +
+                                               " WHERE Id = " + extradDataObjectId;
+
+                    IExecuteSql execSql = (IExecuteSql)GetReport().DataProvider;
+                    using (IDbCommand command = execSql.CreateCommand())
                     {
-                        if (reader.Read())
+                        command.CommandText = sqlQueryExtraData;
+                        using (IDataReader reader = command.ExecuteReader())
                         {
-                            e.Value = reader.GetValue(2);
+                            if (reader.Read())
+                            {
+                                e.Value = reader.GetValue(2);
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
 ```
-
-
 
