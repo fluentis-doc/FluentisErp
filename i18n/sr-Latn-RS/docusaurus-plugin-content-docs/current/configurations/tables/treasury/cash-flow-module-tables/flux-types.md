@@ -1,46 +1,52 @@
 ---
-title: Vrste toka  
+title: Tip toka
 sidebar_position: 2
 ---
 
-:::tip[FAst Start]
-Ova tablica uključena je u postupak [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tabelu utiče postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se planira ručna konfiguracija, pogledajte check listu na poveznici stranice.  
+Ako konfiguraciju nameravate da izvršite ručno, pogledajte kontrolnu listu na povezanoj stranici.
 :::
 
-Tablica, pripremna za korištenje modula, služi za kodiranje vrsta tokova cash flowa koje tvrtka želi omogućiti za simulacije.  
+Ova tabela, koja je preduslov za korišćenje modula, omogućava definisanje tipova novčanog toka koje preduzeće želi da omogući za simulacije.
 
-Preporučuje se kodirati sve predviđene vrste: postupak *automatskog generiranja cash flowa* omogućuje definiranje, svaki put, koje od njih uključiti, a koje ne.
+Preporučuje se definisanje svih predviđenih tipova. Postupak *automatskog generisanja novčanog toka* omogućava da se prilikom svakog pokretanja odredi koji će se od njih uzeti u obzir, a koji neće.
 
-Kodiranje vrste toka je slobodno u šifri i opisu, a kasnije se povezuje pomoću odgovarajućih flagova s podacima kojima se može upravljati.
+Šifra i opis tipa toka mogu se slobodno definisati prema potrebi, a zatim je potrebno odgovarajućim opcijama povezati tip sa podacima kojima se može upravljati.
 
-Predviđene su sljedeće izvori podataka:  
+Predviđeni su sledeći izvori podataka:
 
-**Šifra**: šifra vrste toka;  
+**Šifra:** šifra tipa toka.
 
-**Opis**: opis vrste toka;  
+**Opis:** opis tipa toka.
 
-**Stavke**: izvor podataka su otvorene stavke glavne knjige;  
+**Dospelost plaćanja (otvorene stavke):** izvor podataka su otvorene stavke glavne knjige.
 
-**Knjigovodstveni saldo**: iz ove vrste toka dobivaju se početne financijske raspoloživosti, u odnosu na *vrste financijskih računa* koje su kodificirane;
+**Stanje glavne knjige:** ovaj tip toka omogućava preuzimanje početne finansijske raspoloživosti na osnovu definisanih *tipova finansijskih konta*.
 
-**Nalozi kupaca/nalozi dobavljača**: nalozi kupaca, vrste s flagom *cash flow*, ispisani i potvrđeni, a nisu još izvršeni;
+**Narudžbine kupaca/Narudžbine dobavljača:** narudžbine kupaca i dobavljača onih tipova za koje je uključena opcija *Novčani tok*, a koje su odštampane i potvrđene, ali još nisu razdužene.
 
-**Računi kupnje/prodaje**: računi ispisani/kontrolirani, ali još ne knjiženi (ne uključuju pro-forma račune);  
+**Ulazne/prodajne fakture:** odštampane i proverene fakture koje još nisu proknjižene (ne uključuju predračune).
 
-**Izvanbilančno**: ručno definirane izvanbilančne dospijeće u modulu cash flowa putem forme *Izvanbilančna dospijeća*;
+**Vanbilansne stavke:** ručno uneta vanbilansna dospeća definisana u samom modulu novčanog toka putem obrasca *Vanbilansna dospeća*.
 
-**Primatelji**: naknade profesionalcima još neknjižene (ako su knjižene, spadaju u otvorene stavke);  
+**Primaoci plaćanja (naknada):** naknade za stručne usluge koje još nisu proknjižene (ako su proknjižene, obuhvaćene su otvorenim stavkama).
 
-**Otpremnice kupnje/prodaje**: otpremnice vrsta s flagom *cash flow*, ispisane i potvrđene, neprocijenjene (ako su procijenjene, spadaju u račune);
+**Primka/otpremnica:** otpremnice onih tipova za koje je uključena opcija *Novčani tok*, a koje su odštampane i potvrđene, ali im još nije dodeljena vrednost (ako im je dodeljena vrednost, obuhvaćene su fakturama).
 
-**Nalozi i povrati po ugovoru o radu**: nalozi po ugovoru o radu za izvršenje i povrati koji još nisu fakturirani;  
+**Narudžbine i povrati od podizvođača:** narudžbine podizvođačima koje je potrebno razdužiti i povrati od podizvođača za koje fakture još nisu izdate.
 
-**Zahtjevi za kupnju (RDA)**: zahtjevi za kupnju;  
+**Zahtev za nabavku:** zahtevi za nabavku.
 
-**Planirani nalozi**: proizvodni nalozi s planiranim vanjskim fazama ili proizvodni nalozi koji zahtijevaju zahtjev za kupnju;  
+**Planirani nalozi:** nalozi za proizvodnju sa planiranim eksternim fazama ili nalozi za proizvodnju za koje je predviđen zahtev za nabavku.
 
-**Portfelj mjenica**: izdane mjenice (i prezentirane, ovisno o postavci flag *Koristi dospijeće* u formi *Automatsko generiranje cash flowa*);
+**Hartije od vrednosti:** izdate hartije od vrednosti (i predate na naplatu, u zavisnosti od podešavanja opcije *Koristi u dospećima u rasporedu*, dostupne u obrascu *Automatsko generisanje novčanog toka*).
 
-**Avans**: stvorene odvojene liste avansa računa. Prilikom obrade cash flowa, ako je za ovu vrstu postavljen flag *Koristi u dospijeću* (u formi *Automatsko generiranje Cashflowa*), uzimaju se u obzir iznosi knjiženih avansnih lista kao avansirani iznos na bankovnom računu, te u tokovima po datumima dospijeća. Kada se računi naplate (prilikom obrade novog cash flowa), tokovi po dospijeću se uklanjaju, a iznos na bankovnom računu se ažurira preostalim iznosom koji još nije unaprijed isplaćen, umanjen za eventualne provizije i kamate.
+**Avansi:** kreirane liste avansa po fakturama. Ako je za ovaj tip uključena opcija „Koristi u dospećima u rasporedu” (u obrascu *Automatsko generisanje novčanog toka*), obrada novčanog toka preuzima iznose proknjiženih lista za iznos avansa na bankarskom kontu, kao i dospeća sa odgovarajućim datumima dospeća. Kada se fakture naplate (prilikom obrade novog novčanog toka), dospeća se uklanjaju, a iznos na bankarskom kontu ažurira se za preostali deo koji još nije bio avansiran, umanjen za eventualne naknade i kamate.
+
+**Fakturisanje projekata:** svaki red artikla u projektu može sadržati plan fakturisanja koji se koristi za automatsko kreiranje faktura iz samog projekta (naredba *Upravljanje projektima > Procedure > Izrada prodajne fakture*).
+
+Ovaj postupak se, na primer, koristi za periodične naknade predviđene projektom, a ne za fakturisanje intervencija.
+
+Postupak obrade novčanog toka učitava plan fakturisanja kako bi kreirao simulirano dospeće za svaku stavku za koju faktura još nije izdata (takve stavke nakon izdavanja fakture postaju deo toka faktura).

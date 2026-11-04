@@ -1,29 +1,24 @@
 ---
-title: Vrste financijskog računa  
+title: Vrste financijskih konta
 sidebar_position: 1
 ---
 
-:::tip[FAst Start]
-Ova tablica uključena je u postupak [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se planira ručna konfiguracija, pogledajte check listu na poveznici stranice.
+Ako konfiguraciju namjeravate izvršiti ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-U ovoj se tablici definira popis podračuna iz kojih se izračunava knjigovodstveni saldo, koji će se smatrati početnom raspoloživosti u cash flowu.  
+U ovoj tablici definira se popis analitičkih konta iz kojih će se izračunavati računovodstveno stanje koje će se uzeti u obzir kao početna raspoloživost u modulu tijeka novca.
 
-*Specifična polja*  
-**Vrsta financijskog računa**: označava vrstu financijskog računa. Može se odabrati između dvije vrste: Blagajna i Banka, budući da će početno stanje financijskih sredstava biti izračunato na temelju ovih vrsta računa. U sljedećim poljima potrebno je detaljno navesti koje račune/podračune treba uzeti u obzir.  
+*Specifična polja*
 
-**Opis financijskog računa**: opis vrste računa.
+**Vrsta financijskog konta:** označava vrstu financijskog konta. Moguće je odabrati jednu od dvije vrste: Blagajna i Banka, budući da će se početno stanje financijskih sredstava izračunavati na temelju tih vrsta računovodstvenih konta. U sljedećim poljima potrebno je detaljno navesti koja konta i analitička konta treba obuhvatiti.
 
-**Račun**: šifra računa.  
+**Opis financijskog konta:** predstavlja opis vrste konta.
 
-**Podračun**: šifra podračuna.  
+**Konto:** šifra konta.
 
-**Opis podračuna**: opis podračuna.  
+**Analitički konto:** šifra analitičkog konta.
 
-
-
-
-
-
+**Opis analitičkog konta:** predstavlja opis analitičkog konta.

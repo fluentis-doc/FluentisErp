@@ -1,46 +1,52 @@
 ---
-title: Vrste toka  
+title: Tip tijeka
 sidebar_position: 2
 ---
 
-:::tip[FAst Start]
-Ova tablica uključena je u postupak [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se planira ručna konfiguracija, pogledajte check listu na poveznici stranice.  
+Ako konfiguraciju namjeravate izvršiti ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-Tablica, pripremna za korištenje modula, služi za kodiranje vrsta tokova cash flowa koje tvrtka želi omogućiti za simulacije.  
+Ova tablica, koja je preduvjet za korištenje modula, omogućuje definiranje vrsta tijeka novčanog toka koje poduzeće želi omogućiti za simulacije.
 
-Preporučuje se kodirati sve predviđene vrste: postupak *automatskog generiranja cash flowa* omogućuje definiranje, svaki put, koje od njih uključiti, a koje ne.
+Preporučuje se definirati sve predviđene vrste. Postupak *automatskog generiranja tijeka novca* omogućuje da se prilikom svakog pokretanja odredi koje će se od njih uzeti u obzir, a koje neće.
 
-Kodiranje vrste toka je slobodno u šifri i opisu, a kasnije se povezuje pomoću odgovarajućih flagova s podacima kojima se može upravljati.
+Šifra i opis vrste tijeka mogu se slobodno definirati prema potrebi, a zatim je potrebno odgovarajućim opcijama povezati vrstu s podacima kojima se može upravljati.
 
-Predviđene su sljedeće izvori podataka:  
+Predviđeni su sljedeći izvori podataka:
 
-**Šifra**: šifra vrste toka;  
+**Šifra:** šifra vrste tijeka.
 
-**Opis**: opis vrste toka;  
+**Opis:** opis vrste tijeka.
 
-**Stavke**: izvor podataka su otvorene stavke glavne knjige;  
+**Dospijeća plaćanja (otvorene stavke):** izvor podataka su otvorene stavke glavne knjige.
 
-**Knjigovodstveni saldo**: iz ove vrste toka dobivaju se početne financijske raspoloživosti, u odnosu na *vrste financijskih računa* koje su kodificirane;
+**Stanje glavne knjige:** ova vrsta tijeka omogućuje dohvat početne financijske raspoloživosti na temelju definiranih *vrsta financijskih konta*.
 
-**Nalozi kupaca/nalozi dobavljača**: nalozi kupaca, vrste s flagom *cash flow*, ispisani i potvrđeni, a nisu još izvršeni;
+**Narudžbe kupaca/Narudžbe dobavljača:** narudžbe kupaca i dobavljača onih vrsta za koje je uključena opcija *Novčani tok*, a koje su ispisane i potvrđene, ali još nisu razdužene.
 
-**Računi kupnje/prodaje**: računi ispisani/kontrolirani, ali još ne knjiženi (ne uključuju pro-forma račune);  
+**Ulazni/prodajni računi:** ispisani i provjereni računi koji još nisu proknjiženi (ne uključuju predračune).
 
-**Izvanbilančno**: ručno definirane izvanbilančne dospijeće u modulu cash flowa putem forme *Izvanbilančna dospijeća*;
+**Izvanbilančne stavke:** ručno unesena izvanbilančna dospijeća definirana u samom modulu tijeka novca putem obrasca *Izvanbilančna dospijeća*.
 
-**Primatelji**: naknade profesionalcima još neknjižene (ako su knjižene, spadaju u otvorene stavke);  
+**Primatelji plaćanja (naknada):** naknade za stručne usluge koje još nisu proknjižene (ako su proknjižene, obuhvaćene su otvorenim stavkama).
 
-**Otpremnice kupnje/prodaje**: otpremnice vrsta s flagom *cash flow*, ispisane i potvrđene, neprocijenjene (ako su procijenjene, spadaju u račune);
+**Primka/otpremnica:** otpremnice onih vrsta za koje je uključena opcija *Novčani tok*, a koje su ispisane i potvrđene, ali im još nije dodijeljena vrijednost (ako im je dodijeljena vrijednost, obuhvaćene su računima).
 
-**Nalozi i povrati po ugovoru o radu**: nalozi po ugovoru o radu za izvršenje i povrati koji još nisu fakturirani;  
+**Narudžbe i povrati od podizvođača:** narudžbe podizvođačima koje je potrebno razdužiti i povrati od podizvođača za koje računi još nisu izdani.
 
-**Zahtjevi za kupnju (RDA)**: zahtjevi za kupnju;  
+**Zahtjev nabave:** zahtjevi za nabavu.
 
-**Planirani nalozi**: proizvodni nalozi s planiranim vanjskim fazama ili proizvodni nalozi koji zahtijevaju zahtjev za kupnju;  
+**Planirani nalozi:** nalozi za proizvodnju s planiranim vanjskim fazama ili nalozi za proizvodnju za koje je predviđen zahtjev za nabavu.
 
-**Portfelj mjenica**: izdane mjenice (i prezentirane, ovisno o postavci flag *Koristi dospijeće* u formi *Automatsko generiranje cash flowa*);
+**Vrijednosni papiri:** izdani vrijednosni papiri (i predani na naplatu, ovisno o postavci opcije *Upotrijebi u dospijećima u rasporedu*, dostupne u obrascu *Automatsko generiranje tijeka novca*).
 
-**Avans**: stvorene odvojene liste avansa računa. Prilikom obrade cash flowa, ako je za ovu vrstu postavljen flag *Koristi u dospijeću* (u formi *Automatsko generiranje Cashflowa*), uzimaju se u obzir iznosi knjiženih avansnih lista kao avansirani iznos na bankovnom računu, te u tokovima po datumima dospijeća. Kada se računi naplate (prilikom obrade novog cash flowa), tokovi po dospijeću se uklanjaju, a iznos na bankovnom računu se ažurira preostalim iznosom koji još nije unaprijed isplaćen, umanjen za eventualne provizije i kamate.
+**Predujmovi (avans):** kreirane liste predujmova po računima. Ako je za ovu vrstu uključena opcija „Upotrijebi u dospijećima u rasporedu” (u obrascu *Automatsko generiranje tijeka novca*), obrada tijeka novca dohvaća iznose proknjiženih lista za iznos predujma na bankovnom kontu te dospijeća u odgovarajućim datumima dospijeća. Kada se računi naplate (prilikom obrade novog tijeka novca), dospijeća se uklanjaju, a iznos na bankovnom kontu ažurira se za preostali dio koji još nije bio predujmljen, umanjen za eventualne naknade i kamate.
+
+**Fakturiranje projekata:** svaki redak artikla u projektu može sadržavati plan fakturiranja koji se upotrebljava za automatsko kreiranje računa iz samog projekta (naredba *Upravljanje projektima > Procedure > Izrada prodajnog računa*).
+
+Ovaj se postupak, primjerice, upotrebljava za periodične naknade predviđene projektom, a ne za fakturiranje intervencija.
+
+Postupak obrade tijeka novca učitava plan fakturiranja kako bi kreirao simulirano dospijeće za svaku stavku za koju račun još nije izdan (takve stavke nakon izdavanja računa postaju dio tijeka računa).

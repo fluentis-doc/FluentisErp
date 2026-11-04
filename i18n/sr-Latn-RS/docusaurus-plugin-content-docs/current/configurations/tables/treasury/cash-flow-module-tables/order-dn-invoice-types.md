@@ -1,10 +1,10 @@
 ---
-title: Vrste naloga/otpremnice/računa  
+title: Tipovi narudžbina/otpremnica/faktura
 sidebar_position: 4
 ---
 
-Za svaki zapis u tablicama [*Vrste naloga kupca*](/docs/configurations/tables/sales/sales-order-types),  [*Vrste naloga dobavljača*](/docs/purchase/purchase-orders/general-overview), *Vrste otpremnica prodaje* i *Vrste otpremnica kupnje* moguće je označiti flagom *Cash flow* hoće li se uzimati u obzir u simulacijama modula ili ne.
+Za svaki zapis u tabelama [*Tipovi narudžbina kupaca*](/docs/configurations/tables/sales/sales-order-types), [*Tipovi narudžbina dobavljača*](/docs/purchase/purchase-orders/general-overview), *Tipovi prodajnih otpremnica* i *Tipovi nabavnih otpremnica* moguće je pomoću opcije *Novčani tok* odrediti da li će se uzimati u obzir u simulacijama modula novčanog toka.
 
-:::note Napomena
-Sve vrste računa prodaje uključene su u cash flow, osim proforma računa.
+:::note[Napomena]
+Svi tipovi prodajnih faktura uzimaju se u obzir u novčanom toku, osim predračuna.
 :::

@@ -1,19 +1,18 @@
 ---
-title: Vrste dospijeća  
+title: Vrste dospijeća
 sidebar_position: 3
 ---
 
-:::tip[FAst Start]
-Ova tablica uključena je u postupak [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Na ovu tablicu utječe postupak [**Fast Start**](/docs/guide/fast-start).
 
-Ako se planira ručna konfiguracija, pogledajte check listu na poveznici stranice.  
+Ako konfiguraciju namjeravate izvršiti ručno, pogledajte kontrolni popis na povezanoj stranici.
 :::
 
-U ovoj se tablici definiraju vrste izvanbilančnih dospijeća koja će se upravljati ručno unutar cash flowa. Svakoj vrsti može se pridružiti podračun banke za kanalizaciju toka sredstava.  
+U ovoj tablici definiraju se vrste izvanbilančnih dospijeća kojima će se ručno upravljati unutar modula tijeka novca.
 
-Vrste ovdje kodificirane predstavljaju, prije svega, grupiranje ili oznaku za stvarni unos detalja, koji se vrši kroz formu [**Izvanbilančna dospijeća**](/docs/treasury/cash-flow/off-balance-due-dates).  
+**Konto / Podkonto / Opis:** omogućuje dodjelu konta (primjerice računovodstvenog konta *Obveze za plaće zaposlenika* vrsti dospijeća nazvanoj *Plaće*), kojim će se označavati izvanbilančna dospijeća unesena u izvještaj [**Analiza tijeka novca**](/FluentisErp/docs/treasury/cash-flow/reports). Ako se konto ne definira, ta će dospijeća biti prikazana samo pomoću polja Šifra.
 
+**Konto banke / Podkonto / Opis:** svakoj vrsti moguće je dodijeliti **bankovni** analitički konto za usmjeravanje novčanog toka (radi prikaza tijeka novca po bankama).
 
-
-
-
+Ovdje definirane vrste prvenstveno služe kao grupe ili oznake za unos pojedinačnih stavki, koji se obavlja putem obrasca [**Izvanbilančna dospijeća**](/docs/treasury/cash-flow/off-balance-due-dates).

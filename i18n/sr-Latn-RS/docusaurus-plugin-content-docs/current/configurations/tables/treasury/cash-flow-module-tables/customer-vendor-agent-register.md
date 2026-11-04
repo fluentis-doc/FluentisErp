@@ -1,14 +1,8 @@
 ---
-title: Kartica kupca/dobavljača/agenta  
+title: Kartica kupaca/dobavljača/agenata
 sidebar_position: 5
 ---
 
-U zaglavlju kartica moguće je postaviti podračun plaćanja: ovaj račun bit će povezan s računovodstvenim stavkama vezanim uz karticu i korišten odavde u cash flowu za upravljanje kanalizacijom tokova.
+U zaglavlju šifarnika moguće je postaviti analitički konto plaćanja. Taj konto biće povezan sa otvorenim računovodstvenim stavkama koje se odnose na taj šifarnik, a zatim će se koristiti u modulu novčanog toka za upravljanje usmeravanjem novčanih tokova.
 
-Osim toga, polje ‘Dani kašnjenja’ koristi se za izračun, počevši od datuma dospijeća, predviđenog datuma primitka/plaćanja uzimajući u obzir standardni broj dana kašnjenja definiran za karticu.  
-
-
-
-
-
-
+Osim toga, polje „Dani kašnjenja” koristi se za izračunavanje očekivanog datuma naplate/plaćanja, tako što se datumu dospeća dodaje standardni broj dana kašnjenja definisan u šifarniku.
