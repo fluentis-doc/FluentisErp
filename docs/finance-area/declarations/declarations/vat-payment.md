@@ -5,6 +5,15 @@ sidebar_position: 10
 
 In questa form vengono memorizzati i risultati delle liquidazioni iva periodiche calcolate in definitivo.
 
+:::important[Importante aggiornamento]
+Dalla versione 805 vengono memorizzati i record in questa tabella **in ogni caso**, sia che si tratti di una stampa in provvisorio, sia in definitivo. La differenza è visibile tramite il flag **Definitiva** presente nella griglia.
+
+Ogni esecuzione provvisoria della stampa aggiornerà i valori del periodo (iva a credito, iva a debito e risultato), mentre non modificherà i valori definitivi già memorizzati (evidenziati dal flag *Definitiva* attivo); la stampa provvisoria **non** aggiornerà, inoltre, i numeri di pagina né bloccherà le registrazioni contabili del periodo, operazione legata esclusivamente al processo in modalità definitiva.
+
+Eventuali modifiche manuali ai valori della riga della tabella *Versamenti iva* sarà tracciata nei due ulteriori campi **Data ultima modifica** e **Utente ultima modifica**.
+
+:::
+
 Per ogni liquidazione elaborata in definitivo sarà pertanto aggiunta una riga corrispondente dal programma.
 
 Da questa posizione è pertanto possibile procedere allo sblocco della liquidazione in definitiva semplicemente cancellando la riga corrispondente con il comando **Cancella liquidazioni IVA**.

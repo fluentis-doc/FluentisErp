@@ -38,7 +38,12 @@ I registri creati dal Fast Start sono già pronti per gestire
 
 **Descrizione**: descrizione del registro stampato normalmente nei report ufficiali.
 
-**Tipo registro**: tipologia precodificata del registro. Prestare attenzione al corretto settaggio ad esempio dei registri che accolgono il giroconto per acquisti intra o reverse charge i quali saranno impostati su *Vendite* ed a differenziare correttamente la fattispecie degli acquisti / vendite in sospensione d'imposta ed il regime speciali ex art. 74 ter dpr 633/72.
+**Tipo registro**: tipologia precodificata del registro. Prestare attenzione al corretto settaggio ad esempio dei registri che accolgono il giroconto per acquisti intra o reverse charge i quali saranno impostati su *Vendite* ed a differenziare correttamente la fattispecie degli acquisti / vendite in sospensione d'imposta e gli eventuali regimi speciali.
+
+:::important[Aggiornamento]
+Dalla versione 805 è presente la tipologia specifica **Registro riepilogativo** per stampare la liquidazione iva periodica e gestire tutte le opzioni specifiche collegate.
+Questa tipologia gestisce anche la proposta automatica del registro corrispondente nella form di lancio della stampa *Liquidazione iva periodica*.
+:::
 
 **Controllo protocolli**: l'impostazione di questo flag blocca la possibilità di stampare in definitivo un registro che abbia buchi nei protocolli o incongruenze nell'ordinamento degli stessi.
 
