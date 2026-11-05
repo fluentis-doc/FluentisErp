@@ -1,5 +1,5 @@
 ---
-title: Uvoz Otvorenih stavki
+title: Uvoz otvorenih stavki
 sidebar_position: 2
 ---
 

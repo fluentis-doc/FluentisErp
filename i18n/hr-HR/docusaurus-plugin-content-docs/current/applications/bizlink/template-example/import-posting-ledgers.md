@@ -1,5 +1,5 @@
 ---
-title: Uvoz Knjiženja glavne knjige
+title: Uvoz knjiženja glavne knjige
 sidebar_position: 2
 ---
 
@@ -25,7 +25,7 @@ Primjer
 
 **Predložak:** koristite kod predloška koji je već prisutan i koji je u skladu s knjiženjem (primjerice, PDV predložak ako uvozite knjiženja faktura);
 
-**Knjiga računa:** koristite kod već prisutnog registra;  
+**Knjiga računa:** koristite kod već prisutnog registra (knjige);  
 
 **Referentni broj PDV-a:** koristite slobodan protokol;  
 
@@ -48,6 +48,6 @@ Broj narudžbe: Opcionalno, ako želim učitati i povezati
 
 ---
 
-U **kartici Parametri** možete postaviti vrijednost 1 na **Preračun**, na taj način izvršava se ponovno izračunavanje podataka iz dnevnika i generira otvorene stavke iz podataka uvjeta plaćanja, ako, na primjer, nedostaju jer nisu uvezeni zasebno. Inače, neće se obaviti nikakvo ponovno izračunavanje i stavke, na primjer, neće se kreirati ako nisu uvezene. (Preporučena opcija zbog performansi i vremena obrade, pogotovo s velikim brojem redaka)  
+U **kartici Parametri** možete postaviti vrijednost 1 na **Preračun (ponovni izračun)**, na taj način izvršava se ponovno izračunavanje podataka iz dnevnika i generira otvorene stavke iz podataka uvjeta plaćanja, ako, na primjer, nedostaju jer nisu uvezeni zasebno. Inače, neće se obaviti nikakvo ponovno izračunavanje i stavke, na primjer, neće se kreirati ako nisu uvezene. (Preporučena opcija zbog performansi i vremena obrade, pogotovo s velikim brojem redaka)  
 
 Pažnja: računi moraju već postojati u bazi podataka inače poruka o pogrešci neće mi reći koji račun nedostaje, već se uvijek odnosi na posljednji redak Excel tablice.

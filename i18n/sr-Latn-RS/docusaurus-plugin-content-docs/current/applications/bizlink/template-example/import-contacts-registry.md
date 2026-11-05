@@ -792,7 +792,7 @@ Za tumačenje greške, slijedite ove korake: U istom retku gdje je prikazan broj
 
 **Pažnja**: Ako je pronađen prazan redak, neće biti prijavljena nikakva greška, ali će se uvoz završiti tamo. Primjerice, ako je prvi redak (redak br. 4) prazan iz nekog razloga, a ispod njega (od reda br. 5) postoje popunjeni retci, ništa se neće uvesti.
 
-**Pažnja**: Ako se u šifraniku od 10 redaka dogodi greška u retku br. 7, prva 6 redaka će se ipak unijeti ako nisu uzrokovali probleme! Ponovnim pokretanjem uvoza bez mijenjanja prvih 6 redaka (i naravno, ako je greška ispravljena), neće biti problema, pa čak ni duplikata, jer se prvo provjerava prisutnost kontakta. Ako se promijeni bilo koja vrijednost u prvih 6 redaka, taj će kontakt biti smatran novim.
+**Pažnja**: Ako se u šifaniku od 10 redaka dogodi greška u retku br. 7, prva 6 redaka će se ipak unijeti ako nisu uzrokovali probleme! Ponovnim pokretanjem uvoza bez mijenjanja prvih 6 redaka (i naravno, ako je greška ispravljena), neće biti problema, pa čak ni duplikata, jer se prvo provjerava prisutnost kontakta. Ako se promijeni bilo koja vrijednost u prvih 6 redaka, taj će kontakt biti smatran novim.
 
 Na kraju, moguće je dobiti i drugu poruku greške.
 

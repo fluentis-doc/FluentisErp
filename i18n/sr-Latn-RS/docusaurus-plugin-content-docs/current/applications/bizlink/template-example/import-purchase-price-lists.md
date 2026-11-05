@@ -1,815 +1,654 @@
 ---
-title: Uvoz cjenika dobavljača
+title: Uvoz cenovnika dobavljača
 sidebar_position: 3
 ---
 
+Ovaj dokument objašnjava kako **uvesti cenovnike dobavljača** u **Fluentis** pomoću **tabele (Excel)**.
 
-Ovaj dokument će objasniti kako **Uvesti cjenike dobavljača** u **Fluentis** pomoću **proračunske tablice**.
+Ovaj uvoz moguć je zahvaljujući korišćenju funkcionalnosti **BizLink Parameters**, jer će se ona pozivati svaki put kada se obradi red.
 
-Ovaj uvoz moguć je zahvaljujući korištenju **BizLink Parameters** jer svaki put kada se red obradi, oni će biti pozvani.
+### Kako otvoriti uvoz tabele
 
+Kliknite na **Alati** (obično se nalazi na desnoj strani Fluentisa).
 
-### Kako otvoriti uvoz proračunske tablice
+Kliknite na odeljak **BizLink**.
 
-Kliknite na **Alati** (obično se nalazi na desnoj strani Fluentisa).
+Kliknite na **Uvoz na zahtev > Dokumenti o nabavci > Uvoz cenovnika dobavljača**, kao što je prikazano na slici ispod.
 
-Kliknite odjeljak **BizLink**
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image03.png)
 
-Kliknite na **Uvoz na zahtjev > Dokumenti o nabavi > Uvoz cjenika dobavljača** kao što je prikazano na slici ispod.
+### Odeljak sa podacima
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image03.png) 
+U ovom odeljku unećemo podatke koji će zatim biti trajno sačuvani u bazi podataka Fluentisa.
 
+Tabela za uvoz sada je prikazana na ekranu.
 
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image04.png)
 
-### Odjeljak datuma
+Od ove tačke možete izabrati jedan od sledećih načina rada:
 
-U ovom odjeljku unijet ćemo podatke koji će zatim biti trajni pohranjivanjem u bazu podataka Fluentis.
+1. Uvezite već popunjenu tabelu pomoću opcije **Datoteka > Open**.
+2. Dodajte različite kolone kopiranjem i lepljenjem iz liste sačuvane na računaru.
+3. Sačuvajte ovu datoteku (**Datoteka > Save**) na računaru, zatim dodajte podatke i ponovo je uvezite u Fluentis (pogledajte tačku 1). Ovo može biti veoma korisno za prosleđivanje šablona tabele za uvoz koji treba popuniti za buduće cenovnike koje će nam dobavljači slati.
+4. Dodajte polja ručno.
 
-Proračunska tablica za uvoz sada je prikazana na zaslonu.
+**PAŽNJA**: Ako imamo tabelu sačuvanu na računaru, ona mora da odgovara izgledu lista na gornjoj slici, odnosno mora imati isti redosled kolona, tipove podataka itd. Oni su detaljno objašnjeni u sledećem odeljku.
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image04.png) 
+### Umetanje polja
 
-Od ove točke možete krenuti različitim putevima:
+Prilikom umetanja polja potrebno je uzeti u obzir više stvari, uključujući tip, maksimalnu dužinu, obaveznost itd.
 
- 1. Uvezite već popunjenu proračunsku tablicu, **Datoteka > Open**.  
- 2. Dodajte različite stupce kopiranjem i lijepljenjem s popisa spremljenog na vašem računalu.  
- 3. Spremite ovu datoteku (**Datoteka > Spremi**) na računalo, zatim dodajte različite podatke i zatim je ponovno uvezite u Fluentis (vidi točku 1). Ovo bi moglo biti vrlo korisno za prosljeđivanje predloška proračunske tablice za uvoz koji treba ispuniti za buduće cjenike koje će nam dobavljači slati.  
- 4. Dodajte polja ručno.  
+Opšte smernice:
 
-**PAŽNJA**: ako imamo proračunsku tablicu spremljenu na našem računalu, ona mora slijediti izgled lista na gornjoj slici. To jest, isti redoslijed stupaca, tip podataka itd. Potonji su detaljno objašnjeni u sljedećem odlomku.  
+- Ako je polje napisano crvenom bojom, obavezno je.
+- Ako je naziv ćelije označen zelenom bojom, označava **odeljak**.
+- Ako je naziv ćelije označen žutom bojom, označava **polje**.
+- **Polje**: označava da li je unos obavezan ili ne.
+- **Tip**: označava tip polja.
+- **Excel formatiranje**: označava preporučeno Excel formatiranje kako bi se izbegli neispravni unosi. Pogledajte poslednji odeljak Korisni saveti i upozorenja.
+- **Dužina**: označava da li polje ima ograničenje broja znakova koje treba poštovati.
+- **Opis**: kratak opis polja.
 
+*Primer*: stvarni primer onoga što možete uneti u to polje.
 
-### Umetanje polja  
+- **Mapiranje tabele/kolone**: ako je navedeno, označava mapiranje odgovarajućeg polja u bazi podataka. Za dodatne informacije pogledajte poslednji odeljak.
 
-Kada je polje umetnuto, mnoge stvari se moraju uzeti u obzir uključujući vrstu, maksimalnu duljinu, potrebno itd...  
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image05.png)
 
-Opće indikacije:
+**Podaci o artiklu dobavljača:**
 
--        Ako je polje napisano crvenom bojom ono je obavezno polje
+**Šifra:**
 
--        Ako je naziv ćelije označen zelenom bojom, to je **odjeljak**
+- Polje: obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 50 znakova
+- Opis: referentna šifra artikla koju koristi dobavljač.
 
--        Ako je naziv ćelije označen žutom bojom, to je **polje**
+*Primer*: 02030508
 
--        Polje: označava je li umetanje obavezno ili ne
+**Opis:**
 
--        Vrsta: označava vrstu polja
+- Polje: obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: opis artikla koji je naveo dobavljač.
 
--        Excel formatiranje: označava preporučeno Excel formatiranje kako biste izbjegli netočne unose, pogledajte posljednji odjeljak Korisni savjeti i upozorenja  
+*Primer*: teniska loptica, može odgovarati broju artikla.
 
--        Dužina: označava ima li polje ograničenje broja znakova koje treba poštovati  
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image06.png)
 
--        Opis: kratak opis polja
+**Podaci o artiklu:**
 
-*Primjer*: pravi primjer onoga što možete napisati u tom polju
+**Klasa:**
 
--        Mapiranje tablice/stupca: ako je prisutno, označava preslikavanje odgovarajućeg polja u bazi podataka. Za dodatne informacije pogledajte zadnji odjeljak. 
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: /
+- Opis: šifra koja se odnosi na klasu artikla.
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image05.png) 
+*Primer*: „1” odgovara poluproizvodima, „IMB” odgovara pakovanju.
 
+- Mapiranje tabele/kolone: `select MBDC_Classe from MB_Classi`
 
+**Interna šifra:**
 
-**Podaci o artiklu dobavljača**:
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 50 znakova
+- Opis: ako nije dodeljena, preuzima se šifra dobavljača. Ona identifikuje stavku, pa ako dobijete stavku, u skladu s tim menjate internu šifru. U suprotnom, ako dobijete stavku, ostavite šifru stavke nepromenjenom i, na primer, izmenite opis. Ažuriranje stavke izvršiće se pomoću te šifre stavke. (Nemojte ažurirati mernu jedinicu.)
 
-Šifra:
+*Primer*: 7710ct7tb
 
--        Polje: obavezno
+**Interni opis:**
 
--        Vrsta: niz znakova 
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: ako nije naveden, preuzima se opis dobavljača.
 
--        Excel formatiranje: tekst
+*Primer*: teniska loptica
 
--        Maksimalna duljina: 50 znakova
+**Merna jedinica:**
 
--        Opis: referentna šifra artikla koju koristi dobavljač  
+- Polje: obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 3 znaka
+- Opis: šifra merne jedinice koja se koristi za odgovarajuću stavku.
 
-*Primjer*: 02030508
+*Primer*: „cm” odgovara centimetrima, a „Utovarna jedinica” odgovara paleti.
 
-Opis:
+- Mapiranje tabele/kolone: `select MBUM_Codice from MB_UnitaMisura`
 
--        Polje: obavezno
+**PDV:**
 
--        Vrsta: niz znakova 
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 3 znaka
+- Opis: šifra koja se odnosi na PDV koji se primenjuje na odgovarajuću stavku.
 
--        Excel formatiranje: tekst
+*Primer*: „25” odgovara stopi PDV-a od 25%, a „N” označava da stavka ne podleže oporezivanju PDV-om prema članu 13. stav 10. Zakona o PDV-u.
 
--        Maksimalna duljina: 200 znakova
+- Mapiranje tabele/kolone: `select MBIV_Code from MB_iva`
 
--        Opis: opis artikla koji je dao dobavljač  
+**Kategorija proizvoda:**
 
-*Primjer*: teniska loptica, može odgovarati broju artikla
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 3 znaka
+- Opis: šifra koja se odnosi na kategoriju robe kojoj pripada odgovarajuća stavka.
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image06.png) 
+*Primer*: „206” odgovara lepkovima, a „211” sirovinama.
 
+- Mapiranje tabele/kolone: `select MBCM_Codice from MB_CatMerceologica`
 
-**Podaci o artiklu**:
+**Ulazna faktura:**
 
-Klasa:
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 10 znakova
+- Opis: šifra koja se odnosi na tip fakture izdate za odgovarajuću stavku.
 
--        Polje: nije obavezno
+*Primer*: „4” odgovara nabavci poluproizvoda, a „1” sirovinama.
 
--        Vrsta: niz znakova
+- Mapiranje tabele/kolone: `select MBFA_TipoFatt from mb_TipoFattAcq`
 
--        Excel formatiranje: tekst
+**Barkod:**
 
--        Maksimalna duljina: /
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: /
+- Opis: barkod odgovarajućeg artikla.
 
--        Opis: šifra koja se odnosi na klasu artikla
+*Primer*: ABC-1234
 
-*Primjer*: “1” odgovara poluproizvodima, “IMB” odgovara pakiranju
+**Tip lota:**
 
--        Mapiranje tablice/stupca: select MBDC_Classe from MB_Classi
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 2 znaka
+- Opis: tip lota kojem pripada odgovarajuća stavka.
 
-Interna šifra:
+*Primer*: „4” odgovara nabavci poluproizvoda, a „1” sirovinama.
 
--        Polje: nije obavezno
+**Nomenklatura:**
 
--        Vrsta: niz znakova
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 50 znakova
+- Opis: nomenklatura, klasifikacija artikala.
 
--        Excel formatiranje: tekst
+*Primer*: „32049000” odgovara bojama.
 
--        Maksimalna duljina: 50 znakova
+- Mapiranje tabele/kolone: `select INCN_CodNomencl from IN_CodNomenc`
 
--        Opis: ako nije dodijeljen, uzima se onaj dobavljača. Identificirat će stavku, pa ako dobijete stavku, u skladu s tim modificirate interni kod. U suprotnom, ako dobijete stavku, ostavite nepromijenjenu šifru stavke i, na primjer, izmijenite opis, ažuriranje stavke izvršit će se s tom šifrom stavke. (Nemojte ažurirati mjernu jedinicu)  
+**Šifra proizvođača:**
 
-*Primjer*: 7710ct7tb
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 100 znakova
+- Opis: šifra proizvođača artikla.
 
-Interni opis:
+*Primer*: art0102032019
 
--        Polje: nije obavezno
+**Komercijalna šifra:**
 
--        Vrsta: niz znakova
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: 100 znakova
+- Opis: šifra komercijalne kategorije.
 
--        Excel formatiranje: tekst
+*Primer*: „P” označava privatno.
 
--        Maksimalna duljina: 200 znakova
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image07.png)
 
--        Opis: ako nije dodijeljen, uzima se onaj dobavljača
+**Podaci o cenovniku:**
 
-*Primjer*: teniska loptica
+**Cena:**
 
-Jedinica mjere:
+- Polje: obavezno
+- Tip: decimalni broj
+- Excel formatiranje: valuta, bez simbola
+- Maksimalna dužina: /
+- Opis: kataloška cena artikla.
 
--        Polje: obavezno
+*Primer*: 10.99, 123.45
 
--        Vrsta: niz znakova
+**JM cene:**
 
--        Excel formatiranje: tekst
+- Polje: obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: /
+- Opis: koristi se za definisanje cene u odnosu na količinu (npr. cena po kilogramu, cena po kvadratnom metru).
 
--        Maksimalna duljina: 3 znaka
+*Primer*: „kg” odgovara kilogramima.
 
--        Opis: šifra koja se odnosi na mjerenje koje se koristi za dotičnu stavku  
+- Mapiranje tabele/kolone: `select MBUM_Codice from MB_UnitaMisura`
 
-*Primjer*: “cm” odgovara centimetrima, "Utovarna jedinica” odgovara paleti 
+**Količina:**
 
--        Mapiranje tablice/stupca: select MBUM_Codice from MB_UnitaMisura
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: količina artikla na koju se odnosi prethodno navedena cena.
 
-PDV:
+*Primer*: 500
 
--        Polje: nije obavezno
+**Dodatna vrednost:**
 
--        Vrsta: niz znakova 
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: dodatna vrednost koja se može koristiti pri kreiranju prodajnih cenovnika na osnovu nabavnih cenovnika. Na primer, ako postoje troškovi prevoza koje moramo da platimo dobavljaču, oni se ovde navode kako bi se zatim koristili u obračunu prodajne cene tog artikla.
 
--        Excel formatiranje: tekst
+*Primer*: 123.45
 
--        Maksimalna duljina: 3 znaka
+**Dodatni %:**
 
--        Opis: šifra koja se odnosi na mjerenje koje se koristi za dotičnu stavku
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: dodatni procenat koji se može koristiti pri kreiranju prodajnih cenovnika na osnovu nabavnih cenovnika.
 
-*Primjer*: “25” Primjer odgovara 25% PDV-a, “N” Ne podliježe oporezivanju PDV-om prema čl. 13. st. 10. Zakona o PDV-u
+*Primer*: 10
 
--        Mapiranje tablice/stupca: select MBIV_Code from MB_iva
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image08.png)
 
-Kategorija proizvoda
+**Popusti:**
 
--        Polje: nije obavezno
+**Popust1:**
 
--        Vrsta: niz znakova
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: mogući popusti koji se mogu primeniti.
 
--        Excel formatiranje: tekst
+*Primer*: „50+10” znači da se početni popust od 50% primenjuje na zbir stavke, a zatim se na novi zbir primenjuje dodatni popust od 10%.
 
--        Maksimalna duljina: 3 znaka
+Isto važi i za druga dva popusta, menja se samo vrednost popusta.
 
--        Opis: šifra koja se odnosi na kategoriju robe predmetne stavke
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image09.png)
 
-*Primjer*: “206” odgovara ljepilima, “211” odgovara sirovinama
+**Količinski popusti:**
 
--        Mapiranje tablice/stupca: select MBCM_Codice from MB_CatMerceologica
+**Popust1:**
 
-Ulazni račun:
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: popust se primenjuje ako se kupi određena količina odgovarajućeg artikla.
 
--        Polje: nije obavezno
+*Primer*: 10
 
--        Vrsta: niz znakova
+**Količina1:**
 
--        Excel formatiranje: tekst
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: minimalna količina potrebna za ostvarivanje odgovarajućeg popusta.
 
--        Maksimalna duljina: 10 znakova
+*Primer*: 550
 
--        Opis: šifra koja se odnosi na vrstu izdane fakture za predmetnu stavku
+Isto važi i za druga dva količinska popusta, menja se samo odgovarajuća vrednost.
 
-*Primjer*: “4” odgovara kupnji poluproizvoda, “1” odgovara sirovinama
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image10.png)
 
--        Mapiranje tablice/stupca: select MBFA_TipoFatt from mb_TipoFattAcq
+**Vrednosni popusti:**
 
-Barkod:
+**Popust1:**
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: popust se primenjuje ako oporezivi iznos određene stavke pređe zadatu vrednost.
 
--        Vrsta: niz znakova 
+*Primer*: 20
 
--        Excel formatiranje: tekst
+**Vrednost1:**
 
--        Maksimalna duljina: /
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: minimalni oporezivi iznos potreban za ostvarivanje odgovarajućeg popusta.
 
--        Opis: barkod dotičnog artikla
+*Primer*: 950
 
-*Primjer*: ABC-1234
+Isto važi i za druga dva popusta i njihove vrednosti.
 
-Vrsta lota:
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image11.png)
 
--        Polje: nije obavezno
+**Cena po količini:**
 
--        Vrsta: niz znakova 
+**Cena1:**
 
--        Excel formatiranje: tekst
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: jedinična cena koja se primenjuje ako se premaši određena količina.
 
--        Maksimalna duljina: 2 znaka
+*Primer*: 3.99
 
--        Opis: vrsta lota kojoj predmet pripada
+**Količina1:**
 
-*Primjer*: “4” odgovara kupnji poluproizvoda, “1” codgovara sirovinama
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Excel formatiranje: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: minimalna količina potrebna za primenu odgovarajuće jedinične cene.
 
-Nomenklatura:
+*Primer*: 250
 
--        Polje: nije obavezno
+Isto važi i za druge dve cene i odgovarajuće količine, menja se samo odgovarajuća vrednost.
 
--        Vrsta: niz znakova
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image12.png)
 
--        Excel formatiranje: tekst
+**Ostali podaci:**
 
--        Maksimalna duljina: 50 znakova
+**Napomena:**
 
--        Opis: nomenklatura, klasifikacija artikala
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Excel formatiranje: tekst
+- Maksimalna dužina: /
+- Opis: dodatne napomene.
 
-*Primjer*: “32049000” odgovara bojama
+*Primer*: ne izlagati sunčevoj svetlosti.
 
--        Mapiranje tablice/stupca: select INCN_CodNomencl from IN_CodNomenc
-
-Šifra proizvođača:
-
--        Polje: nije obavezno
-
--        Vrsta: niz znakova
-
--        Excel formatiranje: tekst
-
--        Maksimalna duljina: 100 znakova
-
--        Opis: šifra proizvođača artikla
-
-*Primjer*: art0102032019
-
-Komercijalni kod:
-
--        Polje: nije obavezno
-
--        Vrsta: niz znakova
-
--        Excel formatiranje: tekst
-
--        Maksimalna duljina: 100 znakova
-
--        Opis: šifra komercijalne kategorije
-
-*Primjer*: “P” označava privatno
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image07.png) 
-
-
-**Podaci o cjeniku**:
-
-Cijena:
-
--        Polje: obavezno
-
--        Vrsta: decimalni
-
--        Excel formatiranje: valuta, simbol nema
-
--        Maksimalna duljina: /
-
--        Opis: kataloška cijena artikla
-
-*Primjer*: 10.99, 123.45
-
-UM cijena:
-
--        Polje: obavezno
-
--        Vrsta: niz znakova
-
--        Excel formatiranje: tekst
-
--        Maksimalna duljina: /
-
--        Opis: koristi se za definiranje cijene s obzirom na količinu (npr. cijena po kilogramu, cijena po kvadratnom metru)
-
-*Primjer*: “kg” odgovara kilogramima
-
--        Mapiranje tablice/stupca: select MBUM_Codice from MB_UnitaMisura
-
-
-**Količina**:
-
--        Polje: nije obavezno
-
--        Tip: decimalni
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: količina artikla na koji se odnosi prethodna cijena
-
-*Primjer*: 500
-
-
-**Dodatna vrijednost**:
-
--        Polje: nije obavezno
-
--        Tipo: decimale
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: dodatna vrijednost koja se može koristiti pri izradi prodajnih cjenika iz nabavnih cjenika. Na primjer, ako postoje troškovi prijevoza (koje moramo platiti dobavljaču), oni su ovdje prijavljeni da bi se zatim koristili u izračunu prodajne cijene tog artikla.
-
-*Primjer*: 123.45
-
-
-**Dodatni %**:
-
--        Polje: nije obavezno
-
--        Vrsta: decimalni
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: dodatni postotak koji se može koristiti pri izradi prodajnih cjenika iz nabavnih cjenika
-Primjer: 10
-
-*Primjer*: 10        
-
-  ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image08.png)
-
-
-**Popusti**:
-
-Popust1:
-
--        Polje: nije obavezno
-
--        Vrsta: decimalni
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: mogući popusti primjenjivi
-
-*Primjer*: “50+10” početni popust od 50% primjenjuje se na zbroj retka, a daljnji popust od 10% primjenjuje se na novi zbroj.
-
-Potpuno ista stvar za druga dva popusta, samo se vrijednost popusta mijenja.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image09.png) 
-
-
-**Količinski popusti**:
-
-Popust1:
-
--        Polje: nije obavezno
-
--        Vrsta: decimalni
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: popust se primjenjuje ako se kupi određena količina predmetnog artikla
-
-*Primjer*: 10
-
-Količina1:
-
--        Polje: nije obavezno
-
--        Vrsta: decimalni
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: minimalna količina potrebna za odgovarajući popust
-
-*Primjer*: 550
-
-Potpuno ista stvar za druga dva količinska popusta, samo se odgovarajuća vrijednost mijenja.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image10.png) 
-
-
-**Vrijednosni popusti**:
-
-Popust1:
-
--        Polje: nije obavezno
-
--        Vrsta: decimalni
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: popust se primjenjuje ako premašuje oporezivi iznos određenog retka
-
-*Primjer*: 20
-
-Vrijednost1:
-
--        Polje: nije obavezno
-
--        Vrsta: decimalni
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: minimalni oporezivi iznos potreban za dobivanje odgovarajućeg popusta
-
-*Primjer*: 950
-
-Potpuno ista stvar za druga dva popusta i vrijednosti.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image11.png) 
-
-
-**Cijena po količini**:
-
-Cijena1:
-
--        Polje: nije obavezno
-
--        Vrsta: decimalni
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: jedinična cijena koja se primjenjuje ako se prekorači određena količina
-
-*Primjer*: 3.99
-
-Količina1:
-
--        Polje: nije obavezno
-
--        Vrsta: decimalni
-
--        Excel formatiranje: broj, decimalno mjesto = 2
-
--        Maksimalna duljina: /
-
--        Opis: minimalna količina potrebna za odgovarajuću jediničnu cijenu
-
-*Primjer*: 250
-
-Potpuno ista stvar za druge dvije cijene i relativne količine, samo se odnosna vrijednost mijenja.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image12.png) 
-
-
-**Ostali podaci**:
-
-Bilješka:
-
--        Polje: nije obavezno
-
--        Vrsta: niz znakova
-
--        Excel formatiranje: tekst
-
--        Maksimalna duljina: /
-
--        Opis: dodatne napomene
-
-*Opis*: ne izlagati sunčevoj svjetlosti
-
--        Tablica/stupac mapiranja: select MBNC_Codice from MB_NoteCodificat
-
-
+- Mapiranje tabele/kolone: `select MBNC_Codice from MB_NoteCodificat`
 
 ### BizLink Parameters
 
-Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao što možete vidjeti na slici, neka su polja već unaprijed popunjena, ali ništa nas ne spriječava da ih izmijenimo.
+Ovi parametri koristiće se za obradu redova unetih u odeljak Podaci. Kao što možete videti na slici, neka polja su već unapred popunjena, ali ih po potrebi možete izmeniti.
 
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image13.png)
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image13.png)
 
-1      BizLink Spreadsheet:
+**1. BizLink Spreadsheet:**
 
--        Polje: ne ispunjavati
+- Polje: ne popunjavati.
 
-2      Jezik:
+**2. Jezik:**
 
--        Polje: obavezno
+- Polje: obavezno
+- Tip: tekstualni niz
+- Opis: ISO šifra koja označava jezik.
 
--        Vrsta: niz znakova
+*Primer*: „it-IT” označava italijanski jezik, a „hr-HR” hrvatski jezik.
 
--        Opis: ISO kod koji se odnosi na jezik
+**3. Preduzeće:**
 
-*Primjer*: “it-IT” predstavlja talijanski jezik, “hr-HR” predstavlja hrvatski jezik.
+- Polje: obavezno
+- Tip: tekstualni niz
+- Opis: ovo polje je unapred popunjeno jer preuzima vrednosti koje već postoje u Fluentisu, a koje se mogu videti u gornjem levom uglu.
 
-3      Tvrtke:
+*Primer*: „1” odgovara demo preduzeću.
 
--        Polje: obavezno
+- Mapiranje tabele/kolone: `Select MBSC_Code from MB_Soc`
 
--        Vrsta: niz znakova
+**4. Odeljenje:**
 
--        Opis: to je unaprijed popunjeno polje jer uzima vrijednosti koje su već unutar Fluentisa, a mogu se vidjeti u gornjem lijevom kutu.
+- Polje: obavezno
+- Tip: tekstualni niz
+- Opis: kao i polje Preduzeće, ovo polje je unapred popunjeno.
 
-*Primjer*: “1” odgovara demo tvrtki
+*Primer*: „1” odgovara registrovanom sedištu, a „2” operativnom sedištu u Zagrebu.
 
--        Mapiranje tablice/stupca: Select MBSC_Code from MB_Soc
+- Mapiranje tabele/kolone: `select MBDP_Code from MB_Dep`
 
-4      Odjel:
+**5. Država:**
 
--        Polje: obavezno
+- Polje: obavezno
+- Tip: tekstualni niz
+- Opis: država u kojoj se nalazi odeljenje za koje se uvozi cenovnik.
 
--        Vrsta: niz znakova
+*Primer*: „HR” odgovara Hrvatskoj, a „USA” Sjedinjenim Američkim Državama.
 
--        Opis: što se tiče tvrtke, unaprijed je popunjeno
+- Mapiranje tabele/kolone: `select MBNZ_Codice from MB_Nazioni`
 
-*Primjer*: “1” odgovara registriranom uredu, “2” operativnom sjedištu u Zagrebu
+**6. Barkod:**
 
--        Mapiranje tablice/stupca: select MBDP_Code from MB_Dep
+- Polje: obavezno samo ako je barkod unet za najmanje jedan artikal u navedenom odeljku.
+- Tip: tekstualni niz
+- Opis: služi za označavanje tipa korišćenog barkoda.
 
-5      Država:
+*Primer*: „39” odgovara COD39.
 
--        Polje: obavezno
+- Mapiranje tabele/kolone: `select MBBC_Codice from MB_BarCode`
 
--        Vrsta: niz znakova
+**7. Konto:**
 
--        Opis: država u kojoj se nalazi odjel za koji je uvezen cjenik
+- Polje: obavezno
+- Tip: tekstualni niz
+- Opis: konto dobavljača, knjiga dobavljača.
 
-*Primjer*: “HR” odgovara Hrvatskoj, “USA” odgovara Sjedinjenim Američkim Državama
+*Primer*: „2200”, koji ima 3 podkonta (pogledajte ispod).
 
--        Mapiranje tablice/stupca: select MBNZ_Codice from MB_Nazioni
+- Mapiranje tabele/kolone: `select MBPC_Conto from MB_PiaCon`
 
-6      Barkod:
+**8. Podkonto:**
 
--        Polje: obavezno samo ako je bar kod barem jednog artikla unesen u navedenom odjeljku
+- Polje: obavezno
+- Tip: tekstualni niz
+- Opis: podkonto dobavljača, knjiga dobavljača.
 
--        Vrsta: niz znakova
+*Primer*: za konto 2200, koji smo ranije naveli, postoje 3 podkonta: „001”, koji odgovara fakturama, „002”, koji odgovara vrednostima otpremnica, i „” (nije naveden podkonto), koji odgovara novcu i novčanim ekvivalentima.
 
--        Opis: služi za označavanje vrste korištenog barkoda
+- Mapiranje tabele/kolone: `select BPC_SottoConto from MB_PiaCon`
 
-*Primjer*: “39” odgovara COD39
+**9. Valuta:**
 
--        Mapiranje tablice/stupca: select MBBC_Codice from MB_BarCode
+- Polje: obavezno
+- Tip: tekstualni niz
+- Opis: valuta u kojoj se tumače vrednosti unete u odgovarajući odeljak.
 
-7      Konto:
+*Primer*: „EUR” odgovara evru, a „USD” dolaru.
 
--        Polje: obavezno
+- Mapiranje tabele/kolone: `select MBDI_Divisa from MB_Divise`
 
--        Vrsta: niz znakova
+**10. Početak važenja:**
 
--        Opis: konto dobavljača, knjiga dobavljača
+- Polje: obavezno
+- Tip: datum i vreme
+- Opis: označava početak važenja unetog cenovnika (dd/mm/yyyy).
 
-*Primjer*: “2200” koji ima 3 podkonta (vidi dolje)
+*Primer*: 1/10/2018
 
--        Mapiranje tablice/stupca: select MBPC_Conto from MB_PiaCon
+**11. Kraj važenja:**
 
-8      Podkonto:
+- Polje: nije obavezno
+- Tip: datum i vreme
+- Opis: ako je naveden, označava kraj važenja unetog cenovnika (dd/mm/yyyy).
 
--        Polje: obavezno
+*Primer*: 31/12/2027
 
--        Vrsta: niz znakova 
+**12. Tip popusta cenovnika:**
 
--        Opis: podkonto dobavljača, knjiga dobavljača
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Opis: ako je naveden, označava tip dodeljenog popusta. Postojaće tri različita tipa, po jedan za svaki odgovarajući popust u odeljku Popusti.
 
-*Primjer*: za konto 2200 koji smo vidjeli ranije, postoje 3 podkonta: “001” koji odgovara računima, “002” koji odgovara vrijednostima otpremnice i “” (nije naveden podkonto) koji odgovara novcu i novčanim ekvivalentima.
+*Primer*: „4” odgovara konačnom promotivnom popustu.
 
--      Mapiranje tablice/stupca: select BPC_SottoConto from MB_PiaCon
+- Mapiranje tabele/kolone: `select MBST_Code from MB_Sconti`
 
-9      Valuta:
+**15. Tip količinskog popusta:**
 
--        Polje: obavezno
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Opis: ako je naveden, označava tip odobrenog popusta.
 
--        Vrsta: niz znakova
+*Primer*: „4” odgovara konačnom promotivnom popustu.
 
--        Opis: valuta u kojoj se tumače vrijednosti unesene u danom odjeljku
+- Mapiranje tabele/kolone: `select MBST_Code from MB_Sconti`
 
-*Primjer*: “EUR” odgovara euru, “USD” odgovara dolaru
+**16. Tip vrednosnog popusta:**
 
--        Mapping table/stupca: select MBDI_Divisa from MB_Divise
+- Polje: nije obavezno
+- Tip: tekstualni niz
+- Opis: ako je naveden, označava tip odobrenog popusta.
 
-10  Početak valjanosti:
+*Primer*: „4” odgovara konačnom promotivnom popustu.
 
--        Polje: obavezno
+- Mapiranje tabele/kolone: `select MBST_Code from MB_Sconti`
 
--        Vrsta: datum i vrijeme
+**17. Za podizvođača:**
 
--        Opis: označava početak važenja umetnutog cjenika (dd/mm/gggg)
+- Polje: obavezno
+- Tip: boolean
+- Opis: označava da li je ovaj cenovnik za podizvođača ili ne.
 
-*Primjer*: 1/10/2018
+*Primer*: „1” označava tačno, a „0” netačno.
 
-11  Kraj valjanosti:
+**18. Umetanje artikla:**
 
--        Polje: nije obavezno
+- Polje: obavezno
+- Tip: boolean
+- Opis: ako je postavljeno na 1, artikal se umeće u tabelu artikala u bazi podataka MG_AnaArt.
 
--        Vrsta: datum i vrijeme
+*Primer*: „1” označava tačno, a „0” netačno.
 
--        Opis: ako postoji, označava kraj valjanosti umetnutog cjenika (dd/mm/gggg)
+**19. Umetanje stavke dobavljača:**
 
-*Primjer*: 31/12/2027
+- Polje: obavezno
+- Tip: boolean
+- Opis: ako je postavljeno na 1, artikal se umeće u tabele artikala dobavljača MB_ArticoliFornitore i MG_FornPreferenziali.
 
-12  Cjenik vrste popusta::
+*Primer*: „1” označava true, a „0” false.
 
--        Polje: nije obavezno
+### Pokretanje uvoza
 
--        Vrsta: niz znakova 
+Nakon unosa podataka, za pokretanje uvoza kliknite na dugme u meniju za uvoz, u gornjem levom uglu, koje se naziva i „Uvoz”, kao što je prikazano na slici ispod.
 
--        Opis: ako postoji, označava vrstu danog popusta, postojat će tri različite vrste za svaki odgovarajući popust u odjeljku Popusti
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image14.png)
 
-*Primjer*: "4" odgovara konačnom popustu na akciji
+### Zaključak – Umetanje je izvršeno
 
--        Mapiranje tablice/stupca: select MBST_Code from MB_Sconti
+Ako je sve u redu, neće se pojaviti poruka o grešci. Da biste dodatno proverili uspešnost uvoza, otvorite šifarnik artikala (**Početna stranica > Artikli**) i proverite da li su uvezeni artikli dobavljača prisutni.
 
-15 Vrsta količinskog popusta:
+U suprotnom će se na ekranu pojaviti poruka o grešci koja će pokazati koji parametri i/ili polja nisu ispravni. Za tumačenje tipa greške pogledajte odeljak Korisni saveti i upozorenja na kraju dokumenta.
 
--        Polje: nije obavezno
+### Korisni saveti i upozorenja
 
--        Vrsta: niz znakova
+**Preporučeno Excel formatiranje:**
 
--        Opis: ako postoji, označava vrstu odobrenog popusta
+- Za ispravan uvoz izričito se preporučuje formatiranje kolona prema tipu navedenom u odeljku „Excel Formatting” za svako polje. Na primer, ako je tip polja decimalni broj i u njega se unosi valuta, formatirajte polje kao valutu. U suprotnom, ako ćelija nije formatirana, Excel može ukloniti nule koje ne utiču na numeričku vrednost. Da biste primenili formatiranje, pratite sledeće korake:
 
-*Primjer*: “4” odgovara konačnom popustu na akciji
+Prvo izaberite željenu kolonu, kao što je prikazano na slici ispod:
 
--        Mapiranje tablice/stupca: select MBST_Code from MB_Sconti
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image15.png)
 
-16 Vrsta vrijednosnog popusta:
+Zatim, nakon što postavite pokazivač miša unutar kolone, kliknite desnim tasterom miša.
 
--        Polje: nije obavezno
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image16.png)
 
--        Vrsta: niz znakova
+Kliknite levim tasterom miša na **Format Cells…**
 
--        Opis: ako postoji, označava vrstu odobrenog popusta
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image17.png)
 
-*Primjer*: “4” odgovara konačnom popustu na akciji
+Na ovom ekranu možete formatirati izabranu kolonu. Na osnovu smernica navedenih u poljima za unos, izaberite odgovarajuću kategoriju sa relevantnim podešavanjima (npr. valuta). Isti postupak može se izvršiti i u tabeli unutar Fluentisa.
 
--        Mapiranje tablice/stupca: select MBST_Code from MB_Sconti
+**Pažnja**: tipičan primer su šifre koje sadrže nule, npr. „001”. Ako je polje formatirano kao opšte ili numeričko, nule će biti uklonjene, dok će se sačuvati ako je polje formatirano kao tekstualni niz.
 
-17 Za podizvođača:
+**Mapiranje tabele/kolone:**
 
--        Polje: obavezno
+- Ako je prilikom umetanja polja navedeno mapiranje tabele/kolone, to znači da vrednost uneta u polje za uvoz već mora postojati u bazi podataka. Da biste pregledali odgovarajuće podatke koji postoje u bazi podataka, pratite korake u nastavku. Kao primer koristićemo klasu artikla i njeno mapiranje:
 
--        Tip: boolean
+```SQL
+select MBDC_Classe from MB_Classi (**<- ovo je mapiranje**). Pokrenite upit u programu „Microsoft SQL Server Management Studio” i dobićete sledeći rezultat:
+```
 
--        Opis: označava hoće li ovaj (podugovarateljski) cjenik biti za podizvođača ili ne
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image18.png)
 
-*Primjer*: “1” odgovara točno, “0” odgovara netočno
+Ovakav prikaz ne pruža dovoljno informacija da bismo razumeli značenje vrednosti. Da biste to razumeli, zamenite simbol „*” nakon klauzule SELECT i sastavite novi upit. U ovom slučaju trebalo bi da izaberete `select * from MB_Class`, koji se koristi za prikaz celokupnog sadržaja tabele. Uradimo to sada.
 
-18 Umetanje artikla:
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image19.png)
 
--        Polje: obavezno
+Ovo je korisno jer, kao što je prikazano na slici, na osnovu opisa (MBDC_Descr) možemo razumeti šta polje predstavlja i proveriti da li se vrednost koju nameravamo da unesemo već nalazi u bazi podataka.
 
--        Tip: boolean
+Opisani postupak je univerzalan, odnosno primenjuje se na svako polje.
 
--        Opis: ako je postavljeno na 1, umeće artikl u tablicu baze podataka artikla MG_AnaArt
+Isti prikaz može se videti i u Fluentisu.
 
-*Primjer*: “1” odgovara točno, “0” odgovara netočno
+Na početnoj stranici Fluentisa izaberite **Artikli > Artikli dobavljača** (pogledajte sliku ispod).
 
-19  Umetanje stavke od strane dobavljača:
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image20.png)
 
--        Polje: obavezno
+Zatim u prikazanoj maski za pretragu kliknite levim tasterom miša na mali trougao pored artikala. Otvoriće se padajući meni u kojem možete videti klase artikala sa njihovim opisima, kao na slici.
 
--        Tip: boolean
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image21.png)
 
--        Opis: ako je postavljeno na 1, umeće artikl u tablicu artikla dobavljača  MB_ArticoliFornitore, MG_FornPreferenziali
+Ovo se odnosi na kategoriju artikala. Za ostala polja isti postupak može se primeniti na drugim mestima.
 
-*Primjer*: “1” odgovara true, “0” odgovara false
+Zato je potrebno uneti jednu od postojećih vrednosti. U suprotnom uvoz neće biti uspešan i dobićemo grešku. Ovo važi za svako polje za koje je navedeno mapiranje tabele/kolone.
 
-### Započni uvoz
+Međutim, ako želimo da dodamo vrednost za polje sa mapiranjem koja još ne postoji u bazi podataka, moraćemo da je unesemo pomoću upita ili kroz Fluentis. U ovom slučaju ne preporučuje se korišćenje INSERT upita jer je njegovo sastavljanje složenije od prethodno prikazanog SELECT upita. Zato se preporučuje unos kroz Fluentis.
 
-Nakon što su podaci uneseni, za početak uvoza kliknite na gumb u izborniku za uvoz, u gornjem lijevom kutu, koji se naziva i "Uvoz"  kao na slici ispod.
+Ponovo ćemo koristiti klasu artikla kao primer. U odeljku Artikli dobavljača (slika iznad) kliknite desnim tasterom miša unutar filtera za pretragu klase artikla i izaberite **Otvori obrazac**.
 
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image14.png)
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image22.png)
 
- 
+U obrascu koji se otvori kliknite na dugme **Pretraga** da biste videli postojeće klase artikala.
 
-### Zaključci – Došlo je do umetanja
+![](/img/neutral/common/search.png)
 
-Ako sve bude u redu, neće se pojaviti poruka o pogrešci. Za daljnju provjeru uspjeha, idite i provjerite u registru artikala (**Početna stranica > Artikli**) postoje li oni uvezeni od dobavljača. U protivnom će se na ekranu pojaviti poruka o pogrešci koja će pokazati koji parametri i/ili polja nisu točni. Za tumačenje vrste pogreške, pogledajte Korisni savjeti i upozorenja u zadnjem paragrafu.
+Ispod poslednjeg reda nalazi se prazan red. On služi za unos novih vrednosti.
 
-### Korisni savjeti i upozorenja
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image24.png)
 
+Nove vrednosti koje želite da unesete upišite u taj red, a zatim samo pritisnite Enter.
 
-**Preporučeno Excel formatiranje**:
+Ovaj postupak je sličan i za ostala polja. Menja se samo mesto na kojem se nalaze filteri za pretragu, u kojima se klikom levim tasterom miša otvara obrazac.
 
--        Za ispravan uvoz, snažno se preporučuje formatiranje stupaca prema vrsti naznačenoj u odjeljku “Excel Formatting” svakog polja. Na primjer, ako je vrsta polja decimalna i valuta će biti umetnuta u to polje, formatirajte polje kao valutu. To je zato što, na primjer, ako ćelija nije formatirana, Excel uklanja beznačajne brojke. Za umetanje oblikovanja slijedite ove korake:
+**Greške:**
 
-Prvo odaberite željeni stupac kao na sl. pod, ispod:
+- U slučaju neuspešnog uvoza, kao što je prethodno navedeno, na ekranu će se pojaviti poruka o grešci.
 
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image15.png)
+Ako je greška nastala u delu sa podacima, moguće je utvrditi red koji sadrži grešku. Na primer, poruka može glasiti: „System.ArgumentException: Error importing row 4”.
 
+U ovom slučaju (pogledajte sliku ispod), greška će biti prijavljena za red 4, koji, međutim, nije stvarni red koji sadrži grešku. Da biste tačno utvrdili koji red sadrži grešku, dodajte 1 broju reda, koristeći brojeve u levoj koloni.
 
-Zatim, nakon postavljanja pokazivača miša unutar stupca, pritisnite desnu tipku miša.
-
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image16.png)
-
-
-Odaberite lijevim klikom  **> Format Cells…**
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image17.png) 
-
-Na ovom zaslonu zatim možete oblikovati odabrani stupac. Na temelju indikacija navedenih u poljima za umetanje, odaberite odgovarajuću kategoriju, s relevantnim specifikacijama (npr. valuta). Potpuno ista stvar može se učiniti iz proračunske tablice unutar Fluentisa.
-
-**Pažnja**: klasični slučaj odnosi se na kodove koji sadrže nule, npr. “001”. Ako je polje formatirano generički ili brojčano, nule će biti odbačene, a ako je formatirano kao niz, umjesto toga će se zadržati.
-
-**Mapiranje tablice/stupca**:
-
--        Ako je stavka mapiranja tablice/stupca prisutna u umetanju polja, to znači da vrijednost umetnuta u polje za uvoz mora već biti prisutna u bazi podataka. Za pregled relevantnih podataka prisutnih u bazi podataka, jednostavno slijedite korake u nastavku, u kojima će se klasa artikla i njeno mapiranje koristiti kao primjer:
-
-select MBDC_Classe from MB_Classi (**\<-** ovo je mapiranje). Pokrećemo upit u “Microsoft SQL server management studio” i dobivamo sljedeći rezultat:
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image18.png) 
-
-Ovako gledano, ne prikazuje ništa kako bi razumjeli njegovo značenje, zamijenite simbol “*” nakon klauzule za odabir u polju da biste sastavili novi upit. U ovom slučaju bi morali odabrati select * from MB_Class, koji se koristi za odabir cijelog sadržaja tablice, učinimo to sada.
-
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image19.png)
-
-Ovo se koristi jer je, kao što je prikazano na slici, kroz opis (MBDC_Descr) moguće razumjeti što polje predstavlja i provjeriti nalazi li se ono što ćete unijeti u bazu ili ne.
-
-Ovaj opisani postupak je univerzalan, odnosno odnosi se na svako polje.
-
-Isti prikaz se može vidjeti u Fluentisu:
-
-Na početnoj stranici Fluentisa odaberite **Artikli > Artikli dobavljača** (pogledajte sliku u nastavku).
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image20.png) 
-
-Zatim u maski za pretraživanje koja se pojavi kliknite lijevom tipkom miša na mali trokutić pored artikala, čime se otvara padajući izbornik na kojem možete vidjeti klasu artikala sa njihovim opisom kao na slici. 
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image21.png) 
-
-Ovo je za kategoriju artikli. Za ostala polja isti postupak se može izvesti samo u različitim točkama.
-
-Stoga bismo trebali unijeti jednu od sadašnjih vrijednosti, inače uvoz neće biti uspješan i dobit ćemo pogrešku. Ovo je za svako polje za koje je prisutno preslikavanje tablice/stupca.
-
-Međutim, ako želimo dodati polje s preslikavanjem koje nije prisutno u bazi podataka, morat ćemo ga umetnuti ili putem upita ili iz Fluentisa, u ovom slučaju upit za umetanje se ne preporučuje jer ga je kompliciranije sastaviti od pogleda viđenog prije. Stoga je preporučeni postupak umetanje iz Fluentisa. Opet u slučaju klase artikla, od artikala dobavljača (slika iznad) pritisnite desnu tipku unutar filtra za pretraživanje klase artikla i odaberite **Otvori obrazac**.
-
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image22.png) 
-
-U obrascu koji se otvori pritisnite gumb **Pretraživanje** kako biste vidjeli prisutne klase stavki.
-
-![](/img/neutral/common/search.png) 
-
-Ispod posljednjeg retka nalazi se prazan red. To je onaj koji se koristi za umetanje novih vrijednosti.
-
- ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image24.png)
-
-Nove vrijednosti koje treba umetnuti moraju biti zapisane tamo i nakon toga samo pritisnite enter.
-
-
-  Ova procedura je slična i za ostala polja, jedino što se mijenja je gdje se nalaze filteri pretraživanja u kojima se pritiskom na lijevu tipku otvara obrazac.
-
-**Greške**: 
-
--        U slučaju neuspješnog uvoza, kao što je prethodno spomenuto, na zaslonu će se pojaviti poruka s pogreškom.
-
- Ako je pogreška napravljena u podatkovnom dijelu, moguće je pratiti redak koji sadrži pogrešku kao što će na primjer biti napisano “System.ArgumentException: Error importing row 4”.
-
-U ovom slučaju (vidi sliku u nastavku), pogreška će se naći u retku 4, koji međutim nije stvarni redak koji sadrži pogrešku. Da biste točno razumjeli koji red sadrži pogrešku, dodajte mu 1 pomoću brojeva u lijevom stupcu.
-
- Pravi red koji sadrži pogrešku  = Error importing rownum + 1
+Stvarni red koji sadrži grešku = Error importing rownum + 1
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image25.png)
 
-Kako bi se interpretirala pogreška u poruci, slijedite sljedeće korake: na istoj liniji koja sadrži broj linije prikazan ranije, nalazi se objekt na koji se pogreška odnosi, zatim sama pogreška, i naposljetku svojstvo u kojem je ta pogreška pronađena.  U primjeru navedenom gore “Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.PurchasePriceListsnot-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”. U ovom slučaju, kao što se može vidjeti iz slike iznad, jedinica mjere vezana uz cijenu u cjeniku uzrokovala je pogrešku jer je ona postavljena na null. Naime, njezin unos je obavezan.
+Da biste protumačili grešku u poruci, pratite sledeće korake: u istom redu u kojem se nalazi prethodno navedeni broj reda nalazi se objekat na koji se greška odnosi, zatim sama greška i, na kraju, svojstvo u kojem je greška pronađena.
 
- Ako je pogreška napravljena u dijelu s parametrima, poruka će biti slična, metoda rješavanja uvijek ostaje prethodna stoga, na temelju svojstva, provjerite ispravnost umetanja iste.
+U prethodno navedenom primeru poruka glasi:
 
-**Upozorenje**: Ako se pronađe potpuno prazan redak, neće biti prijavljena nikakva pogreška, ali uvoz će tu završiti. Na primjer, ako je prvi redak (redak br. 4) iz nekog razloga prazan, a ispod (od uključenog retka br. 5) pronađeni su popunjeni redovi, ništa se neće uvesti.
+„Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.PurchasePriceListsnot-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”.
 
-**Upozorenje**: Ako je umetnut cjenik od 10 redaka, npr. i na retku br. 7 javlja se pogreška, prvih 6 redaka nije uzrokovalo nikakve probleme i umetnuto je! Ako se vrijednost ne promijeni u prvih 6 redaka (i ako je greška očito ispravljena), ponovnim pokretanjem uvoza neće biti problema, čak ni dupliciranja jer se prvo traži ako je stavka već prisutna. Ako se čak i samo jedna vrijednost promijeni, ta će stavka biti umetnuta jer se vidi kao nova stavka.
+U ovom slučaju, kao što se može videti na slici iznad, grešku je izazvala merna jedinica povezana sa cenom u cenovniku jer je postavljena na null. Naime, njen unos je obavezan.
 
-Na kraju, još jedna poruka o pogrešci koja se može pojaviti je sljedeća.
+Ako je greška nastala u delu sa parametrima, poruka će biti slična. Način rešavanja ostaje isti kao u prethodnom slučaju, pa na osnovu navedenog svojstva proverite da li je ono ispravno uneto.
 
-![](/img/it-it/applications/bizlink/import-purchase-price-lists/image26.png) 
+**Upozorenje**: Ako se pronađe potpuno prazan red, neće biti prijavljena nikakva greška, ali će se uvoz na tom mestu završiti. Na primer, ako je prvi red (red br. 4) iz nekog razloga prazan, a ispod njega (počevši od reda br. 5) postoje popunjeni redovi, ništa neće biti uvezeno.
 
-Kao što možete vidjeti na gornjoj slici, ovu vrstu poruke lakše je protumačiti jer je navedena točna referenca ćelije s relativnom pogreškom. U ovom slučaju nema vrijednosti u ćeliji F:4.
+**Upozorenje**: Ako je unet cenovnik sa, na primer, 10 redova, a greška se pojavi u redu br. 7, prvih 6 redova neće imati problema i biće uvezeni! Ako se vrednosti u prvih 6 redova ne promene (i ako je greška očigledno ispravljena), ponovnim pokretanjem uvoza neće doći do problema, pa ni do dupliranja, jer se najpre proverava da li stavka već postoji. Ako se promeni čak i samo jedna vrednost, ta stavka biće uvezena jer će biti prepoznata kao nova stavka.
+
+Na kraju, može se pojaviti još jedna poruka o grešci, prikazana ispod.
+
+![](/img/it-it/applications/bizlink/import-purchase-price-lists/image26.png)
+
+Kao što možete videti na slici iznad, ovu vrstu poruke lakše je protumačiti jer je navedena tačna referenca ćelije u kojoj se nalazi greška. U ovom slučaju nema vrednosti u ćeliji F:4.

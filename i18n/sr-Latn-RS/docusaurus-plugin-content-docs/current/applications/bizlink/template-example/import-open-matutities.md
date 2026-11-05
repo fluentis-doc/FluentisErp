@@ -1,52 +1,52 @@
 ---
-title: Uvoz Otvorenih stavki
+title: Uvoz otvorenih stavki
 sidebar_position: 2
 ---
 
-Excel datoteka (predložak) za uvoz otvorenih stavki u Administrativnom modulu zahtijeva popunjavanje obe kartice:
+Excel datoteka (šablon) za uvoz otvorenih stavki u Administrativni modul zahteva popunjavanje obe kartice:
 
-**Parametri Bizlinka:**
+**Parametri BizLinka:**
 
-Polja za popunjavanje (ne popunjavaju se automatski)  
+Polja za popunjavanje (ne popunjavaju se automatski):
 
-- stavka ili plaćanje: 0 = otvorena stavka; 1 = plaćanje (zatvara stavke), pogledajte dokumentaciju Administrativnog modula u slučaju nejasnoća;  
-- U plaćanju: oznaka koja pokazuje je li stavka već unesena u transakciju uplate dobavljača. Obično postavljeno na 0 za normalne otvorene stavke;  
-- ID statusa stavki: postaviti na 1 prema zadanim postavkama;  
-
+- Stavka ili plaćanje: 0 = otvorena stavka; 1 = plaćanje (zatvara stavke). U slučaju nedoumica pogledajte dokumentaciju Administrativnog modula.
+- U plaćanju: oznaka koja pokazuje da li je stavka već uključena u transakciju uplate dobavljača. Obično se postavlja na 0 za standardne otvorene stavke.
+- ID statusa stavki: podrazumevano postaviti na 1.
 
 **Kartica Podaci:**
 
-KUPAC / DOBAVLJAČ    
-    
-- Konto / podkonto: unesite kod računa i podračuna kupaca ili dobavljača koji su već prisutni u Fluentisu (OBAVEZNO)  
+**KUPAC / DOBAVLJAČ**
 
-REFERENCE DOKUMENTA    
-- Vrsta dokumenta: npr. FA za račun kupovine, FV za račun prodaje. Koristite već postojeću kodiranu vrijednost u Fluentisu.  
-- Broj / Datum računa: neobavezno, u slučaju opće stavke možete ga izostaviti označavajući tip dokumenta kao GEN  
+- Konto / podkonto: unesite konto i podkonto kupca ili dobavljača koji već postoje u Fluentisu (OBAVEZNO).
 
-PODACI O PLAĆANJU  
-- Vrsta plaćanja: već mora biti prisutna u Fluentisu (pogledajte kodove vrsta plaćanja koji su prisutni) - OBAVEZNO  
-- Datum dospijeća: datum dospijeća stavke - OBAVEZNO   
-- Račun / podračun banke. To je banka povezana s partijom (neobavezno)  
+**REFERENCE DOKUMENTA**
 
-PODACI O STAVKAMA  
-- Preostalo (Duguje / Potražuje): podatak o preostalom otvorenom iznosu, ako stavka nije djelomično plaćena, odgovara protuvrijednosti.    
-PODATAK JE IZRAŽEN U VALUTI NAVEDENOJ U ODGOVARAJUĆEM STUPCU. OBAVEZNO popuniti odjeljak Duguje ili Potražuje (ovisno o znaku stavke) i uvijek unesite vrijednost 0,00 u susjedni stupac. (ako unesete Duguje npr. 100,00 stavite 0,00 u Potražuje) OBAVEZNO  
-- Protuvrijednost (Duguje / Potražuje): to je vrijednost stavke u valuti tvrtke (npr. euri). OBAVEZNO popuniti odjeljak Duguje ili Potražuje (ovisno o znaku stavke) i uvijek unesite vrijednost 0,00 u susjedni stupac. (ako unesete Duguje npr. 100,00 stavite 0,00 u Potražuje) OBAVEZNO  
-- Valuta: popunite kodom koji već postoji u Fluentisu (npr. EUR za euro, USD za američki dolar) - OBAVEZNO  
-- Blokada: oznaka koja pokazuje je li stavka blokirana i nije plaćiva (1) ili je slobodna (0). OBAVEZNO  
-- Bilješke: opcionalno polje s napomenama o stavki  
+- Tip dokumenta: npr. FA za ulaznu fakturu, FV za prodajnu fakturu. Koristite već postojeću šifrovanu vrednost u Fluentisu.
+- Broj / Datum fakture: opciono. U slučaju opšte stavke možete ga izostaviti tako što ćete kao tip dokumenta označiti GEN.
 
-PODACI O ZAPISU Datum i broj knjiženja povezanog s partijom. Odsjek je neobavezan.  
+**PODACI O PLAĆANJU**
 
-PAŽNJA: Ako je unesen zapis, mora već biti prisutan u Fluentisu i bit će pretražen tijekom uvoza, ako nije pronađen, uvoz će vratiti pogrešku.  
+- Tip plaćanja: mora već postojati u Fluentisu (pogledajte postojeće šifre tipova plaćanja) – OBAVEZNO.
+- Datum dospeća: datum dospeća stavke – OBAVEZNO.
+- Konto / podkonto banke: banka povezana sa poslovnim partnerom (opciono).
+
+**PODACI O STAVKAMA**
+
+- Preostalo (Duguje / Potražuje): podatak o preostalom otvorenom iznosu. Ako stavka nije delimično plaćena, odgovara protivvrednosti.  
+  PODATAK JE IZRAŽEN U VALUTI NAVEDENOJ U ODGOVARAJUĆOJ KOLONI. OBAVEZNO je popuniti polje Duguje ili Potražuje (u zavisnosti od znaka stavke) i uvek uneti vrednost 0,00 u susednu kolonu. (Ako unesete Duguje, npr. 100,00, unesite 0,00 u Potražuje.) OBAVEZNO.
+- Protivvrednost (Duguje / Potražuje): vrednost stavke u valuti preduzeća (npr. evrima). OBAVEZNO je popuniti polje Duguje ili Potražuje (u zavisnosti od znaka stavke) i uvek uneti vrednost 0,00 u susednu kolonu. (Ako unesete Duguje, npr. 100,00, unesite 0,00 u Potražuje.) OBAVEZNO.
+- Valuta: unesite šifru koja već postoji u Fluentisu (npr. EUR za evro, USD za američki dolar) – OBAVEZNO.
+- Blokada: oznaka koja pokazuje da li je stavka blokirana i nije plativa (1) ili je slobodna (0). OBAVEZNO.
+- Napomene: opciono polje za unos napomena o stavci.
+
+**PODACI O KNJIŽENJU**
+
+Datum i broj knjiženja povezanog sa poslovnim partnerom. Odeljak je opcion.
+
+PAŽNJA: Ako je knjiženje uneto, ono mora već postojati u Fluentisu i biće pronađeno tokom uvoza. Ako ne bude pronađeno, uvoz će vratiti grešku.
 
 ---
 
-Provjerite jesu li šifre valuta (tablica valuta) ispunjeni za sve valute (ponekad nedostaje za euro)  
+Proverite da li su šifre valuta (tabela valuta) popunjene za sve valute (ponekad nedostaje šifra za evro).
 
-
-**PAŽNJA**: provjerite jesu li u numeratoru partija uključene i prethodne godine ako u Excelovoj tablici postoje stavke s dospijećem iz prethodnih godina, inače će doći do pogreške. To je zato što novi baza podataka obično ima numeratore koji počinju s tekućom godinom.  
-
-
-
+**PAŽNJA**: proverite da li numeratori poslovnih partnera obuhvataju i prethodne godine ako Excel tabela sadrži stavke sa datumom dospeća iz prethodnih godina. U suprotnom će doći do greške. Razlog je to što novi sistem obično ima numeratore koji počinju od tekuće godine.

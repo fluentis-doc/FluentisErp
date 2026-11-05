@@ -1,95 +1,110 @@
 ---
-title: Importazione METEL
+title: Uvoz METEL cenovnika
 sidebar_position: 6
 ---
 
-**BizLink** consente l'importazione dei listini Metel, sono resi disponibili due flussi per tale import. L'unica operazione che deve fare l'utente è configurare il connettore per effettuare l'import.
+**BizLink** omogućava uvoz METEL cenovnika. Za ovaj uvoz dostupna su dva toka. Korisnik treba samo da konfiguriše konektor za izvršavanje uvoza.
 
-:::danger[Lunghezza del file]
-In Fluentis sono supportati solo 2 tipologie di file, quelli a 178 e 233 caratteri!
+:::danger[Dužina datoteke]
+Fluentis podržava samo dve vrste datoteka: one dužine 178 i 233 znaka!
 :::
 
-:::danger[Formato del file]
-In Fluentis è supportato solo il formato ANSI del file!
+:::danger[Format datoteke]
+Fluentis podržava samo datoteke u ANSI formatu!
 :::
 
-:::tip[Processo file in formato non corretto]
-Se il file non rispetta le due caratteristiche sopra riportate BizLink, sposterà il file nella cartella dei file processati e nei documenti in entrata non scriverà nulla in quanto "scarta" il file
+:::tip[Obrada datoteke u neispravnom formatu]
+Ako datoteka ne ispunjava navedena dva uslova, BizLink će je premestiti u fasciklu obrađenih datoteka, a u dolaznim dokumentima neće zabeležiti ništa jer će datoteku odbaciti.
 :::
 
-### Prerequisiti
-- Servizio di BizLink installato e funzionante
-- Listino Metel (file in formato txt) valido
+### Preduslovi
 
-:::tip[Sito ufficiale Metel]
-Per qualsiasi dubbio sul file si rimanda al sito: https://listinipubblici.metel.it/ nel quale c'è la funzionalità "Verifica Listino"
+- Instalirana i aktivna usluga BizLink.
+- Važeći METEL cenovnik (datoteka u TXT formatu).
+
+:::tip[Zvanična stranica METEL-a]
+U slučaju bilo kakvih nedoumica u vezi sa datotekom, posetite zvaničnu stranicu: [https://listinipubblici.metel.it/](https://listinipubblici.metel.it/), na kojoj je dostupna funkcionalnost „Verifica Listino” (Provera cenovnika).
 :::
 
-### Visione Parser e Flussi
+### Pregled parsera i tokova
 
-:::note[Nota bene]
-In questa sezione vengono riportati e spiegati i flussi già presenti in Fluentis. Nella sezione successiva viene spiegato come configurare il connettore ed effettuare l'import.
+:::note[Napomena]
+U ovom odeljku opisani su i objašnjeni tokovi koji su već dostupni u Fluentisu. U sledećem odeljku objašnjeno je kako da konfigurišete konektor i izvršite uvoz.
 :::
 
 #### Parser
 
-Metel ha un parser chiamato FluentisEDIExtendedParser
+Za METEL se koristi parser pod nazivom `FluentisEDIExtendedParser`.
 
 ![](/img/it-it/applications/bizlink/import-metel/1.png)
 
-Al suo interno ci sono due oggetti parser, uno per il file a 178 caratt. e uno per quello a 233
+U okviru njega nalaze se dva objekta parsera: jedan za datoteke dužine 178 znakova, a drugi za datoteke dužine 233 znaka.
 
 ![](/img/it-it/applications/bizlink/import-metel/2.png)
 
-Prendendo come esempio l'oggetto parser per il file a 233, vediamo ogni campo come viene importato e in che posizione dovrebbe essere.
-Questo può tornare utile in caso di errori di import, in quanto data la proprietà che ha errore possiamo capire in che posizione del file si trova.
+Uzmimo za primer objekat parsera za datoteku dužine 233 znaka i pogledajmo kako se uvozi svako polje i na kojoj se poziciji nalazi u datoteci.
+
+Ovo može biti korisno u slučaju grešaka pri uvozu jer na osnovu svojstva koje sadrži grešku možemo utvrditi na kojoj se poziciji u datoteci nalazi odgovarajući podatak.
 
 ![](/img/it-it/applications/bizlink/import-metel/3.png)
 
-#### Flusso
+#### Tok
 
-Metel ha poi un flusso chiamato METEL
+Za METEL je dostupan i tok pod nazivom `METEL`.
 
 ![](/img/it-it/applications/bizlink/import-metel/4.png)
 
-Tale flusso ha un'operazione di flusso al suo interno chiamata FLOW_OP_MetlPriceList
+Taj tok sadrži operaciju pod nazivom `FLOW_OP_MetlPriceList`.
 
 ![](/img/it-it/applications/bizlink/import-metel/5.png)
 
-Tale operazione di flusso ha 2 documenti di flusso differenziati dal numero di caratteri del file
+Navedena operacija sadrži dva dokumenta toka koji se razlikuju prema broju znakova u datoteci.
 
 ![](/img/it-it/applications/bizlink/import-metel/6.png)
 
-Il documento di flusso definisce poi quale oggetto parser usare per processare il file
+Dokument toka zatim određuje koji će se objekat parsera koristiti za obradu datoteke.
 
 ![](/img/it-it/applications/bizlink/import-metel/7.png)
 
-### Creazione connettore
+### Kreiranje konektora
 
-Andare in Bizlink - Connettori e premere nuovo
+Otvorite **BizLink > Konektori** i kliknite na **Novo**.
 
 ![](/img/it-it/applications/bizlink/import-metel/8.png)
 
-Impostare poi Codice, Descrizione, Tipo connettore = Folder Monitor, Partner, Flusso, Operazione di flusso, Documento di flusso (in base al numero di caratteri del file che si vuole importare), Gestito dal servizio di autenticazione.
-Infine impostare il percorso delle cartelle:
-- Incoming: dove verrà messo il file per essere processato
-- Processed: dove verrà spostato il file dal servizione se verrà importato correttamente
-- Failed: dove verrà spostato il file dal servizione se tale file avrà degli errori
+Zatim podesite sledeće vrednosti:
+
+- Šifra
+- Opis
+- Tip konektora = **Folder Monitor**
+- Partner
+- Tok
+- Operacija toka
+- Dokument toka (u zavisnosti od broja znakova u datoteci koju želite da uvezete)
+- **Managed by Authentication Service**
+
+Na kraju podesite putanje fascikli:
+
+- **Incoming**: fascikla u koju će biti smeštena datoteka za obradu.
+- **Processed**: fascikla u koju će usluga premestiti datoteku ako je uspešno uvezena.
+- **Failed**: fascikla u koju će usluga premestiti datoteku ako tokom obrade dođe do grešaka.
 
 ![](/img/it-it/applications/bizlink/import-metel/9.png)
 
-:::tip[Gestione di entrambi i file]
-Per poter gestire entrambi i tipi di file, creare due connettori diversi con i due documenti di flusso diversi.
-Inoltre la cartella di Incoming dovrà essere diversa. Failed e Processed possono anche essere le stesse cartelle.
+:::tip[Obrada obe vrste datoteka]
+Za obradu obe vrste datoteka potrebno je kreirati dva različita konektora, svaki sa odgovarajućim dokumentom toka.
+
+Pored toga, fascikla **Incoming** mora biti različita za svaki konektor. Fascikle **Failed** i **Processed** mogu biti zajedničke.
 :::
 
-### Test import
+### Testiranje uvoza
 
-:::danger[Attenzione]
-In caso di errori o di re-importazione di uno stesso file è necessario riavviare il servizio di BizLink in quanto non può processare un documento con lo stessso nome per evitare doppioni. Con il riavvio si sblocca questa cosa.
+:::danger[Pažnja]
+U slučaju grešaka ili ponovnog uvoza iste datoteke potrebno je ponovo pokrenuti uslugu BizLink jer ona ne može da obradi dokument sa istim nazivom kako bi se izbegli duplikati. Ponovnim pokretanjem usluge uklanja se ovo ograničenje.
 :::
 
-Per effettuare un test di import, assicurarsi che il servizio sia attivo e copiare il file .txt nella cartella di incoming e attendere qualche secondo.
-Nei documenti in entrata di BizLink sarà presente una riga con il risultato dell'import.
+Da biste testirali uvoz, proverite da li je usluga aktivna, kopirajte TXT datoteku u fasciklu **Incoming** i sačekajte nekoliko sekundi.
+
+U odeljku **Dolazni dokumenti** aplikacije BizLink pojaviće se red sa rezultatom uvoza.
 
 ![](/img/it-it/applications/bizlink/import-metel/10.png)

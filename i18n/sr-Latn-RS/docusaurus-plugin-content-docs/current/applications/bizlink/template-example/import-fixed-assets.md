@@ -1,27 +1,26 @@
 ---
-title: Uvoz imovine
+title: Uvoz osnovnih sredstava
 sidebar_position: 2
 ---
 
+Excel datoteka (šablon) za uvoz osnovnih sredstava u Administrativni modul omogućava popunjavanje kartica osnovnih sredstava na osnovu kategorija osnovnih sredstava koje već moraju postojati u bazi podataka.
 
-Excel datoteka (predložak) za uvoz imovine u Administrativnom modulu omogućuje popunjavanje kartica imovine na temelju kategorija imovine koje već moraju biti prisutne u bazi podataka.
+**Šifra kategorije:** mora već postojati u bazi podataka i biće korišćena u uvezenoj kartici osnovnih sredstava.
 
-**Šifra Kategorije:** mora već postojati u bazi podataka i bit će korišten u uvezenoj kartici imovine;
+**Predšifra:** opciono, koristi se samo ako je aktivirano *predšifriranje*, unosom *predšifre* koja treba da se koristi u numerisanju.
 
-**Predšifra:** neobavezno, upravljati samo ako je aktiviran prekod upisujući prekod koji treba koristiti u numeriranju;
+**Broj sredstva:** koristite slobodan broj.
 
-**Broj sredstva:** koristite slobodan broj;
+**Centar troška:** opciono, koristi se za dodelu centra troška na kartici osnovnih sredstava radi kasnijeg prenosa u fazi amortizacije.
 
-**Troškovni centar:** neobavezno, koristi se za dodjelu troškovnog centra na kartici imovine za kasnije kretanje u fazi amortizacije;
+**Datum nabavke:** obavezno, predstavlja datum učitavanja istorijskih troškova.
 
-**Datum nabave:** obavezno, datum je učitavanja povijesnih troškova;
+**Broj dokumenta / Datum nabavne fakture:** opciono, korisno za navođenje reference na ulaznu fakturu.
 
-**Broj dokumenta / Datum računa o nabavi:** neobavezno, korisno za navođenje reference na ulaznom računu;
+**Dobavljač:** opciono, koristi se za popunjavanje polja dobavljača sredstva na kartici osnovnih sredstava. Unesite naziv dobavljača iz šifarnika dobavljača.
 
-**Dobavljač:** neobavezno, koristi se za popunjavanje polja dobavljača dobra na kartici imovine, ispuniti s nazivom dobavljača u anketi dobavljača;
+**Ukupna vrednost sredstva:** predstavlja istorijski trošak osnovnog sredstva učitan sa datumom navedenim u koloni Datum nabavke.
 
-**Ukupna vrijednost sredstva:** to je povijesni trošak imovine učitan s datumom u stupcu Datum nabave;
+**Ukupna amortizacija:** predstavlja ukupan iznos akumulirane amortizacije u trenutku učitavanja/uvoza kartice osnovnih sredstava. Važno je napomenuti da će ovaj iznos biti učitan na način predviđen za prethodni prenos osnovnih sredstava (popunjavanjem najmanje jednog reda amortizacije), pa će se koristiti podatak naveden u sledećoj koloni **Godina**.
 
-**Ukupna amortizacija:** to je ukupni iznos akumulirane amortizacije u trenutku učitavanja / uvoza kartice imovine. Važno je napomenuti da će se ovaj iznos učitati prema očekivanom za prethodni prijenos imovine (ispunjavajući barem jedan redak amortizacije) i stoga će se koristiti podatak prisutan u sljedećem stupcu **Godina**.
-
-**Postotak amortizacije:** koristi se u slučaju da se želi učitati određeni postotak amortizacije za određenu imovinu, ako nije popunjeno, ništa neće biti upisano u odgovarajuće polje, a sljedeće amortizacije bit će izvršene prema postotku pripadajuće kategorije.
+**Procenat amortizacije:** koristi se ako se želi učitati određeni procenat amortizacije za pojedinačno osnovno sredstvo. Ako polje nije popunjeno, odgovarajuće polje ostaće prazno, a naredne amortizacije obračunavaće se prema procentu koji pripada odgovarajućoj kategoriji.

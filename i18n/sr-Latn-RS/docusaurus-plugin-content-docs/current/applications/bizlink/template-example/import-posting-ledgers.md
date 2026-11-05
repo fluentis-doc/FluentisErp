@@ -1,53 +1,55 @@
 ---
-title: Uvoz Knjiženja glavne knjige
+title: Uvoz knjiženja glavne knjige
 sidebar_position: 2
 ---
 
-Excel datoteka (predložak) za uvoz knjiženja glavne knjige u Administrativni modul omogućuje popunjavanje i dijela za PDV i dijela za knjiženje te se stoga popunjava na odgovarajući način ovisno o tome da li se uvoze knjiženja koja uključuju PDV ili jednostavno knjiženja glavne knjige.
+Excel datoteka (šablon) za uvoz knjiženja glavne knjige u Administrativni modul omogućava popunjavanje dela za PDV i dela za knjiženje, pa se popunjava na odgovarajući način u zavisnosti od toga da li se uvoze knjiženja koja uključuju PDV ili samo knjiženja glavne knjige.
 
+**AKO se uvoze knjiženja faktura:**
 
-AKO se uvoze knjiženja faktura:   
-1^ redak = zaglavlje   
-2^ redak = dnevnik + PDV  
-3^ redak (i nakon toga) = knjiženja glavne knjige  
+1. red = zaglavlje  
+2. red = dnevnik + PDV  
+3. red (i svi naredni redovi) = knjiženja glavne knjige
 
-Prva knjiga  
-1^ redak = zaglavlje  
-Ostali redci = dnevnik
+**Prva knjiga**
 
-Primjer
+1. red = zaglavlje  
+Ostali redovi = dnevnik
+
+Primer
 
 ![](/img/it-it/applications/bizlink/import-mov-contabili.png)
 
-**Datum knjiženja / Datum obračuna:** datumi knjiženja i valute glavnih knjiženja;  
+**Datum knjiženja / Datum obračuna:** datumi knjiženja i valute knjiženja glavne knjige.
 
-**Broj knjiženja:** pažnja, mora biti slobodan u odredišnoj bazi podataka ili će funkcija prepisati ono što pronađe bez provjere (to je SQL ažuriranje);
+**Broj knjiženja:** pažnja, mora biti slobodan u odredišnoj bazi podataka jer će funkcija u suprotnom prepisati postojeći zapis bez provere (u pitanju je SQL ažuriranje).
 
-**Predložak:** koristite kod predloška koji je već prisutan i koji je u skladu s knjiženjem (primjerice, PDV predložak ako uvozite knjiženja faktura);
+**Šablon:** koristite šifru šablona koji već postoji i koji odgovara knjiženju (na primer, šablon za PDV ako uvozite knjiženja faktura).
 
-**Knjiga računa:** koristite kod već prisutnog registra;  
+**Knjiga računa:** koristite šifru registra (knjige) koji već postoji.
 
-**Referentni broj PDV-a:** koristite slobodan protokol;  
+**Referentni broj PDV-a:** koristite slobodan protokol.
 
-**Valuta; Valuta; Euro:** uvijek popunite sve čak i ako je sve u eurima i nema promjene. Uvijek popunite i drugi stupac s 0,00 (primjer: ako popunite Dugujući stupac s 1000,00, u susjedni stupac Potražuje stavite 0,00);
+**Valuta; Valuta; Evro:** uvek popunite sva polja, čak i ako je sve u evrima i nema promene. Uvek popunite i drugu kolonu vrednošću 0,00 (primer: ako u kolonu Duguje unesete 1000,00, u susednu kolonu Potražuje unesite 0,00).
 
-**Konto / podkonto:** koristite kodove konta koji su već prisutni.
+**Konto / podkonto:** koristite šifre konta koja već postoje.
 
 ---
+
 **PDV podaci**
 
-Učitajte **šifru** stope poreza koji već mora biti prisutan u bazi podataka  
+Unesite **šifru** poreske stope koja već mora postojati u bazi podataka.
 
-Popunite sve podatke, uključujući osnovicu za porez i čak i neoporezivi porez (eventualno s vrijednošću 0,00)
-
----
-
-Poduzeće: Opcionalno, ako želim učitati i vezu s troškovnim centrom (već prisutno) 
-
-Broj narudžbe: Opcionalno, ako želim učitati i povezati  
+Popunite sve podatke, uključujući poresku osnovicu i iznos poreza, čak i ako je neoporezivo (po potrebi unesite vrednost 0,00).
 
 ---
 
-U **kartici Parametri** možete postaviti vrijednost 1 na **Preračun**, na taj način izvršava se ponovno izračunavanje podataka iz dnevnika i generira otvorene stavke iz podataka uvjeta plaćanja, ako, na primjer, nedostaju jer nisu uvoženi zasebno. Inače, neće se obaviti nikakvo ponovno izračunavanje i stavke, na primjer, neće se kreirati ako nisu uvežene. (Preporučena opcija zbog performansi i vremena obrade, pogotovo s velikim brojem redaka)  
+**Preduzeće:** opciono, ako želite da učitate i vezu sa centrom troška (koji već mora postojati).
 
-Pažnja: računi moraju već postojati u bazi podataka inače poruka o pogrešci neće mi reći koji račun nedostaje, već se uvijek odnosi na posljednji redak Excel tablice.
+**Broj narudžbine:** opciono, ako želite da učitate i povežete narudžbinu.
+
+---
+
+Na **kartici Parametri** možete postaviti vrednost 1 za **Preračun (ponovni obračun)**. Na taj način ponovo se obračunavaju podaci iz dnevnika i generišu otvorene stavke na osnovu podataka o uslovima plaćanja, ako, na primer, nisu uvezene zasebno. U suprotnom se neće izvršiti ponovni obračun i stavke neće biti kreirane ako nisu uvezene. (Ova opcija se preporučuje zbog performansi i vremena obrade, naročito kada postoji veliki broj redova.)
+
+Pažnja: konta moraju već postojati u bazi podataka. U suprotnom, poruka o grešci neće navesti koje konto nedostaje, već će se uvek odnositi na poslednji red u Excel tabeli.

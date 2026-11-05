@@ -1,801 +1,631 @@
 ---
-title: Uvoz Šifarnika Podataka  
+title: Uvoz šifarnika podataka
 sidebar_position: 1
 ---
 
+U ovom članku biće objašnjeno kako **uvesti kontakte** (kupce ili dobavljače) u **Fluentis** pomoću **elektronske tabele**.
 
+Ovaj uvoz je moguć zahvaljujući korišćenju **BizLink Parameters**, jer će oni biti pozvani svaki put kada se obradi red.
 
-U ovom članku bit će objašnjeno kako **uvesti kontakte** (kupce ili dobavljače)  u **Fluentis** putem korištenja **proračunske tablice** (Excela).
-
-Ovaj uvoz je moguć zahvaljujući korištenju **BizLink Parameters** jer će svaki put kada se procesira redak, oni biti pozvani.
-
-
-### Kako otvoriti uvoz putem proračunske tablice (Excela):  
+### Kako otvoriti uvoz putem elektronske tabele
 
 Kliknite na **Alati** (obično se nalazi na desnoj strani Fluentisa).
 
-Kliknite na odjeljak **BizLink**
+Kliknite na odeljak **BizLink**.
 
-Kliknite na **Uvoz na zahtjev > Šifarnik> Uvoz kupca/dobavljača** kao što je prikazano na slici ispod.  
+Kliknite na **Uvoz na zahtev > Šifarnik > Uvoz kupca/dobavljača**, kao što je prikazano na slici ispod.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image03.png) 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image03.png)
 
+### Odeljak Podaci
 
-### Odjeljak Podaci 
+U ovom odeljku unećemo podatke koji će kasnije postati trajni njihovim čuvanjem u bazi podataka **Fluentis**.
 
-U ovom odjeljku unijet ćemo podatke koji će kasnije postati trajni putem spremanja u **Fluentis** bazu podataka.
+Sada je na ekranu prikazana elektronska tabela za uvoz.
 
-Sada je na zaslonu prikazana elektronička tablica za uvoz.  
+![](/img/it-it/applications/bizlink/import-contacts-registry/image04.png)
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image04.png) 
+Od ovog trenutka možemo odabrati nekoliko pristupa:
 
-Od ovog trenutka možemo odabrati nekoliko pristupa:  
+1. Uvesti već popunjenu elektronsku tabelu pomoću opcije **File > Open**.
+2. Dodati različite kolone kopiranjem i lepljenjem iz sačuvane liste na računaru.
+3. Sačuvati ovu datoteku (**File > Save**) na računaru, a zatim dodati različite podatke i ponovo je uvesti u **Fluentis** (videti tačku 1). Ovo može biti veoma korisno za prosleđivanje šablona elektronske tabele za uvoz, koji će biti popunjen za buduće liste koje će nam dostaviti dobavljači.
+4. Ručno dodati polja.
 
- 1. Uvesti već popunjenu elektroničku tablicu, **File > Open**.
- 2. Dodati različite stupce kopiranjem i lijepljenjem iz pohranjenog popisa našeg računala.
- 3. Spremiti ovu datoteku (**File > Spremi**) na naše računalo, a zatim dodati različite podatke i ponovno je uvesti u **Fluentis** (vidi točku 1). Ovo bi moglo biti vrlo korisno za predaju predloška elektroničke tablice za uvoz koji će se ispuniti za buduće popise koje će nam dostaviti dobavljači.  
- 4. Ručno dodati polja.  
+**PAŽNJA**: ako imamo elektronsku tabelu sačuvanu na računaru, ona mora da prati strukturu tabele prikazane na slici iznad. Drugim rečima, mora imati isti redosled kolona, tipove podataka itd. Ovi detalji detaljno su objašnjeni u sledećem odeljku.
 
-**PAŽNJA**: ako imamo elektroničku tablicu spremljenu na našem računalu, ona mora slijediti shemu tablice prikazane na slici iznad. Drugim riječima, isti redoslijed stupaca, vrsta podataka itd. Ti detalji detaljno su objašnjeni u sljedećem odjeljku.
+### Unos polja
 
+Prilikom unosa polja potrebno je uzeti u obzir mnoge stvari, uključujući tip, maksimalnu dužinu, obaveznost polja itd.
 
-### Unos polja  
+Opšte smernice:
 
-Prilikom unosa polja potrebno je uzeti u obzir mnoge stvari, uključujući tip, maksimalnu duljinu, obavezno polje itd...
+- Ako je polje označeno crvenom bojom, ono je obavezno.
+- Ako je naziv ćelije istaknut zelenom bojom, to je **odeljak**.
+- Ako je naziv ćelije istaknut žutom bojom, to je **polje**.
+- Polje: označava da li je unos obavezan ili ne.
+- Tip: označava tip polja.
+- Formatiranje u Excelu: označava preporučeno formatiranje u Excelu kako bi se izbegli pogrešni unosi. Pogledajte korisne savete i upozorenja na kraju.
+- Dužina: označava da li polje ima ograničenje broja znakova.
+- Opis: kratak opis polja.
 
-Opće smjernice:  
+*Primer*: stvarni primer onoga što možete uneti u to polje.
 
--        Ako je polje označeno crvenom bojom, to je obavezno polje.  
+- Tabela/kolona za mapiranje: ako je dostupna, označava mapiranje odgovarajućeg polja u bazi podataka. Za više informacija pogledajte korisne savete i upozorenja na kraju.
 
--        Ako je naziv ćelije istaknut zelenom bojom, to je **odjeljak**
+![](/img/it-it/applications/bizlink/import-contacts-registry/image05.png)
 
--        Ako je naziv ćelije istaknut žutom bojom, to je **polje**
-
--        Polje: označava je li unos obavezan ili ne.  
-
--        Tip: označava tip polja.  
-
--        Formatiranje Excela: označava preporučeno formatiranje Excela kako bi se izbjegle pogrešne unose, pogledajte korisne Savjete i upozorenja na kraju.
-
--        Duljina: označava ima li polje ograničenje na broj znakova. 
-
--        Opis: kratki opis polja. 
-
-*Primjer*: stvarni primjer onoga što možete upisati u to polje.
-
--        Tablica/mapping stupac: ako je dostupan, označava mapiranje odgovarajućeg polja u bazi podataka, za više informacija pogledajte korisne Savjete i upozorenja na kraju.
-
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image05.png)
-
- 
-
-**Opći podaci**:
+**Opšti podaci**:
 
 Šifra:
 
--        Polje: obvezno
+- Polje: obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 6 znakova
+- Opis: referentna šifra kupca/dobavljača
 
--        Tip: niz znakova
+*Primer*: TVTK
 
--        Excel formatiranje: tekst
+- Tabela/kolona za mapiranje: `select MBAN_Nomignolo from MB_Anagr`
 
--        Maksimalna duljina: 6 znakova  
+Naziv preduzeća:
 
--        Opis: referentni kod kupca/dobavljača  
+- Polje: obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis: naziv preduzeća kupca/dobavljača
 
-*Primjer*: TVTK
+*Primer*: TVRTKA d.o.o.
 
--         Tablica/mapping stupac: select MBAN_Nomignolo from MB_Anagr
-
-Naziv tvrtke:  
-
--        Polje: obvezno
-
--        Tip: niz znakova
-
--        Excel formatiranje: tekst
-
--        Maksimalna duljina: /
-
--        Opis: naziv tvrtke kupca/dobavljača  
-
-*Primjer*: TVRTKA d.o.o.
-
--         Tablica/mapping stupac: select MBAN_RagSoc from MB_Anagr
+- Tabela/kolona za mapiranje: `select MBAN_RagSoc from MB_Anagr`
 
 Kupac/Dobavljač:
 
--        Polje: obvezno
+- Polje: obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 1 znak
+- Opis: označava da li unosimo kupca ili dobavljača. Dve oznake koje predstavljaju kupca i dobavljača definisane su u parametrima.
 
--        Tip: niz znakova
+*Primer*: „D” odgovara dobavljaču, a „K” kupcu.
 
--        Excel formatiranje: tekst
-
--        Maksimalna duljina: 1 znak  
-
--        Opis: Označava da li unosimo kupca ili dobavljača. Dvije oznake koje predstavljaju kupca i dobavljača specificirane su u parametrima.
-
-*Primjer*: “D” odgovara dobavljaču, ”k” odgovara kupcu
-
-**Pažnja**: jedini način za unos kontakta koji je i kupac i dobavljač je da ga prvo unesete kao kupca, a zatim kao dobavljača.
+**Pažnja**: jedini način za unos kontakta koji je i kupac i dobavljač jeste da ga prvo unesete kao kupca, a zatim kao dobavljača.
 
 Konto:
 
--        Polje: nije obvezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Opis: konto dobavljača, glavna knjiga dobavljača
 
--        Tip: niz znakova
+*Primer*: „1200” odgovara kupcima iz Hrvatske.
 
--        Opis: račun dobavljača, glavna knjiga dobavljača
-
-*Primjer*: “1200” odgovara Kupcima iz Hrvatske
-
--         Tablica/mapping stupac: select MBPC_Conto from MB_PiaCon
+- Tabela/kolona za mapiranje: `select MBPC_Conto from MB_PiaCon`
 
 Podkonto:
 
--        Polje: nije obvezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Opis: podkonto dobavljača, analitika glavne knjige dobavljača
 
--        Tip: niz znakova
+*Primer*: ako se prenose konta sa praznim sistemom, može se koristiti šifriranje poput 01; 02; 03 ili 001; 002; 003.
 
--        Opis: podkonto dobavljača, malo glavne knjige dobavljača  
+- Tabela/kolona za mapiranje: `select BPC_SottoConto from MB_PiaCon`
 
-*Primjer*: ako se prenesu konta s praznim sustavom, može se koristiti kodiranje poput 01; 02; 03 ili 001; 002; 003
+Dospеća plaćanja (true/false):
 
--         Tablica/mapping stupac: select BPC_SottoConto from MB_PiaCon
+- Polje: obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: oznaka otvorenih stavki
 
-Dospijeća plaćanja (true/false):
-
--        Polje: obvezno
-
--        Tip: niz znakova
-
--        Excel formatiranje: tekst
-
--       Maksimalna duljina: 200 znakova  
-
--        Opis: zastava otvorenih stavki
-
-*Primjer*: dovoljno je jednostavno napisati “true” i čim promijenite ćeliju, automatski će napisati  “TRUE” u sredini ćelije ili “FALSE” ovisno o slučaju 
+*Primer*: dovoljno je jednostavno napisati „true” i, čim promenite ćeliju, automatski će se u sredini ćelije prikazati „TRUE” ili „FALSE”, u zavisnosti od slučaja.
 
 Adresa:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis: adresa sedišta kupca/dobavljača
 
--        Tip: niz znakova
+*Primer*: Ulica bb
 
--        Excel format: tekst
+- Tabela/kolona za mapiranje: `select MBAN_Indirizzo from MB_Anagr`
 
--        Maksimalna duljina: /
+Opština:
 
--        Opis: adresa sjedišta kupca/dobavljača  
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis: grad sedišta kupca/dobavljača
 
-*Primjer*: Ulica bb 
+*Primer*: Rijeka
 
--         Tablica/mapping stupac: select MBAN_Indirizzo from MB_Anagr
-
-Općina:
-
--        Polje: nije obavezno
-
--        Tip: niz znakova
-
--        Excel format: tekst
-
--        Maksimalna duljina: /
-
--        Opis: grad sjedišta kupca/dobavljača
-
-*Primjer*: Rijeka
-
--         Tablica/mapping stupac: select MBAN_Comune from MB_Anagr
+- Tabela/kolona za mapiranje: `select MBAN_Comune from MB_Anagr`
 
 Poštanski broj:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 5 znakova
+- Opis: poštanski broj sedišta kupca/dobavljača
 
--        Tip: niz znakova
+*Primer*: 51000
 
--        Excel format: tekst
-
--        Maksimalna duljina: 5 znakova
-
--        Opis: poštanski broj sjedišta kupca/dobavljača
-
-*Primjer*: 51000
-
--         Tablica/mapping stupac: select MBAN_CAP from MB_Anagr
+- Tabela/kolona za mapiranje: `select MBAN_CAP from MB_Anagr`
 
 Županija:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: županija sedišta kupca/dobavljača
 
--        Tip: niz znakova
+*Primer*: „8” odgovara Primorsko-goranskoj županiji.
 
--        Excel format: tekst
-
--        Maksimalna duljina: 200 znakova 
-
--        Opis: županija sjedišta kupca/dobavljača  
-
-*Primjer*: “8” odgovara Primorsko-goranskoj
-
--         Tablica/mapping stupac: select MBAN_Provincia from MB_Anagr
+- Tabela/kolona za mapiranje: `select MBAN_Provincia from MB_Anagr`
 
 Država:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: država sedišta kupca/dobavljača
 
--        Tip: niz znakova
+*Primer*: „HR” odgovara Hrvatskoj.
 
--        Excel format: tekst
-
--        Maksimalna duljina: 200 znakova
-
--        Opis: država sjedišta kupca/dobavljača
-
-*Primjer*: “HR” odgovara Hrvatskoj
-
--         Tablica/mapping stupac: select MBNZ_CodIso from MB_Nazioni
+- Tabela/kolona za mapiranje: `select MBNZ_CodIso from MB_Nazioni`
 
 Jezik:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: jezik koji koristi kupac/dobavljač
 
--        Tip: niz znakova
+*Primer*: „HR” odgovara hrvatskom jeziku.
 
--        Excel format: tekst
-
--        Maksimalna duljina: 200 znakova
-
--        Opis: jezik koji koristi kupac/dobavljač
-
-*Primjer*: “HR” odgovara hrvatskom  
-
--         Tablica/mapping stupac: select MBAN_RagSoc from MB_Anagr
+- Tabela/kolona za mapiranje: `select MBAN_RagSoc from MB_Anagr`
 
 Telefon:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: telefon kupca/dobavljača
 
--        Tip: niz znakova
+*Primer*: 051-999999
 
--        Excel format: tekst
-
--        Maksimalna duljina: 200 znakova  
-
--        Opis: telefon kupca/dobavljača
-
-*Primjer*: 051-999999
-
--         Tablica/mapping stupac: select MBAN_Telefono from MB_Anagr
+- Tabela/kolona za mapiranje: `select MBAN_Telefono from MB_Anagr`
 
 E-mail:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: glavna e-mail adresa kupca/dobavljača
 
--        Tip: niz znakova
+*Primer*: info@tvrtka.com
 
--        Excel format: tekst
-
--        Maksimalna duljina: 200 znakova
-
--        Opis: glavna e-mail adresa kupca/dobavljača
-
-*Primjer*: info@tvrtka.com
-
--         Tablica/mapping stupac: select MBAN_Email from MB_Anagr
+- Tabela/kolona za mapiranje: `select MBAN_Email from MB_Anagr`
 
 Napomena:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: dodatne napomene
 
--        Tip: niz znakova
+*Primer*: Ovo je napomena.
 
--        Excel format: tekst
+- Tabela/kolona za mapiranje: `select MBAN_Note from MB_Anagr`
 
--        Maksimalna duljina: 200 znakova
+![](/img/it-it/applications/bizlink/import-contacts-registry/image06.png)
 
--        Opis: dodatne napomene
+**Poreski podaci**:
 
-*Primjer*: Ovo je napomena.
+Poreski broj:
 
--         Tablica/mapping stupac: select MBAN_Note from MB_Anagr
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis: poreski identifikacioni broj kupca/dobavljača
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image06.png) 
+*Primer*: HR29907997990
 
-**Fiskalni podaci**:
-
-Porezni broj:
-
--        Polje: nije obavezno
-
--        Tip: niz znakova
-
--        Excel format: tekst
-
--        Maksimalna duljina: /
-
--        Opis: porezni identifikacijski broj kupca/dobavljača
-
-
-*Primjer*: HR29907997990
-
--         Tablica/mapping stupac: select MBAN_CodFiscale from MB_Anagr
+- Tabela/kolona za mapiranje: `select MBAN_CodFiscale from MB_Anagr`
 
 ISO šifra:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 50 znakova
+- Opis:
 
--        Tip: niz znakova
+*Primer*: „HR” odgovara Hrvatskoj.
 
--        Excel format: tekst
-
--        Maksimalna duljina: 50 znakova  
-
--        Opis:
-
-*Primjer*: “HR” odgovara Hrvatskoj
-
--        Tablica/mapping stupac: select MBAN_CodIso from MB_Anagr
+- Tabela/kolona za mapiranje: `select MBAN_CodIso from MB_Anagr`
 
 OIB broj:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 200 znakova
+- Opis: poreski identifikacioni broj kupca/dobavljača
 
--        Tip: niz znakova
+*Primer*: 29907997990
 
--        Excel format: tekst
+- Tabela/kolona za mapiranje: `select MBAN_PartitaIva from MB_Anagr`
 
--        Maksimalna duljina: 200 znakova
-
--        Opis: porezni identifikacijski broj kupca/dobavljača
-
-
-*Primjer*: 29907997990
-
--         Tablica/mapping stupac: select MBAN_PartitaIva from MB_Anagr
-
-![](/img/it-it/applications/bizlink/import-contacts-registry/image07.png) 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image07.png)
 
 **Plaćanja**:
 
 Tip plaćanja:
 
--        Polje: obavezno
+- Polje: obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis: tip plaćanja koji koristi kupac/dobavljač
 
--        Tip: niz znakova
+*Primer*: „T” odgovara bankarskom transferu.
 
--        Excel format: tekst
+- Tabela/kolona za mapiranje: `select MBTP_Pagamento from MB_TipoPag`
 
--        Maksimalna duljina: /
+Modeli plaćanja:
 
--        Opis: vrsta plaćanja koju koristi kupac/dobavljač
+- Polje: obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis: rok plaćanja za kupca/dobavljača
 
+*Primer*: „60 GG DF” znači u roku od 60 dana od datuma fakture, a „prilikom isporuke” znači plaćanje prilikom isporuke robe.
 
-*Primjer*: “T” odgovara bankovnom transferu
-
--        Tablica/mapping stupac: select MBTP_Pagamento from MB_TipoPag
-
-Modeli Plaćanja:
-
--        Polje: obavezno
-
--        Tip: niz znakova
-
--        Excel format: tekst
-
--        Maksimalna duljina: /
-
--        Opis: rok plaćanja za kupca/dobavljača
-
-*Primjer*: “60 GG DF” znači unutar 60 dana od datuma računa, “u dostavi” plaćanje prilikom dostave robe
-
--         Tablica/mapping stupac: select * from MB_SolPag
+- Tabela/kolona za mapiranje: `select * from MB_SolPag`
 
 ABI:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 5
+- Opis: identifikacija banke na koju se odnosi račun kupca/dobavljača. To je deo IBAN-a.
 
--        Tip: niz znakova
-
--        Excel format: tekst
-
--        Maksimalna duljina: 5
-
--        Opis: identifikacija banke na koju se odnosi račun kupca/dobavljača. To je dio IBAN-a
-
-
-*Primjer*: 01234
+*Primer*: 01234
 
 CAB:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 5
+- Opis: označava filijalu odgovarajuće banke (ABI) kupca/dobavljača. To je deo IBAN-a.
 
--        Tip: niz znakova
-
--        Excel format: tekst
-
--        Maksimalna duljina: 5
-
--        Opis: označava podružnicu odgovarajuće banke (ABI) kupca/dobavljača. To je dio IBAN-a
-
-*Primjer*: 12345
+*Primer*: 12345
 
 IBAN:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 27 znakova
+- Opis: kod koji se koristi u transakcijama između različitih bankarskih računa i koji sadrži identifikaciju zemlje, banke i broja tekućeg računa.
 
--        Tip: niz znakova
-
--        Excel format: tekst
-
--        Maksimalna duljina: 27 znakova
-
--        Opis: Kod koji se koristi u transakcijama između različitih bankovnih računa i koji sadrži 
-identifikaciju zemlje, banke i broja tekućeg računa.
-
-
-*Primjer*: HR2223600007701277167     
+*Primer*: HR2223600007701277167
 
 SWIFT:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: 11 znakova
+- Opis: identifikacioni brojevi koji omogućavaju sistemima da odmah prepoznaju banku primaoca i banku pošiljaoca, njihov naziv i mesto iz kojeg posluju. Potreban je za međunarodna plaćanja. Sastoji se od 8 znakova i još 3 opciona znaka.
 
--        Tip: niz znakova
-
--        Excel format: tekst
-
--        Maksimalna duljina: 11 znakova
-
--        Opis: Identifikacijski brojevi koji omogućuju sustavima da odmah shvate koja je primateljska banka i koja je pošiljateljska, njihovo ime i mjesto odakle operiraju. Potreban je za međunarodne uplate. Sastoji se od 8 znakova + 3 opcionalna.
-
-
-*Primjer*: “UNCRITMM” odgovara SWIFT-u UniCredit-a
+*Primer*: „UNCRITMM” odgovara SWIFT kodu banke UniCredit.
 
 Zona:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis: zona definisana na početku IBAN-a
 
--        Tip: niz znakova
+*Primer*: „HR” odgovara Hrvatskoj.
 
--        Excel format: tekst
-
--        Maksimalna duljina: /
-
--        Opis: Zona definirana na početku IBAN-a
-
-*Primjer*: “HR” Odgovara Hrvatskoj  
-  
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image08.png)
+![](/img/it-it/applications/bizlink/import-contacts-registry/image08.png)
 
 **Agenti**:
 
 Agent:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis: ako postoji agent (prisutan u šifarniku agenata), može se povezati sa klijentom.
 
--        Tip: niz znakova
+*Primer*:
 
--        Excel format: tekst
-
--        Maksimalna duljina: /
-
--        Opis: Ako postoji agent (prisutan u evidenciji 
-agenata), može biti povezan s klijentom.
-
-*Primjer*:
-
--        Tablica/mapping stupac: select * from MB_Agenti
+- Tabela/kolona za mapiranje: `select * from MB_Agenti`
 
 Provizije:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis: provizija agenta, ako se razlikuje od one unete u šifarnik agenata. Postoji maska pomoću koje se može odrediti koja provizija ima veći prioritet.
 
--        Tip: niz znakova
+*Primer*:
 
--        Excel format: tekst
+- Tabela/kolona za mapiranje: `select * from MB_AgentiZone`
 
--        Maksimalna duljina: /
+![](/img/it-it/applications/bizlink/import-contacts-registry/image09.png)
 
--        Opis: Provizija agenta, ako je različita od one unesene u evidenciju agenata, postoji maska u kojoj se može odrediti koja ima veći prioritet od druge.
+**Cenovnici**:
 
+Cenovnik:
 
-*Primjer*:
+- Polje: nije obavezno
+- Tip: niz znakova
+- Formatiranje u Excelu: tekst
+- Maksimalna dužina: /
+- Opis:
 
--        Tablica/mapping stupac: select * from MB_AgentiZone
-
-![](/img/it-it/applications/bizlink/import-contacts-registry/image09.png) 
-
-**Cjenici**:
-
-Cjenik:
-
--        Polje: nije obavezno
-
--        Tip: niz znakova
-
--        Excel format: tekst
-
--        Maksimalna duljina: /
-
--        Opis:
-
-*Primjer*:
+*Primer*:
 
 Popust 1:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Formatiranje u Excelu: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: vrednost popusta
 
--        Tip: decimalni
-
--        Excel format: broj, decimalna pozicija = 2
-
--        Maksimalna duljina: /
-
--        Opis: Vrijednost popusta  
-
-*Primjer*: 550
+*Primer*: 550
 
 Popust 2:
 
--        Polje: nije obavezno
+- Polje: nije obavezno
+- Tip: decimalni broj
+- Formatiranje u Excelu: broj, broj decimalnih mesta = 2
+- Maksimalna dužina: /
+- Opis: vrednost popusta
 
--        Tip: decimalni
+*Primer*: 5%
 
--        Excel format: broj, decimalna pozicija = 2
-
--        Maksimalna duljina: /
-
--        Opis: Vrijednost popusta
-
-*Primjer*: 5%
-
- 
 ### BizLink Parameters
 
-Ovi parametri služe za obradu unesenih redaka u sekciji Podaci. Kako se može primijetiti s slike, neka polja već su unaprijed popunjena, ali ništa nas ne sprječava da ih mijenjamo.
+Ovi parametri služe za obradu unetih redova u odeljku Podaci. Kao što se može primetiti na slici, neka polja su već unapred popunjena, ali ništa nas ne sprečava da ih izmenimo.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image10.png) 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image10.png)
 
- BizLink Spreadsheet:
+BizLink Spreadsheet:
 
--        Polje: ne unositi
+- Polje: ne unositi
 
 Jezik:
 
--        Polje: obavezno
+- Polje: obavezno
+- Tip: niz znakova
+- Opis: ISO kod jezika
 
--        Tip: niz znakova
+*Primer*: „it-IT” predstavlja italijanski jezik, a „hr-HR” hrvatski jezik.
 
--        Opis: ISO kod jezika  
+Preduzeće:
 
-*Primjer*: “it-IT” predstavlja talijanski jezik, “hr-HR predstavlja hrvatski jezik.
+- Polje: obavezno
+- Tip: niz znakova
+- Opis: polje je prethodno popunjeno jer preuzima vrednosti koje već postoje u Fluentisu i koje možemo videti u gornjem levom uglu.
 
-Tvrtka:
+*Primer*: „1” odgovara demo preduzeću.
 
--        Polje: obavezno
+- Tabela/kolona za mapiranje: `Select MBSC_Code from MB_Soc`
 
--        Tip: niz znakova
+Odeljenje:
 
--        Opis: Polje je prethodno popunjeno jer uzima vrijednosti već unutar Fluentisa, koje možemo vidjeti u gornjem lijevom kutu.
+- Polje: obavezno
+- Tip: niz znakova
+- Opis: kao i polje Preduzeće, ovo polje je prethodno popunjeno.
 
+*Primer*: „1” odgovara glavnom sedištu, a „2” sedištu u Zagrebu.
 
-*Primjer*: “1” odgovara demo tvrtki
+- Tabela/kolona za mapiranje: `select MBDP_Code from MB_Dep`
 
--         Tablica/mapping stupac: Select MBSC_Code from MB_Soc
+Identifikaciona šifra kupca:
 
-Odjel:
+- Polje: obavezno
+- Tip: niz znakova
+- Opis: bilo koje slovo koje unesemo u parametre, a koje će se zatim odnositi na polje kupca/dobavljača. Radi jednostavnosti preporučuje se „K”.
 
--        Polje: obavezno
+*Primer*: „K” odgovara kupcima.
 
--        Tip: niz znakova
+Identifikaciona šifra dobavljača:
 
--        Opis: Kao i za tvrtku, prethodno je popunjeno
+- Polje: obavezno
+- Tip: niz znakova
+- Opis: bilo koje slovo koje unesemo u parametre, a koje će se zatim odnositi na polje kupca/dobavljača. Radi jednostavnosti preporučuje se „D”.
 
-*Primjer*: “1” odgovara glavnom sjedištu, “2” sjedištu u Zagrebu  
+*Primer*: „D” odgovara dobavljačima.
 
--         Tablica/mapping stupac: select MBDP_Code from MB_Dep
+Šifra tipa konta za kupce:
 
-Identifikacijski broj klijenta:
+- Polje: obavezno
+- Tip: niz znakova
+- Opis: glavni konto koji se odnosi na kupce. Da biste ga videli i u Fluentisu, idite na **Početna > Parametri > Administracija > Računovodstveni parametri**. Dvaput kliknite na tekuću godinu, a zatim bi sa desne strane trebalo da vidite „Tip konta”.
 
--        Polje: obavezno
+*Primer*: „KHR” odgovara kupcima u Hrvatskoj.
 
--        Tip: niz znakova
+Šifra tipa konta za dobavljače:
 
--        Opis: Bilo koje slovo koje unesemo u parametre koji će se zatim odnositi na polje kupca/dobavljača. Radi jednostavnosti, preporučuje se “K”
+- Polje: obavezno
+- Tip: niz znakova
+- Opis: glavni konto koji se odnosi na dobavljače. Da biste ga videli i u Fluentisu, idite na **Početna stranica > Parametri > Administracija > Računovodstveni parametri**. Dvaput kliknite na tekuću godinu, a zatim bi sa desne strane trebalo da vidite „Tip konta”.
 
-*Primjer*: “K” odgovara kupcima
+*Primer*: „DHR” odgovara dobavljačima u Hrvatskoj.
 
-Identifikacijski broj dobavljača:
+Grupa kupaca:
 
--        Polje: obavezno
+- Polje: obavezno
+- Tip: niz znakova
+- Opis: šifre možete videti na putanji **Početna > Računovodstvo > Kontni plan**. Na prvoj kartici prikaza nalazi se šifra grupe.
 
--        Tip: niz znakova
+*Primer*: „1200” odgovara kupcima u Hrvatskoj.
 
--        Opis: Bilo koje slovo koje unesemo u parametre koji će se zatim odnositi na polje klijenta/dobavljača. Radi jednostavnosti, preporučuje se “D”
-
-*Primjer*: “D” odgovara dobavljačima
-
-Kod tipa konta za kupce:
-
--        Polje: obavezno
-
--        Tip: niz znakova
-
--        Opis: Glavni konto u odnosu na kupce. Da biste ga vidjeli i iz Fluentisa, idite na **Početna > Parametri > Administracija > Računovodstveni parametri**. Dvaput kliknite na trenutnu godinu, a zatim desno biste trebali vidjeti “Tip konta”
-
-*Primjer*: “KHR” odgovara kupcima u Hrvatskoj
-
-Kod tipa konta za dobavljače:
-
--        Polje: obavezno
-
--        Tip: niz znakova
-
--        Opis: Glavni konto u odnosu na dobavljače. Da biste ga vidjeli i iz Fluentisa, idite na **Početna stranica > Parametri > Administracija > Računovodstveni parametri**. Dvaput kliknite na trenutnu godinu, a zatim desno biste trebali vidjeti “Tip konta”
-
-*Primjer*: “DHR” odgovara dobavljačima u Hrvatskoj  
-
-Grupa klijenata:
-
--        Polje: obavezno
-
--        Tip: niz znakova
-
--        Opis: Možete vidjeti kodove iz Home **Početna > Računovodstvo > Kontni plan**, na prvoj kartici prikaza nalazi se kod grupe.
-
-*Primjer*: “1200” odgovara kupcima u Hrvatskoj
-
--        Tablica/mapping stupac: select MBGR_Gruppo from MB_GRUPP
+- Tabela/kolona za mapiranje: `select MBGR_Gruppo from MB_GRUPP`
 
 Grupa dobavljača:
 
--        Polje: obavezno
+- Polje: obavezno
+- Tip: niz znakova
+- Opis: šifre koje postoje na putanji **Početna stranica > Računovodstvo > Kontni plan**. U prvom prikazu nalazi se šifra grupe.
 
--        Tip: niz znakova
+*Primer*: „2200” odgovara dobavljačima u Hrvatskoj.
 
--        Opis: Možete vidjeti kodove prisutne od **Početna stranica > Računovodstvo > Kontni plan**, u prvom prikazu postoji kod grupe.
+- Tabela/kolona za mapiranje: `select MBGR_Gruppo from MB_GRUPPI`
 
-*Primjer*: “2200” odgovara Dobavljačima u Hrvatskoj
+Šifra tipa popusta 1:
 
--        Tablica/mapping stupac: select MBGR_Gruppo from MB_GRUPPI
+- Polje: obavezno samo ako je unet popust 1
+- Tip: niz znakova
+- Opis: predstavlja kategoriju primenjenog popusta na cenovnik.
 
-Šifra Tipa popusta 1:
+*Primer*: „10” odgovara kaskadnom popustu.
 
--        Polje: obavezno samo ako je unesen popust 1
+- Tabela/kolona za mapiranje: `select MBST_TipSco from MB_Sconti`
 
--        Tip: niz znakova
+Šifra tipa popusta 2:
 
--        Opis: Predstavlja kategoriju primijenjenog 
-popusta na cjenik
+- Polje: obavezno samo ako je unet popust 2
+- Tip: niz znakova
+- Opis: predstavlja kategoriju primenjenog popusta na cenovnik.
 
-*Primjer*: “10” odgovara kaskadnom popustu
+*Primer*: „20” odgovara komercijalnom popustu.
 
--        Tablica/mapping stupac: select MBST_TipSco from MB_Sconti
-
-Šifra Tipa popusta 2:
-
--        Polje: obavezno samo ako je unesen popust 2
-
--        Tip: niz znakova
-
--        Opis: Predstavlja kategoriju primijenjenog 
-popusta na cjenik
-
-*Primjer*: “20” odgovara komercijalnom popustu
-
--        Tablica/mapping stupac: select MBST_TipSco from MB_Sconti
-
-
+- Tabela/kolona za mapiranje: `select MBST_TipSco from MB_Sconti`
 
 ### Pokretanje uvoza
 
-Nakon što unesete podatke, za pokretanje uvoza kliknite na gumb u izborniku uvoza, koji se nalazi gore lijevo, također nazvan “Uvoz” kao što je prikazano na slici ispod.
+Nakon unosa podataka, za pokretanje uvoza kliknite na dugme u meniju za uvoz, koje se nalazi u gornjem levom uglu i takođe se zove „Uvoz”, kao što je prikazano na slici ispod.
 
 ![](/img/it-it/applications/bizlink/import-contacts-registry/image11.png)
 
+### Zaključak – uspešan unos
 
+Ako sve prođe bez problema, neće se pojaviti nikakva poruka o grešci. Za dodatnu proveru uspešnosti, proverite na kartici artikala (**Početna stranica > Artikli**) da li su uvezeni artikli dobavljača prisutni. U suprotnom će se na ekranu pojaviti poruka o grešci koja će pokazati koja podešavanja i/ili polja nisu ispravna. Za tumačenje vrste greške pogledajte Korisne savete i upozorenja u poslednjem odeljku.
 
-### Zaključci-Uspješan unos
+### Korisni saveti i upozorenja
 
-Ako sve prođe bez problema, neće se pojaviti nikakva poruka o pogrešci. Za dodatnu provjeru uspješnosti, provjerite u kartici artikala (**Početna stranica > Artikli**) jesu li uvezeni artikli od dobavljača prisutni. Inače, na zaslonu će se pojaviti poruka o pogrešci koja će pokazati koje su postavke i/ili polja neispravni. Za tumačenje vrste pogreške pogledajte Korisne savjete i upozorenja u posljednjem odlomku.
+**Preporučeno formatiranje u Excelu**:
 
+- Za ispravan uvoz preporučuje se formatiranje kolona prema tipu navedenom pod „Formatiranje u Excelu” za svako polje. Na primer, ako je tip polja decimalni broj i u to polje treba uneti valutu, formatirajte polje kao valutu. To je zato što će, na primer, Excel ukloniti nevažeće početne nule ako ćelija nije pravilno formatirana. Za podešavanje formatiranja pratite sledeće korake:
 
+Prvo odaberite željenu kolonu, kao što je prikazano na slici ispod:
 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image12.png)
 
+Zatim, nakon što postavite pokazivač miša unutar kolone, pritisnite desni taster miša.
 
-### Korisni savjeti i upozorenja 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image13.png)
 
-**Preporučena Excel formatiranja**:
+Kliknite levim tasterom miša na **Oblikuj ćelije**…
 
--        Za ispravan uvoz, preporučuje se formatiranje stupaca prema tipu navedenom pod "Formatiranje Excel" za svako polje. Na primjer, ako je tip polja decimalni i u tom polju treba unijeti valutu, formatirajte polje kao valutu. To je zato što će, primjerice, ako se ćelija ne formatira, Excel ukloniti nevažne znamenke. Za unos formatiranja slijedite sljedeće korake:
+![](/img/it-it/applications/bizlink/import-contacts-registry/image14.png)
 
-Prvo odaberite željeni stupac kao što je prikazano na slici ispod:
+Na ovom ekranu može se formatirati odabrana kolona. Na osnovu uputstava navedenih u odeljku „Unos polja” odaberite odgovarajuću kategoriju i pripadajuće specifikacije (npr. valuta, simbol – nijedan). Isto je moguće uraditi i u elektronskoj tabeli unutar Fluentisa.
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image12.png) 
+**Pažnja:** klasičan primer odnosi se na šifre koje sadrže nule, npr. „001”. Ako je polje formatirano kao opšte ili numeričko, nule će biti odbačene; ako je formatirano kao tekstualni niz, nule će biti sačuvane.
 
-Zatim, nakon postavljanja pokazivača miša unutar stupca, pritisnite desnu tipku miša.
+**Tabela/kolona za mapiranje**:
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image13.png) 
+- Ako je u odeljku „Unos polja” prisutna stavka tabela/kolona za mapiranje, to znači da vrednost uneta u polje za uvoz možda već postoji u bazi podataka. Mapiranje je uključeno i za polja koja će biti uneta od početka kako bi se, ako postoji, mogao videti primer vrednosti u bazi podataka. Za prikaz relevantnih podataka prisutnih u bazi podataka dovoljno je pratiti sledeće korake. Kao primer koristiće se klasa artikala i odgovarajuće mapiranje:
 
-Odaberite lijevim klikom  **> Oblikuj ćelije**…
+```SQL
+select MBDC_Classe from MB_Classi (**<- ovo je mapiranje**). Izvršite upit u programu „Microsoft SQL Server Management Studio” i dobićete sledeći rezultat:
+```
+![](/img/it-it/applications/bizlink/import-contacts-registry/image15.png)
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image14.png) 
+Kada se posmatra na ovaj način, upit ne pruža nikakve informacije. Da bismo razumeli njegovo značenje, zamenimo simbol „*” iza klauzule SELECT poljem kako bismo sastavili novi upit. U ovom slučaju imali bismo `select * from MB_Class`, koji služi za izbor celokupnog sadržaja tabele. Sada izvršimo taj upit.
 
-Na ovom se zaslonu može formatirati odabrani stupac. Na temelju uputa navedenih u "Unos polja" odaberite odgovarajuću kategoriju, s pripadajućim specifikacijama (npr. valuta, simbol nijedan). Istu stvar moguće je učiniti i iz elektroničke tablice unutar Fluentisa.
+![](/img/it-it/applications/bizlink/import-contacts-registry/image16.png)
 
-**Pažnja:** Klasičan slučaj odnosi se na kodove koji sadrže nule, npr. “001”. Ako je polje formatirano kao generičko ili numeričko, nule bi bile odbačene; ako je formatirano kao niz, nule bi se zadržale.
+Ovo je korisno jer, kao što je prikazano na slici, na osnovu opisa (MBDC_Descr) možemo razumeti šta polje predstavlja i proveriti da li vrednost koju ćemo uneti već postoji u bazi podataka.
 
-**Tablica/mapping stupac**:
+Opisani postupak je univerzalan, odnosno važi za svako polje.
 
--        Ako je u "Unosu polja" prisutna stavka mapping tablica/stupac, to znači da vrijednost unesena unutar polja za uvoz može već biti prisutna u bazi podataka. Uključena je i u polja koja će biti unesena ispočetka kako bi se eventualno mogao vidjeti primjer, ako postoji, u bazi podataka. Za prikaz relevantnih podataka prisutnih u bazi podataka, dovoljno je slijediti sljedeće korake, pri čemu će kao primjer biti korištena klasa artikli i odgovarajući mapping:
+Isto je moguće videti i u Fluentisu:
 
-select MBDC_Classe from MB_Classi (**\<-** ovo je mapiranje). Izvršite upit u “Microsoft SQL server management studio” i dobijte sljedeći rezultat:
+Na početnoj stranici Fluentisa odaberite **Artikli > Artikli dobavljača** (pogledajte sliku ispod).
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image15.png) 
+![](/img/it-it/applications/bizlink/import-contacts-registry/image17.png)
 
-Kada se to gleda na taj način, ne prenosi nikakve informacije. Kako bismo razumjeli njezino značenje, zamijenimo simbol “*” iza klauzule select s poljem kako bismo sastavili novi upit. U ovom slučaju imali bismo  select * from MB_Class, što služi za odabir cjelokupnog sadržaja tablice, sada to izvršimo.
+Zatim u okviru za pretragu koji se pojavi kliknite levim tasterom miša na strelicu pored artikala. Otvoriće se padajući meni u kojem je moguće videti klasu artikala sa odgovarajućim opisom, kao što je prikazano na slici.
 
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image16.png)
+![](/img/it-it/applications/bizlink/import-contacts-registry/image18.png)
 
-Ovo je korisno jer, kao što je prikazano na slici, putem opisa (MBDC_Descr) moguće je razumjeti što polje predstavlja i provjeriti je li ono što ćemo unijeti prisutno u bazi podataka.
+Ovo se odnosi na klasu artikala. Za ostala polja možemo primeniti isti postupak, ali na drugim mestima.
 
-Ovaj opisani postupak je univerzalan, odnosno vrijedi za svako polje.
+Trebalo bi da unesemo jednu od postojećih vrednosti, jer u suprotnom uvoz neće uspeti i dobićemo grešku. Ovo važi za svako polje koje ima mapiranu tabelu/kolonu.
 
-Isto je moguće vidjeti i u Fluentisu:
+Ako želimo da dodamo polje sa mapiranjem koje ne postoji u bazi podataka, možemo ga dodati putem upita ili preko Fluentisa. U ovom slučaju preporučuje se unos preko Fluentisa. Takođe, za klasu artikala, u odeljku Artikli dobavljača (kao što je prikazano na slici iznad), kliknite desnim tasterom miša unutar filtera za pretragu klase artikala i odaberite „Otvori obrazac”.
 
-S početne stranice Fluentisa odaberite **Artikli > Artikli dobavljača** (vidi sliku ispod).
+![](/img/it-it/applications/bizlink/import-contacts-registry/image19.png)
 
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image17.png)
+Na obrascu koji se otvori kliknite na dugme za pretragu kako biste videli postojeće klase artikala.
 
-Zatim, u okviru pretrage koja se pojavi, kliknite lijevim gumbom miša na strelicu pored artikala, koja otvara padajući izbornik gdje je moguće vidjeti klasu artikala s odgovarajućim opisom kao što je prikazano na slici.
+![](/img/neutral/common/search.png)
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image18.png) 
+Ispod poslednjeg popunjenog reda nalazi se prazan red. On služi za unos novih vrednosti.
 
-Ovo se odnosi na klasu artikala. Za ostala polja možemo primijeniti isti postupak, ali na različitim mjestima.
+![](/img/it-it/applications/bizlink/import-contacts-registry/image21.png)
 
-Trebali bismo unijeti jednu od postojećih vrijednosti, inače uvoz neće uspjeti i dobit ćemo grešku. To vrijedi za svako polje koje ima mapiranu tablicu/stupac.
+Unesite nove vrednosti u taj red, a zatim jednostavno pritisnite Enter.
 
-Ako želimo dodati polje s mapiranjem koje nije prisutno u bazi podataka, možemo ga dodati putem upita ili putem Fluentisa. U ovom slučaju, preporučuje se unos putem Fluentisa. Također, za klasu artikala, iz Artikala dobavljača (kao što je prikazano na slici iznad), desnim klikom unutar filtera pretrage klase artikala odaberite “otvori obrazac”.
+Ovaj postupak je sličan i za ostala polja. Jedina razlika je u tome gde se nalaze filteri za pretragu na koje treba kliknuti levim tasterom miša da bi se otvorio obrazac.
 
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image19.png)
+**Greške:**
 
-Na formi koja se otvori, kliknite gumb za pretraživanje kako biste vidjeli postojeće klase artikala.
+- U slučaju neuspešnog uvoza, kao što je već pomenuto, pojaviće se ekran sa greškom.
 
- ![](/img/neutral/common/search.png)
+Ako je greška nastala u delu Podaci, moguće je pronaći red koji sadrži grešku jer će, na primer, biti prikazana poruka „System.ArgumentException: Error importing row 4”. Međutim, taj red (pogledajte sliku ispod) nije stvarni red koji sadrži grešku. Da biste precizno odredili koji red sadrži grešku, na broj reda prikazan u levoj koloni dodajte 1.
 
-Ispod zadnjeg ispunjenog reda nalazi se prazan red. On služi za unos novih vrijednosti.
+Dakle:
 
-![](/img/it-it/applications/bizlink/import-contacts-registry/image21.png) 
-
-Unesite nove vrijednosti u taj red i nakon toga jednostavno pritisnite Enter.
-
- Ovaj postupak je sličan za ostala polja, jedina razlika je u tome gdje se nalaze filteri pretrage na koje treba lijevim klikom otvoriti obrazac.
-
-**Pogreške:** 
-
--        U slučaju neuspješnog uvoza, kako je već spomenuto, pojavit će se zaslon s greškom.
-
- Ako je greška nastala u dijelu podataka, moguće je pronaći redak koji sadrži grešku, jer će na primjer biti napisano “System.ArgumentException: Error importing row 4”. Međutim, taj redak (vidi sliku ispod) nije stvarni redak koji sadrži grešku. Da biste precizno odredili koji redak sadrži grešku, koristeći brojeve u lijevom stupcu, dodajte 1. 
-
- Dakle: 
-
- Stvarni redak s greškom  = Error importing rownum + 1
+Stvarni red sa greškom = Error importing rownum + 1
 
 ![](/img/it-it/applications/bizlink/import-contacts-registry/image22.png)
 
-   
+Za tumačenje greške pratite sledeće korake: u istom redu u kojem je prikazan broj reda pronaći ćete **objekat** na koji se greška odnosi, zatim sledi stvarna **greška**, a na kraju je navedeno **svojstvo** u kojem je greška pronađena. U navedenom primeru:
 
-Za tumačenje greške, slijedite ove korake: U istom retku gdje je prikazan broj retka, naći ćete **predmet** na koju se odnosi greška, zatim slijedi stvarna  **greška**, na kraju je navedeno **svojstvo** u kojem je pronađena greška. U primjeru koji je naveden:“Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.**PurchasePriceLists**not-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”. U ovom slučaju, jedinica mjere vezana uz cijenu kupnje ima grešku jer je nula. Naime, njezino unošenje je obavezno.
+„Failed to create, update or delete the object of type Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.FSPurchasePriceListItem, Fluentis.FluentisErp.Core.Scm.**PurchasePriceLists** not-null property references a null or transient value Fluentis.FluentisErp.Core.Scm.PurchasePriceLists.ReadWrite.FSWPurchasePriceListItem.MeasurementUnit”.
 
- Ako je greška nastala u dijelu parametara, poruka će biti slična, a metoda rješavanja ostaje ista: provjeriti i ispraviti unos navedenog svojstva.
+U ovom slučaju jedinica mere povezana sa nabavnom cenom sadrži grešku jer je vrednost null. Naime, njen unos je obavezan.
 
-**Pažnja**: Ako je pronađen prazan redak, neće biti prijavljena nikakva greška, ali će se uvoz završiti tamo. Primjerice, ako je prvi redak (redak br. 4) prazan iz nekog razloga, a ispod njega (od reda br. 5) postoje popunjeni retci, ništa se neće uvesti.
+Ako je greška nastala u delu Parametri, poruka će biti slična, a način rešavanja ostaje isti: proveriti i ispraviti unos navedenog svojstva.
 
-**Pažnja**: Ako se u šifarniku od 10 redaka dogodi greška u retku br. 7, prva 6 redaka će se ipak unijeti ako nisu uzrokovali probleme! Ponovnim pokretanjem uvoza bez mijenjanja prvih 6 redaka (i naravno, ako je greška ispravljena), neće biti problema, pa čak ni duplikata, jer se prvo provjerava prisutnost kontakta. Ako se promijeni bilo koja vrijednost u prvih 6 redaka, taj će kontakt biti smatran novim.
+**Pažnja**: ako se naiđe na prazan red, neće biti prijavljena nikakva greška, ali će se uvoz tu završiti. Na primer, ako je prvi red (red br. 4) iz nekog razloga prazan, a ispod njega (od reda br. 5) postoje popunjeni redovi, ništa neće biti uvezeno.
 
-Na kraju, moguće je dobiti i drugu poruku greške.
+**Pažnja**: ako se u šifarniku od 10 redova pojavi greška u redu br. 7, prvih 6 redova će ipak biti uneto ako nisu izazvali probleme! Ponovnim pokretanjem uvoza bez menjanja prvih 6 redova (i, naravno, nakon ispravljanja greške) neće biti problema, pa čak ni duplikata, jer se najpre proverava da li kontakt već postoji. Ako se promeni bilo koja vrednost u prvih 6 redova, taj kontakt će biti smatran novim.
 
- ![](/img/it-it/applications/bizlink/import-contacts-registry/image23.png)
+Na kraju je moguće dobiti i drugu poruku o grešci.
 
-Kao što se može primijetiti iz gornje prikazane slike, ovakva vrsta poruka je lakša za tumačenje jer se daje točna referenca na ćeliju s pripadajućom greškom. U ovom slučaju, u ćeliji F:4 nema nikakve vrijednosti.
+![](/img/it-it/applications/bizlink/import-contacts-registry/image23.png)
+
+Kao što se može primetiti na slici iznad, ovu vrstu poruke lakše je protumačiti jer se daje tačna referenca na ćeliju sa odgovarajućom greškom. U ovom slučaju, u ćeliji F:4 nema nikakve vrednosti.
