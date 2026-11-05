@@ -5,6 +5,16 @@ sidebar_position: 10
 
 U ovom obrascu pohranjuju se rezultati periodičnih PDV-a koji su proračunati kao konačni.
 
+:::important[Ažuriranje]
+Od verzije 805 zapisi se u ovu tablicu pohranjuju **u svakom slučaju**, neovisno o tome radi li se o privremenom ili konačnom ispisu. Razlika je vidljiva putem oznake **Definitivno**, koja se nalazi u tablici.
+
+Svako pokretanje privremenog ispisa ažurirat će vrijednosti za određeno razdoblje (pretporez, obračunani PDV i rezultat obračuna), ali neće mijenjati već pohranjene konačne vrijednosti (označene aktivnom oznakom *Definitivna*).
+
+Privremeni ispis također **neće** ažurirati brojeve stranica niti blokirati računovodstvena knjiženja za određeno razdoblje. Te su radnje povezane isključivo s postupkom koji se izvršava u konačnom načinu rada.
+
+Sve ručne izmjene vrijednosti u retku tablice *Uplate PDV-a* evidentirat će se u dodatnim poljima **Datum posljednje izmjene** i **Korisnik posljednje izmjene**.
+:::
+
 Za svaku konačno obrađenu likvidaciju bit će dodan odgovarajući redak iz programa.
 
 Iz ove pozicije je moguće nastaviti sa otključavanjem konačne likvidacije jednostavnim brisanjem odgovarajućeg retka naredbom. **Izbriši obračune PDV-a**.

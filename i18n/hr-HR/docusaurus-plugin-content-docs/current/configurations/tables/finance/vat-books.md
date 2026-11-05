@@ -40,7 +40,13 @@ Registri koje stvara Fast Start već su pripremljeni za upravljanje sljedećim v
 
 **Opis**: opis registra koji se u pravilu prikazuje na službenim izvještajima.
 
-**Tip registra**: unaprijed definirana vrsta registra. Posebnu pozornost treba posvetiti pravilnom postavljanju registara koji obuhvaćaju prijenos knjiženja nabave unutar EU-a ili knjiženja s prijenosom porezne obveze (Reverse Charge). Ti se registri postavljaju kao *Prodaja*. Također je potrebno pravilno razlikovati nabavu i prodaju s odgođenim PDV-om te posebni režim prema članku 74 ter Uredbe predsjednika Republike br. 633/72.
+**Tip registra (knjige)**: unaprijed definirana vrsta registra. Potrebno je obratiti pozornost na ispravno postavljanje, primjerice, registara u kojima se evidentiraju prijenosi između konta za nabavu unutar EU-a ili prijenos porezne obveze (reverse charge). Takvi se registri postavljaju na vrstu *Prodaja*. Također je potrebno pravilno razlikovati vrste nabave i prodaje s odgođenim PDV-om te eventualne posebne porezne režime.
+
+:::important[Ažuriranje]
+Od verzije 805 dostupna je posebna vrsta **Zbirni registar (knjiga)**, namijenjena ispisu periodičnog obračuna PDV-a i upravljanju svim povezanim posebnim opcijama.
+
+Ova vrsta omogućuje i automatsko predlaganje odgovarajućeg registra u obrascu za pokretanje ispisa *Periodični obračun PDV-a*.
+:::
 
 **Provjera protokola**: aktiviranjem ove oznake blokira se konačni ispis registra ako postoje praznine u numeriranju protokola ili nepravilnosti u njihovu redoslijedu.
 
