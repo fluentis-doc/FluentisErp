@@ -1,5 +1,5 @@
 ---
-title: Neusklađenost
+title: Neusklađenost (Neusaglašenosti)
 sidebar_position: 2
 ---
 
