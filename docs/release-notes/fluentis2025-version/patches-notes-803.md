@@ -4,6 +4,17 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0040 - 06/11/2026
+
+> -	FI - Migliorata la gestione dei tassi di cambio nella generazione automatica della partita di anticipo dagli ordini clienti, con corretto funzionamento dell'incasso e della fattura di acconto generati successivamente (TT01656/26)
+> -	MS - Commesse di produzione - Costificazione: corretto il calcolo del costo di un articolo in conto lavoro, che non teneva correttamente conto dei costi derivanti dai materiali e dalle lavorazioni. È stato inoltre inibito il calcolo in presenza di più commesse pianificate, qualora venga utilizzato il “Raggruppamento degli ordini pianificati”, disponibile nei parametri della “Pianificazione generale”  (#TT03691/26)
+> -	PR - Corretta la gestione dell'IVA Reverse Charge nel Cash Flow degli ordini di conto lavoro, evitando l'inclusione dell’IVA nelle scadenze (TT02377/26)
+> -	PR - Risolto un problema nella procedura di contabilizzazione degli anticipi incassi che impediva il corretto riporto delle descrizioni dei movimenti contabili (#TT04632/26)
+> -	SD - Anteprima stampa ordini clienti: ottimizzata apertura documentale da elenco ordini clienti
+> -	SH - Corretto problema relativo alla ricerca delle anagrafiche contatti tramite filtro per agente. (#TT04230/26)
+> -	WM - Analisi Disponibilità: Corretto calcolo Giacenza Operativa non Disponibile per materiali Inviati e scaricati da Conto Lavoro (#TT04484/26)
+> -	WM - UM alternative in UDC: ottimizzato calcolo dei decimali su unità di misura alternativa nella gestione UDC (#TT04611/26).
+
 ### Patch 803.0039 - 29/10/2026
 
 > -	CO - Corretta la visualizzazione dei DDT di acquisto forzatamente valorizzati nella procedura “Valorizzazione area acquisti e vendite” (#TT03933/26)
@@ -180,7 +191,7 @@ Regole applicate:
 > -	QY - Controllo articoli - Importa articoli da controllare: per i tipi documento Dichiarazioni di produzione e Fasi ordine di produzione, nella griglia dei risultati sono state aggiunte le colonne di Macchina e Gruppo manodopera (#TT03195/26)
 > -	SCS - Ordini conto Lavoro: La ripresa dei prezzi dai listini di conto lavoro avviene considerando i prezzi in unità di misura alternativa e la priorità di ricerca standard di prezzi e sconti (#TT1847/26)
 > -	SCS - Corretta importazione web api per la creazione di nuovi lotti e serial number (#TT03379/26)
-> - SCS – Corretto registrazione di magazzino errata per Rientro di C/L con quantità lotti parziale. (#TT02559/26).
+> - SCS - Corretto registrazione di magazzino errata per Rientro di C/L con quantità lotti parziale. (#TT02559/26).
 > -	SD - Fix Create AgentSettlement-special case for CreditNote (#TT02018/26)
 > -	SD - Griglia pagamenti dentro liquidazione agenti, in caso di pagamento avvenuto o scadenza maturata, la griglia non è più editabile nei valori e mostra correttamente la quota parte maturata nella liquidazione in us. **Attenzione! Questa modifica può impattare sui profili** (#TT04671/24)
 > -	SD - Listini di Vendita: Corretta configurazione campo SDSPLIED_ExtraDataValue in ExtraData presenti su articolo (#TT03220/26)
