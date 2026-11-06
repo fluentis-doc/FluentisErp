@@ -756,7 +756,7 @@
     "description": "The label for category Testata in sidebar sales"
   },
   "sidebar.sales.category.Articoli": {
-    "message": "Stavke",
+    "message": "Artikli",
     "description": "The label for category Articoli in sidebar sales"
   },
   "sidebar.sales.category.Riepiloghi": {
@@ -968,7 +968,7 @@
     "description": "The label for category Creazione e Gestione distinte in sidebar treasury"
   },
   "sidebar.treasury.category.Creazine e Gestione insoluti": {
-    "message": "Upravljanje neplaćenim",
+    "message": "Upravljanje neplaćenim stavkama",
     "description": "The label for category Creazine e Gestione insoluti in sidebar treasury"
   },
   "sidebar.treasury.category.Creazione e Gestione effetti": {
@@ -1024,7 +1024,7 @@
     "description": "The label for category Magazzino in sidebar logistics"
   },
   "sidebar.logistics.category.Registrazioni di magazzino": {
-    "message": "Zapisi zalihe",
+    "message": "Zapisi zaliha",
     "description": "The label for category Registrazioni di magazzino in sidebar logistics"
   },
   "sidebar.logistics.category.Stampe Gestionali": {
@@ -1144,7 +1144,7 @@
     "description": "The label for category Bolle di consegna in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Nuova bolla di consegna": {
-    "message": "New otpremnica podizvođača",
+    "message": "Nova otpremnica podizvođača",
     "description": "The label for category Nuova bolla di consegna in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Stampe": {
@@ -1240,7 +1240,7 @@
     "description": "The label for category Stampe in sidebar quality"
   },
   "sidebar.quality.category.Certificati": {
-    "message": "Certificates",
+    "message": "Certifikati",
     "description": "The label for category Certificati in sidebar quality"
   },
   "sidebar.quality.category.Certificati personale": {
@@ -1332,11 +1332,11 @@
     "description": "The label for category Gestione budget in sidebar controlling"
   },
   "sidebar.controlling.category.Analisi scostamenti": {
-    "message": "Analiza varijanci",
+    "message": "Analiza odstupanja",
     "description": "The label for category Analisi scostamenti in sidebar controlling"
   },
   "sidebar.controlling.category.Registrazioni extracontabili di chiusura": {
-    "message": "Registrazioni extracontabili di chiusura",
+    "message": "Izvanbilančna završna knjiženja",
     "description": "The label for category Registrazioni extracontabili di chiusura in sidebar controlling"
   },
   "sidebar.controlling.category.procedure": {
@@ -1480,7 +1480,7 @@
     "description": "The label for category Calcolo Interessi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gest. Autofattura Elettronica": {
-    "message": "Upravljanje elektroničkom samofakturom",
+    "message": "Upravljanje samoizdavanjem elektroničkog računa",
     "description": "The label for category Gest. Autofattura Elettronica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Casi particolari e Regimi specifici": {
@@ -1792,7 +1792,7 @@
     "description": "The label for category Causali di contabilità generale in sidebar configurations"
   },
   "sidebar.configurations.category.Inserimento causali di contabilità generale": {
-    "message": "Inserimento causali di contabilità generale",
+    "message": "Unos predložaka glavne knjige",
     "description": "The label for category Inserimento causali di contabilità generale in sidebar configurations"
   },
   "sidebar.configurations.category.Tipi solleciti": {
@@ -2096,7 +2096,7 @@
     "description": "The label for category Dipendenti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Consegne/Resi D.P.I.": {
-    "message": "Isporuke/povrati D.P.I.",
+    "message": "Isporuke/povrati O.Z.O",
     "description": "The label for category Consegne/Resi D.P.I. in sidebar erpHome"
   },
   "sidebar.erpHome.category.Corsi di formazione": {
@@ -2136,7 +2136,7 @@
     "description": "The label for category Parametri reclami e non conformità in sidebar configurations"
   },
   "sidebar.configurations.category.D.P.I.": {
-    "message": "Osnovna zaštitna oprema.",
+    "message": "O.Z.O",
     "description": "The label for category D.P.I. in sidebar configurations"
   },
   "sidebar.configurations.category.Mansioni": {
