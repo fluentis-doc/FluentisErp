@@ -6,6 +6,17 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0089 - 06/11/2026
+
+> -	CO - Registrazioni extracontabili di chiusura: miglioramento della gestione dei filtri nella griglia dei risultati della ricerca delle registrazioni extracontabili (TT04576/26)
+> -	PR - Corretta la gestione dell'IVA Reverse Charge nel Cash Flow degli ordini di conto lavoro, evitando l'inclusione dell’IVA nelle scadenze (TT02377/26)
+> -	SCM - listini fornitori, ripristinato il meccanismo di proposta del codice articolo fornitore a partire dal codice articolo impostato nei listini fornitori, ottimizzazione inserimento dati in articoli fornitore (#TT02883/26).
+> -	SD - Anteprima stampa ordini clienti: ottimizzata apertura documentale da elenco ordini clienti
+> -	SD - Creazione fatture elettroniche, inserito blocco alla creazione quando l'aliquota iva non è valida alla data fattura (#TT004356/26)
+> -	SD - Fattura di vendita con flag scaricata attiva, la griglia di analitica ora è modificabile quando il movimento di magazzino collegato (via ddt/picking o fattura stessa) non ha una causale con flag di gestione CdC impostato (#TT00045/26)
+> -	SD - SalesOrder Filter - Allow multiple use of Execution property (#TT004409/26)
+> -	WM - UM alternative in UDC: ottimizzato calcolo dei decimali su unità di misura alternativa nella gestione UDC (#TT04611/26).
+
 ### Patch 707.1-0088 - 29/10/2026
 
 > -	CO - Errore cancellazione centri aziendali: Sistemato errore che bloccava il programma quando veniva cancellato un centro aziendale utilizzato. Aggiunto messaggio di errore per avvertire l’utente che il centro aziendale è stato utilizzato. (#TT04134/26)
@@ -137,7 +148,7 @@ keywords:
 > -	PM - risolto caso per cui nei parametri progetti non venivano salvate le impostazioni del campo "Costo predefinito materiali progetto" (#TT03292/26)
 > -	PR - revisione creazione file Riba e bonifici, sostituzione “left or right quotation mark” con ' (quotation mark) e - (En dash) con - (minus). (#TT02815/26)
 > -	QY - Controllo articoli - Importa articoli da controllare: per i tipi documento Dichiarazioni di produzione e Fasi ordine di produzione, nella griglia dei risultati sono state aggiunte le colonne di Macchina e Gruppo manodopera. (#TT03195/26)
-> - SCS – Corretto registrazione di magazzino errata per Rientro di C/L con quantità lotti parziale. (#TT02559/26).
+> - SCS - Corretto registrazione di magazzino errata per Rientro di C/L con quantità lotti parziale. (#TT02559/26).
 > -	SCS - Ordini conto Lavoro: La ripresa dei prezzi dai listini di conto lavoro avviene considerando i prezzi in unità di misura alternativa e la priorità di ricerca standard di prezzi e sconti (#TT1847/26)
 > -	SD - Fix Create AgentSettlement-special case for CreditNote. (#TT02018/26)
 > -	SD - Griglia pagamenti dentro liquidazione agenti, in caso di pagamento avvenuto o scadenza maturata, la griglia non è più editabile nei valori e mostra correttamente la quota parte maturata nella liquidazione in us.Modifications inside Agent settlemente form can have impact on profiles. (#TT04671/24)
