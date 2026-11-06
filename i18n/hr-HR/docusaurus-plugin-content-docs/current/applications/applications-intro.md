@@ -1,5 +1,5 @@
 ---
-title: Ploča Alata/aplikacija u Fluentis ERP-u
+title: Ploča (panel) Alata/aplikacija u Fluentis ERP-u
 description: Pregled ploče Alati u Fluentis ERP-u – upravljanje dokumentacijom, konfiguracija, praćenje aktivnosti i integrirani moduli za napredne korisnike.
 keywords:
   - Fluentis ERP
@@ -22,9 +22,9 @@ last_update:
   date: 2025-10-22
 ---
 
-# Ploča Alati
+# Panel Alati
 
-Ploča **Alati** sadrži popis aplikacija i modula koji se mogu konfigurirati i kojima se može upravljati unutar sustava **Fluentis ERP**.
+Ploča (panel) **Alati** sadrži popis aplikacija i modula koji se mogu konfigurirati i kojima se može upravljati unutar sustava **Fluentis ERP**.
 
 Predstavlja centraliziranu pristupnu točku za napredne korisnike koji žele nadzirati, pratiti i prilagođavati ponašanje ERP sustava.
 
@@ -41,10 +41,10 @@ Detaljnija konfiguracija parametara obično se obavlja putem namjenskog web-port
 
 ### 🔹 Revizijski trag (Audit Trail)
 
-- **Praćenje aktivnosti**
+- **Monitor aktivnosti**
   Omogućuje pregled i analizu procesa u tijeku, planiranih operacija i dovršenih aktivnosti. Koristan je za praćenje performansi i dijagnosticiranje mogućih operativnih problema.
 
-- **Konfiguracija**
+- **Konfiguriranje**
   Odjeljak namijenjen definiranju parametara sustava, veza, sigurnosnih opcija i postavki aplikacije. Ovdje je moguće prilagoditi Fluentis potrebama tvrtke.
 
 - **Povijest aktivnosti**  
@@ -58,7 +58,7 @@ Omogućuje konfiguriranje komunikacije između Fluentisa i drugih poslovnih plat
 
 - **Ulazni / izlazni dokumenti**  
   Nadzor i arhiviranje poslovnih i operativnih dokumenata.
-- **Uvozi na zahtjev**  
+- **Uvoz podataka na zahtjev**  
   Funkcija za uvoz dokumenata ili podataka iz vanjskih izvora.
 - **Konfiguracija i transkodiranje**  
   Upravljanje formatima, tokovima i kodiranjima dokumenata.
@@ -67,15 +67,15 @@ Omogućuje konfiguriranje komunikacije između Fluentisa i drugih poslovnih plat
 - **WebApi Controller**  
   Sučelje za upravljanje API pozivima i digitalnim tokovima dokumenata.
 
-### 📂 Upravljanje dokumentacijom
+### 📂 Upravljanje dokumentima
 
-Odjeljak **Upravljanje dokumentacijom** na ploči *\*Alati\** sustava Fluentis ERP omogućuje upravljanje svim aspektima poslovne dokumentacije, od njezine klasifikacije do upravljanja ugovorima i sadržajem.  
+Odjeljak **Upravljanje dokumentacijom (dokumentima=** na ploči *\*Alati\** sustava Fluentis ERP omogućuje upravljanje svim aspektima poslovne dokumentacije, od njezine klasifikacije do upravljanja ugovorima i sadržajem.  
 To je središnje mjesto za nadzor, arhiviranje i dijeljenje informacija u digitalnom obliku unutar organizacije.
 
 - **Dokumenti**  
 Omogućuje izradu, izmjenu i arhiviranje poslovnih dokumenata.
 
-- **Vrste dokumenata**  
+- **Tipovi (vrste) dokumenata**  
 Upravlja **klasifikacijom i definiranjem vrsta dokumenata**, uz postavljanje metapodataka, predložaka numeriranja i pravila sljedivosti.  
 Omogućuje standardizaciju upravljanja digitalnim sadržajem u tvrtki.
 
@@ -87,7 +87,7 @@ Pruža alate za praćenje statusa ugovora i automatizaciju obavijesti o produlje
 Odjeljak koji omogućuje organiziranje dokumenata u **hijerarhijske strukture**, čime se olakšavaju pretraživanje i dijeljenje informacija.  
 Svaka mapa može se povezati s određenim ulogama, odjelima ili projektima.
 
-- **Uređivači**  
+- **Uređivači (editors)**  
 Sadrži alate za **uređivanje i pregled digitalnih dokumenata** izravno unutar sustava Fluentis, bez potrebe za korištenjem vanjskih aplikacija.
 
 ### 🧠 Fluentis Supervisor
