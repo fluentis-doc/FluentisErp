@@ -6,9 +6,9 @@ sidebar_position: 1.2
 
 ### Patch 803.0040 - 06/11/2026
 
-> -	FI - Migliorata la gestione dei tassi di cambio nella generazione automatica della partita di anticipo dagli ordini clienti, con corretto funzionamento dell'incasso e della fattura di acconto generati successivamente (TT01656/26)
+> -	FI - Migliorata la gestione dei tassi di cambio nella generazione automatica della partita di anticipo dagli ordini clienti, con corretto funzionamento dell'incasso e della fattura di acconto generati successivamente (#TT01656/26)
 > -	MS - Commesse di produzione - Costificazione: corretto il calcolo del costo di un articolo in conto lavoro, che non teneva correttamente conto dei costi derivanti dai materiali e dalle lavorazioni. È stato inoltre inibito il calcolo in presenza di più commesse pianificate, qualora venga utilizzato il “Raggruppamento degli ordini pianificati”, disponibile nei parametri della “Pianificazione generale”  (#TT03691/26)
-> -	PR - Corretta la gestione dell'IVA Reverse Charge nel Cash Flow degli ordini di conto lavoro, evitando l'inclusione dell’IVA nelle scadenze (TT02377/26)
+> -	PR - Corretta la gestione dell'IVA Reverse Charge nel Cash Flow degli ordini di conto lavoro, evitando l'inclusione dell’IVA nelle scadenze (#TT02377/26)
 > -	PR - Risolto un problema nella procedura di contabilizzazione degli anticipi incassi che impediva il corretto riporto delle descrizioni dei movimenti contabili (#TT04632/26)
 > -	SD - Anteprima stampa ordini clienti: ottimizzata apertura documentale da elenco ordini clienti
 > -	SH - Corretto problema relativo alla ricerca delle anagrafiche contatti tramite filtro per agente. (#TT04230/26)

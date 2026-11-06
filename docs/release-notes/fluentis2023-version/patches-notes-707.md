@@ -8,8 +8,8 @@ keywords:
 
 ### Patch 707.1-0089 - 06/11/2026
 
-> -	CO - Registrazioni extracontabili di chiusura: miglioramento della gestione dei filtri nella griglia dei risultati della ricerca delle registrazioni extracontabili (TT04576/26)
-> -	PR - Corretta la gestione dell'IVA Reverse Charge nel Cash Flow degli ordini di conto lavoro, evitando l'inclusione dell’IVA nelle scadenze (TT02377/26)
+> -	CO - Registrazioni extracontabili di chiusura: miglioramento della gestione dei filtri nella griglia dei risultati della ricerca delle registrazioni extracontabili (#TT04576/26)
+> -	PR - Corretta la gestione dell'IVA Reverse Charge nel Cash Flow degli ordini di conto lavoro, evitando l'inclusione dell’IVA nelle scadenze (#TT02377/26)
 > -	SCM - listini fornitori, ripristinato il meccanismo di proposta del codice articolo fornitore a partire dal codice articolo impostato nei listini fornitori, ottimizzazione inserimento dati in articoli fornitore (#TT02883/26).
 > -	SD - Anteprima stampa ordini clienti: ottimizzata apertura documentale da elenco ordini clienti
 > -	SD - Creazione fatture elettroniche, inserito blocco alla creazione quando l'aliquota iva non è valida alla data fattura (#TT004356/26)

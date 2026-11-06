@@ -8,7 +8,7 @@ sidebar_position: 1.1
 
 > -	Allineamento tecnico per Editor Documento BizLink
 > -	CO - Registrazioni extracontabili di chiusura: miglioramento della gestione dei filtri nella griglia dei risultati della ricerca delle registrazioni extracontabili (#TT04576/26)
-> -	FI - ammortamento automatico all’interno del singolo cespite, risolto problema di ‘merge reference’. (#TT04833/26)
+> -	FI - ammortamento automatico all’interno del singolo cespite, risolto problema di ‘merge reference’ (#TT04833/26)
 > -	FI - stampa libro cespiti ammortizzabili, revisione gestione flag ‘Cessato’ (#TT04672/26)
 > -	Framework - Ottimizzate le funzionalità della chat relative ad “Allega documento”, “Snapshot” e “Invia Snapshot”, introducendo la possibilità di selezionare tramite la finestra di dialogo di Windows il percorso in cui salvare i file scaricati (#TT04291/26)
 > -	MS - Cicli di produzione: gestita l’eccezione che si verificava durante la memorizzazione delle informazioni relative al ciclo di lavorazione, a seguito della modifica dei valori di Fase e Sottofase nella medesima sessione di lavoro. L’anomalia si manifestava quando, dopo aver aperto il ciclo di lavorazione e modificato le informazioni, si procedeva alla memorizzazione indicando valori di Fase e Sottofase già presenti (#TT04663/26)
@@ -18,17 +18,17 @@ sidebar_position: 1.1
 > -	Refactor Build Process for Linux Enviroment
 > -	SCM - Importazione Prezzi Fornitore: Aggiunti filtri di ricerca per intervallo di data importazione, codice classe e codice articolo. Aggiunte le colonne: id per filtri specifichi sui record della tabella, un flag per ricercare tutti gli articoli già codificati in anagrafica articoli (#TT01969/26)
 > -	SCS - Registrazione rientri conto lavoro: corretto il comportamento della registrazione di magazzino. In presenza della fase standard nel documento di rientro, la fase non viene più riportata nel movimento di magazzino quando il parametro generale "Giacenza per fase" non è abilitato (#TT04720/26)
-> -	SD - Valorizzazione DDT di vendita: ottimizzata procedura di generazione fatture con molteplici righe aventi dichiarazione d’intento (#TT04715/26).
+> -	SD - Valorizzazione DDT di vendita: ottimizzata procedura di generazione fatture con molteplici righe aventi dichiarazione d’intento (#TT04715/26)
 > -	SD - Creazione fatture elettroniche, inserito blocco alla creazione quando l'aliquota iva non è valida alla data fattura (#TT004356/26)
 > -	SD - Fattura di vendita con flag scaricata attiva, la griglia di analitica ora è modificabile quando il movimento di magazzino collegato (via ddt/picking o fattura stessa) non ha una causale con flag di gestione Cdc impostato (#TT00045/26)
-> -	SH - Corretto problema relativo alla ricerca delle anagrafiche contatti tramite filtro per agente. (#TT04230/26)
+> -	SH - Corretto problema relativo alla ricerca delle anagrafiche contatti tramite filtro per agente (#TT04230/26)
 > -	SH - WorkFlows: Order first by date when reading from workflow logs.
 > -	Solved bug with Blockly Widget
 > -	Updated default values for BizLink Folder Monitor
-> -	WM - Inventario LIFO: Corretta anomalia su scatti annuali che non stampava correttamente gli strati. (#TT04518/26).
+> -	WM - Inventario LIFO: Corretta anomalia su scatti annuali che non stampava correttamente gli strati. (#TT04518/26)
 > -	WM - Liste prelievo UDC - bug fix per cancellazione liste prelievo UDC vuote nel contesto custom (#TT004716/26)
 > -	WM - UM alternative in UDC: ottimizzato calcolo dei decimali su unità di misura alternativa nella gestione UDC (#TT04611/26).
-> -	WMS - Inventario: Corretto perdita focus su barcode in Conferma. (#TT04598/26)
+> -	WMS - Inventario: Corretto perdita focus su barcode in Conferma (#TT04598/26)
 > -	WMS - Widget ubicazioni: Corretto posizionamento lista di selezione che in alcuni formati di schermo finiva sopra il campo in input (#TT04693/26)
 > -	WMS Ricevimento Merce: Corretto quantità errata caricata su modifica della quantità inserita per articoli gestiti a lotti (#TT04724/26)
 > -	WorkFlow: corretto l’allineamento dello stato corrente del workflow, che ora viene determinato leggendo la tabella degli stati ed è sempre coerente con l’ultima registrazione presente nel log del workflow, ordinato per data (#TT04729/26)
