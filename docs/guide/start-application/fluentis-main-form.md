@@ -3,12 +3,24 @@ title: La form principale di Fluentis
 sidebar_position: 2
 ---
 
-La form principale di **Fluentis** è composta da più zone con funzionalità diverse:
+La maschera principale di **Fluentis** è composta da più parti con funzionalità distinte:
+
+## Main Navigation Sidebar
+Il **sidebar di navigazione** è posto nel lato sinistro della maschera principale di Fluentis, ed è composto da:
+- dei pulsanti(o bottoni):
+  - Logo Fluentis.
+  - Home.
+  - Documenti.
+  - Notice Board.code
+  - Attività.
+  - Calendario.
+  - Dashboard.
+  - Ricerca.
+
 
 ## Ribbon Bar 
 
 La barra multifunzione contiene i menu principali, Home, con alcune impostazioni di base, ed i menu specifici per le varie aree funzionali.
-
 
 
 ### Tab Home

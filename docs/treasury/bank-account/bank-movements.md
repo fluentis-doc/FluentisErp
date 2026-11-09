@@ -20,6 +20,7 @@ I file supportati e scaricabili dai siti di home banking sono attualmente di due
  
 [Esempio di tracciato txt per file contenente movimenti bancari](/txt/CBI_1_esempio.txt)
 
+
 Il tracciato txt è chiamato dal CBI “*Rendicontazione saldi e movimenti di conti correnti*” e sul sito ufficiale del CBI è presente la documentazione con le specifiche tecniche.
 
 I tracciati xml riferiti al più recente circuito SEPA sono generati generalmente secondo due possibili tracciati:

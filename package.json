@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& set HTTPS=false&& docusaurus start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus build",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus build && pagefind --site build",
     "swizzle": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus swizzle",
     "deploy": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus deploy",
     "clear": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus clear",
@@ -14,7 +14,6 @@
     "write-heading-ids": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@cmfcmf/docusaurus-search-local": "2.0.1",
     "@docusaurus/core": "3.7.0",
     "@docusaurus/plugin-client-redirects": "3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
@@ -27,7 +26,8 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@docusaurus/types": "3.7.0"
+    "@docusaurus/types": "3.7.0",
+    "pagefind": "^1.5.2"
   },
   "overrides": {
     "cheerio": "1.0.0-rc.12"
