@@ -50,6 +50,6 @@ Questo comporta che eventuali oneri presenti nei documenti sorgente non vengono 
 
 Nel caso in cui un documento di destinazione venga modificato dopo un processo di evasione o valorizzazione (ad esempio variazione di quantità, prezzi o sconti rispetto al documento sorgente), i valori degli oneri già calcolati possono risultare non più coerenti rispetto alla base originaria di calcolo.
 
-Poiché non è possibile determinare automaticamente un nuovo ricalcolo corretto, il deve notifica l’utente con un messaggio informativo che segnala la necessità di intervento manuale. Il messaggio è il seguente:
+Poiché non è possibile determinare automaticamente un nuovo ricalcolo corretto, l'utente viene avvisato con il seguente messaggio:
 
-*Quantities, prices, or discounts have been modified compared to the fulfillment generated through the procedure. Miscellaneous, transportation, and shipping charges must be manually adjusted by the user.*
+*Le quantità, i prezzi o gli sconti sono stati modificati rispetto all'evasione generata dalla procedura. Le spese varie, di trasporto e di spedizione devono essere adeguate manualmente dall'utente.*
