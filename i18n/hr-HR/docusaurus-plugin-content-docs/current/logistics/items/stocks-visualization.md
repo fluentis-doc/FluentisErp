@@ -21,7 +21,6 @@ Rezultati su grupirani po skladištu i specificirane su, osim vrijednosti tablic
 
 Rezultati su grupirani po lokaciji i specificirani su, osim vrijednosti tablice artikla, i vrijednosti lokacije, opis lokacije i stanje lokacije.
 
-
 ## Projekti
 
 Rezultati su grupirani po projektu i specificirani su, osim vrijednosti tablice artikla, i vrijednosti broja, godine i opisa projekta artikla.
