@@ -6,38 +6,39 @@ sidebar_position: 1.1
 
 ### Patch 804.031 - 06/11/2026
 
-> -	Allineamento tecnico per Editor Documento BizLink
+> -	BIZ - Allineamento tecnico per Editor Documento BizLink
+> -	BIZ - Solved bug with Blockly Widget
+> -	BIZ - Updated default values for BizLink Folder Monitor
 > -	CO - Registrazioni extracontabili di chiusura: miglioramento della gestione dei filtri nella griglia dei risultati della ricerca delle registrazioni extracontabili (#TT04576/26)
 > -	FI - ammortamento automatico all’interno del singolo cespite, risolto problema di ‘merge reference’ (#TT04833/26)
 > -	FI - stampa libro cespiti ammortizzabili, revisione gestione flag ‘Cessato’ (#TT04672/26)
 > -	Framework - Ottimizzate le funzionalità della chat relative ad “Allega documento”, “Snapshot” e “Invia Snapshot”, introducendo la possibilità di selezionare tramite la finestra di dialogo di Windows il percorso in cui salvare i file scaricati (#TT04291/26)
+> -	Framework - Refactor Build Process for Linux Enviroment
 > -	MS - Cicli di produzione: gestita l’eccezione che si verificava durante la memorizzazione delle informazioni relative al ciclo di lavorazione, a seguito della modifica dei valori di Fase e Sottofase nella medesima sessione di lavoro. L’anomalia si manifestava quando, dopo aver aperto il ciclo di lavorazione e modificato le informazioni, si procedeva alla memorizzazione indicando valori di Fase e Sottofase già presenti (#TT04663/26)
-> -	PM: gestito correttamente aggiornamento flag "allegato" nei documenti di interventi-attività-note spese nel caso di inserimento allegati (#TT04562/26)
-> -	PM: Nota spese - corretto caso per cui il flag "allegato" non era aggiornato correttamente in base alla situazione reale (#TT04543/26)
+> -	PM - gestito correttamente aggiornamento flag "allegato" nei documenti di interventi-attività-note spese nel caso di inserimento allegati (#TT04562/26)
+> -	PM - Nota spese - corretto caso per cui il flag "allegato" non era aggiornato correttamente in base alla situazione reale (#TT04543/26)
 > -	PR - Corretta la gestione dell'IVA Reverse Charge nel Cash Flow degli ordini di conto lavoro, evitando l'inclusione dell' IVA nelle scadenze (#TT02377/26)
-> -	Refactor Build Process for Linux Enviroment
 > -	SCM - Importazione Prezzi Fornitore: Aggiunti filtri di ricerca per intervallo di data importazione, codice classe e codice articolo. Aggiunte le colonne: id per filtri specifichi sui record della tabella, un flag per ricercare tutti gli articoli già codificati in anagrafica articoli (#TT01969/26)
+> - SCM - Tipi R.d.A: ottimizzato cambio tipo R.d.A. a seguito di cambio dati nel documento (#TT04713/26).
 > -	SCS - Registrazione rientri conto lavoro: corretto il comportamento della registrazione di magazzino. In presenza della fase standard nel documento di rientro, la fase non viene più riportata nel movimento di magazzino quando il parametro generale "Giacenza per fase" non è abilitato (#TT04720/26)
 > -	SD - Valorizzazione DDT di vendita: ottimizzata procedura di generazione fatture con molteplici righe aventi dichiarazione d’intento (#TT04715/26)
 > -	SD - Creazione fatture elettroniche, inserito blocco alla creazione quando l'aliquota iva non è valida alla data fattura (#TT004356/26)
 > -	SD - Fattura di vendita con flag scaricata attiva, la griglia di analitica ora è modificabile quando il movimento di magazzino collegato (via ddt/picking o fattura stessa) non ha una causale con flag di gestione Cdc impostato (#TT00045/26)
 > -	SH - Corretto problema relativo alla ricerca delle anagrafiche contatti tramite filtro per agente (#TT04230/26)
-> -	SH - WorkFlows: Order first by date when reading from workflow logs.
-> -	Solved bug with Blockly Widget
-> -	Updated default values for BizLink Folder Monitor
+> -	SH - WorkFlow: corretto l’allineamento dello stato corrente del workflow, che ora viene determinato leggendo la tabella degli stati ed è sempre coerente con l’ultima registrazione presente nel log del workflow, ordinato per data (#TT04729/26)
+> -	SH - WorkFlow: Order first by date when reading from workflow logs.
 > -	WM - Inventario LIFO: Corretta anomalia su scatti annuali che non stampava correttamente gli strati. (#TT04518/26)
 > -	WM - Liste prelievo UDC - bug fix per cancellazione liste prelievo UDC vuote nel contesto custom (#TT004716/26)
 > -	WM - UM alternative in UDC: ottimizzato calcolo dei decimali su unità di misura alternativa nella gestione UDC (#TT04611/26).
 > -	WMS - Inventario: Corretto perdita focus su barcode in Conferma (#TT04598/26)
 > -	WMS - Widget ubicazioni: Corretto posizionamento lista di selezione che in alcuni formati di schermo finiva sopra il campo in input (#TT04693/26)
-> -	WMS Ricevimento Merce: Corretto quantità errata caricata su modifica della quantità inserita per articoli gestiti a lotti (#TT04724/26)
-> -	WorkFlow: corretto l’allineamento dello stato corrente del workflow, che ora viene determinato leggendo la tabella degli stati ed è sempre coerente con l’ultima registrazione presente nel log del workflow, ordinato per data (#TT04729/26)
+> -	WMS - Ricevimento Merce: Corretto quantità errata caricata su modifica della quantità inserita per articoli gestiti a lotti (#TT04724/26)
 
 
 ### Patch 804.030 - 29/10/2026
 
 > -	BI - Cruscotti: Fixed checkbox selection in BI dashboard details after a grid refresh. (#TT4104/26)
-> -	BizLink: aggiornati range di dati e descrizioni per una migliore comprensione delle colonne - Items (#TT04537/26)
+> -	BIZ: aggiornati range di dati e descrizioni per una migliore comprensione delle colonne - Items (#TT04537/26)
 > -	CO - Ripresa dati da produzione, algoritmo di ripresa costi di progetto, revisione priorità di assegnazione conto e centro di costo (#TT04665/26)
 > -	FI - Gestione compensi: correzione del ricalcolo della quota Enasarco in fase di inserimento del compenso. Modifications inside Compenso form can have impact on profiles. ( TT04187/26).
 > -	FI - Migliorata la gestione dei tassi di cambio nella generazione automatica della partita di anticipo dagli ordini clienti, con corretto funzionamento dell'incasso e della fattura di acconto generati successivamente. ( TT01656/26)
@@ -59,6 +60,7 @@ sidebar_position: 1.1
 
 ### Patch 804.029 - 26/10/2026
 
+> -	BIZ - Solved problem to Create session for BizLink BinaryDocument
 > -	CRM - Offerte: Nell’help articoli abilitati i tab listini e documenti. Modifications inside SalesOffer object form and Item help can have impact on profiles(#TT03623/26)
 > -	PM - Nota spese: corretto caso per cui attività ed interventi non erano apribili da pulsanti in ribbon bar se la nota spese era appena stata generate (#TT04560/26)
 > -	Risolto problema ovveride functions async
@@ -67,20 +69,19 @@ sidebar_position: 1.1
 > -	SCS - Campi giacenza e disponibilità in evasione materiale su DDT: i dati presenti sono riferiti al magazzino da cui i materiali verranno scaricati. Tendenzialmente, il magazzino interno (#TT03693/26).
 > -	SCS - Dettaglio righe ordini conto lavoro, ripristinato il corretto aggiornamento delle date riga della funzione "Modifica consegna"(866/26)
 > -	SCS - Evasione Ordini: corretta un'anomalia nella procedura di selezione massiva e nella selezione delle righe evidenziate che, in determinate circostanze, non includeva correttamente tutti gli elementi previsti. (#TT04544/26)
-> -	Solved problem to Create session for BizLink BinaryDocument
 
 ### Patch 804.028 - 23/10/2026
 
-> - MES - Dichiarazioni di produzione - API operation “Crea UDC”: è stata implementata la API operation CreateLoadingUnits che simula la pressione del pulsante “Crea UDC” presente nelle Dichiarazioni di produzione. (#TT04338/26)
-> - MES - Dichiarazioni di produzione - tabulatore Scarti: attivata la gestione della dichiarazione multipla di Scarti con diverso magazzino e causale di destinazione. (#TT03897/26)
+> - MES - Dichiarazioni di produzione: API operation “Crea UDC”: è stata implementata la API operation CreateLoadingUnits che simula la pressione del pulsante “Crea UDC” presente nelle Dichiarazioni di produzione. (#TT04338/26)
+> - MES - Dichiarazioni di produzione: tabulatore Scarti: attivata la gestione della dichiarazione multipla di Scarti con diverso magazzino e causale di destinazione. (#TT03897/26)
 > - MES - Manufacturing Execution System: Corretta anomalia che non permetteva, in dichiarazione di produzione, la selezione multipla di lotti e serial number all’interno del tab materiali. (#TT03999/26)
 > - MS - Eliminazione degli ordini pianificati: correzione di un bug tecnico relativo alla conversione tra oggetti standard e custom. (#TT4505/26, #TT4506/26, #TT4509/26)
 > - MS - Pianificazione generale: se si settavano i giorni di anticipo per i materiali nei parametri di pianificazione, sui pianificati di livello superiore al primo la data fine era errata. (#TT04541/26)
-> - PM - MAUI - nota spese, corrette diverse casistiche relative al layout form (#TT03599/26)
-> - SDI Documenti di acquisto in entrata - Creazione fattura di acquisto: Per le righe di spesa, sconto e abbuono (tipologie AC, AB e SC) presenti nel file XML, il sistema crea automaticamente delle righe di tipo 3 - Spese. Tali righe vengono generate utilizzando gli stessi parametri previsti per le righe articolo; in particolare, viene adottato il comportamento delle righe di tipo 2 oppure delle righe di tipo 1 qualora l'articolo risulti codificato e correttamente riconosciuto. (#TT04047/26)
+> - PM/MAUI - Nota spese: corrette diverse casistiche relative al layout form (#TT03599/26)
+> - SDI - Documenti di acquisto in entrata: Creazione fattura di acquisto: Per le righe di spesa, sconto e abbuono (tipologie AC, AB e SC) presenti nel file XML, il sistema crea automaticamente delle righe di tipo 3 - Spese. Tali righe vengono generate utilizzando gli stessi parametri previsti per le righe articolo; in particolare, viene adottato il comportamento delle righe di tipo 2 oppure delle righe di tipo 1 qualora l'articolo risulti codificato e correttamente riconosciuto. (#TT04047/26)
 > - WM - Registrazioni di magazzino: Corretta anomalia che permetteva erroneamente di modificare una variante di un articolo dopo aver effettuato la registrazione di magazzino. (#TT04425/26)
 > - WMS - Gestione Spunta: Corretta sovrapposizione lista lotti a messaggio errore del barcode. (#TT04556/26)
-> - Fixed a bug affecting the opening of Flows and Flow Operations, as well as the updating of Flows.
+> - SH - Fixed a bug affecting the opening of Flows and Flow Operations, as well as the updating of Flows.
 
 
 ### Patch 804.027 - 20/10/2026
@@ -116,7 +117,11 @@ Per garantire una corretta elaborazione del listino, il suffisso della versione 
 ### Patch 804.026 - 16/10/2026
 
 > -	ARM - fix unexpected shutdown when creating dictionary entries (TT04157/26)
-> -	Bizlink - METEL Parser: Sono stati adeguati i parser di bizlink per la versione METEL 020 (file a 178 caratteri) e 021 (file a 234 caratteri) per importare la famiglia di sconto a 18 caratteri interamente nella categoria di sconto fornitore-acquisto-vendita (#TT1270/26)
+> -	BIZ - METEL Parser: Sono stati adeguati i parser di bizlink per la versione METEL 020 (file a 178 caratteri) e 021 (file a 234 caratteri) per importare la famiglia di sconto a 18 caratteri interamente nella categoria di sconto fornitore-acquisto-vendita (#TT1270/26)
+> -	BIZ - Solved bug to add missing usings on script editor
+> -	BIZ - Solved problem to show invalid methods name on Blockly widgets
+> -	BIZ - Updated logic for updating the 'release' field; fixed bug regarding source updates from Blockly.
+> -	BIZ - Risolto bug Form Designer per localizzazione colonne ComboBox
 > -	CO - Scritture di integrazione, revisione gestione FSPostingProfitCenter per valori int/smallint (#TT04455/26)
 > -	CPQ - Configuratore: Aggiunto il filtro per le risposte, aggiunto il supporto alla quantità ed ottimizzata la gestione dei valori consentiti.
 > -	FI - Automatic closing - show erros on creating registrations (#TT04397/26, TT00585/26)
@@ -124,25 +129,20 @@ Per garantire una corretta elaborazione del listino, il suffisso della versione 
 > -	FI - Ottimizzata la gestione e migliorata la fluidità delle mappe nell’anagrafica contatti (#TT04293/26)
 > -	FI - Ricerca compensi: corretta la gestione del filtro “Data pagamento” nella ricerca dei compensi. Modifications inside professional filter form can have impact on profiles (#TT03733/26).
 > -	FI - Stampa schede cespiti: corretta la stampa in presenza del filtro “Ubicazione” (#TT04471/26).
-> -	MS & MES - Controlli coerenza Centro di lavoro / Macchina: sono stati implementati i controlli di coerenza della Macchina selezionata rispetto al Centro di Lavoro indicato.  
-Tali controlli, non bloccanti, vengono effettuati nelle gestioni: Centro di Lavoro, Fasi standard, Fasi Ciclo di lavoro, Fasi ordini pianificati, Sequenza fasi, Capacità Centri di lavoro, Generazione manuale tasks, Fasi ordini di produzione, in tutte le Dichiarazioni di produzione; nelle elaborazioni: Completamento dati ordine degli ordini pianificati e in quelli di produzione (#TT03486/26)  
+> -	MS & MES - Controlli coerenza Centro di lavoro / Macchina: sono stati implementati i controlli di coerenza della Macchina selezionata rispetto al Centro di Lavoro indicato. Tali controlli, non bloccanti, vengono effettuati nelle gestioni: Centro di Lavoro, Fasi standard, Fasi Ciclo di lavoro, Fasi ordini pianificati, Sequenza fasi, Capacità Centri di lavoro, Generazione manuale tasks, Fasi ordini di produzione, in tutte le Dichiarazioni di produzione; nelle elaborazioni: Completamento dati ordine degli ordini pianificati e in quelli di produzione (#TT03486/26)  
 > -	PR - creazione file Sepa, revisione gestione del tag `<SvcLvl>` (service level) (#TT04464/26)
 > -	PR - pagamenti fornitori nella localizzazione USA, nascoste le colonne Cin-Abi-Iban. Modifications inside form vendor payment detail can have impact on profiles (#TT04401/26)
-> -	Risolto bug Form Designer per localizzazione colonne ComboBox
 > -	SCM - Modifica cambio, divisa, importo in fattura di acquisto: ottimizzata procedura che consente allineamento documentale su DDT e registrazione di magazzino (#TT04414/26).
 > -	SCM - Valorizzazione DDT di acquisto: ottimizzato calcolo del totale valorizzazione sulla base delle righe documento selezionate (#TT03788/26).
 > -	SCM - SD - Categorie di sconto: Ampliato il codice categoria di sconto a 20 caratteri e adeguate tutte le procedure che utilizzano il codice categoria di sconto (prezzi fornitore e importazione prezzi fornitore, abbinamento categorie sconto di acquisto e vendita con categoria di sconto fornitore) (#TT1270/26)
 > -	SD - Stampa ordine cliente: ottimizzato calcolo calcolato Totale merce (#TT04449/26)
 > -	SH - gestione contatti, aggiunto campo “email pec” nell’anagrafica principale, indirizzi alternativi e dati storici. Modifications inside form contact can have impact on profiles (#TT03973/26)
 > -	SH - Profili - Corretto bug di visualizzazione nei profili sulle grigle di ricerca (#TT02827/26)
-> -	Solved bug to add missing usings on script editor
-> -	Solved problem to show invalid methods name on Blockly widgets
-> -	Updated logic for updating the 'release' field; fixed bug regarding source updates from Blockly.
+> -	SH - Workflow: activation conditions on extended (Custom) objects (TT04324/26)
 > -	WM - Distinta Base: Apertura da Menu contestuale con versione di default della distinta Pharma (#TT00931/26)
 > -	WM - LoadPlan: Risolta anomalia che, nei piani di carico, tab preparazione piani di carico, non permetteva di salvare correttamente modifiche sulla quantità nella colonna articoli (#TT04102/26)
 > -	WMS - Ricevimento merce: Cancellazione del DDT da oggetti bloccati in annullamento salvataggio (#TT04475/26)
 > -	WMS - Ricevimento Merce: Corretta gestione non coerente dei campi quantità alternativa (#TT04434/26)
-> -	Workflow: activation conditions on extended (Custom) objects (TT04324/26)
 
 ### Patch 804.025 - 13/10/2026
 
