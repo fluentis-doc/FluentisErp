@@ -38,4 +38,9 @@ Questa impostazione non è compatibile con altre due logiche attivabile dalla fo
 
 possono essere associati al tipo di distinta per automatizzare e definire la movimentazione contabile all'atto della creazione di una nuova distinta: si tratta del sottoconto di anagrafica banca sulla quale avverrà l'accredito finale effetti e del transitorio di presentazione per la contabilizzazione distinte (tipicamente ad esempio *Banca X C/ S.B.F.*).
 
+
+Il **Conto / Sottoconto / Descrizione Anticipi** (attivo solo quando il flag *Accredito immediato* è disattivato) permette di predefinire il conto desiderato nella testata della Distinta di presentazione. La compilazione di questo conto modifica l'esecuzione della scrittura contabile di presentazione distinta. Alla consueta scrittura che storna il conto del portafoglio e giroconta le somme sul conto d'appoggio della banca di presentazione, vengono aggiunte due righe registrare l'accredito immediato sul conto corrente ordinario già impostato nella testata della distinta ed in contropartita il conto Anticipi qui illustrato. (Ad esempio un conto del tipo "Banca X C/anticipi")
+
+**N.B. la contabilizzazione accrediti tiene conto di questa variazione e stornerà sia il conto di anticpo di cui sopra, sia il consueto conto d'appoggio per la distinta salvo buon fine.**
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
