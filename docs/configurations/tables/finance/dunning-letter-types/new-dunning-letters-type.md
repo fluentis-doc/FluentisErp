@@ -39,9 +39,11 @@ Nella procedura di [***Generazione solleciti***](/docs/finance-area/maturity-val
 I valori dei campi "**giorni di ritardo**" e "**giorni**" , in particolare per i solleciti successivi al primo, vengono sommati e pertanto nel caso del secondo, terzo sollecito ecc.. in genere non è necessario aggiungere un valore nel parametro *giorni di ritardo*, è possibile invece riferirsi all'ulteriore tempo intercorso dalla data del primo sollecito  tramite il parametro *giorni*.
 :::
 
-Per ogni numero di sollecito si potrà procedere, una volta salvato, all'inserimento dei vari testi in lingua: il primo che si andrà a caricare è quello che sarà utilizzato di default quando l'anagrafica cliente non ha una lingua assegnata.
+Per ogni **numero di sollecito** si potrà procedere, una volta salvato, all'inserimento dei vari testi in lingua: il primo che si andrà a caricare è quello che sarà utilizzato di default quando l'anagrafica cliente non ha una lingua assegnata.
 
 I testi sono divisi in 4 sezioni: l'oggetto della lettera, la testata, la conclusione e la sezione riferimenti (attiva solo per solleciti su gruppi di partite). Nella sezione riferimenti, in particolare, si può inserire un testo utilizzando i codici previsti alla base della maschera: ad es. “Rif. (3) nr. (4) del (5), (9) di (8) (10) con scadenza al (6)”.
+
+Il Flag **Autorizzato di default** attiva automaticamente il flag *Autorizzato* all'atto della creazione di un nuovo sollecito al fine di non doverlo autorizzare manualmente, se ciò non è richiesto.
 
 :::note[Gestione appoggio bancario]
 Nel report di stampa delle lettere di sollecito è previsto un campo di default che riporterà in stampa una banca d'appoggio per il pagamento del sollecito. La banca da riportare può essere inserita nell'apposita sezione [**all'interno dell'anagrafica della società**](/docs/configurations/tables/general-settings/company#griglia-delle-divisioni-banca-dappoggio-di-default-e-logo)

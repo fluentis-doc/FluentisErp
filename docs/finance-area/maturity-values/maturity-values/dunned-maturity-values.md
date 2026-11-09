@@ -3,7 +3,7 @@ title: Partite sollecitate
 sidebar_position: 2
 ---
 
-Ricerca partite sollecitate 
+## Ricerca partite sollecitate 
 
  
 
@@ -37,7 +37,17 @@ La procedura di ricerca delle partite sollecitate permette all'utente di ricerca
 |  [Generazione solleciti](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro)  | Richiama la procedura per effettuare la creazione manuale solleciti. |
 
 
+## Dettaglio partite sollecitate
 
+All'interno della form di dettaglio delle partite sollecitate è possibile ritrovare, ed eventualmente modificare, tutti i dati creati dalla procedura automatica di creazione solleciti.
+
+In particolare nella testata sono presenti due Flag:
+
+**Autorizzato**: indica se la lettera di sollecito è autorizzata e può quindi essere spedita o meno al cliente.
+Il processo di autorizzazione può essere gestito con un workflow da configurare con le opzioni desiderate (Vedi gestione workflow per dettagli).
+L'attivazione del flag abilita e richiede la compilazione dei due campi di dettaglio **Utente Autorizzazione** e **Data Autorizzazione**.
+
+**Chiuso**: viene attivato quando tutti i movimenti dentro al sollecito sono stati chiusi, cioè quando le partite sono state incassate, per segnalare questa condizione.
 
 
 
