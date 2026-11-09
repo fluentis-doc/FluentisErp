@@ -716,15 +716,15 @@
     "description": "The label for category Stampe in sidebar purchase"
   },
   "sidebar.purchase.category.Ordini fornitori": {
-    "message": "Narudžba dobavljačima",
+    "message": "Narudžbine dobavljačima",
     "description": "The label for category Ordini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Inserimento ordini fornitori": {
-    "message": "Unos narudžba dobavljačima",
+    "message": "Unos narudžbine dobavljačima",
     "description": "The label for category Inserimento ordini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Purchase order items": {
-    "message": "Artikli narudžbe dobavljačima",
+    "message": "Artikli narudžbine dobavljačima",
     "description": "The label for category Purchase order items in sidebar purchase"
   },
   "sidebar.purchase.category.Listini di acquisto": {
@@ -864,11 +864,11 @@
     "description": "The label for category Offerte in sidebar sales"
   },
   "sidebar.sales.category.Ordini cliente": {
-    "message": "Narudžba kupca",
+    "message": "Narudžbina kupca",
     "description": "The label for category Ordini cliente in sidebar sales"
   },
   "sidebar.sales.category.Inserimento nuovo ordine cliente": {
-    "message": "Kreiranje narudžbe kupaca",
+    "message": "Kreiranje narudžbine kupaca",
     "description": "The label for category Inserimento nuovo ordine cliente in sidebar sales"
   },
   "sidebar.sales.category.Definizione politiche sconti": {
@@ -1000,7 +1000,7 @@
     "description": "The label for category U.D.C. in sidebar logistics"
   },
   "sidebar.logistics.category.Dettaglio ordini in lista": {
-    "message": "Detalji narudžbi",
+    "message": "Detalji narudžbine",
     "description": "The label for category Dettaglio ordini in lista in sidebar logistics"
   },
   "sidebar.logistics.category.Gestione UDC": {
@@ -1828,7 +1828,7 @@
     "description": "The label for category Previsionale in sidebar configurations"
   },
   "sidebar.configurations.category.Costo prodotto / commessa": {
-    "message": "Trošak proizvoda / narudžbe",
+    "message": "Trošak proizvoda / narudžbine",
     "description": "The label for category Costo prodotto / commessa in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo cash flow": {
