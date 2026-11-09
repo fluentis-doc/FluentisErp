@@ -16,7 +16,7 @@
     "description": "Navbar item with label Area"
   },
   "item.label.Acquisti": {
-    "message": "Nabava",
+    "message": "Nabavka",
     "description": "Navbar item with label Acquisti"
   },
   "item.label.Vendite": {
@@ -60,7 +60,7 @@
     "description": "Navbar item with label Gestione progetti"
   },
   "item.label.Quality": {
-    "message": "Kvaliteta",
+    "message": "Kvalitet",
     "description": "Navbar item with label Quality"
   },
   "item.label.EAM": {
@@ -108,7 +108,7 @@
     "description": "Navbar item with label CRM"
   },
   "item.label.Qualità": {
-    "message": "Kvaliteta",
+    "message": "Kvalitet",
     "description": "Navbar item with label Qualità"
   },
   "item.label.Context Panel": {
@@ -116,7 +116,7 @@
     "description": "Navbar item with label Context Panel"
   },
   "item.label.Configurazione": {
-    "message": "Konfiguriranje",
+    "message": "Konfigurisanje",
     "description": "Navbar item with label Configurazione"
   },
   "item.label.Form navigator": {
@@ -152,11 +152,11 @@
     "description": "Navbar item with label Avviamento Fluentis ERP"
   },
   "item.label.Campi, funzionalità e pulsanti comuni": {
-    "message": "Polja, funkcionalnosti i uobičajeni gumbi",
+    "message": "Polja, funkcionalnosti i uobičajena dugmad",
     "description": "Navbar item with label Campi, funzionalità e pulsanti comuni"
   },
   "item.label.Configurazioni (Tabelle, Parametri...)": {
-    "message": "Konfiguracije (Tablice, Parametri...)",
+    "message": "Konfiguracije (Tabele, Parametri...)",
     "description": "Navbar item with label Configurazioni (Tabelle, Parametri...)"
   },
   "item.label.Contatti": {

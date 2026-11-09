@@ -3,7 +3,7 @@ title: Upravljanje glavnom i alternativnom jedinicom mjere
 sidebar_position: 5
 ---
 
-Ova funkcionalnost omogućava definisanje i korištenje različitih jedinica mjere za isti proizvod u različitim kontekstima, kao što su prodaja, nabava ili upravljanje skladištem.  
+Ova funkcionalnost omogućava definisanje i korištenje različitih jedinica mjere za isti proizvod u različitim kontekstima, kao što su prodaja, nabavka ili upravljanje skladištem.  
 
 :::note
 Za omogućavanje upravljanja alternativnim jedinicama mjere, potrebno je aktivirati opciju Upravljanje dvostrukom jedinicom mjere u [Parametrima](/docs/configurations/parameters/sales/dn-parameters).

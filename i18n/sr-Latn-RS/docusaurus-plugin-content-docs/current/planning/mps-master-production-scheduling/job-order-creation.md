@@ -173,9 +173,9 @@ Putem ove kartice definišu se svi parametri vezani za kreiranje proizvodnih nal
 
 > Ako je vrsta naloga *Multiproizvodni*, grupiranje se može provoditi prema kupcu ili projektu te omogućuje uključivanje više artikala u isti *Multiproizvodni* nalog, pod uvjetom da potječu iz redaka narudžbi kupaca povezanih s istim kupcem, istim prodajnim nalogom ili istim prodajnim nalogom istog kupca.
 
-### Prioritet nabave
+### Prioritet nabavke
 
-Polje prikazuje prioritet nabave definiran u [MPS parametrima](/docs/configurations/parameters/production/mps-parameters), odabran među prioritetima definiranima u tablici *Prioritet nabave* unutar odjeljka *Opće postavke*.
+Polje prikazuje prioritet nabavke definiran u [MPS parametrima](/docs/configurations/parameters/production/mps-parameters), odabran među prioritetima definiranima u tablici *Prioritet nabavke* unutar odjeljka *Opće postavke*.
 
 ### Ažuriranje postojećih naloga
 
@@ -215,7 +215,7 @@ U posljednja dva slučaja datum se odabire u odgovarajućim poljima.
 
 Ako je oznaka aktivna, na svim karticama postupka *Generiranje radnih naloga proizvodnje* prikazuje se raspoloživost artikla na *Planirani datum završetka* proizvodnog naloga koji će biti kreiran. Isto vrijedi i za karticu *Sažetak prototipa naloga*.
 
-Raspoloživost se izračunava prema oznakama aktiviranima u *MPS parametrima* (*Kooperacija*, *Nabava*, *Prodaja*, *Proizvodnja*, *Skladište*).
+Raspoloživost se izračunava prema oznakama aktiviranima u *MPS parametrima* (*Kooperacija*, *Nabavka*, *Prodaja*, *Proizvodnja*, *Skladište*).
 
 Prilikom kreiranja naloga sustav će uzeti u obzir raspoloživost te generirati nalog samo za razliku između potrebne i raspoložive količine artikla.
 
@@ -233,25 +233,25 @@ Ako je definirano, ovo polje omogućuje da postupak generiranja naloga iz narud�
 
 Ako je oznaka aktivna, postupak generira proizvodni nalog uzimajući u obzir:
 
-- ekonomsku nabavnu seriju definiranu na kartici [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-item) za zadanog dobavljača, ako je *Vrsta nabave* artikla **Nabava** ili **Kooperacija**;
-- ekonomsku proizvodnu seriju definiranu u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), ako je *Vrsta nabave* artikla **Proizvodnja**.
+- ekonomsku nabavnu seriju definiranu na kartici [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-item) za zadanog dobavljača, ako je *Vrsta nabavke* artikla **Nabavka** ili **Kooperacija**;
+- ekonomsku proizvodnu seriju definiranu u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), ako je *Vrsta nabavke* artikla **Proizvodnja**.
 
 ### Izračun količine prema višekratnicima artikla
 
 Ako je oznaka aktivna, postupak generira proizvodni nalog uzimajući u obzir i višekratnike ekonomske serije:
 
-- nabavne serije definirane kod zadanog dobavljača za artikle vrste nabave **Nabava** ili **Kooperacija**;
-- proizvodne serije definirane u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) za artikle vrste nabave **Proizvodnja**.
+- nabavne serije definirane kod zadanog dobavljača za artikle vrste nabavke **Nabavka** ili **Kooperacija**;
+- proizvodne serije definirane u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) za artikle vrste nabavke **Proizvodnja**.
 
 Ovu oznaku moguće je aktivirati samo ako je aktivirana prethodna opcija za izračun količine prema ekonomskoj seriji.
 
 ### Obnovi minimalnu zalihu artikla
 
-Ako je oznaka aktivna, sustav će za artikl koji se obrađuje u postupku *Generiranje radnih naloga proizvodnje* nadopuniti minimalnu zalihu definiranu u *Šifarniku artikala > kartica Nabava*.
+Ako je oznaka aktivna, sustav će za artikl koji se obrađuje u postupku *Generiranje radnih naloga proizvodnje* nadopuniti minimalnu zalihu definiranu u *Šifarniku artikala > kartica Nabavka*.
 
 ### Obnovi točku ponovnog naručivanja artikla
 
-Ako je oznaka aktivna, sustav će za artikl koji se obrađuje u postupku *Generiranje radnih naloga proizvodnje* nadopuniti točku ponovnog naručivanja definiranu u *Šifarniku artikala > kartica Nabava*.
+Ako je oznaka aktivna, sustav će za artikl koji se obrađuje u postupku *Generiranje radnih naloga proizvodnje* nadopuniti točku ponovnog naručivanja definiranu u *Šifarniku artikala > kartica Nabavka*.
 
 ### Isključi zakašnjele naloge
 

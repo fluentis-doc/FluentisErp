@@ -59,20 +59,20 @@ Dokument toka: odabrati stavke za slanje ili primanje, prema potrebi.
 
 ## OSNOVNA LOGIKA
 
-### **Nabava**:
+### **Nabavka**:
 
-Gospodarski subjekt iz San Marina prima od poreznog ureda San Marina – istovremeno s PEC porukom koja obavještava o dolaznoj "inozemnoj" fakturi (odnosno od talijanskog poduzeća koje prodaje subjektu iz San Marina) – dokument koji dolazi iz talijanskog SDI sustava te se datoteka nalazi u *Ulaznim dokumentima nabave* kao i inače.
+Gospodarski subjekt iz San Marina prima od poreznog ureda San Marina – istovremeno s PEC porukom koja obavještava o dolaznoj "inozemnoj" fakturi (odnosno od talijanskog poduzeća koje prodaje subjektu iz San Marina) – dokument koji dolazi iz talijanskog SDI sustava te se datoteka nalazi u *Ulaznim dokumentima nabavke* kao i inače.
 
-Navedena elektronička faktura za nabavu u tom trenutku unutar Fluentisa ima status ***Nepridruženo***. 
+Navedena elektronička faktura za nabavku u tom trenutku unutar Fluentisa ima status ***Nepridruženo***. 
 
 Za dotično poduzeće mora biti aktiviran flag (u tablici Preduzeće - SH_Companies izravno u bazi podataka) koji omogućuje kreiranje ulaznih računa iz SDI datoteke.
-Korisnik zatim kreira ulazni račun u tom trenutku elektronička faktura prelazi u status ***Primljeno*** nadopunjuje potrebne podatke, posebno vrstu troška nabave u redovima – kako bi se specificirala vrsta robe (vidi sliku dolje) – te stopu PDV-a u svrhu obračuna jednofaznog poreza, podaci koji su zahtijevani prema poreznim propisima San Marina.
+Korisnik zatim kreira ulazni račun u tom trenutku elektronička faktura prelazi u status ***Primljeno*** nadopunjuje potrebne podatke, posebno vrstu troška nabavke u redovima – kako bi se specificirala vrsta robe (vidi sliku dolje) – te stopu PDV-a u svrhu obračuna jednofaznog poreza, podaci koji su zahtijevani prema poreznim propisima San Marina.
 
 <details>
 
   <summary>Detalji nadopune računa: (Click to expand)</summary>
 
-Navođenje vrste robe vrši se izravno putem tablice za definiranje stavki Fakturirane nabave, gdje se u polju Vrsta PDV-a (fiksna tablica) nalaze informacije koje će se koristiti za popunjavanje odgovarajućeg taga. 
+Navođenje vrste robe vrši se izravno putem tablice za definiranje stavki Fakturirane nabavke, gdje se u polju Vrsta PDV-a (fiksna tablica) nalaze informacije koje će se koristiti za popunjavanje odgovarajućeg taga. 
 
 ![](/img/it-it/finance-area/sdi-documents/sanmarino/purchaseintegration.png)
 
@@ -88,7 +88,7 @@ Nakon što korisnik nadopuni račun, pomoću odgovarajuće promjene statusa (wor
 
 U ovom trenutku, statusi dokumenta specifični za San Marino su sljedeći: 
 
-- **Kontrolirano**: izvršava se provjera nad računom nabave u Fluentisu kako bi se utvrdilo jesu li ispunjena potrebna polja;
+- **Kontrolirano**: izvršava se provjera nad računom nabavke u Fluentisu kako bi se utvrdilo jesu li ispunjena potrebna polja;
 - **Generirano**: kreira se datoteka u XML-SM strukturi
 - **Za slanje**: datoteka se šalje na FBH, a odatle Poreznom uredu San Marina; 
 - **Odbijeno HUB_SM**: ako datoteku ne prihvati, a time ni obradi, Porezni ured San Marina – iz ovog stanja može se vratiti u stanje *Primljeno*;
@@ -168,7 +168,7 @@ Informacije o obavijestima o dostavi i slično (talijanske) prolaze kroz porezni
 
 (Glavna) STANJA (u *kurzivu* ona *SPECIFIČNA ZA SM*):
 
-- **Kontrolirano**: Izvršava se provjera računa nabave u Fluentisu kako bi se potvrdilo da su ispunjena potrebna polja; posebno za San Marino dodan je zahtjev da ista faktura može sadržavati isključivo sljedeće kombinacije vezane uz vrstu robe (tag TM): sirovine zajedno s potrošnim materijalom i osnovnim sredstvima, te zasebno usluge po ugovoru o radu, i to i sa i bez sirovina (odvojeno jedna od druge); 
+- **Kontrolirano**: Izvršava se provjera računa nabavke u Fluentisu kako bi se potvrdilo da su ispunjena potrebna polja; posebno za San Marino dodan je zahtjev da ista faktura može sadržavati isključivo sljedeće kombinacije vezane uz vrstu robe (tag TM): sirovine zajedno s potrošnim materijalom i osnovnim sredstvima, te zasebno usluge po ugovoru o radu, i to i sa i bez sirovina (odvojeno jedna od druge); 
 - **Generirano**: kreira datoteku sa XML-SM strukturom;  
 - **Za slanje**: prenosi datoteku na FBH, a od tamo dalje Poreznom uredu San Marina;
 - ***Odbijeno HUB_SM***: ukoliko Ured za poreze S.M.-a odbaci datoteku zbog formalnih pogrešaka u skladu sa specifikacijama XML formata, može li se iz tog statusa ponovno vratiti u status *Nije pregledano*.  
