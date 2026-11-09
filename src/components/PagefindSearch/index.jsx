@@ -1,9 +1,12 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
+
 import './styles.css';
 
 // Stopwords italiane
+
 const ITALIAN_STOPWORDS = new Set([
   // Articoli
   'il', 'lo', 'la', 'i', 'gli', 'le',
@@ -86,6 +89,7 @@ const ITALIAN_STOPWORDS = new Set([
 ]);
 
 // Normalizzazione del testo
+
 function normalizeText(text = '') {
   return text
     .toLocaleLowerCase('it-IT')
@@ -97,6 +101,7 @@ function normalizeText(text = '') {
 }
 
 // Rimozione delle stopwords
+
 function removeStopwords(query) {
   return query
     .split(/\s+/)
@@ -108,6 +113,7 @@ function removeStopwords(query) {
 }
 
 // Estrae i termini significativi
+
 function getSearchTerms(query) {
   return normalizeText(query)
     .split(/\s+/)
@@ -118,24 +124,29 @@ function getSearchTerms(query) {
 }
 
 // Verifica la presenza di una parola intera
+
 function containsWord(text, word) {
+  const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
   return new RegExp(
-    `(?:^|\\s)${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?:$|\\s)`
+    `(?:^|\\s)${escapedWord}(?:$|\\s)`
   ).test(text);
 }
 
 // Verifica la presenza della frase completa
+
 function containsPhrase(text, phrase) {
   return text.includes(phrase);
 }
 
 // Calcolo della rilevanza
+
 function calculateRelevance(result, query) {
   const title = normalizeText(result.meta?.title || '');
   const url = normalizeText(result.url || '');
   const excerpt = normalizeText(result.excerpt || '');
-
   const normalizedQuery = normalizeText(query);
+
   const terms = getSearchTerms(query);
 
   if (!terms.length) return 0;
@@ -143,11 +154,13 @@ function calculateRelevance(result, query) {
   let score = 0;
 
   // 1. Frase completa nel titolo
+
   if (containsPhrase(title, normalizedQuery)) {
     score += 100;
   }
 
   // 2. Parole presenti nel titolo
+
   const titleMatches = terms.filter(term =>
     containsWord(title, term)
   );
@@ -155,11 +168,13 @@ function calculateRelevance(result, query) {
   score += titleMatches.length * 20;
 
   // Bonus se tutte le parole sono nel titolo
+
   if (titleMatches.length === terms.length) {
     score += 50;
   }
 
   // 3. Parole presenti nell'URL
+
   const urlMatches = terms.filter(term =>
     containsWord(url, term)
   );
@@ -167,6 +182,7 @@ function calculateRelevance(result, query) {
   score += urlMatches.length * 5;
 
   // 4. Parole presenti nell'excerpt
+
   const excerptMatches = terms.filter(term =>
     containsWord(excerpt, term)
   );
@@ -174,16 +190,19 @@ function calculateRelevance(result, query) {
   score += excerptMatches.length * 3;
 
   // Bonus se tutte le parole sono nell'excerpt
+
   if (excerptMatches.length === terms.length) {
     score += 15;
   }
 
   // 5. Frase completa nell'excerpt
+
   if (containsPhrase(excerpt, normalizedQuery)) {
     score += 10;
   }
 
   // 6. Titolo identico alla query
+
   if (title === normalizedQuery) {
     score += 100;
   }
@@ -192,6 +211,7 @@ function calculateRelevance(result, query) {
 }
 
 // Ranking personalizzato + punteggio Pagefind
+
 function rankResults(results, query) {
   const maxPagefindScore = Math.max(
     ...results.map(result => result.pagefindScore || 0),
@@ -216,6 +236,15 @@ function rankResults(results, query) {
     );
 }
 
+// Normalizzazione URL Pagefind
+// Rimuove .html mantenendo query string e anchor
+
+function normalizePagefindUrl(url = '') {
+  return url.replace(/\.html(?=([?#]|$))/i, '');
+}
+
+// Componente di ricerca Pagefind
+
 export default function PagefindSearch() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
@@ -229,19 +258,36 @@ export default function PagefindSearch() {
   const baseUrl = useBaseUrl('/');
 
   // Carica Pagefind una sola volta
-  async function loadPagefind() {
+
+  const loadPagefind = async () => {
     if (pagefindRef.current) {
       return pagefindRef.current;
     }
 
     if (!pagefindPromise.current) {
       pagefindPromise.current = (async () => {
+        const pagefindPath = `${baseUrl}pagefind/`;
+
         const pagefindUrl = new URL(
-          `${baseUrl}pagefind/pagefind.js`,
+          `${pagefindPath}pagefind.js`,
           window.location.origin
         ).href;
 
-        console.log('Caricamento Pagefind ESM:', pagefindUrl);
+        console.log('Base URL Docusaurus:', baseUrl);
+        console.log('Percorso Pagefind:', pagefindPath);
+        console.log('URL Pagefind:', pagefindUrl);
+
+        // Verifica che Pagefind esista
+
+        const response = await fetch(pagefindUrl);
+
+        if (!response.ok) {
+          throw new Error(
+            `Pagefind non trovato: ${pagefindUrl} (HTTP ${response.status})`
+          );
+        }
+
+        // Caricamento dinamico
 
         const pagefind = await import(
           /* webpackIgnore: true */
@@ -249,8 +295,8 @@ export default function PagefindSearch() {
         );
 
         await pagefind.options({
-          baseUrl: baseUrl,
-          basePath: `${baseUrl}pagefind/`,
+          baseUrl,
+          basePath: pagefindPath,
           highlightParam: 'highlight',
         });
 
@@ -270,13 +316,14 @@ export default function PagefindSearch() {
       pagefindPromise.current = null;
       throw err;
     }
-  }
+  };
 
   // Ricerca
+
   useEffect(() => {
     let active = true;
-    const currentSearch = ++searchId.current;
 
+    const currentSearch = ++searchId.current;
     const term = query.trim();
 
     if (!term) {
@@ -294,8 +341,6 @@ export default function PagefindSearch() {
 
     const timer = setTimeout(async () => {
       try {
-        const pagefind = await loadPagefind();
-
         const cleanedTerm = removeStopwords(term);
 
         if (!cleanedTerm) {
@@ -303,39 +348,52 @@ export default function PagefindSearch() {
             setResults([]);
             setLoading(false);
           }
+
           return;
         }
+
+        const pagefind = await loadPagefind();
 
         console.log('Ricerca originale:', term);
         console.log('Ricerca ottimizzata:', cleanedTerm);
 
         // Ricerca Pagefind
+
         const searchResult = await pagefind.search(cleanedTerm);
 
         // Recupera i primi 100 risultati
+
         const items = await Promise.all(
           searchResult.results
             .slice(0, 100)
             .map(async result => {
               const data = await result.data();
 
+              // Rimuove .html dall'URL restituito da Pagefind
+
+              const normalizedUrl = normalizePagefindUrl(data.url);
+
               return {
                 ...data,
+                url: normalizedUrl,
                 pagefindScore: result.score
               };
             })
         );
 
         // Ordina i risultati per rilevanza
+
         const rankedItems = rankResults(items, term);
 
         // Mostra i migliori 20 risultati
+
         const finalResults = rankedItems.slice(0, 20);
 
         console.log(
           'Risultati ordinati:',
           finalResults.map(result => ({
             title: result.meta?.title,
+            url: result.url,
             score: result.relevanceScore,
             pagefindScore: result.pagefindScore
           }))
@@ -366,6 +424,8 @@ export default function PagefindSearch() {
     };
 
   }, [query, baseUrl]);
+
+  // Rendering
 
   return (
     <div className="pagefind-search">
@@ -406,6 +466,7 @@ export default function PagefindSearch() {
               href={result.url}
               className="pagefind-result"
             >
+
               <strong>
                 {result.meta?.title || result.url}
               </strong>
@@ -415,6 +476,7 @@ export default function PagefindSearch() {
                   __html: result.excerpt || ''
                 }}
               />
+
             </a>
           ))}
 

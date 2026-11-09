@@ -9,9 +9,7 @@
     "swizzle": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus swizzle",
     "deploy": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus deploy",
     "clear": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus clear",
-    "serve": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus serve",
-    "write-translations": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus write-translations",
-    "write-heading-ids": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus write-heading-ids"
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus serve --dir build --port 3000", "write-heading-ids": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus write-heading-ids"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
