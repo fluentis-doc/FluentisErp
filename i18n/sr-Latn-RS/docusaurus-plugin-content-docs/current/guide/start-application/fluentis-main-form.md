@@ -3,7 +3,20 @@ title: Glavni obrazac Fluentisa
 sidebar_position: 2
 ---
 
-Glavni obrazac **Fluentisa** sastoji se od više zona sa različitim funkcionalnostima:  
+Glavni obrazac **Fluentis** sastoji se od više delova sa različitim funkcionalnostima:
+
+## Glavna navigaciona bočna traka
+
+**Navigaciona bočna traka** nalazi se na levoj strani glavnog obrasca sistema Fluentis, a sastoji se od sledećih dugmadi:
+
+- Logotip Fluentis
+- Početna stranica
+- Dokumenti
+- Notice Board.code
+- Aktivnosti
+- Kalendar
+- Kontrolna tabla
+- Pretraga
 
 ## Gornji deo
 

@@ -3,7 +3,7 @@ title: Tehnička uputstva
 sidebar_position: 2
 ---
 
-Upravljanje se nalazi na putanji **Kvalitet > Kontrola artikla > Tehnička uputstva > Novo tehničko uputstvo** ili se može pokrenuti putem **Pretrage tehničkih uputstava**. :contentReference[oaicite:0]{index=0}
+Upravljanje se nalazi na putanji **Kvalitet > Kontrola artikla > Tehnička uputstva > Novo tehničko uputstvo** ili se može pokrenuti putem **Pretrage tehničkih uputstava**.
 
 :::important Čemu služi
 Tehnička uputstva katalogizuju sve informacije koje opisuju karakteristike proizvoda kao usklađene sa ugovorom, funkcionalnom specifikacijom ili određenom namenom.

@@ -35,7 +35,7 @@ UPOZORENJE: Prije pokretanja izračuna, potrebno je provjeriti postavke tablice 
 
 Nakon toga je moguće započeti s **Povrati vrijednost podkonta** pomoću odgovarajuće tipke, kako bi program izračunao saldo svakog podkonta i prikazao podatke u karticama ‘Dobit i gubitak’ te ‘Imovinski’. Kada su rezultati sigurni, moguće je prijeći na posljednju fazu postupka: vraćajući se na karticu parametri, možemo kliknuti tipku Kreiraj zapis za zatvaranje konta, koji će stvoriti odgovarajuća računovodstvena knjiženja i postaviti opciju na **Knjiženo**.
 
-:::NAPOMENA
+:::tip[NAPOMENA]
 Ako je opcija **Žiro račun – prilagodba zapisa** aktivirana, pri pokretanju naredbe **Povrati vrijednost podkonta**, postat će vidljiva dodatna kartica **[Ponovno otvaranje stavki prilagodbe](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
 :::
  
@@ -97,7 +97,7 @@ prikazana su tri knjiženja za otvaranje:
 
 - treće prenosi račun dobiti/gubitka tekuće godine na dobit/gubitak prethodne godine.
 
-:::note NAPOMENA
+:::note[NAPOMENA]
 
 Eventualne pogreške koje se otkriju kasnije mogu se riješiti na sljedeće načine:  
 
@@ -108,7 +108,7 @@ Eventualne pogreške koje se otkriju kasnije mogu se riješiti na sljedeće nač
 
 Postoje specifične korisničke dozvole za knjiženje i poništavanje.  
 
-:::danger PAŽNJA  
+:::danger[PAŽNJA]
 Zatvaranje konta blokirat će knjiženja unutar postavljenog raspona datuma i, osim toga, neće biti moguće unositi knjiženja unutar tog raspona datuma.   
 
 **Izvanbilačna konta** nikada nisu predmet zatvaranja i ponovnog otvaranja računa u ovom postupku.  
@@ -126,7 +126,7 @@ Dvostrukim klikom na retke moguće je prikazati detalje izvršenih knjiženja.
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab/image03.png)
 
-:::tip INFO  
+:::tip[INFO]
 Generiranje knjiženja za ponovno otvaranje stavki usklađenja (obračuni aktive i pasive) na datum izvornog knjiženja ispravka je nužno radi usporedbe s jednostavnim otvaranjem na 1.1., kako bi se pravilno upravljalo i proračunima zatvaranja za razdoblja unutar godine uz Fluentis.   
 
 Na primjer, ako se 15.4.2023. knjižio trošak s obračunskim razdobljem od 01.11.2022. do 31.03.2023., tada će se knjižiti obračun pasive na 31.12. za 2 mjeseca. Ako se ispravka (poništavanje) knjiži na 01.01., rezultat ovisi o tome kako su filtrirani i upravljani obračuni/pretplate za zatvaranje unutar godine, te postoji rizik da će se prikazati samo poništavanje troškova (tj. ponovno otvaranje obračuna) i ne račun na trošak u izvještaju za razdoblje. 

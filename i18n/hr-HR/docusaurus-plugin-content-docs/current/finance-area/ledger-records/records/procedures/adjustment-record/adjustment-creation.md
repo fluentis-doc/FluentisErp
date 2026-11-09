@@ -15,7 +15,7 @@ Izračun se obavlja (kao u međugodišnjim bilancama) SAMO za podkonta za koje s
 
 2) Trebaju u **[parametrima knjiženja](/docs/configurations/parameters/finance/accounting-parameters)** biti definirana standardna podkonta za evidenciju obračunatih/unaprijed plaćenih troškova aktive/pasive.
 
-:::NAPOMENA
+:::tip[NAPOMENA]
 Na razini kontnog plana se mogu specificirati podkonta obračunatih/unaprijed plaćenih troškova za pojedina podkonta troška/prihoda, koji će se koristiti kao prioritetni za zapis/evidenciju dopune ili ispravka.  
 :::
 
@@ -23,7 +23,7 @@ Na razini kontnog plana se mogu specificirati podkonta obračunatih/unaprijed pl
 
 3) Treba ispravno koristiti raspon datuma u računovodstvenim zapisima. 
 
-:::NAPOMENA
+:::tip[NAPOMENA]
 Preporučuje se postavljanje **[Parametara umetanja](/docs/finance-area/ledger-records/records/ledger-record)** s opcijom 'Nema datuma za tip servisnog konta' kako bi se korisnika obvezalo da prilikom svakog zapisa unese raspon datuma koji su valjani za pojedini zapis.  
 :::
 
@@ -53,18 +53,19 @@ Sve stavke sa statusom *kontrolirano*  bit će predmet računovodstvenog knjiže
 
 Korisnik može nastaviti s kreiranjem više knjiženja dok se detalji definiraju, kao i ponovo izračunati popis kako bi provjerio nisu li dodane druge transakcije (tipično dopuna novih računovodstvenih evidencija) ili stvoriti nova usklađenja za njih. Također je dostupna  **[dostupna kartica za vraćanje](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)** prethodne situacije.
 
-:::NAPOMENA
+:::tip[NAPOMENA]
 Knjižit će se sve stavke s aktivnom opcijom **Kontrolirano**.
 :::
  
 U slučaju da su izvršene promjene u računovodstvenim zapisima nakon pokretanja izračuna, može biti korisno koristiti flag **Provjeri izračun prilagodbe**:  
 Ova tipka će izvršiti ponovni izračun redak po redak, prikazujući eventualne razlike u odnosu na ono što je već predloženo u pregledu (posebice u poljima **Usklađenje dugovne/potražne strane** i **Novo usklađenje dugovne/potražne**), s tipkom za usklađivanje razlika ili njihovo ignoriranje. Također će brisati stavke ispravaka/dopuna povezane s računovodstvenim zapisima koji više ne postoje (neće biti moguće knjiženje ako postoje stavke s referencama na nepostojeće zapise, u tom slučaju bit će potrebno proći kroz ovu masku i obrisati ih).  
 
-:::danger PAŽNJA
+:::danger[PAŽNJA]
 U slučaju da su usklađenja već knjižena, ne postoji nikakva blokada za izmjenu izvorne transakcije koja je dovela do ispravke; jedina blokada je brisanje knjiženja, što nije dopušteno. Stoga se preporučuje maksimalna pažnja prilikom izmjene knjiženja koja su uključena u operacije usklađenja na kraju godine.  
 :::
 
-:::note NAPOMENA vezana uz postupak **[Automatskog zatvaranja računa](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**: postoji opcija automatskog prijenosa operacija usklađenja nakon knjiženja ponovnog otvaranja računa. S ovom opcijom, aplikacija će na datum ponovnog otvaranja evidentirati poništenje ispravaka, dok će izvršiti prijenos dopuna na datum izvorne evidencije usklađenja.  
+:::note[NAPOMENA] 
+Vezana uz postupak **[Automatskog zatvaranja računa](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**: postoji opcija automatskog prijenosa operacija usklađenja nakon knjiženja ponovnog otvaranja računa. S ovom opcijom, aplikacija će na datum ponovnog otvaranja evidentirati poništenje ispravaka, dok će izvršiti prijenos dopuna na datum izvorne evidencije usklađenja.  
 :::
 
 **FLAG Pojedinačno knjiženje:** s ovom aktivnom opcijom, knjiženje usklađenja odvija se u jednom knjiženju (jedinstveni broj) umjesto u više knjiženja, koliko god ispravaka treba izvršiti.   

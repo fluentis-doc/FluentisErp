@@ -11,6 +11,6 @@ Kao i kod izvanknjigovodstvenih knjiženja, iz ovog prozora moguće je dovršiti
 
 I ova knjiženja zahtijevaju odgovarajući predložak knjiženja. Za razliku od standardnih knjiženja, svaka pojedinačna redovna stavka u konsolidaciji prije svega sadrži oznaku poduzeća na koje se odnosi.
 
-:::SAVJET[]
+:::tip[SAVJET]
 Za postupak konfiguracije i izvršenja konsolidacije pogledati [**ovdje**](/docs/controlling/mid-year-closures/procedures/consolidation)
 :::
