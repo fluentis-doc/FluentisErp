@@ -476,7 +476,7 @@
     "description": "The label for category Numerazione Documenti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Impostazioni generali": {
-    "message": "Opće postavke",
+    "message": "Opšta podešavanja",
     "description": "The label for category Impostazioni generali in sidebar erpHome"
   },
   "sidebar.erpHome.category.Discount Type": {
@@ -924,7 +924,7 @@
     "description": "The label for category Generazione Riba/Rid/Lcr in sidebar treasury"
   },
   "sidebar.treasury.category.Acquisizione effetti dalle partite": {
-    "message": "Računi iz izdanih dospelih vrijednosti",
+    "message": "Računi iz izdanih dospelih vrednosti",
     "description": "The label for category Acquisizione effetti dalle partite in sidebar treasury"
   },
   "sidebar.treasury.category.Acquisizione effetti dalle fatture": {
@@ -1016,7 +1016,7 @@
     "description": "The label for category Liste prelievo UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Visualizzazione trasferimenti UDC": {
-    "message": "Pregled prijenosa utovarnih jedinica",
+    "message": "Pregled prenosa utovarnih jedinica",
     "description": "The label for category Visualizzazione trasferimenti UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Magazzino": {
@@ -1500,7 +1500,7 @@
     "description": "The label for category Anagrafiche clienti/fornitori in sidebar erpHome"
   },
   "sidebar.erpHome.category.Crea nuovo articolo": {
-    "message": "Stvori novi artikl",
+    "message": "Stvori novi artikal",
     "description": "The label for category Crea nuovo articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Anagrafica articolo": {
@@ -1836,7 +1836,7 @@
     "description": "The label for category Tabelle modulo cash flow in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo Portafoglio effetti": {
-    "message": "Tabele modula portfelja mjenica",
+    "message": "Tabele modula portfelja menica",
     "description": "The label for category Tabelle modulo Portafoglio effetti in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo DocFinance": {
@@ -1960,7 +1960,7 @@
     "description": "The label for category Parametri controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Panoramica Generale Controlling": {
-    "message": "Opći pregled kontrolinga",
+    "message": "Opšti pregled kontrolinga",
     "description": "The label for category Panoramica Generale Controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Buget": {
