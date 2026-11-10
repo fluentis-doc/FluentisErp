@@ -18,7 +18,7 @@ export default function Root({ children }) {
 
       try {
         const pagefindUrl =
-          `${window.location.origin}/Advanced/FluentisLiveUpdate/pagefind/pagefind-highlight.js`;
+          `${window.location.origin}/FluentisErp/pagefind/pagefind-highlight.js`;
 
         await import(
           /* webpackIgnore: true */

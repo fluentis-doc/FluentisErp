@@ -1,19 +1,30 @@
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import './styles.css';
 
-// Stopwords italiane
+// =====================================================
+// 1. STOPWORDS ITALIANE
+// =====================================================
+
+// Le parole accentate vengono normalizzate prima del confronto.
+// Le negazioni vengono volutamente conservate.
 
 const ITALIAN_STOPWORDS = new Set([
   // Articoli
   'il', 'lo', 'la', 'i', 'gli', 'le',
-  'un', 'uno', 'una', "un'",
+  'un', 'uno', 'una',
 
-  // Preposizioni semplici
-  'di', 'a', 'da', 'in', 'con', 'su', 'per', 'tra', 'fra',
+  // Preposizioni
+  'di', 'a', 'da', 'in', 'con', 'su',
+  'per', 'tra', 'fra',
 
   // Preposizioni articolate
   'del', 'dello', 'della', 'dei', 'degli', 'delle',
@@ -24,55 +35,56 @@ const ITALIAN_STOPWORDS = new Set([
   'col', 'coi',
 
   // Congiunzioni
-  'e', 'ed', 'o', 'oppure', 'ma', 'però',
+  'e', 'ed', 'o', 'oppure', 'ma', 'pero',
   'che', 'se', 'come', 'quando', 'mentre',
-  'quindi', 'poiché', 'perché', 'benché',
-  'affinché', 'sebbene', 'né',
+  'quindi', 'poiche', 'perche', 'benche',
+  'affinche', 'sebbene', 'ne',
 
-  // Pronomi personali
+  // Pronomi
   'io', 'tu', 'lui', 'lei', 'noi', 'voi', 'loro',
   'mi', 'ti', 'si', 'ci', 'vi', 'ne',
-  'me', 'te', 'sé',
+  'me', 'te', 'se',
 
-  // Pronomi possessivi
+  // Possessivi
   'mio', 'mia', 'miei', 'mie',
   'tuo', 'tua', 'tuoi', 'tue',
   'suo', 'sua', 'suoi', 'sue',
   'nostro', 'nostra', 'nostri', 'nostre',
   'vostro', 'vostra', 'vostri', 'vostre',
 
-  // Pronomi dimostrativi e relativi
+  // Dimostrativi e relativi
   'questo', 'questa', 'questi', 'queste',
   'quello', 'quella', 'quelli', 'quelle',
-  'ciò', 'chi', 'cui', 'quale', 'quali',
+  'cio', 'chi', 'cui', 'quale', 'quali',
   'quanto', 'quanta', 'quanti', 'quante',
 
   // Avverbi
-  'non', 'no', 'sì', 'più', 'meno',
+  'si', 'piu', 'meno',
   'molto', 'molta', 'molti', 'molte',
   'poco', 'poca', 'pochi', 'poche',
   'tanto', 'tanta', 'tanti', 'tante',
-  'sempre', 'mai', 'già', 'ancora',
-  'qui', 'qua', 'lì', 'là',
+  'sempre', 'mai', 'gia', 'ancora',
+  'qui', 'qua', 'li', 'la',
   'dove', 'sopra', 'sotto', 'dopo', 'prima',
-  'poi', 'così', 'solo', 'solamente',
+  'poi', 'cosi', 'solo', 'solamente',
   'quasi', 'anche', 'inoltre', 'infatti',
   'tuttavia', 'comunque', 'eventualmente',
   'adesso', 'ora', 'oggi', 'ieri', 'domani',
 
-  // Verbi essere e avere
-  'essere', 'avere', 'sono', 'sei', 'è',
-  'siamo', 'siete', 'era', 'erano',
-  'ero', 'eri', 'sarebbe', 'sarebbero',
-  'sarà', 'saranno', 'stato', 'stata',
-  'stati', 'state',
+  // Verbi essere
+  'essere', 'avere', 'sono', 'sei', 'siamo',
+  'siete', 'era', 'erano', 'ero', 'eri',
+  'sarebbe', 'sarebbero', 'sara', 'saranno',
+  'stato', 'stata', 'stati', 'state',
+
+  // Verbi avere
   'ho', 'hai', 'ha', 'abbiamo', 'avete',
   'hanno', 'avevo', 'aveva', 'avevano',
   'avuto', 'avuta', 'avuti', 'avute',
 
   // Verbi comuni
   'fare', 'fatto', 'fatta', 'fatti', 'fatte',
-  'fa', 'fanno', 'può', 'possono',
+  'fa', 'fanno', 'puo', 'possono',
   'poteva', 'potrebbe', 'potrebbero',
   'deve', 'devono', 'devi', 'dovrebbe',
   'dovrebbero', 'viene', 'vengono',
@@ -84,35 +96,30 @@ const ITALIAN_STOPWORDS = new Set([
   'stesso', 'stessa', 'stessi', 'stesse',
   'esso', 'essa', 'essi', 'esse',
   'qualche', 'qualsiasi', 'alcuni', 'alcune',
-  'nessuno', 'nessuna', 'nessun',
-  'tale', 'tali'
+  'nessun', 'tale', 'tali',
 ]);
 
-// Normalizzazione del testo
+// =====================================================
+// 2. NORMALIZZAZIONE DEL TESTO
+// =====================================================
 
 function normalizeText(text = '') {
-  return text
+  return String(text)
     .toLocaleLowerCase('it-IT')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/<[^>]*>/g, ' ')
+    .replace(/&nbsp;|&#160;/gi, ' ')
+    .replace(/&amp;/gi, ' e ')
+    .replace(/&quot;|&#39;|&apos;/gi, ' ')
     .replace(/[^\p{L}\p{N}]+/gu, ' ')
-    .trim();
+    .trim()
+    .replace(/\s+/g, ' ');
 }
 
-// Rimozione delle stopwords
-
-function removeStopwords(query) {
-  return query
-    .split(/\s+/)
-    .filter(word => {
-      const normalized = normalizeText(word);
-      return normalized && !ITALIAN_STOPWORDS.has(normalized);
-    })
-    .join(' ');
-}
-
-// Estrae i termini significativi
+// =====================================================
+// 3. ESTRAZIONE DEI TERMINI
+// =====================================================
 
 function getSearchTerms(query) {
   return normalizeText(query)
@@ -123,94 +130,184 @@ function getSearchTerms(query) {
     );
 }
 
-// Verifica la presenza di una parola intera
+// Rimuove le stopwords mantenendo l'ordine originale.
 
-function containsWord(text, word) {
-  const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
-  return new RegExp(
-    `(?:^|\\s)${escapedWord}(?:$|\\s)`
-  ).test(text);
+function removeStopwords(query) {
+  return getSearchTerms(query).join(' ');
 }
 
-// Verifica la presenza della frase completa
+// =====================================================
+// 4. GESTIONE DELLE VARIANTI DELLE PAROLE
+// =====================================================
+
+// Semplificazione morfologica per riconoscere alcune
+// varianti comuni del singolare, plurale e delle forme verbali.
+//
+// Non sostituisce un vero stemmer linguistico.
+
+const ITALIAN_SUFFIXES = [
+  'azioni', 'azione',
+  'imenti', 'imento',
+  'amente', 'mente',
+  'atrice', 'atori', 'atore',
+  'trici', 'trice',
+  'ando', 'endo',
+  'abile', 'abili',
+  'ibile', 'ibili',
+  'ità',
+  'ivo', 'iva', 'ivi', 'ive',
+  'oso', 'osa', 'osi', 'ose',
+  'ato', 'ata', 'ati', 'ate',
+  'uto', 'uta', 'uti', 'ute',
+  'are', 'ere', 'ire',
+  'i', 'e', 'o', 'a',
+];
+
+function getWordStem(word) {
+  for (const suffix of ITALIAN_SUFFIXES) {
+    if (
+      word.length - suffix.length >= 3 &&
+      word.endsWith(suffix)
+    ) {
+      return word.slice(0, -suffix.length);
+    }
+  }
+
+  return word;
+}
+
+function wordsMatch(a, b) {
+  if (a === b) return true;
+
+  if (a.length < 4 || b.length < 4) {
+    return false;
+  }
+
+  return getWordStem(a) === getWordStem(b);
+}
+
+// =====================================================
+// 5. ANALISI DEL TESTO
+// =====================================================
+
+function getWords(text) {
+  return normalizeText(text)
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+function countMatchingTerms(text, terms) {
+  const words = getWords(text);
+
+  return terms.filter(term =>
+    words.some(word => wordsMatch(word, term))
+  ).length;
+}
 
 function containsPhrase(text, phrase) {
-  return text.includes(phrase);
+  return Boolean(phrase) && text.includes(phrase);
 }
 
-// Calcolo della rilevanza
+// =====================================================
+// 6. CALCOLO DELLA RILEVANZA
+// =====================================================
 
 function calculateRelevance(result, query) {
   const title = normalizeText(result.meta?.title || '');
   const url = normalizeText(result.url || '');
   const excerpt = normalizeText(result.excerpt || '');
-  const normalizedQuery = normalizeText(query);
 
+  const normalizedQuery = normalizeText(query);
   const terms = getSearchTerms(query);
+  const coreQuery = terms.join(' ');
 
   if (!terms.length) return 0;
 
   let score = 0;
 
-  // 1. Frase completa nel titolo
+  // ---------------------------------------------------
+  // PRIORITA' 1: TITOLO
+  // ---------------------------------------------------
 
+  // Titolo identico alla ricerca
+  if (
+    title === normalizedQuery ||
+    (coreQuery && title === coreQuery)
+  ) {
+    score += 200;
+  }
+
+  // Frase completa nel titolo
   if (containsPhrase(title, normalizedQuery)) {
-    score += 100;
+    score += 130;
+  } else if (
+    coreQuery &&
+    containsPhrase(title, coreQuery)
+  ) {
+    score += 110;
   }
 
-  // 2. Parole presenti nel titolo
+  const titleMatches = countMatchingTerms(title, terms);
 
-  const titleMatches = terms.filter(term =>
-    containsWord(title, term)
-  );
+  // Ogni termine presente nel titolo
+  score += titleMatches * 20;
 
-  score += titleMatches.length * 20;
-
-  // Bonus se tutte le parole sono nel titolo
-
-  if (titleMatches.length === terms.length) {
-    score += 50;
+  // Tutti i termini presenti nel titolo
+  if (titleMatches === terms.length) {
+    score += 80;
   }
 
-  // 3. Parole presenti nell'URL
+  // Copertura proporzionale del titolo
+  score += (titleMatches / terms.length) * 20;
 
-  const urlMatches = terms.filter(term =>
-    containsWord(url, term)
-  );
+  // ---------------------------------------------------
+  // PRIORITA' 2: EXCERPT
+  // ---------------------------------------------------
 
-  score += urlMatches.length * 5;
-
-  // 4. Parole presenti nell'excerpt
-
-  const excerptMatches = terms.filter(term =>
-    containsWord(excerpt, term)
-  );
-
-  score += excerptMatches.length * 3;
-
-  // Bonus se tutte le parole sono nell'excerpt
-
-  if (excerptMatches.length === terms.length) {
-    score += 15;
-  }
-
-  // 5. Frase completa nell'excerpt
-
+  // Frase completa nell'estratto
   if (containsPhrase(excerpt, normalizedQuery)) {
-    score += 10;
+    score += 40;
+  } else if (
+    coreQuery &&
+    containsPhrase(excerpt, coreQuery)
+  ) {
+    score += 30;
   }
 
-  // 6. Titolo identico alla query
+  const excerptMatches = countMatchingTerms(
+    excerpt,
+    terms
+  );
 
-  if (title === normalizedQuery) {
-    score += 100;
+  // Ogni termine presente nell'estratto
+  score += excerptMatches * 5;
+
+  // Tutti i termini presenti nell'estratto
+  if (excerptMatches === terms.length) {
+    score += 25;
   }
+
+  // ---------------------------------------------------
+  // PRIORITA' 3: URL
+  // ---------------------------------------------------
+
+  const urlMatches = countMatchingTerms(url, terms);
+
+  score += urlMatches * 3;
+
+  // ---------------------------------------------------
+  // PRIORITA' 4: PAGINATION SCORE PAGEFIND
+  // ---------------------------------------------------
+
+  // Il punteggio Pagefind viene normalizzato
+  // successivamente all'interno di rankResults.
 
   return score;
 }
 
-// Ranking personalizzato + punteggio Pagefind
+// =====================================================
+// 7. RANKING PERSONALIZZATO
+// =====================================================
 
 function rankResults(results, query) {
   const maxPagefindScore = Math.max(
@@ -220,15 +317,21 @@ function rankResults(results, query) {
 
   return results
     .map(result => {
-      const customScore = calculateRelevance(result, query);
+      const customScore = calculateRelevance(
+        result,
+        query
+      );
 
+      // Pagefind contribuisce al massimo per 20 punti.
       const pagefindScore = maxPagefindScore > 0
-        ? (result.pagefindScore / maxPagefindScore) * 30
+        ? (
+            (result.pagefindScore / maxPagefindScore) * 20
+          )
         : 0;
 
       return {
         ...result,
-        relevanceScore: customScore + pagefindScore
+        relevanceScore: customScore + pagefindScore,
       };
     })
     .sort((a, b) =>
@@ -236,14 +339,17 @@ function rankResults(results, query) {
     );
 }
 
-// Normalizzazione URL Pagefind
-// Rimuove .html mantenendo query string e anchor
+// =====================================================
+// 8. NORMALIZZAZIONE URL PAGEFIND
+// =====================================================
 
 function normalizePagefindUrl(url = '') {
   return url.replace(/\.html(?=([?#]|$))/i, '');
 }
 
-// Componente di ricerca Pagefind
+// =====================================================
+// 9. COMPONENTE PAGEFIND SEARCH
+// =====================================================
 
 export default function PagefindSearch() {
   const [query, setQuery] = useState('');
@@ -257,28 +363,32 @@ export default function PagefindSearch() {
 
   const baseUrl = useBaseUrl('/');
 
-  // Carica Pagefind una sola volta
+  // ===================================================
+  // 10. CARICAMENTO PAGEFIND UNA SOLA VOLTA
+  // ===================================================
 
-  const loadPagefind = async () => {
+  const loadPagefind = useCallback(async () => {
     if (pagefindRef.current) {
       return pagefindRef.current;
     }
 
     if (!pagefindPromise.current) {
       pagefindPromise.current = (async () => {
-        const pagefindPath = `${baseUrl}pagefind/`;
+        const normalizedBaseUrl = baseUrl.endsWith('/')
+          ? baseUrl
+          : `${baseUrl}/`;
+
+        const pagefindPath = `${normalizedBaseUrl}pagefind/`;
 
         const pagefindUrl = new URL(
           `${pagefindPath}pagefind.js`,
           window.location.origin
         ).href;
 
-        console.log('Base URL Docusaurus:', baseUrl);
+        console.log('Base URL Docusaurus:', normalizedBaseUrl);
         console.log('Percorso Pagefind:', pagefindPath);
-        console.log('URL Pagefind:', pagefindUrl);
 
-        // Verifica che Pagefind esista
-
+        // Verifica che Pagefind sia disponibile
         const response = await fetch(pagefindUrl);
 
         if (!response.ok) {
@@ -287,15 +397,14 @@ export default function PagefindSearch() {
           );
         }
 
-        // Caricamento dinamico
-
+        // Import dinamico
         const pagefind = await import(
           /* webpackIgnore: true */
           pagefindUrl
         );
 
         await pagefind.options({
-          baseUrl,
+          baseUrl: normalizedBaseUrl,
           basePath: pagefindPath,
           highlightParam: 'highlight',
         });
@@ -316,9 +425,11 @@ export default function PagefindSearch() {
       pagefindPromise.current = null;
       throw err;
     }
-  };
+  }, [baseUrl]);
 
-  // Ricerca
+  // ===================================================
+  // 11. RICERCA
+  // ===================================================
 
   useEffect(() => {
     let active = true;
@@ -339,12 +450,16 @@ export default function PagefindSearch() {
     setLoading(true);
     setError('');
 
+    // Debounce: 250 ms
     const timer = setTimeout(async () => {
       try {
         const cleanedTerm = removeStopwords(term);
 
         if (!cleanedTerm) {
-          if (active && currentSearch === searchId.current) {
+          if (
+            active &&
+            currentSearch === searchId.current
+          ) {
             setResults([]);
             setLoading(false);
           }
@@ -357,37 +472,59 @@ export default function PagefindSearch() {
         console.log('Ricerca originale:', term);
         console.log('Ricerca ottimizzata:', cleanedTerm);
 
-        // Ricerca Pagefind
+        // Esegue la ricerca originale e quella ottimizzata.
+        // I risultati vengono successivamente unificati.
 
-        const searchResult = await pagefind.search(cleanedTerm);
+        const searchQueries = [
+          ...new Set([term, cleanedTerm]),
+        ];
 
-        // Recupera i primi 100 risultati
-
-        const items = await Promise.all(
-          searchResult.results
-            .slice(0, 100)
-            .map(async result => {
-              const data = await result.data();
-
-              // Rimuove .html dall'URL restituito da Pagefind
-
-              const normalizedUrl = normalizePagefindUrl(data.url);
-
-              return {
-                ...data,
-                url: normalizedUrl,
-                pagefindScore: result.score
-              };
-            })
+        const searchResponses = await Promise.all(
+          searchQueries.map(searchQuery =>
+            pagefind.search(searchQuery)
+          )
         );
 
-        // Ordina i risultati per rilevanza
+        // Recupera i primi 100 risultati per ciascuna ricerca.
+        const responseGroups = await Promise.all(
+          searchResponses.map(async searchResult => {
+            return Promise.all(
+              searchResult.results
+                .slice(0, 100)
+                .map(async result => {
+                  const data = await result.data();
 
+                  return {
+                    ...data,
+                    url: normalizePagefindUrl(data.url),
+                    pagefindScore: result.score || 0,
+                  };
+                })
+            );
+          })
+        );
+
+        // Unificazione dei risultati senza duplicati.
+        const resultsMap = new Map();
+
+        responseGroups.flat().forEach(result => {
+          const existing = resultsMap.get(result.url);
+
+          if (
+            !existing ||
+            result.pagefindScore > existing.pagefindScore
+          ) {
+            resultsMap.set(result.url, result);
+          }
+        });
+
+        const items = Array.from(resultsMap.values());
+
+        // Ranking personalizzato.
         const rankedItems = rankResults(items, term);
 
-        // Mostra i migliori 20 risultati
-
-        const finalResults = rankedItems.slice(0, 20);
+        // Mostra i migliori 20 risultati.
+        const finalResults = rankedItems.slice(0, 30);
 
         console.log(
           'Risultati ordinati:',
@@ -395,24 +532,33 @@ export default function PagefindSearch() {
             title: result.meta?.title,
             url: result.url,
             score: result.relevanceScore,
-            pagefindScore: result.pagefindScore
+            pagefindScore: result.pagefindScore,
           }))
         );
 
-        if (active && currentSearch === searchId.current) {
+        if (
+          active &&
+          currentSearch === searchId.current
+        ) {
           setResults(finalResults);
         }
-
       } catch (err) {
         console.error('Errore Pagefind:', err);
 
-        if (active && currentSearch === searchId.current) {
+        if (
+          active &&
+          currentSearch === searchId.current
+        ) {
           setResults([]);
-          setError(err.message || 'Errore durante la ricerca.');
+          setError(
+            err.message || 'Errore durante la ricerca.'
+          );
         }
-
       } finally {
-        if (active && currentSearch === searchId.current) {
+        if (
+          active &&
+          currentSearch === searchId.current
+        ) {
           setLoading(false);
         }
       }
@@ -422,10 +568,11 @@ export default function PagefindSearch() {
       active = false;
       clearTimeout(timer);
     };
+  }, [query, loadPagefind]);
 
-  }, [query, baseUrl]);
-
-  // Rendering
+  // ===================================================
+  // 12. RENDERING
+  // ===================================================
 
   return (
     <div className="pagefind-search">
@@ -456,29 +603,33 @@ export default function PagefindSearch() {
             </p>
           )}
 
-          {!loading && !error && results.length === 0 && (
-            <p>Nessun risultato trovato.</p>
-          )}
+          {!loading &&
+            !error &&
+            results.length === 0 && (
+              <p>Nessun risultato trovato.</p>
+            )}
 
-          {!loading && !error && results.map((result, index) => (
-            <a
-              key={`${result.url}-${index}`}
-              href={result.url}
-              className="pagefind-result"
-            >
+          {!loading &&
+            !error &&
+            results.map((result, index) => (
+              <a
+                key={`${result.url}-${index}`}
+                href={result.url}
+                className="pagefind-result"
+              >
 
-              <strong>
-                {result.meta?.title || result.url}
-              </strong>
+                <strong>
+                  {result.meta?.title || result.url}
+                </strong>
 
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: result.excerpt || ''
-                }}
-              />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: result.excerpt || '',
+                  }}
+                />
 
-            </a>
-          ))}
+              </a>
+            ))}
 
         </div>
       )}
