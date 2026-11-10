@@ -14,7 +14,7 @@ In questo tab, l'utente ha la possibilità di inserire filtri per cercare i DDT,
 **Data creazione**: permette di specificare la data della fattura che sarà creata. 
 
 *Pulsanti specifici*: 
-> **Creazione fatture da DDT**: permette di valorizzare i DDT selezionati nella griglia, in base ai parametri inseriti nel successivo tab *Parametri*.
+> **Creazione fatture da DDT**: permette di valorizzare i DDT selezionati nella griglia, in base ai parametri inseriti nel successivo tab *Parametri*.      
 > **Apertura DDT**: permette di visualizzare e modificare il DDT selezionato.
 
 :::note
