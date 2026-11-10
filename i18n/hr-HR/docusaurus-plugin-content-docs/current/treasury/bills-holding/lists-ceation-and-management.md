@@ -42,6 +42,7 @@ Ovi podaci mogu se automatski popuniti prema konfiguraciji odabrane [vrste preze
 Ako nisu unaprijed definirani, potrebno ih je ručno unijeti:
 - **Bankovni račun** – konto banke na koji će biti izvršena konačna uplata nakon uspješne naplate.
 - **Konto prezentiranih vrijednosnih papira** – prijelazni konto koji se koristi tijekom prezentacije banci. Prilikom knjiženja liste prenosi se stanje s konta portfelja vrijednosnih papira na ovaj konto, a nakon evidentiranja uplate sredstva se prenose na bankovni račun.
+- **Konto predujmova** Unos ovog konta dodaje dodatni računovodstveni korak jer se istodobno s prezentacijom knjiži isplata na tekući račun, uz protustavku na bankovnom kontu predujmova (obveza), koji će se stornirati prilikom odobrenja. Za više pojedinosti pogledajte [**vrstu prezentacijske liste**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types).
 
 ### 1.5 Pregled bankarskog limita
 

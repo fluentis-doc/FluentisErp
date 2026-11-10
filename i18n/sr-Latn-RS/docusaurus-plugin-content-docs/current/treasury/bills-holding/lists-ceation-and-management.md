@@ -43,6 +43,7 @@ Ako nisu unapred definisani, potrebno ih je uneti ručno:
 
 - **Bankovni račun** – konto banke na koji će biti izvršena konačna uplata nakon uspešne naplate.
 - **Konto prezentovanih vrednosnih papira** – prelazni konto koji se koristi tokom prezentacije banci. Prilikom knjiženja liste stanje se prenosi sa konta portfelja vrednosnih papira na ovaj konto, a nakon evidentiranja uplate sredstva se prenose na bankovni račun.
+- **Konto avansa** Unos ovog konta dodaje dodatni računovodstveni korak jer se istovremeno sa prezentacijom knjiži isplata na tekući račun, uz protivstavku na bankarskom kontu avansa (obaveza), koji će se stornirati prilikom odobrenja. Za više pojedinosti pogledajte [**tip prezentacione liste**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types).
 
 ### 1.5 Pregled bankarskog limita
 

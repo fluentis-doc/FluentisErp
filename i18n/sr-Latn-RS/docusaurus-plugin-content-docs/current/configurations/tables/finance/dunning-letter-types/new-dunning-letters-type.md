@@ -41,11 +41,13 @@ Međutim, postupak [*Automatsko generisanje opomena*](/docs/finance-area/maturit
 Vrednosti polja **Dani kašnjenja** i **Dani**, naročito za opomene nakon prve, sabiraju se. Zato za drugu, treću i svaku narednu opomenu po pravilu nije potrebno unositi vrednost u parametar *Dani kašnjenja*. Umesto toga, dodatni period od datuma prve opomene može se definisati parametrom *Dani*.
 :::
 
-Nakon čuvanja svakog nivoa opomene moguće je uneti tekstove na različitim jezicima. Prvi uneti tekst koristiće se kao podrazumevani ako u šifarniku kupca nije naveden jezik.
+Za svaki **broj opomene** nakon čuvanja moguće je uneti različite tekstove na pojedinačnim jezicima. Prvi uneti tekst koristiće se kao podrazumevani tekst ako u šifarniku kupca nije dodeljen jezik.
 
 Tekstovi su podeljeni u četiri odeljka: predmet pisma, zaglavlje, završni deo i odeljak sa referencama (aktivan samo za opomene koje obuhvataju grupe stavki).
 
 U odeljak sa referencama moguće je uneti tekst koristeći kodove navedene na dnu obrasca. Na primer: „Ref. (3) br. (4) od (5), (9) od (8) (10), sa dospećem na dan (6)”.
+
+Oznaka **Podrazumevano autorizovano** automatski aktivira oznaku *Autorizovano* prilikom kreiranja nove opomene, kako ne bi bilo potrebno ručno je autorizovati ako to nije neophodno.
 
 :::note[Postavke banke za uplatu]
 Šablon za štampanje opomena sadrži podrazumevano polje u kojem se prikazuje banka na koju je potrebno izvršiti uplatu. Banku je moguće definisati u odgovarajućem odeljku [**šifarnika preduzeća**](/docs/configurations/tables/general-settings/company#griglia-delle-divisioni-banca-dappoggio-di-default-e-logo).

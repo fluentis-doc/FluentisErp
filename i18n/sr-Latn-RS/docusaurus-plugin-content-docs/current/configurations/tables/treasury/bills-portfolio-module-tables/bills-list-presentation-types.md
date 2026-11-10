@@ -34,9 +34,13 @@ Ovo podešavanje nije kompatibilno sa dve druge logike koje je moguće aktivirat
 
 - **Konta**
 
-  - Konto / Analitički konto / Opis **Banke**
-  - Konto / Analitički konto / Opis **Prelaznog konta banke**
+  - Konto / podkonto / Opis **Banke**
+  - Konto / podkonto / Opis **Prelaznog konta banke**
 
   Ova konta mogu se povezati sa tipom prezentacione liste kako bi se automatizovalo i definisalo računovodstveno knjiženje prilikom kreiranja nove liste. Reč je o analitičkom kontu iz šifarnika banke na koji će se izvršiti konačno odobrenje hartija od vrednosti, kao i o prelaznom kontu za knjiženje prezentacionih lista (na primer *Banka X C/S.B.F.*).
+
+**Konto / podkonto / Opis avansa** (aktivno samo kada je oznaka *Trenutno odobrenje* deaktivirana) omogućava unapred definisanje željenog konta u zaglavlju prezentacione liste. Unos ovog konta menja način izvršavanja računovodstvenog knjiženja prezentacione liste. Uobičajenom knjiženju, kojim se stornira konto portfolija i prenose iznosi na prelazni konto banke kojoj se prezentaciona lista predaje, dodaju se dva reda za evidentiranje trenutnog odobrenja na redovnom tekućem računu koji je već podešen u zaglavlju liste, kao i protivstavke na kontu avansa prikazanom ovde. (Na primer, konto tipa „Banka X – račun avansa”.)
+
+**Napomena: Knjiženje odobrenja uzima u obzir ovu izmenu i storniraće i prethodno navedeni konto avansa i uobičajeni prelazni konto za prezentacionu listu, pod uslovom naplate.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

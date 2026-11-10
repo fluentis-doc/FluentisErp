@@ -37,7 +37,17 @@ Procedura pretraživanja traženih stavaka omogućuje korisniku pretragu prethod
 |  [Generiranje podsjetnika](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro)  | Poziva postupak za ručno kreiranje podsjetnika. |
 
 
+## Detalji opomenutih stavki
 
+U obrascu s detaljima opomenutih stavki moguće je pregledati i po potrebi izmijeniti sve podatke koje je generirao automatski postupak izrade opomena.
+
+U zaglavlju se nalaze dvije oznake:
+
+**Autorizirano**: označava je li pismo opomene autorizirano i može li se poslati kupcu.
+Postupak autorizacije može se upravljati putem tijeka rada (workflow), koji je potrebno konfigurirati željenim opcijama (za više pojedinosti pogledajte odjeljak o upravljanju tijekovima rada).
+Aktiviranjem ove oznake omogućuje se i zahtijeva unos podataka u dva polja: **Korisnik autorizacije** i **Datum autorizacije**.
+
+**Zatvoreno**: aktivira se kada su sve stavke unutar opomene zatvorene, odnosno kada su naplaćene, kako bi se označilo takvo stanje.
 
 
 

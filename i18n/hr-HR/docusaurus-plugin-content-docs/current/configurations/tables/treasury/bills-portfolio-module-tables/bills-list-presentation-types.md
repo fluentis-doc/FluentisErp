@@ -34,9 +34,13 @@ Ova postavka nije kompatibilna s dvije druge logike koje je moguće aktivirati u
 
 - **Konta**
 
-  - Konto / Analitički konto / Opis **Banke**
-  - Konto / Analitički konto / Opis **Prijelaznog konta banke**
+  - Konto / podkonto / Opis **Banke**
+  - Konto / podkonto / Opis **Prijelaznog konta banke**
 
   Ova se konta mogu povezati s vrstom prezentacijske liste kako bi se automatiziralo i definiralo računovodstveno knjiženje prilikom kreiranja nove liste. Riječ je o analitičkom kontu iz šifarnika banke na koji će se izvršiti konačno odobrenje vrijednosnih papira te prijelaznom kontu za knjiženje prezentacijskih lista (primjerice *Banka X C/S.B.F.*).
+
+**Konto / podkonto / Opis predujmova** (aktivno samo kada je oznaka *Trenutačno odobrenje* deaktivirana) omogućuje unaprijed definiranje željenog konta u zaglavlju prezentacijske liste. Unos ovog konta mijenja način izvršavanja računovodstvenog knjiženja prezentacijske liste. Uobičajenom knjiženju, kojim se stornira konto portfelja i prenose iznosi na prijelazni konto banke kojoj se prezentacijska lista predaje, dodaju se dva retka za evidentiranje trenutačnog odobrenja na redovnom tekućem računu koji je već postavljen u zaglavlju liste te protustavke na kontu predujmova prikazanom ovdje. (Primjerice, konto vrste „Banka X – račun predujmova”.)
+
+**Napomena: Knjiženje odobrenja uzima u obzir ovu izmjenu te će stornirati i prethodno navedeni konto predujmova i uobičajeni prijelazni konto za prezentacijsku listu uz uvjet naplate.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
