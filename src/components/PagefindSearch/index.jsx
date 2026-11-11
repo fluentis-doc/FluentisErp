@@ -344,7 +344,30 @@ function rankResults(results, query) {
 // =====================================================
 
 function normalizePagefindUrl(url = '') {
-  return url.replace(/\.html(?=([?#]|$))/i, '');
+  try {
+    const parsedUrl = new URL(
+      url,
+      window.location.origin
+    );
+
+    // Gli ancoraggi non identificano pagine differenti.
+    parsedUrl.hash = '';
+
+    let pathname = decodeURI(parsedUrl.pathname);
+
+    // Uniforma index.html e le estensioni HTML.
+    pathname = pathname.replace(/\/index\.html$/i, '/');
+    pathname = pathname.replace(/\.html$/i, '');
+
+    // Uniforma gli slash finali.
+    pathname = pathname.replace(/\/+$/, '') || '/';
+
+    return pathname;
+  } catch (error) {
+    return url
+      .replace(/\.html(?=([?#]|$))/i, '')
+      .replace(/\/+$/, '');
+  }
 }
 
 // =====================================================
