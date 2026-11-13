@@ -159,7 +159,7 @@ import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
 
 ### 3.3 Dettaglio articolo
 
-All'interno di questo tab vengono riportarte/inserite ulteriori informazioni relative all'articolo.
+All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
 - **Articolo**: riprende le informazioni dell'articolo selezionato nella griglia degli articoli.
 
