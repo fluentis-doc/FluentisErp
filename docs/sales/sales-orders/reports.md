@@ -67,6 +67,6 @@ Il risultato è un elenco degli ordini con per ogni articolo indicati valori ord
 
 Questa stampa fornisce una panoramica dettagliata delle date di scadenza e dei termini di consegna relativi agli ordini non totalmente evasi.      
 Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; è inoltre possibile impostare un ordinamento per Data consegna o Cliente.      
-Nella stampa, sotto lo stesso cliente/data consegna (in base all'ordinamento scelto) vengono elencati per ogni articolo gli ordini con i seguenti dati: numero, data inserimento, stato evasione, quanaità residua, ecc.      
+Nella stampa, sotto lo stesso cliente/data consegna (in base all'ordinamento scelto) vengono elencati per ogni articolo gli ordini con i seguenti dati: numero, data inserimento, stato evasione, quantità residua, ecc.      
 
 Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 
