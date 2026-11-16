@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::important A cosa serve
 La gestione delle **Spedizioni** in Fluentis rappresenta un significativo avanzamento nella gestione logistica e operativa per le aziende che utilizzano questa piattaforma ERP. Questa è stata progettata per ottimizzare e semplificare il processo di spedizione, offrendo un controllo più efficiente e integrato di tutte le attività logistiche.
-Il sistema di gestione delle spedizioni in Fluentis introduce anche la possibilità di creare groupage, un processo logistico attraverso cui le spedizioni di diversi clienti o fornitori vengono raggruppate in un'unica unità di trasporto. 
+Il sistema di gestione delle spedizioni in Fluentis introduce anche la possibilità di creare groupage, un processo logistico attraverso cui le spedizioni vengono raggruppate in un'unica unità di trasporto. 
 
 Questo metodo di consolidamento offre vari benefici:
 
