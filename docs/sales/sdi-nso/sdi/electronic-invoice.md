@@ -5,7 +5,7 @@ sidebar_position: 1
 
 La fatturazione elettronica è un sistema digitale di emissione e trasmissione delle fatture che sostituisce il 
 supporto cartaceo a favore di nuove modalità digitali di comunicazione.
-Con la fatturazione elettronica le fatture e le note di variazione emesse dovranno essere essere prodotte in 
+Con la fatturazione elettronica le fatture e le note di variazione emesse dovranno essere prodotte in 
 nuovo formato digitale “XML eXtensible Markup Language”, un linguaggio che consente ai supporti 
 informatici di definire e controllare con procedure standardizzate il significato degli elementi contenuti, 
 verificando così le informazioni ai fini dei controlli previsti per legge.
@@ -28,7 +28,7 @@ e B2C, sono veicolate e inviate al “Sistema di Interscambio”, ovvero un sist
 dall'Agenzia delle Entrate in grado di ricevere le fatture elettroniche, effettuare controlli sui file ricevuti e 
 provvedere al corretto scambio di informazioni con il soggetto trasmittente nonchè inoltrare le fatture ai 
 soggetti destinatari.
-Le imprese coinvolte nel proceddo di fatturazione elettronica saranno interessati sia per quanto riguarda la 
+Le imprese coinvolte nel processo di fatturazione elettronica saranno interessati sia per quanto riguarda la 
 gestione del ciclo ATTIVO ossia nel momento in cui viene emessa la fattura relativa a prodotti venduti o 
 servizi resi, sia per quanto riguarda il ciclo PASSIVO ossia la ricezione dei documenti emessi dai propri 
 fornitori.
@@ -85,7 +85,7 @@ Fluentis consente, attraverso Fluentis Business Hub, il trasferimento al SdI sia
 file senza la firma digitale. Per apporre la firma digitale sui documenti generati, sarà necessario eseguire lo 
 scarico dei documenti su una cartella di filesystem, applicare la firma digitale con un software di firma 
 esterno (es. DIKE) e reimportare il file così firmato (xml o p7m) che sarà poi inviato al SdI nel nuovo formato. 
-Una volta inviato al SdI, fluentis acquisice le notifiche prodotte dal Sistema di Interscambio e le abbina ai 
+Una volta inviato al SdI, fluentis acquisisce le notifiche prodotte dal Sistema di Interscambio e le abbina ai 
 documenti relativi, gestendo l’evoluzione degli stati del documento.
 Qualora non si disponga di una connessione attiva al Fluentis Business Hub, sarà comunque possibile 
 generare i file XML del ciclo attivo per i contatti selezionati, scaricare i file prodotti e procedere con l’invio 
@@ -95,6 +95,6 @@ documentale di Fluentis, oltre ad essere resi sempre disponibili nelle varie fas
 vendita attraverso l’apposita funzionalità **Registro dei documenti SDI** nella quale è possibile 
 visualizzare lo storico temporale della trasmissione del documento e scaricare e visionare i file prodotti 
 da Fluentis (XML e PDF) e recepiti da SdI. 
-Il cliclo passivo di fatturazione elettronica verso privati non ammette il possibile rifiuto da parte del 
-destintario del documento di fatturazione che dovrà pertanto essere gestito come adempimento contabile 
+Il ciclo passivo di fatturazione elettronica verso privati non ammette il possibile rifiuto da parte del 
+destinatario del documento di fatturazione che dovrà pertanto essere gestito come adempimento contabile 
 secondo la normativa vigente.
