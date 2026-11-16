@@ -22,7 +22,7 @@ Il sistema deve inoltre garantire la tracciabilità del calcolo a livello di rig
 
 Per supportare la gestione del contributo è necessario introdurre alcune informazioni aggiuntive nelle anagrafiche esistenti.
 
-A livello di [Società](/docs/configurations/tables/general-settings/company) viene introdotto un flag che identifica se la società è produttore o importatore di apparecchiature elettriche ed elettroniche. Questo campo abilita in generale la gestione RAEE all’interno del sistema e consente l’attivazione delle funzionalità dedicate nei documenti. Il flag si trova nella tabella **Società > Altre Impostazioni > Gestione RAEE > Produttore o Importatore di apparecchi elettrici e elttronici**.
+A livello di [Società](/docs/configurations/tables/general-settings/company) viene introdotto un flag che identifica se la società è produttore o importatore di apparecchiature elettriche ed elettroniche. Questo campo abilita in generale la gestione RAEE all’interno del sistema e consente l’attivazione delle funzionalità dedicate nei documenti. Il flag si trova nella tabella **Società > Altre Impostazioni > Gestione RAEE > Produttore o Importatore di apparecchi elettrici e elettronici**.
 
 Per quanto riguarda gli articoli, viene aggiunto un riferimento alla categoria prodotto RAEE. Tale classificazione determina se l’articolo è soggetto al contributo e consente di recuperare il valore associato per il calcolo. E' possibile inserire la [Categoria RAEE](/docs/configurations/tables/general-settings/raee-category) nell'**[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item) > Pesi/Dimensioni > Gestione RAEE**.
 
