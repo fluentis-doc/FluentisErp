@@ -25,7 +25,7 @@ automaticamente posizionandosi direttamente sul campo della griglia
 gestire la firma digitale sui documenti fatture di vendita trasmessi al SdI
 - **Fatturazione elettronica con PDF allegato**: il check abilita la funzione di generazione del file 
 PDF relativo alla fattura inserita e lo inserisce nel file XML inviato al SdI. Se impostato, richiede 
-obbligatoria anche l’impostazione del valore successivo Trasformazione e Decrizione: nel
+obbligatoria anche l’impostazione del valore successivo Trasformazione e Descrizione: nel
 campo deve essere indicata la Transformation di Fluentis destinata alla generazione del file 
 PDF da allegare al file XML.
 - **Trasformazione Arm per creazione file PDF fattura**: questo campo richiede la specifica della 

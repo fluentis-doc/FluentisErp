@@ -39,18 +39,18 @@ I valori sui quali è necessario eseguire un raccordo o una verifica dell’effe
 
 Per la corretta gestione della casistica di articoli che richiedono l’indicazione in fattura di specifici codici 
 normativi o ministeriali, quali ad esempio il codice AIC (codice ministeriale prodotto) per alcuni farmaci o il 
-codice DM0-DM1, è necessario censire nella tabella **Tipi barcode** un barcode specifico identificato conil 
+codice DM0-DM1, è necessario censire nella tabella **Tipi barcode** un barcode specifico identificato con il 
 flag **Export Pubblica Amministrazione** e riportato nell’anagrafica dell’articolo nel pannello **Codici BarCode**, campo **Tipo barcode**.
 
 ## Split payment
 
-Per la corretta gestione della casistica Split Payment sui documenti rivolti alla Pubblica Amminstrazione, le 
+Per la corretta gestione della casistica Split Payment sui documenti rivolti alla Pubblica Amministrazione, le 
 Specifiche tecniche relative alla compilazione del file XML richiedono l’individuazione di una specifica 
 tipologia di esigibilità IVA, in formato alfanumerico di lunghezza 1 carattere. I valori ammessi sono i seguenti:          
 *I* IVA ad esigibilità immediata       
 *D* IVA ad esigibilità differita      
 *S* scissione dei pagamenti       
 
-In Fluentis pertanto è necessario impostare sulle causali contabili abbinate al tipo documento di vendita
+In Fluentis, pertanto, è necessario impostare sulle causali contabili abbinate al tipo documento di vendita
 verso la PA, il tipo movimento 29 – Iva vendite con split Payment.
 

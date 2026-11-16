@@ -4,7 +4,7 @@ sidebar_position: 9
 ---
 
 Al fine di configurare correttamente la connessione tra il gestionale Fluentis e servizio Fluentis Business Hub, è necessario:
-1) configurare in Arm il servizo Fluentis BizLink Tools Service                
+1) configurare in Arm il servizio Fluentis BizLink Tools Service                
 2) aver comunicato il nome dell’istanza del Server SQL e il nome del Database da abilitare per la connessione al servizio Fluentis Business Hub (se non è stato fatto alla sottoscrizione del 
 contratto, o se tali informazioni sono variate, è possibile farlo inviando una mail all’indirizzo fatturazione.elettronica@fluentis.com).
 
