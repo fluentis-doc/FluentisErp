@@ -118,7 +118,7 @@ quanto pre-autorizzato dal Cliente, e può terminare, alternativamente:
 - con la ricezione da parte del Cliente dell’Ordine pre-concordato inviato dal Fornitore; 
 - con la ricezione da parte del fornitore dell’Ordine di riscontro inviato dal Cliente.      
 
-Ogni eventuale comunicazione di conferma, diniego o sostituzione dell’Ordine preconcordato da 
+Ogni eventuale comunicazione di conferma, diniego o sostituzione dell’Ordine pre-concordato da 
 parte del Cliente dovrà pervenire al Fornitore, di norma, per il tramite di NSO.
 Il Fornitore può comunque revocare o modificare un Ordine pre-concordato precedentemente 
 emesso mediante l’emissione di un nuovo Ordine pre-concordato, che deve contenere 
@@ -127,17 +127,17 @@ l’indicazione dell’Ordine pre-concordato che si intende revocare o modificar
 Ne consegue che un Ordine pre-concordato può assumere le seguenti forme :
 - Ordine iniziale 
 - Ordine Iniziale collegato
-- Ordine di revoca , che deve contenere l’indicazione dell’Ordine precedentemente inviato 
+- Ordine di revoca, che deve contenere l’indicazione dell’Ordine precedentemente inviato 
 che si intende revocare, deve contenere una sola linea d’ordine, in quanto costituisce il 
 mero annullamento dell’Ordine precedentemente trasmesso a cui fa riferimento
-- Ordine sostitutivo , che deve contenere l’indicazione dell’Ordine precedentemente inviato 
+- Ordine sostitutivo, che deve contenere l’indicazione dell’Ordine precedentemente inviato 
 che si intende modificare, costituisce un nuovo Ordine che annulla tutti i Documenti 
 precedenti (Ordini e Ordini di riscontro) del processo corrente e dà avvio a un nuovo 
 processo di Ordinazione pre-concordata, pertanto deve contenere tutte le linee d’ordine 
 (come un Ordine iniziale). 
 A fronte della ricezione dell’Ordine pre-concordato, il Cliente può: 
 - terminare il processo senza trasmettere un Ordine di riscontro
-- trasmettere un Ordine di riscontro , che deve contenere l’indicazione dell’Ordine preconcordato a cui fa riferimento, con il quale comunica al Fornitore, alternativamente, che 
+- trasmettere un Ordine di riscontro, che deve contenere l’indicazione dell’Ordine pre-concordato a cui fa riferimento, con il quale comunica al Fornitore, alternativamente, che 
 intende: 
 > - confermare l’Ordine pre-concordato ricevuto ( Ordine di riscontro per conferma );
 > - declinare l’Ordine pre-concordato ricevuto ( Ordine di riscontro per diniego );

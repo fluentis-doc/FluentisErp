@@ -187,7 +187,7 @@ ove applicabili (per maggiori dettagli si rinvia alle Linee guida).
 | CMT | Centimetro | Lunghezza |
 | MMT | Millimetro | Lunghezza |
 | MTK | Metro quadrato | Superficie |
-| CMK | Centrimetro quadrato | Superficie |
+| CMK | Centimetro quadrato | Superficie |
 | MTQ | Metro cubo | Volume |
 | CMQ | Centimetro cubo | Volume |
 | MMQ | Millimetro cubo | Volume |
@@ -285,7 +285,7 @@ valori:
 > - Ordinazione completa
 > - Ordinazione pre-concordata
 - Tipo documento: indica l’ultima tipologia di documento o notifica legata all’ordine
-- Tripletta: è il riferimento all’ordine a cui fa riferimento l’ordine corrente, la tripleta è 
+- Tripletta: è il riferimento all’ordine a cui fa riferimento l’ordine corrente, la tripletta è 
 composta da : Identificativo del documento, data di emissione del documento e 
 identificativo del soggetto emittente
 - Nome file NSO: indica il nome del file Xml dell’ordine PEPPOL

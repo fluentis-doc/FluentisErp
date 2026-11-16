@@ -47,7 +47,7 @@ in merito a “se e come” il Fornitore intende dar corso all’Ordine. La Risp
 - intende dar corso all’Ordine ricevuto (Risposta di accettazione). La Risposta di 
 accettazione è una Risposta priva di linee d’ordine, che contiene l’indicazione che si 
 tratta di una “Accettazione” e il riferimento all’Ordine che si intende accettare; 
-- declina l’Ordine ricevuto (Risposta di diniego ). La Risposta di diniego è una Risposta 
+- declina l’Ordine ricevuto (Risposta di diniego). La Risposta di diniego è una Risposta 
 priva di linee d’ordine, che contiene l’indicazione che si tratta di un “Rifiuto” e il 
 riferimento all’Ordine che si intende rifiutare; 
 - intende dar corso all’Ordine ricevuto apportando alcune modifiche (Risposta con 
@@ -68,16 +68,15 @@ L’ Ordine di riscontro è il Documento con cui il Cliente (Mittente) conferma,
 Fornitore (Destinatario). 
 **L’Ordine di riscontro, pertanto, altro non è che un Ordine che fa riferimento a un Documento inviato dal Fornitore. Conseguentemente, è predisposto nel medesimo formato, che è descritto dalla specifica PEPPOL Order transaction 3.0.**
 Con l’Ordine di riscontro il Cliente può comunicare al Fornitore: 
-- che conferma un Ordine pre-concordato o una Risposta inviata dal Fornitore ( Ordine di 
-riscontro per conferma ). L’Ordine di riscontro per conferma è un Ordine che contiene 
+- che conferma un Ordine pre-concordato o una Risposta inviata dal Fornitore (Ordine di 
+riscontro per conferma). L’Ordine di riscontro per conferma è un Ordine che contiene 
 l’indicazione che si tratta di una “Conferma” e il riferimento all’Ordine pre-concordato o 
 alla Risposta che si intende confermare; 
-- che declina un Ordine pre-concordato o una Risposta inviata dal Fornitore ( Ordine di 
-riscontro per diniego ). L’Ordine di riscontro per diniego è un Ordine che contiene 
+- che declina un Ordine pre-concordato o una Risposta inviata dal Fornitore (Ordine di 
+riscontro per diniego). L’Ordine di riscontro per diniego è un Ordine che contiene 
 l’indicazione che si tratta di un “Rifiuto” e il riferimento all’Ordine o alle Risposta che si 
 intende rifiutare; 
-- che intende sostituire un Ordine pre-concordato o una Risposta inviata dal Fornitore ( 
-Ordine di riscontro sostitutivo ). L’Ordine di riscontro sostitutivo è un nuovo Ordine, 
+- che intende sostituire un Ordine pre-concordato o una Risposta inviata dal Fornitore (Ordine di riscontro sostitutivo). L’Ordine di riscontro sostitutivo è un nuovo Ordine, 
 completo di tutte le linee d’ordine, che contiene l’indicazione che si tratta di una 
 “Sostituzione” e il riferimento all’Ordine o alla Risposta che si intende sostituire.        
 
@@ -88,9 +87,9 @@ L’Ordine di riscontro riferito a un Ordine pre-concordato revocato non ha effe
 
 ## Ordine PRE-Concordato
 
-L’ Ordine pre - concordato è il Documento rappresentativo dell’ordine di acquisto di beni e servizi, 
+L’ Ordine pre-concordato è il Documento rappresentativo dell’ordine di acquisto di beni e servizi, 
 emesso dal Fornitore (Mittente) invece che dal Cliente (Destinatario), in accordo con quest’ultimo. 
-Un Ordine pre-concordato è composto da una o più linee d’ordine , in cui sono indicati il bene o il 
+Un Ordine pre-concordato è composto da una o più linee d’ordine, in cui sono indicati il bene o il 
 servizio oggetto dell’acquisto, la quantità e il prezzo. 
 **L’Ordine pre-concordato è predisposto nel formato descritto dalla specifica PEPPOL Order Agreement transaction 3.0.**
 Un Ordine pre-concordato può: 
@@ -100,23 +99,23 @@ fornitura (Ordine pre-concordato iniziale). Un Ordine pre-concordato iniziale no
 contiene riferimenti ad altri Ordini pre-concordati
 - determinare, indipendentemente da altri Ordini pre-concordati precedentemente emessi, i 
 beni e/o i servizi che il Cliente intende acquistare e le relative istruzioni per eseguire la 
-fornitura e, tuttavia, essere genericamente relazionato a un altro Documento (Ordine preconcordato iniziale collegato). Un Ordine pre-concordato iniziale collegato contiene il 
+fornitura e, tuttavia, essere genericamente relazionato a un altro Documento (Ordine pre-concordato iniziale collegato). Un Ordine pre-concordato iniziale collegato contiene il 
 riferimento al Documento che a cui è collegato e l’indicazione che si tratta di un mero 
 “collegamento”. 
 - revocare un Ordine pre-concordato precedentemente emesso (Ordine pre-concordato di 
 revoca). L’Ordine pre-concordato di revoca è un Ordine pre-concordato che contiene 
-l’indicazione che si tratta di una “revoca” (“Cancelled”) e il riferimento all’Ordine preconcordato che si intende revocare, inoltre ha una sola linea d’ordine priva di contenuto.
+l’indicazione che si tratta di una “revoca” (“Cancelled”) e il riferimento all’Ordine pre-concordato che si intende revocare, inoltre ha una sola linea d’ordine priva di contenuto.
 - sostituire un Ordine pre-concordato precedentemente emesso (Ordine pre-concordato 
 sostitutivo). La Modifica di ordine pre-concordato è un nuovo Ordine pre-concordato, 
 completo di tutte le linee d’ordine, che contiene l’indicazione che si tratta di una 
 “sostituzione” (“Revised”) e il riferimento all’Ordine pre-concordato che si intende 
 modificare.        
 
-Le Sostituzioni e le Revoche, rispettivamente, rimpiazzano e annullano sia l’Ordine preconcordato ivi indicato sia tutte le altre Sostituzioni e Revoche, già trasmesse, riferite al relativo 
+Le Sostituzioni e le Revoche, rispettivamente, rimpiazzano e annullano sia l’Ordine pre-concordato ivi indicato sia tutte le altre Sostituzioni e Revoche, già trasmesse, riferite al relativo 
 Ordine pre-concordato iniziale.        
 L’Ordine pre-concordato iniziale collegato può essere utilizzato esclusivamente per tenere 
 memoria che il nuovo processo che si intende avviare è collegato ad un processo precedente e non 
-deve mai essere usato al posto degli altri strumenti (Ordine pre-concordato di revoca, Ordine preconcordato sostitutivo e Risposta) appositamente realizzati per revocare, sostituire (o integrare), 
+deve mai essere usato al posto degli altri strumenti (Ordine pre-concordato di revoca, Ordine pre-concordato sostitutivo e Risposta) appositamente realizzati per revocare, sostituire (o integrare), 
 accettare o rifiutare un altro Documento.
 
 ## RELAZIONE CON LO STANDARD PEPPOL
