@@ -10,10 +10,10 @@ non possono dar corso alla liquidazione e al successivo pagamento a fronte di Do
 in Messaggi che non siano stati validati da NSO.
 Ogni Documento è unicamente identificato per mezzo della Tripletta di identificazione composta 
 da tre elementi, che devono obbligatoriamente essere presenti: 
-- l’identificativo del soggetto che lo ha emesso ( EndpointID ), che di norma coincide con il 
+- l’identificativo del soggetto che lo ha emesso (EndpointID), che di norma coincide con il 
 Mittente; 
-- l’identificativo del Documento assegnato dall’emittente ( ID ); 
-- la data del Documento ( IssueDate ).        
+- l’identificativo del Documento assegnato dall’emittente (ID); 
+- la data del Documento (IssueDate).        
 
 Un medesimo soggetto, pertanto, può emettere uno e un solo Documento con stesso identificativo 
 e stessa data (unicità del Documento). 
