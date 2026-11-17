@@ -67,4 +67,4 @@ Nella griglia superiore vengono visualizzate tutte le fatture create. Selezionan
 
 *Pulsanti specifici*:
 > **Ricerca valorizzazioni**: per cercare le fatture create e i DDT valorizzati in base ai filtri impostati. Il risultato di questa procedura viene visualizzato nella griglia di risultato.  
-> **Rirpistino fatture**: per cancellare la fattura selezionata nella griglia inferiore.  
+> **Ripristino fatture**: per cancellare la fattura selezionata nella griglia inferiore.  

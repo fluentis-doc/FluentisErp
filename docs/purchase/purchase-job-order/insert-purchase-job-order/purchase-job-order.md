@@ -60,7 +60,7 @@ Tutti questi campi possono essere cancellati oppure modificati manualmente dall'
 > **Data inizio/fine**: permette di inserire una data inizio e fine per la commessa.   
 
 > **Annotazioni fornitore**: questo campo viene ripreso dall'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), ma può essere inserito anche manualmente.   
-> **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore alrimenti può essere inserito manualmente. Questi dati sranno poi riportati nell'ordine fornitore creato mediante [Evasione da progetto*.   
+> **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore altrimenti può essere inserito manualmente. Questi dati saranno poi riportati nell'ordine fornitore creato mediante [Evasione da progetto].   
 > **Note iniziali**: si possono selezionare le note che sono state inserite in precedenza nella tabella che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*. Per questo l'utente deve effettuare doppio click sul campo *Note iniziale* per aprire Help note codificate e selezionare i dati.   
 > **Progetto:** usando l'help di campo si può collegare il documento a un [progetto](/docs/project-management/projects/search-projects-intro). Questa associazione funziona solo al livello della testata dell'articolo.   
 
@@ -69,7 +69,7 @@ Tutti questi campi possono essere cancellati oppure modificati manualmente dall'
 > **Stampato**: questo flag viene attivato in automatico al momento di lancio della Stampa definitiva mediante il pulsante posto nella ribbon bar. In alternativa può essere attivato manualmente per poter effettuare l'evasione.    
     
 :::important Nota
-Per poter effettuare l'evasione di una commessa di acquisto all'interno di un Ordine fornitore è enecssario che la commessa abbia una *Data conferma* inserita e che il flag *Stampato* sia attivo.
+Per poter effettuare l'evasione di una commessa di acquisto all'interno di un Ordine fornitore è necessario che la commessa abbia una *Data conferma* inserita e che il flag *Stampato* sia attivo.
 :::
 
 ### 2.1 Pagamenti
@@ -172,11 +172,11 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 
 - **Articolo**: riporta  l'articolo selezionato nella griglia superiore.
 
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si seleziona una variante diversa dell'articolo.   
 
 - **Nota**: sono le note relative alla riga articolo, possono essere inserite anche tramite l'help note codificate. Saranno riportate in tutti i documenti generati da questo.
 
-- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che saranno riportati anche nell'ordin fornitore generato mediante *Evasione progetto*. 
+- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che saranno riportati anche nell'ordine fornitore generato mediante *Evasione progetto*. 
 
 - **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.
 

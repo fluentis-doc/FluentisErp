@@ -51,5 +51,5 @@ I dati nelle griglie in basso, **Fatture** e **DDT**, corrispondono alla valoriz
 
 *Pulsanti specifici*:
 > **Ricerca valorizzazione DDT**: per cercare le fatture create e i DDT valorizzati in base ai filtri impostati. Il risultato di questa procedura viene visualizzato nella griglia di risultato.  
-> **Rirpistino fatture**: per cancellare la fattura selezionata nella griglia inferiore.  
+> **Ripristino fatture**: per cancellare la fattura selezionata nella griglia inferiore.  
 > **Ripristino valorizzazione**: per cancellare l'intera operazione selezionata, con tutti i suoi dettagli visualizzati nelle due griglie sottostanti.
