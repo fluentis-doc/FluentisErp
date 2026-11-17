@@ -30,7 +30,7 @@ In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codifi
 
 ## **1. Dati obbligatori**
 
-- **Tipo bolla cosegna acquisto**: predefinito in  *Configurazione > Tabelle > Acquisti > Tipi DDT di acquisto*.  
+- **Tipo bolla consegna acquisto**: predefinito in  *Configurazione > Tabelle > Acquisti > Tipi DDT di acquisto*.  
 Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il *Numero* del DDT in base alla data inserimento e all'ultimo numero inserito;   
 - **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  oppure   [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection);   
 - **Numero interno**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente rispettando la regola di progressione tra data e numero;  
@@ -63,7 +63,7 @@ Tutti questi campi possono essere cancellati oppure modificati manualmente dall'
 
     > **Controllata**: il flag attivo permette la contabilizzazione/valorizzazione del DDT.     
     > **Valorizzata**: questo flag si attiva quando il DDT viene valorizzato in fattura.   
-    > **Valorizzata Parzialmente**: questo flag indica che il DDT è staato valorizzato solo parzialmente in fattura.     
+    > **Valorizzata Parzialmente**: questo flag indica che il DDT è stato valorizzato solo parzialmente in fattura.     
     > **Valorizzata Forzatamente**: questo flag si attiva se il DDT è stato chiuso forzatamente con l'evasione forzata degli articoli; per esempio, quando il residuo non sarà consegnato e il documento viene considerato chiuso anche se non lo sarebbe.   
     > **Caricata**: questo flag si attiva automaticamente quando il documento viene movimentato a magazzino mediante il bottone *Carico automatico* della barra degli strumenti o con la [procedura di carico in magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse).  
     > **Contabilizzata**: viene automaticamente selezionato quando il DDT viene contabilizzato;  
@@ -245,7 +245,7 @@ In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* 
 Il pulsante diventa attivo se il documento è salvato, ma non caricato.   
 Con clic su questo pulsante si apre la form corrispondente dove inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante **Execute**. In questa form vengono riportati gli articoli che sono stati inseriti con natura Imballo e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).    
 >
-> **Aggiorna ubicazione**: utilizzata per aggiornare l'ubicazione su più righe articolo. Il pulsante diventa attivobselezionando almeno due articoli e apre l'help ubicazioni da cui scegliere la nuova ubicazione per tutti gli articoli selezionati.   
+> **Aggiorna ubicazione**: utilizzata per aggiornare l'ubicazione su più righe articolo. Il pulsante diventa attivo selezionando almeno due articoli e apre l'help ubicazioni da cui scegliere la nuova ubicazione per tutti gli articoli selezionati.   
 >
 > **Storno ricevimenti**: il pulsante è attivo solo per i [Tipi DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) che hanno la *Natura DDT* di tipo *Reso*. Nella form vengono visualizzati tutti i DDT intestati a quel fornitore che sono già stati caricati a magazzino. Dopo aver selezionato le righe articolo e le relative quantità da stornare sarà sufficiente premere il pulsante *Storno ricevimenti* per inserirli nel DDT.    
 >
@@ -279,7 +279,7 @@ Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
 - **Articolo**: riporta classe, codice e descrizione dell'articolo selezionato nella griglia.   
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.     
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si seleziona una variante diversa dell'articolo.     
 - **Nota**: sono le note relative alla riga articolo, possono essere inserite anche tramite l'help note codificate. Saranno riportate in tutti i documenti generati da questo.   
 - **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento del carico degli articoli relativi in magazzino. I dati sono ripresi dai [Tipi DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type) oppure dall'ordine fornitore, se il DDT deriva da evasione di un ordine. Possono essere modificati manualmente per ciascuna riga articolo.   
 - **Ubicazione**: viene proposta in automatico se alla causale utilizzata è stata associata un'ubicazione nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates) oppure se l'articolo è stato inserito nella [Mappa ubicazioni per articolo](/docs/logistics/warehouse/location/item-location-map/). Può essere inserita o modificata manualmente.   
@@ -417,7 +417,7 @@ Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzi
 
 - **Colli**: viene proposto il numero dei colli, sulla base dei dati inseriti nell'*Anagrafica articolo > tab* [*Pesi/Dimensioni*](/docs/erp-home/registers/items/create-new-item), nei campi *Articoli presenti in un collo* oppure *Colli per formare l'articolo*. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.
 
-- **Valori modificati manualmente**: attivando questo flag sarà possibile odificare manualmente i valori di *volume*, *peso netto*, *peso lordo* e *colli*.
+- **Valori modificati manualmente**: attivando questo flag sarà possibile modificare manualmente i valori di *volume*, *peso netto*, *peso lordo* e *colli*.
 
 ### 4.6 Totali documento
 
@@ -433,9 +433,9 @@ I combo box propongono tutti i *Destinatari*, le *Destinazioni* e i *Vettori* in
 
 I dati presenti sono: 
 
-- **Mittente**: in questo campo è possibile insrire il conto/sottoconto del mittente.
+- **Mittente**: in questo campo è possibile inserire il conto/sottoconto del mittente.
 - **Destinatario**: viene proposto il destinatario di default inserito in anagrafica cliente; se non presente, viene preso l'indirizzo del cliente.    
-- **Destinazione**: viene proposta la destinazione di default del destinatario, see inserita in anagrafica cliente.        
+- **Destinazione**: viene proposta la destinazione di default del destinatario, se inserita in anagrafica cliente.        
 - **Volume**: viene proposto il volume cumulativo, risultato dalla somma dei volumi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del volume degli articoli corrisponde a quella inserita nei parametri della fattura. 
 - **Peso netto**: viene proposto il peso netto cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quello inserito nei parametri della fattura. 
 - **Peso lordo**: viene proposto il peso lordo cumulativo, risultato dalla somma dei pesi degli articoli (il valore viene ripreso dall'Anagrafica articolo > tab Pesi/Dimensioni), quando l'unità di misura del peso degli articoli corrisponde a quella inserita nei parametri della fattura.     
@@ -450,5 +450,5 @@ Le condizioni per il calcolo automatico di pesi e volumi nel riepilogo del docum
 - **Colli**: viene proposto il numero dei colli, sulla base dei dati inseriti nell'*Anagrafica articolo > tab Pesi/Dimensioni*, nei campi *Articoli presenti in un collo* oppure *Colli per formare l'articolo*. Sono presi in considerazione solo gli articoli che hanno questo campo compilato.     
 - **Valori modificati manualmente**: con questo flag rendiamo possibile la modifica dei campi Volume, Peso netto, Peso lordo e Colli, che altrimenti riportano i dati da anagrafica articolo senza possibilità di modifica.     
 - **Ingresso/Uscita dell'ufficio doganale**: campi utilizzati per l'eTrasport per la versione romena, che rimandano alla tabella *Ufficio doganale*.     
-- **Ingresso/Uscita valico di frontiera**: campi utilizzati per l'eTrasport per la versione romena, che rimandanno alla tabella *Valico di frontiera*.      
+- **Ingresso/Uscita valico di frontiera**: campi utilizzati per l'eTrasport per la versione romena, che rimandano alla tabella *Valico di frontiera*.      
 - **Trasporto**: è necessario selezionare la figura che si occuperà del trasporto, mettendo il flag in *Mittente*, *Destinatario* o *Vettore*; in base alla selezione, la sezione sottostante cambierà; se il trasporto è a carico del *Mittente* sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del *Destinatario* sarà possibile inserire Targa automezzo, Rimorchio, Data e Ora di Inizio trasporto; se è a carico del *Vettore* invece i campi disponibili saranno Anagrafica contabile del Vettore, Targa, Rimorchio, Data e Ora trasporto, eventuale Committente, Caricatore, Proprietario, Luogo carico. 

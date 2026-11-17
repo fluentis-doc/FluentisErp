@@ -20,7 +20,7 @@ Offre la possibilità di inserire filtri per cercare i ricevimenti, selezionarli
 
 - **Tipo bolla consegna acquisto**: indica il tipo documento da usare per la creazione del DDT.
 - **IVA**: indica l'[Aliquota IVA](/docs/configurations/tables/finance/vat-rates) da inserire sulle righe articolo nel DDT.
-- **Tipo fatturato acquisti**: da impostare sulle righe articoo del DDT.
+- **Tipo fatturato acquisti**: da impostare sulle righe articolo del DDT.
 
 *Dati opzionali*:
 > **Ricalcola centri di costo/ricavo**: permette di scegliere se si vuole ricalcolare i centri di costo/ricavo al momento della creazione del DDT.

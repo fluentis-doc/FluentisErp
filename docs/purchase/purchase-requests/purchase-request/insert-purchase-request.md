@@ -3,7 +3,7 @@ title: Nuova Richiesta di acquisto
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Acquisti > Richieste di Acquisto > Nuova richiesta** oppure dal filtro di riceca *Richieste di Acquisto* mediante il pulsante *Nuovo*.   
+La form si apre tramite il percorso **Acquisti > Richieste di Acquisto > Nuova richiesta** oppure dal filtro di ricerca *Richieste di Acquisto* mediante il pulsante *Nuovo*.   
 
 ## *Come creare una Richiesta di Acquisto*
 
@@ -29,7 +29,7 @@ I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguen
 
 - **Tipo**: predefinito in *Configurazione > Tabelle >* [*Tipi richieste di acquisto*](/docs/configurations/tables/purchase/purchase-request-type). A seconda del tipo scelto, saranno attivate alcune funzionalità quali ad esempio il *controllo della disponibilità*.   
 - **Data/Anno**: di default viene proposta la data corrente, ma può essere modificata manualmente.   
-- **Numero**: poposto automaticamente in base alla numerazione associata al *Tipo RDA* scelto.
+- **Numero**: proposto automaticamente in base alla numerazione associata al *Tipo RDA* scelto.
 
 #### Altri dati
 
@@ -59,7 +59,7 @@ In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* 
 
 - **Stato**: indica lo stato evasione di ciascuna riga articolo.   
 
-- **Data richiesta**: nel caso di RDA rilasciata dalla pianificazione viene automaticamene compilato con la *Data fine* dell'ordine pianificato di acquisto; può anche essere inserita o modificata manualmente.   
+- **Data richiesta**: nel caso di RDA rilasciata dalla pianificazione viene automaticamente compilato con la *Data fine* dell'ordine pianificato di acquisto; può anche essere inserita o modificata manualmente.   
 
 - **Data spedizione**: se la RDA è stata rilasciata dalla pianificazione e la *Data FOB* dell'ordine pianificato è valorizzata, essa verrà riportata in questo campo; può anche essere inserita o modificata manualmente. 
 
@@ -97,15 +97,15 @@ Sono campi informativi che vengono ripresi di default dall'articolo/fornitore. �
 - **Divisa**: di default viene proposta la [divisa](/docs/configurations/tables/general-settings/currencies) presente nell'[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) del *Fornitore preferenziale*. 
 - **Cambio**: riporta la data e il tasso di cambio da utilizzare per la conversione valuta.   
 
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
-- **Commesse di produzione**: se la richiesta di acquisto è stata generata dalla [pianificazione](/docs/planning/ms-master-scheduling/general-schedule/) di una commessa di produzione (con rilascio ordini automatico oppure mediante la [procedura](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders) di rilascio di un ordine pianificato di acquisto) in questo campo sarà riportato il riferimeto alla commessa. Per maggiori informazioni vedere anche la [sezione introduttiva](/docs/purchase/purchase-requests/general-overview).   
-- **Operatore**: in quersto campo è possibile inserire l'operatore che ha inserito la richiesta di acquisto.   
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si seleziona una variante diversa dell'articolo.   
+- **Commesse di produzione**: se la richiesta di acquisto è stata generata dalla [pianificazione](/docs/planning/ms-master-scheduling/general-schedule/) di una commessa di produzione (con rilascio ordini automatico oppure mediante la [procedura](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders) di rilascio di un ordine pianificato di acquisto) in questo campo sarà riportato il riferimento alla commessa. Per maggiori informazioni vedere anche la [sezione introduttiva](/docs/purchase/purchase-requests/general-overview).   
+- **Operatore**: in questo campo è possibile inserire l'operatore che ha inserito la richiesta di acquisto.   
 
 - **Progetto**: in questo campo è possibile associare un progetto a ciascun articolo. Se la RDA è stata generata a partire dalla pianificazione di una commessa di produzione contenente un progetto, esso sarà automaticamente riportato sulle singole righe articolo.   
 - **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli.    
 - **Priorità richiesta**: viene riportata la *priorità approvvigionamento* presente all'interno della [commessa di produzione](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).   
 - **Note**: in questo campo è possibile inserire note relative alla riga articolo; saranno riportate in tutti i documenti generati da questo.   
-- **Data evasione**: al momento della [creazione dell'ordine fornitore](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) dalla richiesta di acquisto, le righe inserite nell'ordine vengono evase e vuiene riportata in quetso campo la data dell'evasione.   
+- **Data evasione**: al momento della [creazione dell'ordine fornitore](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) dalla richiesta di acquisto, le righe inserite nell'ordine vengono evase e viene riportata in questo campo la data dell'evasione.   
 
 - **Autorizzata**: può essere attivato manualmente per ogni riga oppure attraverso il bottone della ribbon bar *Autorizzazione RDA*.    
 - **In data**: riporta la data in cui è stata autorizzata la riga articolo della RDA.   
@@ -134,8 +134,8 @@ In questa tab vengono riportati i *Fornitori preferenziali* presenti nell'anagra
 4. **Nuovo fornitore**: per selezionare un fornitore per cui non è stata ancora codificata l'anagrafica; la selezione di questa opzione abilita l'inserimento del dato nel campo *Descrizione fornitore*.  
 
 Gli altri campi presenti nella griglia sono: 
-- **Codice/Descrizione/Barcode articolo fornitore**: riportano il codice e la decsrizione con cui il fornitore identifica l'articolo richiesto; sono campi facoltativi.     
-- **Unità di misura**: viene proposta l'unità di misura associata al fornitore nell'[angrafica dell'articolo](/docs/erp-home/registers/items/create-new-item), oppure l'unità di misura principale nel caso in cui tale campo non sia valorizzato.   
+- **Codice/Descrizione/Barcode articolo fornitore**: riportano il codice e la descrizione con cui il fornitore identifica l'articolo richiesto; sono campi facoltativi.     
+- **Unità di misura**: viene proposta l'unità di misura associata al fornitore nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item), oppure l'unità di misura principale nel caso in cui tale campo non sia valorizzato.   
 - **Quantità**: viene proposta in base all'eventuale lotto economico del fornitore, se specificato nel tab [fornitori preferenziali](/docs/erp-home/registers/items/create-new-item) dell'articolo; in alternativa viene proposta la quantità presente nella riga articolo della RDA.
 - **Prezzo**: viene proposto in base al listino associato al fornitore preferenziale. Se il prezzo dell’articolo nella RDA è stato modificato manualmente, sarà consentita anche la modifica del prezzo nel Generatore RDO. In tal caso, nella Richiesta di Offerta generata verrà riportato il prezzo impostato manualmente nel tab Generatore RDO e risulterà attivo il flag *Prezzo manuale*.      
 - **Data stimata consegna**: permette di inserire la data prevista per la consegna. 
@@ -143,7 +143,7 @@ Gli altri campi presenti nella griglia sono:
 - **Unità di misura/Quantità alternativa**: permette di selezionare un'unità di misura e una quantità alternativa che saranno riportate nei documenti generati dalla RDO. 
 - **Prezzo unità di misura alternativa**: se attivo, il prezzo viene moltiplicato per la quantità alternativa. 
 - **Listino di Acquisto**: riporta il listino da cui è stato ripreso il prezzo. 
-- **Sospseso**: questo flag viene attivato automaticamente quando la RDO è stata generata.
+- **Sospeso**: questo flag viene attivato automaticamente quando la RDO è stata generata.
 
 La presenza di almeno una riga in questa tab fa attivare il bottone della ribbon bar **Generazione RDO**. Cliccando questo bottone, verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe selezionate. Il documento creato sarà consultabile nella ricerca RDO, oppure è possibile aprirlo direttamente col bottone **Apri richiesta di offerta** della ribbon bar.   
 

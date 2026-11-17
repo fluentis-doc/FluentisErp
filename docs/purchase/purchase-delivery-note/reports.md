@@ -7,8 +7,8 @@ Sono disponibili diverse **Stampe** standard. Per visualizzare un'anteprima di c
 
 ### Stampa DDT di acquisto
 
-Questa stampa serve per stampare i DDT di acquisto già inseritI a sistema, secondo i filtri specificati nella form iniziale.   
-I primi filtri che ci vengono mostrati sono quelli relativi alle informazioni di testata dei documenti, quali il *tipo documento*, il *numero documento*, il *fornitore* e il *progeto*.    
+Questa stampa serve per stampare i DDT di acquisto già inseriti a sistema, secondo i filtri specificati nella form iniziale.   
+I primi filtri che ci vengono mostrati sono quelli relativi alle informazioni di testata dei documenti, quali il *tipo documento*, il *numero documento*, il *fornitore* e il *progetto*.    
 Nella groupbox *Ricerca avanzata* si possono spuntare gli stati del DDT su cui effettuare il filtro.    
 Nella groupbox *Articolo* è invece possibile filtrare, oltre che sul codice dell’articolo, anche su altre informazioni relative alle righe del corpo del documento, quali il *barcode*, la *descrizione articolo* o se sia presente un progetto collegato alla riga articolo.    
 

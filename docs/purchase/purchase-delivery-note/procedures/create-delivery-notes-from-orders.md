@@ -17,7 +17,7 @@ La procedura si apre tramite il percorso **Acquisti > DDT di acquisto > Procedur
 
 *Procedimento*:  
 
-- inserire i filtri desiderati nella sezione *Filtro* e clicare sul pulsante **Ricerca**. Nella griglia dei risultati comparirà una riga per ciascun articolo degli ordine stampati, confermati e non evasi oppure evasi parzialmente;  
+- inserire i filtri desiderati nella sezione *Filtro* e cliccare sul pulsante **Ricerca**. Nella griglia dei risultati comparirà una riga per ciascun articolo degli ordine stampati, confermati e non evasi oppure evasi parzialmente;  
 - selezionare le righe articolo desiderate attivando il flag nella colonna **Seleziona**;  
 - inserire, per l'articolo selezionato, la **Quantità da evadere** nella colonna omonima. Se la quantità non viene inserita, l'applicazione propone il valore inserito nella colonna **Quantità residua**;  
 - eseguire l'evasione cliccando sul pulsante **Trasferimento**;  

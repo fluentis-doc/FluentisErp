@@ -44,7 +44,7 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 - **Classe/Codice/Descrizione articolo**: si possono inserire manualmente oppure con l'ausilio dell'help di campo il quale proporrà tutti i dati relativi inseriti nell'Anagrafica articolo. Dopo l'inserimento dell'articolo, la sua Descrizione sarà ripresa automaticamente dall'anagrafica. Se l'articolo ha Varianti, sarà possibile selezionare la variante desiderata dal tab Dati articolo.
 
-- **Codice/Variente articolo fornitore**: fa riferimento al codice che il fornitore utilizza per identificare l'articolo e all'eventuale variante; questo dato viene proposto in automatico se nell'anagrafica dell'articolo, tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-item/) è stato associato un articolo fornitore. 
+- **Codice/Variante articolo fornitore**: fa riferimento al codice che il fornitore utilizza per identificare l'articolo e all'eventuale variante; questo dato viene proposto in automatico se nell'anagrafica dell'articolo, tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-item/) è stato associato un articolo fornitore. 
 
 - **Unità di misura**: viene proposta l'unità di misura principale dell'articolo, ma nel caso in cui nell'anagrafica articolo siano codificate unità di misura alternative l'utente ha la possibilità di sceglierne un'altra.
 
@@ -60,7 +60,7 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 #### Pulsanti specifici 
 
-> **Evasione da ordine**: permette di di creare un ricevimento merci evadendo le righe di un ordine fornitore con la procedura [Evasione da ordini fornitori](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note).   
+> **Evasione da ordine**: permette di creare un ricevimento merci evadendo le righe di un ordine fornitore con la procedura [Evasione da ordini fornitori](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note).   
 >
 > **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisto. Il pulsante diventa attivo se il documento è salvato, ma non caricato.   
 > Con clic su questo pulsante si apre la form corrispondente dove inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante *Execute*. In questa form vengono riportati gli articoli che sono stati inseriti con natura *Imballo* e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
@@ -80,12 +80,12 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 
 - **Articolo**: visualizza l'articolo selezionato nella griglia superiore.   
 
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si seleziona una variante diversa dell'articolo.   
 
 - **Magazzino e causale**: permette di inserire il magazzino e la causale di riferimento da utilizzare per il carico degli articoli relativi in magazzino. Se la riga articolo è stata ripresa a un ordine di acquisto, saranno proposti il magazzino e la causale inseriti nell'ordine, altrimenti possono essere inseriti manualmente per ciascuna riga articolo. 
 
 :::tip Ricorda
-Se i campi di Magazzino e Causale non sono valorizzati, al momento del carico del ricevimento merci saranno utilizzati quelli inseriti nei parameti ordini fornitori, tab [Carico](/docs/configurations/parameters/purchase/purchase-orders-parameters).  
+Se i campi di Magazzino e Causale non sono valorizzati, al momento del carico del ricevimento merci saranno utilizzati quelli inseriti nei parametri ordini fornitori, tab [Carico](/docs/configurations/parameters/purchase/purchase-orders-parameters).  
 :::
 
 - **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.

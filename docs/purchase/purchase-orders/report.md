@@ -45,7 +45,7 @@ Ogni riga dell'elenco viene occupata da un articolo dell'ordine.
 ### Portafoglio Ordini a Quantità
 
 Questa stampa serve a fornire una panoramica dettagliata e aggiornata degli ordini. Riporta una lista degli ordini fornitore evidenziandone le quantità già consegnate e quelle residue, ovvero ordinate ma non ancora consegnate; è particolarmente utile per il coordinamento logistico, poiché permette di vedere in modo chiaro quali e quante unità di prodotti devono essere ancora consegnate.       
-Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati. A questi si aggiuge la possibilità di effettuare un *ordinamento* per *Numero*, *Articolo*, *Data*, *Fornitore* o *Data merce pronta*.   
+Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati. A questi si aggiunge la possibilità di effettuare un *ordinamento* per *Numero*, *Articolo*, *Data*, *Fornitore* o *Data merce pronta*.   
 
 Il risultato è un elenco degli ordini, con indicati eventuali documenti di evasione, se esistenti, e per ogni articolo indicate le quantità ordinate, consegnate e residue.      
 
@@ -53,7 +53,7 @@ Il risultato è un elenco degli ordini, con indicati eventuali documenti di evas
 ### Portafoglio Ordini a Valore
 
 Questa stampa fornisce un riepilogo degli ordini ricevuti ma non ancora totalmente evasi, in base al valore monetario di ciascun ordine. Questo documento è particolarmente utile per i reparti di vendite, finanza e gestione strategica, poiché offre una visione chiara del fatturato potenziale legato agli ordini in corso.      
-Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati. A questi si aggiuge la possibilità di effettuare un *ordinamento* per *Numero*, *Articolo*, *Data*, *Fornitore* o *Data merce pronta*.   
+Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati. A questi si aggiunge la possibilità di effettuare un *ordinamento* per *Numero*, *Articolo*, *Data*, *Fornitore* o *Data merce pronta*.   
 
 Il risultato è un elenco degli ordini in cui, per ogni articolo vengono indicati i valori ordinati, consegnati e residui.       
 

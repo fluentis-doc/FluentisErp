@@ -83,11 +83,11 @@ Nel caso in cui l'ordine viene completato con la procedura [Evasione da ordine](
 
 - **Progetto**: usando l'help di campo si può collegare il documento a un progetto. Questa associazione funziona solo al livello della testata dell'articolo. Il progetto viene inserito automaticamente se il DDT è stato creato mediante evasione di un ordine che lo contiene.
 
-- **CUP/CIG**: se nelle informazioni fiscali dell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) esso è abilitato alla gestione di CIG e CUP, sarà possibile compilare questi dati nel documento. I campi sono posizionati sottola voce *Annotazioni fornitore*.
+- **CUP/CIG**: se nelle informazioni fiscali dell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) esso è abilitato alla gestione di CIG e CUP, sarà possibile compilare questi dati nel documento. I campi sono posizionati sotto la voce *Annotazioni fornitore*.
 
 - **Rif. FA**: posizionato sotto la voce *Nazione*. Viene usato dopo la creazione dello [storno](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) di una fattura per collegare manualmente le due fatture inserendo nella fattura di storno *numero*, *tipo* e *data* della fattura di origine.
 
-- **Reg. cont.**: osizionato sotto la voce *Nazione*. Riporta numero, data e protocollo della registrazione contabile derivata dalla contabilizzazione della fattura. 
+- **Reg. cont.**: posizionato sotto la voce *Nazione*. Riporta numero, data e protocollo della registrazione contabile derivata dalla contabilizzazione della fattura. 
 
 ### 2.3 Pagamenti
 
@@ -168,7 +168,7 @@ Nella griglia di risultati, l'utente ha poi la possibilità di:
  - Selezionare tutti o alcuni degli articoli proposti: per farlo basterà selezionare il flag presente all'inizio della riga articolo. La *Quantità da evadere* sarà automaticamente impostata uguale alla *Quantità residua*.
  - Selezionare alcuni articoli per una *quantità parziale*. In questo caso si dovrà andare a modificare la *Quantità da evadere*.
 
-Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nei DDT seezionati e li riporterà nella fattura.   
+Per completare la procedura bisognerà poi cliccare sul pulsante *Trasferimento*, che andrà a riprendere tutti i dati presenti nei DDT selezionati e li riporterà nella fattura.   
 
 :::tip Ricorda 
 Eventuali annotazioni inserite in testata del DDT (come *Nostro/Vostro riferimento*, *Note iniziali*) vengono riportate nella testata della Fattura solo nel caso di ripresa dei dati da un unico DDT.   
@@ -301,7 +301,7 @@ import InsertMode from './../../../import/sections/insert-mode.md'
 Per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.
 
 :::note Nota
-Se la fattura è stata creata mediante evasione di un ordine fornitoreo di un DDT di acquisto i seguenti dati saranno ripresi dal documento di partenza
+Se la fattura è stata creata mediante evasione di un ordine fornitore o di un DDT di acquisto i seguenti dati saranno ripresi dal documento di partenza
 :::
 
 ### 3.1 Dati obbligatori
@@ -382,7 +382,7 @@ Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
 - **Articolo**: riporta classe, codice e descrizione dell'articolo selezionato nella griglia.   
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.     
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si seleziona una variante diversa dell'articolo.     
 - **Note**: sono le note relative alla riga articolo, possono essere inserite anche tramite l'help note codificate. Saranno riportate in tutti i documenti generati da questo.   
 - **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento del carico degli articoli relativi in magazzino. I dati sono ripresi dai [Tipi fatture di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type) oppure dall'ordine fornitore o dal DDT, se la fattura deriva da evasione di un ordine o da valorizzazione DDT. Possono essere modificati manualmente per ciascuna riga articolo.   
 - **Ubicazione**: viene proposta in automatico se alla causale utilizzata è stata associata un'ubicazione nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates) oppure se l'articolo è stato inserito nella [Mappa ubicazioni per articolo](/docs/logistics/warehouse/location/item-location-map/). Può essere inserita o modificata manualmente.  

@@ -38,7 +38,7 @@ Se la *Data carico* non è valorizzata la registrazione di magazzino sarà creat
 
 ### Parametri
 
-Se alcune righe rticolo del DDT non hanno il magazzino e la causale per il carico, attraverso questa maschera l'utente ha la possibilità di scegliere il modo in cui trattare le eccezioni.
+Se alcune righe articolo del DDT non hanno il magazzino e la causale per il carico, attraverso questa maschera l'utente ha la possibilità di scegliere il modo in cui trattare le eccezioni.
 
 Le opzioni disponibili sono:
 

@@ -3,7 +3,7 @@ title: Nuova Richiesta di offerta
 sidebar_position: 3
 ---
 
-La form si apre tramite il percorso **Acquisti > Richiesta di Offerta > Nuova richiesta di offerta** oppure dal filtro di riceca Richieste di Offerta, mediante il pulsante Nuovo.
+La form si apre tramite il percorso **Acquisti > Richiesta di Offerta > Nuova richiesta di offerta** oppure dal filtro di ricerca Richieste di Offerta, mediante il pulsante Nuovo.
 
 ## *Come creare una richiesta di offerta*
 
@@ -32,7 +32,7 @@ I campi obbligatori per l'inserimento di una richiesta di acquisto sono i seguen
 
 - **Tipo**: è un campo obbligatorio. A seconda del [Tipo RDO](/docs/configurations/tables/purchase/purchase-offer-type) scelto, saranno attivate alcune funzionalità, quali ad esempio la *Gestione cespiti*. 
 - **Data/Anno**: di default viene proposta la data corrente, ma può essere modificata manualmente.  
-- **Numero**: poposto automaticamente in base al Tipo RDO scelto.   
+- **Numero**: proposto automaticamente in base al Tipo RDO scelto.   
 - **Fornitore**: contiene l'anagrafica contatto a cui viene richiesta l'offerta.                
 - **Versione**: contiene la versione dell'offerta; è possibile creare una nuova versione con il pulsante della ribbon bar **Nuova versione**.        
 
@@ -55,7 +55,7 @@ Tutti questi campi possono essere cancellati oppure modificati manualmente dall'
 ### 2.2 Dati facoltativi testata 
 
 - **Annotazioni**: questo campo viene ripreso dall'anagrafica fornitore o eventualmente dalla RDA, ma può essere inserito anche manualmente.             
-- **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore alrimenti può essere inserito manualmente.   
+- **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore altrimenti può essere inserito manualmente.   
 - **Note iniziali/finali**: si possono selezionare le note che sono state inserite in precedenza nella tabella che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*. Per questo l'utente deve effettuare doppio click sul campo *Note iniziali/finali* per aprire Help note codificate e selezionare i dati.
 - **Progetto**: usando l'help di campo si può collegare il documento a un progetto. Questa associazione funziona solo al livello della testata dell'articolo. Il progetto viene inserito automaticamente se la RDO è stata generata da una RDA che lo contiene. 
 - **Data conferma offerta**: permette di inserire la data in cui è stata confermata l'offerta, ma non è un dato obbligatorio; nella procedura di [Creazione ordine fornitore da Offerta fornitore](/docs/purchase/offer-request/procedures/order-creation) è possibile visualizzare e convertire anche le RDO non confermate, attivando l'apposito flag nell'area di filtro.  
@@ -121,7 +121,7 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 - **Prezzo**: il prezzo viene proposto dal listino inserito nell'anagrafica contatto; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Dati articolo*; lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi, se nell'anagrafica soggetto sono associati più listini in cascata. Attraverso il doppio click nel campo Listini l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito.    
 In assenza del listino, il dato proposto sarà ripreso dal costo ultimo di anagrafica articolo.    
 
-- **IVA**: è prioritario il dato inserito nel campo IVA dell'Anagrafica contatto. Se questo non è presente, viene proposto il valore presente nell'Anagrafica articolo, ma l'utente ha la possibilità di inserire un'altro dato. 
+- **IVA**: è prioritario il dato inserito nel campo IVA dell'Anagrafica contatto. Se questo non è presente, viene proposto il valore presente nell'Anagrafica articolo, ma l'utente ha la possibilità di inserire un altro dato. 
 
 - **Importo unitario**: viene calcolato in automatico al netto degli sconti.
 
@@ -131,7 +131,7 @@ In assenza del listino, il dato proposto sarà ripreso dal costo ultimo di anagr
 
 - **Data chiusura**: indica la data di chiusura dell'offerta; viene compilata automaticamente se al momento della [creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation) viene selezionato il flag di chiusura delle offerte. 
 
-- **Data stimata di consegna**: indica la data prevista per la consegna della merce. Viene proposta in automatico se la *Data prevista consegna*è stata valorizzata nel tab testata.
+- **Data stimata di consegna**: indica la data prevista per la consegna della merce. Viene proposta in automatico se la *Data prevista consegna* è stata valorizzata nel tab testata.
 
 - **Periodo di prevista consegna**: campo descrittivo libero in cui è possibile indicare il periodo di tempo previsto per la consegna della merce.
 
@@ -152,7 +152,7 @@ Nella griglia invece vengono proposti tutti gli sconti associati all'articolo, o
 All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
 >- **Articolo**: visualizza l'articolo selezionato nella griglia superiore.   
->- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.     
+>- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si seleziona una variante diversa dell'articolo.     
 >- **Nota**: sono le note relative alla riga articolo, possono essere inserite anche tramite l'help note codificate. Saranno riportate in tutti i documenti generati da questo.
 >- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento del carico degli articoli relativi in magazzino.    
 
@@ -163,7 +163,7 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 >- **Prezzo unità di misura alternativa**: se attivo indica che il prezzo inserito sulla riga articolo è riferito all'unità di misura alternativa e non a quella principale.    
 
 >- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.   
->- **Richiesta di acquisto**: se l'offerta è stato creata da RDA viene riportata la [Richiesta d'acquisto](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request) di riferimento.   
+>- **Richiesta di acquisto**: se l'offerta è stata creata da RDA viene riportata la [Richiesta d'acquisto](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request) di riferimento.   
 
 
 #### 3.4 Extra data {#extra-data}
