@@ -40,7 +40,7 @@ Questo tab è costituito da una testata e da 4 diverse griglie, la prima delle q
 
 **Magazzino**: rappresenta il codice del magazzino sul quale effettuare la registrazione;  
 **Causale di magazzino**: dato obbligatorio al fine dell'inserimento dei movimenti di magazzino. Si seleziona utilizzando l'apposita combo box, nella quale vengono proposte solo le causali legate al magazzino selezionato.       
-**Data registrazione**: viene proposta in automatico uguale alla data corrente e identifica nello specifico il giorno in cui vengono effettuati i movimenti di magazzino che saranno poi inseriti nell'apposita griglia, quindi può anche essere modificata impostando per esempio una data precedente alla data corrente. Questa data deve però essere sempre compresa tra le date di Inizio e Fine Periodo inserite nel primo tab dei *Parametri iniziali di magazzino*;   
+**Data registrazione**: viene proposta in automatico uguale alla data corrente e identifica nello specifico il giorno in cui vengono effettuati i movimenti di magazzino che saranno poi inseriti nell'apposita griglia; quindi può anche essere modificata impostando per esempio una data precedente alla data corrente. Questa data deve però essere sempre compresa tra le date di Inizio e Fine Periodo inserite nel primo tab dei *Parametri iniziali di magazzino*;   
 **Numero della registrazione**: viene proposta in automatico; è un progressivo per magazzino che si azzera ogni giorno, ripartendo automaticamente dal numero 1. Entrambi i dati sono editabili dall'utente;
 
 :::note Nota
@@ -199,7 +199,7 @@ Le colonne presenti nella griglia sono le seguenti:
 
 **Annullato**: indica che il Serial Number si trova in stato annullato;
 
-**Chiuso forazatamente**: indica che il Serial Number è stato chiuso forzatamente;
+**Chiuso forzatamente**: indica che il Serial Number è stato chiuso forzatamente;
  
 **Lotto**: indica il numero di lotto corrispondente a quel Serial Number.
 
@@ -242,7 +242,7 @@ Si rinvia alla documentazione relativa agli [Extra Data](/docs/configurations/ut
 ## Contropartita
 
 Questo tab è esattamente identico al tab *Registrazione*, ma risulta attivo solo se la causale di magazzino impostata nel tab *Registrazione* presenta un magazzino e una causale di contropartita.  
-Le causali di contropartita vengono impostate nel caso in cui si voglia gestire un doppio movimento di magazzino, con una sola registrazione. Quindi è possibile, nella tabella delle causali di magazzino, impostare una causale di carico come contropartita di una causale di scarico e vicevesa.
+Le causali di contropartita vengono impostate nel caso in cui si voglia gestire un doppio movimento di magazzino, con una sola registrazione. Quindi è possibile, nella tabella delle causali di magazzino, impostare una causale di carico come contropartita di una causale di scarico e viceversa.
 
 Nel tab *Contropartita* vengono quindi riportati esattamente tutti i dati impostati all'interno del tab *Registrazione*, con la possibilità per l'utente di modificare solo alcuni dei dati di testata: Documento interno, Documento di riferimento, Commessa di vendita.
 
