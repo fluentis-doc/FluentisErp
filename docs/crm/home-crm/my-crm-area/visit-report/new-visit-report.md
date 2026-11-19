@@ -24,7 +24,7 @@ I campi principali sono:
 4. **Oggetto**: motivazione della visita al cliente.  
 5. **Nota**: campo libero per ulteriori note.  
 6. **Contatto/Cliente**: indica il contatto CRM o il cliente; il campo cambia label e oggetto a seconda del flag (*Contatto CRM* o *Conto Fluentis*).  
-7. **Partecipanti**: indicare i soggetti che hanno partecipato all’incontro.  
+7. **Partecipanti**: indicare i soggetti che hanno partecipato all’incontro. Con doppio click è possibile aprire un widget, che permette la ricerca dei riferimenti del contatto, e degli utenti di Fluentis. E' possibile selezionare più righe in entrambe le tab utilizzando il tasto shift + selezione ed al termine confermare la selezione con il bottone "Seleziona". In questo modo il campo Partecipanti verrà auto popolato. Rimane comunque la possibilità di scrivere manualmente. 
 8. **Agente**: riferimento all’anagrafica agenti; indicare l’agente presente all’incontro, se disponibile.  
 9. **Stato Visit report**: indica lo stato in cui si trova il visit report, a scopo descrittivo.
 Le voci presenti nell'elenco sono configurabili nell'apposita tabella Stati Visit report.
