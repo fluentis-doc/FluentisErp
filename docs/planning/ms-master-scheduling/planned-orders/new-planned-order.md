@@ -108,7 +108,7 @@ La griglia risulta già compilata nel caso in cui l'ordine pianificato provenga 
 **Tempo operaio**: è il tempo impiegato dall'operaio per realizzare questa fase, riferito alla quantità di pezzi per fase;  
 **Numero operai**: è il numero di operai coinvolti in questa fase;  
 **Conto terzista/descrizione terzista**: con doppio click sulla casella si apre il help per poter selezionare il conto e sottoconto del relativo terzista. Questa casella è attiva solo nel caso in cui la fase sia designata come fase *Esterna*. Da notare che il *terzista* viene anch'esso ripreso dalla fase di lavorazione inserita nel ciclo di lavorazione dell'articolo.  
-**Decrizione centro di lavoro**: indica la descrizione del centro di lavoro.       
+**Descrizione centro di lavoro**: indica la descrizione del centro di lavoro.       
 
 ### Fasi - Proprietà
 
@@ -169,7 +169,7 @@ In questo tab, costituito principalmente da una griglia, è possibile definire q
 
 ## Controllo qualità
 
-In questo tab, costituito principalmente da una griglia, è possibile visualizzare i dettagli delle prove pianificate di controllo per la fase/sottofasse.
+In questo tab, costituito principalmente da una griglia, è possibile visualizzare i dettagli delle prove pianificate di controllo per la fase/sottofase.
 
 ## Nota fase
 

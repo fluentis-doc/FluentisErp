@@ -8,7 +8,7 @@ sidebar_position: 6
 La form si compone di una griglia principale dove premendo il tasto **Ricerca** si ottiene l'elenco delle simulazioni salvate. Selezionando una di queste, vengono caricati i relativi dati nelle varie tab del form.     
 E' possibile eliminare una simulazione selezionandola e premendo il tasto **Cancella**.
 
-Tutti i dati relativa alla simulazione selezionata, sono presenti nei seguenti seguenti tab:
+Tutti i dati relativi alla simulazione selezionata, sono presenti nei seguenti tab:
 
 ### Parametri
 
