@@ -17,7 +17,7 @@ import Link from '@docusaurus/Link';
     <div className="card">
 ###     MS - Matser Scheduling
         <p><Link to="/docs/planning/ms-master-scheduling/general-schedule" className="bold-link">Pianificazione generale</Link></p>
-        <p>Opera a capacità infinita e permette di schedulare operazioni sia *al più presto*che *al più tardi*. Questi approcci flessibili consentono una gestione ottimizzata delle esigenze produttive e dei tempi di lavorazione.</p>
+        <p>Opera a capacità infinita e permette di schedulare operazioni sia *al più presto* che *al più tardi*. Questi approcci flessibili consentono una gestione ottimizzata delle esigenze produttive e dei tempi di lavorazione.</p>
         <p><Link to="/docs/planning/ms-master-scheduling/mrp" className="bold-link">M.R.P.</Link></p>
         <p>Permette di analizzare la disponibilità di materiali e risorse, ottimizzando la gestione di scorte e produzione mediante suggerimenti per anticipare, integrare o annullare ordini. Questo sistema migliora l'efficienza operativa riducendo i livelli di magazzino.</p>
         <p><Link to="/docs/planning/ms-master-scheduling/finite-capacityscheduling" className="bold-link">Schedulazione a capacità finita</Link></p>
