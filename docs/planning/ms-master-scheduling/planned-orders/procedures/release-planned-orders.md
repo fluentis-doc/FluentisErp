@@ -35,7 +35,7 @@ Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **
 > **Rilascio**: questo pulsante si attiva solamente se viene selezionata almeno una riga nella griglia dei risultati da rilasciare; cliccando su questa funzionalità il sistema eseguirà:
 il rilascio degli *ordini pianificati di produzione* in *ordini di produzione lanciati o esecutivi*, a seconda di come siano stati impostati i parametri all'interno dei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters); il rilascio degli *ordini pianificati di acquisto* in *Richieste d'Acquisto* *autorizzare* oppure *non autorizzate*, a seconda di come si sia scelto di impostare il parametri all'interno dei  [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters); il rilascio degli *ordini pianificati di conto lavoro* in *ordini di Conto Lavoro*.                  
 > **Ricalcola fattibilità**: permette di visualizzare (tramite colori) la fattibilità degli ordini pianificati di produzione e conto lavoro selezionati. I colori da visualizzare e l'attivazione della funzionalità sono parametrizzabili nei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters).       
-> **Dettaglio fattibilità**: permette di otterene l'analisi dettagliata per ogni singolo materiale necessario dell'ordine pianificato di produzione e conto lavoro selezionata.        
+> **Dettaglio fattibilità**: permette di ottenere l'analisi dettagliata per ogni singolo materiale necessario dell'ordine pianificato di produzione e conto lavoro selezionata.        
 > **Apri ricerca ordini di produzione**: tramite questo pulsante sarà possibile aprire la Ricerca Ordini di Produzione filtrati con gli stessi criteri utilizzati nella sezione di filtro di questa finestra. Ad esempio se si filtrano gli ordini pianificati in questa schermata in base al numero di commessa 3 dell'anno 2018, la finestra di ricerca ordini di produzione di aprirà già filtrata per la commessa 3 dell'anno 2018.
 
 *Campi specifici*:
@@ -48,13 +48,13 @@ il rilascio degli *ordini pianificati di produzione* in *ordini di produzione la
 **Data di inizio prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere inviato al fornitore l'ordine di acquisto che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di previsto inizio della prima fase di lavorazione del ciclo dell'articolo;  
 **Data di fine prevista**: se si tratta di ordine pianificato di acquisto o di conto lavoro questa data rappresenta la data in cui deve essere ricevuta la fornitura e quindi coinciderà con la data di previsto ricevimento della riga dell'ordine fornitore che verrà successivamente generato con il rilascio dell'ordine stesso; se si tratta di ordine pianificato di produzione questa data rappresenta la data di prevista fine dell'ultima fase di lavorazione del ciclo dell'articolo;  
 **Quantità confermata**: sarà diversa da zero solamente se l'elaborazione è avvenuta tramite l'MRP; 
-**Cliente conto, sottoconto e decsrizione**: indica il cliente collegato nel caso degli ordini di produzione;  
-**Fornitore conto, sottoconto e decsrizione**: indica il fornitore collegato nel caso degli ordini di acquisto e di conto lavoro;  
+**Cliente conto, sottoconto e descrizione**: indica il cliente collegato nel caso degli ordini di produzione;  
+**Fornitore conto, sottoconto e descrizione**: indica il fornitore collegato nel caso degli ordini di acquisto e di conto lavoro;  
 **Anno/Numero/Tipo ordine cliente**: rappresenta l'ordine cliente da cui è stata generata la commessa da cui è stato schedulato l'ordine pianificato in oggetto.
 
 Dopo aver individuato gli ordini che si vogliono rilasciare, per procedere con il **Rilascio** bisognerà utilizzare uno dei pulsanti presenti nella *ribbon bar*, in base al tipo ordine che si deve rilasciare: **Rilascio Ordini Pianificati di produzione**, **Rilascio ordini pianificati di Acquisto** oppure **Rilascio ordini pianificati di Conto Lavoro**. Questi pulsanti si abiliteranno rispettivamente a quanto inserito nel campo **Rilascio ordini pianificati a**.
 
-E' anche possibile entrare in **Visualizzazione dei dettagli dell'ordine pianificato** presente nella griglia, facendo semplicemente doppio click con il mouse sopra la riga dell'ordine pianficato che si desidera visualizzare, prima di procedere al rilascio. 
+E' anche possibile entrare in **Visualizzazione dei dettagli dell'ordine pianificato** presente nella griglia, facendo semplicemente doppio click con il mouse sopra la riga dell'ordine pianificato che si desidera visualizzare, prima di procedere al rilascio. 
 
 ## Parametri
 
@@ -75,7 +75,7 @@ Nella sezione è possibile:
 - impostare, tramite l'apposita combo box, il **Tipo di richiesta di acquisto** che deve essere generata dal rilascio ordine pianificati di acquisto. In questa combo box viene proposto automaticamente il tipo richiesta di acquisto già impostato nei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters) nella sezione Parametri per il rilascio degli ordini pianificati;      
 - attivando il flag **Proprietà approvvigionamento da Parametri MRP articolo** la procedura creerà le *richieste di acquisto* inserendo la priorità indicata nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del singolo articolo; mentre se non è attivo le *richieste di acquisto* verranno create con la priorità indicata nella commessa a cui sono legate; 
 - **Rilascio richieste d'acquisto autorizzate**: se attivo, permette di fare in modo che le richieste di acquisto generate tramite il rilascio degli ordini pianificati di acquisto siano create con il flag di *Autorizzato* attivato automaticamente. Diversamente, l'utente che deve generare ordini fornitori da RDA sarà costretto ad autorizzare tutte le righe della richiesta di acquisto prima di poter generare un ordine da essa. È possibile comunque autorizzare solo alcune delle righe della RdA e quindi procedere alla generazione ordini fornitori partendo solo dalle righe autorizzate;    
-- fare in modo, attivando il flag **Arrotonda richiesta di acquisto**',che la procedura di rilascio ordine pianificato di acquisto arrotondi all'intero superiore la quantità che viene inserita nella riga della richiesta di acquisto che viene generata dal rilascio degli ordini pianificati di acquisto, nel caso in cui siano presenti quantità con decimali;  
+- fare in modo, attivando il flag **Arrotonda richiesta di acquisto**, che la procedura di rilascio ordine pianificato di acquisto arrotondi all'intero superiore la quantità che viene inserita nella riga della richiesta di acquisto che viene generata dal rilascio degli ordini pianificati di acquisto, nel caso in cui siano presenti quantità con decimali;  
 - decidere il metodo di raggruppamento: attivando infatti il flag **Raggruppa al più presto**, la procedura di rilascio effettua un raggruppamento di ordini pianificati di acquisto generati per lo stesso articolo; nella casella **Per un periodo in giorni di** si imposta il numero di giorni di range entro il quale può essere effettuato il raggruppamento, considerando le date di previsto ricevimento degli articoli, quindi le date di fine ordine pianificato di acquisto;  
 - decidere, nel caso non sia presente il fornitore nell'ordine pianificato di acquisto, se **Accettare gli ordini senza il fornitore**, **Tralasciare gli ordini senza il  fornitore** oppure **Accettare come fornitore il seguente conto** specificato nelle apposite caselle.
 
@@ -89,7 +89,7 @@ Nella sezione è possibile:
 - decidere, nel caso non sia presente il terzista nell'ordine pianificato di conto lavoro, se **Tralasciare gli ordini senza il terzista** oppure **Accettare come terzista il seguente conto** specificato nelle apposite caselle.
 
 *Pulsante specifico*:  
-> **Salva le modifiche**: consente di salvare  i parametri come sono stati impostati.
+> **Salva le modifiche**: consente di salvare i parametri come sono stati impostati.
 
 ### Ripristino
 
