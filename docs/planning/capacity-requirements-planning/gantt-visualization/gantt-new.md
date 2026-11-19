@@ -19,7 +19,7 @@ Permette di inserire i dati di testata della simulazione Gantt.
 > **Nome della simulazione**: indica il nome associato alla simulazione Gantt (di default viene proposto il nome dell'utente e data ed ora di creazione);     
 > **Tipo**: indica il codice del [Tipo Simulazione Gantt](/docs/configurations/tables/production/crp-gantt-simulation-type) (si vedono solo quelli non di tipo Snapshot);           
 > **Descrizione** tipo: indica la descrizione del [Tipo Simulazione Gantt](/docs/configurations/tables/production/crp-gantt-simulation-type);        
-> **Blocca documenti**: indica che tutti documenti che sono inclusi nella creazione della simulazione Gantt vengono bloccati. Quindi non possono essere modificati fino a quando non vengono non viene resa valida la simulaizone rilsciando le modifiche effettuate sui documenti;  
+> **Blocca documenti**: indica che tutti documenti che sono inclusi nella creazione della simulazione Gantt vengono bloccati. Quindi non possono essere modificati fino a quando non vengono non viene resa valida la simulazione rilasciando le modifiche effettuate sui documenti;  
 > **Numero**: indica il numero della simulazione Gantt e dipende dalla numerazione associata al [Tipo Simulazione Gantt](/docs/configurations/tables/production/crp-gantt-simulation-type);         
 > **Simulazione Valida**: indica che la simulazione sia è stata confermata e quindi le modifiche effettuate nel Gantt sono state riportate nei documenti collegati;      
 > **Data inserimento**: indica la data di inserimento della simulazione Gantt;     
@@ -29,14 +29,14 @@ Permette di inserire i dati di testata della simulazione Gantt.
 
 Permette di ricercare i documenti che saranno utilizzati per la creazione del **Gantt**.     
 La forma si presenta composta da un'area superiore, nella quale sono inseriti i filtri per la ricerca dei vari documenti, con al di sotto, sulla sinistra un elenco che visualizza tutti i documenti corrispondenti ai filtri inseriti e sulla destra l'elenco dei documenti che saranno inseriti nel **Gantt**.       
-Tra i filtri è possibile utilizzare quello relativo al *Tipo documento* che permette di selezionare solo: *Ordini pianificati*, *Richieste di acquisto*, *Ordine di produzione* o *Ordine di conto lavoro*; inoltre, è possibile visualizzarli per *commessa* o per *documento* a seconda dell esigenze.       
+Tra i filtri è possibile utilizzare quello relativo al *Tipo documento* che permette di selezionare solo: *Ordini pianificati*, *Richieste di acquisto*, *Ordine di produzione* o *Ordine di conto lavoro*; inoltre, è possibile visualizzarli per *commessa* o per *documento* a seconda delle esigenze.       
 I documenti evasi vengono considerati solamente se viene attivato il rispettivo flag **Considera documenti evasi**.      
 
 Le griglie sottostanti presentano i documenti con una struttura ad albero, permettendo all'utente di selezionare solo quello che gli interessa semplicemente spuntando la casella corrispondente. Successivamente tramite l'apposito pulsante **Traferisci selezionati** oppure *Drag & Drop* l'utente può aggiungerli all'elenco di quelli da considerare per la creazione del **Gantt**.       
 
 *Pulsanti specifici*:
 
-> **Ricerca**: permette di ricercare i dcoumenti sulla base dei filtri inseriti;          
+> **Ricerca**: permette di ricercare i documenti sulla base dei filtri inseriti;          
 > **Crea**: permette di creare il **Gantt** sulla base dei documenti inseriti nella griglia di destra;     
 > **Seleziona**: permette di spuntare il documento selezionato;        
 > **Seleziona tutti**: permette di spuntare tutti i documenti presenti nella griglia;       
@@ -51,9 +51,9 @@ Le griglie sottostanti presentano i documenti con una struttura ad albero, perme
 In questo tab viene visualizzato il Gantt in base ai criteri di ricerca impostati nel tab precedente. Il tab si compone di 2 sezioni, a loro volta divise in 2 pannelli ciascuna.
 
 - **Sezione superiore**: nella sezione superiore l'utente può visualizzare nella parte sinistra della sezione la lista dei documenti che sono stati selezionati con il check box nel tab precedente, uno sotto l'altro in una struttura ad albero, con un'indentazione basata sui legami che i documenti presentano reciprocamente.      
-Se la commessa di produzione presenta più di un articolo, al di sotto della commessa di produzione viene presentato il codice dell'articolo (Arrticolo e poi classe, codice e descrizione dello stesso).         
+Se la commessa di produzione presenta più di un articolo, al di sotto della commessa di produzione viene presentato il codice dell'articolo (Articolo e poi classe, codice e descrizione dello stesso).         
 In ciascuna di queste righe è visibile anche la data di inizio del documento e la data di fine.      
-Se la riga è evidenziata in rosso significa che è stata evasa oppura che nella realtà quella riga non esiste più.        
+Se la riga è evidenziata in rosso significa che è stata evasa oppure, che nella realtà, quella riga non esiste più.        
 A ciascuna di queste righe corrisponde una barra orizzontale posta nella parte grafica della sezione superiore, che raffigura appunto graficamente i documenti dettagliati nella zona di sinistra di questa sezione.       
 Le barre orizzontali coprono un arco temporale che può essere ampliato o ridotto, usando gli opportuni pulsanti della ribbon bar chiamati **Zoom Out** e **Zoom In**, andando in dettaglio di un singolo giorno e visualizzando quindi gli impieghi addirittura a livello di ora/minuto. Inoltre, con un doppio click sulla barra orizzontale che rappresenta un documento si apre automaticamente il documento stesso, sempre in accordo con i diritti dell'utente che sta eseguendo questa operazione.     
 Le barre orizzontali possono essere spostate sul grafico con un semplice drag and drop; l'operazione consente di spostare le date dei documenti in maniera assolutamente dinamica.   
@@ -74,7 +74,7 @@ Tramite la form **Visualizza fasi di lavoro** è possibile selezionare le fasi d
 > **Salva**: permette di salvare le modifiche effettuate;       
 > **Salva snapshot**: permette di salvare le modifiche effettuate creando uno snapshot (un figlio) partendo dalla simulazione principale;      
 > **Rollback simulazione**: permette di riportare la simulazione allo stato originale annullando tutte le modifiche;         
-> **Scegli stato avanzamento**: permette di segliere la modalità con la quale deve essere visualizzato lo stato di avanzamento dei singoli documenti all'interno del **Gantt**; queste possono essere: *in base al tempo trascorso*, *in base al tempo trascorso e alla quantità*, *in base alla quantità prodotta* oppure nessuno;      
+> **Scegli stato avanzamento**: permette di scegliere la modalità con la quale deve essere visualizzato lo stato di avanzamento dei singoli documenti all'interno del **Gantt**; queste possono essere: *in base al tempo trascorso*, *in base al tempo trascorso e alla quantità*, *in base alla quantità prodotta* oppure nessuno;      
 > **Applica**: permette di rendere esecutive le modifiche applicate nella simulazione **Gantt** (il pulsante si abilità dopo il salvataggio);      
 > **Esplodi l'albero**: permette di espandere l'albero della simulazione fino ad arrivare al dettaglio della fase;      
 > **Implodi l'albero**: permette di chiudere l'albero della simulazione;     
