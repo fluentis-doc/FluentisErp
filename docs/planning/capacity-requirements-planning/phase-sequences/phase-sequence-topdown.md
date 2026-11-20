@@ -28,7 +28,7 @@ Non è possibile modificare le informazioni di una fase già dichiarata in produ
 :::
 
 Nella parte inferiore della form sono presenti i seguenti campi:
-> **Quantità impegno**: riporta il totale delle quantita impegno delle righe selezionate dall'utente;         
+> **Quantità impegno**: riporta il totale delle quantità impegno delle righe selezionate dall'utente;         
 > **Unità di misura Tempi**: indica l'unità di misura del tempo con la quale si vuole visualizzare il valore presente in **Totale tempo**;     
 > **Totale tempo**: riporta il totale del tempo (Tempo macchina + Tempo manodopera + Tempo attrezzaggio) delle righe selezionate dall'utente.
 
