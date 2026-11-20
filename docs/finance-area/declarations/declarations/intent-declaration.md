@@ -47,9 +47,9 @@ abilita la possibilità di inserire dichiarazioni d'intento riferite ad un grupp
 
 **Per inserire le dichiarazioni di intento all'interno del registro scrivere direttamente nella griglia inferiore.**
 
-**Data Protocollo**: campo non obbligatorio attivo solo per le dichiarazioni del registro di tipo clienti, inserire la data attribuita dal cliente nellla dichiarazione di intento;
+**Data Protocollo**: campo non obbligatorio attivo solo per le dichiarazioni del registro di tipo clienti, inserire la data attribuita dal cliente nella dichiarazione di intento;
 
-**Prot**: campo non obbligatorio attivo solo per le dichiarazioni del registro di tipo clienti, inserire il protocollo attribuito dal cliente nellla dichiarazione di intento;
+**Prot**: campo non obbligatorio attivo solo per le dichiarazioni del registro di tipo clienti, inserire il protocollo attribuito dal cliente nella dichiarazione di intento;
 
 **Data Ns. Protocollo**: data protocollo attribuito internamente all'atto della registrazione della dichiarazione di intento nel registro, tale data vale come campo di riferimento per la validità iniziale per l'applicazione nei documenti di acquisto/vendita; (utilizzato anche se valorizzati i campi "rif identificativo e "rif progressivo") Si consiglia di valorizzarlo comunque anche nella gestione delle fatture clienti per la gestione tag della fattura elettronica.
 
