@@ -30,7 +30,7 @@ U gornjem delu nalaze se sledeća polja:
 
 **Kontakt/Klijent**: u ovom polju treba navesti CRM kontakt ili klijenta na kojeg se odnosi izveštaj o poseti. Oznaka polja i sadržaj polja menjaju se u zavisnosti od toga da li je postavljena oznaka na „CRM kontakt“ ili na „Fluentis konto“;
 
-**Učesnici**: u ovom polju, koje se slobodno popunjava, treba navesti subjekte koji su učestvovali na sastanku;
+**Učesnici**: navedite osobe koje su učestvovale na sastanku. Dvostrukim klikom otvara se widget koji omogućava pretraživanje kontakata i korisnika sistema Fluentis. Na obe kartice moguće je izabrati više redova pomoću tastera Shift i označavanjem željenih redova, a zatim potvrditi izbor klikom na dugme „Izaberi”. Na taj način polje Učesnici automatski će se popuniti. I dalje postoji mogućnost ručnog unosa.
 
 **Predstavnik**: u ovom polju, koje se odnosi na Fluentis šifarnik agenata, potrebno je navesti agenta koji je prisustvovao sastanku.
 
