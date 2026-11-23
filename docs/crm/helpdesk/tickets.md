@@ -35,7 +35,7 @@ Questa tab è composta da due campi: **Lingua** (compilato automaticamente) e **
 
 ## Utenti 
 
-In questa tab vengono riportati gli operatori che che effettuano le attività sul ticket; alla creazione di un nuovo ticket vengono compilati in automatico i campi **Operatore** e **Prima data assegnata**.     
+In questa tab vengono riportati gli operatori che effettuano le attività sul ticket; alla creazione di un nuovo ticket vengono compilati in automatico i campi **Operatore** e **Prima data assegnata**.     
 
 ## Stima/Sforzo
 
