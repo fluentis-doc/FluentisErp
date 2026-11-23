@@ -13,7 +13,7 @@ Il calendario delle spedizioni si trova in: Logistica > Spedizioni > Calendario
 Il **calendario delle spedizioni** mostra tutte le spedizioni inserite a sistema, raggruppate in vista timeline in base a autista/vettore/automezzo/cliente/nessun raggruppamento.              
 All'apertura l'intervallo visualizzato sarà data odierna + 7 giorni se sono presenti spedizioni in tal periodo, altrimenti verrà mostrato il primo intervallo successivo in cui sono presenti spedizioni. 
 
-Oltre alle spedizioni, nel calendario sono mostrati i periodi di inattività degli automezzi e dei vettori. 
+Oltre alle spedizioni, nel calendario sono mostrati i periodi di inattività degli automezzi e dei vettori.
 
 Nella colonna a sinistra sono presenti i dati relativi a **autista/vettore/automezzo/cliente in base al raggruppamento scelto**, e nella griglia del calendario sono posizionate le varie spedizioni.            
 Anche se la durata della spedizione è anche solo di un'ora, nel calendario questa verrà mostrata come giornaliera, per facilitarne la visualizzazione. Nel caso si volesse invece avere una vista più puntuale, dalla ribbon bar cliccare su **Vista timeline oraria**.                    
