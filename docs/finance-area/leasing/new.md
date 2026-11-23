@@ -15,7 +15,7 @@ Richiamando un Tipo Leasing vengono proposti i dati relativi nei campi per l'ali
 
 Devono essere inseriti i campi relativi a:
 
-**Conto/ sottoconto Banca**: relativo alla banca che sarà utilizzta nelle scritture di pagamento dei canoni;
+**Conto/ sottoconto Banca**: relativo alla banca che sarà utilizzata nelle scritture di pagamento dei canoni;
 
 **Conto / sottoconto società concedente**: relativo al conto del fornitore (società di leasing concedente) che sarà utilizzato nelle scritture relative ai canoni pagati;
 
@@ -69,7 +69,7 @@ In questa sezione è possibile inserire manualmente il piano di ammortamento dei
 
 **Costo rata**, rappresenta ad esempio la quota addebitata a titolo di spese di incasso e sarà contabilizzata anch'essa nello specifico conto definito nella tabella Tipi Leasing;
 
-**Totale**: non editabile calcola il totale delle coponenti della rata;
+**Totale**: non editabile calcola il totale delle componenti della rata;
 
 **Contabilizzata**: il flag si attiva quando viene eseguita la contabilizzazione del canone e influenza sia il calcolo del debito residuo sia il calcolo del risconto del maxicanone;
 
@@ -95,7 +95,7 @@ Entrambe le procedure sono ripristinabili anche da questa posizione con le consu
 
 ### Calcola piano di ammortamento
 
-Premendo questo tasto la procedura, sulla base dei campi principale della testata ovvero data stipula, numero rate valore del bene, tasso di interesse (tass interno di attualizzazione)  andrà a calcolare il piano di ammortamento con il metodo della rata costante (ammortamento alla francese).
+Premendo questo tasto la procedura, sulla base dei campi principale della testata ovvero data stipula, numero rate valore del bene, tasso di interesse (tasso interno di attualizzazione)  andrà a calcolare il piano di ammortamento con il metodo della rata costante (ammortamento alla francese).
 
 :::tip ATTENZIONE:
  non prende in considerazione il maxicanone inserito in testata che va considerato come un canone iniziale anticipato ulteriore (spesso pari ad uno o due canoni in termini di valore).
