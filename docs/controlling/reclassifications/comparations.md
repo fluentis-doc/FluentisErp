@@ -34,7 +34,7 @@ Nella griglia dei ***Dettagli*** avremo i seguenti campi:
 
 Una volta salvate queste impostazioni, nella Scheda degli ***Scostamenti*** vedremo il risultato della comparazione. In particolare avremo le seguenti opzioni:
 
-- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destro si attiverà la possibilità di impostare su quale quale colonna (quella vicina o su una fissa) calcolare lo scostamento
+- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destro si attiverà la possibilità di impostare su quale colonna (quella vicina o su una fissa) calcolare lo scostamento
 
 - *Visualizza dati di dettaglio*: mostrerà il dettaglio dei sottoconti, o centri, che valorizzano il singolo nodo del modello
 
@@ -62,7 +62,7 @@ Nella griglia dei ***Dettagli*** avremo i seguenti campi:
 
 Una volta salvate queste impostazioni, nella Scheda degli ***Scostamenti*** vedremo il risultato della comparazione. In particolare avremo le seguenti opzioni:
 
-- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destrosi attiverà la possibilità di impostare su quale quale colonna (quella vicina o su una fissa) calcolare lo scostamento
+- *Visualizzazione degli scostamenti*: consente di vedere lo scostamento percentuale tra le riclassificazioni inserite. Sul lato destrosi attiverà la possibilità di impostare su quale colonna (quella vicina o su una fissa) calcolare lo scostamento
 
 - *Visualizza dati di dettaglio*: mostrerà il dettaglio dei sottoconti, o centri, che valorizzano il singolo nodo del modello
 
