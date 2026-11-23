@@ -60,7 +60,7 @@ Per la gestione del template sono disponibili le seguenti sezioni:
 - **Home**: questa Tab contiene i pulsanti per le funzionalità di base riguardanti l’editing del testo del Template, quali le dimensioni del carattere, gli elenchi, l’allineamento del testo, ecc.
 Richiama le funzioni di base degli editor di testo più diffusi, quali Microsoft Word.
 
-- **Insert**: euesta Tab contiene i pulsanti per inserire alcuni elementi al Template:
+- **Insert**: questa Tab contiene i pulsanti per inserire alcuni elementi al Template:
 > - *Inserisci tabella*: permette l’inserimento di una tabella all’interno del foglio di lavoro;
 > - *Allinea Immagine*: permette di inserire un’immagine nel corpo del documento;
 > - *Immagine*: permette di inserire un’immagine nel corpo del documento;
