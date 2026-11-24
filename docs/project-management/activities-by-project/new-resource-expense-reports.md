@@ -20,7 +20,7 @@ Per garantire il corretto funzionamento sono obbligatori i seguenti dati in test
 
 **Tipo nota spese**: tipologia del documento di nota spese da utilizzare 
 
-**Periodo competenza**: indica il periodo di competenza delle spese, che solitamente si identitifica come il mese del cedolino paga in cui verranno gestite le spese.
+**Periodo competenza**: indica il periodo di competenza delle spese, che solitamente si identifica come il mese del cedolino paga in cui verranno gestite le spese.
 
 **Da data / A data**: indica il range di date utilizzate per ricercare ed includere le spese in base alla data spesa, presenti nei vari documenti. Possono essere anche diverse dal periodo di competenza 
 
