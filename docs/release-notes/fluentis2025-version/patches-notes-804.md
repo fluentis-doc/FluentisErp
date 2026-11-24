@@ -4,6 +4,29 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.033 - 23/11/2026
+
+> -	BizLink - Item_SalesPriceList: tolta l’obbligatorietà di campi non necessari e impostato il valore di default “None” sulla colonna “Tipo scaglione” (#TT04829/26).
+> -	CO - elaborazione periodi e procedura ‘Storico ammortamenti’ revisione calcolo residui e revisioni casi di vendita totale. (#TT04824/26)
+> -	CRM - invio e-mail da CRM, in caso di errore in invio causa indirizzo destinatario errato e simili, nel log di bizlink verrà visualizzata una riga con i dati del contatto-campagna da cui è stata inviata la e-mail, per facilitare i controlli (TT04881/26)
+> -	FI - Corretta la stampa dei modelli Intrastat vendite e acquisti: i dati relativi alla Provincia di origine e al Paese di origine (colonne 14 e 15) vengono ora riportati nel report INTRA1 Bis. (#TT05049/26)
+> -	FI - Corretta la stampa Lista Partite: attivando il raggruppamento per scadenza, le partite vengono ora ordinate correttamente in ordine cronologico crescente (#TT05021/26)
+> -	FI - Movimenti contabili: migliorata la gestione dei filtri nella griglia dei risultati della ricerca dei movimenti contabili. Modifications inside form can have impact on profiles. (#TT05038/26).
+> -	FI - revisione assegnazione centro di costo negli ammortamenti cespiti (#TT04876/26)
+> -	FI- Ottimizzazione filtri di estrazione dati nella web api ExportLedgerAccounts (#TT03430/26)
+> -	MES - Manufacturing Execution System: Risolta anomalia che impediva il corretto rollback parziale di un singolo articolo quando più articoli venivano raggruppati in un unico ordine di conto lavoro. (#TT04660/26)
+> -	MES - MES Solution: nell’elenco delle “Fasi in lavorazione” e nell’elenco delle “Dichiarazioni precedenti” è stata aggiunta la colonna del riferimento del “Lotto articolo” prenotabile nell’Ordine di produzione associato. (#TT04973/26)
+> -	MS - Generazione calendario capacità produttive: corretta l’anomalia che non considerava la Priorità per il calcolo disponibilità calendario tra Numero macchine e Numero operai. (#TT05000/26)
+> -	PM - corretto e migliorato funzionamento extradata nelle griglie di ricerca dell’area progetti, relativo a visualizzazione colonne con importi in valuta ed applicazione filtri (#TT01900/26)
+> -	PR - Corretto Cash Flow ordini clienti in Split Payment. Il calcolo considera ora il solo imponibile, senza includere l’imposta. (#TT04761/26)
+> -	Risolvere problema di valorizzazione bolle d'acquisto in fatture d’acquisto con lotti: il caso dei documenti di storno (TT04968/26)
+> -	SCM - Gestione serial number: ottimizzata procedura di salvataggio, carico e relativa valorizzazione documentale con lotti e serial number garantendo univocità nelle registrazioni di magazzino e nella relativa anagrafica evitando dupplicati (#TT04939/26).
+> -	SCM - Risolvere problema di valorizzazione bolle d'acquisto in fatture d’acquisto con lotti: il caso dei documenti di storno: #TT04968/26
+> -	SCS - Listini di conto lavoro: Ottimizzata procedura di aggiornamento listini fornitore per fase (#TT04697/26).
+> -	SH - corretto e migliorato funzionamento extradata nelle griglie di ricerca dell’area progetti, relativo a visualizzazione colonne con importi in valuta ed applicazione filtri (#TT01900/26)
+> -	Solved problem for missing Blockly resource media
+> -	WM - Calcolo pesi tab confezioni: ottimizzato calcolo peso totale considerando peso lordo, quantità e peso UDC anche in caso di variazioni di riga (#TT04795/26).
+
 ### Patch 804.032 - 16/11/2026
 
 > -	BI - Switchboards: Fix ‘Select Available’ selection when more tiles displayed in the view;
