@@ -135,6 +135,6 @@ Nel caso di tentativo di modifica spese nei documenti (Interventi ed Attività),
 Per sbloccare la spesa e procedere alla modifica, è necessario eliminarla dalla Nota spese, oppure effettuare un rollback della procedura di generazione Nota Spese: 
 
 ### Rollback
-Nella tab di rollback è possibile annullare la procedura appena effettuata. Non verranno cancellati gli allegati aggiunti, che resteranno salvati nei specifici documenti. 
+Nella tab di rollback è possibile annullare la procedura appena effettuata. Non verranno cancellati gli allegati aggiunti, che resteranno salvati negli specifici documenti. 
 
 Il rollback annulla soltanto la nota spese generata. 
