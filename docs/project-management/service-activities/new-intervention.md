@@ -41,7 +41,7 @@ Gli stati previsti per l'intervento sono i seguenti:
 ## Spese
 Questa si suddivide in tre ulteriori sottogruppi:
 
-**Spese intervento sostenute** : indica le spese sostenute dalla risorsa, che di norma vengono proposte dall'anagrafica risorsa se presenti. Verranno inserite nella dichiarazione attività-tab Oneri di viaggio generata dall'intervento e potranno eventualmente essere marcate anche come da fatturare. 
+**Spese intervento sostenute**: indica le spese sostenute dalla risorsa, che di norma vengono proposte dall'anagrafica risorsa se presenti. Verranno inserite nella dichiarazione attività-tab Oneri di viaggio generata dall'intervento e potranno eventualmente essere marcate anche come da fatturare. 
 
 Ogni riga potrà avere un suo allegato, ad es. un giustificativo di spesa, visibile nella sezione **Documenti allegati**.
 
@@ -53,7 +53,7 @@ Saranno selezionabili soltanto le spese configurate appositamente come spese di 
 Le spese sono identificate da:
 
 - **Risorsa**: risorsa che ha sostenuto la spesa, di default viene proposta la risorsa della testata;
-- **Tipo spese**: indica la tipologia di spesa, con la relativa **Descrizione**; in base alla tipologia di spesa, si abilitano gli appositi campi. Ad es. nel caso di rimborso chilometrico, si abiliteranno i campi KM e Costo KM. Invece nel caso di spese come vitto ed alloggio, si abiliterà il campo importo spesa, e rimarranno disabilitati gli altri. 
+- **Tipo spese**: indica la tipologia di spesa, con la relativa **Descrizione**; in base alla tipologia di spesa, si abilitano gli appositi campi. Ad es. nel caso di rimborso chilometrico, si abiliteranno i campi KM e Costo KM. Invece nel caso di spese come vitto e alloggio, si abiliterà il campo importo spesa, e rimarranno disabilitati gli altri. 
 - **Data spesa**: data nella quale è stata sostenuta la spesa; viene proposta la data come da testata intervento, ma può essere variata;
 - **Importo spesa**: è possibile indicare direttamente l’importo della spesa, per esempio nel caso si trattasse del rimborso di un pasto;     
 - **KM**: contiene i chilometri percorsi con il relativo **Costo Km**;    
@@ -61,7 +61,7 @@ Le spese sono identificate da:
 - **Data/Ora di partenza**: contiene la data e l’ora di partenza;    
 - **Data/Ora di arrivo**: contiene la data e l’ora di arrivo;    
 - **Ore viaggio**: indica le ore viaggio calcolate in base a data e ora;    
-- **Valore forfait**: in alternativa al Importo spesa è possibile avere un valore forfait. Generalmente viene compilato in anagrafica risorsa e proposto in automatico; non sarà modificabile dall'utente. Utilizzato nei casi in cui i rimborsi spettanti alla risorsa sono pre accordati e non modificabili dall'utente;
+- **Valore forfait**: in alternativa all' Importo spesa è possibile avere un valore forfait. Generalmente viene compilato in anagrafica risorsa e proposto in automatico; non sarà modificabile dall'utente. Utilizzato nei casi in cui i rimborsi spettanti alla risorsa sono pre accordati e non modificabili dall'utente;
 - **IVA**: indica l’IVA da applicare;      
 - **Costo totale**: campo calcolato in base ai dati precedentemente inseriti che contiene il costo totale della spesa (es. km moltiplicato per il costo km, ore viaggio moltiplicato per il costo orario, etc);     
 - **Rimborsabile**: questo flag indica se l’onere è da rimborsare; 
@@ -82,7 +82,7 @@ Per questa specifica casistica, nel campo Importo Spesa sarà quindi visibile l'
 
  **Altre spese**: altre spese generiche da includere nel Piano di fatturazione. 
 
-Bottone **Spese da Fatturare**: presente nella tab "Spese intervento sostenute", selezionando una spesa e cliccando sul bottone, questa verrà portata in automatico nella tab "Spese Intervento da Fatturare". Il valore Importo Spesa verrà riportato sia nel campo Importo Spesa che nel campo Importo spesa fatturabile della tab Spese intervento da fatturare (vedasi indicazioni sulla gestione di questo campo nel paragrafo precedente). Se il tipo spesa è già presente nelle spese da fatturare oppure il cliente ha configurato un forfait, verrà chiesto all'utente la converma per procedere con il ricalcolo. 
+Bottone **Spese da Fatturare**: presente nella tab "Spese intervento sostenute", selezionando una spesa e cliccando sul bottone, questa verrà portata in automatico nella tab "Spese Intervento da Fatturare". Il valore Importo Spesa verrà riportato sia nel campo Importo Spesa che nel campo Importo spesa fatturabile della tab Spese intervento da fatturare (vedasi indicazioni sulla gestione di questo campo nel paragrafo precedente). Se il tipo spesa è già presente nelle spese da fatturare oppure il cliente ha configurato un forfait, verrà chiesto all'utente la conferma per procedere con il ricalcolo. 
 Nella tab Spese intervento da fatturare, il costo Km oppure il costo orario potrebbero variare rispetto a quelli indicati nelle Spese intervento sostenute. Questo si verifica nel caso in cui le stesse spese siano indicate in anagrafica cliente, con indicato il costo km oppure il costo orario, ma senza il numero di km o le ore. 
 In tal caso la tariffa stabilita con il cliente prevale sulla tariffa della risorsa indicata nelle spese sostenute. 
 
@@ -109,7 +109,7 @@ Nell'intervento tab Spese sostenute è presente una voce di "Rimborso km" 100 km
 
 In anagrafica cliente - tab interventi, è presente la voce di spesa "Rimborso km" senza flag "Spesa viva", con indicato solo il costo al km 2€, senza il numero di km.
 
-Utilizzando il bottone “Spesa da fatturare”, l’importo indicato in anagrafica cliente, prevarrà sui costo al km indicato nella tab Spese sostenute. 
+Utilizzando il bottone “Spesa da fatturare”, l’importo indicato in anagrafica cliente, prevarrà sul costo al km indicato nella tab Spese sostenute. 
 
 Nella tab Spese intervento da fatturare ci saranno 100 km x 2 € costo al km stabiliti in anagrafica, totale fatturabile 200€.
 Nel caso non si utilizzi il bottone "Spesa da fatturare", la spesa sostenuta di "Rimborso km" non verrà portata in fatturazione, NON avendo attivo il flag spesa viva (neanche al cambio stato intervento inserito-da approvare)
@@ -157,7 +157,7 @@ La spesa forfait da fatturare risulterà in totale 250 (100 autostrada fissi, 50
 
 :::note[Esempio] 
  In anagrafica risorsa si imposta come limite "2" ore di viaggio
- scatterà il calcolo indennità di trasfera solo se la somma dei servizi + ore di viaggio supera oltre 2 ore le ore ordinarie:
+ scatterà il calcolo indennità di trasferta solo se la somma dei servizi + ore di viaggio supera oltre 2 ore le ore ordinarie:
 
  8 ore ordinarie
 
@@ -195,13 +195,13 @@ Per sbloccare la spesa e procedere alla modifica, è necessario eliminarla dalla
 Contiene l’elenco dei servizi previsti nell’intervento. Ogni riga può essere relativa ad un servizio codificato oppure non, e i relativi dettagli: 
 
 - Data effettiva servizio: indica la data in cui è stato svolto il servizio. Può essere diverso dalla data in testata, in quanto in un intervento possono esserci più servizi svolti in diverse giornate. Questa data verrà utilizzata per la generazione della dichiarazione attività della risorsa;
-- **Ora inizio**,**Ora inizio pausa**, **Ora fine pausa**, **Ora Fine** : orari in cui è stato svolto il servizio;
+- **Ora inizio**, **Ora inizio pausa**, **Ora fine pausa**, **Ora Fine** : orari in cui è stato svolto il servizio;
 - **Smartworking** flag che si abilita in automatico in base alle configurazioni inerenti allo Smartworking nell'anagrafica risorsa. Verrà utilizzato poi nell'elaborazione cedolini paga, per identificare le giornate in cui è stato svolto lo smart working. Verrà di conseguenza impostato nella dichiarazione attività generata dall'intervento;
 - **Servizio sovrapposto**: flag che si abilita in automatico se rileva la presenza di altri servizi o dichiarazioni attività per la risorsa nella stessa giornata o fascia oraria;
 - **Minuti Sovrapposti** : è possibile indicare manualmente a cura dell'utente il tempo effettivo per cui le attività si sovrappongono;
 - **Tempo effettivo**: totale ore ottenuto dal calcolo delle ore dichiarate nel servizio;
 - **Descrizione servizio**: descrizione dell'articolo inserito nel caso di riga di tipo Codificato;
-- **Descrizione attività svolta**: descrizione inserita dalla risorsa in merito al servizio svolto, e nel caso di selezione progetto, descrizione della riga di Progetto. verrà poi utilizzata per la descrizione della Dichiarazione attività generata in automatico dall'intervento. Con doppio click sul campo è possibiel ingrandire l'area in cui scrivere. 
+- **Descrizione attività svolta**: descrizione inserita dalla risorsa in merito al servizio svolto, e nel caso di selezione progetto, descrizione della riga di Progetto. verrà poi utilizzata per la descrizione della Dichiarazione attività generata in automatico dall'intervento. Con doppio click sul campo è possibile ingrandire l'area in cui scrivere. 
 - **Unità di misura**: UM dell'articolo oppure modificata manualmente dalla risorsa, di solo tipo temporale
 - **Quantità**: se correttamente configurati i parametri di Progetto e la conversione tra diverse UM, il tempo effettivo verrà convertito nella corrispondente UM. 
 
@@ -219,9 +219,9 @@ La quantità verrà segnata in automatico come 1,14 GG. (Ottenuta dalla conversi
 - **Fatturato vendite**: fatturato vendite assegnate in base alla priorità dall'anagrafica articolo o anagrafica cliente;
 - **Progetto**: ereditato dalla testata intervento se presente, oppure associato manualmente dall'operatore. Aggiorna l'eventuale prezzo se il servizio non è valorizzato, determina la categoria attività;
 - **Ticket**: ticket di riferimento del servizio;
-- **Anagrafica impianti**: aangrafica impianti EAM collegata al servizio; 
+- **Anagrafica impianti**: anagrafica impianti EAM collegata al servizio; 
 - **Dipendente**: dipendente associato alla risorsa;
-- **Fattura di Anticipo**: Fattura di anticipo presente in un progetto (anche diveso da quello assegnato al servizio) e collegata al servizio, che quindi comporterà l'erosione del residuo della totale fattura di anticipo, oltre al corretto storno in fatturazione;
+- **Fattura di Anticipo**: Fattura di anticipo presente in un progetto (anche diverso da quello assegnato al servizio) e collegata al servizio, che quindi comporterà l'erosione del residuo della totale fattura di anticipo, oltre al corretto storno in fatturazione;
 - **Nota**: eventuali note del cliente. 
 - **Fatturabile**: se abilitato identifica il servizio che verrà considerato nel piano di fatturazione. Il valore del flag è definito dai documenti a monte da cui è stato generato, oppure dal progetto, oppure dalla categoria attività;
 - **Prezzo Manuale** : flag che identifica se il prezzo proposto da listino o procedure è stato modificato manualmente dall'utente;
@@ -273,7 +273,7 @@ I pulsanti specifici della ribbon bar sono:
 
 ![](/img/neutral/common/delete.png) Cancella materiali: cancella i materiali selezionati;
 
-![](/img/neutral/common/new.png) Nuovo materiale: inseisce una nuova riga materiale;
+![](/img/neutral/common/new.png) Nuovo materiale: inserisce una nuova riga materiale;
 
 ![](/img/neutral/common/view-material.png) Visualizza i materiali senza servizi: fa comparire nella griglia solo i materiali senza servizi collegati;
 
@@ -348,7 +348,7 @@ Nel caso di configurazioni con tipo intervento nullo, o tipo luogo di lavoro nul
 - se nel cliente non viene trovata la corrispondenza, la ricerca si estende ai [parametri progetto](/docs/configurations/parameters/projects/project-parameters/) > interventi > Impostazioni valorizzazione interventi
 
 Le regole impostate a livello dei parametri generali, sono valide per tutti i clienti oppure per determinate categorie commerciali di clienti. 
-Se il campo categoria commericale risulta vuoto, si intende valido per tutte le categorie. 
+Se il campo categoria commercicale risulta vuoto, si intende valido per tutte le categorie. 
 In seguito vengono cercate le configurazioni per tipo intervento (corrispondenza precisa oppure tipo intervento nullo) e per Sede di lavoro (corrispondenza precisa oppure Sede di lavoro nullo)
 
 
