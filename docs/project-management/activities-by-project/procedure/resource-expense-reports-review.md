@@ -48,7 +48,7 @@ Nella griglia verranno mostrate tutte le spese inserite negli interventi e nelle
 	Eccedenza = Plafond – Importo spesa – quota Plafond già usata
 	Vengono considerati solo valori negativi, che quindi superano il plafond. 
 
-**Stato spesa**:indica se la spesa è stata autorizzata/non autorizzata/autorizzata parzialmente/Autorizzata forzatamente
+**Stato spesa**: indica se la spesa è stata autorizzata/non autorizzata/autorizzata parzialmente/Autorizzata forzatamente
 
 **Documento**: indica il documento di riferimento da cui proviene la spesa – apribile con doppio click
 
