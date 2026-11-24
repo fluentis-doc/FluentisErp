@@ -4,7 +4,7 @@ sidebar_position: 4
 ---
 
 Postupak **Napredan unos cjenika** omogućuje izradu novih cjenika primjenom *Formule*, polazeći od artikala koji se nalaze u postojećim cjenicima.    
-Uvjet za prikaz artikala u ovoj tablici jest postojanje [**Formule za ažuriranje politika cijena i popusta**](/docs/sales/price-control/formulas) koja ima definirani cjenik odredišta i cjenik izvora; artikl, također, mora pripadati cjeniku izvora.
+Uvjet za prikaz artikala u ovoj tablici jest postojanje [**Formule za ažuriranje politika cijena i popusta**](/docs/sales/price-control/formulas) koja ima definirani cjenik odredišta i cjenik izvora; artikl mora pripadati cjeniku izvora te u šifarniku artikla u kartici *Troškovi* imati označenu spomenutu formulu u polju *Formule za ažuriranje politika cijena i popusta*
 Na temelju artikala iz cjenika izvora, Fluentis primjenjuje formulu i kreira cjenik odredišta.  
 
 

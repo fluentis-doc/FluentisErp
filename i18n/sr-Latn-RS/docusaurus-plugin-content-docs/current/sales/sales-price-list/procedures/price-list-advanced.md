@@ -4,7 +4,7 @@ sidebar_position: 4
 ---
 
 Procedura **Napredni unos cenovnika** omogućava kreiranje novih cenovnika primenom *Formule*, polazeći od artikala koji se nalaze u postojećim cenovnicima.    
-Uslov za prikaz artikala u ovoj tabeli jeste postojanje [**Formule za ažuriranje politika cena i popusta**](/docs/sales/price-control/formulas) koja ima definisan odredišni cenovnik i izvorni cenovnik; artikl takođe mora pripadati izvornom cenovniku.
+Uslov za prikaz artikala u ovoj tabeli jeste postojanje [**Formule za ažuriranje politika cena i popusta**](/docs/sales/price-control/formulas) koja ima definisan odredišni cenovnik i izvorni cenovnik; artikal mora pripadati izvornom cenovniku, a u šifarniku artikla, na kartici *Troškovi*, u polju *Formule za ažuriranje politika cena i popusta* mora biti označena navedena formula.
 Na osnovu artikala iz izvornog cenovnika, Fluentis primenjuje formulu i kreira odredišni cenovnik.  
 
 
