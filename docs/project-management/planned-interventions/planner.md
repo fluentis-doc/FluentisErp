@@ -17,7 +17,7 @@ Per ognuno di questi documenti è possibile poi applicare degli ulteriori filtri
 Nei **Filtri generali** sono presenti opzioni per:
 - mostrare appuntamenti sovrapposti
 - appuntamenti non confermati
-- Evidenziarele giornate dove non tutta la fascia oraria della risorsa è stata allocata. Le giornate con disponibilità verranno colorate in turchese. 
+- Evidenziare le giornate dove non tutta la fascia oraria della risorsa è stata allocata. Le giornate con disponibilità verranno colorate in turchese. 
 
 Per cancellare una delle voci selezionate in precedenza nel filtro, selezionare e premere CANC da tastiera. Per cancellare tutti i filtri utilizzare il bottone **cancella filtri**  
 
@@ -31,7 +31,7 @@ Solo gli appuntamenti delle risorse allocate nel progetto non hanno possibilità
 In presenza di richieste ferie e permessi, lo sfondo verrà cambiato in arancione. Se collegata l’attività generata dalla richiesta ferie, verrà mostrata in base all’opzione “vacanze” nei filtri “Documenti”. 
 Se presenti più appuntamenti nella stessa giornata e non tutti possono essere visualizzati, verrà mostrata una freccia in basso a destra che aprirà la visualizzazione in dettaglio della giornata.
  
-Gli appuntamenti mostrano 3 informazioni pricipali: 
+Gli appuntamenti mostrano 3 informazioni principali: 
 -	orario di inizio fine – descrizione tipo documento 
 -	cliente
 -	wbs progetto
