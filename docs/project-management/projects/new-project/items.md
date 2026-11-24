@@ -106,7 +106,7 @@ Nell'expander del Prezzo sono presenti:
 
 **Data inizio/Data fine**: indicano le date pianificate per l’attività;  
 Se la riga in questione è una root oppure un nodo intermedio, la data non sarà modificabile, ma verrà valorizzata in funzione della data minima e della data massima delle righe sottolivello. 
-Lla data verrà utilizzata anche per la costruzione del Gannt di progetto. 
+La data verrà utilizzata anche per la costruzione del Gannt di progetto. 
 >Le date verranno aggiornate in automatico a condizione di:
 - flag attivo "Ricalcolo data inizio-fine" nella tabella dei [Tipi progetto](/docs/configurations/tables/project-management/project-type). 
 - se l'unità di misura utilizzata in riga corrisponde all'unità di misura "Giorni" nei parametri progetto: modificando la quantità di riga, la data fine verrà ricalcolata
@@ -131,7 +131,7 @@ Lla data verrà utilizzata anche per la costruzione del Gannt di progetto.
 ### Tab risorse
 Nella **tab Risorse** è possibile allocare le risorse per la riga articolo selezionata:
 
-**Data inserimento**: viene copilata con la data di inserimento della risorsa nel progetto;           
+**Data inserimento**: viene compilata con la data di inserimento della risorsa nel progetto;           
 **Risorsa**: contiene la risorsa, precedentemente codificata nell'apposita area [Risorse](/docs/project-management/registers/resources-management/new-resource).  ;              
 **Centro aziendale**: viene assegnato il centro aziendale collegato alla risorsa, ma è possibile modificarlo;               
 **Unità di misura**: contiene l’unità di misura per la quantificazione del tempo giornaliero della risorsa;                
@@ -161,8 +161,8 @@ Se la risorsa prevede un costo differenziato per le giornate di straordinario/fe
 
 La data viene proposta in funzione alla Data Inizio se inserita nella tab "Pianificazione Servizio"; se già presente una riga Risorse con quella data, viene proposta la data subito successiva. Gli orari invece sono proposti in base al Turno principale impostato in anagrafica risorsa.  
 **Data inizio**: contiene la data nella quale verrà allocata la risorsa, con l’orario di inizio lavorativo;                 
-**Ora inizio pausa**: contiene l’eventuali data e ora di inizio della pausa;             
-**Ora fine pausa**: contiene l’eventuali data e ora di fine della pausa;                 
+**Ora inizio pausa**: contiene eventuali data e ora di inizio della pausa;             
+**Ora fine pausa**: contiene eventuali data e ora di fine della pausa;                 
 **Data fine**: contiene la data nella quale verrà allocata la risorsa, con l’orario di termine lavorativo;                               
 **Tempo effettivo**: è un campo calcolato in base agli orari delle colonne precedenti;  
 **Note**: è possibile inserire eventuali note;             
@@ -202,9 +202,9 @@ I valori sono rilevati dall'elaborazione eseguita con il pulsante "Avanzamento c
 L'elaborazione dell'avanzamento calcola le righe della tab "Avanzamento" eseguendo le seguenti operazioni:  
 
 - Elimina tutte le registrazioni di tempo effettivo del progetto che non sono state modificate manualmente.  
-- Ricerca le fasi degl ordini di produzione (Signal Item) collegate al progetto corrente:  
+- Ricerca le fasi degli ordini di produzione (Signal Item) collegate al progetto corrente:  
 - se non è già presente un record corrispondente, viene inserito.  
-- se il record è stato modificato manualmente, vengono aggiornati i munuti effettivi, mantenendo i dati manuali.  
+- se il record è stato modificato manualmente, vengono aggiornati i minuti effettivi, mantenendo i dati manuali.  
 
 - Esegue la stessa elaborazione sopra menzionata, anche per il tempo effettivo rilevato nei servizi degli interventi, ed il tempo effettivo delle dichiarazioni attività per progetto;   
 
