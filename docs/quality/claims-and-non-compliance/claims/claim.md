@@ -94,7 +94,7 @@ Le informazioni gestite sono:
 > **Cliente**, **Cliente contatto** o **Rivenditore**: sono i riferimenti dei mittenti (almeno uno dei tre è un dato obbligatorio).
 > Il *Cliente* viene rinominato in *Fornitore* se il documento è un *Reclamo da fornitore*.    
 > Il *Cliente contatto* è un cliente non diretto, codificato nell'anagrafica dei *Contatti*, il cui bene o servizio è stato venduto da un soggetto terzo; disabilitato se il documento  è un *Reclamo da fornitore*.   
-> Il *Rivenditore* è posizionato tra le informazioni dell tabulatore *Testata*; disabilitato se il documento  è un *Reclamo da fornitore*.   
+> Il *Rivenditore* è posizionato tra le informazioni del tabulatore *Testata*; disabilitato se il documento  è un *Reclamo da fornitore*.   
 > 
 
 

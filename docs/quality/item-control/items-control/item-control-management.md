@@ -113,7 +113,7 @@ I riferimenti per ogni *Tipo documento* sono:
 Contiene l'elenco delle *Prove* per l'*Articolo*.   
 L'elenco si compone delle seguenti informazioni:   
 > **Sequenza**: è la sequenza di attuazione della *Prove*.   
-> **Registrato**: indica che, per la *Prova*sono state effettuate le registrazioni di magazzino, in data odierna, per l'*Articolo* associato al *Controllo* per la *Quantità confermata* e/o *Quantità non conforme* dichiarata, per il *Magazzino* e *Causali* specificate. L'informazione è di sola lettura.   
+> **Registrato**: indica che, per la *Prova* sono state effettuate le registrazioni di magazzino, in data odierna, per l'*Articolo* associato al *Controllo* per la *Quantità confermata* e/o *Quantità non conforme* dichiarata, per il *Magazzino* e *Causali* specificate. L'informazione è di sola lettura.   
 > **Tipo prova**: è il codice della *Prova*.   
 > **Descrizione tipo prova**:  è la descrizione della *Prova*. L'informazione è di sola lettura.   
 > **Prova distruttiva**: indica se la prova è di tipo distruttiva. L'informazione è di sola lettura.   
@@ -185,7 +185,7 @@ L'elenco si compone delle seguenti informazioni:
 > **Descrizione causale scarico articoli conformi**: è la descrizione della *Causale di scarico* utilizzata per movimentare gli *Articoli* controllati risultati *Conformi*. L'informazione è di sola lettura.   
 > **Descrizione causale scarico articoli non conformi**: è la descrizione della *Causale di scarico* utilizzata per movimentare gli *Articoli* controllati risultati *Non conformi*. L'informazione è di sola lettura.   
 
-Le informazioni di: *Tipo prova*, *Prova interna*, *Laboratorio esterno*, *Categoria Strumento di misura*, *Unità di misura valori rilevati*, *Tipo valore*, *Tipo limite*, *Valore nominale*, *Limiti ...*, *Tolleranze ...*, *%*, *Tipo controllo prova*, *Frequenza* e *Numero rilevazioni*, sono di sola lettura se la *Prova* proviene dal *Piano di controllo* altrimenti possono essere modificabili per dare la possibilità di aggiungere maualmente ulteriori *Prove* non previste del *Piano di controllo*.
+Le informazioni di: *Tipo prova*, *Prova interna*, *Laboratorio esterno*, *Categoria Strumento di misura*, *Unità di misura valori rilevati*, *Tipo valore*, *Tipo limite*, *Valore nominale*, *Limiti ...*, *Tolleranze ...*, *%*, *Tipo controllo prova*, *Frequenza* e *Numero rilevazioni*, sono di sola lettura se la *Prova* proviene dal *Piano di controllo* altrimenti possono essere modificabili per dare la possibilità di aggiungere manualmente ulteriori *Prove* non previste del *Piano di controllo*.
 
 
 #### Rilevazione multipla valori
