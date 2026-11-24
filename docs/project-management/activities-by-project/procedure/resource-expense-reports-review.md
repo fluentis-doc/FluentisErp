@@ -30,7 +30,7 @@ Tipo attività / Dal numero al numero / dalla data alla data:
 	filtri per la ricerca delle spese di specifiche dichiarazioni attività
 
 ### Griglia risultati
-Nella griglia verranno mostrate tutte le spese inserite negli interventi e nelle attivià, che rispettano i criteri selezionati nei filtri. 
+Nella griglia verranno mostrate tutte le spese inserite negli interventi e nelle attività, che rispettano i criteri selezionati nei filtri. 
 
 **Risorsa**: risorsa a cui si riferisce la spesa
 
