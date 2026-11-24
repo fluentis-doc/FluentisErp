@@ -65,7 +65,7 @@ I valori indicati in queste griglie, vengono poi utilizzati per i calcoli ed i t
 
 :::note[Esempio]
 Ipotizziamo che il dipendente Mario Rossi in 1 anno abbia diritto a 192 ore di ferie.  
-Se il dipendente non ha uno storico, si dovranno inserire i valori dell'anno precedente manualmenmte.  
+Se il dipendente non ha uno storico, si dovranno inserire i valori dell'anno precedente manualmente.  
 Per l’anno successivo (ad es. 2026) il valore "maturato annuo" viene direttamente copiato dall’anno precedente(2025).  
 Elaborando il cedolino di giugno 2026, si calcoleranno in automatico le ferie maturate fino a giugno, utilizzando la seguente formula:  
 192 / 12 (mesi in 1 anno) * 6 (mese ultimo cedolino elaborato) = 96 ore maturate fino a giugno 2026
@@ -116,7 +116,7 @@ Nella **Tab Assunzione** è possibile indicare le informazioni relative all’as
 **Attualmente in prova**: è possibile indicare se il dipendete è attualmente in periodo di prova;
 **Data inizio**: contiene la data di inizio assunzione;
 **Data fine**: contiene la data di fine assunzione;
-**Durata gg.**: è un dato calcolato in base alle date inserite e indica i giori totali di assunzione.
+**Durata gg.**: è un dato calcolato in base alle date inserite e indica i giorni totali di assunzione.
 È possibile indicare un totale di tre periodi di assunzione.
 
 ### Tab Storia lavorativa
