@@ -40,7 +40,7 @@ Le trasferte hanno una gestione specifica:
 Se il [codice paga](/docs/configurations/tables/employee/Payroll_codes) associato alla categoria di attività delle ore viaggio ha abilitato il flag "Rimborso viaggio", nel cedolino il movimento relativo al viaggio avrà sempre quantità 1 indipendentemente dalle ore di viaggio effettuate (il senso è quello di indicare che c'è stata una trasferta senza segnare l'effettiva durata)
 Se invece il codice paga associato alla categoria di attività delle ore viaggio, NON ha abilitato il flag "Rimborso viaggio", nel cedolino il movimento relativo al viaggio avremo quantità = ore di viaggio effettive. 
 
-Se ad es. in anagrafica risorsa si imposta come soglia "2" ore di viaggio per il calcolo della trasferta scatterà il calcolo trasfera solo se la somma di servizi + ore viaggio superano 2 ore oltre alle ore ordinarie:
+Se ad es. in anagrafica risorsa si imposta come soglia "2" ore di viaggio per il calcolo della trasferta scatterà il calcolo trasferta solo se la somma di servizi + ore viaggio superano 2 ore oltre alle ore ordinarie:
 
 > Esempio 1:
 
