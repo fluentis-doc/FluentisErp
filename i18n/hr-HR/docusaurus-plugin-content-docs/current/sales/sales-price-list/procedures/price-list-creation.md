@@ -1,37 +1,50 @@
 ---
-title: Unos prodajnog cjenika
+title: Izrada prodajnih cjenika
 sidebar_position: 3
 ---
 
-Ova procedura omogućuje stvaranje novih cjenika prodaje koristeći artikle iz postojećih dokumenata. 
-Na vrhu obrasca nalaze se filteri za pretraživanje Izvornih podataka: odaberite između Cjenika prodaje, Cjenika nabave, Šifarnika artikala, Otpremnica, Ulaznih računa ili Narudžbi dobavljača; dodatno filtriranje moguće je pritiskom na gumb Pretraživanje dokumenata kako biste pronašli određeni cjenik. Za pregled rezultata pritisnite gumb Pretraži cjenike.
+Ovaj postupak omogućuje izradu novih prodajnih cjenika na temelju artikala iz postojećih dokumenata.
 
-U prvoj mreži bit će prikazani rezultati pretrage, a odabirom reda u donjoj mreži bit će prikazani artikli dokumenta. Proučimo stupce:  
-**Ne razmatrati**: artikli koji imaju ovu oznaku neće biti promijenjeni u novom cjeniku;    
-**Prethodni trošak**: prijedlog je cijena posljednjeg dokumenta odabranog tipa u izvornim podacima;    
-**Početna cijena**: identificira početnu cijenu u izvornom dokumentu;      
-**Početna cijena s PDV-om**: prikazuje početnu cijenu s uključenim PDV-om;      
-**Nezaokružena cijena**: predlaže cijenu koja uključuje povećanje (ili smanjenje) odlučeno za novi cjenik;     
-**Nezaokružena cijena s PDV-om**: nepostignuta cijena s PDV-om.  
-**Maska**: prikazuje masku na koju je podložan pojedinačni artikl.          
-**Zaokružena cijena**: predložena je nepostignuta CIJENA zaokružena prema definiranoj MASKI.       
-**Zaokružena cijena s PDV-om**: predložena je NEPOSTIGNUTA CIJENA S PDV-OM zaokružena prema definiranoj MASKI.        
-**Aktualna cijena iz cjenika**: ako u odjeljku cjenik za stvaranje odaberete dodavanje odabranih podataka u već postojeći cjenik, ovdje će biti prikazana cijena artikla u tom cjeniku.
+U gornjem dijelu obrasca nalaze se filtri za pretraživanje **Izvornih podataka**. Moguće je odabrati jednu od sljedećih opcija: Prodajni cjenik, Nabavni cjenik, Šifarnik artikala, Nabavna otpremnica, Nabavni računi ili Narudžbe dobavljača. Proširivanjem opcije **Pretraga dokumenta** moguće je dodatno filtrirati podatke i potražiti određeni cjenik. Za prikaz rezultata kliknite **Pretraga cjenika**.
 
-Još niže, potrebni su podaci o cjeniku koji treba stvoriti: odaberite tip, datum važenja, primijenjene zaokruživanja i označite:          
-**Cijena s PDV-om**: označava da će novi cjenik imati cijene s PDV-om.       
-**Minimalni cjenik**: mogućuje stvaranje cjenika minimalnih prodajnih cijena.  
+:::note Pažnja
+Polje **Zaokruživanja**, koje se nalazi u donjem dijelu obrasca, obavezno je. Kako bi se podaci mogli prikazati i kako bi se moglo nastaviti s izradom cjenika, potrebno je odabrati jedno od prethodno definiranih [zaokruživanja](/docs/sales/sales-price-list/procedures/rounding) u odgovarajućem obrascu.
+:::
 
-Stvaranje cjenika obavlja se pomoću gumba u traci s alatkama:        
-**Stvaranje svih artikala**: cjenik će biti stvoren sa svim artiklima prisutnim u odabranom dokumentu u prvom prikazu.      
-**Kreiraj označene artikle**: cjenik će biti stvoren s odabranim artiklima u drugom prikazu.        
+U prvoj tablici prikazat će se dokumenti koji odgovaraju kriterijima pretraživanja. Odabirom retka u donjoj tablici prikazat će se artikli iz odabranog dokumenta.
 
-Nakon što je novi cjenik stvoren, Fluentis će pitati želite li ga otvoriti ili ne.     
+Pogledajmo stupce:
 
-U traci s alatkama nalaze se dodatni gumbi za upravljanje maskom:      
-  
-**Ažuriraj masku**: ažurira masku u članku s kojom je povezan pojedinačni artikl.       
-**Povrati masku iz opsega**: ako je promijenjena MASKA u ZAOKRUŽIVANJIMA, ovaj će se postupak ponovno izračunati predlažući nove vrijednosti generirane novom definiranom MASKOM.       
-**Aktivacija/deaktivacija oznake Ne uzimati u obzir**: aktivira ili deaktivira oznaku NE UZIMAJ U OBZIR članaka koji su označeni.       
+- **Klasa/Šifra/Opis artikla**: identifikacijski podaci artikla, nakon kojih slijede **Varijanta**, **Količina**, **JM** i **Marka**.
+- **Ne razmatrati**: artikli za koje je ova opcija označena neće se mijenjati u novom cjeniku.
+- **Prethodni trošak**: prikazuje trošak iz posljednjeg dokumenta odabrane vrste u izvornim podacima.
+- **Cijena**: označava početnu cijenu koja je bila navedena u izvornom dokumentu.
+- **Cijena s PDV-om**: prikazuje početnu cijenu s uključenim PDV-om.
+- **Nezaokružena cijena**: prikazuje cijenu nakon primjene povećanja ili smanjenja određenog za novi cjenik.
+- **Nezaokružena cijena s PDV-om**: cijena s uključenim PDV-om, prije zaokruživanja.
+- **Maska**: prikazuje masku koja se primjenjuje na pojedini artikl.
+- **Zaokružena cijena**: prikazuje cijenu iz polja *Cijena bez zaokruživanja*, zaokruženu prema definiranoj *Maski*.
+- **Zaokružena cijena s PDV-om**: prikazuje cijenu iz polja *Cijena s PDV-om bez zaokruživanja*, zaokruženu prema definiranoj *Maski*.
+- **Aktualna cijena u cjeniku**: ako je u odjeljku *Cjenik koji se izrađuje* (u donjem dijelu obrasca) odabrana opcija **Dodaj označene podatke na postojeći cjenik**, u ovom će se stupcu prikazati cijena artikla u odabranom cjeniku, ako postoji.
 
+U donjem dijelu obrasca potrebno je unijeti obvezne podatke za *Cjenik koji se izrađuje*: vrstu cjenika (opći ili personalizirani), vrstu ili kupca, ovisno o odabranoj vrsti cjenika, datum početka valjanosti (po potrebi i datum završetka valjanosti), valutu, zaokruživanja koja će se primijeniti te sljedeće oznake:
 
+- **Cijena s PDV-om**: označava da će se izraditi cjenik s cijenama koje već uključuju PDV.
+- **Minimalni cjenik**: informativna oznaka koja označava izradu cjenika minimalnih cijena za terensku prodaju.
+
+Ovi se podaci mogu unijeti ručno ili automatski, klikom na gumb **Dodaj označene podatke na postojeći cjenik**. U tom se slučaju otvara skočni prozor u kojem je moguće odabrati cjenik iz kojeg će se preuzeti matični podaci.
+
+Ovim postupkom artikli će se prilikom pokretanja postupka dodati u postojeći cjenik, umjesto da se izradi novi. Ako neki artikli već postoje u odabranom cjeniku, korisnik će moći odabrati želi li zadržati postojeće cijene ili ih ažurirati.
+
+Izrada cjenika pokreće se pomoću gumba na vrpci izbornika:
+
+- **Kreiraj sve artikle**: cjenik se izrađuje sa svim artiklima iz dokumenta odabranog u prvoj tablici.
+- **Kreiraj označene artikle**: cjenik se izrađuje samo s artiklima odabranima u drugoj tablici.
+
+Nakon izrade novog cjenika Fluentis će pitati želite li ga otvoriti.
+
+Na vrpci izbornika nalaze se i dodatni gumbi za upravljanje maskama:
+
+- **Ažuriraj maske**: ažurira masku povezanu s pojedinim artiklom u njegovu šifarniku, za trenutno označeni artikl.
+- **Ponovno preuzmi (povrati) masku iz raspona**: ako se promijeni polje *Zaokruživanja* u odjeljku *Cjenik koji se izrađuje*, ovim se gumbom ponovno izračunava maska u drugoj tablici i predlaže maska odabranog zaokruživanja.
+- **Uključi/isključi oznaku Ne razmatrati**: aktivira ili deaktivira oznaku *Ne razmatrati* za označene artikle.

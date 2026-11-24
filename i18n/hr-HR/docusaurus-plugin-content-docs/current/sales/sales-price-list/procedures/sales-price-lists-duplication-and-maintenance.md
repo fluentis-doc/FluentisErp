@@ -28,7 +28,7 @@ Dostupni stupci su:
 
 - **Klasa / Šifra / Opis artikla**: identifikacijski podaci artikla iz cjenika.
 
-- **Šifra diviza**: prikazuje valutu cjenika.
+- **Šifra valute**: prikazuje valutu cjenika.
 
 - **Šifra jedinice mjere**: prikazuje jedinicu mjere definiranu u cjeniku.
 
