@@ -31,7 +31,7 @@ In presenza di richieste ferie e permessi, lo sfondo verrà cambiato in arancion
 
 # Calendario per progetto
 Da questa videata sarà possibile trascinare le singole wbs nel calendario di una o più risorse, e decidere il tipo documento da creare.
-Viene visualizzata la struttura completa del progetto, con numero riga, numero WBS, Descrizione WBS, Data inzio e Data fine, Giorni assegnati, Giorni previsti, Giorni pianificati, Giorni eseguiti. 
+Viene visualizzata la struttura completa del progetto, con numero riga, numero WBS, Descrizione WBS, Data inizio e Data fine, Giorni assegnati, Giorni previsti, Giorni pianificati, Giorni eseguiti. 
 Tramite i bottoni nella Ribbon bar è possibile **Espandere** e **Comprimere** tutta la struttura. 
 
 Selezionare una singola wbs di ultimo livello e trascinarla verso il giorno desiderato nel calendario. 
