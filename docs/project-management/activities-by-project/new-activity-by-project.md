@@ -9,7 +9,7 @@ Nell'area progetti ogni risorsa può inserire le dichiarazioni delle proprie att
 
 **Tipo attività**: contiene il [Tipo attività](/docs/configurations/tables/project-management/activity-type/);
 
-**Data attività/Numero attività**: contiene la data e il numero dell’attività; verrà proposta in automatico la più vecchia data mancante in base ai mesi da verificare impostati nei parametri progetti. Se la data è una giornata configurata nel Caledario giorni non lavorativi, questa non verrà proposta.
+**Data attività/Numero attività**: contiene la data e il numero dell’attività; verrà proposta in automatico la più vecchia data mancante in base ai mesi da verificare impostati nei parametri progetti. Se la data è una giornata configurata nel Calendario giorni non lavorativi, questa non verrà proposta.
 
 **Risorsa**: contiene la risorsa che svolge l’attività;
 
@@ -86,7 +86,7 @@ Se invece la dichiarazione attività è stata generata in automatico dall'interv
 
 Al salvataggio se le spese proposte non sono state completate con valori ed importi, verranno cancellate in automatico. 
 
-È possibile indicare il **Tipo spese**, ed in base alla sua configurazione saranno abiliati alla modifica gli altri campi quali **Ore viaggio**, **Costo orario**, **KM**, **costo KM**, **Importo forfait**, **Imposta**, **IVA inclusa**, **Importo spesa**, **Data**, **Tipo pagamento**, ecc.
+È possibile indicare il **Tipo spese**, ed in base alla sua configurazione saranno abilitati alla modifica gli altri campi quali **Ore viaggio**, **Costo orario**, **KM**, **costo KM**, **Importo forfait**, **Imposta**, **IVA inclusa**, **Importo spesa**, **Data**, **Tipo pagamento**, ecc.
 
 **Costo totale** è calcolato in automatico nel caso di "costo orario" o "costo KM", moltiplicati per i rispettivi "ore viaggio" e "KM". 
 
