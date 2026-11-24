@@ -124,7 +124,7 @@ Altrimenti verrà dato messaggio di blocco:
 
 "Attenzione! Ci sono righe modificate manualmente che non rispettano le condizioni stabilite. Procedere alla correzione prima di confermare oppure effettuare una nuova ricerca e validazione. "
 
-Nel caso di righe di dettaglio spese cumulative, anche se nel dettaglio ci sono diverse risorse, tutte le righe verranno inserite nella Nota spese inerente alla risorsa che ha effettivamente sostenuto la spesa. Questo al fine di garantire un corretto rimborso nel cedolino paga. L'indicazione invece delle singole risorse, sarà necessaria per il controllo dei specifici plafond.  
+Nel caso di righe di dettaglio spese cumulative, anche se nel dettaglio ci sono diverse risorse, tutte le righe verranno inserite nella Nota spese inerente alla risorsa che ha effettivamente sostenuto la spesa. Questo al fine di garantire un corretto rimborso nel cedolino paga. L'indicazione invece delle singole risorse, sarà necessaria per il controllo degli specifici plafond.  
 
 Le spese che sono state inserite nella Nota Spese risulteranno quindi “Verificate” con una data-utente di verifica.
 
