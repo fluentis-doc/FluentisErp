@@ -60,7 +60,7 @@ E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data
 
 ### Documenti allegati
 
-In questo elenco è possibile inserire e consultare eventuali documenti allegati al *Oggetto reclamato* selezionato.   
+In questo elenco è possibile inserire e consultare eventuali documenti allegati all' *Oggetto reclamato* selezionato.   
 
 
 ## Gestione 8D
@@ -156,7 +156,7 @@ Elenco, precompilato con tutte le *Azioni permanenti* precedentemente inserite e
 > **Dati azione attuata**   
 >> **Sequenza**: è la *Sequenza* di visualizzazione delle *Azione permanente*; viene riportato il progressivo dell'*Azione permanente*. L'informazione è di sola lettura.   
 >> **Azione permanente**: *Azione permanente* effettuata. L'informazione è di sola lettura.   
->> **Causa origine** e **Descrizione causa origine**: è la *Causa di origine* dell*Azione permanente* effettuata. L'informazione è di sola lettura.   
+>> **Causa origine** e **Descrizione causa origine**: è la *Causa di origine* dell' *Azione permanente* effettuata. L'informazione è di sola lettura.   
 >
 > **Dati convalida azione attuata**   
 >> **Convalidata il**: è la data in cui l'*Azione permanente* è stata convalidata.   

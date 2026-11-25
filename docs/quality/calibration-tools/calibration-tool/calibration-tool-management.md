@@ -68,7 +68,7 @@ Le informazioni gestite sono:
 >> **Unità di misura**: è l'*Unità di misura* dei valori rilevati dallo *Strumento di misura*.   
 >> **Intervallo di misura**: è il range misurabile dallo *Strumento di misura*.   
 >> **Precisione**: è la *Precisione di misura* minima.   
->> **Limiti**: sono i *Limiti di accettabilitò* dello *Strumento di misura* per poterlo utilizzare; esempi: eventuali limiti di precisione, ambienti dove non utilizzarlo, ecc.   
+>> **Limiti**: sono i *Limiti di accettabilità* dello *Strumento di misura* per poterlo utilizzare; esempi: eventuali limiti di precisione, ambienti dove non utilizzarlo, ecc.   
 >
 > **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
 >
@@ -97,7 +97,7 @@ Al primo valore negativo dell'*Esito* nell'elenco dei *Valori rilevati* anche l'
 
 
 ### Storico Rapporti e Certificati di taratura
-In questo elenco è possibile visualizzare lo storico delle *Tarature* e dei *Certificati di taratura* pienificati ed effettuati per lo *Strumento di misura* associato alla *Taratura* visualizzata.   
+In questo elenco è possibile visualizzare lo storico delle *Tarature* e dei *Certificati di taratura* pianificati ed effettuati per lo *Strumento di misura* associato alla *Taratura* visualizzata.   
 Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Taratura* selezionata.   
 L'elenco si compone delle seguenti informazioni:   
 > **Tipo taratura**: è il codice del *Tipo taratura*.   
