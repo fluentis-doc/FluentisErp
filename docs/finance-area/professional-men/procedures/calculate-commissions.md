@@ -1,13 +1,17 @@
 ---
 title: Calcolo provvigioni
-sidebar_position: 2
+sidebar_position: 1
 ---
+
+:::tip[Info]
+A partire dalla versione 805 la presente form è stata spostata nel nuovo modulo specifico per la Gestione Commissioni Agenti - Procedure - (area Amministrazione)
+:::
 
 La presente procedura (pertinente all'area amministrativa) è stata creata per l'elaborazione dei dati delle provvigioni agenti inseriti direttamente dalle scritture contabili previa opportuna configurazione delle causali contabili coinvolte.
 
-In particolare la causale (o le causali) utilizzate per la registrazone delle fatture di vendita dovranno avere il flag **Provvigioni** attivo.
+In particolare la causale (o le causali) utilizzate per la registrazione delle fatture di vendita dovranno avere il flag **Provvigioni** attivo.
 
-**NOTA**: è necessario abiltare i flag Gestione Provvigioni anche all'interno di Configurazione > Utilità > Amministrazione > Parametri di contabilità in corrispondenza dell'anno desiderato.
+**NOTA**: è necessario abilitare i flag Gestione Provvigioni anche all'interno di Configurazione > Utilità > Amministrazione > Parametri di contabilità in corrispondenza dell'anno desiderato.
 
 All'apertura della form eseguendo il comando **Ricerca**, posto nella ribbon bar, viene caricata la lista degli agenti attivi (tramite il flag apposito possono essere caricati anche quelli con data fine mandato scaduta).
 

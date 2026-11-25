@@ -3,6 +3,10 @@ title: Commissioni
 sidebar_position: 7
 ---
 
+:::tip[Info]
+A partire dalla versione 805 la presente form è stata spostata nel nuovo modulo specifico per la Gestione Commissioni Agenti (area Amministrazione)
+:::
+
 Questa form permette di visualizzare le commissioni (provvigioni agenti) maturate e liquidate.
 
 Si riferisce alla gestione delle provvigioni agenti effettuata dal modulo amministrativo.
