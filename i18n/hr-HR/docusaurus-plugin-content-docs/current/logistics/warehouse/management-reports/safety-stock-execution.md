@@ -13,15 +13,25 @@ Prije pokretanja postupka izračuna artikala ispod minimalne zalihe preporučuje
 - U *MRP parametrima* artikala kojima se želi upravljati pomoću postupka za artikle ispod minimalne zalihe potrebno je postaviti *politiku upravljanja Zaliha*.
 - Minimalna zaliha mora biti manja ili jednaka točki ponovnog naručivanja.
 
+Osim toga, potrebno je uzeti u obzir sljedeće:
+
+- Ako minimalna ili maksimalna zaliha nije definirana na artiklu, preuzima se iz zaliha po lokacijama.
+- Artikli kod kojih su i minimalna zaliha i točka ponovnog naručivanja jednake nuli, kao i artikli kod kojih je maksimalna zaliha definirana, ali je manja od minimalne zalihe, ne uzimaju se u obzir prilikom izračuna.
+- Preporučuje se da broj dana za ponovno naručivanje bude veći od nule. Ako je vrijednost nula, prosječna potrošnja iznosi nula, pa se artikl predlaže samo ako je raspoloživa količina već manja od točke ponovnog naručivanja.
+
 **Izračun**
 
 Izračun artikala ispod minimalne zalihe koristi algoritam koji se temelji na prosječnoj dnevnoj potrošnji, izračunatoj na kartici *Nabava* u *šifarniku artikala*.
 
 Polazi se od stanja zaliha u trenutku obrade te se provjerava hoće li, na temelju prosječne potrošnje, doći do pada zaliha ispod minimalne razine do zadanog datuma.
 
+Broj dana odnosi se na radne dane prema poslovnom kalendaru, a izračun počinje od današnjeg datuma.
+
+Artikl se smatra artiklom ispod minimalne zalihe ako se na traženi datum predviđeno stanje zaliha spusti ispod točke ponovnog naručivanja. Pritom se uzimaju u obzir i predviđena kretanja prije tog datuma (primjerice, zaprimanje narudžbi).
+
     Prosječna dnevna potrošnja = (Točka ponovnog naručivanja - Minimalna zaliha) / Dani za ponovno naručivanje
 
-    Količina za ponovno naručivanje = Minimalna zaliha + Prosječna potrošnja u razdoblju − Stanje zaliha
+    Količina za ponovno naručivanje = Točka ponovnog naručivanja + Prosječna potrošnja u razdoblju − Stanje zaliha
 
 **Postupak**
 
@@ -31,10 +41,12 @@ Nakon unosa ovih filtara pritisnite gumb **Izvrši** kako biste obradili podatke
 
 Tablica rezultata izvršavanja prikazuje popis provedenih obrada, uz podatke **Broj** i **Datum obrade**.
 
-Važno je napomenuti da se u postupku izračuna artikala ispod minimalne zalihe, kada se generira zahtjev za nabavu (RDA), a raspoloživost je manja od točke ponovnog naručivanja, tražena količina izračunava na sljedeći način:
+Važno je napomenuti da se u postupku izračuna artikala ispod minimalne zalihe, prilikom generiranja zahtjeva za nabavu (RDA), ako je raspoloživa količina manja od točke ponovnog naručivanja, tražena količina određuje na sljedeći način:
 
-- Ako za artikl nije definirana *maksimalna zaliha*, tražena količina bit će jednaka **Točka ponovnog naručivanja – Raspoloživost**.
-- Ako je definirana i *maksimalna zaliha*, tražena količina bit će jednaka **Maksimalna zaliha – Raspoloživost**.
+- Ako za artikl nije definirana **maksimalna zaliha**, tražena količina iznosi **Točka ponovnog naručivanja + Prosječna potrošnja u razdoblju – Raspoloživa količina**.
+- Ako je definirana i **maksimalna zaliha**, tražena količina iznosi **Maksimalna zaliha – Minimalna zaliha** (ili **Ekonomska količina narudžbe**, ako je veća od maksimalne zalihe).
+
+Ako su definirani, poštuju se ekonomska količina narudžbe i višekratnik pri određivanju tražene količine. Ako jedna količina nije dovoljna za pokrivanje potreba do traženog datuma, za isti artikl generira se više redaka.
 
 :::note Napomena
 Treba napomenuti da će se, ako je način nabave artikla *Nabava*, kreirati zahtjev za nabavu, ali ne i nalog. Ako je način nabave artikla *Proizvodnja* ili *Podizvođač*, kreirat će se odgovarajući nalog.
