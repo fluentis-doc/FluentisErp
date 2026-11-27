@@ -6,6 +6,18 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0091 - 27/11/2026
+
+> -	FI - webapi di import/export partite, per l’importazione è stata aggiunta la logica di ricercare la partita da aggiornare ricercando i soli riferimenti del documento (società, divisione, tipo documento, numero documento, data documento, scadenza).  
+> -	MES - MES Solution: nell’elenco delle “Fasi in lavorazione” e nell’elenco delle “Dichiarazioni precedenti” è stata aggiunta la colonna del riferimento del “Lotto articolo” prenotabile nell’Ordine di produzione associato (#TT04973/26)  
+> -	MS - Generazione calendario capacità produttive: corretta l’anomalia che non considerava la Priorità per il calcolo disponibilità calendario tra Numero macchine e Numero operai (#TT05000/26)  
+> -	Risolvere problema di valorizzazione bolle d'acquisto in fatture d’acquisto con lotti: il caso dei documenti di storno (#TT04968/26)  
+> -	SCM - Risolvere problema di valorizzazione bolle d'acquisto in fatture d’acquisto con lotti: il caso dei documenti di storno (#TT04968/26)   
+> -	SD - Numerazione ddt di conto lavoro, ddt di vendita, corretto errore di numerazione nel caso in cui Progressione data numero sia attivo (#TT05130/26)  
+> -	SD - Parametri in Valorizzazione DDT di vendita: ottimizzata apertura e modifica flag. Modifications inside Valorization DDT form can have impact on profiles (#TT04801/26)
+> -	Solved problem for missing Blockly resource media
+
+
 ### Patch 707.1-0090 - 16/11/2026
 
 :::danger Adeguamento normativo IVA 2027
