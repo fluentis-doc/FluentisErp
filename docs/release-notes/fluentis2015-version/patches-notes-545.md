@@ -4,13 +4,15 @@ sidebar_label: 🔧 Patch Notes v545
 sidebar_position: 1
 ---
 
-### Patch 545.1-0130 - 29/10/2026
+### Patch 545.1-0131 - 27/11/2026
 
 :::danger Adeguamento normativo IVA 2027
 Questa release include le attività preparatorie per l'entrata in vigore del nuovo Testo Unico IVA dal 01/01/2027. Verranno generati automaticamente i nuovi codici IVA interessati dalle variazioni dei riferimenti normativi. I codici resteranno disattivati fino alla loro effettiva adozione. Fino al 31/12/2026 è necessario continuare a utilizzare i codici IVA attualmente in vigore.
 :::
 
-
+> - SD - Gestione progetti, procedura di creazione fatture di vendita con flag di raggruppamento articoli, fix della stored nel caso di numeri non disponibili (#TT04722/26)  
+> - SD - Creazione fatture elettroniche, inserito blocco alla creazione quando l'aliquota iva non è valida alla data fattura (#TT004356/26)  
+> - SH - rilascio nuove aliquote iva con riferimenti normativi al DLgs 10 / 2026. La lista ha data fine validità 31/12/2000 per non essere subito visibile nei documenti, sarà quindi da attivare nel 2027 bloccando contestualmente le vecchie codifiche.
 
 ### Patch 545.1-0130 - 29/10/2026
 
