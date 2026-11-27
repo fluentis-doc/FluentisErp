@@ -9,7 +9,9 @@ sidebar_position: 1
 Questa release include le attività preparatorie per l'entrata in vigore del nuovo Testo Unico IVA dal 01/01/2027. Verranno generati automaticamente i nuovi codici IVA interessati dalle variazioni dei riferimenti normativi. I codici resteranno disattivati fino alla loro effettiva adozione. Fino al 31/12/2026 è necessario continuare a utilizzare i codici IVA attualmente in vigore.
 :::
 
-
+> - MS - Ordini pianificati: corretta l'anomalia durante l'inserimento manuale; non veniva valorizzata la quantità alternativa se non indicata un'unità di misura alternativa.  
+> - SD - Creazione fatture elettroniche, inserito blocco alla creazione quando l'aliquota iva non è valida alla data fattura (#TT004356/26)  
+> - SH - rilascio nuove aliquote iva con riferimenti normativi al DLgs 10 / 2026. La lista ha data fine validità 31/12/2000 per non essere subito visibile nei documenti, sarà quindi da attivare nel 2027 bloccando contestualmente le vecchie codifiche.  
 
 ### Patch 608.1-0094 - 29/10/2026
   
