@@ -8,6 +8,10 @@ keywords:
 
 ### Patch 707.1-0090 - 16/11/2026
 
+:::danger Adeguamento normativo IVA 2027
+Questa release include le attività preparatorie per l'entrata in vigore del nuovo Testo Unico IVA dal 01/01/2027. Verranno generati automaticamente i nuovi codici IVA interessati dalle variazioni dei riferimenti normativi. I codici resteranno disattivati fino alla loro effettiva adozione. Fino al 31/12/2026 è necessario continuare a utilizzare i codici IVA attualmente in vigore.
+:::
+
 > - FI - **Rilasciata lista di nuovi codici iva, da attivare tramite gestione data fine validità. I nuovi codici sono conformi alla riforma del Testo Unico IVA 2027**.
 > -	FI - Bloccata l’esecuzione del rollbck della contabilizzazione accredito, distinta di presentazione ed effetti se la fattura corrispondente è già inclusa in una liquidazione provvigioni agente (#TT04610/26)
 > -	FI, PR - la data chiusura partita ora è impostata sulla base dell’ultima data registrazione dei pagamenti che hanno chiuso la partita, tranne che per le partite legate al giro del portafoglio effetti dove la data chiusura è impostata uguale alla data scadenza (#TT04623/26)
