@@ -17,7 +17,6 @@ keywords:
 > -	SD - Parametri in Valorizzazione DDT di vendita: ottimizzata apertura e modifica flag. Modifications inside Valorization DDT form can have impact on profiles (#TT04801/26)
 > -	Solved problem for missing Blockly resource media
 
-
 ### Patch 707.1-0090 - 16/11/2026
 
 :::danger Adeguamento normativo IVA 2027
