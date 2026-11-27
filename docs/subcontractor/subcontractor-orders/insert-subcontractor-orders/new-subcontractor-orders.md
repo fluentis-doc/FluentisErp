@@ -9,7 +9,7 @@ La form si apre tramite il percorso **Conto Lavoro > Ordine di conto lavoro > Nu
 
 ## **1. Dati obbligatori**
 
-L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del ordine, utilizzando l'apposito help conti. In automatico verranno proposti: **Anno**, **Numero**, **Data** correnti e il **Tipo documento** (proposto uguale a quello inserito nei *Parametri di Conto Lavoro*), che possono essere modificati dall'utente.
+L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario dell'ordine, utilizzando l'apposito help conti. In automatico verranno proposti: **Anno**, **Numero**, **Data** correnti e il **Tipo documento** (proposto uguale a quello inserito nei *Parametri di Conto Lavoro*), che possono essere modificati dall'utente.
 
 ## **2. Testata** {#header}
 

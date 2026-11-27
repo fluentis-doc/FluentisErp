@@ -57,7 +57,7 @@ Sulla testata della distinta è presente un flag **Autorizzato** per consentire 
 > **Creazione file SEPA / SEPA Estero / Piteco / Pagamento Effetti**: pulsanti per l'esportazione del relativo tracciato specifico
 
 > **Contabilizzazione / Ripristina contabilizzazione**: pulsanti per eseguire, direttamente dalla presente form, la contabilizzazione della distinta oppure il ripristino della contabilizzazione stessa. La contabilizzazione avviene in base alla riga (o sulle righe) selezionate.
-Quando si preme la contabilizzazione appare un popup per l'impostazione di tutti i parametri relativi laa scrittura contabile da generare (ata causale contabile eccetera). E'presente un flag particolare, ***Esegui la contabilità per tutte le righe di pagamento***, il quale, se impostato, fa contabilizzare tutti i dettagli della distinta di pagamento (quelli non già contabilizzati chiaramente), mentre se disattivato verranno contabilizzate solo le righe preselezionate con il mouse prima di premere il pulsante.
+Quando si preme la contabilizzazione appare un popup per l'impostazione di tutti i parametri relativi la scrittura contabile da generare (data causale contabile eccetera). C'è presente un flag particolare, ***Esegui la contabilità per tutte le righe di pagamento***, il quale, se impostato, fa contabilizzare tutti i dettagli della distinta di pagamento (quelli non già contabilizzati chiaramente), mentre se disattivato verranno contabilizzate solo le righe preselezionate con il mouse prima di premere il pulsante.
 
 Il rollback, invece, esegue solo in riferimento alla riga selezionata.
 
