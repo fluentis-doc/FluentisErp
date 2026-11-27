@@ -62,5 +62,5 @@ Questa operazione non sarà consentita se sono presenti pagamenti partite oppure
 
 
 :::tip LINK
-Per la procedura di liquidazione provvigioni specifica della gestione dal modulo amministrativo vedere [**qui**](/docs/finance-area/commissions/procedures/calculate-commissions.md)
+Per la procedura di liquidazione provvigioni specifica della gestione dal modulo amministrativo vedere [**qui**](/docs/finance-area/commissions/procedures/calculate-commissions)
 :::

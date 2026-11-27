@@ -58,5 +58,5 @@ Na traci menija tada je dostupno i dugme **Uskladi provizije**, kojim se ažurir
 Ova operacija neće biti dozvoljena ako postoje plaćanja otvorenih stavki ili ako su provizije već obrađene u obračunu agenata.
 
 :::tip POVEZAVA
-Za postupak obračuna provizija koji se sprovodi putem administrativnog modula pogledajte [**ovde**](/docs/finance-area/commissions/procedures/calculate-commissions.md).
+Za postupak obračuna provizija koji se sprovodi putem administrativnog modula pogledajte [**ovde**](/docs/finance-area/commissions/procedures/calculate-commissions).
 :::
