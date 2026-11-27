@@ -58,5 +58,5 @@ Na vrpci izbornika tada je dostupan i gumb **Uskladi provizije**, kojim se ažur
 Ova operacija neće biti dopuštena ako postoje plaćanja otvorenih stavki ili ako su provizije već obrađene u obračunu agenata.
 
 :::tip POVEZNICA
-Za postupak obračuna provizija koji se provodi putem administrativnog modula pogledajte [**ovdje**](/docs/finance-area/commissions/proceures/calculate-commissions.md).
+Za postupak obračuna provizija koji se provodi putem administrativnog modula pogledajte [**ovdje**](/docs/finance-area/commissions/procedures/calculate-commissions.md).
 :::
