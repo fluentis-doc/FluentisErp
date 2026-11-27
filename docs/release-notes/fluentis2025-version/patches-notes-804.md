@@ -4,6 +4,19 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.034 - 27/11/2026
+
+> -	FI - Webapi di import/export partite, per l’importazione è stata aggiunta la logica di ricercare la partita da aggiornare ricercando i soli riferimenti del documento (società, divisione, tipo documento, numero documento, data documento, scadenza).
+> -	MES - Registrazioni dichiarazioni di produzione: corretta anomalia su rollaback registrazione dichiarazione con stessa UDC di altra dichiarazione (#TT04941/26).
+> -	MS - Sequenza fasi - TopDown grid: è stata invertita la posizione delle quantità visualizzate nell’expander posto nella parte inferiore della form. In particolare:
+>> - la Quantità impegno, precedentemente visualizzata nell’intestazione dell’expander e corrispondente alla somma delle Quantità impegno (Quantità alternativa) delle righe fase selezionate, è stata spostata all’interno dell’expander;
+>> - la Quantità, precedentemente visualizzata all’interno dell’expander e corrispondente alla somma delle Quantità (Quantità principale) delle righe fase selezionate, è stata spostata nella sua intestazione. (#TT04931/26) 
+> -	SD - San Marino Fatturazione Elettronica - Note nel file XML: le righe di tipo Nota vengono riportate nel file XML senza il tag AltriDatiGestionale per il Tipo Merce (#TT05159/26)
+> -	SD - Visualizzazione decimali nel campo quantità dei riepiloghi valori per singolo articolo: quando si attiva il flag "Prezzo per unità di misura alternativa" il campo Quantità riporta il numero di cifre decimali definite per l'unità di misura alternativa. Modifications inside object forms DDT, Invoice, Offer and Order can have impact on profiles (#TT04722/25)
+> -	SH - Modificata la ricerca nell'Anagrafica contatti per i filtri Conto e Sotto Conto. Ora è possibile effettuare la ricerca utilizzando il codice conto/sottoconto esatto, limitando i risultati al tipo conto selezionato. Modifications inside form nomenclature filter can have impact on profiles (#TT04639/26)
+> -	WM - Analisi disponibilità: corretta nomenclatura magazzini di riferimento per la disponibilità articoli in versione web (#TT05120/26)
+> -	WM - Piani di carico: Modificata gestione delle extension ordine cliente davano errore alla rigenerazione del picking e successivo salvataggio del piano (#TT05079/26)
+
 ### Patch 804.033 - 23/11/2026
 
 > -	BizLink - Item_SalesPriceList: tolta l’obbligatorietà di campi non necessari e impostato il valore di default “None” sulla colonna “Tipo scaglione” (#TT04829/26).
