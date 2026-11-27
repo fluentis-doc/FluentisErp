@@ -19,7 +19,7 @@ Da questa maschera:
 
 1. Seleziona il **tipo effetto**: il programma procederà ad assegnare un **numero** secondo il numeratore collegato al tipo effetto e all'**anno** di riferimento, che propone come l'anno della data di sistema.
  
-2. Compila i campi **Debitore** (con il conto contabile del soggetto intestatario delle effetto) e **Scadenza** (con la data scadenza dell'effetto).
+2. Compila i campi **Debitore** (con il conto contabile del soggetto intestatario dell' effetto) e **Scadenza** (con la data scadenza dell'effetto).
 
 3. Salva la testata dell'effetto.
 
