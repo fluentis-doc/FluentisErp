@@ -29,6 +29,10 @@ sidebar_position: 1.1
 
 ### Patch 804.032 - 16/11/2026
 
+:::danger Adeguamento normativo IVA 2027
+Questa release include le attività preparatorie per l'entrata in vigore del nuovo Testo Unico IVA dal 01/01/2027. Verranno generati automaticamente i nuovi codici IVA interessati dalle variazioni dei riferimenti normativi. I codici resteranno disattivati fino alla loro effettiva adozione. Fino al 31/12/2026 è necessario continuare a utilizzare i codici IVA attualmente in vigore.
+:::
+
 > - FI - **Rilasciata lista di nuovi codici iva, da attivare tramite gestione data fine validità. I nuovi codici sono conformi alla riforma del Testo Unico IVA 2027**.
 > -	BI - Switchboards: Fix ‘Select Available’ selection when more tiles displayed in the view;
 > -	CO - l’elaborazione del consuntivo di progetto del controlling ora valorizza le quantità anche per le righe con origine ‘produzione’ (#TT04799/26)

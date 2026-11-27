@@ -4,6 +4,14 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0041 - 27/11/2026
+
+:::danger Adeguamento normativo IVA 2027
+Questa release include le attività preparatorie per l'entrata in vigore del nuovo Testo Unico IVA dal 01/01/2027. Verranno generati automaticamente i nuovi codici IVA interessati dalle variazioni dei riferimenti normativi. I codici resteranno disattivati fino alla loro effettiva adozione. Fino al 31/12/2026 è necessario continuare a utilizzare i codici IVA attualmente in vigore.
+:::
+
+
+
 ### Patch 803.0040 - 06/11/2026
 
 > -	FI - Migliorata la gestione dei tassi di cambio nella generazione automatica della partita di anticipo dagli ordini clienti, con corretto funzionamento dell'incasso e della fattura di acconto generati successivamente (#TT01656/26)

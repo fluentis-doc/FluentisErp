@@ -3,6 +3,13 @@ title: Patch Notes v608
 sidebar_label: 🔧 Patch Notes v608
 sidebar_position: 1
 ---
+### Patch 608.1-0095 - 27/11/2026
+
+:::danger Adeguamento normativo IVA 2027
+Questa release include le attività preparatorie per l'entrata in vigore del nuovo Testo Unico IVA dal 01/01/2027. Verranno generati automaticamente i nuovi codici IVA interessati dalle variazioni dei riferimenti normativi. I codici resteranno disattivati fino alla loro effettiva adozione. Fino al 31/12/2026 è necessario continuare a utilizzare i codici IVA attualmente in vigore.
+:::
+
+
 
 ### Patch 608.1-0094 - 29/10/2026
   

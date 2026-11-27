@@ -6,6 +6,14 @@ sidebar_position: 1
 
 ### Patch 545.1-0130 - 29/10/2026
 
+:::danger Adeguamento normativo IVA 2027
+Questa release include le attività preparatorie per l'entrata in vigore del nuovo Testo Unico IVA dal 01/01/2027. Verranno generati automaticamente i nuovi codici IVA interessati dalle variazioni dei riferimenti normativi. I codici resteranno disattivati fino alla loro effettiva adozione. Fino al 31/12/2026 è necessario continuare a utilizzare i codici IVA attualmente in vigore.
+:::
+
+
+
+### Patch 545.1-0130 - 29/10/2026
+
 > - FI - Corretto bug nella contabilizzazione fatture di vendita, che generava un falso avviso di squadratura tra partite e saldo contabile, quando contenevano partite di anticipo già incassate (fattura di acconto con partite da mantenere chiuse) e nella fattura era contenuta più di una partita di anticipo (#TT03396/26)  
 > - SD - Stampa ordine cliente: ottimizzato calcolo calcolato Totale merce (#TT04449/26)  
 > - SH - incrementato a 100 caratteri il campo Descrizione nella tabella Aliquote/ Modalità IVA (#TT04528/26)
