@@ -29,6 +29,7 @@ sidebar_position: 1.1
 
 ### Patch 804.032 - 16/11/2026
 
+> - FI - **Rilasciata lista di nuovi codici iva, da attivare tramite gestione data fine validità. I nuovi codici sono conformi alla riforma del Testo Unico IVA 2027**.
 > -	BI - Switchboards: Fix ‘Select Available’ selection when more tiles displayed in the view;
 > -	CO - l’elaborazione del consuntivo di progetto del controlling ora valorizza le quantità anche per le righe con origine ‘produzione’ (#TT04799/26)
 > -	FI - Bloccata l’esecuzione del rollback della contabilizzazione accredito, distinta di presentazione ed effetti se la fattura corrispondente è già inclusa in una liquidazione provvigioni agente (#TT04610/26)

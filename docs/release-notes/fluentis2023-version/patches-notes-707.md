@@ -8,6 +8,7 @@ keywords:
 
 ### Patch 707.1-0090 - 16/11/2026
 
+> - FI - **Rilasciata lista di nuovi codici iva, da attivare tramite gestione data fine validità. I nuovi codici sono conformi alla riforma del Testo Unico IVA 2027**.
 > -	FI - Bloccata l’esecuzione del rollbck della contabilizzazione accredito, distinta di presentazione ed effetti se la fattura corrispondente è già inclusa in una liquidazione provvigioni agente (#TT04610/26)
 > -	FI, PR - la data chiusura partita ora è impostata sulla base dell’ultima data registrazione dei pagamenti che hanno chiuso la partita, tranne che per le partite legate al giro del portafoglio effetti dove la data chiusura è impostata uguale alla data scadenza (#TT04623/26)
 > -	MS - Schedulazione a capacità finita: corretta l’anomalia per cui il valore zero della “% di minimo livello occupazionale” veniva erroneamente interpretato come 100%. Questo comportamento determinava l’avvio della fase successiva di lavorazione, per il Centro di lavoro interessato, soltanto a partire dal primo giorno disponibile successivo, senza sfruttare la disponibilità di tempo residua nella giornata in cui si concludeva la fase precedente (#TT04637/26)
